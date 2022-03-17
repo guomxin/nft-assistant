@@ -15,9 +15,9 @@ d = u2.connect()
 
 while True:
     #d.click(*REFRESH)
-    d.click(*NFT_3_2)
+    d.click(*NFT_2_2)
     
-    btn_buy = d(resourceId="com.tencent.bamboo:id/btn_buy")
+    btn_buy = d(resourceId="com.tencent.bamboo:id/btn_buy") # TODO： try click with coordinates
     btn_return = d(resourceId="com.tencent.bamboo:id/left_icon")
     
     btn_buy.click()
