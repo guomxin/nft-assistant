@@ -27,12 +27,17 @@ d = u2.connect_usb("3404842878006NG") # serial number
 cnt = 0
 while True:
     #d.click(*REFRESH)
-    d.click(*NFT_2_1)
+    d.click(*NFT_1_1)
     
     btn_buy = d(resourceId="com.tencent.bamboo:id/btn_buy") # TODO： try click with coordinates
     btn_return = d(resourceId="com.tencent.bamboo:id/left_icon")
     
     btn_buy.click()
+    btn_pay_failed = d(resourceId="com.tencent.bamboo:id/tv_left_text")
+    if btn_pay_failed.exists:
+        btn_pay_failed.click()
+
+    # return to main page
     btn_return.click()
 
     cnt += 1

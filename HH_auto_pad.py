@@ -21,6 +21,11 @@ while True:
     btn_return = d(resourceId="com.tencent.bamboo:id/left_icon")
     
     btn_buy.click()
+    btn_pay_failed = d(resourceId="com.tencent.bamboo:id/tv_left_text")
+    if btn_pay_failed.exists:
+        btn_pay_failed.click()
+
+    # return to main page
     btn_return.click()
     
     cnt += 1
