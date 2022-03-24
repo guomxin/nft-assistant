@@ -1,7 +1,9 @@
 # coding: utf-8
 
 from selenium import webdriver
+from datetime import datetime
 
+CONTRACT_ITEM_COUNT = 6078
 SCAN_URL = "https://confluxscan.io/address/cfx:aapwjebcay7d6jv02whjrrvkm9egmw5fye09cea6zz?NFTAddress=cfx%3Aacff8dvjv6pys2ws19dhx753h1h00sum6yhu3m188h&limit=50&skip={}&tab=nft-asset"
 CSS_SELECTOR = "div.sc-8rjegh-0.eTefxZ > div > section.sc-fzoNJl.loPePV > div > div > div > div > div > div > div > div > div > div.sc-1hbozql-2.bnWPJO > div.ant-row > div.ant-col"
 FLAG = "TokenID:"
@@ -36,7 +38,7 @@ if __name__ == "__main__":
     driver.implicitly_wait(20)
 
     fig_cnt_dict = {}
-    for skip_count in range(0, 6087-NEGLECT_COUNT, 50):
+    for skip_count in range(0, CONTRACT_ITEM_COUNT-NEGLECT_COUNT, 50):
         driver.get(SCAN_URL.format(skip_count+NEGLECT_COUNT))
 
         nfts = driver.find_elements_by_css_selector(CSS_SELECTOR)
@@ -55,7 +57,9 @@ if __name__ == "__main__":
             else:
                 print("Couldn't find {} in {}.", FLAG, nft_text)
     # dump file
-    result_file = open("_scan_conflux_result.csv", "w")
+    result_file = open("_scan_conflux_dunhuang_result_{}.csv".format(
+        datetime.strftime(datetime.now(), '%Y%m%d%H%M')
+    ), "w")
     for (fig, cnt) in fig_cnt_dict.items():
         result_file.write("{},{}\n".format(fig, return_fig_count(fig) - cnt))
     result_file.close()
