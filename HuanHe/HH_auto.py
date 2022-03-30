@@ -28,7 +28,7 @@ d = u2.connect_usb("3404842878006NG") # serial number
 cnt = 0
 while True:
     #d.click(*REFRESH)
-    d.click(*NFT_3_2)
+    d.click(*NFT_3_1)
     
     # for if pay failed and dialog box didn't appear in time
     btn_pay_failed = d(resourceId="com.tencent.bamboo:id/tv_left_text")

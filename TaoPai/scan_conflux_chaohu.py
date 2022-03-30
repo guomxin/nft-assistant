@@ -27,11 +27,23 @@ def return_fig_count(name):
 
 NEGLECT_COUNT = 0
 
+def get_total_endwith8_count():
+    cnt = 8
+    for pair in CH_IdRange2Name.keys():
+        start = pair[0]
+        end = pair[1] + 1
+        for id in range(start, end):
+            if str(id)[-1] == '8':
+                cnt += 1
+    return cnt
+
 if __name__ == "__main__":
     driver = webdriver.Chrome()
     driver.implicitly_wait(20)
 
     fig_cnt_dict = {}
+    total_end_with8_count = get_total_endwith8_count()
+    end_with8_count = 0
     for skip_count in range(0, CONTRACT_ITEM_COUNT-NEGLECT_COUNT, 50):
         driver.get(SCAN_URL.format(skip_count+NEGLECT_COUNT))
 
@@ -45,6 +57,7 @@ if __name__ == "__main__":
                 token_id = int(nft_text[flag_pos+len(FLAG):].strip())
                 for (range, name) in CH_IdRange2Name.items():
                     if (token_id >= range[0]) and (token_id <= range[1]):
+                        end_with8_count += 1
                         if name not in fig_cnt_dict:
                             fig_cnt_dict[name] = 0
                         fig_cnt_dict[name] += 1    
@@ -56,5 +69,7 @@ if __name__ == "__main__":
     ), "w")
     for (fig, cnt) in fig_cnt_dict.items():
         result_file.write("{},{}\n".format(fig, return_fig_count(fig) - cnt))
+    result_file.write("{},{}\n".format("--TOTAL_END_WITH8_REMAIN--", total_end_with8_count))
+    result_file.write("{},{}\n".format("--END_WITH8_REMAIN--", total_end_with8_count - end_with8_count))
     result_file.close()
     driver.close()
