@@ -3,7 +3,7 @@
 from selenium import webdriver
 from datetime import datetime
 
-CONTRACT_ITEM_COUNT = 5000
+CONTRACT_ITEM_COUNT = 1646
 SCAN_URL = "https://confluxscan.io/address/cfx:aapwjebcay7d6jv02whjrrvkm9egmw5fye09cea6zz?NFTAddress=cfx%3Aacgjw8bg7gehy3x7x5evfknfe7pst64hp6tgymfwa4&limit=50&skip={}&tab=nft-asset"
 CSS_SELECTOR = "div.sc-8rjegh-0.eTefxZ > div > section.sc-fzoNJl.loPePV > div > div > div > div > div > div > div > div > div > div.sc-1hbozql-2.bnWPJO > div.ant-row > div.ant-col"
 FLAG = "TokenID:"
@@ -57,7 +57,8 @@ if __name__ == "__main__":
                 token_id = int(nft_text[flag_pos+len(FLAG):].strip())
                 for (range, name) in CH_IdRange2Name.items():
                     if (token_id >= range[0]) and (token_id <= range[1]):
-                        end_with8_count += 1
+                        if str(token_id)[-1] == '8':
+                            end_with8_count += 1
                         if name not in fig_cnt_dict:
                             fig_cnt_dict[name] = 0
                         fig_cnt_dict[name] += 1    
