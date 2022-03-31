@@ -3,7 +3,7 @@
 from selenium import webdriver
 from datetime import datetime
 
-CONTRACT_ITEM_COUNT = 1646
+CONTRACT_ITEM_COUNT = 1591
 SCAN_URL = "https://confluxscan.io/address/cfx:aapwjebcay7d6jv02whjrrvkm9egmw5fye09cea6zz?NFTAddress=cfx%3Aacgjw8bg7gehy3x7x5evfknfe7pst64hp6tgymfwa4&limit=50&skip={}&tab=nft-asset"
 CSS_SELECTOR = "div.sc-8rjegh-0.eTefxZ > div > section.sc-fzoNJl.loPePV > div > div > div > div > div > div > div > div > div > div.sc-1hbozql-2.bnWPJO > div.ant-row > div.ant-col"
 FLAG = "TokenID:"
@@ -42,6 +42,8 @@ if __name__ == "__main__":
     driver.implicitly_wait(20)
 
     fig_cnt_dict = {}
+    for (_, name) in CH_IdRange2Name.items():
+        fig_cnt_dict[name] = 0
     total_end_with8_count = get_total_endwith8_count()
     end_with8_count = 0
     for skip_count in range(0, CONTRACT_ITEM_COUNT-NEGLECT_COUNT, 50):
@@ -71,6 +73,6 @@ if __name__ == "__main__":
     for (fig, cnt) in fig_cnt_dict.items():
         result_file.write("{},{}\n".format(fig, return_fig_count(fig) - cnt))
     result_file.write("{},{}\n".format("--TOTAL_END_WITH8_REMAIN--", total_end_with8_count))
-    result_file.write("{},{}\n".format("--END_WITH8_REMAIN--", total_end_with8_count - end_with8_count))
+    result_file.write("{},{}\n".format("--END_WITH8_REMAIN--", end_with8_count))
     result_file.close()
     driver.close()

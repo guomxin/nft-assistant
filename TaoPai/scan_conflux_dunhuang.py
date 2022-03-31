@@ -38,6 +38,8 @@ if __name__ == "__main__":
     driver.implicitly_wait(20)
 
     fig_cnt_dict = {}
+    for (_, name) in DH_IdRange2Name.items():
+        fig_cnt_dict[name] = 0
     for skip_count in range(0, CONTRACT_ITEM_COUNT-NEGLECT_COUNT, 50):
         driver.get(SCAN_URL.format(skip_count+NEGLECT_COUNT))
 
