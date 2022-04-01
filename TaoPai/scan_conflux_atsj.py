@@ -2,8 +2,8 @@
 
 from selenium import webdriver
 from datetime import datetime
+import sys
 
-CONTRACT_ITEM_COUNT = 5845
 SCAN_URL = "https://confluxscan.io/address/cfx:aapwjebcay7d6jv02whjrrvkm9egmw5fye09cea6zz?NFTAddress=cfx%3Aacb7hr0ecyatev5gzjnys9mt31xxa22hzuzb3tprps&limit=50&skip={}&tab=nft-asset"
 CSS_SELECTOR = "div.sc-8rjegh-0.eTefxZ > div > section.sc-fzoNJl.loPePV > div > div > div > div > div > div > div > div > div > div.sc-1hbozql-2.bnWPJO > div.ant-row > div.ant-col"
 FLAG = "TokenID:"
@@ -96,13 +96,18 @@ def return_fig_count(name):
 
 # div > div > section.sc-fzoNJl.loPePV > div > div > div > div > div > div > div > div > div > div.sc-1hbozql-2.bnWPJO > div.ant-row > div:nth-child(1) > div > div > div > div.info > div.info-name
 if __name__ == "__main__":
+    if len(sys.argv) < 2:
+        print("{} <contract_item_count>".format(sys.argv[0]))
+        sys.exit(1)
+    contract_item_count = int(sys.argv[1])
+
     driver = webdriver.Chrome()
     driver.implicitly_wait(20)
 
     fig_cnt_dict = {}
     for (_, name) in ATSJ_IdRange2Name.items():
         fig_cnt_dict[name] = 0
-    for skip_count in range(0, CONTRACT_ITEM_COUNT, 50):
+    for skip_count in range(0, contract_item_count, 50):
         driver.get(SCAN_URL.format(skip_count))
         #driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
 

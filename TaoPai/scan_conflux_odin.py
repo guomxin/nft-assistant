@@ -2,8 +2,8 @@
 
 from selenium import webdriver
 from datetime import datetime
+import sys
 
-CONTRACT_ITEM_COUNT = 283
 SCAN_URL = "https://confluxscan.io/address/cfx:aapwjebcay7d6jv02whjrrvkm9egmw5fye09cea6zz?NFTAddress=cfx%3Aacg8eeuem70cbbtp4ygznshd13kgw27wu6t2sk9u9s&limit=50&skip={}&tab=nft-asset"
 CSS_SELECTOR = "div.sc-8rjegh-0.eTefxZ > div > section.sc-fzoNJl.loPePV > div > div > div > div > div > div > div > div > div > div.sc-1hbozql-2.bnWPJO > div.ant-row > div.ant-col"
 FLAG = "TokenID:"
@@ -42,6 +42,11 @@ def return_fig_count(name):
 NEGLECT_COUNT = 0
 
 if __name__ == "__main__":
+    if len(sys.argv) < 2:
+        print("{} <contract_item_count>".format(sys.argv[0]))
+        sys.exit(1)
+    contract_item_count = int(sys.argv[1])
+
     driver = webdriver.Chrome()
     driver.implicitly_wait(20)
 
@@ -53,7 +58,7 @@ if __name__ == "__main__":
             fig_cnt_dict[FIG_XIAOZHU_NAME] = 0
         else:
             fig_cnt_dict[name] = 0
-    for skip_count in range(0, CONTRACT_ITEM_COUNT-NEGLECT_COUNT, 50):
+    for skip_count in range(0, contract_item_count-NEGLECT_COUNT, 50):
         driver.get(SCAN_URL.format(skip_count+NEGLECT_COUNT))
 
         nfts = driver.find_elements_by_css_selector(CSS_SELECTOR)
