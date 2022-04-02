@@ -4,7 +4,7 @@ from selenium import webdriver
 from datetime import datetime
 import sys
 
-SCAN_URL = "https://confluxscan.io/address/cfx:aapwjebcay7d6jv02whjrrvkm9egmw5fye09cea6zz?NFTAddress=cfx%3Aacff8dvjv6pys2ws19dhx753h1h00sum6yhu3m188h&limit=50&skip={}&tab=nft-asset"
+SCAN_URL = "https://confluxscan.io/address/cfx:aapwjebcay7d6jv02whjrrvkm9egmw5fye09cea6zz?NFTAddress=cfx%3Aacaha2pz5j1g6b0fbv9xazv5umm587xucjcdu83b02&limit=50&skip={}&tab=nft-asset"
 CSS_SELECTOR = "div.sc-8rjegh-0.eTefxZ > div > section.sc-fzoNJl.loPePV > div > div > div > div > div > div > div > div > div > div.sc-1hbozql-2.bnWPJO > div.ant-row > div.ant-col"
 FLAG = "TokenID:"
 
