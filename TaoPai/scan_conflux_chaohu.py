@@ -1,19 +1,15 @@
 # coding: utf-8
+# ContractName: COCAFE
 
 from selenium import webdriver
 from datetime import datetime
 import sys
 
+from tpcommon import idrange
+
 SCAN_URL = "https://confluxscan.io/address/cfx:aapwjebcay7d6jv02whjrrvkm9egmw5fye09cea6zz?NFTAddress=cfx%3Aacgjw8bg7gehy3x7x5evfknfe7pst64hp6tgymfwa4&limit=50&skip={}&tab=nft-asset"
 CSS_SELECTOR = "div.sc-8rjegh-0.eTefxZ > div > section.sc-fzoNJl.loPePV > div > div > div > div > div > div > div > div > div > div.sc-1hbozql-2.bnWPJO > div.ant-row > div.ant-col"
 FLAG = "TokenID:"
-
-CH_IdRange2Name = {
-    (4976,4985): '传说',
-    (4926,4955): '史诗',
-    (4676,4900): '稀有',
-    (1,3735): '高级'
-}
 
 def return_fig_count(name):
     if name == "传说":
@@ -29,7 +25,7 @@ NEGLECT_COUNT = 0
 
 def get_total_endwith8_count():
     cnt = 8
-    for pair in CH_IdRange2Name.keys():
+    for pair in idrange.CH_IdRange2Name.keys():
         start = pair[0]
         end = pair[1] + 1
         for id in range(start, end):
@@ -47,7 +43,7 @@ if __name__ == "__main__":
     driver.implicitly_wait(20)
 
     fig_cnt_dict = {}
-    for (_, name) in CH_IdRange2Name.items():
+    for (_, name) in idrange.CH_IdRange2Name.items():
         fig_cnt_dict[name] = 0
     total_end_with8_count = get_total_endwith8_count()
     end_with8_count = 0
