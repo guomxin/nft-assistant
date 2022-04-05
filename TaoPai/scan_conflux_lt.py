@@ -1,4 +1,5 @@
 # coding: utf-8
+# ContractName: LT
 
 from selenium import webdriver
 from datetime import datetime

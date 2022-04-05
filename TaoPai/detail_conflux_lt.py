@@ -1,4 +1,5 @@
 # coding: utf-8
+# ContractName: LT
 # 20220402离碳（儿童作品）
 from datetime import datetime
 from tpcommon import contract
