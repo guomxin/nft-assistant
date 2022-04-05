@@ -39,7 +39,7 @@ if __name__ == "__main__":
             flag_pos = nft_text.find(FLAG)
             if flag_pos != -1:
                 token_id = int(nft_text[flag_pos+len(FLAG):].strip())
-                for (range, name) in idrange.items():
+                for (range, name) in idrange.LT_IdRange2Name.items():
                     if (token_id >= range[0]) and (token_id <= range[1]):
                         if name not in fig_cnt_dict:
                             fig_cnt_dict[name] = 0
