@@ -22,4 +22,4 @@ def dig_a_nftinfo_from_details(details_file_name, min_tid, max_tid, dump_file_na
     dump_file = open(dump_file_name, "w")
     for (owner, tidcnt) in owner_tidcnt_list:
         dump_file.write("{},{}\n".format(owner, tidcnt))
-    dump_file.close()    
+    dump_file.close()
