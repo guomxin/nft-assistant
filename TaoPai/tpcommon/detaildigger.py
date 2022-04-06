@@ -1,5 +1,8 @@
 # coding: utf-8
 
+def blur_address(address):
+    return address[:10] + "****" + address[-4:]
+
 def dig_a_nftinfo_from_details(details_file_name, min_tid, max_tid, dump_file_name):
     owner2tidcnt = {}
     for line in open(details_file_name):
@@ -21,5 +24,5 @@ def dig_a_nftinfo_from_details(details_file_name, min_tid, max_tid, dump_file_na
 
     dump_file = open(dump_file_name, "w")
     for (owner, tidcnt) in owner_tidcnt_list:
-        dump_file.write("{},{}\n".format(owner, tidcnt))
+        dump_file.write("{},{},{}\n".format(blur_address(owner), tidcnt, owner))
     dump_file.close()
