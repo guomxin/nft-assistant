@@ -59,7 +59,7 @@ if __name__ == "__main__":
         if reach_min_id:
             break
     # dump file
-    result_file = open("_scan_conflux_aprilkaozai_result_{}.csv".format(
+    result_file = open("data/_scan_conflux_aprilkaozai_result_{}.csv".format(
         datetime.strftime(datetime.now(), '%Y%m%d%H%M')
     ), "w")
     for (fig, cnt) in fig_cnt_dict.items():

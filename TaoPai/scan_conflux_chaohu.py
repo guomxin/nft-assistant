@@ -68,7 +68,7 @@ if __name__ == "__main__":
             else:
                 print("Couldn't find {} in {}.", FLAG, nft_text)
     # dump file
-    result_file = open("_scan_conflux_chaohu_result_{}.csv".format(
+    result_file = open("data/_scan_conflux_chaohu_result_{}.csv".format(
         datetime.strftime(datetime.now(), '%Y%m%d%H%M')
     ), "w")
     for (fig, cnt) in fig_cnt_dict.items():
