@@ -1,21 +1,15 @@
 # coding: utf-8
+# Contract Name: XY
 
 from selenium import webdriver
 from datetime import datetime
 import sys
 
+from tpcommon import idrange
+
 SCAN_URL = "https://confluxscan.io/address/cfx:aapwjebcay7d6jv02whjrrvkm9egmw5fye09cea6zz?NFTAddress=cfx%3Aacdvdbkwm4r8jakn721bz8gmyc3m2tf1xj8z0w7rh7&limit=50&skip={}&tab=nft-asset"
 CSS_SELECTOR = "div.sc-8rjegh-0.eTefxZ > div > section.sc-fzoNJl.loPePV > div > div > div > div > div > div > div > div > div > div.sc-1hbozql-2.bnWPJO > div.ant-row > div.ant-col"
 FLAG = "TokenID:"
-
-TS_IdRange2Name = {
-    (20001,20500): '灵禅天使',
-    (20501,21000): '风雨天使',
-    (21001,21500): '异瞳天使',
-    (21501,22000): '黑梦天使',
-    (22001,22500): '蓝骨天使',
-    (22501,23000): '隐形天使'
-}
 
 def return_fig_count(name):
     return 500
@@ -32,7 +26,7 @@ if __name__ == "__main__":
     driver.implicitly_wait(20)
 
     fig_cnt_dict = {}
-    for (_, name) in TS_IdRange2Name.items():
+    for (_, name) in idrange.TS_IdRange2Name.items():
         fig_cnt_dict[name] = 0
     for skip_count in range(0, contract_item_count-NEGLECT_COUNT, 50):
         driver.get(SCAN_URL.format(skip_count+NEGLECT_COUNT))
@@ -45,7 +39,7 @@ if __name__ == "__main__":
             flag_pos = nft_text.find(FLAG)
             if flag_pos != -1:
                 token_id = int(nft_text[flag_pos+len(FLAG):].strip())
-                for (range, name) in TS_IdRange2Name.items():
+                for (range, name) in idrange.TS_IdRange2Name.items():
                     if (token_id >= range[0]) and (token_id <= range[1]):
                         if name not in fig_cnt_dict:
                             fig_cnt_dict[name] = 0
