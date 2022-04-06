@@ -15,6 +15,6 @@ if __name__ == "__main__":
         details_file_name = sys.argv[2]
         min_tid = int(sys.argv[3])
         max_tid = int(sys.argv[4])
-        dump_file_name = "_dig_a_nftinfo_conflux_lt_result_{}.csv".format(
+        dump_file_name = "data/_dig_a_nftinfo_conflux_lt_result_{}.csv".format(
             datetime.strftime(datetime.now(), '%Y%m%d%H%M'))
         detaildigger.dig_a_nftinfo_from_details(details_file_name, min_tid, max_tid, dump_file_name)

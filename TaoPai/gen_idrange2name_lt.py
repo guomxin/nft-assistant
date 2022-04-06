@@ -52,7 +52,7 @@ if __name__ == "__main__":
     driver.close()
 
     # dump the dict
-    dump_file = open("_gen_idrange2name_lt.txt", "w")
+    dump_file = open("data/_gen_idrange2name_lt.txt", "w")
     for (range, name) in LT_Name2IdRange.items():
         dump_file.write("({},{}): '{}',\n".format(range[0], range[1], name))
     dump_file.close()

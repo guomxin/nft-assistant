@@ -15,7 +15,7 @@ def init_LT():
         id_end -= per_fig_cnt
    
 
-    dump_file = open("_init_idrange2name_lt.txt", "w")
+    dump_file = open("data/_init_idrange2name_lt.txt", "w")
     dump_file.write(dict_str)
     dump_file.close()
 

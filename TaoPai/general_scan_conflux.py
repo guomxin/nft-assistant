@@ -32,7 +32,7 @@ if __name__ == "__main__":
     driver.close()
 
     # dump the dict
-    dump_file = open("_general_scan_conflux.txt", "w")
+    dump_file = open("data/_general_scan_conflux.txt", "w")
     for (name, ids) in name2ids.items():
         dump_file.write("{}: {},\n".format(name, ids))
     dump_file.close()
