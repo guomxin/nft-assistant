@@ -1,18 +1,15 @@
 # coding: utf-8
+# Contract Name: ConFashion
 
 from selenium import webdriver
 from datetime import datetime
 import sys
 
+from tpcommon import idrange
+
 SCAN_URL = "https://confluxscan.io/address/cfx:aapwjebcay7d6jv02whjrrvkm9egmw5fye09cea6zz?NFTAddress=cfx%3Aacejnvw0k2zjew74uv570fbrgp2ns541wenhxnjkkv&limit=50&skip={}&tab=nft-asset"
 CSS_SELECTOR = "div.sc-8rjegh-0.eTefxZ > div > section.sc-fzoNJl.loPePV > div > div > div > div > div > div > div > div > div > div.sc-1hbozql-2.bnWPJO > div.ant-row > div.ant-col"
 FLAG = "TokenID:"
-
-AprilKZIdRange2Name = {
-    (82398,82444): '复活节',
-    (82354,82397): '清明时节',
-    (80001,82353): '愚你同乐'
-}
 
 def return_fig_count(name):
     if name == "复活节":
@@ -35,7 +32,7 @@ if __name__ == "__main__":
     driver.implicitly_wait(20)
 
     fig_cnt_dict = {}
-    for (_, name) in AprilKZIdRange2Name.items():
+    for (_, name) in idrange.AprilKZIdRange2Name.items():
         fig_cnt_dict[name] = 0
     reach_min_id = False
     for skip_count in range(0, contract_item_count-NEGLECT_COUNT, 50):
@@ -52,7 +49,7 @@ if __name__ == "__main__":
                 if token_id < MIN_TOKEN_ID:
                     reach_min_id = True
                     break
-                for (range, name) in AprilKZIdRange2Name.items():
+                for (range, name) in idrange.AprilKZIdRange2Name.items():
                     if (token_id >= range[0]) and (token_id <= range[1]):
                         if name not in fig_cnt_dict:
                             fig_cnt_dict[name] = 0

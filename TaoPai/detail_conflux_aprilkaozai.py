@@ -1,18 +1,17 @@
 # coding: utf-8
-# ContractName: XY
-# 六天使
+# ContractName: ConFashion
 
 from datetime import datetime
 from tpcommon import contract
 
 if __name__ == "__main__":
 
-    dump_file_name = "data/_details_conflux_liuangel_result_{}.csv".format(
+    dump_file_name = "data/_details_conflux_aprilkaozai_result_{}.csv".format(
         datetime.strftime(datetime.now(), '%Y%m%d%H%M')
     )
     contract.dump_contract_details(
-        contract.XY_Contract_Address, 
-        contract.XY_ABI, 
+        contract.ConFashion_Contract_Address, 
+        contract.ConFashion_ABI, 
         dump_file_name,
-        20001,
-        23000)
+        80001,
+        82444)
