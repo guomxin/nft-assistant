@@ -1,4 +1,8 @@
 # coding: utf-8
+GuiZi_IdRange2Name = {
+    (1, 1000): '重启柜子',
+    (1001, 4000): '无限柜子'
+}
 
 AprilKZIdRange2Name = {
     (82398,82444): '复活节',
