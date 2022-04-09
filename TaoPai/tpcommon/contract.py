@@ -6,6 +6,28 @@ from conflux import (
     Address
 )
 
+def get_contract_address_ABI_from_name(name):
+    if name == "liuangel":
+        return (XY_Contract_Address, XY_ABI)
+    elif name == "aprilkaozai":
+        return (ConFashion_Contract_Address, ConFashion_ABI)
+    elif name == "atsj":
+        return (ATSJ_Contract_Address, ATSJ_ABI)
+    elif name == "chaohu":
+        return (COCAFE_Contract_Address, COCAFE_ABI)
+    elif name == "dunhuang":
+        return (SDQH_Contract_Address, SDQH_ABI)
+    elif name == "lt":
+        return (LT_Contract_Address, LT_ABI)
+    elif name == "qiannian":
+        return (JYY_Contract_Address, JYY_ABI)
+    elif name == "taopainft":
+        return (TaopaiNFT_Contract_Address, TaopaiNFT_ABI)
+    elif name == "guizi":
+        return (UXON_Contract_Address, UXON_ABI)
+    else:
+        return (None, None)
+
 def get_base32addr_from_hexaddr(hexaddr):
     addr = Address.create_from_hex_address(hexaddr, MainNet_NetworkId)
     return addr.address

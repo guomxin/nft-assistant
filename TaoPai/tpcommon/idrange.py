@@ -1,4 +1,27 @@
 # coding: utf-8
+
+def get_range_by_nftname(nft_name):
+    if nft_name == "liuangel":
+        return (20001, 23000)
+    elif nft_name == "aprilkaozai":
+        return (80001, 82444)
+    elif nft_name == "atsj":
+        return (-1, -1)
+    elif nft_name == "chaohu":
+        return (-1, -1)
+    elif nft_name == "dunhuang":
+        return (10001, 40000)
+    elif nft_name == "lt":
+        return (3000, 8680)
+    elif nft_name == "qiannian":
+        return (11001, 11500)
+    elif nft_name == "taopainft":
+        return (-1, -1)
+    elif nft_name == "guizi":
+        return (-1, -1)
+    else:
+        return (None, None)
+
 GuiZi_IdRange2Name = {
     (1, 1000): '重启柜子',
     (1001, 4000): '无限柜子'
