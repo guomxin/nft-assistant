@@ -22,6 +22,29 @@ def get_range_by_nftname(nft_name):
     else:
         return (None, None)
 
+def get_idrangedict_by_nftname(nft_name):
+    if nft_name == "liuangel":
+        return TS_IdRange2Name
+    elif nft_name == "aprilkaozai":
+        return AprilKZIdRange2Name
+    elif nft_name == "atsj":
+        return ATSJ_IdRange2Name
+    elif nft_name == "chaohu":
+        return CH_IdRange2Name
+    elif nft_name == "dunhuang":
+        return DH_IdRange2Name
+    elif nft_name == "lt":
+        return LT_IdRange2Name
+    elif nft_name == "guizi":
+        return GuiZi_IdRange2Name
+    else:
+        return (None, None)
+
+def get_name_by_tokenid(idrange2name, token_id):
+    for ((min_tid, max_tid), name) in idrange2name.items():
+        if (token_id >= min_tid) and (token_id <= max_tid):
+            return name
+
 GuiZi_IdRange2Name = {
     (1, 1000): '重启柜子',
     (1001, 4000): '无限柜子'
