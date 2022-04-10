@@ -67,5 +67,6 @@ def dig_fullsetinfo_from_details(nft_name, details_file_name, min_tid, max_tid, 
 
     dump_file = open(dump_file_name, "w")
     for (owner, fullset_cnt) in owner_fullsetcnt_list:
-        dump_file.write("{},{},{}\n".format(blur_address(owner), fullset_cnt, owner))
+        if fullset_cnt > 0:
+            dump_file.write("{},{},{}\n".format(blur_address(owner), fullset_cnt, owner))
     dump_file.close()
