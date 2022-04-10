@@ -19,6 +19,8 @@ def get_range_by_nftname(nft_name):
         return (-1, -1)
     elif nft_name == "guizi":
         return (-1, -1)
+    elif nft_name == "shangshi":
+        return (889, 2388)
     else:
         return (None, None)
 
@@ -37,6 +39,8 @@ def get_idrangedict_by_nftname(nft_name):
         return LT_IdRange2Name
     elif nft_name == "guizi":
         return GuiZi_IdRange2Name
+    elif nft_name == "shangshi":
+        return ShangShi_IdRange2Name
     else:
         return (None, None)
 
@@ -44,6 +48,15 @@ def get_name_by_tokenid(idrange2name, token_id):
     for ((min_tid, max_tid), name) in idrange2name.items():
         if (token_id >= min_tid) and (token_id <= max_tid):
             return name
+
+ShangShi_IdRange2Name = {
+    (889, 1152): '衣服-姚子衿掌膳服',
+    (1153, 1416): '衣服-姚子衿太子嫔服1',
+    (1417, 1680): '衣服-姚子衿太子嫔服2',
+    (1681, 1944): '衣服-朱瞻基战服',
+    (1945, 2166): '首饰-姚子衿太子嫔服',
+    (2167, 2388): '首饰-姚子衿贵妃'
+}
 
 GuiZi_IdRange2Name = {
     (1, 1000): '重启柜子',

@@ -8,7 +8,7 @@ from tpcommon import idrange
 if __name__ == "__main__":
     if len(sys.argv) < 3:
         print("{} <nft_name> <detail_tag>.".format(sys.argv[0]))
-        print("nft_name: liuangel, aprilkaozai, atsj, chaohu, dunhuang, lt, qiannian, taopainft, guizi.")
+        print("nft_name: liuangel, aprilkaozai, atsj, chaohu, dunhuang, lt, qiannian, taopainft, guizi, shangshi.")
         sys.exit(1)
     
     nft_name = sys.argv[1]
