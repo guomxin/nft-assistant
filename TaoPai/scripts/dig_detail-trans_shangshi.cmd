@@ -15,5 +15,6 @@ python diginfo_from_details_conflux.py shangshi 2 data/_details_conflux_shangshi
 
 rem 4. analyze tranctions for single items
 rem python transaction_conflux_contract.py shangshi trans/HYYS_transactions_%1.csv %2 %3 2167 2388 ShouShi-GuiFei %1
+python transaction_conflux_contract.py shangshi trans/HYYS_transactions_%1.csv %2 %3 889 2388 ShangShi-ALL %1
 
 cd scripts

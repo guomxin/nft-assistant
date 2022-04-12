@@ -25,4 +25,9 @@ python transaction_conflux_contract.py atsj trans/ATSJ_transactions_%1.csv %2 %3
 python transaction_conflux_contract.py atsj trans/ATSJ_transactions_%1.csv %2 %3 201 300 Jin %1
 python transaction_conflux_contract.py atsj trans/ATSJ_transactions_%1.csv %2 %3 101 200 JiaDeLuoSi %1
 
+python transaction_conflux_contract.py atsj trans/ATSJ_transactions_%1.csv %2 %3 37001 38500 UR %1
+python transaction_conflux_contract.py atsj trans/ATSJ_transactions_%1.csv %2 %3 34001 37000 SSR %1
+python transaction_conflux_contract.py atsj trans/ATSJ_transactions_%1.csv %2 %3 25001 34000 SR %1
+python transaction_conflux_contract.py atsj trans/ATSJ_transactions_%1.csv %2 %3 10001 25000 R %1
+
 cd scripts
