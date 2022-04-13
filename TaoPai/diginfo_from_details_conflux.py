@@ -23,8 +23,8 @@ if __name__ == "__main__":
     elif func_id == 2:
         # dig fullset info from details
         details_file_name = sys.argv[3]
-        min_tid = int(sys.argv[4])
-        max_tid = int(sys.argv[5])
+        min_tid = [int(n) for n in sys.argv[4].split(",")]
+        max_tid = [int(n) for n in sys.argv[5].split(",")]
         dig_tag = sys.argv[6]
         detail_tag = sys.argv[7]
         dump_file_name = "data/_dig_fullsetinfo_conflux_{}_{}_result_{}.csv".format(
