@@ -1,28 +1,15 @@
 # coding: utf-8
 
 def get_range_by_nftname(nft_name):
-    if nft_name == "liuangel":
-        return (20001, 23000)
-    elif nft_name == "aprilkaozai":
-        return (80001, 82444)
-    elif nft_name == "atsj":
-        return (-1, -1)
-    elif nft_name == "chaohu":
-        return (-1, -1)
-    elif nft_name == "dunhuang":
-        return (1001, 40000)
-    elif nft_name == "lt":
-        return (3000, 8680)
-    elif nft_name == "qiannian":
-        return (11001, 11500)
-    elif nft_name == "taopainft":
-        return (-1, -1)
-    elif nft_name == "guizi":
-        return (-1, -1)
-    elif nft_name == "shangshi":
-        return (889, 2388)
-    else:
-        return (None, None)
+    idrange_dict = get_idrangedict_by_nftname(nft_name)
+    min_tid = None
+    max_tid = None
+    for (low, high) in idrange_dict.keys():
+        if (min_tid == None) or (min_tid > low):
+            min_tid = low
+        if (max_tid == None) or (max_tid < high):
+            max_tid = high
+    return (min_tid, max_tid)
 
 def get_idrangedict_by_nftname(nft_name):
     if nft_name == "liuangel":
@@ -42,7 +29,7 @@ def get_idrangedict_by_nftname(nft_name):
     elif nft_name == "shangshi":
         return ShangShi_IdRange2Name
     else:
-        return (None, None)
+        return None
 
 def get_name_by_tokenid(idrange2name, token_id):
     for ((min_tid, max_tid), name) in idrange2name.items():
