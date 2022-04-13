@@ -28,6 +28,7 @@ print(addr.hex_address)
 print(addr.verbose_address)
 '''
 
+'''
 owner2tokens = {}
 token_cnt = c.call_contract_method(Contract_Address, ABI, 'totalSupply')
 for i in range(token_cnt):
@@ -59,3 +60,7 @@ for (owner, _) in owner_tokencnt_list:
         ":".join([str(token_id) for token_id in tokens])
     ))
 result_file.close()
+'''
+token_cnt = c.call_contract_method(Contract_Address, ABI, 'totalSupply')
+_, token_ids = c.call_contract_method(Contract_Address, ABI, 'tokens', 0, token_cnt)
+print(token_ids[:100])

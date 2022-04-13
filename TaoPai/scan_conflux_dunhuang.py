@@ -15,14 +15,18 @@ def return_fig_count(name):
     purple_cnt = 2000
     other_cnt = 4500
 
-    if name == "金":
+    if name == "彩虹":
+        return 1000
+    elif name == "满金幸福":
+        return 333
+    elif name == "金":
         return gold_cnt
     elif name == "紫":
         return purple_cnt
     else:
         return other_cnt
 
-NEGLECT_COUNT = 4750
+NEGLECT_COUNT = 0
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:

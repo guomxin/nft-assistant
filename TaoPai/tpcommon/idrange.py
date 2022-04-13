@@ -10,7 +10,7 @@ def get_range_by_nftname(nft_name):
     elif nft_name == "chaohu":
         return (-1, -1)
     elif nft_name == "dunhuang":
-        return (10001, 40000)
+        return (1001, 40000)
     elif nft_name == "lt":
         return (3000, 8680)
     elif nft_name == "qiannian":
@@ -86,6 +86,8 @@ CH_IdRange2Name = {
 }
 
 DH_IdRange2Name = {
+    (1001, 2000): '彩虹',
+    (2001, 2333): '满金幸福',
     (10001,14500): '红',
     (14501,19000): '橙',
     (19001,23500): '黄',

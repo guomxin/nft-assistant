@@ -41,9 +41,9 @@ def dump_contract_details(contract_address, contract_ABI, dump_file_name, min_ti
 
     owner2tokens = {}
     token_cnt = c.call_contract_method(contract_address, contract_ABI, 'totalSupply')
+    _, token_ids = c.call_contract_method(contract_address, contract_ABI, 'tokens', 0, token_cnt)
     target_token_cnt = 0
-    for i in range(token_cnt):
-        token_id = c.call_contract_method(contract_address, contract_ABI, 'tokenByIndex', i)
+    for token_id in token_ids:
         if (min_tid != -1) and token_id < min_tid:
             continue
         if (max_tid != -1) and token_id > max_tid:
