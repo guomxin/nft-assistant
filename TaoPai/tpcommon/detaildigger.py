@@ -78,3 +78,29 @@ def dig_fullsetinfo_from_details(nft_name, details_file_name, min_tids, max_tids
         if fullset_cnt > 0:
             dump_file.write("{},{},{}\n".format(blur_address(owner), fullset_cnt, owner))
     dump_file.close()
+
+Taopai_Conflux_Address = "cfx:aapwjebcay7d6jv02whjrrvkm9egmw5fye09cea6zz"
+
+def dig_circulation_from_details(nft_name, details_file_name, dump_file_name):
+    idrange2name = idrange.get_idrangedict_by_nftname(nft_name)
+    circulation_dict = {} # name->count
+    for (_, name) in idrange2name.items():
+        circulation_dict[name] = 0
+    
+    for line in open(details_file_name):
+        items = line.split(",")
+        owner = items[0].strip()
+        if owner == Taopai_Conflux_Address:
+            # negelect Taopai account
+            continue
+        tokenids = [int(i) for i in items[2].split(":")]
+        for tid in tokenids:
+            name = idrange.get_name_by_tokenid(idrange2name, tid)
+            if name not in circulation_dict:
+                circulation_dict[name] = 0
+            circulation_dict[name] += 1
+    
+    dump_file = open(dump_file_name, "w")
+    for (fig, cnt) in circulation_dict.items():
+        dump_file.write("{},{}\n".format(fig, cnt))
+    dump_file.close()

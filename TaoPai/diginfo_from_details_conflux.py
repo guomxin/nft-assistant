@@ -30,4 +30,11 @@ if __name__ == "__main__":
         dump_file_name = "data/_dig_fullsetinfo_conflux_{}_{}_result_{}.csv".format(
             nft_name, dig_tag, detail_tag)
         detaildigger.dig_fullsetinfo_from_details(nft_name, details_file_name, min_tid, max_tid, dump_file_name)
+    elif func_id == 3:
+        # stat nft count in circulation
+        details_file_name = sys.argv[3]
+        detail_tag = sys.argv[4]
+        dump_file_name = "data/_scan_conflux_{}_result_{}.csv".format(
+            nft_name, detail_tag)
+        detaildigger.dig_circulation_from_details(nft_name, details_file_name, dump_file_name)
         
