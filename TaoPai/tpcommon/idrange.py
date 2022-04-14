@@ -36,6 +36,12 @@ def get_name_by_tokenid(idrange2name, token_id):
         if (token_id >= min_tid) and (token_id <= max_tid):
             return name
 
+TianTanBoPu_IdRange2Name = {
+    (1001, 1240): '天坛波普S',
+    (1241, 1380): '天坛波普SS',
+    (1381, 1400): '天坛波普SSS'
+}
+
 ShangShi_IdRange2Name = {
     (889, 1152): '衣服-姚子衿掌膳服',
     (1153, 1416): '衣服-姚子衿太子嫔服1',

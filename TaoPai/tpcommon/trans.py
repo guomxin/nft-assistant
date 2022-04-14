@@ -54,8 +54,11 @@ def analyze_transaction_logs(trans_file_name, contract_addr, contract_ABI, start
             if (max_tid != -1) and token_id > max_tid:
                 continue
             #print(trans_hash, trans_date_short_str)
+            if to_addr == Taopai_Conflux_Address:
+                # to address 如果是淘派的地址，说明是合成行为，不计入统计
+                continue
             if from_addr == Taopai_Conflux_Address:
-                # from address 如果是淘派的地址，说明是打开盲盒
+                # from address 如果是淘派的地址，说明是打开盲盒或者空投
                 date2tradeinfo[trans_date_short_str][1] += 1
             else:
                 # 持有者之间的交易
