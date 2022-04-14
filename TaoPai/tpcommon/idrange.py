@@ -28,6 +28,8 @@ def get_idrangedict_by_nftname(nft_name):
         return GuiZi_IdRange2Name
     elif nft_name == "shangshi":
         return ShangShi_IdRange2Name
+    elif nft_name == "tiantanbopu":
+        return TianTanBoPu_IdRange2Name
     else:
         return None
 
