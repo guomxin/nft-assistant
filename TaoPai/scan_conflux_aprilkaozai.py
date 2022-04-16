@@ -18,6 +18,8 @@ def return_fig_count(name):
         return 44
     elif name == "愚你同乐":
         return 2353
+    elif name == "大白烤仔":
+        return 2022
 
 NEGLECT_COUNT = 0
 MIN_TOKEN_ID = 80001

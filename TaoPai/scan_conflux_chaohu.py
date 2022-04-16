@@ -18,6 +18,8 @@ def return_fig_count(name):
         return 30
     elif name == "稀有":
         return 225
+    elif name == "珍贵":
+        return 400
     elif name == "高级":
         return 3735
 
