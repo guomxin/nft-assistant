@@ -38,6 +38,16 @@ def get_name_by_tokenid(idrange2name, token_id):
         if (token_id >= min_tid) and (token_id <= max_tid):
             return name
 
+FeiTianPiBa_IdRange2Name = {
+    (1, 800): 'SSR-反弹琵琶',
+    (801, 2800): 'SR-弄弦',
+    (2801, 4800): 'SR-雅乐',
+    (4801, 6800): 'SR-击竹',
+    (6801, 9800): 'R-趣鼓',
+    (9801, 12800): 'R-奏琴',
+    (12801, 15800): 'R-横笛'
+}
+
 TianTanBoPu_IdRange2Name = {
     (1001, 1240): '天坛波普S',
     (1241, 1380): '天坛波普SS',
