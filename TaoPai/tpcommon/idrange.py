@@ -30,6 +30,8 @@ def get_idrangedict_by_nftname(nft_name):
         return ShangShi_IdRange2Name
     elif nft_name == "tiantanbopu":
         return TianTanBoPu_IdRange2Name
+    elif nft_name == "feitianpiba":
+        return FeiTianPiBa_IdRange2Name
     else:
         return None
 
@@ -45,7 +47,8 @@ FeiTianPiBa_IdRange2Name = {
     (4801, 6800): 'SR-击竹',
     (6801, 9800): 'R-趣鼓',
     (9801, 12800): 'R-奏琴',
-    (12801, 15800): 'R-横笛'
+    (12801, 15800): 'R-横笛',
+    (15801, 16400): '乐舞伎楽图'
 }
 
 TianTanBoPu_IdRange2Name = {
