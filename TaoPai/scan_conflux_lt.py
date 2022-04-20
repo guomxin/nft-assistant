@@ -6,10 +6,10 @@ from datetime import datetime
 import sys
 
 from tpcommon import idrange
+from tpcommon import utils
 
 SCAN_URL = "https://confluxscan.io/address/cfx:aapwjebcay7d6jv02whjrrvkm9egmw5fye09cea6zz?NFTAddress=cfx%3Aacaha2pz5j1g6b0fbv9xazv5umm587xucjcdu83b02&limit=50&skip={}&tab=nft-asset"
 CSS_SELECTOR = "div.sc-8rjegh-0.eTefxZ > div > section.sc-fzoNJl.loPePV > div > div > div > div > div > div > div > div > div > div.sc-1hbozql-2.bnWPJO > div.ant-row > div.ant-col"
-FLAG = "TokenID:"
 
 def return_fig_count(name):
     return 299
@@ -36,16 +36,15 @@ if __name__ == "__main__":
             print("Could not find items in {}.".format(SCAN_URL.format(skip_count)))
         for nft in nfts:
             nft_text = nft.text
-            flag_pos = nft_text.find(FLAG)
-            if flag_pos != -1:
-                token_id = int(nft_text[flag_pos+len(FLAG):].strip())
+            token_id = utils.get_tokenid_from_html_text(nft_text)
+            if token_id != None:
                 for (range, name) in idrange.LT_IdRange2Name.items():
                     if (token_id >= range[0]) and (token_id <= range[1]):
                         if name not in fig_cnt_dict:
                             fig_cnt_dict[name] = 0
                         fig_cnt_dict[name] += 1    
             else:
-                print("Couldn't find {} in {}.", FLAG, nft_text)
+                print("Couldn't find tokenid in {}.", nft_text)
     # dump file
     result_file = open("data/_scan_conflux_lt0402_result_{}.csv".format(
         datetime.strftime(datetime.now(), '%Y%m%d%H%M')
