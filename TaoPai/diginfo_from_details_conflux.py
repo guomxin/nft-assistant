@@ -23,13 +23,21 @@ if __name__ == "__main__":
     elif func_id == 2:
         # dig fullset info from details
         details_file_name = sys.argv[3]
-        min_tid = [int(n) for n in sys.argv[4].split(",")]
-        max_tid = [int(n) for n in sys.argv[5].split(",")]
+        
+        #min_tids = [int(n) for n in sys.argv[4].split(",")]
+        #max_tids = [int(n) for n in sys.argv[5].split(",")]
+
+        ranges_str = sys.argv[4]
+        min_counts_str = sys.argv[5]
         dig_tag = sys.argv[6]
         detail_tag = sys.argv[7]
         dump_file_name = "data/_dig_fullsetinfo_conflux_{}_{}_result_{}.csv".format(
             nft_name, dig_tag, detail_tag)
-        detaildigger.dig_fullsetinfo_from_details(nft_name, details_file_name, min_tid, max_tid, dump_file_name)
+
+        min_counts = [int(s.strip()) for s in min_counts_str.split(";")]
+        ranges = [[int(item) for item in range_str.split(",")] for range_str in ranges_str.split(";")]
+        detaildigger.dig_fullsetinfo_from_details_multi(nft_name, details_file_name, ranges, min_counts, dump_file_name)
+        #detaildigger.dig_fullsetinfo_from_details(nft_name, details_file_name, min_tids, max_tids, dump_file_name)
     elif func_id == 3:
         # stat nft count in circulation
         details_file_name = sys.argv[3]
