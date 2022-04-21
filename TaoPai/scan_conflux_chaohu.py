@@ -12,8 +12,10 @@ CSS_SELECTOR = "div.sc-8rjegh-0.eTefxZ > div > section.sc-fzoNJl.loPePV > div > 
 FLAG = "TokenID:"
 
 def return_fig_count(name):
-    if name == "传说":
-        return 10
+    if name == "隐藏":
+        return 760
+    elif name == "传说":
+        return 25
     elif name == "史诗":
         return 30
     elif name == "稀有":
