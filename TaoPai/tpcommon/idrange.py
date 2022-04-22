@@ -40,6 +40,12 @@ def get_name_by_tokenid(idrange2name, token_id):
         if (token_id >= min_tid) and (token_id <= max_tid):
             return name
 
+KaoZaiFriends_IdRange2Name = {
+    (300001,300012): '十二生肖款',
+    (200001,200360): '金色款',
+    (100001,109628): '普通款'
+}
+
 HuoXingTanCe_IdRange2Name = {
     (20001,20515): '祝融',
     (20516,21233): '返回',
