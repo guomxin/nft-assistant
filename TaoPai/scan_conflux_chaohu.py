@@ -6,6 +6,7 @@ from datetime import datetime
 import sys
 
 from tpcommon import idrange
+from tpcommon import utils
 
 SCAN_URL = "https://confluxscan.io/address/cfx:aapwjebcay7d6jv02whjrrvkm9egmw5fye09cea6zz?NFTAddress=cfx%3Aacgjw8bg7gehy3x7x5evfknfe7pst64hp6tgymfwa4&limit=50&skip={}&tab=nft-asset"
 CSS_SELECTOR = "div.sc-8rjegh-0.eTefxZ > div > section.sc-fzoNJl.loPePV > div > div > div > div > div > div > div > div > div > div.sc-1hbozql-2.bnWPJO > div.ant-row > div.ant-col"
@@ -59,9 +60,8 @@ if __name__ == "__main__":
             print("Could not find items in {}.".format(SCAN_URL.format(skip_count)))
         for nft in nfts:
             nft_text = nft.text
-            flag_pos = nft_text.find(FLAG)
-            if flag_pos != -1:
-                token_id = int(nft_text[flag_pos+len(FLAG):].strip())
+            token_id = utils.get_tokenid_from_html_text(nft_text)
+            if token_id != None:
                 for (range, name) in idrange.CH_IdRange2Name.items():
                     if (token_id >= range[0]) and (token_id <= range[1]):
                         if str(token_id)[-1] == '8':
@@ -77,7 +77,7 @@ if __name__ == "__main__":
     ), "w")
     for (fig, cnt) in fig_cnt_dict.items():
         result_file.write("{},{}\n".format(fig, return_fig_count(fig) - cnt))
-    result_file.write("{},{}\n".format("--TOTAL_END_WITH8_REMAIN--", total_end_with8_count))
-    result_file.write("{},{}\n".format("--END_WITH8_REMAIN--", end_with8_count))
+    # result_file.write("{},{}\n".format("--TOTAL_END_WITH8_REMAIN--", total_end_with8_count))
+    # result_file.write("{},{}\n".format("--END_WITH8_REMAIN--", end_with8_count))
     result_file.close()
     driver.close()
