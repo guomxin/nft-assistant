@@ -90,6 +90,7 @@ def multi_analyze_transaction_logs(trans_file_name, contract_addr, contract_ABI,
     start_date = datetime.datetime.strptime(start_date_str + " 0:0", "%Y/%m/%d %H:%M")
     end_date = datetime.datetime.strptime(end_date_str + " 23:59", "%Y/%m/%d %H:%M")
     
+    result_detail_file_name = result_file_name + ".details.csv"
     date2tradeinfo = {} #date(%Y/%m/%d): (tag: (trade_cnt, open_mbox_cnt))
     date = start_date
     while (date < end_date):
@@ -99,7 +100,7 @@ def multi_analyze_transaction_logs(trans_file_name, contract_addr, contract_ABI,
             date2tradeinfo[date_str][tag] = [0, 0]
         date = date + datetime.timedelta(days=1)
     
-    with open(trans_file_name) as f:
+    with open(trans_file_name) as f, open(result_detail_file_name, "w") as details:
         rows = csv.reader(f)
         target_row_cnt = 0
         is_first_row = True
@@ -121,13 +122,16 @@ def multi_analyze_transaction_logs(trans_file_name, contract_addr, contract_ABI,
                 continue
             if to_addr == Taopai_Conflux_Address:
                 # to address 如果是淘派的地址，说明是合成行为，不计入统计
+                #details.write("{},{},{},合成\n".format(from_addr, to_addr, trans_date_str))
                 continue
             if from_addr == Taopai_Conflux_Address:
                 # from address 如果是淘派的地址，说明是打开盲盒或者空投
                 date2tradeinfo[trans_date_short_str][tag][1] += 1
+                details.write("{},{},{},开盲盒或空投或合成,{},{}\n".format(from_addr, to_addr, trans_date_str, tag, token_id))
             else:
                 # 持有者之间的交易
                 date2tradeinfo[trans_date_short_str][tag][0] += 1
+                details.write("{},{},{},交易,{},{}\n".format(from_addr, to_addr, trans_date_str, tag, token_id))
             target_row_cnt += 1
     
     if verbose:
