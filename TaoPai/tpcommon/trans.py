@@ -5,6 +5,7 @@ from conflux import (
 )
 import csv
 import datetime
+import time
 
 from tpcommon import contract
 
@@ -133,6 +134,9 @@ def multi_analyze_transaction_logs(trans_file_name, contract_addr, contract_ABI,
                 date2tradeinfo[trans_date_short_str][tag][0] += 1
                 details.write("{},{},{},交易,{},{}\n".format(from_addr, to_addr, trans_date_str, tag, token_id))
             target_row_cnt += 1
+
+            # wait for some time for HTTP 429 error
+            time.sleep(0.2)
     
     if verbose:
         print("{} target transaction records found.".format(target_row_cnt))
