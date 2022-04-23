@@ -40,6 +40,15 @@ def get_name_by_tokenid(idrange2name, token_id):
         if (token_id >= min_tid) and (token_id <= max_tid):
             return name
 
+HangTianTanWei2_IdRange2Name = {
+    (10001, 11469): '星',
+    (11470, 12938): '箭',
+    (12939, 14407): '祝融',
+    (14408, 15876): '返回舱',
+    (15877, 16576): '器',
+    (16577, 17000): '空间站'
+}
+
 ZhongGuoHangTian_IdRange2Name = {
     (1,5): '中国航天日金色版',
     (6,370): '祝融周岁纪念紫色版',
