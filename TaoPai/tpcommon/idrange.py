@@ -32,6 +32,14 @@ def get_idrangedict_by_nftname(nft_name):
         return TianTanBoPu_IdRange2Name
     elif nft_name == "feitianpiba":
         return FeiTianPiBa_IdRange2Name
+    elif nft_name == "huoxingtance":
+        return HuoXingTanCe_IdRange2Name
+    elif nft_name == "kaozaifriends":
+        return KaoZaiFriends_IdRange2Name
+    elif nft_name == "zhongguohangtian":
+        return ZhongGuoHangTian_IdRange2Name
+    elif nft_name == "hangtiantanwei2":
+        return HangTianTanWei2_IdRange2Name
     else:
         return None
 
