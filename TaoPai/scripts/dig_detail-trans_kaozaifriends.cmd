@@ -16,6 +16,6 @@ rem 4. dig count in circulation
 python diginfo_from_details_conflux.py kaozaifriends 3 data/_details_conflux_kaozaifriends_result_%1.csv %1
 
 rem 5. analyze tranctions
-rem python transaction_conflux_contract.py feitianpiba trans/TLH_transactions_%1.csv %2 %3 1,800;801,6800;6801,15800;15801,16400 SSR;SR;R;DaTu %1
+python transaction_conflux_contract.py kaozaifriends trans/TaopaiNFT_transactions_%1.csv %2 %3 100001,109628;200001,200036;300001,300012 PUTONG;JINSE;SHENGXIAO %1
 
 cd scripts
