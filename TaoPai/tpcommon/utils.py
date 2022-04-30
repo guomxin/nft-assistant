@@ -10,6 +10,8 @@ def get_tokenid_from_html_text(text):
         return token_id
 
 def return_fig_count(idrange2name, fig_name):
+    fig_count = 0
     for ((low,high), name) in idrange2name.items():
         if name == fig_name:
-            return high-low+1
+            fig_count += (high-low+1)
+    return fig_count
