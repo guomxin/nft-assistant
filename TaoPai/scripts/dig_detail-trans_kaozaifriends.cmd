@@ -6,6 +6,7 @@ rem 1. generate details
 python detail_conflux_contract.py kaozaifriends %1
 
 rem 2. dig info for Gold&Twelve
+python diginfo_from_details_conflux.py kaozaifriends 1 data/_details_conflux_kaozaifriends_result_%1.csv 100001 300012 ANY %1
 python diginfo_from_details_conflux.py kaozaifriends 1 data/_details_conflux_kaozaifriends_result_%1.csv 200001 200360 GOLD %1
 python diginfo_from_details_conflux.py kaozaifriends 1 data/_details_conflux_kaozaifriends_result_%1.csv 300001 300012 TWELVE %1
 
