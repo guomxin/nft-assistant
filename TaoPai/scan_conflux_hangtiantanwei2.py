@@ -12,7 +12,7 @@ SCAN_URL = "https://confluxscan.io/address/cfx:aapwjebcay7d6jv02whjrrvkm9egmw5fy
 CSS_SELECTOR = "div.sc-8rjegh-0.eTefxZ > div > section.sc-fzoNJl.loPePV > div > div > div > div > div > div > div > div > div > div.sc-1hbozql-2.bnWPJO > div.ant-row > div.ant-col"
 
 NEGLECT_COUNT = 0
-MIN_TOKEN_ID = 10001
+MIN_TOKEN_ID = 0
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
