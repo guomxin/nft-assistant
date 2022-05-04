@@ -101,7 +101,7 @@ if __name__ == "__main__":
 
         # 判断时间是否超过交易时间
         cur_time = datetime.now()
-        if (cur_time.hour >= 7) and (cur_time.minute >= 35):
+        if (cur_time.hour >= 15) and (cur_time.minute >= 1):
             break
 
     driver.close()
