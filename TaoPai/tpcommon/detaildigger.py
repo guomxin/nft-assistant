@@ -165,7 +165,7 @@ def dig_circulation_from_details(nft_name, details_file_name, dump_file_name):
                 circulation_dict[name] = 0
             circulation_dict[name] += 1
     
-    dump_file = open(dump_file_name, "w")
+    dump_file = open(dump_file_name, "w", encoding="utf-8-sig")
     for (fig, cnt) in circulation_dict.items():
         dump_file.write("{},{}\n".format(fig, cnt))
     dump_file.close()
