@@ -87,7 +87,7 @@ def get_tag_from_tokenid(token_id, ranges, tags):
             continue
         return tags[tag_index]
 
-def multi_analyze_transaction_logs(trans_file_name, contract_addr, contract_ABI, start_date_str, end_date_str, ranges, tags, result_file_name,  verbose=True):
+def multi_analyze_transaction_logs(trans_file_name, tradeprice_dict, contract_addr, contract_ABI, start_date_str, end_date_str, ranges, tags, result_file_name,  verbose=True):
     provider = HTTPProvider('https://main.confluxrpc.com')
     c =  Conflux(provider)
     contra = c.contract(contract_addr, contract_ABI)
@@ -106,6 +106,10 @@ def multi_analyze_transaction_logs(trans_file_name, contract_addr, contract_ABI,
     
     solders_dict = {}
     buyers_dict = {} 
+    traderesult_dict = {} # (tag: [total_cnt, [price_list]])
+    if len(tradeprice_dict) > 0:
+        for tag in tags:
+            traderesult_dict[tag] = [0, []]
     with open(trans_file_name) as f, open(result_detail_file_name, "w") as details:
         rows = csv.reader(f)
         target_row_cnt = 0
@@ -137,8 +141,20 @@ def multi_analyze_transaction_logs(trans_file_name, contract_addr, contract_ABI,
             else:
                 # 持有者之间的交易
                 date2tradeinfo[trans_date_short_str][tag][0] += 1
-                details.write("{},{},{},交易,{},{}\n".format(from_addr, to_addr, trans_date_str, tag, token_id))
                 
+                # 更新交易价格信息
+                if len(tradeprice_dict) > 0:
+                    traderesult_dict[tag][0] += 1
+                    trade_price = "未知"
+                    if (token_id in tradeprice_dict) and (len(tradeprice_dict[token_id]) == 1):
+                        trade_price = tradeprice_dict[token_id][0]
+                        traderesult_dict[tag][1].append(trade_price)
+                    details.write("{},{},{},交易,{},{},{}\n".format(
+                        from_addr, to_addr, trans_date_str, tag, token_id, trade_price)) 
+                else:
+                    details.write("{},{},{},交易,{},{}\n".format(
+                        from_addr, to_addr, trans_date_str, tag, token_id))  
+
                 # 更新卖方信息
                 if from_addr not in solders_dict:
                     solders_dict[from_addr] = [0, {}]
@@ -178,6 +194,24 @@ def multi_analyze_transaction_logs(trans_file_name, contract_addr, contract_ABI,
                 td_str, ",".join([str(date2tradeinfo[td_str][tag][1]) for tag in tags])
             ))
     
+    # 交易价格汇总数据
+    if len(traderesult_dict) > 0:
+        trade_agg_file_name = result_file_name + ".tradeagg.csv"
+        with open(trade_agg_file_name, "w") as trade_agg_file:
+            trade_agg_file.write(",交易总量,价格获得量,成交均值,成交最小价格,成交最大价格\n")
+            for tag in tags:
+                plist = traderesult_dict[tag][1]
+                if len(plist) > 0:
+                    trade_agg_file.write("{},{},{},{},{},{}\n".format(
+                        tag, traderesult_dict[tag][0], len(plist),
+                        sum(plist) / len(plist), min(plist), max(plist)
+                    ))
+                else:
+                    trade_agg_file.write("{},{},{},{},{},{}\n".format(
+                        tag, traderesult_dict[tag][0], len(plist),
+                        "未知", "未知", "未知"
+                    ))
+
     # 卖方数据
     solders_detail_file_name = result_file_name + ".solders.csv"
     solders_info = []

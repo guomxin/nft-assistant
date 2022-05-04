@@ -1,6 +1,7 @@
 # coding: utf-8
 
 import sys
+import os
 
 from tpcommon import (trans, contract, idrange)
 
@@ -23,9 +24,24 @@ if __name__ == "__main__":
     result_file_name = "data/_transaction_conflux_{}_{}_result_{}.csv".format(
         nft_name, "+".join(tags), result_tag
     )
+
+    # 如果价格文件存在则加载
+    traceprice_dict = {}
+    tradeprice_file_name = "data/_crawl_{}_trade_{}.csv".format(
+        nft_name, result_tag
+    )
+    if os.path.exists(tradeprice_file_name):
+        with open(tradeprice_file_name) as tradeprice_file:
+            for line in tradeprice_file:
+                items = line.strip().split(",")
+                token_id = float(items[0])
+                plist = [float(p) for p in items[1].split(";")]
+                traceprice_dict[token_id] = plist
+    
     contract_address, contract_ABI = contract.get_contract_address_ABI_from_name(nft_name)
     trans.multi_analyze_transaction_logs(
         trans_file_name, 
+        traceprice_dict,
         contract_address, 
         contract_ABI,
         start_date_str,
