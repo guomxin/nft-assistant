@@ -66,6 +66,8 @@ if __name__ == "__main__":
             driver.get(SCAN_URL.format(p+1, keywords))
             products = driver.find_elements_by_css_selector(NFTLIST_SELECTOR)
             for product in products:
+                if len(product.text.strip()) == 0:
+                    continue
                 price_text = product.find_element_by_tag_name("p").text.strip()
                 if len(price_text) == 0:
                     continue
