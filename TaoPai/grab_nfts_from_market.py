@@ -15,7 +15,7 @@ BUY_SELECTOR = "#__next > div.text-white.px-4\.5.scrolling-touch.h-full.min-h-fu
 CONFIRM_SELECTOR = "#__next > div.transition-bottom.duration-500.ease-linear.fixed.w-full.overflow-scroll.top-0.bottom-0.-inset-x-0.z-50.text-white.text-left.box-border.flex.flex-col.justify-center.items-center.px-6.bg-modelAlphaBg.backdrop-filter.backdrop-blur > div > div.text-sm.px-4 > footer > div.flex.items-center.mt-2.mb-2.undefined > div"
 PAY_SELECTOR = "#__next > div.transition-bottom.duration-500.ease-linear.fixed.w-full.overflow-scroll.top-0.bottom-0.-inset-x-0.z-50.text-white.text-left.box-border.flex.flex-col.justify-center.items-center.px-6.bg-modelAlphaBg.backdrop-filter.backdrop-blur > div > div.text-sm.px-4 > footer > div:nth-child(2) > button"
 
-def grab_nft_from_market(driver, product_id):
+def buy_nft_from_page(driver, product_id, price):
     driver.get(PRODUCT_URL.format(product_id))
     
     # 等待加载，否则取不到内容
@@ -24,6 +24,7 @@ def grab_nft_from_market(driver, product_id):
     buy_btn = driver.find_element_by_css_selector(BUY_SELECTOR)
     desp = buy_btn.text.strip()
     if (desp == "购买"):
+        print("{}:{}:{}".format(product_id, price, desp))
         buy_btn.click()
         time.sleep(0.5)
         # 点击仔细阅读并同意框
@@ -35,7 +36,7 @@ def grab_nft_from_market(driver, product_id):
         pay_btn.click()
         time.sleep(1)
     else:
-        print("{}:{}".format(product_id, desp))
+        print("{}:{}:{}".format(product_id, price, desp))
 
 def get_id_from_href(href_value):
     key = "pid="
@@ -45,59 +46,112 @@ def get_id_from_href(href_value):
         if end_pos != -1:
             return int(href_value[start_pos+len(key):end_pos])
 
+Target_Dict_1 = {
+    "SR": 5.0,
+    "SSR": 15.0,
+    "UR": 30.0,
+    "XR": 100.0,
+}
+
+Target_Dict_2 = {
+    "美女菩萨-紫": 30.0,
+    "美女菩萨-金": 200.0,
+    "彩虹": 500.0,
+    "满金": 1000.0,
+}
+
+def grab_nft_from_market(keywords, min_price):
+    driver = webdriver.Chrome()
+    driver.implicitly_wait(20)
+
+    driver.get(SCAN_URL.format(1, keywords))
+    driver.add_cookie({'name':'refreshToken', 'value':'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTQxNDIzMjQsImlhdCI6MTY1MTU1MDMyNCwidXNlclVJRCI6eyJ1c2VySWQiOjU1MTh9fQ.ogfeGrbHxcHqG2VRkL1smxghyy-Fz6SEf1oTZg2fHBQ', 'path':'/'})
+    driver.add_cookie({'name':'accessToken', 'value':'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTE1NTA5MjQsImlhdCI6MTY1MTU1MDMyNCwidXNlclVJRCI6eyJ1c2VySWQiOjU1MTh9fQ.laDpmZHZ-D-bxvxfmDTce7WU7hCS9gXB7KDi-FnT9CQ', 'path':'/'})
+    driver.add_cookie({'name':'cert', 'value':'1', 'path':'/'})
+
+    # 获取页面数
+    """
+    driver.get(SCAN_URL.format(1, keywords))
+    page_cnt_ele = driver.find_element_by_css_selector(TOTALPAGE_SELECTOR)
+    page_cnt_text = page_cnt_ele.text.strip()
+    if len(page_cnt_text) != 0:
+        page_cnt = int(page_cnt_ele.text.strip())
+    else:
+        page_cnt = None
+    print("Total page count:{}.".format(page_cnt))
+    """
+
+    # 只扫描第一页
+    for p in range(1):
+        cur_plist = []
+        driver.get(SCAN_URL.format(p+1, keywords))
+        products = driver.find_elements_by_css_selector(NFTLIST_SELECTOR)
+        for product in products:
+            if len(product.text.strip()) == 0:
+                continue
+            price_text = product.find_element_by_tag_name("p").text.strip()
+            if len(price_text) == 0:
+                continue
+            price = float(price_text[1:])
+            p_link = product.find_element_by_tag_name("a")
+            href_value = p_link.get_attribute("href").strip()
+            product_id = get_id_from_href(href_value)
+            cur_plist.append((product_id, price))
+        
+        # 支付
+        for (product_id, price) in cur_plist:
+            if price <= min_price:
+                buy_nft_from_page(driver, product_id, price)
+    
+    driver.close()
+
+
+def grab_nft_from_market(target_dict):
+    driver = webdriver.Chrome()
+    driver.implicitly_wait(20)
+
+    driver.get(SCAN_URL.format(1, ""))
+    driver.add_cookie({'name':'refreshToken', 'value':'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTQxNDIzMjQsImlhdCI6MTY1MTU1MDMyNCwidXNlclVJRCI6eyJ1c2VySWQiOjU1MTh9fQ.ogfeGrbHxcHqG2VRkL1smxghyy-Fz6SEf1oTZg2fHBQ', 'path':'/'})
+    driver.add_cookie({'name':'accessToken', 'value':'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTE1NTA5MjQsImlhdCI6MTY1MTU1MDMyNCwidXNlclVJRCI6eyJ1c2VySWQiOjU1MTh9fQ.laDpmZHZ-D-bxvxfmDTce7WU7hCS9gXB7KDi-FnT9CQ', 'path':'/'})
+    driver.add_cookie({'name':'cert', 'value':'1', 'path':'/'})
+
+    # 只扫描第一页
+    for (keywords, min_price) in target_dict.items():
+        cur_plist = []
+        driver.get(SCAN_URL.format(1, keywords))
+        products = driver.find_elements_by_css_selector(NFTLIST_SELECTOR)
+        for product in products:
+            if len(product.text.strip()) == 0:
+                continue
+            price_text = product.find_element_by_tag_name("p").text.strip()
+            if len(price_text) == 0:
+                continue
+            price = float(price_text[1:])
+            p_link = product.find_element_by_tag_name("a")
+            href_value = p_link.get_attribute("href").strip()
+            product_id = get_id_from_href(href_value)
+            cur_plist.append((product_id, price))
+        
+        # 支付
+        for (product_id, price) in cur_plist:
+            if price <= min_price:
+                buy_nft_from_page(driver, product_id, price)
+    
+    driver.close()
+
 if __name__ == "__main__":
-    if len(sys.argv) < 3:
-        print("{} <keywords> <min_price>".format(sys.argv[0]))
+    if len(sys.argv) < 2:
+        print("{} <target_dict_id>.".format(sys.argv[0]))
         sys.exit(1)
-    keywords = sys.argv[1]
-    min_price = float(sys.argv[2])
+    select_id = int(sys.argv[1])
+    if select_id == 1:
+        target_dict = Target_Dict_1
+    elif select_id == 2:
+        target_dict = Target_Dict_2
 
     while True:
-        driver = webdriver.Chrome()
-        driver.implicitly_wait(20)
+        grab_nft_from_market(target_dict)
 
-        driver.get(SCAN_URL.format(1, keywords))
-        driver.add_cookie({'name':'refreshToken', 'value':'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTQxNDIzMjQsImlhdCI6MTY1MTU1MDMyNCwidXNlclVJRCI6eyJ1c2VySWQiOjU1MTh9fQ.ogfeGrbHxcHqG2VRkL1smxghyy-Fz6SEf1oTZg2fHBQ', 'path':'/'})
-        driver.add_cookie({'name':'accessToken', 'value':'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTE1NTA5MjQsImlhdCI6MTY1MTU1MDMyNCwidXNlclVJRCI6eyJ1c2VySWQiOjU1MTh9fQ.laDpmZHZ-D-bxvxfmDTce7WU7hCS9gXB7KDi-FnT9CQ', 'path':'/'})
-        driver.add_cookie({'name':'cert', 'value':'1', 'path':'/'})
-
-        product_dict = {}
-        # 获取页面数
-        driver.get(SCAN_URL.format(1, keywords))
-        page_cnt_ele = driver.find_element_by_css_selector(TOTALPAGE_SELECTOR)
-        page_cnt_text = page_cnt_ele.text.strip()
-        if len(page_cnt_text) != 0:
-            page_cnt = int(page_cnt_ele.text.strip())
-        else:
-            page_cnt = None
-        print("Total page count:{}.".format(page_cnt))
-
-        # 逐页扫描页面
-        # 只扫描第一页
-        for p in range(1):
-            cur_plist = []
-            driver.get(SCAN_URL.format(p+1, keywords))
-            products = driver.find_elements_by_css_selector(NFTLIST_SELECTOR)
-            for product in products:
-                if len(product.text.strip()) == 0:
-                    continue
-                price_text = product.find_element_by_tag_name("p").text.strip()
-                if len(price_text) == 0:
-                    continue
-                price = float(price_text[1:])
-                p_link = product.find_element_by_tag_name("a")
-                href_value = p_link.get_attribute("href").strip()
-                product_id = get_id_from_href(href_value)
-                cur_plist.append((product_id, price))
-            
-            # 支付
-            for (product_id, price) in cur_plist:
-                if price <= min_price:
-                    grab_nft_from_market(driver, product_id)
-        
-        driver.close()
-
-        time.sleep(5)
         # 判断时间是否超过交易时间
         cur_time = datetime.now()
         if (cur_time.hour >= 22) and (cur_time.minute >= 1):
