@@ -25,7 +25,7 @@ def grab_nft_from_market(driver, product_id):
     desp = buy_btn.text.strip()
     if (desp == "购买"):
         buy_btn.click()
-        time.sleep(1)
+        time.sleep(0.5)
         # 点击仔细阅读并同意框
         confrim_btn = driver.find_element_by_css_selector(CONFIRM_SELECTOR)
         confrim_btn.click()
@@ -65,7 +65,11 @@ if __name__ == "__main__":
         # 获取页面数
         driver.get(SCAN_URL.format(1, keywords))
         page_cnt_ele = driver.find_element_by_css_selector(TOTALPAGE_SELECTOR)
-        page_cnt = int(page_cnt_ele.text.strip())
+        page_cnt_text = page_cnt_ele.text.strip()
+        if len(page_cnt_text) != 0:
+            page_cnt = int(page_cnt_ele.text.strip())
+        else:
+            page_cnt = None
         print("Total page count:{}.".format(page_cnt))
 
         # 逐页扫描页面
@@ -86,14 +90,15 @@ if __name__ == "__main__":
                 product_id = get_id_from_href(href_value)
                 cur_plist.append((product_id, price))
             
-            # 获取价格
+            # 支付
             for (product_id, price) in cur_plist:
                 if price <= min_price:
                     grab_nft_from_market(driver, product_id)
         
         driver.close()
 
+        time.sleep(5)
         # 判断时间是否超过交易时间
         cur_time = datetime.now()
-        if (cur_time.hour >= 15) and (cur_time.minute >= 1):
+        if (cur_time.hour >= 22) and (cur_time.minute >= 1):
             break
