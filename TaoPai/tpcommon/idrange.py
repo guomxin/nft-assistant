@@ -42,6 +42,8 @@ def get_idrangedict_by_nftname(nft_name):
         return HangTianTanWei2_IdRange2Name
     elif nft_name == "changgexing":
         return ChangGeXing_IdRange2Name
+    elif nft_name == "hutoufeitian":
+        return HuTouFeiTian_IdRange2Name
     else:
         return None
 
@@ -49,6 +51,14 @@ def get_name_by_tokenid(idrange2name, token_id):
     for ((min_tid, max_tid), name) in idrange2name.items():
         if (token_id >= min_tid) and (token_id <= max_tid):
             return name
+
+HuTouFeiTian_IdRange2Name = {
+    (40001, 40100): "虎头飞天之福虎生威",
+    (40101, 40200): "虎头飞天之柿柿如意",
+    (40201, 40300): "虎头飞天之如虎添億",
+    (40301, 40400): "虎头飞天之好事花生",
+    (40401, 40500): "虎头飞天之萌虎迎春",
+}
 
 ChangGeXing_IdRange2Name = {
     # R
@@ -198,7 +208,8 @@ HuoXingTanCe_IdRange2Name = {
     (21952,22669): '神州',
     (22670,23387): '风云',
     (23388,24105): '长征',
-    (24106,24823): '北斗'
+    (24106,24823): '北斗',
+    (26001,26515): '3D祝融火星车',
 }
 
 FeiTianPiBa_IdRange2Name = {

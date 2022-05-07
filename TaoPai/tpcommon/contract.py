@@ -15,7 +15,7 @@ def get_contract_address_ABI_from_name(name):
         return (ATSJ_Contract_Address, TaoPai_ABI)
     elif name == "chaohu":
         return (COCAFE_Contract_Address, TaoPai_ABI)
-    elif name == "dunhuang":
+    elif name == "dunhuang" or name == "hutoufeitian":
         return (SDQH_Contract_Address, TaoPai_ABI)
     elif name == "lt":
         return (LT_Contract_Address, TaoPai_ABI)
