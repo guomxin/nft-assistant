@@ -10,6 +10,7 @@ python diginfo_from_details_conflux.py atsj 1 data/_details_conflux_atsj_result_
 python diginfo_from_details_conflux.py atsj 1 data/_details_conflux_atsj_result_%1.csv 301 400 LeiShi %1
 python diginfo_from_details_conflux.py atsj 1 data/_details_conflux_atsj_result_%1.csv 201 300 Jin %1
 python diginfo_from_details_conflux.py atsj 1 data/_details_conflux_atsj_result_%1.csv 101 200 JiaDeLuoSi %1
+python diginfo_from_details_conflux.py atsj 1 data/_details_conflux_atsj_result_%1.csv 101 38800 ALL %1
 
 rem 3. dig info for fullset
 python diginfo_from_details_conflux.py atsj 2 data/_details_conflux_atsj_result_%1.csv 101,38800 1 ALL %1
