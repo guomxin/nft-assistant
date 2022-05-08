@@ -14,6 +14,7 @@ if __name__ == "__main__":
     nft_name = sys.argv[1]
     min_tid, max_tid = idrange.get_range_by_nftname(nft_name)
     print("min_token_id:{}, max_token_id:{}.".format(min_tid, max_tid))
+    ranges = idrange.get_ranges_by_nftname(nft_name)
     detail_tag = sys.argv[2]
     dump_file_name = "data/_details_conflux_{}_result_{}.csv".format(
         nft_name, detail_tag
@@ -23,4 +24,4 @@ if __name__ == "__main__":
         contract_address, 
         contract_ABI, 
         dump_file_name,
-        min_tid, max_tid)
+        ranges)

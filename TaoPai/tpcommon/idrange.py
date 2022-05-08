@@ -1,5 +1,12 @@
 # coding: utf-8
 
+def get_ranges_by_nftname(nft_name):
+    idrange_dict = get_idrangedict_by_nftname(nft_name)
+    ranges = []
+    for (low, high) in idrange_dict.keys():
+        ranges.append((low, high))
+    return ranges
+
 def get_range_by_nftname(nft_name):
     idrange_dict = get_idrangedict_by_nftname(nft_name)
     min_tid = None

@@ -48,8 +48,14 @@ def get_base32addr_from_hexaddr(hexaddr):
     addr = Address.create_from_hex_address(hexaddr, MainNet_NetworkId)
     return addr.address
 
+def token_id_in_ranges(token_id, ranges):
+    for (min_tid, max_tid) in ranges:
+        if (token_id >= min_tid) and (token_id <= max_tid):
+            return True
+    return False
+
 MainNet_NetworkId = 1029
-def dump_contract_details(contract_address, contract_ABI, dump_file_name, min_tid=-1, max_tid=-1, verbose=True):
+def dump_contract_details(contract_address, contract_ABI, dump_file_name, ranges, verbose=True):
     provider = HTTPProvider('https://main.confluxrpc.com')
     c = Conflux(provider)
 
@@ -58,9 +64,7 @@ def dump_contract_details(contract_address, contract_ABI, dump_file_name, min_ti
     _, token_ids = c.call_contract_method(contract_address, contract_ABI, 'tokens', 0, token_cnt)
     target_token_cnt = 0
     for token_id in token_ids:
-        if (min_tid != -1) and token_id < min_tid:
-            continue
-        if (max_tid != -1) and token_id > max_tid:
+        if not token_id_in_ranges(token_id, ranges):
             continue
         owner = c.call_contract_method(contract_address, contract_ABI, 'ownerOf', token_id)
         owner = get_base32addr_from_hexaddr(owner)
