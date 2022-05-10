@@ -36,7 +36,8 @@ if __name__ == "__main__":
 
         min_counts = [int(s.strip()) for s in min_counts_str.split(";")]
         ranges = [[int(item) for item in range_str.split(",")] for range_str in ranges_str.split(";")]
-        detaildigger.dig_fullsetinfo_from_details_multi(nft_name, details_file_name, ranges, min_counts, dump_file_name)
+        detaildigger.dig_fullsetinfo_from_details_multi_adv(nft_name, details_file_name, ranges, min_counts, dump_file_name)
+        #detaildigger.dig_fullsetinfo_from_details_multi(nft_name, details_file_name, ranges, min_counts, dump_file_name)
         #detaildigger.dig_fullsetinfo_from_details(nft_name, details_file_name, min_tids, max_tids, dump_file_name)
     elif func_id == 3:
         # stat nft count in circulation
