@@ -12,21 +12,28 @@ INPUT_SELECTOR = "#__next > div > div.flex > input"
 QUERY_SELECTOR = "#__next > div > div.flex > button"
 RANKINFO_SELECTOR = "#__next > div > div.text-gray-50 > div.text-base.my-6.pl-4 > p:nth-child(2)"
 
+NORANK = -1
+
 def get_rank(rankinfo):
     # 排名: 9396 / 9628
     pos1 = rankinfo.find(':')
     if pos1 == -1:
-        return
+        return NORANK
     pos2 = rankinfo.find('/', pos1+1)
     if pos2 == -1:
-        return
+        return NORANK
     return int(rankinfo[pos1+1:pos2].strip())
 
-def get_image_uri(token_id):
-    resp = requests.get(DETAIL_URL.format(token_id))
-    resp_json = resp.json()
-    resp.close()
-    return resp_json['data']['imageUri']
+def get_image_uri(session,token_id):
+    while True:
+        try:
+            resp = session.get(DETAIL_URL.format(token_id))
+            resp_json = resp.json()
+        except Exception as e:
+            print("fetch {} url error, try again...".format(token_id))
+            time.sleep(1)
+            continue
+        return resp_json['data']['imageUri']
 
 if __name__ == "__main__":
     
@@ -45,6 +52,7 @@ if __name__ == "__main__":
     query_ele = driver.find_element_by_css_selector(QUERY_SELECTOR)
     rankinfo_ele = driver.find_element_by_css_selector(RANKINFO_SELECTOR)
 
+    session = requests.Session()
     # get rank and imageuri
     token_info_list = []
     token_cnt = 0
@@ -52,10 +60,13 @@ if __name__ == "__main__":
         input_ele.clear()
         input_ele.send_keys(str(token_id))
         query_ele.click()
+        time.sleep(0.2)
 
         rankinfo = rankinfo_ele.text.strip()
         rank = get_rank(rankinfo)
-        image_uri = get_image_uri(token_id)
+        if rank == NORANK:
+            print("{} no rank info.".format(token_id))
+        image_uri = get_image_uri(session, token_id)
 
         token_info_list.append((rank, token_id, image_uri))
         token_cnt += 1
@@ -63,13 +74,21 @@ if __name__ == "__main__":
             print("{} tokens.".format(token_cnt))
         
         time.sleep(0.3)
+    print("{} tokens in total.".format(token_cnt))
+    session.close()
     driver.close()
     
+    with open("data/_extract_kaozaifriends_ranks.csv", "w") as result_file:
+        for (rank, token_id, image_uri) in token_info_list:
+            result_file.write("{},{},{}\n".format(
+                rank, token_id, image_uri
+            ))
+
     # sort
     token_info_list.sort(key=lambda info: info[0])
 
     # dump files
-    with open("data/_extract_kaozaifriends_ranks.csv", "w") as result_file:
+    with open("data/_extract_kaozaifriends_ranks_sorted.csv", "w") as result_file:
         for (rank, token_id, image_uri) in token_info_list:
             result_file.write("{},{},{}\n".format(
                 rank, token_id, image_uri
