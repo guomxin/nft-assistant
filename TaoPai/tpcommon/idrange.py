@@ -51,6 +51,8 @@ def get_idrangedict_by_nftname(nft_name):
         return ChangGeXing_IdRange2Name
     elif nft_name == "hutoufeitian":
         return HuTouFeiTian_IdRange2Name
+    elif nft_name == "yujunqiasi":
+        return YuJunQiaSi_IdRange2Name
     else:
         return None
 
