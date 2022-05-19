@@ -1,4 +1,5 @@
 # coding: utf-8
+import time
 
 from conflux import (
     Conflux,
@@ -77,6 +78,9 @@ def dump_contract_details(contract_address, contract_ABI, dump_file_name, ranges
         if verbose:
             if target_token_cnt % 500 == 0:
                 print("{} tokens scanned.".format(target_token_cnt))
+        
+        # for too many requests error
+        time.sleep(0.2)
 
     if verbose:
         print("{} tokens, {} owners.".format(target_token_cnt, len(owner2tokens)))
