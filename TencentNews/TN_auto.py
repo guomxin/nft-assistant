@@ -1,6 +1,7 @@
 # coding: utf-8
 #
 import uiautomator2 as u2
+import time
 
 # 滚动到第一行图片上沿到屏幕顶端
 NFT_1_1 = (0.5, 0.3)
@@ -21,10 +22,19 @@ while True:
         btn_pay_failed.click()
     """
     btn_return = d(resourceId="com.tencent.news:id/title_bar_btn_back")
+    # 等待页面加载
     while not btn_return.exists:
         pass
+    # 等待购买按钮加载
+    time.sleep(0.5)
     d.click(*BUY)
+    # 等待付款对话框弹出
+    time.sleep(3)
 
+    # 付款对话框弹出后，返回按钮不出现，程序暂停
+    btn_return = d(resourceId="com.tencent.news:id/title_bar_btn_back")
+    while not btn_return.exists:
+        pass
     """
     btn_pay_failed = d(resourceId="com.tencent.bamboo:id/tv_left_text")
     if btn_pay_failed.exists:
