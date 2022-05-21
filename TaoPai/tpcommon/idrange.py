@@ -218,7 +218,8 @@ ZhongGuoHangTian_IdRange2Name = {
 KaoZaiFriends_IdRange2Name = {
     (300001,300012): '十二生肖款',
     (200001,200360): '金色款',
-    (100001,109628): '普通款'
+    (100001,109628): '普通款',
+    (2001,2052): '520典藏版',
 }
 
 HuoXingTanCe_IdRange2Name = {
