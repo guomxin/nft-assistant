@@ -58,14 +58,13 @@ Target_Dict_1 = {
 }
 
 Target_Dict_2 = {
+    "美女菩萨": 10.0,
     "美女菩萨-紫": 30.0,
     "美女菩萨-金": 200.0,
     "彩虹": 500.0,
     "满金": 1000.0,
 
     "重启柜子": 100.0,
-
-    "ZR-1": 100.0,
 }
 
 def grab_nft_from_market(keywords, min_price):
