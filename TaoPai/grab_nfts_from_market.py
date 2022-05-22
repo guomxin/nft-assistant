@@ -49,8 +49,8 @@ def get_id_from_href(href_value):
             return int(href_value[start_pos+len(key):end_pos])
 
 Target_Dict_1 = {
-    "SR": 5.0,
-    "SSR": 15.0,
+    "SR-": 5.0,
+    "SSR-": 15.0,
     "UR": 30.0,
     "XR": 100.0,
 
@@ -162,5 +162,5 @@ if __name__ == "__main__":
 
         # 判断时间是否超过交易时间
         cur_time = datetime.now()
-        if (cur_time.hour >= 22) and (cur_time.minute >= 1):
+        if (cur_time.hour >= 15) and (cur_time.minute >= 1):
             break
