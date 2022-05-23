@@ -4,6 +4,7 @@ from selenium import webdriver
 from datetime import datetime
 import sys
 import time
+import random
 
 SCAN_URL = "https://nft.taopainft.com/trade?type=bb86903952ad5df5f5016c8d3d4d895ae892ee89&p={}&s=1&k={}&pid=0&vid=0"
 PRODUCT_URL = "https://nft.taopainft.com/trade/detail?pid={}&type=bb86903952ad5df5f5016c8d3d4d895ae892ee89"
@@ -164,3 +165,6 @@ if __name__ == "__main__":
         cur_time = datetime.now()
         if (cur_time.hour >= 15) and (cur_time.minute >= 1):
             break
+
+        # 等待0-5s的随机时间
+        time.sleep(random.random()*5)
