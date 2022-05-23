@@ -5,6 +5,9 @@ from datetime import datetime
 import sys
 import time
 import random
+from datetime import datetime
+
+from wxauto import WeChat
 
 SCAN_URL = "https://nft.taopainft.com/trade?type=bb86903952ad5df5f5016c8d3d4d895ae892ee89&p={}&s=1&k={}&pid=0&vid=0"
 PRODUCT_URL = "https://nft.taopainft.com/trade/detail?pid={}&type=bb86903952ad5df5f5016c8d3d4d895ae892ee89"
@@ -17,6 +20,16 @@ BUY_SELECTOR = "#__next > div.text-white.px-4\.5.scrolling-touch.h-full.min-h-fu
 #PAY_SELECTOR = "#__next > div.transition-bottom.duration-500.ease-linear.fixed.w-full.overflow-scroll.top-0.bottom-0.-inset-x-0.z-50.text-white.text-left.box-border.flex.flex-col.justify-center.items-center.px-6.bg-modelAlphaBg.backdrop-filter.backdrop-blur > div > div.text-sm.px-4 > footer > div:nth-child(2) > button"
 CONFIRM_SELECTOR =  "#__next > div.text-white.px-4\.5.scrolling-touch.h-full.min-h-full > div > main > div:nth-child(3) > div.transition-bottom.duration-500.ease-linear.fixed.w-full.overflow-scroll.top-0.bottom-0.-inset-x-0.z-50.text-white.text-left.box-border.flex.flex-col.justify-center.items-center.px-6.bg-modelAlphaBg.backdrop-filter.backdrop-blur > div > div.text-sm.px-4 > footer > div.flex.mt-2.mb-2.undefined > div.relative.w-3.h-3.flex-shrink-0.mt-px"
 PAY_SELECTOR = "#__next > div.text-white.px-4\.5.scrolling-touch.h-full.min-h-full > div > main > div:nth-child(3) > div.transition-bottom.duration-500.ease-linear.fixed.w-full.overflow-scroll.top-0.bottom-0.-inset-x-0.z-50.text-white.text-left.box-border.flex.flex-col.justify-center.items-center.px-6.bg-modelAlphaBg.backdrop-filter.backdrop-blur > div > div.text-sm.px-4 > footer > div:nth-child(3) > button"
+
+WX = WeChat()
+
+def send_wx_msg(msg):
+    try:
+        WX.ChatWith("shark")
+        WX.SendMsg(msg)
+    except:
+        pass
+
 def buy_nft_from_page(driver, product_id, price):
     driver.get(PRODUCT_URL.format(product_id))
     
@@ -26,7 +39,10 @@ def buy_nft_from_page(driver, product_id, price):
     buy_btn = driver.find_element_by_css_selector(BUY_SELECTOR)
     desp = buy_btn.text.strip()
     if (desp == "购买"):
-        print("{}:{}:{}".format(product_id, price, desp))
+        msg = "{} {}:{}:{}".format(datetime.now(), product_id, price, desp)
+        print(msg)
+        send_wx_msg(msg)
+
         buy_btn.click()
         time.sleep(0.5)
         # 点击仔细阅读并同意框
@@ -38,7 +54,9 @@ def buy_nft_from_page(driver, product_id, price):
         pay_btn.click()
         time.sleep(1)
     else:
-        print("{}:{}:{}".format(product_id, price, desp))
+        msg = "{} {}:{}:{}".format(datetime.now(), product_id, price, desp)        
+        print(msg)
+        send_wx_msg(msg)
 
 def get_id_from_href(href_value):
     key = "pid="
