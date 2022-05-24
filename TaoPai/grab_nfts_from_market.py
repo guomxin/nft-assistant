@@ -44,7 +44,7 @@ def buy_nft_from_page(driver, product_id, price):
         send_wx_msg(msg)
 
         buy_btn.click()
-        time.sleep(0.5)
+        time.sleep(1)
         # 点击仔细阅读并同意框
         confrim_btn = driver.find_element_by_css_selector(CONFIRM_SELECTOR)
         confrim_btn.click()
@@ -189,7 +189,10 @@ if __name__ == "__main__":
         target_dict = Target_Dict_2
 
     while True:
-        grab_nft_from_market(target_dict)
+        try:
+            grab_nft_from_market(target_dict)
+        except Exception as e:
+            print(e)
 
         # 判断时间是否超过交易时间
         cur_time = datetime.now()
