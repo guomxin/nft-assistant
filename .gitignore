@@ -3,3 +3,4 @@
 *.bat
 __pycache__
 *.pyc
+*.png
