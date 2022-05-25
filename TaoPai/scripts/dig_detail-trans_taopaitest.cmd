@@ -10,7 +10,7 @@ python diginfo_from_details_conflux.py taopaitest 1 data/_details_conflux_taopai
 python diginfo_from_details_conflux.py taopaitest 1 data/_details_conflux_taopaitest_result_%1.csv 20001 20127 GONGCE %1
 
 rem 3. dig info for fullset
-python diginfo_from_details_conflux.py taopaitest 2 data/_details_conflux_taopaitest_result_%1.csv 10001,20127 1 ALL %1
+rem python diginfo_from_details_conflux.py taopaitest 2 data/_details_conflux_taopaitest_result_%1.csv 10001,20127 1 ALL %1
 
 rem 4. dig count in circulation
 rem python diginfo_from_details_conflux.py taopaitest 3 data/_details_conflux_taopaitest_result_%1.csv %1
