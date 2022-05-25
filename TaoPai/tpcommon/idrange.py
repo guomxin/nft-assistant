@@ -53,6 +53,8 @@ def get_idrangedict_by_nftname(nft_name):
         return HuTouFeiTian_IdRange2Name
     elif nft_name == "yujunqiasi":
         return YuJunQiaSi_IdRange2Name
+    elif nft_name == "taopai2022":
+        return TaoPai2022_IdRange2Name
     else:
         return None
 
@@ -60,6 +62,31 @@ def get_name_by_tokenid(idrange2name, token_id):
     for ((min_tid, max_tid), name) in idrange2name.items():
         if (token_id >= min_tid) and (token_id <= max_tid):
             return name
+
+TaoPai2022_IdRange2Name = {
+    (30001,30100): '颜值爆表',
+    (30101,30200): '狂吃不胖',
+    (30201,30300): '脱发拜拜',
+    (30301,30400): '升职加薪',
+    (30401,30500): '财务自由',
+    (30501,30600): '一夜暴富',
+    (30601,30700): '颜值在线',
+    (30701,30800): '大吉大利',
+    (30801,30900): '锦鲤附体',
+    (30901,31000): '睡到自然醒',
+    (31001,31100): '别墅靠着海',
+    (31101,31200): '要自由',
+    (31201,31300): '去旅行吧',
+    (31301,31400): '多喝热水',
+    (31401,31500): '记得铲屎',
+    (31501,31600): '爱自己',
+    (31601,31700): '世界和平',
+    (31701,31800): '不空虚',
+    (31801,31900): '新生',
+    (31901,32000): '涨涨涨',
+    (32001,32011): '日进斗金',
+    (32012,32022): '桃花旺旺'
+}
 
 HuTouFeiTian_IdRange2Name = {
     (40001, 40100): "虎头飞天之福虎生威",
