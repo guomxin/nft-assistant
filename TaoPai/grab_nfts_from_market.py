@@ -39,10 +39,6 @@ def buy_nft_from_page(driver, product_id, price):
     buy_btn = driver.find_element_by_css_selector(BUY_SELECTOR)
     desp = buy_btn.text.strip()
     if (desp == "购买"):
-        msg = "{} {}:{}:{}".format(datetime.now(), product_id, price, desp)
-        print(msg)
-        send_wx_msg(msg)
-
         buy_btn.click()
         time.sleep(1)
         # 点击仔细阅读并同意框
@@ -53,6 +49,10 @@ def buy_nft_from_page(driver, product_id, price):
         pay_btn = driver.find_element_by_css_selector(PAY_SELECTOR)
         pay_btn.click()
         time.sleep(1)
+
+        msg = "{} {}:{}:{}".format(datetime.now(), product_id, price, desp)
+        print(msg)
+        send_wx_msg(msg)
     else:
         msg = "{} {}:{}:{}".format(datetime.now(), product_id, price, desp)        
         print(msg)
