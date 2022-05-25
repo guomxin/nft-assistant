@@ -55,6 +55,8 @@ def get_idrangedict_by_nftname(nft_name):
         return YuJunQiaSi_IdRange2Name
     elif nft_name == "taopai2022":
         return TaoPai2022_IdRange2Name
+    elif nft_name == "taopaitest":
+        return Test_IdRange2Name
     else:
         return None
 
@@ -62,6 +64,11 @@ def get_name_by_tokenid(idrange2name, token_id):
     for ((min_tid, max_tid), name) in idrange2name.items():
         if (token_id >= min_tid) and (token_id <= max_tid):
             return name
+
+Test_IdRange2Name = {
+    (10001,10999): "内测纪念",
+    (20001,20127): "公测纪念",
+}
 
 TaoPai2022_IdRange2Name = {
     (30001,30100): '颜值爆表',
