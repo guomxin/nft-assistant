@@ -50,6 +50,8 @@ def get_contract_address_ABI_from_name(name):
         return (TaopaiNFT_Contract_Address, TaoPai_ABI)
     elif name == "taopaichuangshi":
         return (TaopaiNFT_Contract_Address, TaoPai_ABI)
+    elif name == "baibianxiong":
+        return (BOOOM_Contract_Address, TaoPai_ABI)
     else:
         return (None, None)
 
@@ -142,6 +144,7 @@ def dump_contract_tokenid2owner(contract_address, contract_ABI, dump_file_name, 
         ))
     result_file.close()
 
+BOOOM_Contract_Address = "cfx:acaxpets034fjcp73fj5x1eveut913a752jtbkc3as"
 ATSJ_Contract_Address ="cfx:acb7hr0ecyatev5gzjnys9mt31xxa22hzuzb3tprps"
 LT_Contract_Address = "cfx:acaha2pz5j1g6b0fbv9xazv5umm587xucjcdu83b02"
 SDQH_Contract_Address = "cfx:acff8dvjv6pys2ws19dhx753h1h00sum6yhu3m188h"
