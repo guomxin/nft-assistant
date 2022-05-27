@@ -66,6 +66,11 @@ def dig_fullsetinfo_from_details_multi_adv(nft_name, details_file_name, ranges, 
         range_index = get_range_index(t1, t2, ranges)
         if range_index == None:
             continue
+
+        # 如果min_counts长度少于ranges，最后一个min_count重复
+        if range_index >= len(min_counts):
+            range_index = len(min_counts) - 1
+        
         if name in name2mincounts:
             assert name2mincounts[name] == min_counts[range_index], "{} min counts inconsistent!".format(name)
         name2mincounts[name] = min_counts[range_index]
