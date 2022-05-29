@@ -23,7 +23,7 @@ python diginfo_from_details_conflux.py dunhuang 1 data/_details_conflux_dunhuang
 python diginfo_from_details_conflux.py dunhuang 1 data/_details_conflux_dunhuang_result_%1.csv 38001 40000 PURPLE %1
 
 rem 4. dig full-set info
-python diginfo_from_details_conflux.py dunhuang 2 data/_details_conflux_dunhuang_result_%1.csv 10001,40000 1 ALL %1
+rem python diginfo_from_details_conflux.py dunhuang 2 data/_details_conflux_dunhuang_result_%1.csv 10001,40000 1 ALL %1
 
 rem 5. dig count in circulation
 python diginfo_from_details_conflux.py dunhuang 3 data/_details_conflux_dunhuang_result_%1.csv %1
