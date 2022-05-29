@@ -9,7 +9,7 @@ from datetime import datetime
 
 from wxauto import WeChat
 
-SCAN_URL = "https://nft.taopainft.com/trade?type=bb86903952ad5df5f5016c8d3d4d895ae892ee89&p={}&s=1&k={}&pid={}&vid=0"
+SCAN_URL = "https://nft.taopainft.com/trade?type=bb86903952ad5df5f5016c8d3d4d895ae892ee89&p={}&s=1&k={}&pid={}&vid={}"
 PRODUCT_URL = "https://nft.taopainft.com/trade/detail?pid={}&type=bb86903952ad5df5f5016c8d3d4d895ae892ee89"
 
 TOTALPAGE_SELECTOR = "#__next > div.text-white.px-4\.5.scrolling-touch.h-full.min-h-full > div > main > div.h-13.flex.items-center.justify-end.mb-3 > div:nth-child(2) > ul > li:nth-child(6)"
@@ -67,41 +67,45 @@ def get_id_from_href(href_value):
             return int(href_value[start_pos+len(key):end_pos])
 
 Target_Dict_1 = {
+    # 淘派官方
+    "": (2,3,150), # 乐淘淘
+    "": (2,5,300), # 光伏
+    "内测": (0,0,1000),
+    "公测": (0,0,1000),
+
     # 凹凸世界
-    "SR-": (34,5.0),
-    "SSR-": (34,10.0),
-    "UR": (34,30.0),
-    "XR": (34,90.0),
+    #"SR-": (34,0,5.0),
+    "SSR-": (34,0,10.0),
+    "UR": (34,0,30.0),
+    "XR": (34,0,90.0),
 
     # 潮虎
-    "稀有": (0,100.0),
-    "史诗": (0,300.0),
-    "传说": (0,500.0),
-
-    # 中国航天
-    "中国航天日绿色版": (0,50),
-    "祝融周岁纪念紫色版": (0,80),
+    "稀有": (0,0,50.0),
+    "史诗": (0,0,300.0),
+    "传说": (0,0,500.0),
 }
 
 Target_Dict_2 = {
     # 敦煌菩萨
-    "美女菩萨": (0,8.0),
-    "美女菩萨-紫": (0,30.0),
-    "美女菩萨-金": (0,150.0),
-    "彩虹": (0,500.0),
-    "满金": (0,1000.0),
+    # "美女菩萨": (0,0,8.0),
+    "美女菩萨-紫": (0,0,30.0),
+    "美女菩萨-金": (0,0,100.0),
+    "彩虹": (0,0,300.0),
+    "满金": (0,0,800.0),
 
     # 敦煌乐舞
-    "乐舞伎楽图": (0,300),
+    "乐舞伎楽图": (0,0,300),
 
     # UXON
-    "重启柜子": (0,100.0),
+    "重启柜子": (0,0,100.0),
 
     # 烤仔的朋友
-    "烤仔的朋友": (0,80),
+    "烤仔的朋友": (0,0,80),
 
     # 中国航天
-    "中国航天日金色版": (0,500),
+    #"中国航天日金色版": (0,0,500),
+    "中国航天日绿色版": (0,0,50),
+    "祝融周岁纪念紫色版": (0,0,80),
 }
 
 def grab_nft_from_market(keywords, min_price):
@@ -153,15 +157,15 @@ def grab_nft_from_market(target_dict):
     driver = webdriver.Chrome()
     driver.implicitly_wait(20)
 
-    driver.get(SCAN_URL.format(1, "", 0))
+    driver.get(SCAN_URL.format(1, "", 0, 0))
     driver.add_cookie({'name':'refreshToken', 'value':'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTU3NzUyMTEsImlhdCI6MTY1MzE4MzIxMSwidXNlclVJRCI6eyJ1c2VySWQiOjEyMDQyfX0.5xoBKU1YsDWBPMd3PQG4ba8T0onhMDFWnAHw4Gns7MU', 'path':'/'})
     driver.add_cookie({'name':'accessToken', 'value':'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTMxODM4MTEsImlhdCI6MTY1MzE4MzIxMSwidXNlclVJRCI6eyJ1c2VySWQiOjEyMDQyfX0.OCTI4aGEIVZFTCZEA8OWnwZNR65UAi2EwlmxcoNllj4', 'path':'/'})
     driver.add_cookie({'name':'cert', 'value':'1', 'path':'/'})
 
     # 只扫描第一页
-    for (keywords, (pid,min_price)) in target_dict.items():
+    for (keywords, (pid,vid,min_price)) in target_dict.items():
         cur_plist = []
-        driver.get(SCAN_URL.format(1, keywords, pid))
+        driver.get(SCAN_URL.format(1, keywords, pid, vid))
         products = driver.find_elements_by_css_selector(NFTLIST_SELECTOR)
         for product in products:
             if len(product.text.strip()) == 0:
