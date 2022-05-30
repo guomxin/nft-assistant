@@ -153,6 +153,8 @@ def grab_nft_from_market(keywords, min_price):
     
     driver.close()
 
+INTERVAL_BETWEEN_PAGES = 1 # 1s
+
 def grab_nft_from_market(target_dict):
     driver = webdriver.Chrome()
     driver.implicitly_wait(20)
@@ -186,6 +188,8 @@ def grab_nft_from_market(target_dict):
                 if price <= min_price:
                     buy_nft_from_page(driver, product_id, price, keywords)
 
+            # 避免访问次数过于频繁而重登录
+            time.sleep(INTERVAL_BETWEEN_PAGES)
             
     driver.close()
 
