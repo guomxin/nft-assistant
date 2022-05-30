@@ -30,7 +30,7 @@ def send_wx_msg(msg):
     except:
         pass
 
-def buy_nft_from_page(driver, product_id, price):
+def buy_nft_from_page(driver, product_id, price, keywords):
     driver.get(PRODUCT_URL.format(product_id))
     
     # 等待加载，否则取不到内容
@@ -50,11 +50,11 @@ def buy_nft_from_page(driver, product_id, price):
         pay_btn.click()
         time.sleep(1)
 
-        msg = "{} {}:{}:{}".format(datetime.now(), product_id, price, desp)
+        msg = "{} {}:{}:{}".format(datetime.now(), keywords, price, desp)
         print(msg)
         send_wx_msg(msg)
     else:
-        msg = "{} {}:{}:{}".format(datetime.now(), product_id, price, desp)        
+        msg = "{} {}:{}:{}".format(datetime.now(), keywords, price, desp)        
         print(msg)
         send_wx_msg(msg)
 
@@ -162,27 +162,29 @@ def grab_nft_from_market(target_dict):
     driver.add_cookie({'name':'accessToken', 'value':'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTMxODM4MTEsImlhdCI6MTY1MzE4MzIxMSwidXNlclVJRCI6eyJ1c2VySWQiOjEyMDQyfX0.OCTI4aGEIVZFTCZEA8OWnwZNR65UAi2EwlmxcoNllj4', 'path':'/'})
     driver.add_cookie({'name':'cert', 'value':'1', 'path':'/'})
 
-    # 只扫描第一页
-    for (keywords, (pid,vid,min_price)) in target_dict.items():
-        cur_plist = []
-        driver.get(SCAN_URL.format(1, keywords, pid, vid))
-        products = driver.find_elements_by_css_selector(NFTLIST_SELECTOR)
-        for product in products:
-            if len(product.text.strip()) == 0:
-                continue
-            price_text = product.find_element_by_tag_name("p").text.strip()
-            if len(price_text) == 0:
-                continue
-            price = float(price_text[1:])
-            p_link = product.find_element_by_tag_name("a")
-            href_value = p_link.get_attribute("href").strip()
-            product_id = get_id_from_href(href_value)
-            cur_plist.append((product_id, price))
-        
-        # 支付
-        for (product_id, price) in cur_plist:
-            if price <= min_price:
-                buy_nft_from_page(driver, product_id, price)
+    # 避免重复登录，循环500次
+    for _ in range(500):
+        # 只扫描第一页
+        for (keywords, (pid,vid,min_price)) in target_dict.items():
+            cur_plist = []
+            driver.get(SCAN_URL.format(1, keywords, pid, vid))
+            products = driver.find_elements_by_css_selector(NFTLIST_SELECTOR)
+            for product in products:
+                if len(product.text.strip()) == 0:
+                    continue
+                price_text = product.find_element_by_tag_name("p").text.strip()
+                if len(price_text) == 0:
+                    continue
+                price = float(price_text[1:])
+                p_link = product.find_element_by_tag_name("a")
+                href_value = p_link.get_attribute("href").strip()
+                product_id = get_id_from_href(href_value)
+                cur_plist.append((product_id, price, keywords))
+            
+            # 支付
+            for (product_id, price, keywords) in cur_plist:
+                if price <= min_price:
+                    buy_nft_from_page(driver, product_id, price, keywords)
     
     driver.close()
 
