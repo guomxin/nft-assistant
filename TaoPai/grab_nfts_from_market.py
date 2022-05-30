@@ -153,7 +153,7 @@ def grab_nft_from_market(keywords, min_price):
     
     driver.close()
 
-INTERVAL_BETWEEN_PAGES = 1 # 1s
+INTERVAL_BETWEEN_PAGES = 0.1 # 1s
 
 def grab_nft_from_market(target_dict):
     driver = webdriver.Chrome()
@@ -198,7 +198,10 @@ if __name__ == "__main__":
         print("{} <target_dict_id>.".format(sys.argv[0]))
         sys.exit(1)
     select_id = int(sys.argv[1])
-    if select_id == 1:
+    if select_id == 0:
+        target_dict = Target_Dict_1.copy()
+        target_dict.update(Target_Dict_2)
+    elif select_id == 1:
         target_dict = Target_Dict_1
     elif select_id == 2:
         target_dict = Target_Dict_2
