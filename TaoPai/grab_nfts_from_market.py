@@ -85,6 +85,13 @@ Target_Dict_1 = {
     "传说": (0,0,500.0),
 }
 
+Cookie_Dict_1 = {
+# 173****6961
+    'refreshToken': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTU3NzUyMTEsImlhdCI6MTY1MzE4MzIxMSwidXNlclVJRCI6eyJ1c2VySWQiOjEyMDQyfX0.5xoBKU1YsDWBPMd3PQG4ba8T0onhMDFWnAHw4Gns7MU',
+    'accessToken': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTMxODM4MTEsImlhdCI6MTY1MzE4MzIxMSwidXNlclVJRCI6eyJ1c2VySWQiOjEyMDQyfX0.OCTI4aGEIVZFTCZEA8OWnwZNR65UAi2EwlmxcoNllj4',
+    'cert': '1',
+}
+
 Target_Dict_2 = {
     # 敦煌菩萨
     # "美女菩萨": (0,0,8.0),
@@ -108,65 +115,33 @@ Target_Dict_2 = {
     "祝融周岁纪念紫色版": (0,0,100),
 }
 
-def grab_nft_from_market(keywords, min_price):
-    driver = webdriver.Chrome()
-    driver.implicitly_wait(20)
+Cookie_Dict_2 = {
+# 159****9963
+    'refreshToken': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTY1MDAwMTgsImlhdCI6MTY1MzkwODAxOCwidXNlclVJRCI6eyJ1c2VySWQiOjEyMDM5fX0.RgDjKMu7Fjw4ze32PyHJ7eHVJfmMZvrLcONgPDlre_8',
+    'accessToken': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTM5MDg2MTgsImlhdCI6MTY1MzkwODAxOCwidXNlclVJRCI6eyJ1c2VySWQiOjEyMDM5fX0.ZT_NiHWRhA23SIzWFFSS0ylwPAciP9y9bdpA-9SpsHs',
+    'cert': '1',
+}
 
-    driver.get(SCAN_URL.format(1, keywords))
-    driver.add_cookie({'name':'refreshToken', 'value':'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTU3NzUyMTEsImlhdCI6MTY1MzE4MzIxMSwidXNlclVJRCI6eyJ1c2VySWQiOjEyMDQyfX0.5xoBKU1YsDWBPMd3PQG4ba8T0onhMDFWnAHw4Gns7MU', 'path':'/'})
-    driver.add_cookie({'name':'accessToken', 'value':'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTMxODM4MTEsImlhdCI6MTY1MzE4MzIxMSwidXNlclVJRCI6eyJ1c2VySWQiOjEyMDQyfX0.OCTI4aGEIVZFTCZEA8OWnwZNR65UAi2EwlmxcoNllj4', 'path':'/'})
-    driver.add_cookie({'name':'cert', 'value':'1', 'path':'/'})
+INTERVAL_BETWEEN_PAGES = 0.5 # (s)
+PAUSE_TIME = 120 # (s)
 
-    # 获取页面数
-    """
-    driver.get(SCAN_URL.format(1, keywords))
-    page_cnt_ele = driver.find_element_by_css_selector(TOTALPAGE_SELECTOR)
-    page_cnt_text = page_cnt_ele.text.strip()
-    if len(page_cnt_text) != 0:
-        page_cnt = int(page_cnt_ele.text.strip())
-    else:
-        page_cnt = None
-    print("Total page count:{}.".format(page_cnt))
-    """
-
-    # 只扫描第一页
-    for p in range(1):
-        cur_plist = []
-        driver.get(SCAN_URL.format(p+1, keywords))
-        products = driver.find_elements_by_css_selector(NFTLIST_SELECTOR)
-        for product in products:
-            if len(product.text.strip()) == 0:
-                continue
-            price_text = product.find_element_by_tag_name("p").text.strip()
-            if len(price_text) == 0:
-                continue
-            price = float(price_text[1:])
-            p_link = product.find_element_by_tag_name("a")
-            href_value = p_link.get_attribute("href").strip()
-            product_id = get_id_from_href(href_value)
-            cur_plist.append((product_id, price))
-        
-        # 支付
-        for (product_id, price) in cur_plist:
-            if price <= min_price:
-                buy_nft_from_page(driver, product_id, price)
-    
-    driver.close()
-
-INTERVAL_BETWEEN_PAGES = 0.1 # 1s
-
-def grab_nft_from_market(target_dict):
+def grab_nft_from_market(target_dict, cookie_dict):
     driver = webdriver.Chrome()
     driver.implicitly_wait(20)
 
     driver.get(SCAN_URL.format(1, "", 0, 0))
-    driver.add_cookie({'name':'refreshToken', 'value':'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTU3NzUyMTEsImlhdCI6MTY1MzE4MzIxMSwidXNlclVJRCI6eyJ1c2VySWQiOjEyMDQyfX0.5xoBKU1YsDWBPMd3PQG4ba8T0onhMDFWnAHw4Gns7MU', 'path':'/'})
-    driver.add_cookie({'name':'accessToken', 'value':'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTMxODM4MTEsImlhdCI6MTY1MzE4MzIxMSwidXNlclVJRCI6eyJ1c2VySWQiOjEyMDQyfX0.OCTI4aGEIVZFTCZEA8OWnwZNR65UAi2EwlmxcoNllj4', 'path':'/'})
-    driver.add_cookie({'name':'cert', 'value':'1', 'path':'/'})
+    driver.add_cookie({'name':'refreshToken', 'value':cookie_dict['refreshToken'], 'path':'/'})
+    driver.add_cookie({'name':'accessToken', 'value':cookie_dict['accessToken'], 'path':'/'})
+    driver.add_cookie({'name':'cert', 'value':cookie_dict['cert'], 'path':'/'})
+
+    ##### 调试设置cookie后的用户信息
+    #driver.get(SCAN_URL.format(1, "", 0, 0))
+    #time.sleep(100) 
 
     # 避免重复登录，循环500次
     for _ in range(500):
         # 只扫描第一页
+        first_page_prod_cnt = 0
         for (keywords, (pid,vid,min_price)) in target_dict.items():
             cur_plist = []
             driver.get(SCAN_URL.format(1, keywords, pid, vid))
@@ -177,6 +152,7 @@ def grab_nft_from_market(target_dict):
                 price_text = product.find_element_by_tag_name("p").text.strip()
                 if len(price_text) == 0:
                     continue
+                first_page_prod_cnt += 1
                 price = float(price_text[1:])
                 p_link = product.find_element_by_tag_name("a")
                 href_value = p_link.get_attribute("href").strip()
@@ -190,7 +166,12 @@ def grab_nft_from_market(target_dict):
 
             # 避免访问次数过于频繁而重登录
             time.sleep(INTERVAL_BETWEEN_PAGES)
-            
+        
+        if first_page_prod_cnt == 0:
+            # 可能由于访问过于频繁而封禁
+            print("{} 可能由于访问过于频繁而封禁，暂停{}秒钟...".format(datetime.now(), PAUSE_TIME))
+            time.sleep(PAUSE_TIME)
+
     driver.close()
 
 if __name__ == "__main__":
@@ -201,14 +182,17 @@ if __name__ == "__main__":
     if select_id == 0:
         target_dict = Target_Dict_1.copy()
         target_dict.update(Target_Dict_2)
+        cookie_dict = Cookie_Dict_1
     elif select_id == 1:
         target_dict = Target_Dict_1
+        cookie_dict = Cookie_Dict_1
     elif select_id == 2:
         target_dict = Target_Dict_2
+        cookie_dict = Cookie_Dict_2
 
     while True:
         try:
-            grab_nft_from_market(target_dict)
+            grab_nft_from_market(target_dict, cookie_dict)
         except Exception as e:
             print(e)
 
