@@ -167,6 +167,11 @@ def grab_nft_from_market(target_dict, cookie_dict):
             # 避免访问次数过于频繁而重登录
             time.sleep(INTERVAL_BETWEEN_PAGES)
         
+        # 判断时间是否超过交易时间
+        cur_time = datetime.now()
+        if cur_time.hour == 0:
+            break
+
         if first_page_prod_cnt == 0:
             # 可能由于访问过于频繁而封禁
             print("{} 可能由于访问过于频繁而封禁，暂停{}秒钟...".format(datetime.now(), PAUSE_TIME))
@@ -198,7 +203,7 @@ if __name__ == "__main__":
 
         # 判断时间是否超过交易时间
         cur_time = datetime.now()
-        if (cur_time.hour >= 23) and (cur_time.minute >= 59):
+        if cur_time.hour == 0:
             break
 
         # 等待0-3s的随机时间
