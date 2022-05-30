@@ -68,7 +68,7 @@ def get_id_from_href(href_value):
 
 Target_Dict_1 = {
     # 淘派官方
-    "": (2,3,150), # 乐淘淘
+    "乐淘淘": (2,3,150), # 乐淘淘
     "": (2,5,300), # 光伏
     "内测": (0,0,1000),
     "公测": (0,0,2000),
@@ -185,7 +185,8 @@ def grab_nft_from_market(target_dict):
             for (product_id, price, keywords) in cur_plist:
                 if price <= min_price:
                     buy_nft_from_page(driver, product_id, price, keywords)
-    
+
+            
     driver.close()
 
 if __name__ == "__main__":
