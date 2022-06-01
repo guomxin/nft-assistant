@@ -61,6 +61,10 @@ def get_idrangedict_by_nftname(nft_name):
         return TaoPaiChuangShi_IdRange2Name
     elif nft_name == "baibianxiong":
         return BaiBianXiong_IdRange2Name
+    elif nft_name == "laodongcun":
+        return LaoDongCun_IdRange2Name
+    elif nft_name == "xunzhang":
+        return XunZhang_IdRange2Name
     else:
         return None
 
@@ -68,6 +72,17 @@ def get_name_by_tokenid(idrange2name, token_id):
     for ((min_tid, max_tid), name) in idrange2name.items():
         if (token_id >= min_tid) and (token_id <= max_tid):
             return name
+
+XunZhang_IdRange2Name = {
+    (60001,66140): '早鸟勋章',
+}
+
+LaoDongCun_IdRange2Name = {
+    (10001,11800): 'N-勤劳大叔',
+    (11801,13000): 'R-聪明小子',
+    (13001,14200): 'R-憨勇小子',
+    (14201,16000): 'N-尖嘴汉',
+}
 
 BaiBianXiong_IdRange2Name = {
     (1,15): "SSR", # (1,50)

@@ -52,6 +52,10 @@ def get_contract_address_ABI_from_name(name):
         return (TaopaiNFT_Contract_Address, TaoPai_ABI)
     elif name == "baibianxiong":
         return (BOOOM_Contract_Address, TaoPai_ABI)
+    elif name == "laodongcun":
+        return (UXON_Contract_Address, TaoPai_ABI)
+    elif name == "xunzhang":
+        return (TaopaiNFT_Contract_Address, TaoPai_ABI)
     else:
         return (None, None)
 
