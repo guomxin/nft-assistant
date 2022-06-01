@@ -76,8 +76,8 @@ Target_Dict_1 = {
     # 凹凸世界
     #"SR-": (34,0,5.0),
     #"SSR-": (34,0,10.0),
-    "UR": (34,0,30.0),
-    "XR": (34,0,90.0),
+    #"UR": (34,0,30.0),
+    #"XR": (34,0,90.0),
 
     # 潮虎
     "稀有": (0,0,50.0),
@@ -122,7 +122,7 @@ Cookie_Dict_2 = {
     'cert': '1',
 }
 
-INTERVAL_BETWEEN_PAGES = 0.5 # (s)
+INTERVAL_BETWEEN_PAGES = 1 # (s)
 PAUSE_TIME = 120 # (s)
 
 def grab_nft_from_market(target_dict, cookie_dict):
@@ -176,6 +176,7 @@ def grab_nft_from_market(target_dict, cookie_dict):
             # 可能由于访问过于频繁而封禁
             print("{} 可能由于访问过于频繁而封禁，暂停{}秒钟...".format(datetime.now(), PAUSE_TIME))
             time.sleep(PAUSE_TIME)
+            break
 
     driver.close()
 
