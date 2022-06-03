@@ -13,7 +13,7 @@ rem 3. dig info for fullset
 rem python diginfo_from_details_conflux.py taopaitest 2 data/_details_conflux_taopaitest_result_%1.csv 10001,20127 1 ALL %1
 
 rem 4. dig count in circulation
-rem python diginfo_from_details_conflux.py taopaitest 3 data/_details_conflux_taopaitest_result_%1.csv %1
+python diginfo_from_details_conflux.py taopaitest 3 data/_details_conflux_taopaitest_result_%1.csv %1
 
 rem 5. analyze tranctions
 python transaction_conflux_contract.py taopaitest trans/TaopaiNFT_transactions_%1.csv %2 %3 10001,10999;20001,20127 NEICE;GONGCE %1

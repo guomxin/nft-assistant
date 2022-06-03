@@ -3,7 +3,7 @@ rem %1-detail tag
 cd ..
 
 rem 1. generate details
-rem python detail_conflux_contract.py taopaichuangshi %1
+python detail_conflux_contract.py taopaichuangshi %1
 
 rem 2. dig info for fullset
 python diginfo_from_details_conflux.py taopaichuangshi 2 data/_details_conflux_taopaichuangshi_result_%1.csv^
@@ -16,5 +16,8 @@ python diginfo_from_details_conflux.py taopaichuangshi 2 data/_details_conflux_t
  30001,32022;20004,20004;20020,20020;20029,20029;20033,20033;20042,20042;20044,20044;20063,20063;20066,20066;20075,20075;^
 20079,20079;20084,20085;20089,20089;20094,20094;20110,20110;20113,20115;20118,20119^
  5;1 METHOD2 %1
+
+rem 3. merge results for two methods
+python merge_fullset_result.py taopaichuangshi %1 METHOD1;METHOD2
 
 cd scripts
