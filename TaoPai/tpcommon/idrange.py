@@ -89,6 +89,7 @@ BaiBianXiong_IdRange2Name = {
     (51,185): "SR", # (51,500)
     (501,1250): "R", # (501,3000)
     (3001,4800): "N", # (3001,10000)
+    (10001,10015): "SSR-端午限定",
 }
 
 TaoPaiChuangShi_IdRange2Name = {
