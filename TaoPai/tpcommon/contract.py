@@ -1,5 +1,6 @@
 # coding: utf-8
 import time
+import requests
 
 from conflux import (
     Conflux,
@@ -145,6 +146,50 @@ def dump_contract_tokenid2owner(contract_address, contract_ABI, dump_file_name, 
         result_file.write("{},{}\n".format(
             token_id,
             owner
+        ))
+    result_file.close()
+
+DETAIL_URL = "https://confluxscan.io/stat/nft/checker/detail?contractAddress={}&tokenId={}"
+
+def get_token_name(contract_address, token_id):
+    try:
+        resp = requests.get(DETAIL_URL.format(contract_address, token_id))
+        resp_json = resp.json()
+        return resp_json['data']['detail']['metadata']['name']
+    except Exception as e:
+        print(e)
+        print("fetch {} info error".format(token_id))
+
+def dump_contract_tokenid2name(contract_address, contract_ABI, dump_file_name, filterout_ranges=[], verbose=True):
+    provider = HTTPProvider('https://main.confluxrpc.com')
+    c = Conflux(provider)
+
+    tokenid_name_list = []
+    token_cnt = c.call_contract_method(contract_address, contract_ABI, 'totalSupply')
+    _, token_ids = c.call_contract_method(contract_address, contract_ABI, 'tokens', 0, token_cnt)
+    target_token_cnt = 0
+    for token_id in token_ids:
+        if len(filterout_ranges):
+            for (min_tid, max_tid) in filterout_ranges:
+                if (token_id >= min_tid) and (token_id <= max_tid):
+                    continue
+        token_name = get_token_name(contract_address, token_id)
+        tokenid_name_list.append((token_id, token_name))
+        print("{}:{}".format(token_id, token_name))
+        target_token_cnt += 1
+        if verbose:
+            if target_token_cnt % 500 == 0:
+                print("{} tokens scanned.".format(target_token_cnt))
+        time.sleep(1)
+    if verbose:
+        print("{} tokens.".format(len(tokenid_name_list)))
+
+
+    result_file = open(dump_file_name, "w")
+    for (token_id, token_name) in tokenid_name_list:
+        result_file.write("{},{}\n".format(
+            token_id,
+            token_name
         ))
     result_file.close()
 
