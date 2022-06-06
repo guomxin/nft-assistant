@@ -1,7 +1,6 @@
 # coding: utf-8
 import time
 import requests
-from TaoPai.tpcommon.idrange import KaoShengLaiLe_IdRange2Name
 
 from conflux import (
     Conflux,
