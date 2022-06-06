@@ -75,6 +75,14 @@ def get_name_by_tokenid(idrange2name, token_id):
         if (token_id >= min_tid) and (token_id <= max_tid):
             return name
 
+KaoShengLaiLe_IdRange2Name = {
+    # 豹豹青春宇宙
+    (1,10000): "满载而归",
+    (10001,20000): "喜报三元",
+    (20001,30000): "金榜题名",
+    (30001,40000): "状元及第",
+}
+
 LeTaoTao_IdRange2Name = {
     (50001,50088): "乐淘淘-龙抬头",
     (50089,50176): "乐淘淘-冬残奥会开幕",
