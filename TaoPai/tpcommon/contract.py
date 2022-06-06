@@ -57,6 +57,8 @@ def get_contract_address_ABI_from_name(name):
         return (UXON_Contract_Address, TaoPai_ABI)
     elif name == "xunzhang":
         return (TaopaiNFT_Contract_Address, TaoPai_ABI)
+    elif name == "letaotao":
+        return (TaopaiNFT_Contract_Address, TaoPai_ABI)
     else:
         return (None, None)
 
@@ -169,10 +171,14 @@ def dump_contract_tokenid2name(contract_address, contract_ABI, dump_file_name, f
     _, token_ids = c.call_contract_method(contract_address, contract_ABI, 'tokens', 0, token_cnt)
     target_token_cnt = 0
     for token_id in token_ids:
+        filter_out = False
         if len(filterout_ranges):
             for (min_tid, max_tid) in filterout_ranges:
                 if (token_id >= min_tid) and (token_id <= max_tid):
-                    continue
+                    filter_out = True
+                    break
+        if filter_out:
+            continue
         token_name = get_token_name(contract_address, token_id)
         tokenid_name_list.append((token_id, token_name))
         print("{}:{}".format(token_id, token_name))

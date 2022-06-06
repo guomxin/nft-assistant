@@ -65,6 +65,8 @@ def get_idrangedict_by_nftname(nft_name):
         return LaoDongCun_IdRange2Name
     elif nft_name == "xunzhang":
         return XunZhang_IdRange2Name
+    elif nft_name == "letaotao":
+        return LeTaoTao_IdRange2Name
     else:
         return None
 
@@ -73,8 +75,29 @@ def get_name_by_tokenid(idrange2name, token_id):
         if (token_id >= min_tid) and (token_id <= max_tid):
             return name
 
+LeTaoTao_IdRange2Name = {
+    (50001,50088): "乐淘淘-龙抬头",
+    (50089,50176): "乐淘淘-冬残奥会开幕",
+    (50177,50264): "乐淘淘-惊蛰",
+    (50265,50352): "乐淘淘-雷锋日",
+    (50353,50440): "乐淘淘-国际劳动妇女节",
+    (50441,50528): "乐淘淘-植树节",
+    (50529,50616): "乐淘淘-残奥会闭幕",
+    (50617,50704): "乐淘淘-春分",
+    (50705,50792): "乐淘淘-地球一小时",
+    (50793,50880): "乐淘淘-愚人节",
+    (50881,50968): "乐淘淘-清明",
+    (50969,51056): "乐淘淘-复活节",
+    (51057,51144): "乐淘淘-谷雨",
+    (51145,51232): "乐淘淘-国际不打小孩日",
+    (51233,51320): "乐淘淘-劳动节",
+    (51321,51408): "乐淘淘-立夏",
+    (51409,51496): "乐淘淘-母亲节",
+    (51636,51723): "乐淘淘-小满",
+}
+
 XunZhang_IdRange2Name = {
-    (60001,66140): '早鸟勋章',
+    (60001,66390): "早鸟勋章",
 }
 
 LaoDongCun_IdRange2Name = {
