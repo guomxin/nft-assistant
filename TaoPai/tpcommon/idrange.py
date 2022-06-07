@@ -80,6 +80,20 @@ def get_name_by_tokenid(idrange2name, token_id):
         if (token_id >= min_tid) and (token_id <= max_tid):
             return name
 
+FXPanda_IdRange2Name = {
+    # 佛系熊猫第一期
+    (30001,30906): "常规款-天天向上",
+    (30907,31812): "常规款-嬉戏",
+    (31813,32718): "常规款-学无止境",
+    (32719,33624): "常规款-观察世界",
+
+    (33625,34332): "稀有款-探索自然",
+    (34333,35040): "稀有款-聊天",
+
+    (35041,35348): "传说款-篮球小将",
+    (35349,35656): "传说款-足球小将",
+}
+
 KaoShengLaiLe_IdRange2Name = {
     # 豹豹青春宇宙
     (1,10000): "满载而归",
@@ -112,7 +126,7 @@ LeTaoTao_IdRange2Name = {
 }
 
 XunZhang_IdRange2Name = {
-    (60001,66390): "早鸟勋章",
+    (60001,70000): "早鸟勋章", # 出现其他勋章时需要更改，总数为66451(2022/6/7)
 }
 
 LaoDongCun_IdRange2Name = {
