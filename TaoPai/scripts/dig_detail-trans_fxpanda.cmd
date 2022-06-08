@@ -16,6 +16,6 @@ rem 4. dig count in circulation
 python diginfo_from_details_conflux.py fxpanda 3 data/_details_conflux_fxpanda_result_%1.csv %1
 
 rem 5. analyze tranctions
-rem python transaction_conflux_contract.py fxpanda trans/BOOOM_transactions_%1.csv %2 %3 1,50;51,500;501,3000;3001,10000;10001,10015 SSR;SR;R;N;SSR-DUANWU %1
+python transaction_conflux_contract.py fxpanda trans/FXHE_transactions_%1.csv %2 %3 30001,33624;33625,35040;35041,35656; PUTONG;XIYOU;CHUANSHUO %1
 
 cd scripts
