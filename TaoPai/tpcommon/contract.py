@@ -158,7 +158,7 @@ def dump_contract_tokenid2owner(contract_address, contract_ABI, dump_file_name, 
         ))
     result_file.close()
 
-DETAIL_URL = "https://confluxscan.io/stat/nft/checker/detail?contractAddress={}&tokenId={}"
+DETAIL_URL = "https://confluxscan.net/stat/nft/checker/detail?contractAddress={}&tokenId={}"
 
 def get_token_name(contract_address, token_id):
     try:
