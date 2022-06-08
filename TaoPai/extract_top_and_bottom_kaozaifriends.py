@@ -6,7 +6,7 @@ import requests
 import time
 
 RANKER_URL = "https://nft.taopainft.com/friends"
-DETAIL_URL = "https://confluxscan.io/stat/nft/checker/detail?contractAddress=cfx:achew68x34cwu04aezbunyaz67gppakvmyn79tau56&tokenId={}"
+DETAIL_URL = "https://confluxscan.net/stat/nft/checker/detail?contractAddress=cfx:achew68x34cwu04aezbunyaz67gppakvmyn79tau56&tokenId={}"
 
 INPUT_SELECTOR = "#__next > div > div.flex > input"
 QUERY_SELECTOR = "#__next > div > div.flex > button"
