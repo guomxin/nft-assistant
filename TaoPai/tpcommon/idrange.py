@@ -73,6 +73,8 @@ def get_idrangedict_by_nftname(nft_name):
     #--- 豹豹青春宇宙 ---#
     elif nft_name == "kaoshenglaile":
         return KaoShengLaiLe_IdRange2Name
+    elif nft_name == "tongjing":
+        return TongJing_IdRange2Name
     #--- 豹豹青春宇宙 ---#
     else:
         return None
@@ -94,6 +96,14 @@ FXPanda_IdRange2Name = {
 
     (35041,35348): "传说款-篮球小将",
     (35349,35656): "传说款-足球小将",
+}
+
+TongJing_IdRange2Name = {
+    # 豹豹青春宇宙
+    (1,2500): "唐宝相花铜镜",
+    (10001,12500): "汉五乳神兽镜",
+    (20001,22500): "仿汉四神博局镜",
+    (30001,32500): "唐真子飞霜铜镜", 
 }
 
 KaoShengLaiLe_IdRange2Name = {

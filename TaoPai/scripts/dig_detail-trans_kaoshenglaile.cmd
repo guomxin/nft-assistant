@@ -15,6 +15,6 @@ rem 4. dig count in circulation
 python diginfo_from_details_conflux.py kaoshenglaile 3 data/_details_conflux_kaoshenglaile_result_%1.csv %1
 
 rem 5. analyze tranctions
-python transaction_conflux_contract.py kaoshenglaile trans/MBNH_transactions_%1.csv %2 %3 1,10000;10001,20000;20001,30000;30001,40000;10001,10015 MANZAI;XIBAO;JINBANG;ZHUANGYUAN %1
+python transaction_conflux_contract.py kaoshenglaile trans/MBNH_transactions_%1.csv %2 %3 1,10000;10001,20000;20001,30000;30001,40000 MANZAI;XIBAO;JINBANG;ZHUANGYUAN %1
 
 cd scripts
