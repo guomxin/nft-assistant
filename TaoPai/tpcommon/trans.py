@@ -1,4 +1,5 @@
 # coding: utf-8
+from os import times
 from conflux import (
     Conflux,
     HTTPProvider
@@ -6,6 +7,7 @@ from conflux import (
 import csv
 import datetime
 import time
+import requests
 
 from tpcommon import contract
 
@@ -13,6 +15,29 @@ Taopai_Conflux_Address = "cfx:aapwjebcay7d6jv02whjrrvkm9egmw5fye09cea6zz"
 
 TransHashIndex = 3
 TransDateIndex = 9
+
+# http接口获取前1000的交易数据
+GET_TRANS_URL = "https://confluxscan.net/v1/transaction?accountAddress={}&limit=100&skip={}&tab=transaction"
+
+def get_current_top1000_trans(contract_address):
+    trans_info = [] #(trans_hash, trans_date)
+    for skip in range(0,1000,100):
+        while True:
+            try:
+                resp = requests.get(GET_TRANS_URL.format(contract_address, skip))
+                resp_json = resp.json()
+                for trans in resp_json["list"]:
+                    trans_hash = trans["hash"]
+                    trans_date = datetime.datetime.fromtimestamp(trans["timestamp"])
+                    trans_date_str = trans_date.strftime("%Y/%m/%d %H:%M:%S")
+                    trans_info.append((trans_hash, trans_date_str))
+                break
+            except Exception as e:
+                print(e)
+                time.sleep(1)
+        
+        # access politely
+        time.sleep(0.5)
 
 def blur_address(address):
     return address[:10] + "****" + address[-4:]
