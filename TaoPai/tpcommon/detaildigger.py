@@ -210,6 +210,7 @@ def dig_fullsetinfo_from_details(nft_name, details_file_name, min_tids, max_tids
 
 Taopai_Conflux_Address = "cfx:aapwjebcay7d6jv02whjrrvkm9egmw5fye09cea6zz"
 Taopai_Prev_Conflux_Address = "cfx:aam2cnrarzburf6sspm6jg6eznbwht8uj6hf4jg8f2"
+Taopai_Recycle_Conflux_Address = "cfx:aapj481b9pmg8ppnwcpnskpzym1hddfbtupnhth2ac" # 淘派回收账号(比如多发行的乐淘淘-小满)
 
 def dig_circulation_from_details(nft_name, details_file_name, dump_file_name):
     idrange2name = idrange.get_idrangedict_by_nftname(nft_name)
@@ -220,7 +221,7 @@ def dig_circulation_from_details(nft_name, details_file_name, dump_file_name):
     for line in open(details_file_name):
         items = line.split(",")
         owner = items[0].strip()
-        if (owner == Taopai_Conflux_Address) or (owner == Taopai_Prev_Conflux_Address):
+        if (owner == Taopai_Conflux_Address) or (owner == Taopai_Prev_Conflux_Address) or (owner == Taopai_Recycle_Conflux_Address):
             # negelect Taopai account
             continue
         tokenids = [int(i) for i in items[2].split(":")]
