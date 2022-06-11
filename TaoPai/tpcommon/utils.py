@@ -3,6 +3,8 @@ import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 
+from wxauto import WeChat
+
 FLAG = "TokenID:"
 
 def get_tokenid_from_html_text(text):
@@ -36,3 +38,11 @@ def send_msg(msg_text):
     server.sendmail(from_addr, to_addr, msg.as_string())
 
     server.quit()
+
+WX = WeChat()
+def send_wx_msg(msg):
+    try:
+        WX.ChatWith("shark")
+        WX.SendMsg(msg)
+    except:
+        pass

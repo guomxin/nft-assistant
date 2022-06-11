@@ -7,7 +7,7 @@ import time
 import random
 from datetime import datetime
 
-from wxauto import WeChat
+from tpcommon import utils
 
 SCAN_URL = "https://nft.taopainft.com/trade?type=bb86903952ad5df5f5016c8d3d4d895ae892ee89&p={}&s=1&k={}&pid={}&vid={}"
 PRODUCT_URL = "https://nft.taopainft.com/trade/detail?pid={}&type=bb86903952ad5df5f5016c8d3d4d895ae892ee89"
@@ -20,15 +20,6 @@ BUY_SELECTOR = "#__next > div.text-white.px-4\.5.scrolling-touch.h-full.min-h-fu
 #PAY_SELECTOR = "#__next > div.transition-bottom.duration-500.ease-linear.fixed.w-full.overflow-scroll.top-0.bottom-0.-inset-x-0.z-50.text-white.text-left.box-border.flex.flex-col.justify-center.items-center.px-6.bg-modelAlphaBg.backdrop-filter.backdrop-blur > div > div.text-sm.px-4 > footer > div:nth-child(2) > button"
 CONFIRM_SELECTOR =  "#__next > div.text-white.px-4\.5.scrolling-touch.h-full.min-h-full > div > main > div:nth-child(3) > div.transition-bottom.duration-500.ease-linear.fixed.w-full.overflow-scroll.top-0.bottom-0.-inset-x-0.z-50.text-white.text-left.box-border.flex.flex-col.justify-center.items-center.px-6.bg-modelAlphaBg.backdrop-filter.backdrop-blur > div > div.text-sm.px-4 > footer > div.flex.mt-2.mb-2.undefined > div.relative.w-3.h-3.flex-shrink-0.mt-px"
 PAY_SELECTOR = "#__next > div.text-white.px-4\.5.scrolling-touch.h-full.min-h-full > div > main > div:nth-child(3) > div.transition-bottom.duration-500.ease-linear.fixed.w-full.overflow-scroll.top-0.bottom-0.-inset-x-0.z-50.text-white.text-left.box-border.flex.flex-col.justify-center.items-center.px-6.bg-modelAlphaBg.backdrop-filter.backdrop-blur > div > div.text-sm.px-4 > footer > div:nth-child(3) > button"
-
-WX = WeChat()
-
-def send_wx_msg(msg):
-    try:
-        WX.ChatWith("shark")
-        WX.SendMsg(msg)
-    except:
-        pass
 
 def buy_nft_from_page(driver, product_id, price, keywords):
     driver.get(PRODUCT_URL.format(product_id))
@@ -50,13 +41,15 @@ def buy_nft_from_page(driver, product_id, price, keywords):
         pay_btn.click()
         #time.sleep(1) # 后面有发送微信消息，耗时，无需等待
 
-        msg = "{} {}:{}:{}".format(datetime.now(), keywords, price, desp)
+        msg = "{} {}:{}:{}".format(datetime.now(), desp, keywords, price)
         print(msg)
-        send_wx_msg(msg)
+        utils.send_msg(msg)
+        utils.send_wx_msg(msg)
     else:
-        msg = "{} {}:{}:{}".format(datetime.now(), keywords, price, desp)        
+        msg = "{} {}:{}:{}".format(datetime.now(), desp, keywords, price)        
         print(msg)
-        send_wx_msg(msg)
+        #utils.send_msg(msg)
+        utils.send_wx_msg(msg)
 
 def get_id_from_href(href_value):
     key = "pid="
@@ -68,15 +61,15 @@ def get_id_from_href(href_value):
 
 Target_Dict_1 = {
     # 淘派官方
-    "乐淘淘": (2,3,200), # 乐淘淘
-    "": (2,5,400), # 光伏
-    "内测": (2,1,2000),
-    "公测": (2,2,2000),
+    "乐淘淘": (2,3,240), # 乐淘淘
+    "": (2,5,600), # 光伏
+    "内测": (2,1,3000),
+    "公测": (2,2,3000),
     "早鸟勋章": (2,0,50),
 
     # 烤仔潮物
-    "清明": (7,9,300),
-    "复活": (7,9,300),
+    #"清明": (7,9,300),
+    #"复活": (7,9,300),
 
     # 凹凸世界
     #"SR-": (34,0,5.0),
@@ -85,14 +78,17 @@ Target_Dict_1 = {
     #"XR": (34,0,90.0),
 
     # 百变熊熊
-    "N-百变熊熊":(42,110,100),
-    "R-百变熊熊":(42,111,200),
+    "N-百变熊熊":(42,110,66),
+    "R-百变熊熊":(42,111,180),
     "SR-百变熊熊":(42,112,1000),
 
     # 潮虎
-    "稀有": (37,27,80.0),
-    "史诗": (37,28,300.0),
-    "传说": (37,26,500.0),
+    #"稀有": (37,27,80.0),
+    #"史诗": (37,28,300.0),
+    #"传说": (37,26,500.0),
+
+    # 华策
+    #"徽章海报":(26,0,300),
 }
 
 Cookie_Dict_1 = {
@@ -104,30 +100,38 @@ Cookie_Dict_1 = {
 
 Target_Dict_2 = {
     # 敦煌菩萨
-    "美女菩萨": (15,22,10.0),
-    "美女菩萨-紫": (15,96,50.0),
+    #"美女菩萨": (15,22,10.0),
+    #"美女菩萨-紫": (15,96,50.0),
     "美女菩萨-金": (15,96,100.0),
     "彩虹": (15,21,300.0),
     "满金": (15,20,1000.0),
 
     # 敦煌乐舞
     "乐舞伎楽图": (39,78,300),
-    "反弹琵琶": (39,74,50),
+    #"反弹琵琶": (39,74,50),
+
+    # 佛系惠二
+    #"大圆满": (32,32,600),
 
     # UXON
     #"重启柜子": (0,0,100.0),
-    "R":(35,0,180),
-    "N":(35,0,70),
+    "憨勇小子":(35,0,150),
+    "勤劳大叔":(35,0,55),
+    "尖嘴汉":(35,0,70),
+    "聪明小子":(35,0,200),
 
     # 烤仔的朋友
-    "烤仔的朋友": (2,6,100),
+    "烤仔的朋友": (2,6,266),
     "金色款": (2,7,500),
     "十二生肖款": (2,8,5000),
 
     # 中国航天
     #"中国航天日金色版": (0,0,500),
-    "中国航天日绿色版": (40,70,80),
-    "祝融周岁纪念紫色版": (40,70,100),
+    "中国航天日绿色版": (40,70,100),
+    "祝融周岁纪念紫色版": (40,70,150),
+
+    # 淘派官方
+    "": (2,5,600), # 光伏
 }
 
 Cookie_Dict_2 = {
@@ -209,7 +213,7 @@ if __name__ == "__main__":
         cookie_dict = Cookie_Dict_1
     elif select_id == 2:
         target_dict = Target_Dict_2
-        cookie_dict = Cookie_Dict_2
+        cookie_dict = Cookie_Dict_1
 
     while True:
         try:
