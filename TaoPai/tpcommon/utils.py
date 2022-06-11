@@ -1,4 +1,7 @@
 # coding: utf-8
+import smtplib
+from email.mime.text import MIMEText
+from email.mime.multipart import MIMEMultipart
 
 FLAG = "TokenID:"
 
@@ -15,3 +18,21 @@ def return_fig_count(idrange2name, fig_name):
         if name == fig_name:
             fig_count += (high-low+1)
     return fig_count
+
+def send_msg(msg_text):
+    from_addr = "1621949016@qq.com"
+    password = "crtlhcujsozpdidc"
+    to_addr = "1621949016@qq.com"
+    smtp_server = "smtp.qq.com"
+
+    server = smtplib.SMTP_SSL()
+    server.connect(smtp_server, 465)
+    server.login(from_addr, password)
+    msg = MIMEMultipart()
+    msg['From'] = from_addr
+    msg["To"] = to_addr
+    msg["Subject"] = msg_text
+    msg.attach(MIMEText(msg_text, "plain", "utf-8"))
+    server.sendmail(from_addr, to_addr, msg.as_string())
+
+    server.quit()
