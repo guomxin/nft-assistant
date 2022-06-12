@@ -15,6 +15,6 @@ rem 4. dig count in circulation
 python diginfo_from_details_conflux.py tongjing 3 data/_details_conflux_tongjing_result_%1.csv %1
 
 rem 5. analyze tranctions
-rem python transaction_conflux_contract.py tongjing trans/TongJing_transactions_%1.csv %2 %3 1,2500;10001,12500;20001,22500;30001,32500 XIANGHUA;WURU;SISHEN;FEISHUANG %1
+python transaction_conflux_contract_online.py tongjing %2 %3 1,2500;10001,12500;20001,22500;30001,32500 XIANGHUA;WURU;SISHEN;FEISHUANG %1
 
 cd scripts

@@ -13,6 +13,6 @@ rem 3. dig count in circulation
 python diginfo_from_details_conflux.py guizi 3 data/_details_conflux_guizi_result_%1.csv %1
 
 rem 4. analyze tranctions
-python transaction_conflux_contract.py guizi trans/UXON_transactions_%1.csv %2 %3 1,1000;1001,4000 GUIZI-SR;GUIZI-N %1
+python transaction_conflux_contract_online.py guizi %2 %3 1,1000;1001,4000 GUIZI-SR;GUIZI-N %1
 
 cd scripts

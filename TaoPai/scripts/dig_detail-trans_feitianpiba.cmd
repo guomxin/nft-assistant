@@ -16,6 +16,6 @@ rem 4. dig count in circulation
 python diginfo_from_details_conflux.py feitianpiba 3 data/_details_conflux_feitianpiba_result_%1.csv %1
 
 rem 5. analyze tranctions
-python transaction_conflux_contract.py feitianpiba trans/TLH_transactions_%1.csv %2 %3 1,800;801,6800;6801,15800;15801,16400 SSR;SR;R;DaTu %1
+python transaction_conflux_contract_online.py feitianpiba %2 %3 1,800;801,6800;6801,15800;15801,16400 SSR;SR;R;DaTu %1
 
 cd scripts

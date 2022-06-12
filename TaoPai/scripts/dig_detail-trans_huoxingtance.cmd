@@ -15,6 +15,6 @@ rem 4. dig count in circulation
 python diginfo_from_details_conflux.py huoxingtance 3 data/_details_conflux_huoxingtance_result_%1.csv %1
 
 rem 5. analyze tranctions
-rem python transaction_conflux_contract.py hangtiantanwei2 trans/HTKG_transactions_%1.csv %2 %3 1,5;6,370 JIN;ZHURONGZI %1
+rem TODO python transaction_conflux_contract_online.py huoxingtance %2 %3 1,5;6,370 JIN;ZHURONGZI %1
 
 cd scripts

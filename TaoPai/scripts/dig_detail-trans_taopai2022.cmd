@@ -15,6 +15,6 @@ rem 4. dig count in circulation
 python diginfo_from_details_conflux.py taopai2022 3 data/_details_conflux_taopai2022_result_%1.csv %1
 
 rem 5. analyze tranctions
-rem python transaction_conflux_contract.py taopai2022 trans/TaopaiNFT_transactions_%1.csv %2 %3 30001,32022 ANY %1
+python transaction_conflux_contract_online.py taopai2022 %2 %3 30001,32022 ANY %1
 
 cd scripts

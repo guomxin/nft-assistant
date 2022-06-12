@@ -3,7 +3,7 @@ rem %1-detail tag, %2-start_date, %3-end_date
 cd ..
 
 rem 1. analyze tranctions
-python transaction_conflux_contract.py dunhuang trans/SDQH_transactions_%1.csv %2 %3 1001,2000;2001,2333;37001,38000;38001,40000 RAINBOW;FULLGOLD;GOLD;PURPLE %1
+python transaction_conflux_contract_online.py dunhuang %2 %3 1001,2000;2001,2333;37001,38000;38001,40000 RAINBOW;FULLGOLD;GOLD;PURPLE %1
 
 rem 2. generate details
 python detail_conflux_contract.py dunhuang %1
