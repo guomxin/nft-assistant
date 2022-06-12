@@ -103,7 +103,7 @@ def analyze_transaction_logs(trans_file_name, contract_addr, contract_ABI, start
     if verbose:
         print("{} target transaction records found.".format(target_row_cnt))
 
-    with open(result_file_name, "w") as result_file:
+    with open(result_file_name, "w", encoding="utf-8-sig") as result_file:
         for (td_str, (trade_cnt, open_mbox_cnt)) in date2tradeinfo.items():
             result_file.write("{},{},{}\n".format(
                 td_str, trade_cnt, open_mbox_cnt
@@ -210,7 +210,7 @@ def multi_analyze_transaction_logs(trans_file_name, tradeprice_dict, contract_ad
     if verbose:
         print("{} target transaction records found.".format(target_row_cnt))
 
-    with open(result_file_name, "w") as result_file:
+    with open(result_file_name, "w", encoding="utf-8-sig") as result_file:
         # 写入交易的数量
         result_file.write("日期,{}\n".format(",".join(tags)))
         for td_str in date2tradeinfo:
@@ -228,7 +228,7 @@ def multi_analyze_transaction_logs(trans_file_name, tradeprice_dict, contract_ad
     # 交易价格汇总数据
     if len(traderesult_dict) > 0:
         trade_agg_file_name = result_file_name + ".tradeagg.csv"
-        with open(trade_agg_file_name, "w") as trade_agg_file:
+        with open(trade_agg_file_name, "w", encoding="utf-8-sig") as trade_agg_file:
             trade_agg_file.write(",交易总量,价格获得量,成交均值,成交最小价格,成交最大价格\n")
             for tag in tags:
                 plist = traderesult_dict[tag][1]
@@ -252,7 +252,7 @@ def multi_analyze_transaction_logs(trans_file_name, tradeprice_dict, contract_ad
             sinfo.append(solders_dict[s][1][t])
         solders_info.append(sinfo)
     solders_info.sort(key=lambda s: s[1], reverse=True)
-    with open(solders_detail_file_name, "w") as solders_detail_file:
+    with open(solders_detail_file_name, "w", encoding="utf-8-sig") as solders_detail_file:
         solders_detail_file.write("账户,卖出总量,{}\n".format(','.join(tags)))
         for solder_info in solders_info:
             solders_detail_file.write("{},{},{}\n".format(
@@ -269,7 +269,7 @@ def multi_analyze_transaction_logs(trans_file_name, tradeprice_dict, contract_ad
             binfo.append(buyers_dict[b][1][t])
         buyers_info.append(binfo)
     buyers_info.sort(key=lambda b: b[1], reverse=True)
-    with open(buyers_detail_file_name, "w") as buyers_detail_file:
+    with open(buyers_detail_file_name, "w", encoding="utf-8-sig") as buyers_detail_file:
         buyers_detail_file.write("账户,买入总量,{}\n".format(','.join(tags)))
         for buyer_info in buyers_info:
             buyers_detail_file.write("{},{},{}\n".format(
@@ -364,7 +364,7 @@ def multi_analyze_transaction_logs_online(tradeprice_dict, contract_addr, contra
     if verbose:
         print("{} target transaction records found.".format(target_row_cnt))
 
-    with open(result_file_name, "w") as result_file:
+    with open(result_file_name, "w", encoding="utf-8-sig") as result_file:
         # 写入交易的数量
         result_file.write("日期,{}\n".format(",".join(tags)))
         for td_str in date2tradeinfo:
@@ -382,7 +382,7 @@ def multi_analyze_transaction_logs_online(tradeprice_dict, contract_addr, contra
     # 交易价格汇总数据
     if len(traderesult_dict) > 0:
         trade_agg_file_name = result_file_name + ".tradeagg.csv"
-        with open(trade_agg_file_name, "w") as trade_agg_file:
+        with open(trade_agg_file_name, "w", encoding="utf-8-sig") as trade_agg_file:
             trade_agg_file.write(",交易总量,价格获得量,成交均值,成交最小价格,成交最大价格\n")
             for tag in tags:
                 plist = traderesult_dict[tag][1]
@@ -406,7 +406,7 @@ def multi_analyze_transaction_logs_online(tradeprice_dict, contract_addr, contra
             sinfo.append(solders_dict[s][1][t])
         solders_info.append(sinfo)
     solders_info.sort(key=lambda s: s[1], reverse=True)
-    with open(solders_detail_file_name, "w") as solders_detail_file:
+    with open(solders_detail_file_name, "w", encoding="utf-8-sig") as solders_detail_file:
         solders_detail_file.write("账户,卖出总量,{}\n".format(','.join(tags)))
         for solder_info in solders_info:
             solders_detail_file.write("{},{},{}\n".format(
@@ -423,7 +423,7 @@ def multi_analyze_transaction_logs_online(tradeprice_dict, contract_addr, contra
             binfo.append(buyers_dict[b][1][t])
         buyers_info.append(binfo)
     buyers_info.sort(key=lambda b: b[1], reverse=True)
-    with open(buyers_detail_file_name, "w") as buyers_detail_file:
+    with open(buyers_detail_file_name, "w", encoding="utf-8-sig") as buyers_detail_file:
         buyers_detail_file.write("账户,买入总量,{}\n".format(','.join(tags)))
         for buyer_info in buyers_info:
             buyers_detail_file.write("{},{},{}\n".format(
