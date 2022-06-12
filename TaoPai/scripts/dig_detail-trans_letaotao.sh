@@ -15,6 +15,6 @@ python diginfo_from_details_conflux.py letaotao 1 data/_details_conflux_letaotao
 python diginfo_from_details_conflux.py letaotao 3 data/_details_conflux_letaotao_result_$1.csv $1
 
 # 5. analyze tranctions
-python transaction_conflux_contract.py letaotao trans/TaopaiNFT_transactions_$1.csv $2 $3 50001,51496\;51636,52075 PART1\;PART2 $1
+python transaction_conflux_contract_online.py letaotao $2 $3 50001,51496\;51636,52075 PART1\;PART2 $1
 
 cd scripts
