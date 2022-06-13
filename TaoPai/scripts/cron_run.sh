@@ -33,3 +33,6 @@ sh dig_detail-trans_guizi.sh  $today $yesterday $yesterday
 
 # BLOOM
 sh dig_detail-trans_baibianxiong.sh  $today $yesterday $yesterday
+
+# FXHE
+sh dig_detail-trans_fxpanda.sh  $today $yesterday $yesterday
