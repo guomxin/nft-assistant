@@ -7,6 +7,8 @@ python detail_conflux_contract.py laodongcun $1
 
 # 2. dig info for 
 python diginfo_from_details_conflux.py laodongcun 1 data/_details_conflux_laodongcun_result_$1.csv 10001 16000  ANY $1
+python diginfo_from_details_conflux.py laodongcun 1 data/_details_conflux_laodongcun_result_%1.csv 11801 13000  CONGMING %1
+python diginfo_from_details_conflux.py laodongcun 1 data/_details_conflux_laodongcun_result_%1.csv 13001 14200  HANYONG %1
 
 # 3. dig info for fullset
 # python diginfo_from_details_conflux.py laodongcun 2 data/_details_conflux_laodongcun_result_$1.csv 3001,10000 18 N18 $1
