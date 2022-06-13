@@ -14,10 +14,10 @@ if __name__ == "__main__":
         nft_name, datetime.strftime(datetime.now(), '%Y%m%d')
     )
     contract_address, contract_ABI = contract.get_contract_address_ABI_from_name(nft_name)
-    filterout_ranges = [(60001,70000), (10001,10999), (20001,20127), (30001,32022), (100001,109628), (200001,200360), \
-        (300001,300012), (2001,2052)]
+    #filterout_ranges = [(60001,70000), (10001,10999), (20001,20127), (30001,32022), (100001,109628), (200001,200360), \
+    #   (300001,300012), (2001,2052)]
     contract.dump_contract_tokenid2name(
         contract_address, 
         contract_ABI, 
         dump_file_name,
-        filterout_ranges)
+        [])

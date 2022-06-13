@@ -160,13 +160,13 @@ def dump_contract_tokenid2owner(contract_address, contract_ABI, dump_file_name, 
         ))
     result_file.close()
 
-DETAIL_URL = "https://confluxscan.net/stat/nft/checker/detail?contractAddress={}&tokenId={}"
+DETAIL_URL = "https://api.confluxscan.net/nft/preview?contract={}&tokenId={}&withMetadata=false"
 
 def get_token_name(contract_address, token_id):
     try:
         resp = requests.get(DETAIL_URL.format(contract_address, token_id))
         resp_json = resp.json()
-        return resp_json['data']['detail']['metadata']['name']
+        return resp_json['data']['name']
     except Exception as e:
         print(e)
         print("fetch {} info error".format(token_id))
