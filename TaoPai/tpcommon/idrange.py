@@ -69,6 +69,8 @@ def get_idrangedict_by_nftname(nft_name):
         return LeTaoTao_IdRange2Name
     elif nft_name == "fxpanda":
         return FXPanda_IdRange2Name
+    elif nft_name == "fxpanda2":
+        return FXPanda2_IdRange2Name
 
     #--- 豹豹青春宇宙 ---#
     elif nft_name == "kaoshenglaile":
@@ -83,6 +85,21 @@ def get_name_by_tokenid(idrange2name, token_id):
     for ((min_tid, max_tid), name) in idrange2name.items():
         if (token_id >= min_tid) and (token_id <= max_tid):
             return name
+
+FXPanda2_IdRange2Name = {
+    # 佛系熊猫第二期
+    (50001,50838): "常规款-一起发呆",
+    (50839,51676): "常规款-下午茶",
+    (51677,52514): "常规款-伸展运动",
+    (52515,53352): "常规款-压力山大",
+    (53353,54190): "常规款-小伙伴",
+    (54191,55028): "常规款-干杯",
+    (55029,55866): "常规款-打工人",
+    (55867,56704): "常规款-熊猫躺",
+
+    (56705,57292): "稀有款-欢唱",
+    (57293,57880): "稀有款-真香",
+}
 
 FXPanda_IdRange2Name = {
     # 佛系熊猫第一期
