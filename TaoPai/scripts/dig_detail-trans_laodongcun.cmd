@@ -18,6 +18,7 @@ rem 4. dig count in circulation
 python diginfo_from_details_conflux.py laodongcun 3 data/_details_conflux_laodongcun_result_%1.csv %1
 
 rem 5. analyze tranctions
-python transaction_conflux_contract_online.py laodongcun %2 %3 10001,11800;11801,13000;13001,14200;14201,16000 QINLAO;CONGMING;HANYONG;JIANZUI %1
+python transaction_conflux_contract_online.py laodongcun %2 %3 10001,11800;11801,13000;13001,14200;14201,16000;16001,16600;16601,17200;17201,17800 ^
+QINLAO;CONGMING;HANYONG;JIANZUI;ZONGZI;LONGZHOU;SR-HUASHOU %1
 
 cd scripts
