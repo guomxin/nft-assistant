@@ -24,3 +24,5 @@ echo "------${date} ${hour}------"
 
 python transaction_conflux_contract_hourly_online.py laodongcun $date $hour 10001,11800\;11801,13000\;13001,14200\;14201,16000\;16001,16600\;16601,17200\;17201,17800 \
 QINLAO\;CONGMING\;HANYONG\;JIANZUI\;ZONGZI\;LONGZHOU\;SR-HUASHOU $tag
+
+python transaction_conflux_contract_hourly_online.py xunzhang $date $hour 60001,70000\;201,218\;219,303 ZAONIAO\;DASHI\;JINGYING $tag

@@ -26,6 +26,8 @@ sh dig_detail-trans_kaozaifriends.sh $today $yesterday $yesterday
 sh dig_detail-trans_taopai2022.sh  $today $yesterday $yesterday
 sh dig_detail-trans_xunzhang.sh  $today $yesterday $yesterday
 sh dig_detail-trans_letaotao.sh  $today $yesterday $yesterday
+sh dig_detail-trans_taopaitest.sh  $today $yesterday $yesterday
+sh dig_detail-trans_chuangshi.sh  $today
 
 # UXON
 sh dig_detail-trans_laodongcun.sh  $today $yesterday $yesterday
