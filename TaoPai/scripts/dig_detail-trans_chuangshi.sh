@@ -17,6 +17,8 @@ python diginfo_from_details_conflux.py taopaichuangshi 2 data/_details_conflux_t
 20079,20079\;20084,20085\;20089,20089\;20094,20094\;20110,20110\;20113,20115\;20118,20119 \
 5\;10\;10\;1 METHOD2 $1
 
+python diginfo_from_details_conflux.py taopaichuangshi 2 data/_details_conflux_taopaichuangshi_result_%1.csv 201,218\;200001,200360 1\;1 METHOD3 $1
+
 # 3. merge results for two methods
 python merge_fullset_result.py taopaichuangshi $1 METHOD1\;METHOD2
 
