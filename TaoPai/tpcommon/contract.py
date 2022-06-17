@@ -61,6 +61,8 @@ def get_contract_address_ABI_from_name(name):
         return (TaopaiNFT_Contract_Address, TaoPai_ABI)
     elif name == "fxpanda" or name == "fxpanda2":
         return (FXHE_Contract_Address, TaoPai_ABI)
+    elif name == "shuijing":
+        return (YCY_Contract_Address, TaoPai_ABI)
 
     #--- 豹豹青春宇宙 ---#
     elif name == "kaoshenglaile":
@@ -226,6 +228,7 @@ ZGHT_Contract_Address = "cfx:achugufke20aym8exsrhr5gkaxr49ae98a0nncyyy0"
 HTKJ_Contract_Address = "cfx:acby6g5sg4v7cufsbrhbwccu591tpv30865ubenucn"
 HC_Contract_Address = "cfx:ach5xttx9vgxuu18hg2hhegpavrv6c7d3urdj6zbu8"
 FXHE_Contract_Address = "cfx:acdu30v7932jzugkwt7v97bdykb6ydfkk22b3s4953"
+YCY_Contract_Address = "cfx:ach23g5h9ahphbgrt314156eu53vgrx1ay83pgnphd"
 
 KaoShengLaiLe_Contract_Address = "cfx:achm40d1fuwpfxe1azk6ty607fpmdrsczpy5pcexuz"
 TongJing_Contract_Address = "cfx:acgj9wmbe97vaf7c53mekz0r6vj9d5y7myeget3fu7"
