@@ -182,16 +182,19 @@ def grab_nft_from_market(target_dict, cookie_dict):
                 price_text = product.find_element_by_tag_name("p").text.strip()
                 if len(price_text) == 0:
                     continue
+                is_paying = False
+                if product.text.strip().find("支付中") != -1:
+                    if_paying = True
                 first_page_prod_cnt += 1
                 price = float(price_text[1:])
                 p_link = product.find_element_by_tag_name("a")
                 href_value = p_link.get_attribute("href").strip()
                 product_id = get_id_from_href(href_value)
-                cur_plist.append((product_id, price, keywords))
+                cur_plist.append((product_id, price, keywords, is_paying))
             
             # 支付
-            for (product_id, price, keywords) in cur_plist:
-                if price <= min_price:
+            for (product_id, price, keywords, is_paying) in cur_plist:
+                if (price <= min_price) and (not is_paying):
                     buy_nft_from_page(driver, product_id, price, keywords)
 
             # 避免访问次数过于频繁而重登录
