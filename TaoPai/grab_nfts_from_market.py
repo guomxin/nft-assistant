@@ -194,8 +194,13 @@ def grab_nft_from_market(target_dict, cookie_dict):
             
             # 支付
             for (product_id, price, keywords, is_paying) in cur_plist:
-                if (price <= min_price) and (not is_paying):
-                    buy_nft_from_page(driver, product_id, price, keywords)
+                if price <= min_price:
+                    if not is_paying:
+                        buy_nft_from_page(driver, product_id, price, keywords)
+                    else:
+                        msg = "{} {}:{}:{}".format(datetime.now(), "支付中", keywords, price)        
+                        print(msg)
+                        utils.send_wx_msg(msg)
 
             # 避免访问次数过于频繁而重登录
             #time.sleep(INTERVAL_BETWEEN_PAGES)
