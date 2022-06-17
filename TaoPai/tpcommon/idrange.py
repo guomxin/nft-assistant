@@ -197,6 +197,7 @@ BaiBianXiong_IdRange2Name = {
     (3001,7800): "N", # (3001,10000)
     (10001,10015): "SSR-端午限定",
     (11001,12420): "熊熊碎片",
+    (12500,12649): "SR-父亲节限定",
 }
 
 TaoPaiChuangShi_IdRange2Name = {
