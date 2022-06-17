@@ -6,9 +6,10 @@ rem 1. generate details
 python detail_conflux_contract.py laodongcun %1
 
 rem 2. dig info for ANY, CONGMING, HANYONG
-python diginfo_from_details_conflux.py laodongcun 1 data/_details_conflux_laodongcun_result_%1.csv 10001 16000  ANY %1
 python diginfo_from_details_conflux.py laodongcun 1 data/_details_conflux_laodongcun_result_%1.csv 11801 13000  CONGMING %1
 python diginfo_from_details_conflux.py laodongcun 1 data/_details_conflux_laodongcun_result_%1.csv 13001 14200  HANYONG %1
+python diginfo_from_details_conflux.py laodongcun 1 data/_details_conflux_laodongcun_result_%1.csv 16001 16600  ZONGZI %1
+python diginfo_from_details_conflux.py laodongcun 1 data/_details_conflux_laodongcun_result_%1.csv 16601 17200  LONGZHOU %1
 
 rem 3. dig info for fullset
 rem python diginfo_from_details_conflux.py laodongcun 2 data/_details_conflux_laodongcun_result_%1.csv 3001,10000 18 N18 %1
