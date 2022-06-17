@@ -184,7 +184,7 @@ def grab_nft_from_market(target_dict, cookie_dict):
                     continue
                 is_paying = False
                 if product.text.strip().find("支付中") != -1:
-                    if_paying = True
+                    is_paying = True
                 first_page_prod_cnt += 1
                 price = float(price_text[1:])
                 p_link = product.find_element_by_tag_name("a")
