@@ -306,7 +306,7 @@ def multi_analyze_transaction_logs_online(tradeprice_dict, contract_addr, contra
             traderesult_dict[tag] = [0, []]
 
     trans_list = get_current_top10000_trans(contract_addr)
-    with open(result_detail_file_name, "w") as details:
+    with open(result_detail_file_name, "w", encoding="utf-8-sig") as details:
         target_row_cnt = 0
         for (trans_hash, trans_date_str) in trans_list:
             trans_date = datetime.datetime.strptime(trans_date_str, "%Y/%m/%d %H:%M:%S")
@@ -455,7 +455,7 @@ def multi_analyze_transaction_logs_hourly_online(contract_addr, contract_ABI, da
     buyers_dict = {} 
 
     trans_list = get_current_top10000_trans(contract_addr)
-    with open(result_detail_file_name, "w") as details:
+    with open(result_detail_file_name, "w", encoding="utf-8-sig") as details:
         target_row_cnt = 0
         for (trans_hash, trans_time_str) in trans_list:
             trans_time = datetime.datetime.strptime(trans_time_str, "%Y/%m/%d %H:%M:%S")
