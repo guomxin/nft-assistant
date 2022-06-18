@@ -6,7 +6,7 @@ cd ..
 python detail_conflux_contract.py baibianxiong $1
 
 # 2. dig info for SSR&SR
-python diginfo_from_details_conflux.py baibianxiong 1 data/_details_conflux_baibianxiong_result_$1.csv 1 12420  ANY $1
+python diginfo_from_details_conflux.py baibianxiong 1 data/_details_conflux_baibianxiong_result_$1.csv 1 12649  ANY $1
 python diginfo_from_details_conflux.py baibianxiong 1 data/_details_conflux_baibianxiong_result_$1.csv 1 50 SSR $1
 python diginfo_from_details_conflux.py baibianxiong 1 data/_details_conflux_baibianxiong_result_$1.csv 10001 10015 SSR-DUANWU $1
 python diginfo_from_details_conflux.py baibianxiong 1 data/_details_conflux_baibianxiong_result_$1.csv 51 500 SR $1
