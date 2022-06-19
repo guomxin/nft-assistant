@@ -95,7 +95,14 @@ def dump_contract_details(contract_address, contract_ABI, dump_file_name, ranges
     for token_id in token_ids:
         if not token_id_in_ranges(token_id, ranges):
             continue
-        owner = c.call_contract_method(contract_address, contract_ABI, 'ownerOf', token_id)
+        while True:
+            # 此接口容易出错，失败之后再次尝试
+            try:
+                owner = c.call_contract_method(contract_address, contract_ABI, 'ownerOf', token_id)
+                break
+            except Exception as e:
+                print(e)
+                time.sleep(1)
         owner = get_base32addr_from_hexaddr(owner)
         if owner not in owner2tokens:
             owner2tokens[owner] = []
