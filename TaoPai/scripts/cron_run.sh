@@ -43,24 +43,15 @@ sh dig_detail-trans_fxpanda2.sh  $today $yesterday $yesterday
 # YCY
 sh dig_detail-trans_shuijing.sh $today $yesterday $yesterday
 
+# YQXK
+sh dig_detail-trans_tiantanbopu.sh $today $yesterday $yesterday
+
 #------ 后处理 ------#
 cd ../data;mkdir -p upload/$today;rm -f upload/$today/*
 cp *$today* upload/$today;cd upload/$today
-#rename 's/\.csv/\.csv/' *
-#rename 's/\.csv/\.csv/' *
 
-mkdir kaozaifriends;mv *kaozaifriends*.csv kaozaifriends
-mkdir taopai2022;mv *taopai2022*.csv taopai2022
-mkdir xunzhang;mv *xunzhang*.csv xunzhang
-mkdir letaotao;mv *letaotao*.csv letaotao
-mkdir taopaitest;mv *taopaitest*.csv taopaitest
-mkdir chuangshi;mv *chuangshi*.csv chuangshi
-
-mkdir guizi;mv *guizi*.csv guizi
-mkdir laodongcun;mv *laodongcun*.csv laodongcun
-
-mkdir baibianxiong;mv *baibianxiong*.csv baibianxiong
-
-mkdir fxpanda2;mv *fxpanda2*.csv fxpanda2
-
-mkdir shuijing;mv *shuijing*.csv shuijing
+for nft in "kaozaifriends" "taopai2022" "xunzhang" "letaotao" "taopaitest" "chuangshi" \
+"guizi" "laodongcun" "baibianxiong" "fxpanda2" "shuijing" "tiantanbopu" 
+do
+    mkdir $nft;mv *$nft*.csv $nft;zip -q $nft $nft/*
+done

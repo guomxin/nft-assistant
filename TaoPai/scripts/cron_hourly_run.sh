@@ -48,6 +48,9 @@ QINLAO\;CONGMING\;HANYONG\;JIANZUI\;ZONGZI\;LONGZHOU\;SR-HUASHOU $tag
 python transaction_conflux_contract_hourly_online.py baibianxiong $date $hour 1,50\;51,500\;501,3000\;3001,10000\;10001,10015\;11001,12420\;12500,12649 \
 SSR\;SR\;R\;N\;SSR-DUANWU\;SUIPIAN\;SR-FATHERDAY $tag
 
+# 天坛波普
+python transaction_conflux_contract_hourly_online.py tiantanbopu $date $hour 1001,1240\;1241,1380\;1381,1400 S\;SS\;SSS $tag
+
 #------ 后处理 ------#
 cd data/hourly;mkdir $tag;rm -f $tag/*
-mv *$tag*.csv $tag
+mv *$tag*.csv $tag;zip -q $tag $tag/*
