@@ -24,9 +24,10 @@ TransDateIndex = 9
 # http接口获取前1000的交易数据
 GET_TRANS_URL = "https://api.confluxscan.net/account/transactions?account={}&skip={}&limit=100&sort=DESC"
 
-def get_current_top10000_trans(contract_address):
+def get_current_top10000_trans(contract_address, start_time=None):
     trans_info = [] #(trans_hash, trans_date)
     trans_hash_dict = {} # 向后翻页获取，当交易动态增加时，后续页面会有重复
+    earlier_than_start_time = False
     for skip in range(0,10000,100):
         while True:
             try:
@@ -38,13 +39,17 @@ def get_current_top10000_trans(contract_address):
                         continue
                     trans_hash_dict[trans_hash] = 1
                     trans_date = datetime.datetime.fromtimestamp(trans["timestamp"])
+                    if (start_time != None) and (trans_date < start_time):
+                        earlier_than_start_time = True
                     trans_date_str = trans_date.strftime("%Y/%m/%d %H:%M:%S")
                     trans_info.append((trans_hash, trans_date_str))
                 break
             except Exception as e:
                 print(e)
                 time.sleep(1)
-        
+        if earlier_than_start_time:
+            break
+
         # access politely
         time.sleep(0.5)
     return trans_info
@@ -305,7 +310,7 @@ def multi_analyze_transaction_logs_online(tradeprice_dict, contract_addr, contra
         for tag in tags:
             traderesult_dict[tag] = [0, []]
 
-    trans_list = get_current_top10000_trans(contract_addr)
+    trans_list = get_current_top10000_trans(contract_addr, start_date)
     with open(result_detail_file_name, "w", encoding="utf-8-sig") as details:
         target_row_cnt = 0
         for (trans_hash, trans_date_str) in trans_list:
@@ -454,7 +459,7 @@ def multi_analyze_transaction_logs_hourly_online(contract_addr, contract_ABI, da
     solders_dict = {}
     buyers_dict = {} 
 
-    trans_list = get_current_top10000_trans(contract_addr)
+    trans_list = get_current_top10000_trans(contract_addr, start_time)
     with open(result_detail_file_name, "w", encoding="utf-8-sig") as details:
         target_row_cnt = 0
         for (trans_hash, trans_time_str) in trans_list:
