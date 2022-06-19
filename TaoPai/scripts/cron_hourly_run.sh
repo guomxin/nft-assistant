@@ -54,3 +54,5 @@ python transaction_conflux_contract_hourly_online.py tiantanbopu $date $hour 100
 #------ 后处理 ------#
 cd data/hourly;mkdir $tag;rm -f $tag/*
 mv *$tag*.csv $tag;zip -q $tag $tag/*
+zip_file=`pwd`/$tag.zip
+cd ../..;python upload_baidudisk.py $zip_file `date --date="1 hour ago" +%Y%m%d`
