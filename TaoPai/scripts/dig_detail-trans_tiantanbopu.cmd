@@ -17,8 +17,6 @@ rem 4. dig count in circulation
 python diginfo_from_details_conflux.py tiantanbopu 3 data/_details_conflux_tiantanbopu_result_%1.csv %1
 
 rem 5. analyze tranctions
-python transaction_conflux_contract.py tiantanbopu trans/TianTanBoPu_transactions_%1.csv %2 %3 1001 1240 S %1
-python transaction_conflux_contract.py tiantanbopu trans/TianTanBoPu_transactions_%1.csv %2 %3 1241 1380 SS %1
-python transaction_conflux_contract.py tiantanbopu trans/TianTanBoPu_transactions_%1.csv %2 %3 1381 1400 SSS %1
+python transaction_conflux_contract_online.py tiantanbopu %2 %3 1001,1240;1241,1380;1381,1400 S;SS;SSS %1
 
 cd scripts
