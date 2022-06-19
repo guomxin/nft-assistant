@@ -22,6 +22,9 @@ tag=`date --date="1 hour ago" +%Y%m%d%H`
 
 echo "------${date} ${hour}------"
 
+# 烤仔的朋友
+python transaction_conflux_contract_hourly_online.py kaozaifriends $date $hour 100001,109628\;200001,200360\;300001,300012\;2001,2052 PUTONG\;JINSE\;SHENGXIAO\;520DIANCANG $tag
+
 # 勋章
 python transaction_conflux_contract_hourly_online.py xunzhang $date $hour 60001,70000\;201,218\;219,303 ZAONIAO\;DASHI\;JINGYING $tag
 
@@ -31,6 +34,12 @@ python transaction_conflux_contract_hourly_online.py taopai2022 $date $hour 3000
 # 内测和公测
 python transaction_conflux_contract_hourly_online.py taopaitest $date $hour 10001,10999\;20001,20127 NEICE\;GONGCE $tag
 
+# 乐淘淘
+python transaction_conflux_contract_hourly_online.py letaotao $date $hour 50001,51496\;51636,52075 PART1\;PART2 $tag
+
+# 柜子
+python transaction_conflux_contract_hourly_online.py guizi $date $hour 1,1000\;1001,4000 GUIZI-SR\;GUIZI-N $tag
+
 # 劳动村
 python transaction_conflux_contract_hourly_online.py laodongcun $date $hour 10001,11800\;11801,13000\;13001,14200\;14201,16000\;16001,16600\;16601,17200\;17201,17800 \
 QINLAO\;CONGMING\;HANYONG\;JIANZUI\;ZONGZI\;LONGZHOU\;SR-HUASHOU $tag
@@ -38,3 +47,7 @@ QINLAO\;CONGMING\;HANYONG\;JIANZUI\;ZONGZI\;LONGZHOU\;SR-HUASHOU $tag
 # 百变熊熊
 python transaction_conflux_contract_hourly_online.py baibianxiong $date $hour 1,50\;51,500\;501,3000\;3001,10000\;10001,10015\;11001,12420\;12500,12649 \
 SSR\;SR\;R\;N\;SSR-DUANWU\;SUIPIAN\;SR-FATHERDAY $tag
+
+#------ 后处理 ------#
+cd data/hourly;mkdir $tag;rm -f $tag/*
+mv *$tag*.csv $tag
