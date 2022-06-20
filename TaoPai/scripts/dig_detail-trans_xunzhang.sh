@@ -10,6 +10,7 @@ python diginfo_from_details_conflux.py xunzhang 1 data/_details_conflux_xunzhang
 python diginfo_from_details_conflux.py xunzhang 1 data/_details_conflux_xunzhang_result_$1.csv 201 218 DASHI $1
 python diginfo_from_details_conflux.py xunzhang 1 data/_details_conflux_xunzhang_result_$1.csv 219 303 JINGYING $1
 python diginfo_from_details_conflux.py xunzhang 1 data/_details_conflux_xunzhang_result_$1.csv 70001 82000 QINGLIANG $1
+python diginfo_from_details_conflux.py xunzhang 1 data/_details_conflux_xunzhang_result_$1.csv 1 200 WANGZHE $1
 
 # 3. dig info for fullset
 # python diginfo_from_details_conflux.py xunzhang 2 data/_details_conflux_xunzhang_result_$1.csv 3001,10000 18 N18 $1
