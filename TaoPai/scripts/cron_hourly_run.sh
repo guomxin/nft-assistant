@@ -35,7 +35,7 @@ python transaction_conflux_contract_hourly_online.py taopai2022 $date $hour 3000
 python transaction_conflux_contract_hourly_online.py taopaitest $date $hour 10001,10999\;20001,20127 NEICE\;GONGCE $tag
 
 # 乐淘淘
-python transaction_conflux_contract_hourly_online.py letaotao $date $hour 50001,51496\;51636,52075 PART1\;PART2 $tag
+python transaction_conflux_contract_hourly_online.py letaotao $date $hour 50001,51496\;51636,52163 PART1\;PART2 $tag
 
 # 柜子
 python transaction_conflux_contract_hourly_online.py guizi $date $hour 1,1000\;1001,4000 GUIZI-SR\;GUIZI-N $tag
