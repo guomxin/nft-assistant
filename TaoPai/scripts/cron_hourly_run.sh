@@ -51,6 +51,10 @@ SSR\;SR\;R\;N\;SSR-DUANWU\;SUIPIAN\;SR-FATHERDAY $tag
 # 天坛波普
 python transaction_conflux_contract_hourly_online.py tiantanbopu $date $hour 1001,1240\;1241,1380\;1381,1400 S\;SS\;SSS $tag
 
+# 水晶博物馆
+python transaction_conflux_contract_hourly_online.py shuijing $date $hour 1,2000\;2001,4000\;4001,6000\;6001,8000\;8001,9500\;9501,10000 \
+R-MA\;R-PING\;R-YIN\;R-E\;SR-RUYI\;SSR-RENWU $tag
+
 #------ 后处理 ------#
 cd data/hourly;mkdir $tag;rm -f $tag/*
 mv *$tag*.csv $tag;zip -q $tag $tag/*
