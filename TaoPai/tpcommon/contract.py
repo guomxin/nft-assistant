@@ -180,7 +180,7 @@ def get_token_name(contract_address, token_id):
         print(e)
         print("fetch {} info error".format(token_id))
 
-def dump_contract_tokenid2name(contract_address, contract_ABI, dump_file_name, filterout_ranges=[], verbose=True):
+def dump_contract_tokenid2name(contract_address, contract_ABI, dump_file_name, ranges=[], verbose=True):
     provider = HTTPProvider('https://main.confluxrpc.com')
     c = Conflux(provider)
 
@@ -189,13 +189,7 @@ def dump_contract_tokenid2name(contract_address, contract_ABI, dump_file_name, f
     _, token_ids = c.call_contract_method(contract_address, contract_ABI, 'tokens', 0, token_cnt)
     target_token_cnt = 0
     for token_id in token_ids:
-        filter_out = False
-        if len(filterout_ranges):
-            for (min_tid, max_tid) in filterout_ranges:
-                if (token_id >= min_tid) and (token_id <= max_tid):
-                    filter_out = True
-                    break
-        if filter_out:
+        if not token_id_in_ranges(token_id, ranges):
             continue
         token_name = get_token_name(contract_address, token_id)
         tokenid_name_list.append((token_id, token_name))
