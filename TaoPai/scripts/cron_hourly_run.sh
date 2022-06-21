@@ -26,7 +26,7 @@ echo "------${date} ${hour}------"
 python transaction_conflux_contract_hourly_online.py kaozaifriends $date $hour 100001,109628\;200001,200360\;300001,300012\;2001,2052 PUTONG\;JINSE\;SHENGXIAO\;520DIANCANG $tag
 
 # 勋章
-python transaction_conflux_contract_hourly_online.py xunzhang $date $hour 60001,70000\;201,218\;219,303\;70001,82000 ZAONIAO\;DASHI\;JINGYING\;QINGLIANG $tag
+python transaction_conflux_contract_hourly_online.py xunzhang $date $hour 60001,70000\;201,218\;219,303\;70001,82000\;1,200 ZAONIAO\;DASHI\;JINGYING\;QINGLIANG\;WANGZHE $tag
 
 # 2022光符
 python transaction_conflux_contract_hourly_online.py taopai2022 $date $hour 30001,32022 ANY $tag

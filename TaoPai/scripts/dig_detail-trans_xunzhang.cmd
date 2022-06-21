@@ -20,6 +20,6 @@ rem 4. dig count in circulation
 python diginfo_from_details_conflux.py xunzhang 3 data/_details_conflux_xunzhang_result_%1.csv %1
 
 rem 5. analyze tranctions
-python transaction_conflux_contract_online.py xunzhang %2 %3 60001,70000;201,218;219,303;70001,82000 ZAONIAO;DASHI;JINGYING;QINGLIANG %1
+python transaction_conflux_contract_online.py xunzhang %2 %3 60001,70000;201,218;219,303;70001,82000;1,200 ZAONIAO;DASHI;JINGYING;QINGLIANG;WANGZHE %1
 
 cd scripts
