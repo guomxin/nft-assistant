@@ -36,7 +36,9 @@ def buy_nft_from_page(driver, product_id, price, keywords):
         # 点击立即支付按钮
         pay_btn = driver.find_element_by_css_selector(PAY_SELECTOR)
         pay_btn.click()
-        #time.sleep(1) # 后面有发送微信/邮件消息，耗时，无需等待
+        # 回到交易平台页面
+        time.sleep(1) 
+        driver.get(SCAN_URL.format(1, "", 0, 0))
 
         msg = "{} {}:{}:{}".format(datetime.now(), desp, keywords, price)
         print(msg)
@@ -89,8 +91,9 @@ def grab_nft_from_market(target_dict, cookie_dict):
     #time.sleep(100) 
 
     access_token = get_access_token(driver)
+    prod2minprice = {}
     # 循环一定次数后重启浏览器
-    for i in range(800):
+    for i in range(1000):
         # 只扫描第一页
         for (keywords, (pid,vid,min_price)) in target_dict.items():
             cur_plist = []
@@ -107,6 +110,11 @@ def grab_nft_from_market(target_dict, cookie_dict):
                 price = float(product["price"][1:])
                 is_paying = (product["isPaying"] != 2)
                 product_id = product["productId"]
+                if keywords in prod2minprice:
+                    if price < prod2minprice[keywords]:
+                        prod2minprice[keywords] = price
+                else:
+                    prod2minprice[keywords] = price
                 cur_plist.append((product_id, price, keywords, is_paying))
             
             # 支付
@@ -117,18 +125,22 @@ def grab_nft_from_market(target_dict, cookie_dict):
                     else:
                         msg = "{} {}:{}:{}".format(datetime.now(), "支付中", keywords, price)        
                         print(msg)
-                        #utils.send_wx_msg(msg)
+                        utils.send_wx_msg(msg)
             
             # 避免访问次数过于频繁
             # time.sleep(INTERVAL_BETWEEN_PAGES)
         if (i+1) % 100 == 0:
             print("{} rounds.".format(i+1))
+            msg = "{}:{}".format(datetime.now(), prod2minprice)
+            print(msg)
+            if (i+1) % 1000 == 0:
+                utils.send_msg(msg)
+            prod2minprice = {}
 
         # 判断时间是否超过交易时间
         cur_time = datetime.now()
         if cur_time.hour == 0:
-            pass
-            #break #6/18 不停
+            break
 
     driver.close()
 
@@ -157,8 +169,7 @@ if __name__ == "__main__":
         # 判断时间是否超过交易时间
         cur_time = datetime.now()
         if cur_time.hour == 0:
-            pass
-            #break #6/18 不停
+            break
 
         # 等待0-3s的随机时间
-        time.sleep(random.random()*3)
+        #time.sleep(random.random()*3)
