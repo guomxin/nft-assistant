@@ -22,4 +22,7 @@ python diginfo_from_details_conflux.py taopaichuangshi 2 data/_details_conflux_t
 rem 3. merge results for two methods
 python merge_fullset_result.py taopaichuangshi %1 METHOD1;METHOD2
 
+rem 4. dig count in circulation
+python diginfo_from_details_conflux.py taopaichuangshi 3 data/_details_conflux_taopaichuangshi_result_%1.csv %1
+
 cd scripts
