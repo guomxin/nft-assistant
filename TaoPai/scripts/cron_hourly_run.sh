@@ -56,7 +56,7 @@ python transaction_conflux_contract_hourly_online.py shuijing $date $hour 1,2000
 R-MA\;R-PING\;R-YIN\;R-E\;SR-RUYI\;SSR-RENWU $tag
 
 # 佛系熊猫二期
-python transaction_conflux_contract_online.py fxpanda2 $date $hour \
+python transaction_conflux_contract_hourly_online.py fxpanda2 $date $hour \
 50001,56704\;56705,57880\;57881,58680\;58681,58880\;60001,61523\;61524,61873 \
 PUTONG\;XIYOU\;PUTONG\;XIYOU\;XIYOU\;CHUANSHUO $tag
 
