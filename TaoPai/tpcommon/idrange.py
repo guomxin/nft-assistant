@@ -73,6 +73,8 @@ def get_idrangedict_by_nftname(nft_name):
         return FXPanda2_IdRange2Name
     elif nft_name == "shuijing":
         return ShuiJing_IdRange2Name
+    elif nft_name == "kaozaikaituo":
+        return KaiZaiKaiTuo_IdRange2Name
 
     #--- 豹豹青春宇宙 ---#
     elif nft_name == "kaoshenglaile":
@@ -87,6 +89,14 @@ def get_name_by_tokenid(idrange2name, token_id):
     for ((min_tid, max_tid), name) in idrange2name.items():
         if (token_id >= min_tid) and (token_id <= max_tid):
             return name
+
+KaiZaiKaiTuo_IdRange2Name = {
+    (15001,15500): "侦查烤仔",
+    (15501,16000): "冲锋烤仔",
+    (16001,16500): "医师烤仔",
+    (16501,17000): "指挥官烤仔",
+    (17001,17500): "猛士烤仔",
+}
 
 ShuiJing_IdRange2Name = {
     # 水晶博物馆

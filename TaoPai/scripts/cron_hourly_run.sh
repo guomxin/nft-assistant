@@ -60,6 +60,11 @@ python transaction_conflux_contract_hourly_online.py fxpanda2 $date $hour \
 50001,56704\;56705,57880\;57881,58680\;58681,58880\;60001,61523\;61524,61873 \
 PUTONG\;XIYOU\;PUTONG\;XIYOU\;XIYOU\;CHUANSHUO $tag
 
+# 烤仔开拓者
+python transaction_conflux_contract_hourly_online.py kaozaikaituo $date $hour \
+15001,15500\;15501,16000\;16001,16500\;16501,17000\;17001,17500 \
+ZHENCHA\;CHONGFENG\;YISHI\;ZHIHUIGUAN\;MENGSHI $tag
+
 #------ 后处理 ------#
 cd data/hourly;mkdir $tag;rm -f $tag/*
 mv *$tag*.csv $tag;zip -q $tag $tag/*

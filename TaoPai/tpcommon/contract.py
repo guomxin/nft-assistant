@@ -11,7 +11,7 @@ from conflux import (
 def get_contract_address_ABI_from_name(name):
     if name == "liuangel":
         return (XY_Contract_Address, TaoPai_ABI)
-    elif name == "aprilkaozai":
+    elif name == "aprilkaozai" or name == "kaozaikaituo":
         return (ConFashion_Contract_Address, TaoPai_ABI)
     elif name == "atsj":
         return (ATSJ_Contract_Address, TaoPai_ABI)

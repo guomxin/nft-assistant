@@ -46,6 +46,9 @@ sh dig_detail-trans_shuijing.sh $today $yesterday $yesterday
 # YQXK
 sh dig_detail-trans_tiantanbopu.sh $today $yesterday $yesterday
 
+# ConFashion
+sh dig_detail-trans_kaozaikaituo.sh $today $yesterday $yesterday
+
 #------ 后处理 ------#
 cd ../data;mkdir -p upload/$today;rm -f upload/$today/*
 cp *$today* upload/$today;cd upload/$today

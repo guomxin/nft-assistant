@@ -5,7 +5,7 @@ cd ..
 # 1. generate details
 python detail_conflux_contract.py fxpanda $1
 
-# 2. dig info for XIYOU&CHUANSHUO&ANY
+# 2. dig info for CHUANSHUO&ANY
 python diginfo_from_details_conflux.py fxpanda 1 data/_details_conflux_fxpanda_result_$1.csv 30001 35656 ANY $1
 python diginfo_from_details_conflux.py fxpanda 1 data/_details_conflux_fxpanda_result_$1.csv 35041 35656 CHUANSHUO $1
 
