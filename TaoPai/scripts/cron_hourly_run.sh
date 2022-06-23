@@ -55,6 +55,11 @@ python transaction_conflux_contract_hourly_online.py tiantanbopu $date $hour 100
 python transaction_conflux_contract_hourly_online.py shuijing $date $hour 1,2000\;2001,4000\;4001,6000\;6001,8000\;8001,9500\;9501,10000 \
 R-MA\;R-PING\;R-YIN\;R-E\;SR-RUYI\;SSR-RENWU $tag
 
+# 佛系熊猫二期
+python transaction_conflux_contract_online.py fxpanda2 $date $hour \
+50001,56704\;56705,57880\;57881,58680\;58681,58880\;60001,61523\;61524,61873 \
+PUTONG\;XIYOU\;PUTONG\;XIYOU\;XIYOU\;CHUANSHUO $tag
+
 #------ 后处理 ------#
 cd data/hourly;mkdir $tag;rm -f $tag/*
 mv *$tag*.csv $tag;zip -q $tag $tag/*

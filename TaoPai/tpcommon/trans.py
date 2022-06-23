@@ -171,13 +171,13 @@ def multi_analyze_transaction_logs(trans_file_name, tradeprice_dict, contract_ad
             if not tag:
                 continue
             if to_addr == Taopai_Conflux_Address:
-                # to address 如果是淘派的地址，说明是合成行为，不计入统计
-                #details.write("{},{},{},合成\n".format(from_addr, to_addr, trans_date_str))
+                # to address 如果是淘派的地址，说明是合成或回收行为，不计入统计
+                details.write("{},{},{},合成或回收,{},{}\n".format(from_addr, to_addr, trans_date_str, tag, token_id))
                 continue
             if from_addr == Taopai_Conflux_Address:
                 # from address 如果是淘派的地址，说明是打开盲盒或者空投
                 date2tradeinfo[trans_date_short_str][tag][1] += 1
-                details.write("{},{},{},开盲盒或空投或合成,{},{}\n".format(from_addr, to_addr, trans_date_str, tag, token_id))
+                details.write("{},{},{},开盲盒或空投,{},{}\n".format(from_addr, to_addr, trans_date_str, tag, token_id))
             else:
                 # 持有者之间的交易
                 date2tradeinfo[trans_date_short_str][tag][0] += 1
@@ -325,8 +325,8 @@ def multi_analyze_transaction_logs_online(tradeprice_dict, contract_addr, contra
             if not tag:
                 continue
             if to_addr == Taopai_Conflux_Address:
-                # to address 如果是淘派的地址，说明是合成行为，不计入统计
-                #details.write("{},{},{},合成\n".format(from_addr, to_addr, trans_date_str))
+                # to address 如果是淘派的地址，说明是合成或回收行为，不计入统计
+                details.write("{},{},{},合成或回收,{},{}\n".format(from_addr, to_addr, trans_date_str, tag, token_id))
                 continue
             if from_addr == Taopai_Conflux_Address:
                 # from address 如果是淘派的地址，说明是打开盲盒或者空投
@@ -372,6 +372,13 @@ def multi_analyze_transaction_logs_online(tradeprice_dict, contract_addr, contra
     
     if verbose:
         print("{} target transaction records found.".format(target_row_cnt))
+
+    # 由于tags指定时可以重复，对应不同的id区间（见佛系熊猫二期的常规款），输出时tags需要去重
+    nodup_tags = []
+    for tag in tags:
+        if tag not in nodup_tags:
+            nodup_tags.append(tag)
+    tags = nodup_tags
 
     with open(result_file_name, "w", encoding="utf-8-sig") as result_file:
         # 写入交易的数量
@@ -509,6 +516,13 @@ def multi_analyze_transaction_logs_hourly_online(contract_addr, contract_ABI, da
     
     if verbose:
         print("{} target transaction records found.".format(target_row_cnt))
+
+    # 由于tags指定时可以重复，对应不同的id区间（见佛系熊猫二期的常规款），输出时tags需要去重
+    nodup_tags = []
+    for tag in tags:
+        if tag not in nodup_tags:
+            nodup_tags.append(tag)
+    tags = nodup_tags
 
     with open(result_file_name, "w", encoding="utf-8-sig") as result_file:
         # 写入交易的数量
