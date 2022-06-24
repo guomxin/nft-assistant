@@ -22,7 +22,7 @@ def buy_nft_from_page(driver, product_id, price, keywords):
     driver.get(PRODUCT_URL.format(product_id))
     
     # 等待加载，否则取不到内容
-    time.sleep(1)
+    time.sleep(0.5)
     
     buy_btn = driver.find_element_by_css_selector(BUY_SELECTOR)
     desp = buy_btn.text.strip()
