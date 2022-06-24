@@ -53,8 +53,8 @@ sh dig_detail-trans_kaozaikaituo.sh $today $yesterday $yesterday
 cd ../data;mkdir -p upload/$today;rm -f upload/$today/*
 cp *$today* upload/$today;cd upload/$today
 
-for nft in "kaozaifriends" "taopai2022" "xunzhang" "letaotao" "taopaitest" "chuangshi" \
-"guizi" "laodongcun" "baibianxiong" "fxpanda2" "shuijing" "tiantanbopu" 
+for nft in "kaozaifriends" "taopai2022" "xunzhang" "letaotao" "taopaitest"  \
+"guizi" "laodongcun" "baibianxiong" "fxpanda2" "shuijing" "tiantanbopu" "kaozaikaituo"
 do
     mkdir $nft;mv *$nft*.csv $nft;zip -q $nft $nft/*
 done
