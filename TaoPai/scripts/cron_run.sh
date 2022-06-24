@@ -49,12 +49,16 @@ sh dig_detail-trans_tiantanbopu.sh $today $yesterday $yesterday
 # ConFashion
 sh dig_detail-trans_kaozaikaituo.sh $today $yesterday $yesterday
 
+# XJH
+sh dig_detail-trans_saiboyouling.sh $today $yesterday $yesterday
+
 #------ 后处理 ------#
 cd ../data;mkdir -p upload/$today;rm -f upload/$today/*
 cp *$today* upload/$today;cd upload/$today
 
 for nft in "kaozaifriends" "taopai2022" "xunzhang" "letaotao" "taopaitest"  \
-"guizi" "laodongcun" "baibianxiong" "fxpanda2" "shuijing" "tiantanbopu" "kaozaikaituo"
+"guizi" "laodongcun" "baibianxiong" "fxpanda2" "shuijing" "tiantanbopu" "kaozaikaituo" \
+"saiboyouling"
 do
     mkdir $nft;mv *$nft*.csv $nft;zip -q $nft $nft/*
 done
