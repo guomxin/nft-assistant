@@ -1,5 +1,4 @@
 # coding: utf-8
-
 def get_ranges_by_nftname(nft_name):
     idrange_dict = get_idrangedict_by_nftname(nft_name)
     ranges = []
@@ -75,6 +74,8 @@ def get_idrangedict_by_nftname(nft_name):
         return ShuiJing_IdRange2Name
     elif nft_name == "kaozaikaituo":
         return KaiZaiKaiTuo_IdRange2Name
+    elif nft_name == "saiboyouling":
+        return SaiBoYouLing_IdRange2Name
 
     #--- 豹豹青春宇宙 ---#
     elif nft_name == "kaoshenglaile":
@@ -89,6 +90,11 @@ def get_name_by_tokenid(idrange2name, token_id):
     for ((min_tid, max_tid), name) in idrange2name.items():
         if (token_id >= min_tid) and (token_id <= max_tid):
             return name
+
+SaiBoYouLing_IdRange2Name = {
+    (1,2850): "普通款",
+    (2851,3000): "珍藏款",
+}
 
 KaiZaiKaiTuo_IdRange2Name = {
     (15001,15500): "侦查烤仔",
