@@ -94,6 +94,8 @@ def get_name_by_tokenid(idrange2name, token_id):
 SaiBoYouLing_IdRange2Name = {
     (1,2850): "普通款",
     (2851,3000): "珍藏款",
+    # (3001,3122)区间也是，但普通款和珍藏款穿插，不知什么原因
+    # (1,3000)部分tokenid作废
 }
 
 KaiZaiKaiTuo_IdRange2Name = {
