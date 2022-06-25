@@ -52,8 +52,8 @@ SSR\;SR\;R\;N\;SSR-DUANWU\;SUIPIAN\;SR-FATHERDAY $tag
 python transaction_conflux_contract_hourly_online.py tiantanbopu $date $hour 1001,1240\;1241,1380\;1381,1400 S\;SS\;SSS $tag
 
 # 水晶博物馆
-python transaction_conflux_contract_hourly_online.py shuijing $date $hour 1,2000\;2001,4000\;4001,6000\;6001,8000\;8001,9500\;9501,10000 \
-R-MA\;R-PING\;R-YIN\;R-E\;SR-RUYI\;SSR-RENWU $tag
+python transaction_conflux_contract_hourly_online.py shuijing $date $hour 1,2000\;2001,4000\;4001,6000\;6001,8000\;8001,9500\;9501,10000;10301,10600 \
+R-MA\;R-PING\;R-YIN\;R-E\;SR-RUYI\;SSR-RENWU\;WUDAJUXING $tag
 
 # 佛系熊猫二期
 python transaction_conflux_contract_hourly_online.py fxpanda2 $date $hour \
