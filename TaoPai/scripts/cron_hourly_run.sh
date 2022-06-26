@@ -55,10 +55,10 @@ python transaction_conflux_contract_hourly_online.py tiantanbopu $date $hour 100
 python transaction_conflux_contract_hourly_online.py shuijing $date $hour 1,2000\;2001,4000\;4001,6000\;6001,8000\;8001,9500\;9501,10000\;10301,10600 \
 R-MA\;R-PING\;R-YIN\;R-E\;SR-RUYI\;SSR-RENWU\;WUDAJUXING $tag
 
-# 佛系熊猫二期
-python transaction_conflux_contract_hourly_online.py fxpanda2 $date $hour \
-50001,56704\;56705,57880\;57881,58680\;58681,58880\;60001,61523\;61524,61873 \
-PUTONG\;XIYOU\;PUTONG\;XIYOU\;XIYOU\;CHUANSHUO $tag
+# 佛系熊猫
+python transaction_conflux_contract_hourly_online.py fxpandaall $date $hour \
+30001,33624\;33625,35040\;35041,35656\;50001,56704\;56705,57880\;57881,58680\;58681,58880\;60001,61523\;61524,61873 \
+PUTONG\;XIYOU\;CHUANSHUO\;PUTONG\;XIYOU\;PUTONG\;XIYOU\;XIYOU\;CHUANSHUO $tag
 
 # 烤仔开拓者
 python transaction_conflux_contract_hourly_online.py kaozaikaituo $date $hour \

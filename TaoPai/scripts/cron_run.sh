@@ -56,7 +56,7 @@ cd ../data;mkdir -p upload/$today;rm -f upload/$today/*
 cp *$today* upload/$today;cd upload/$today
 
 for nft in "kaozaifriends" "taopai2022" "xunzhang" "letaotao" "taopaitest"  \
-"guizi" "laodongcun" "baibianxiong" "fxpanda2" "shuijing" "tiantanbopu" "kaozaikaituo" \
+"guizi" "laodongcun" "baibianxiong" "fxpandaall" "shuijing" "tiantanbopu" "kaozaikaituo" \
 "saiboyouling"
 do
     mkdir $nft;mv *$nft*.csv $nft;zip -q $nft-$today $nft/*
