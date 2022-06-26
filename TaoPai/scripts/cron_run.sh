@@ -60,5 +60,5 @@ for nft in "kaozaifriends" "taopai2022" "xunzhang" "letaotao" "taopaitest"  \
 "guizi" "laodongcun" "baibianxiong" "fxpanda2" "shuijing" "tiantanbopu" "kaozaikaituo" \
 "saiboyouling"
 do
-    mkdir $nft;mv *$nft*.csv $nft;zip -q $nft $nft/*
+    mkdir $nft;mv *$nft*.csv $nft;zip -q $nft-$today $nft/*
 done
