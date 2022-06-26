@@ -13,13 +13,22 @@ if __name__ == "__main__":
     if func_id == 1:
         # dig_a_nftinfo_from_details
         details_file_name = sys.argv[3]
-        min_tid = int(sys.argv[4])
-        max_tid = int(sys.argv[5])
-        dig_tag = sys.argv[6]
-        detail_tag = sys.argv[7]
-        dump_file_name = "data/_dig_a_nftinfo_conflux_{}_{}_result_{}.csv".format(
-            nft_name, dig_tag, detail_tag)
-        detaildigger.dig_a_nftinfo_from_details(details_file_name, min_tid, max_tid, dump_file_name)
+        if len(sys.argv) >= 8:
+            min_tid = int(sys.argv[4])
+            max_tid = int(sys.argv[5])
+            dig_tag = sys.argv[6]
+            detail_tag = sys.argv[7]
+            dump_file_name = "data/_dig_a_nftinfo_conflux_{}_{}_result_{}.csv".format(
+                nft_name, dig_tag, detail_tag)
+            detaildigger.dig_a_nftinfo_from_details(details_file_name, min_tid, max_tid, dump_file_name)
+        elif len(sys.argv) >= 7:
+            ranges_str = sys.argv[4]
+            dig_tag = sys.argv[5]
+            detail_tag = sys.argv[6]
+            ranges = [[int(item) for item in range_str.split(",")] for range_str in ranges_str.split(";")]
+            dump_file_name = "data/_dig_a_nftinfo_conflux_{}_{}_result_{}.csv".format(
+                nft_name, dig_tag, detail_tag)
+            detaildigger.dig_a_nftinfo_from_details_adv(details_file_name, ranges, dump_file_name)
     elif func_id == 2:
         # dig fullset info from details
         details_file_name = sys.argv[3]

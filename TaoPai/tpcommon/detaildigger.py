@@ -5,11 +5,40 @@ parent_path = os.path.abspath(os.path.join(__file__, *([".."]*2)))
 if parent_path not in sys.path:
     sys.path.append(parent_path)
 
-
 from tpcommon import idrange
 
 def blur_address(address):
     return address[:10] + "****" + address[-4:]
+
+def token_id_in_ranges(token_id, ranges):
+    for (min_tid, max_tid) in ranges:
+        if (token_id >= min_tid) and (token_id <= max_tid):
+            return True
+    return False
+
+def dig_a_nftinfo_from_details_adv(details_file_name, ranges, dump_file_name):
+    owner2tidcnt = {}
+    for line in open(details_file_name):
+        items = line.split(",")
+        owner = items[0].strip()
+        tokenids = [int(i) for i in items[2].split(":")]
+        target_tid_cnt = 0
+        for tid in tokenids:
+            if token_id_in_ranges(tid, ranges):
+                target_tid_cnt += 1
+        if target_tid_cnt > 0:
+            owner2tidcnt[owner] = target_tid_cnt
+    
+    # sort the info
+    owner_tidcnt_list = []
+    for (owner, tidcnt) in owner2tidcnt.items():
+        owner_tidcnt_list.append((owner, tidcnt))
+    owner_tidcnt_list.sort(key=lambda p: p[1], reverse=True)
+
+    dump_file = open(dump_file_name, "w")
+    for (owner, tidcnt) in owner_tidcnt_list:
+        dump_file.write("{},{},{}\n".format(blur_address(owner), tidcnt, owner))
+    dump_file.close()
 
 def dig_a_nftinfo_from_details(details_file_name, min_tid, max_tid, dump_file_name):
     owner2tidcnt = {}
