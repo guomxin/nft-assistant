@@ -65,6 +65,11 @@ python transaction_conflux_contract_hourly_online.py kaozaikaituo $date $hour \
 15001,15500\;15501,16000\;16001,16500\;16501,17000\;17001,17500 \
 ZHENCHA\;CHONGFENG\;YISHI\;ZHIHUIGUAN\;MENGSHI $tag
 
+echo "---凹凸世界---"
+python transaction_conflux_contract_hourly_online.py atsj $date $hour \
+10001,25000\;25001,34000\;34001,37000\;37001,38500\;38501,38800\;101,200\;201,300\;301,400 \
+R\;SR\;SSR\;UR\;QuanJiaFu\;Team-JiaDeLuoSi\;Team-Jin\;Team-LeiShi $tag
+
 #------ 后处理 ------#
 cd data/hourly;mkdir $tag;rm -f $tag/*
 mv *$tag*.csv $tag;zip -q $tag $tag/*

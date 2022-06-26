@@ -24,6 +24,8 @@ python diginfo_from_details_conflux.py atsj 2 data/_details_conflux_atsj_result_
 python diginfo_from_details_conflux.py atsj 3 data/_details_conflux_atsj_result_$1.csv $1
 
 # 5. analyze tranctions for QuanJiaFu, LeiShi, Jin, JiaDeLuoSi
-python transaction_conflux_contract_online.py atsj $2 $3 10001,25000;25001,34000;34001,37000;37001,38500;38501,38800;101,200;201,300;301,400 R;SR;SSR;UR;QuanJiaFu;Team-JiaDeLuoSi;Team-Jin;Team-LeiShi $1
+python transaction_conflux_contract_online.py atsj $2 $3 \
+10001,25000\;25001,34000\;34001,37000\;37001,38500\;38501,38800\;101,200\;201,300\;301,400 \
+R\;SR\;SSR\;UR\;QuanJiaFu\;Team-JiaDeLuoSi\;Team-Jin\;Team-LeiShi $1
 
 cd scripts
