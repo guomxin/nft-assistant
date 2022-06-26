@@ -37,8 +37,7 @@ sh dig_detail-trans_guizi.sh  $today $yesterday $yesterday
 sh dig_detail-trans_baibianxiong.sh  $today $yesterday $yesterday
 
 # FXHE
-#sh dig_detail-trans_fxpanda.sh  $today $yesterday $yesterday
-sh dig_detail-trans_fxpanda2.sh  $today $yesterday $yesterday
+sh dig_detail-trans_fxpanda_all.sh  $today $yesterday $yesterday
 
 # YCY
 sh dig_detail-trans_shuijing.sh $today $yesterday $yesterday

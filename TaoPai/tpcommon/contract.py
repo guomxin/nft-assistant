@@ -41,9 +41,7 @@ def get_contract_address_ABI_from_name(name):
         return (ZGHT_Contract_Address, TaoPai_ABI)
     elif name == "zhongguohangtian":
         return (HTKJ_Contract_Address, TaoPai_ABI)
-    elif name == "changgexing":
-        return (HC_Contract_Address, TaoPai_ABI)
-    elif name == "yujunqiasi":
+    elif name == "changgexing" or name == "yujunqiasi" or name == "huacedatu":
         return (HC_Contract_Address, TaoPai_ABI)
     elif name == "taopai2022":
         return (TaopaiNFT_Contract_Address, TaoPai_ABI)
@@ -59,7 +57,7 @@ def get_contract_address_ABI_from_name(name):
         return (TaopaiNFT_Contract_Address, TaoPai_ABI)
     elif name == "letaotao":
         return (TaopaiNFT_Contract_Address, TaoPai_ABI)
-    elif name == "fxpanda" or name == "fxpanda2":
+    elif name == "fxpanda" or name == "fxpanda2" or name == "fxpandaall":
         return (FXHE_Contract_Address, TaoPai_ABI)
     elif name == "shuijing":
         return (YCY_Contract_Address, TaoPai_ABI)
