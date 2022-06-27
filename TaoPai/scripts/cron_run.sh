@@ -18,46 +18,64 @@ conda activate nft;cd /mnt/ssd01/git/nft-assistant/TaoPai/scripts
 
 today=`date +%Y%m%d`
 yesterday=`date --date="1 day ago" +%Y/%m/%d`
+yesterday_short=`date --date="1 day ago" +%Y%m%d`
 
 echo "------${today}------"
 
 # Taopai
+echo "---烤仔的朋友---"
 sh dig_detail-trans_kaozaifriends.sh $today $yesterday $yesterday
+echo "---2022幸运光符---"
 sh dig_detail-trans_taopai2022.sh  $today $yesterday $yesterday
+echo "---勋章---"
 sh dig_detail-trans_xunzhang.sh  $today $yesterday $yesterday
+echo "---乐淘淘---"
 sh dig_detail-trans_letaotao.sh  $today $yesterday $yesterday
+echo "---公测内测---"
 sh dig_detail-trans_taopaitest.sh  $today $yesterday $yesterday
 #sh dig_detail-trans_chuangshi.sh  $today
 
 # UXON
+echo "---劳动村---"
 sh dig_detail-trans_laodongcun.sh  $today $yesterday $yesterday
+echo "---柜子---"
 sh dig_detail-trans_guizi.sh  $today $yesterday $yesterday
 
 # BLOOM
+echo "---百变熊熊---"
 sh dig_detail-trans_baibianxiong.sh  $today $yesterday $yesterday
 
 # FXHE
+echo "---佛系熊猫---"
 sh dig_detail-trans_fxpanda_all.sh  $today $yesterday $yesterday
 
 # YCY
+echo "---水晶博物馆---"
 sh dig_detail-trans_shuijing.sh $today $yesterday $yesterday
 
 # YQXK
+echo "---天坛波普---"
 sh dig_detail-trans_tiantanbopu.sh $today $yesterday $yesterday
 
 # ConFashion
+echo "---烤仔开拓者---"
 sh dig_detail-trans_kaozaikaituo.sh $today $yesterday $yesterday
 
 # XJH
-sh dig_detail-trans_saiboyouling.sh $today $yesterday $yesterday
+#echo "---赛博幽灵---"
+#sh dig_detail-trans_saiboyouling.sh $today $yesterday $yesterday
+
+echo "---统计昨日活跃账户情况---"
+cd ..
+python stat_active_users.py ${yesterday_short}
+cd scripts
 
 #------ 后处理 ------#
 cd ../data;mkdir -p upload/$today;rm -f upload/$today/*
-cp *$today* upload/$today;cd upload/$today
+cp *$today* upload/$today;cp _stat_activeuser_*_result_${yesterday_short}.csv upload/$today;cd upload/$today
 
 for nft in "kaozaifriends" "taopai2022" "xunzhang" "letaotao" "taopaitest"  \
 "guizi" "laodongcun" "baibianxiong" "fxpandaall" "shuijing" "tiantanbopu" "kaozaikaituo" \
-"saiboyouling"
 do
     mkdir $nft;mv *$nft*.csv $nft;zip -q $nft-$today $nft/*
 done
