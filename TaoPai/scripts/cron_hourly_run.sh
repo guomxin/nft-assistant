@@ -76,6 +76,6 @@ python stat_active_users.py ${date_short}
 
 #------ 后处理 ------#
 cd data/hourly;mkdir $tag;rm -f $tag/*
-mv *$tag*.csv $tag;mv *${date_short}*.csv $tag;zip -q $tag $tag/*
+mv *$tag*.csv $tag;mv ../_stat_activeuser_*_result_*${date_short}*.csv $tag;zip -q $tag $tag/*
 zip_file=`pwd`/$tag.zip
 cd ../..;python upload_baidudisk.py $zip_file `date --date="1 hour ago" +%Y%m%d`
