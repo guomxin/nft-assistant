@@ -17,6 +17,7 @@ unset __conda_setup
 conda activate nft;cd /mnt/ssd01/git/nft-assistant/TaoPai
 
 date=`date --date="1 hour ago" +%Y/%m/%d`
+date_short=`date --date="1 hour ago" +%Y%m%d`
 hour=`date --date="1 hour ago" +%H`
 tag=`date --date="1 hour ago" +%Y%m%d%H`
 
@@ -70,8 +71,11 @@ python transaction_conflux_contract_hourly_online.py atsj $date $hour \
 10001,25000\;25001,34000\;34001,37000\;37001,38500\;38501,38800\;101,200\;201,300\;301,400 \
 R\;SR\;SSR\;UR\;QuanJiaFu\;Team-JiaDeLuoSi\;Team-Jin\;Team-LeiShi $tag
 
+echo "---活跃账户---"
+python stat_active_users.py $date_short
+
 #------ 后处理 ------#
 cd data/hourly;mkdir $tag;rm -f $tag/*
-mv *$tag*.csv $tag;zip -q $tag $tag/*
+mv *$tag*.csv $tag;mv *$date_short*.csv $tag;zip -q $tag $tag/*
 zip_file=`pwd`/$tag.zip
 cd ../..;python upload_baidudisk.py $zip_file `date --date="1 hour ago" +%Y%m%d`
