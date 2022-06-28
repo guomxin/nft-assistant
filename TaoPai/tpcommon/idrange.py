@@ -80,6 +80,8 @@ def get_idrangedict_by_nftname(nft_name):
         return SaiBoYouLing_IdRange2Name
     elif nft_name == "huacedatu":
         return HuaCeDaTu_IdRange2Name
+    elif nft_name == "pinglan":
+        return PingLan_IdRange2Name
 
     #--- 豹豹青春宇宙 ---#
     elif nft_name == "kaoshenglaile":
@@ -94,6 +96,12 @@ def get_name_by_tokenid(idrange2name, token_id):
     for ((min_tid, max_tid), name) in idrange2name.items():
         if (token_id >= min_tid) and (token_id <= max_tid):
             return name
+
+PingLan_IdRange2Name = {
+    (70001,70485): "昆明复华大学",
+    (70486,71455): "复华大学",
+    (71456,73395): "含光中队",
+}
 
 SaiBoYouLing_IdRange2Name = {
     (1,2850): "普通款",

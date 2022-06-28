@@ -71,6 +71,10 @@ python transaction_conflux_contract_hourly_online.py atsj $date $hour \
 10001,25000\;25001,34000\;34001,37000\;37001,38500\;38501,38800\;101,200\;201,300\;301,400 \
 R\;SR\;SSR\;UR\;QuanJiaFu\;Team-JiaDeLuoSi\;Team-Jin\;Team-LeiShi $tag
 
+echo "---凭栏一片风云起---"
+python transaction_conflux_contract_hourly_online.py pinglan $2 $3 70001,70485\;70486,71455\;71456,73395 \
+KUNMINGFUHUA\;FUHUA\;HANGUANG $1
+
 echo "---活跃账户---"
 python stat_active_users.py ${date_short}
 
