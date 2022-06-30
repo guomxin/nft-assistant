@@ -62,6 +62,8 @@ def get_idrangedict_by_nftname(nft_name):
         return BaiBianXiong_IdRange2Name
     elif nft_name == "laodongcun":
         return LaoDongCun_IdRange2Name
+    elif nft_name == "laodongcun2":
+        return LaoDongCun2_IdRange2Name
     elif nft_name == "xunzhang":
         return XunZhang_IdRange2Name
     elif nft_name == "letaotao":
@@ -282,7 +284,16 @@ XunZhang_IdRange2Name = {
     (1013,1018): "淘派大使勋章-铜",
 }
 
+LaoDongCun2_IdRange2Name = {
+    # 二期
+    (20001,21111): "R-怪力少女",
+    (21112,22222): "R-富家千金",
+    (22223,24444): "N-村口大娘",
+    (24445,26666): "N-拾荒小孩",
+}
+
 LaoDongCun_IdRange2Name = {
+    # 一期
     (10001,11800): 'N-勤劳大叔',
     (11801,13000): 'R-聪明小子',
     (13001,14200): 'R-憨勇小子',

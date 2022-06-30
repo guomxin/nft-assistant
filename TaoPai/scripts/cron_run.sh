@@ -38,6 +38,7 @@ sh dig_detail-trans_taopaitest.sh  $today $yesterday $yesterday
 # UXON
 echo "---劳动村---"
 sh dig_detail-trans_laodongcun.sh  $today $yesterday $yesterday
+sh dig_detail-trans_laodongcun2.sh  $today $yesterday $yesterday
 echo "---柜子---"
 sh dig_detail-trans_guizi.sh  $today $yesterday $yesterday
 
