@@ -17,6 +17,6 @@ rem 4. dig count in circulation
 python diginfo_from_details_conflux.py lt 3 data/_details_conflux_lt_result_%1.csv %1
 
 rem 5. analyze tranctions
-python transaction_conflux_contract.py lt %2 %3 3000,8680 XINGER %1
+python transaction_conflux_contract_online.py lt %2 %3 3000,8680 XINGER %1
 
 cd scripts
