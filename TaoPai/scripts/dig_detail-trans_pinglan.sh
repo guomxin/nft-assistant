@@ -6,18 +6,21 @@ cd ..
 python detail_conflux_contract.py pinglan $1
 
 # 2. dig info for KunMingFuHua && FuHua
-python diginfo_from_details_conflux.py pinglan 1 data/_details_conflux_pinglan_result_$1.csv 70001,70485 KUNMINGFUHUA  $1
-python diginfo_from_details_conflux.py pinglan 1 data/_details_conflux_pinglan_result_$1.csv 70486,71455 FUHUA $1
-python diginfo_from_details_conflux.py pinglan 1 data/_details_conflux_pinglan_result_$1.csv 70001,73395 ANY $1
+python diginfo_from_details_conflux.py pinglan 1 data/_details_conflux_pinglan_result_$1.csv 70001,70485\;73396,73410 KUNMINGFUHUA  $1
+python diginfo_from_details_conflux.py pinglan 1 data/_details_conflux_pinglan_result_$1.csv 70486,71455\;73411,73440 FUHUA $1
+python diginfo_from_details_conflux.py pinglan 1 data/_details_conflux_pinglan_result_$1.csv 70001,73500 ANY $1
 
 # 3. dig info for fullset
-python diginfo_from_details_conflux.py pinglan 2 data/_details_conflux_pinglan_result_$1.csv 70001,70485\;70486,71455\;71456,73395 1\;2\;4 FEIJI $1
+python diginfo_from_details_conflux.py pinglan 2 data/_details_conflux_pinglan_result_$1.csv \
+70001,70485\;70486,71455\;71456,73395\;73396,73410\;73411,73440\;73441,73500 \
+1\;2\;4\;1\;2\;4 FEIJI $1
 
 # 4. dig count in circulation
 python diginfo_from_details_conflux.py pinglan 3 data/_details_conflux_pinglan_result_$1.csv $1
 
 # 5. analyze tranctions
-python transaction_conflux_contract_online.py pinglan $2 $3 70001,70485\;70486,71455\;71456,73395 \
-KUNMINGFUHUA\;FUHUA\;HANGUANG $1
+python transaction_conflux_contract_online.py pinglan $2 $3 \
+70001,70485\;70486,71455\;71456,73395\;73396,73410\;73411,73440\;73441,73500 \
+KUNMINGFUHUA\;FUHUA\;HANGUANG\;KUNMINGFUHUA\;FUHUA\;HANGUANG $1
 
 cd scripts
