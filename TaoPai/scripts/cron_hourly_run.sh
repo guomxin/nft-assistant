@@ -56,8 +56,10 @@ echo "---天坛波普---"
 python transaction_conflux_contract_hourly_online.py tiantanbopu $date $hour 1001,1240\;1241,1380\;1381,1400 S\;SS\;SSS $tag
 
 echo "---水晶博物馆---"
-python transaction_conflux_contract_hourly_online.py shuijing $date $hour 1,2000\;2001,4000\;4001,6000\;6001,8000\;8001,9500\;9501,10000\;10301,10600 \
-R-MA\;R-PING\;R-YIN\;R-E\;SR-RUYI\;SSR-RENWU\;WUDAJUXING $tag
+python transaction_conflux_contract_online.py shuijing $date $hour \
+1,2000\;2001,4000\;4001,6000\;6001,8000\;8001,9500\;9501,10000\;10301,10600\;11001,11078 \
+R-MA\;R-PING\;R-YIN\;R-E\;SR-RUYI\;SSR-RENWU\;WUDAJUXING\;HEIMAO $tag
+
 
 echo "---佛系熊猫---"
 python transaction_conflux_contract_hourly_online.py fxpandaall $date $hour \
