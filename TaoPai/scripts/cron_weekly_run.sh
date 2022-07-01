@@ -20,7 +20,7 @@ tag=`date +%Y%m%d`
 yesterday=`date --date="1 day ago" +%Y/%m/%d`
 oneweekago=`date --date="7 days ago" +%Y/%m/%d`
 
-echo "------${today}------"
+echo "------${tag}------"
 
 echo "---烤仔的朋友---"
 python transaction_conflux_contract_online.py kaozaifriends $oneweekago $yesterday 100001,109628\;200001,200360\;300001,300012\;2001,2052 PUTONG\;JINSE\;SHENGXIAO\;520DIANCANG $tag
