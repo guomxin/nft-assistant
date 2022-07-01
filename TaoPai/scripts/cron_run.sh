@@ -60,8 +60,8 @@ echo "---天坛波普---"
 sh dig_detail-trans_tiantanbopu.sh $today $yesterday $yesterday
 
 # ConFashion
-echo "---烤仔开拓者---"
-sh dig_detail-trans_kaozaikaituo.sh $today $yesterday $yesterday
+#echo "---烤仔开拓者---"
+#sh dig_detail-trans_kaozaikaituo.sh $today $yesterday $yesterday
 
 # XJH
 #echo "---赛博幽灵---"
@@ -81,7 +81,7 @@ cd ../data;mkdir -p upload/$today;rm -f upload/$today/*
 cp *$today* upload/$today;cp _stat_activeuser_*_result_${yesterday_short}.csv upload/$today;cd upload/$today
 
 for nft in "kaozaifriends" "taopai2022" "xunzhang" "letaotao" "taopaitest"  \
-"guizi" "laodongcun" "baibianxiong" "fxpandaall" "shuijing" "tiantanbopu" "kaozaikaituo" \
+"guizi" "laodongcun" "baibianxiong" "fxpandaall" "shuijing" "tiantanbopu" \
 "pinglan" "activeuser"
 do
     mkdir $nft;mv *$nft*.csv $nft;zip -q $nft-$today $nft/*

@@ -20,8 +20,9 @@ if __name__ == "__main__":
     tags = tags_str.split(";")
     ranges = [[int(item) for item in range_str.split(",")] for range_str in ranges_str.split(";")]
 
-    result_file_name = "data/_transaction_conflux_{}_{}_result_{}.csv".format(
-        nft_name, "+".join(tags), result_tag
+    result_file_name = "data/_transaction_conflux_{}_{}_result_{}({}-{}).csv".format(
+        nft_name, "+".join(tags), result_tag,
+        start_date_str.replace("/",""), end_date_str.replace("/", "")
     )
 
     # 如果价格文件存在则加载
