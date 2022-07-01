@@ -30,6 +30,8 @@ def get_idrangedict_by_nftname(nft_name):
         return DH_IdRange2Name
     elif nft_name == "lt":
         return LT_IdRange2Name
+    elif nft_name == "ltcard":
+        return LTCard_IdRange2Name
     elif nft_name == "guizi":
         return GuiZi_IdRange2Name
     elif nft_name == "shangshi":
