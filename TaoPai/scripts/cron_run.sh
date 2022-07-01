@@ -25,6 +25,7 @@ echo "------${today}------"
 # Taopai
 echo "---烤仔的朋友---"
 sh dig_detail-trans_kaozaifriends.sh $today $yesterday $yesterday
+sh dig_detail-trans_kaozaifriends2.sh $today $yesterday $yesterday
 echo "---2022幸运光符---"
 sh dig_detail-trans_taopai2022.sh  $today $yesterday $yesterday
 echo "---勋章---"

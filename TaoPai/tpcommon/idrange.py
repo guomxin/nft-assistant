@@ -42,6 +42,8 @@ def get_idrangedict_by_nftname(nft_name):
         return HuoXingTanCe_IdRange2Name
     elif nft_name == "kaozaifriends":
         return KaoZaiFriends_IdRange2Name
+    elif nft_name == "kaozaifriends2":
+        return KaoZaiFriends2_IdRange2Name
     elif nft_name == "zhongguohangtian":
         return ZhongGuoHangTian_IdRange2Name
     elif nft_name == "hangtiantanwei2":
@@ -616,6 +618,10 @@ ZhongGuoHangTian_IdRange2Name = {
     (4773,6794): '中国航天梦蓝色版',
     (6795,8816): '祝融周岁纪念蓝色版',
     (9001,9365):'航天点亮梦想动态长卷'
+}
+
+KaoZaiFriends2_IdRange2Name = {
+    (6001,6120): "Evo2K提前购",
 }
 
 KaoZaiFriends_IdRange2Name = {
