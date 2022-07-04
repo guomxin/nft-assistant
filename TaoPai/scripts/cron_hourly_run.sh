@@ -69,10 +69,10 @@ python transaction_conflux_contract_hourly_online.py fxpandaall $date $hour \
 30001,33624\;33625,35040\;35041,35656\;50001,56704\;56705,57880\;57881,58680\;58681,58880\;60001,61523\;61524,61873 \
 PUTONG\;XIYOU\;CHUANSHUO\;PUTONG\;XIYOU\;PUTONG\;XIYOU\;XIYOU\;CHUANSHUO $tag
 
-echo "---烤仔开拓者---"
-python transaction_conflux_contract_hourly_online.py kaozaikaituo $date $hour \
-15001,15500\;15501,16000\;16001,16500\;16501,17000\;17001,17500 \
-ZHENCHA\;CHONGFENG\;YISHI\;ZHIHUIGUAN\;MENGSHI $tag
+#echo "---烤仔开拓者---"
+#python transaction_conflux_contract_hourly_online.py kaozaikaituo $date $hour \
+#15001,15500\;15501,16000\;16001,16500\;16501,17000\;17001,17500 \
+#ZHENCHA\;CHONGFENG\;YISHI\;ZHIHUIGUAN\;MENGSHI $tag
 
 echo "---凹凸世界---"
 python transaction_conflux_contract_hourly_online.py atsj $date $hour \
