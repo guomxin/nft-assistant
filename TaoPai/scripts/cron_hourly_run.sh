@@ -28,7 +28,9 @@ python transaction_conflux_contract_hourly_online.py kaozaifriends $date $hour 1
 python transaction_conflux_contract_hourly_online.py kaozaifriends2 $date $hour 6001,6120 EVO2K $tag
 
 echo "---勋章---"
-python transaction_conflux_contract_hourly_online.py xunzhang $date $hour 60001,70000\;201,218\;219,303\;70001,82000\;1,200 ZAONIAO\;DASHI\;JINGYING\;QINGLIANG\;WANGZHE $tag
+python transaction_conflux_contract_hourly_online.py xunzhang $date $hour \
+60001,70000\;201,218\;219,303\;401,605\;70001,82000\;1,200 \
+ZAONIAO\;DASHI\;JINGYING\;CESHIDASHI\;QINGLIANG\;WANGZHE $tag
 
 echo "---2022光符---"
 python transaction_conflux_contract_hourly_online.py taopai2022 $date $hour 30001,32022 ANY $tag
