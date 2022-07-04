@@ -144,7 +144,10 @@ def dump_contract_tokenid2owner(contract_address, contract_ABI, dump_file_name, 
 
     tokenid_owner_list = []
     token_cnt = c.call_contract_method(contract_address, contract_ABI, 'totalSupply')
-    _, token_ids = c.call_contract_method(contract_address, contract_ABI, 'tokens', 0, token_cnt)
+    token_ids = []
+    for index in range(0, token_cnt, 10000):
+        _, tids = c.call_contract_method(contract_address, contract_ABI, 'tokens', index, 10000)
+        token_ids.extend(tids)
     target_token_cnt = 0
     for token_id in token_ids:
         if (min_tid != -1) and token_id < min_tid:
@@ -189,7 +192,10 @@ def dump_contract_tokenid2name(contract_address, contract_ABI, dump_file_name, r
 
     tokenid_name_list = []
     token_cnt = c.call_contract_method(contract_address, contract_ABI, 'totalSupply')
-    _, token_ids = c.call_contract_method(contract_address, contract_ABI, 'tokens', 0, token_cnt)
+    token_ids = []
+    for index in range(0, token_cnt, 10000):
+        _, tids = c.call_contract_method(contract_address, contract_ABI, 'tokens', index, 10000)
+        token_ids.extend(tids)
     target_token_cnt = 0
     for token_id in token_ids:
         if not token_id_in_ranges(token_id, ranges):
