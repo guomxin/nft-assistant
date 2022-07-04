@@ -34,7 +34,8 @@ def is_taopai_contract(contract_address):
     if (contract_address == contract.KaoShengLaiLe_Contract_Address) or \
         (contract_address == contract.TongJing_Contract_Address) or \
         (contract_address == contract.LSGT_Contract_Address) or \
-        (contract_address == contract.HangTianQingNian_Contract_Address):
+        (contract_address == contract.HangTianQingNian_Contract_Address) or \
+        (contract_address == contract.QJD_Contract_Address):
         # 豹豹青春宇宙的合约
         return False
     else:
