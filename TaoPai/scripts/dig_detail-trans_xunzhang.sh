@@ -9,7 +9,7 @@ python detail_conflux_contract.py xunzhang $1
 python diginfo_from_details_conflux.py xunzhang 1 data/_details_conflux_xunzhang_result_$1.csv 60001 70000 ZAONIAO $1
 python diginfo_from_details_conflux.py xunzhang 1 data/_details_conflux_xunzhang_result_$1.csv 201 218 DASHI $1
 python diginfo_from_details_conflux.py xunzhang 1 data/_details_conflux_xunzhang_result_$1.csv 219 303 JINGYING $1
-python diginfo_from_details_conflux.py xunzhang 1 data/_details_conflux_xunzhang_result_$1.csv 401 605 CESHIDASHI $1
+python diginfo_from_details_conflux.py xunzhang 1 data/_details_conflux_xunzhang_result_$1.csv 2501,2705 CESHIDASHI $1
 python diginfo_from_details_conflux.py xunzhang 1 data/_details_conflux_xunzhang_result_$1.csv 70001 82000 QINGLIANG $1
 python diginfo_from_details_conflux.py xunzhang 1 data/_details_conflux_xunzhang_result_$1.csv 1 200 WANGZHE $1
 
@@ -22,7 +22,7 @@ python diginfo_from_details_conflux.py xunzhang 3 data/_details_conflux_xunzhang
 
 # 5. analyze tranctions
 python transaction_conflux_contract_online.py xunzhang $2 $3 \
-60001,70000\;201,218\;219,303\;401,605\;70001,82000\;1,200 \
+60001,70000\;201,218\;219,303\;2501,2705\;70001,82000\;1,200 \
 ZAONIAO\;DASHI\;JINGYING\;CESHIDASHI\;QINGLIANG\;WANGZHE $1
 
 cd scripts
