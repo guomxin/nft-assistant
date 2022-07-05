@@ -635,7 +635,7 @@ ZhongGuoHangTian_IdRange2Name = {
 }
 
 KaoZaiFriends2_IdRange2Name = {
-    (6001,6120): "Evo2K提前购",
+    (7001,9000): "烤仔的朋友-Evo2K",
 }
 
 KaoZaiFriends_IdRange2Name = {
