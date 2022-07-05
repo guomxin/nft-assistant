@@ -100,9 +100,14 @@ def grab_newest_nft_from_market(target_dict, cookie_dict):
             print("{} accessToken可能已过期,重新获取...".format(datetime.now()))
             access_token = get_access_token(driver)
             (res_code, res) = get_newest_product_list(driver, TOP_COUNT, access_token)
-        print(len(res))
-        print(res)
-        sys.exit(1)
+        for product in res:
+            name = product["name"]
+            price = float(product["price"][1:])
+            is_paying = (product["isPaying"] != 2)
+            product_id = product["productId"]
+
+            
+            
         
         '''
         # 只扫描第一页
