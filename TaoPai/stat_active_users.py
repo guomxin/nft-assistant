@@ -30,18 +30,6 @@ def get_account_tokens(account_address):
         except Exception as e:
             print(e)
 
-def is_taopai_contract(contract_address):
-    if (contract_address == contract.KaoShengLaiLe_Contract_Address) or \
-        (contract_address == contract.TongJing_Contract_Address) or \
-        (contract_address == contract.LSGT_Contract_Address) or \
-        (contract_address == contract.HangTianQingNian_Contract_Address) or \
-        (contract_address == contract.QJD_Contract_Address) or \
-        (contract_address == contract.QJDMBY_Contract_Address):
-        # 豹豹青春宇宙的合约
-        return False
-    else:
-        return True
-
 def sort_and_output_userinfo(userinfo_dict, result_file_name):
     users_info = []
     for u in userinfo_dict:
@@ -74,7 +62,7 @@ if __name__ == "__main__":
 
     for (contract_name,contract_address,_) in account_tokens:
         contra = c.contract(contract_address, contract.TaoPai_ABI)
-        if not is_taopai_contract(contract_address):
+        if not contract.is_taopai_contract(contract_address):
             continue
         print("分析合约：{}".format(contract_name))
         trans_info = trans.get_current_top10000_trans(contract_address, start_time)
