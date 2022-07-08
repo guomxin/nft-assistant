@@ -84,6 +84,11 @@ python transaction_conflux_contract_hourly_online.py pinglan $date $hour \
 70001,70485\;70486,71455\;71456,73395\;73396,73410\;73411,73440\;73441,73500 \
 KUNMINGFUHUA\;FUHUA\;HANGUANG\;KUNMINGFUHUA\;FUHUA\;HANGUANG $tag
 
+echo "---潮虎---"
+python transaction_conflux_contract_hourly_online.py chaohu $date $hour \
+5761,5770\;5001,5760\;4976,4990\;4926,4955\;4676,4900\;4176,4575\;1,3735 \
+CHUANSHUO\;YINCANG\;CHUANSHUO\;SHISHI\;XIYOU\;ZHENGUI\;GAOJI $tag
+
 echo "---活跃账户---"
 python stat_active_users.py ${date_short}
 
