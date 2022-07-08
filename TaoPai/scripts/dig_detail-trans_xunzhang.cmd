@@ -12,7 +12,7 @@ python diginfo_from_details_conflux.py xunzhang 1 data/_details_conflux_xunzhang
 python diginfo_from_details_conflux.py xunzhang 1 data/_details_conflux_xunzhang_result_%1.csv 2501 2705 CESHIDASHI %1
 python diginfo_from_details_conflux.py xunzhang 1 data/_details_conflux_xunzhang_result_%1.csv 70001 82000 QINGLIANG %1
 python diginfo_from_details_conflux.py xunzhang 1 data/_details_conflux_xunzhang_result_%1.csv 1 200 WANGZHE %1
-python diginfo_from_details_conflux.py xunzhang 1 data/_details_conflux_xunzhang_result_%1.csv 2501,2700 ZHIYUANZHE %1
+python diginfo_from_details_conflux.py xunzhang 1 data/_details_conflux_xunzhang_result_%1.csv 4001,4200 ZHIYUANZHE %1
 
 rem 3. dig info for fullset
 rem python diginfo_from_details_conflux.py xunzhang 2 data/_details_conflux_xunzhang_result_%1.csv 3001,10000 18 N18 %1
@@ -23,7 +23,7 @@ python diginfo_from_details_conflux.py xunzhang 3 data/_details_conflux_xunzhang
 
 rem 5. analyze tranctions
 python transaction_conflux_contract_online.py xunzhang %2 %3 ^
-60001,70000;201,218;219,303;401,605;2501,2705;1,200;2501,2700 ^
+60001,70000;201,218;219,303;401,605;2501,2705;1,200;4001,4200 ^
 ZAONIAO;DASHI;JINGYING;CESHIDASHI;QINGLIANG;WANGZHE;ZHIYUANZHE %1
 
 cd scripts
