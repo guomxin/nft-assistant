@@ -27,7 +27,9 @@ python transaction_conflux_contract_online.py kaozaifriends $oneweekago $yesterd
 python transaction_conflux_contract_online.py kaozaifriends2 $oneweekago $yesterday 6001,6120 EVO2K $tag
 
 echo "---勋章---"
-python transaction_conflux_contract_online.py xunzhang $oneweekago $yesterday 60001,70000\;201,218\;219,303\;70001,82000\;1,200 ZAONIAO\;DASHI\;JINGYING\;QINGLIANG\;WANGZHE $tag
+python transaction_conflux_contract_online.py xunzhang $oneweekago $yesterday \
+60001,70000\;201,218\;219,303\;2501,2705\;70001,82000\;1,200\;4001,4200 \
+ZAONIAO\;DASHI\;JINGYING\;CESHIDASHI\;QINGLIANG\;WANGZHE\;ZHIYUANZHE $tag
 
 echo "---2022光符---"
 python transaction_conflux_contract_online.py taopai2022 $oneweekago $yesterday 30001,32022 ANY $tag
@@ -57,18 +59,19 @@ python transaction_conflux_contract_online.py tiantanbopu $oneweekago $yesterday
 
 echo "---水晶博物馆---"
 python transaction_conflux_contract_online.py shuijing $oneweekago $yesterday \
-1,2000\;2001,4000\;4001,6000\;6001,8000\;8001,9500\;9501,10000\;10301,10600\;11001,11078 \
-R-MA\;R-PING\;R-YIN\;R-E\;SR-RUYI\;SSR-RENWU\;WUDAJUXING\;HEIMAO $tag
+1,2000\;2001,4000\;4001,6000\;6001,8000\;8001,9500\;9501,10000\;10301,10600\;11001,11078\;11501,11800 \
+R-MA\;R-PING\;R-YIN\;R-E\;SR-RUYI\;SSR-RENWU\;WUDAJUXING\;HEIMAO\;JIXIE $tag
 
 echo "---佛系熊猫---"
 python transaction_conflux_contract_online.py fxpandaall $oneweekago $yesterday \
-30001,33624\;33625,35040\;35041,35656\;50001,56704\;56705,57880\;57881,58680\;58681,58880\;60001,61523\;61524,61873 \
-PUTONG\;XIYOU\;CHUANSHUO\;PUTONG\;XIYOU\;PUTONG\;XIYOU\;XIYOU\;CHUANSHUO $tag
+30001,33624\;33625,35040\;35041,35656\;50001,56704\;56705,57880\;57881,58680\;58681,58880\;60001,61523\;61524,61873\;40001,40103\;\
+64001,64308\;65001,65308\;66001,66308 \
+PUTONG\;XIYOU\;CHUANSHUO\;PUTONG\;XIYOU\;PUTONG\;XIYOU\;XIYOU\;CHUANSHUO\;CHUANSHUO\;CHUANSHUO\;CHUANSHUO\;CHUANSHUO $tag
 
-echo "---烤仔开拓者---"
-python transaction_conflux_contract_online.py kaozaikaituo $oneweekago $yesterday \
-15001,15500\;15501,16000\;16001,16500\;16501,17000\;17001,17500 \
-ZHENCHA\;CHONGFENG\;YISHI\;ZHIHUIGUAN\;MENGSHI $tag
+#echo "---烤仔开拓者---"
+#python transaction_conflux_contract_online.py kaozaikaituo $oneweekago $yesterday \
+#15001,15500\;15501,16000\;16001,16500\;16501,17000\;17001,17500 \
+#ZHENCHA\;CHONGFENG\;YISHI\;ZHIHUIGUAN\;MENGSHI $tag
 
 echo "---凹凸世界---"
 python transaction_conflux_contract_online.py atsj $oneweekago $yesterday \
@@ -79,3 +82,13 @@ echo "---凭栏一片风云起---"
 python transaction_conflux_contract_online.py pinglan $oneweekago $yesterday \
 70001,70485\;70486,71455\;71456,73395\;73396,73410\;73411,73440\;73441,73500 \
 KUNMINGFUHUA\;FUHUA\;HANGUANG\;KUNMINGFUHUA\;FUHUA\;HANGUANG $tag
+
+echo "---潮虎---"
+python transaction_conflux_contract_online.py chaohu $oneweekago $yesterday \
+5761,5770\;5001,5760\;4976,4990\;4926,4955\;4676,4900\;4176,4575\;1,3735 \
+CHUANSHUO\;YINCANG\;CHUANSHUO\;SHISHI\;XIYOU\;ZHENGUI\;GAOJI $tag
+
+echo "---BOBO三国---"
+python transaction_conflux_contract_online.py bobosg $oneweekago $yesterday \
+1,1800\;4001,5800\;8001,9800\;12001,12720\;16001,16360 \
+LVBU\;ZHANGFEI\;GUANYU\;CAOCAO\;ZHUGELIANG $tag
