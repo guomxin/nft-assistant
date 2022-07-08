@@ -88,6 +88,8 @@ def get_idrangedict_by_nftname(nft_name):
         return HuaCeDaTu_IdRange2Name
     elif nft_name == "pinglan":
         return PingLan_IdRange2Name
+    elif nft_name == "bobosg":
+        return BOBOSG_IdRange2Name
 
     #--- 豹豹青春宇宙 ---#
     elif nft_name == "kaoshenglaile":
@@ -102,6 +104,14 @@ def get_name_by_tokenid(idrange2name, token_id):
     for ((min_tid, max_tid), name) in idrange2name.items():
         if (token_id >= min_tid) and (token_id <= max_tid):
             return name
+
+BOBOSG_IdRange2Name = {
+    (1,1800): "R-战神吕布",
+    (4001,5800): "R-燕人张飞",
+    (8001,9800): "R-武圣关羽",
+    (12001,12720): "SR-枭雄曹操",
+    (16001,16360): "SSR-卧龙诸葛亮",
+}
 
 PingLan_IdRange2Name = {
     (70001,70485): "昆明复华大学",

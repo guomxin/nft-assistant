@@ -89,6 +89,11 @@ python transaction_conflux_contract_hourly_online.py chaohu $date $hour \
 5761,5770\;5001,5760\;4976,4990\;4926,4955\;4676,4900\;4176,4575\;1,3735 \
 CHUANSHUO\;YINCANG\;CHUANSHUO\;SHISHI\;XIYOU\;ZHENGUI\;GAOJI $tag
 
+echo "---BOBO三国---"
+python transaction_conflux_contract_hourly_online.py bobosg $date $hour \
+1,1800\;4001,5800\;8001,9800\;12001,12720\;16001,16360 \
+LVBU\;ZHANGFEI\;GUANYU\;CAOCAO\;ZHUGELIANG $tag
+
 echo "---活跃账户---"
 python stat_active_users.py ${date_short}
 

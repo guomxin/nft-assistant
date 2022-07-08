@@ -71,6 +71,10 @@ sh dig_detail-trans_tiantanbopu.sh $today $yesterday $yesterday
 echo "---凭栏一片风云起---"
 sh dig_detail-trans_pinglan.sh  $today $yesterday $yesterday
 
+# BOBOSG
+echo "---BOBO三国---"
+sh dig_detail-trans_bobosg.sh $today $yesterday $yesterday
+
 echo "---统计昨日活跃账户情况---"
 cd ..
 python stat_active_users.py ${yesterday_short}
