@@ -24,7 +24,7 @@ echo "------${tag}------"
 
 echo "---烤仔的朋友---"
 python transaction_conflux_contract_online.py kaozaifriends $oneweekago $yesterday 100001,109628\;200001,200360\;300001,300012\;2001,2052 PUTONG\;JINSE\;SHENGXIAO\;520DIANCANG $tag
-python transaction_conflux_contract_online.py kaozaifriends2 $oneweekago $yesterday 6001,6120 EVO2K $tag
+python transaction_conflux_contract_online.py kaozaifriends2 $oneweekago $yesterday 7001,9000 EVO2K $tag
 
 echo "---勋章---"
 python transaction_conflux_contract_online.py xunzhang $oneweekago $yesterday \
