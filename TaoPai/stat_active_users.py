@@ -42,6 +42,18 @@ def sort_and_output_userinfo(userinfo_dict, result_file_name):
                 trans.blur_address(addr), cnt, addr
             ))
 
+def sort_and_output_prodinfo(prod_info_dict, result_file_name):
+    prods_info = []
+    for p in prod_info_dict:
+        pinfo = [p, prod_info_dict[p]]
+        prods_info.append(pinfo)
+    prods_info.sort(key=lambda a: a[1], reverse=True)
+    with open(result_file_name, "w", encoding="utf-8-sig") as result_file:
+        for (prod, cnt) in prods_info:
+            result_file.write("{},{}\n".format(
+                prod, cnt
+            ))
+
 if __name__ == "__main__":
     if len(sys.argv) < 2:
         print("{} <date>(YYmmdd).".format(sys.argv[0]))
@@ -59,6 +71,7 @@ if __name__ == "__main__":
     buyer_userinfo_dict = {}
     solder_userinfo_dict = {}
     active_userinfo_dict = {} # {address: (total_cnt, buy_cnt, sold_cnt, blindbox_cnt)}
+    product_info_dict = {} # {name: cnt}
 
     for (contract_name,contract_address,_) in account_tokens:
         contra = c.contract(contract_address, contract.TaoPai_ABI)
@@ -104,6 +117,11 @@ if __name__ == "__main__":
                     active_userinfo_dict[to_addr] = [0,0,0]
                 active_userinfo_dict[to_addr][0] += 1
 
+                token_name = contract.get_token_name(contract_address, token_id)
+                if token_name not in product_info_dict:
+                    product_info_dict[token_name] = 0
+                product_info_dict[token_name] += 1
+
             # wait for some time for HTTP 429 error
             time.sleep(0.2)
     
@@ -140,5 +158,11 @@ if __name__ == "__main__":
         "BLINDBOX", date_str
     )
     sort_and_output_userinfo(blindbox_userinfo_dict, blindbox_result_file_name)
+
+    # 输出交易的token信息
+    product_result_file_name = "data/_stat_activeuser_{}_result_{}.csv".format(
+        "PRODUCT", date_str
+    )
+    sort_and_output_prodinfo(product_info_dict, product_result_file_name)
 
 
