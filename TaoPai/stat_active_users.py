@@ -54,6 +54,18 @@ def sort_and_output_prodinfo(prod_info_dict, result_file_name):
                 prod, cnt
             ))
 
+def remove_tail_numbers(token_name):
+    if len(token_name) == 0:
+        return ""
+    index = len(token_name) - 1
+    while (index >= 0) and token_name[index:].isdigit():
+        index -= 1
+    if index < 0:
+        # 全为数字
+        return token_name
+    else:
+        return token_name[:index+1]
+
 if __name__ == "__main__":
     if len(sys.argv) < 2:
         print("{} <date>(YYmmdd).".format(sys.argv[0]))
@@ -118,6 +130,7 @@ if __name__ == "__main__":
                 active_userinfo_dict[to_addr][0] += 1
 
                 token_name = contract.get_token_name(contract_address, token_id)
+                token_name = remove_tail_numbers(token_name)
                 if token_name not in product_info_dict:
                     product_info_dict[token_name] = 0
                 product_info_dict[token_name] += 1
