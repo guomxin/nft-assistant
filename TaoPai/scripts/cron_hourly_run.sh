@@ -94,6 +94,11 @@ python transaction_conflux_contract_hourly_online.py bobosg $date $hour \
 1,1800\;4001,5800\;8001,9800\;12001,12720\;16001,16360 \
 LVBU\;ZHANGFEI\;GUANYU\;CAOCAO\;ZHUGELIANG $tag
 
+echo "---花开四季云起龙骧---"
+python transaction_conflux_contract_hourly_online.py huakaiyunqi $date $hour \
+12001,12199\;12201,12499\;12501,12899\;12901,13399\;13401,13659 \
+CHUN\;XIA\;QIU\;DONG\;YUNQI $tag
+
 echo "---活跃账户---"
 python stat_active_users.py ${date_short}
 

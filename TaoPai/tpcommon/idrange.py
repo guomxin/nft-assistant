@@ -28,7 +28,7 @@ def get_idrangedict_by_nftname(nft_name):
         return CH_IdRange2Name
     elif nft_name == "dunhuang":
         return DH_IdRange2Name
-    elif nft_name == "lt":
+    elif nft_name == "lt": # 星儿
         return LT_IdRange2Name
     elif nft_name == "ltcard":
         return LTCard_IdRange2Name
@@ -90,6 +90,8 @@ def get_idrangedict_by_nftname(nft_name):
         return PingLan_IdRange2Name
     elif nft_name == "bobosg":
         return BOBOSG_IdRange2Name
+    elif nft_name == "huakaiyunqi":
+        return HuaKaiYunQi_IdRange2Name
 
     #--- 豹豹青春宇宙 ---#
     elif nft_name == "kaoshenglaile":
@@ -104,6 +106,14 @@ def get_name_by_tokenid(idrange2name, token_id):
     for ((min_tid, max_tid), name) in idrange2name.items():
         if (token_id >= min_tid) and (token_id <= max_tid):
             return name
+
+HuaKaiYunQi_IdRange2Name = {
+    (12001,12199): "春之花", #199
+    (12201,12499): "夏之花", #299
+    (12501,12899): "秋之花", #399
+    (12901,13399): "冬之花", #499
+    (13401,13659): "云起龙骧", #259，预留20
+}
 
 BOBOSG_IdRange2Name = {
     (1,1800): "R-战神吕布",

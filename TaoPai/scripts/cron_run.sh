@@ -75,6 +75,10 @@ sh dig_detail-trans_pinglan.sh  $today $yesterday $yesterday
 echo "---BOBO三国---"
 sh dig_detail-trans_bobosg.sh $today $yesterday $yesterday
 
+# LT
+echo "---花开四季云起龙骧---"
+sh dig_detail-trans_huakaiyunqi.sh $today $yesterday $yesterday
+
 echo "---统计昨日活跃账户情况---"
 cd ..
 python stat_active_users.py ${yesterday_short}
@@ -86,7 +90,7 @@ cp *$today* upload/$today;cp _stat_activeuser_*_result_${yesterday_short}.csv up
 
 for nft in "kaozaifriends" "taopai2022" "xunzhang" "letaotao" "taopaitest"  \
 "guizi" "laodongcun" "baibianxiong" "fxpandaall" "shuijing" "tiantanbopu" \
-"pinglan" "bobosg" "activeuser"
+"pinglan" "bobosg" "huakaiyunqi" "activeuser"
 do
     mkdir $nft;mv *$nft*.csv $nft;zip -q $nft-$today $nft/*
 done
