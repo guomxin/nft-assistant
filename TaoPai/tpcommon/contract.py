@@ -19,7 +19,7 @@ def get_contract_address_ABI_from_name(name):
         return (COCAFE_Contract_Address, TaoPai_ABI)
     elif name == "dunhuang" or name == "hutoufeitian":
         return (SDQH_Contract_Address, TaoPai_ABI)
-    elif name == "lt" or name == "ltcard":
+    elif name == "lt" or name == "ltcard" or name == "huakaiyunqi":
         return (LT_Contract_Address, TaoPai_ABI)
     elif name == "qiannian":
         return (JYY_Contract_Address, TaoPai_ABI)
@@ -180,13 +180,14 @@ def dump_contract_tokenid2owner(contract_address, contract_ABI, dump_file_name, 
 DETAIL_URL = "https://api.confluxscan.net/nft/preview?contract={}&tokenId={}&withMetadata=false"
 
 def get_token_name(contract_address, token_id):
-    try:
-        resp = requests.get(DETAIL_URL.format(contract_address, token_id))
-        resp_json = resp.json()
-        return resp_json['data']['name']
-    except Exception as e:
-        print(e)
-        print("fetch {} info error".format(token_id))
+    while True:
+        try:
+            resp = requests.get(DETAIL_URL.format(contract_address, token_id))
+            resp_json = resp.json()
+            return resp_json['data']['name']
+        except Exception as e:
+            print(e)
+            print("fetch {} info error".format(token_id))
 
 def dump_contract_tokenid2name(contract_address, contract_ABI, dump_file_name, ranges=[], verbose=True):
     provider = HTTPProvider('https://main.confluxrpc.com')
