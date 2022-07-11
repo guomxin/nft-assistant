@@ -66,6 +66,19 @@ def remove_tail_numbers(token_name):
     else:
         return token_name[:index+1]
 
+def postprocess_token_name(token_name):
+    if len(token_name) == 0:
+        return token_name
+    token_name = token_name.strip()
+    # 去掉尾部的"-""
+    if token_name[-1] == "-":
+        token_name = token_name[:-1]
+    if (token_name == "高级款") or (token_name == "隐藏款") or (token_name == "珍贵款") or (token_name == "稀有款") or \
+        (token_name == "史诗款") or (token_name == "传说款"):
+        # 说明是潮虎系列
+        token_name = "潮虎:" + token_name
+    return token_name
+
 if __name__ == "__main__":
     if len(sys.argv) < 2:
         print("{} <date>(YYmmdd).".format(sys.argv[0]))
@@ -131,6 +144,7 @@ if __name__ == "__main__":
 
                 token_name = contract.get_token_name(contract_address, token_id)
                 token_name = remove_tail_numbers(token_name)
+                token_name = postprocess_token_name(token_name)
                 if token_name not in product_info_dict:
                     product_info_dict[token_name] = 0
                 product_info_dict[token_name] += 1
