@@ -47,8 +47,8 @@ echo "---劳动村---"
 python transaction_conflux_contract_online.py laodongcun $oneweekago $yesterday 10001,11800\;11801,13000\;13001,14200\;14201,16000\;16001,16600\;16601,17200\;17201,17800 \
 QINLAO\;CONGMING\;HANYONG\;JIANZUI\;ZONGZI\;LONGZHOU\;SR-HUASHOU $tag
 python transaction_conflux_contract_online.py laodongcun2 $oneweekago $yesterday \
-20001,21111\;21112,22222\;22223,24444\;24445,26666 \
-GUAILI\;FUJIA\;CUNKOU\;SHIHUANG $tag
+20001,21111\;21112,22222\;22223,24444\;24445,26666\;5001,5900 \
+GUAILI\;FUJIA\;CUNKOU\;SHIHUANG\;NONGDAHU $tag
 
 echo "---百变熊熊---"
 python transaction_conflux_contract_online.py baibianxiong $oneweekago $yesterday 1,50\;51,500\;501,3000\;3001,10000\;10001,10015\;11001,12420\;12500,12649 \
