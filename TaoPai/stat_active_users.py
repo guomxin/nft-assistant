@@ -143,6 +143,9 @@ if __name__ == "__main__":
                 active_userinfo_dict[to_addr][0] += 1
 
                 token_name = contract.get_token_name(contract_address, token_id)
+                if token_name == None:
+                    # 获取失败
+                    token_name = "未知"
                 token_name = remove_tail_numbers(token_name)
                 token_name = postprocess_token_name(token_name)
                 if token_name not in product_info_dict:
