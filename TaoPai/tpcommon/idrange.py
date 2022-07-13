@@ -92,6 +92,8 @@ def get_idrangedict_by_nftname(nft_name):
         return BOBOSG_IdRange2Name
     elif nft_name == "huakaiyunqi":
         return HuaKaiYunQi_IdRange2Name
+    elif nft_name == "limitless":
+        return Limitless_IdRange2Name
 
     #--- 豹豹青春宇宙 ---#
     elif nft_name == "kaoshenglaile":
@@ -107,12 +109,24 @@ def get_name_by_tokenid(idrange2name, token_id):
         if (token_id >= min_tid) and (token_id <= max_tid):
             return name
 
+Limitless_IdRange2Name = {
+    (1,500): "SSR-ACUEBEE-001",
+    (501,1500): "SR-ACUEBEE-002",
+    (1501,2500): "SR-ACUEBEE-003",
+    (2501,4000): "R-ACUEBEE-004",
+    (4001,5500): "R-ACUEBEE-005",
+    (5501,7000): "R-ACUEBEE-006",
+}
+
 HuaKaiYunQi_IdRange2Name = {
     (12001,12199): "春之花", #199
     (12201,12499): "夏之花", #299
     (12501,12899): "秋之花", #399
     (12901,13399): "冬之花", #499
     (13401,13659): "云起龙骧", #259，预留20
+
+    (2101,2166): "碟恋花", # TODO: (2167,2200) 2022/7/13
+    (2201,2252): "云起龙骧", # TODO: (2253,2300) 2022/7/13
 }
 
 BOBOSG_IdRange2Name = {

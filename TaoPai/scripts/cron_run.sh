@@ -79,6 +79,10 @@ sh dig_detail-trans_bobosg.sh $today $yesterday $yesterday
 echo "---花开四季云起龙骧---"
 sh dig_detail-trans_huakaiyunqi.sh $today $yesterday $yesterday
 
+# Limitless
+echo "---Limitless---"
+sh dig_detail-trans_limitless.sh $today $yesterday $yesterday
+
 echo "---统计昨日活跃账户情况---"
 cd ..
 python stat_active_users.py ${yesterday_short}

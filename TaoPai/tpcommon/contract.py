@@ -65,6 +65,8 @@ def get_contract_address_ABI_from_name(name):
         return (XJH_Contract_Address, TaoPai_ABI)
     elif name == "bobosg":
         return (BOBOSG_Contract_Address, TaoPai_ABI)
+    elif name == "limitless":
+        return (Limitless_Contract_Address, TaoPai_ABI)
 
     #--- 豹豹青春宇宙 ---#
     elif name == "kaoshenglaile":
@@ -245,6 +247,7 @@ FXHE_Contract_Address = "cfx:acdu30v7932jzugkwt7v97bdykb6ydfkk22b3s4953"
 YCY_Contract_Address = "cfx:ach23g5h9ahphbgrt314156eu53vgrx1ay83pgnphd"
 XJH_Contract_Address = "cfx:acgg9rtk6f3mfa05hssabwpkexf3guahb26dgx1ek2"
 BOBOSG_Contract_Address = "cfx:acc3ea44baypswat4s37wvyk0ewc6e6bnevs8zvnj1"
+Limitless_Contract_Address = "cfx:acbmhd5km15u68eyy17xusmr5a1jy1hthuavs06mhw"
 
 KaoShengLaiLe_Contract_Address = "cfx:achm40d1fuwpfxe1azk6ty607fpmdrsczpy5pcexuz"
 TongJing_Contract_Address = "cfx:acgj9wmbe97vaf7c53mekz0r6vj9d5y7myeget3fu7"

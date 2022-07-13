@@ -97,3 +97,8 @@ echo "---花开四季云起龙骧---"
 python transaction_conflux_contract_online.py huakaiyunqi $oneweekago $yesterday \
 12001,12199\;12201,12499\;12501,12899\;12901,13399\;13401,13659 \
 CHUN\;XIA\;QIU\;DONG\;YUNQI $tag
+
+echo "---Limitless---"
+python transaction_conflux_contract_online.py limitless $oneweekago $yesterday \
+1,500\;501,2500\;2501,7000 \
+SSR\;SR\;R $tag
