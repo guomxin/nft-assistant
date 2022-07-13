@@ -180,7 +180,8 @@ def dump_contract_tokenid2owner(contract_address, contract_ABI, dump_file_name, 
 DETAIL_URL = "https://api.confluxscan.net/nft/preview?contract={}&tokenId={}&withMetadata=false"
 
 def get_token_name(contract_address, token_id):
-    while True:
+    for _ in range(20):
+    # 最多试20次
         try:
             resp = requests.get(DETAIL_URL.format(contract_address, token_id))
             resp_json = resp.json()
