@@ -96,8 +96,8 @@ LVBU\;ZHANGFEI\;GUANYU\;CAOCAO\;ZHUGELIANG $tag
 
 echo "---花开四季云起龙骧---"
 python transaction_conflux_contract_hourly_online.py huakaiyunqi $date $hour \
-12001,12199\;12201,12499\;12501,12899\;12901,13399\;13401,13659\;2201,2252 \
-CHUN\;XIA\;QIU\;DONG\;YUNQI\;YUNQI $tag
+12001,12199\;12201,12499\;12501,12899\;12901,13399\;13401,13659\;2201,2252\;2101,2166\;2401,2499 \
+CHUN\;XIA\;QIU\;DONG\;YUNQI\;YUNQI\;DIELIANHUA\;DIELIANHUA $tag
 
 echo "---Limitless--"
 python transaction_conflux_contract_hourly_online.py limitless $date $hour \
