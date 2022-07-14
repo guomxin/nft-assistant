@@ -1,17 +1,17 @@
 # coding: utf-8
 
 from selenium import webdriver
-from datetime import date, datetime
-import sys
+from datetime import datetime
 import time
 import random
 import requests
 import json
+import sys
 
 from tpcommon import utils
 from tpcommon import market
 
-SCAN_URL = "https://nft.taopainft.com/trade?type=bb86903952ad5df5f5016c8d3d4d895ae892ee89&p={}&s=1&k={}&pid={}&vid={}"
+SCAN_URL = "https://nft.taopainft.com/trade?type=bb86903952ad5df5f5016c8d3d4d895ae892ee89&p={}&s=3&k={}&pid={}&vid={}"
 PRODUCT_URL = "https://nft.taopainft.com/trade/detail?pid={}&type=bb86903952ad5df5f5016c8d3d4d895ae892ee89"
 
 BUY_SELECTOR = "#__next > div.text-white.px-4\.5.scrolling-touch.h-full.min-h-full > div > main > div:nth-child(3) > button"
@@ -28,7 +28,7 @@ def buy_nft_from_page(driver, product_id, price, keywords):
     desp = buy_btn.text.strip()
     if (desp == "购买"):
         buy_btn.click()
-        time.sleep(1)
+        time.sleep(0.5)
         # 点击仔细阅读并同意框
         confrim_btn = driver.find_element_by_css_selector(CONFIRM_SELECTOR)
         confrim_btn.click()
@@ -40,44 +40,71 @@ def buy_nft_from_page(driver, product_id, price, keywords):
         time.sleep(1) 
         driver.get(SCAN_URL.format(1, "", 0, 0))
 
-        msg = "{} {}:{}:{}".format(datetime.now(), desp, keywords, price)
+        msg = "NEW {} {}:{}:{}".format(datetime.now(), desp, keywords, price)
         print(msg)
         utils.send_msg(msg)
         #utils.send_wx_msg(msg)
     else:
-        msg = "{} {}:{}:{}".format(datetime.now(), desp, keywords, price)        
+        msg = "NEW {} {}:{}:{}".format(datetime.now(), desp, keywords, price)        
         print(msg)
         utils.send_wx_msg(msg)
 
 INTERVAL_BETWEEN_PAGES = 0.2 # (s)
 GET_PRODUCT_URL = "https://nft.taopainft.com/v1/market/v2/product/list"
+CREATE_ORDER_URL = "https://nft.taopainft.com/v1/market/order/create"
 TOP_COUNT = 100
 
 def get_access_token(driver):
-    driver.get(SCAN_URL.format(1, "", 0, 0))
-    return driver.get_cookie("accessToken")['value']
+    try:
+        driver.get(SCAN_URL.format(1, "", 0, 0))
+        return driver.get_cookie("accessToken")['value']
+    except Exception as e:
+        driver.close()
+        raise e
 
-def get_newest_product_list(driver, cnt, access_token):
+def buy_nft(access_token, product_id, price, keywords):
     data = {
-        "marketType": 1,
-        "offset": 0,
-        "limit": cnt,
-        "types": "all",
-        "publisherId": 0,
-        "name": "",
-        "sortType": 3,
-        "virtualCategory": 0 
+        "productId": product_id
     }
     headers = {
         "authorization": "Bearer " + access_token,
     }
-    res = requests.post(GET_PRODUCT_URL, data=json.dumps(data), headers=headers).json()
-    if res["code"] != 0:
-        return (res["code"], None)
+    res = requests.post(CREATE_ORDER_URL, data=json.dumps(data), headers=headers).json()
+    if res["code"] == 0:
+        msg = "NEW 购买 {}:{}:{}".format(datetime.now(), keywords, price)
+        print(msg)
+        utils.send_msg(msg)
     else:
-        return (res["code"], res["data"]["list"])
+        msg = "NEW 下单失败 {}:{}:{}:{}".format(datetime.now(), keywords, price, res["message"])
+        print(msg)
+        utils.send_wx_msg(msg)
+
+def get_newest_product_list(driver, cnt, access_token):
+    try:
+        data = {
+            "marketType": 1,
+            "offset": 0,
+            "limit": cnt,
+            "types": "all",
+            "publisherId": 0,
+            "name": "",
+            "sortType": 3,
+            "virtualCategory": 0 
+        }
+        headers = {
+            "authorization": "Bearer " + access_token,
+        }
+        res = requests.post(GET_PRODUCT_URL, data=json.dumps(data), headers=headers).json()
+        if res["code"] != 0:
+            return (res["code"], None)
+        else:
+            return (res["code"], res["data"]["list"])
+    except Exception as e:
+        driver.close()
+        raise e
 
 def grab_newest_nft_from_market(target_dict, cookie_dict):
+    wx_msg_count = 0
     driver = webdriver.Chrome()
     driver.implicitly_wait(20)
 
@@ -91,68 +118,42 @@ def grab_newest_nft_from_market(target_dict, cookie_dict):
     #time.sleep(100) 
 
     access_token = get_access_token(driver)
-    prod2minprice = {}
     # 循环一定次数后重启浏览器
-    for i in range(1000):
+    for i in range(10000):
         (res_code, res) = get_newest_product_list(driver, TOP_COUNT, access_token)
         if res_code != 0:
             # access_token可能已过期，重新获得
             print("{} accessToken可能已过期,重新获取...".format(datetime.now()))
             access_token = get_access_token(driver)
             (res_code, res) = get_newest_product_list(driver, TOP_COUNT, access_token)
+            if res_code != 0:
+                print("{} 重取accessToken后依然获取藏品列表失败!".format(datetime.now()))
+                continue
         for product in res:
             name = product["name"]
             price = float(product["price"][1:])
             is_paying = (product["isPaying"] != 2)
             product_id = product["productId"]
 
-            
-            
-        
-        '''
-        # 只扫描第一页
-        for (keywords, (pid,vid,min_price)) in target_dict.items():
-            cur_plist = []
-            (res_code, res) = get_product_list(driver, keywords, pid, vid, access_token)
-            if res_code != 0:
-                # access_token可能已过期，重新获得
-                print("{} accessToken可能已过期,重新获取...".format(datetime.now()))
-                access_token = get_access_token(driver)
-                (res_code, res) = get_product_list(driver, keywords, pid, vid, access_token)
-            if res_code != 0:
-                print("{} 重取accessToken后依然获取藏品列表失败!".format(datetime.now()))
-                continue
-            for product in res:
-                price = float(product["price"][1:])
-                is_paying = (product["isPaying"] != 2)
-                product_id = product["productId"]
-                if keywords in prod2minprice:
-                    if price < prod2minprice[keywords]:
-                        prod2minprice[keywords] = price
-                else:
-                    prod2minprice[keywords] = price
-                cur_plist.append((product_id, price, keywords, is_paying))
-            
-            # 支付
-            for (product_id, price, keywords, is_paying) in cur_plist:
-                if price <= min_price:
+            for keyword in target_dict:
+                min_price = target_dict[keyword]
+                if name.find(keyword) != -1 and price <= min_price:
                     if not is_paying:
-                        buy_nft_from_page(driver, product_id, price, keywords)
+                        buy_nft(access_token, product_id, price, name)
+                        #buy_nft_from_page(driver, product_id, price, name)
                     else:
-                        msg = "{} {}:{}:{}".format(datetime.now(), "支付中", keywords, price)        
-                        print(msg)
-                        utils.send_wx_msg(msg)
-            
-            # 避免访问次数过于频繁
-            # time.sleep(INTERVAL_BETWEEN_PAGES)
-        '''
-        if (i+1) % 100 == 0:
-            print("{} rounds.".format(i+1))
-            msg = "{}:{}".format(datetime.now(), prod2minprice)
-            print(msg)
-            if (i+1) % 1000 == 0:
-                utils.send_msg(msg)
-            prod2minprice = {}
+                        wx_msg_count += 1
+                        if wx_msg_count == 300:
+                            msg = "NEW {} {}:{}:{}".format(datetime.now(), "支付中", name, price)        
+                            print(msg)
+                            utils.send_wx_msg(msg)
+                            wx_msg_count = 0
+        
+        # 避免访问次数过于频繁
+        # time.sleep(INTERVAL_BETWEEN_PAGES)    
+    
+        if (i+1) % 1000 == 0:
+            print("{} {} rounds.".format(datetime.now(), i+1))
 
         # 判断时间是否超过交易时间
         cur_time = datetime.now()
@@ -162,9 +163,15 @@ def grab_newest_nft_from_market(target_dict, cookie_dict):
     driver.close()
 
 if __name__ == "__main__":
-    target_dict = market.Target_Dict_1.copy()
-    target_dict.update(market.Target_Dict_2)
-    cookie_dict = market.Cookie_Dict_1
+    if len(sys.argv) < 2:
+        print("{} <target_dict_id>.".format(sys.argv[0]))
+        sys.exit(1)
+    select_id = int(sys.argv[1])
+    if select_id == 1:
+        cookie_dict = market.Cookie_Dict_1
+    elif select_id == 2:
+        cookie_dict = market.Cookie_Dict_2
+    target_dict = market.Keywords_Dict
 
     while True:
         try:

@@ -47,7 +47,7 @@ def buy_nft_from_page(driver, product_id, price, keywords):
     else:
         msg = "{} {}:{}:{}".format(datetime.now(), desp, keywords, price)        
         print(msg)
-        utils.send_wx_msg(msg)
+        #utils.send_wx_msg(msg)
 
 INTERVAL_BETWEEN_PAGES = 0.2 # (s)
 GET_PRODUCT_URL = "https://nft.taopainft.com/v1/market/v2/product/list"
@@ -125,7 +125,7 @@ def grab_nft_from_market(target_dict, cookie_dict):
                     else:
                         msg = "{} {}:{}:{}".format(datetime.now(), "支付中", keywords, price)        
                         print(msg)
-                        utils.send_wx_msg(msg)
+                        #utils.send_wx_msg(msg)
             
             # 避免访问次数过于频繁
             # time.sleep(INTERVAL_BETWEEN_PAGES)
@@ -139,7 +139,7 @@ def grab_nft_from_market(target_dict, cookie_dict):
 
         # 判断时间是否超过交易时间
         cur_time = datetime.now()
-        if cur_time.hour == 0:
+        if cur_time.hour == 0 and cur_time.minute >= 10:
             break
 
     driver.close()
@@ -165,10 +165,12 @@ if __name__ == "__main__":
             grab_nft_from_market(target_dict, cookie_dict)
         except Exception as e:
             print(e)
+            # 出错后等待一段时间
+            time.sleep(5)
 
         # 判断时间是否超过交易时间
         cur_time = datetime.now()
-        if cur_time.hour == 0:
+        if cur_time.hour == 0 and cur_time.minute >= 10:
             break
 
         # 等待0-3s的随机时间
