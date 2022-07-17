@@ -11,6 +11,10 @@ python diginfo_from_details_conflux.py huakaiyunqi 1 data/_details_conflux_huaka
 python diginfo_from_details_conflux.py huakaiyunqi 1 data/_details_conflux_huakaiyunqi_result_$1.csv \
 13401,13659\;2201,2252 YUNQI $1
 python diginfo_from_details_conflux.py huakaiyunqi 1 data/_details_conflux_huakaiyunqi_result_$1.csv \
+2101,2166\;2401,2499 DIELIANHUA $1
+python diginfo_from_details_conflux.py huakaiyunqi 1 data/_details_conflux_huakaiyunqi_result_$1.csv \
+2501,2666 YUANSHI $1
+python diginfo_from_details_conflux.py huakaiyunqi 1 data/_details_conflux_huakaiyunqi_result_$1.csv \
 12001,13399 ANYHUA $1
 
 # 3. dig info for fullset
@@ -21,7 +25,7 @@ python diginfo_from_details_conflux.py huakaiyunqi 3 data/_details_conflux_huaka
 
 # 5. analyze tranctions
 python transaction_conflux_contract_online.py huakaiyunqi $2 $3 \
-12001,12199\;12201,12499\;12501,12899\;12901,13399\;13401,13659\;2201,2252\;2101,2166\;2401,2499 \
-CHUN\;XIA\;QIU\;DONG\;YUNQI\;YUNQI\;DIELIANHUA\;DIELIANHUA $1
+12001,12199\;12201,12499\;12501,12899\;12901,13399\;13401,13659\;2201,2252\;2101,2166\;2401,2499\;2501,2666 \
+CHUN\;XIA\;QIU\;DONG\;YUNQI\;YUNQI\;DIELIANHUA\;DIELIANHUA\;YUANSHI $1
 
 cd scripts
