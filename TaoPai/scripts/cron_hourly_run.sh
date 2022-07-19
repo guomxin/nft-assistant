@@ -104,6 +104,11 @@ python transaction_conflux_contract_hourly_online.py limitless $date $hour \
 1,500\;501,2500\;2501,7000\;10001,10050 \
 SSR\;SR\;R\;SP $tag
 
+echo "---派对猫---"
+python transaction_conflux_contract_hourly_online.py partycat $date $hour \
+12001,13001 \
+SHOUFA $tag
+
 echo "---活跃账户---"
 python stat_active_users.py ${date_short}
 
