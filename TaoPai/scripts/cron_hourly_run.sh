@@ -91,8 +91,8 @@ CHUANSHUO\;YINCANG\;CHUANSHUO\;SHISHI\;XIYOU\;ZHENGUI\;GAOJI $tag
 
 echo "---BOBO三国---"
 python transaction_conflux_contract_hourly_online.py bobosg $date $hour \
-1,1800\;4001,5800\;8001,9800\;12001,12720\;16001,16360 \
-LVBU\;ZHANGFEI\;GUANYU\;CAOCAO\;ZHUGELIANG $tag
+1,1800\;4001,5800\;8001,9800\;12001,12720\;16001,16360\;14001,14720\;17001,17600 \
+LVBU\;ZHANGFEI\;GUANYU\;CAOCAO\;ZHUGELIANG\;LIUBEI\;TAOYUANJIEYI $tag
 
 echo "---花开四季云起龙骧---"
 python transaction_conflux_contract_hourly_online.py huakaiyunqi $date $hour \
