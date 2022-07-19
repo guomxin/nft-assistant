@@ -100,5 +100,5 @@ CHUN\;XIA\;QIU\;DONG\;YUNQI\;YUNQI\;DIELIANHUA\;DIELIANHUA\;YUANSHI $tag
 
 echo "---Limitless---"
 python transaction_conflux_contract_online.py limitless $oneweekago $yesterday \
-1,500\;501,2500\;2501,7000 \
-SSR\;SR\;R $tag
+1,500\;501,2500\;2501,7000\;10001,10050 \
+SSR\;SR\;R\;SP $tag

@@ -116,6 +116,7 @@ Limitless_IdRange2Name = {
     (2501,4000): "R-ACUEBEE-004",
     (4001,5500): "R-ACUEBEE-005",
     (5501,7000): "R-ACUEBEE-006",
+    (10001,10050): "SP-ACUEBEE",
 }
 
 HuaKaiYunQi_IdRange2Name = {
