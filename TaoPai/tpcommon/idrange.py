@@ -361,6 +361,7 @@ LaoDongCun2_IdRange2Name = {
     (24445,26666): "N-拾荒小孩",
     (5001,5900): "SR-农大户",
     # (4001,4600): "TODO", 2022/7/12
+    (6001,6900): "R-劳动模范",
 }
 
 LaoDongCun_IdRange2Name = {

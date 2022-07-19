@@ -23,7 +23,7 @@ python diginfo_from_details_conflux.py laodongcun2 3 data/_details_conflux_laodo
 
 rem 5. analyze tranctions
 python transaction_conflux_contract_online.py laodongcun2 %2 %3 ^
-20001,21111;21112,22222;22223,24444;24445,26666;5001,5900 ^
-GUAILI;FUJIA;CUNKOU;SHIHUANG;NONGDAHU %1
+20001,21111;21112,22222;22223,24444;24445,26666;5001,5900;6001,6900 ^
+GUAILI;FUJIA;CUNKOU;SHIHUANG;NONGDAHU;LAODONGMOFAN %1
 
 cd scripts
