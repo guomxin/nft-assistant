@@ -94,8 +94,8 @@ def get_idrangedict_by_nftname(nft_name):
         return HuaKaiYunQi_IdRange2Name
     elif nft_name == "limitless":
         return Limitless_IdRange2Name
-    elif nft_name == "partycat":
-        return PartyCat_IdRange2Name
+    elif nft_name == "pcatmem":
+        return PCatMem_IdRange2Name
 
     #--- 豹豹青春宇宙 ---#
     elif nft_name == "kaoshenglaile":
@@ -111,7 +111,7 @@ def get_name_by_tokenid(idrange2name, token_id):
         if (token_id >= min_tid) and (token_id <= max_tid):
             return name
 
-PartyCat_IdRange2Name = {
+PCatMem_IdRange2Name = {
     (12001,13001): "派对猫首发纪念卡",
 }
 
