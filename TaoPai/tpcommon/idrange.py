@@ -28,6 +28,8 @@ def get_idrangedict_by_nftname(nft_name):
         return CH_IdRange2Name
     elif nft_name == "dunhuang":
         return DH_IdRange2Name
+    elif nft_name == "sdqhchuangshi":
+        return SDQHChuangShi_IdRange2Name
     elif nft_name == "lt": # 星儿
         return LT_IdRange2Name
     elif nft_name == "ltcard":
@@ -110,6 +112,10 @@ def get_name_by_tokenid(idrange2name, token_id):
     for ((min_tid, max_tid), name) in idrange2name.items():
         if (token_id >= min_tid) and (token_id <= max_tid):
             return name
+
+SDQHChuangShi_IdRange2Name = {
+    (2701,2765): "丝道银河创世勋章", # (2701,2800) 2022/7/20
+}
 
 PCatMem_IdRange2Name = {
     (12001,13001): "派对猫首发纪念卡",
