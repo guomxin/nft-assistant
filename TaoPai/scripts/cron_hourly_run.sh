@@ -109,6 +109,11 @@ python transaction_conflux_contract_hourly_online.py pcatmem $date $hour \
 12001,13001 \
 SHOUFA $tag
 
+echo "---派对猫---"
+python transaction_conflux_contract_hourly_online.py partycat $date $hour \
+901,3838 \
+GONGYOU $tag
+
 echo "---活跃账户---"
 python stat_active_users.py ${date_short}
 

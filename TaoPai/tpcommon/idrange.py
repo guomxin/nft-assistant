@@ -98,6 +98,8 @@ def get_idrangedict_by_nftname(nft_name):
         return Limitless_IdRange2Name
     elif nft_name == "pcatmem":
         return PCatMem_IdRange2Name
+    elif nft_name == "partycat":
+        return PartyCat_IdRange2Name
 
     #--- 豹豹青春宇宙 ---#
     elif nft_name == "kaoshenglaile":
@@ -112,6 +114,11 @@ def get_name_by_tokenid(idrange2name, token_id):
     for ((min_tid, max_tid), name) in idrange2name.items():
         if (token_id >= min_tid) and (token_id <= max_tid):
             return name
+
+PartyCat_IdRange2Name = {
+    (1,8): "独有版权派对猫",
+    (901,3838): "共有版权派对猫", #(901,938),(1001,1038), ...一共38*30=1140
+}
 
 SDQHChuangShi_IdRange2Name = {
     (2701,2765): "丝道银河创世勋章", # (2701,2800) 2022/7/20
