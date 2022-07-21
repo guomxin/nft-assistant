@@ -51,8 +51,9 @@ python transaction_conflux_contract_online.py laodongcun2 $oneweekago $yesterday
 GUAILI\;FUJIA\;CUNKOU\;SHIHUANG\;NONGDAHU\;LAODONGMOFAN $tag
 
 echo "---百变熊熊---"
-python transaction_conflux_contract_online.py baibianxiong $oneweekago $yesterday 1,50\;51,500\;501,3000\;3001,10000\;10001,10015\;11001,12420\;12500,12649 \
-SSR\;SR\;R\;N\;SSR-DUANWU\;SUIPIAN\;SR-FATHERDAY $tag
+python transaction_conflux_contract_online.py baibianxiong $oneweekago $yesterday \
+1,50\;51,500\;501,3000\;3001,10000\;10001,10015\;11001,12420\;12500,12649\;13001,13300 \
+SSR\;SR\;R\;N\;SSR-DUANWU\;SUIPIAN\;SR-FATHERDAY\;NAIZUI $tag
 
 echo "---天坛波普---"
 python transaction_conflux_contract_online.py tiantanbopu $oneweekago $yesterday 1001,1240\;1241,1380\;1381,1400 S\;SS\;SSS $tag

@@ -68,8 +68,8 @@ sh dig_detail-trans_tiantanbopu.sh $today $yesterday $yesterday
 #sh dig_detail-trans_saiboyouling.sh $today $yesterday $yesterday
 
 # HC
-echo "---凭栏一片风云起---"
-sh dig_detail-trans_pinglan.sh  $today $yesterday $yesterday
+#echo "---凭栏一片风云起---"
+#sh dig_detail-trans_pinglan.sh  $today $yesterday $yesterday
 
 # BOBOSG
 echo "---BOBO三国---"
@@ -100,7 +100,7 @@ cp *$today* upload/$today;cp _stat_activeuser_*_result_${yesterday_short}.csv up
 
 for nft in "kaozaifriends" "taopai2022" "xunzhang" "letaotao" "taopaitest"  \
 "guizi" "laodongcun" "baibianxiong" "fxpandaall" "shuijing" "tiantanbopu" \
-"pinglan" "bobosg" "huakaiyunqi" "limitless" "pcatmem" "partycat" "activeuser"
+"bobosg" "huakaiyunqi" "limitless" "pcatmem" "partycat" "activeuser"
 do
     mkdir $nft;mv *$nft*.csv $nft;zip -q $nft-$today $nft/*
 done
