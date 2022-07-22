@@ -100,6 +100,8 @@ def get_idrangedict_by_nftname(nft_name):
         return PCatMem_IdRange2Name
     elif nft_name == "partycat":
         return PartyCat_IdRange2Name
+    elif nft_name == "dftyrb":
+        return DFTYRB_IdRange2Name
 
     #--- 豹豹青春宇宙 ---#
     elif nft_name == "kaoshenglaile":
@@ -114,6 +116,17 @@ def get_name_by_tokenid(idrange2name, token_id):
     for ((min_tid, max_tid), name) in idrange2name.items():
         if (token_id >= min_tid) and (token_id <= max_tid):
             return name
+
+DFTYRB_IdRange2Name = {
+    (1,1000): "《东方体育日报》申城花开头版",
+    (1001,2000): "《新民体育报》创刊号",
+    (2001,3000): "《东方体育日报》创刊号",
+    (3001,4000): "《东方体育日报》申花是冠军头版",
+    (4001,5000): "《东方体育日报》创刊20周年",
+    (5001,6000): "《东方体育日报》荣耀上海头版",
+    (6001,7000): "《东方体育日报》势不可挡头版",
+    (7001,8000): "《新民体育报》 梦想成真头版",
+}
 
 PartyCat_IdRange2Name = {
     (1,8): "独有版权派对猫",
