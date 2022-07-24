@@ -80,6 +80,8 @@ def get_idrangedict_by_nftname(nft_name):
         return FXPanda2_IdRange2Name
     elif nft_name == "fxpandaall":
         return FXPandaAll_IdRange2Name
+    elif nft_name == "fxxunzhang":
+        return FXHEBadge_IdRange2Name
     elif nft_name == "shuijing":
         return ShuiJing_IdRange2Name
     elif nft_name == "kaozaikaituo":

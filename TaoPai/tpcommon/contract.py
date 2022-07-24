@@ -57,7 +57,7 @@ def get_contract_address_ABI_from_name(name):
         return (TaopaiNFT_Contract_Address, TaoPai_ABI)
     elif name == "letaotao":
         return (TaopaiNFT_Contract_Address, TaoPai_ABI)
-    elif name == "fxpanda" or name == "fxpanda2" or name == "fxpandaall" or name == "pcatmem":
+    elif name == "fxpanda" or name == "fxpanda2" or name == "fxpandaall" or name == "pcatmem" or name == "fxxunzhang":
         return (FXHE_Contract_Address, TaoPai_ABI)
     elif name == "partycat":
         return (PartyCat_Contract_Address, TaoPai_ABI)
