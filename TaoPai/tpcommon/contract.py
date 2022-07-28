@@ -270,6 +270,7 @@ QJDMBYTo_Contract_Address = "cfx:acg3j2hmxzcm2fu386vt391rkub1wctxgjgjjgncd6"
 WBQY_Contract_Address = "cfx:ach8xv5fb03vjdcda5mdjtsrwnrn6sfgfy5nzej8vg"
 HYM_Contract_Address = "cfx:accvhm4yh1xspj5ewb3jk1fw87uvravg2jufd7nac7"
 ZGQNB_Contract_Address = "cfx:acd6uyfdm9j90k4nzjra5786x7fhne10yyygbhwjju"
+KKX_Contract_Address = "cfx:acb6g1zcwk18w77v1aj0z1te49ux2arkk2vmzgcwvn"
 
 BaoBao_Contract_Dict = {
     KaoShengLaiLe_Contract_Address: 1,
@@ -287,6 +288,7 @@ BaoBao_Contract_Dict = {
     WBQY_Contract_Address: 1, # TODO: 需要确认 2022/7/14
     HYM_Contract_Address: 1,
     ZGQNB_Contract_Address: 1,
+    KKX_Contract_Address: 1,
 }
 
 def is_taopai_contract(contract_address):
