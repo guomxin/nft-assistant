@@ -82,6 +82,8 @@ def get_idrangedict_by_nftname(nft_name):
         return FXPandaAll_IdRange2Name
     elif nft_name == "fxxunzhang":
         return FXHEBadge_IdRange2Name
+    elif nft_name == "fxfuneng":
+        return FXHEFuNeng_IdRange2Name
     elif nft_name == "shuijing":
         return ShuiJing_IdRange2Name
     elif nft_name == "kaozaikaituo":
@@ -248,6 +250,11 @@ ShuiJing_IdRange2Name = {
     #(11301,11500): "TODO", 2022/7/6
     (11501,11800): "机械少女",
     (12001,12260): "艺次元勋章",
+}
+
+FXHEFuNeng_IdRange2Name = {
+    (11001,11103): "佛系创世藏家勋章",
+    (23751,24750): "大圆满",
 }
 
 FXHEBadge_IdRange2Name = {
