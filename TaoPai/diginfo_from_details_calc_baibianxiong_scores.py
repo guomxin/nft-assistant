@@ -27,7 +27,7 @@ if __name__ == "__main__":
         score = 0
         tokenids = [int(i) for i in items[2].split(":")]
         for tid in tokenids:
-            token_name = idrange.get_name_by_tokenid(idrange2name, 15+tid)
+            token_name = idrange.get_name_by_tokenid(idrange2name, tid)
             if token_name == "SSR":
                 score += 80
             elif token_name == "SR":
@@ -44,6 +44,8 @@ if __name__ == "__main__":
                 score += 5
             elif token_name == "熊熊奶嘴":
                 score += 50
+            else:
+                print(token_name)
 
         owner_scores.append((owner, count, score))
     
