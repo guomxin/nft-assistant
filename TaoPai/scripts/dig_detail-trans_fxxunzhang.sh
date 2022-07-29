@@ -3,7 +3,7 @@
 cd ..
 
 # 1. generate details
-# python detail_conflux_contract.py fxxunzhang $1
+python detail_conflux_contract.py fxxunzhang $1
 
 # 2. dig info CHUANGSHI
 python diginfo_from_details_conflux.py fxxunzhang 1 data/_details_conflux_fxxunzhang_result_$1.csv \

@@ -3,7 +3,7 @@ rem %1-detail tag, %2-start_date, %3-end_date
 cd ..
 
 rem 1. generate details
-rem python detail_conflux_contract.py fxxunzhang %1
+python detail_conflux_contract.py fxxunzhang %1
 
 rem 2. dig info CHUANGSHI
 python diginfo_from_details_conflux.py fxxunzhang 1 data/_details_conflux_fxxunzhang_result_%1.csv ^
