@@ -4,6 +4,9 @@ import sys
 
 from tpcommon import idrange
 
+def blur_address(address):
+    return address[:10] + "****" + address[-4:]
+
 if __name__ == "__main__":
     if len(sys.argv) < 3:
         print("{} <details_file_name> <detail_tag>".format(sys.argv[0]))
@@ -48,5 +51,5 @@ if __name__ == "__main__":
     dump_file = open(dump_file_name, "w", encoding="utf-8-sig")
     dump_file.write("地址,藏品数量,分数\n")
     for (owner, count, score) in owner_scores:
-        dump_file.write("{},{},{}\n".format(owner, count, score))
+        dump_file.write("{},{},{},{}\n".format(blur_address(owner), count, score, owner))
     dump_file.close()
