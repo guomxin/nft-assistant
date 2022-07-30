@@ -72,16 +72,16 @@ sh dig_detail-trans_tiantanbopu.sh $today $yesterday $yesterday
 #sh dig_detail-trans_pinglan.sh  $today $yesterday $yesterday
 
 # BOBOSG
-echo "---BOBO三国---"
-sh dig_detail-trans_bobosg.sh $today $yesterday $yesterday
+#echo "---BOBO三国---"
+#sh dig_detail-trans_bobosg.sh $today $yesterday $yesterday
 
 # LT
 echo "---花开四季云起龙骧---"
 sh dig_detail-trans_huakaiyunqi.sh $today $yesterday $yesterday
 
 # Limitless
-echo "---Limitless---"
-sh dig_detail-trans_limitless.sh $today $yesterday $yesterday
+#echo "---Limitless---"
+#sh dig_detail-trans_limitless.sh $today $yesterday $yesterday
 
 # 派对猫
 echo "---派对猫首发纪念卡---"
@@ -100,7 +100,7 @@ cp *$today* upload/$today;cp _stat_activeuser_*_result_${yesterday_short}.csv up
 
 for nft in "kaozaifriends" "taopai2022" "xunzhang" "letaotao" "taopaitest"  \
 "guizi" "laodongcun" "baibianxiong" "fxpandaall" "shuijing" "tiantanbopu" \
-"bobosg" "huakaiyunqi" "limitless" "pcatmem" "partycat" "activeuser"
+"huakaiyunqi" "pcatmem" "partycat" "activeuser"
 do
     mkdir $nft;mv *$nft*.csv $nft;zip -q $nft-$today $nft/*
 done
