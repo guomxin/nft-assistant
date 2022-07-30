@@ -59,10 +59,10 @@ def get_access_token(driver):
         driver.get(SCAN_URL.format(1, "", 0, 0))
         return driver.get_cookie("accessToken")['value']
     except Exception as e:
-        driver.close()
+        #driver.close()
         raise e
 
-def buy_nft(access_token, product_id, price, keywords):
+def buy_nft(access_token, product_id, price, keywords, send_wx_msg=False):
     data = {
         "productId": product_id
     }
@@ -77,7 +77,8 @@ def buy_nft(access_token, product_id, price, keywords):
     else:
         msg = "NEW 下单失败 {}:{}:{}:{}".format(datetime.now(), keywords, price, res["message"])
         print(msg)
-        utils.send_wx_msg(msg)
+        if send_wx_msg:
+            utils.send_wx_msg(msg)
 
 def get_newest_product_list(driver, cnt, access_token):
     try:
@@ -103,7 +104,16 @@ def get_newest_product_list(driver, cnt, access_token):
         driver.close()
         raise e
 
-def grab_newest_nft_from_market(target_dict, cookie_dict):
+def is_name_match(name, keyword):
+    items = keyword.split("not")
+    if len(items) < 2:
+        return name.find(keyword) != -1
+    else:
+        require_word = items[0].strip()
+        not_require_word = items[1].strip()
+        return name.find(require_word) != -1 and name.find(not_require_word) == -1
+
+def grab_newest_nft_from_market(target_dict, contract_dict, cookie_dict, send_wx_msg=False):
     wx_msg_count = 0
     driver = webdriver.Chrome()
     driver.implicitly_wait(20)
@@ -134,19 +144,36 @@ def grab_newest_nft_from_market(target_dict, cookie_dict):
             price = float(product["price"][1:])
             is_paying = (product["isPaying"] != 2)
             product_id = product["productId"]
+            contract_id = product["contractId"]
 
             for keyword in target_dict:
                 min_price = target_dict[keyword]
-                if name.find(keyword) != -1 and price <= min_price:
+                if is_name_match(name, keyword) and price <= min_price:
                     if not is_paying:
-                        buy_nft(access_token, product_id, price, name)
+                        buy_nft(access_token, product_id, price, name, send_wx_msg)
                         #buy_nft_from_page(driver, product_id, price, name)
                     else:
                         wx_msg_count += 1
                         if wx_msg_count == 300:
                             msg = "NEW {} {}:{}:{}".format(datetime.now(), "支付中", name, price)        
                             print(msg)
-                            utils.send_wx_msg(msg)
+                            if send_wx_msg:
+                                utils.send_wx_msg(msg)
+                            wx_msg_count = 0
+            
+            for cid in contract_dict:
+                min_price = contract_dict[cid]
+                if contract_id == cid and price <= min_price:
+                    if not is_paying:
+                        buy_nft(access_token, product_id, price, name, send_wx_msg)
+                        #buy_nft_from_page(driver, product_id, price, name)
+                    else:
+                        wx_msg_count += 1
+                        if wx_msg_count == 300:
+                            msg = "NEW {} {}:{}:{}".format(datetime.now(), "支付中", name, price)        
+                            print(msg)
+                            if send_wx_msg:
+                                utils.send_wx_msg(msg)
                             wx_msg_count = 0
         
         # 避免访问次数过于频繁
@@ -156,9 +183,9 @@ def grab_newest_nft_from_market(target_dict, cookie_dict):
             print("{} {} rounds.".format(datetime.now(), i+1))
 
         # 判断时间是否超过交易时间
-        cur_time = datetime.now()
-        if cur_time.hour == 0 and cur_time.minute >= 10:
-            break
+        #cur_time = datetime.now()
+        #if cur_time.hour == 0 and cur_time.minute >= 10:
+        #    break
 
     driver.close()
 
@@ -172,19 +199,20 @@ if __name__ == "__main__":
     elif select_id == 2:
         cookie_dict = market.Cookie_Dict_2
     target_dict = market.Keywords_Dict
+    contract_dict = market.Contract_Dict
 
     while True:
         try:
-            grab_newest_nft_from_market(target_dict, cookie_dict)
+            grab_newest_nft_from_market(target_dict, contract_dict, cookie_dict, select_id==1)
         except Exception as e:
             print(e)
             # 出错后等待一段时间
             time.sleep(5)
 
         # 判断时间是否超过交易时间
-        cur_time = datetime.now()
-        if cur_time.hour == 0 and cur_time.minute >= 10:
-            break
+        #cur_time = datetime.now()
+        #if cur_time.hour == 6 and cur_time.minute >= 10:
+        #    break
 
         # 等待0-3s的随机时间
         #time.sleep(random.random()*3)
