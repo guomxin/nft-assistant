@@ -70,6 +70,11 @@ python transaction_conflux_contract_hourly_online.py fxpandaall $date $hour \
 64001,64308\;65001,65308\;66001,66308\;10301,10429 \
 PUTONG\;XIYOU\;CHUANSHUO\;PUTONG\;XIYOU\;PUTONG\;XIYOU\;XIYOU\;CHUANSHUO\;CHUANSHUO\;CHUANSHUO\;CHUANSHUO\;CHUANSHUO\;CHUANSHUO $tag
 
+echo "---佛系勋章---"
+python transaction_conflux_contract_hourly_online.py fxxunzhang $date $hour \
+40104,40206\;40207,40309\;40310,40517\;40518,40620\;40621,40688\;11001,11103 \
+HUNIAN\;XIONGMAO\;QINGTONG\;BAIYIN\;HUANGJIN\;CHUANGSHI $tag
+
 #echo "---烤仔开拓者---"
 #python transaction_conflux_contract_hourly_online.py kaozaikaituo $date $hour \
 #15001,15500\;15501,16000\;16001,16500\;16501,17000\;17001,17500 \

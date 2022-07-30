@@ -48,8 +48,9 @@ echo "---百变熊熊---"
 sh dig_detail-trans_baibianxiong.sh  $today $yesterday $yesterday
 
 # FXHE
-echo "---佛系熊猫---"
+echo "---佛系惠二---"
 sh dig_detail-trans_fxpanda_all.sh  $today $yesterday $yesterday
+sh dig_detail-trans_fxxunzhang.sh  $today $yesterday $yesterday
 
 # YCY
 echo "---水晶博物馆---"
