@@ -1,6 +1,7 @@
 # coding: utf-8
 import time
 import requests
+from TaoPai.tpcommon.idrange import TianTanBoPu_IdRange2Name
 
 from conflux import (
     Conflux,
@@ -255,6 +256,44 @@ BOBOSG_Contract_Address = "cfx:acc3ea44baypswat4s37wvyk0ewc6e6bnevs8zvnj1"
 Limitless_Contract_Address = "cfx:acbmhd5km15u68eyy17xusmr5a1jy1hthuavs06mhw"
 PartyCat_Contract_Address = "cfx:acdj66ya20g2b5j9me489pmrv4bu60ut32hjfpxpgp"
 DFTYRB_Contract_Address = "cfx:aca8tg7zd85zth9hmw92ucxajgnxuwfd4j4uucd61b"
+
+ContractAddress2Id = {
+# ContractId通过https://nft.taopainft.com/v1/market/v2/product/list接口返回获得contractId
+    TaopaiNFT_Contract_Address: 2,
+    FXHE_Contract_Address: 37,
+    BOOOM_Contract_Address: 50,
+    PartyCat_Contract_Address: 61,
+    UXON_Contract_Address: 41,
+    YCY_Contract_Address: 54,
+    Limitless_Contract_Address: 59,
+    SDQH_Contract_Address: 22,
+    LT_Contract_Address: 30,
+    COCAFE_Contract_Address: 57,
+    HC_Contract_Address: 31,
+    XJH_Contract_Address: 55,
+    ZGHT_Contract_Address: 36,
+    YQXK_Contract_Address: 27,
+    ConFashion_Contract_Address: 8,
+    HTKJ_Contract_Address: 49,
+    TLH_Contract_Address: 48,
+    HYYS_Contract_Address: 34,
+    # 熊猫总动员: 32,
+    # Bosie: 14,
+    # 芒果科技: 18,
+    # 深圳客: 29,
+    UOVA_Contract_Address: 13,
+    # PolisSpace: 3,
+    ATSJ_Contract_Address: 40,
+    # 御赐福: 35,
+    # GoofyCity: 24,
+    # 星源（唐卡等）: 19,
+    # 舍九文化: 26,
+    # 烤仔建工: 28,
+    # 金羽翼: 15,
+    # TODO: DAO纪念
+    # 艺术玩家实验室: 23,
+    # TODO: Luluz, 王星星, Misaki, YSX, 不走调音乐社, YAO, WPP 
+}
 
 KaoShengLaiLe_Contract_Address = "cfx:achm40d1fuwpfxe1azk6ty607fpmdrsczpy5pcexuz"
 TongJing_Contract_Address = "cfx:acgj9wmbe97vaf7c53mekz0r6vj9d5y7myeget3fu7"
