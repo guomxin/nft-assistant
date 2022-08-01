@@ -280,6 +280,9 @@ def multi_analyze_transaction_logs_online(tradeprice_dict, contract_addr, contra
 
             trans_data = c.cfx.getTransactionByHash(trans_hash)
             (from_addr, to_addr, token_id) = get_transinfo_from_data(trans_data, contra)
+            if (from_addr == None) or (to_addr == None):
+                # 说明不是transfer交易，忽略
+                continue
             tag = get_tag_from_tokenid(token_id, ranges,tags)
             if not tag:
                 continue
@@ -435,6 +438,9 @@ def multi_analyze_transaction_logs_hourly_online(contract_addr, contract_ABI, da
 
             trans_data = c.cfx.getTransactionByHash(trans_hash)
             (from_addr, to_addr, token_id) = get_transinfo_from_data(trans_data, contra)
+            if (from_addr == None) or (to_addr == None):
+                # 说明不是transfer交易，忽略
+                continue
             tag = get_tag_from_tokenid(token_id, ranges,tags)
             if not tag:
                 continue
