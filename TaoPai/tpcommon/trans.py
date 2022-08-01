@@ -58,7 +58,10 @@ def blur_address(address):
     return address[:10] + "****" + address[-4:]
 
 def get_transinfo_from_data(trans_data, contra):
-    decode_result = contra.decode_function_input(trans_data.data)
+    try:
+        decode_result = contra.decode_function_input(trans_data.data)
+    except:
+        return (None, None, None)
     if ("from" not in decode_result[1]) or ("to" not in decode_result[1]) or ("tokenId" not in decode_result[1]):
         return (None, None, -1)
     from_addr = contract.get_base32addr_from_hexaddr(decode_result[1]["from"])
