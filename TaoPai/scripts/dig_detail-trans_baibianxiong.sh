@@ -25,7 +25,7 @@ python diginfo_from_details_conflux.py baibianxiong 3 data/_details_conflux_baib
 
 # 5. analyze tranctions
 python transaction_conflux_contract_online.py baibianxiong $2 $3 \
-1,50\;51,500\;501,3000\;3001,10000\;10001,10015\;11001,12420\;12500,12649\;13001,13300 \
-SSR\;SR\;R\;N\;SSR-DUANWU\;SUIPIAN\;SR-FATHERDAY\;NAIZUI $1
+1,50\;51,500\;501,3000\;3001,10000\;10001,10015\;11001,12420\;12500,12649\;13001,13300\;12701,12746\;12747,12749 \
+SSR\;SR\;R\;N\;SSR-DUANWU\;SUIPIAN\;SR-FATHERDAY\;NAIZUI\;TIEJUN\;XIONGBAO $1
 
 cd scripts
