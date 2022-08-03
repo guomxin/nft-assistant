@@ -44,8 +44,16 @@ if __name__ == "__main__":
                 score += 5
             elif token_name == "熊熊奶嘴":
                 score += 50
+            elif token_name == "SSR-熊熊铁军":
+                pass
+            elif token_name == "百变熊宝-金":
+                pass
+            elif token_name == "百变熊宝-银":
+                pass
+            elif token_name == "百变熊宝-铜":
+                pass            
             else:
-                print(token_name)
+                print("[calc_baibianxiong_scores]" + token_name)
 
         owner_scores.append((owner, count, score))
     
