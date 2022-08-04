@@ -14,6 +14,8 @@ python diginfo_from_details_conflux.py baibianxiong 1 data/_details_conflux_baib
 python diginfo_from_details_conflux.py baibianxiong 1 data/_details_conflux_baibianxiong_result_$1.csv 11001 12420 SUIPIAN $1
 python diginfo_from_details_conflux.py baibianxiong 1 data/_details_conflux_baibianxiong_result_$1.csv 12500 12649 SR-FATHERDAY $1
 python diginfo_from_details_conflux.py baibianxiong 1 data/_details_conflux_baibianxiong_result_$1.csv 13001,13300 NAIZUI $1
+python diginfo_from_details_conflux.py baibianxiong 1 data/_details_conflux_baibianxiong_result_$1.csv 12701,12746 SSR-TIEJUN $1
+python diginfo_from_details_conflux.py baibianxiong 1 data/_details_conflux_baibianxiong_result_$1.csv 13301,13500 SR-QIXI $1
 
 # 3. dig info for fullset
 # python diginfo_from_details_conflux.py baibianxiong 2 data/_details_conflux_baibianxiong_result_$1.csv 3001,10000 18 N18 $1
@@ -25,7 +27,7 @@ python diginfo_from_details_conflux.py baibianxiong 3 data/_details_conflux_baib
 
 # 5. analyze tranctions
 python transaction_conflux_contract_online.py baibianxiong $2 $3 \
-1,50\;51,500\;501,3000\;3001,10000\;10001,10015\;11001,12420\;12500,12649\;13001,13300\;12701,12746\;12747,12749 \
-SSR\;SR\;R\;N\;SSR-DUANWU\;SUIPIAN\;SR-FATHERDAY\;NAIZUI\;TIEJUN\;XIONGBAO $1
+1,50\;51,500\;501,3000\;3001,10000\;10001,10015\;11001,12420\;12500,12649\;13001,13300\;12701,12746\;12747,12749\;13301,13500 \
+SSR\;SR\;R\;N\;SSR-DUANWU\;SUIPIAN\;SR-FATHERDAY\;NAIZUI\;TIEJUN\;XIONGBAO\;QIXI $1
 
 cd scripts
