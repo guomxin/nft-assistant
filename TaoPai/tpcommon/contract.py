@@ -313,6 +313,13 @@ KKX_Contract_Address = "cfx:acb6g1zcwk18w77v1aj0z1te49ux2arkk2vmzgcwvn"
 LQBJ_Contract_Address = "cfx:acbu6n7kb7yw3h8m3323a989fmamdranpamtakuwnz"
 JQ_Contract_Address = "cfx:aceu8rcsg16f3s1exambfac1xpa326k8g2w885ub7g"
 QXLX_Contract_Address = "cfx:acc46dvwz5jpj8nxzcr2cjhewfjd9xcpte0fk8e4j4"
+CJZ_Contract_Address = "cfx:achtgrev6s2sn9ekkgybbm79m59zj6chnjhgyg0x2p"
+RYZ_Contract_Address = "cfx:acgcbwrwm0eysx8xp3dxsm5a7ypbux02a24wmhwtb2"
+HTZ_Contract_Address = "cfx:acgrgnbckwuh6ckmxmfd0r7psstu8bv9eu8npdsa1w"
+TD_Contract_Address = "cfx:acffc81krae11vd395v50u1p8kyb828dyjhv9h4huk"
+TCJC_Contract_Address = "cfx:achmp3kyw693n9d0fftjbvsy06a5zp6g1axypnvyte"
+HJ_Contract_Address = "cfx:acgzpncte8che3g7gewprt19bvk7p920tjukva5hys"
+AYTK_Contract_Address = "cfx:acgk5c07j7yxvu2h5r1yeuxmb6xsv5a0ta5k9w4cxd"
 
 BaoBao_Contract_Dict = {
     KaoShengLaiLe_Contract_Address: 1,
@@ -334,6 +341,10 @@ BaoBao_Contract_Dict = {
     LQBJ_Contract_Address: 1,
     JQ_Contract_Address: 1,
     QXLX_Contract_Address: 1,
+    CJZ_Contract_Address: 1,
+    RYZ_Contract_Address: 1,
+    HTZ_Contract_Address: 1,
+
 }
 
 def is_taopai_contract(contract_address):
