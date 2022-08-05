@@ -110,8 +110,13 @@ def is_name_match(name, keyword):
         return name.find(keyword) != -1
     else:
         require_word = items[0].strip()
-        not_require_word = items[1].strip()
-        return name.find(require_word) != -1 and name.find(not_require_word) == -1
+        not_require_words = items[1:]
+        require = (name.find(require_word) != -1)
+        not_require = True
+        for not_require_word in not_require_words:
+            not_require_word = not_require_word.strip()
+            not_require = (not_require and name.find(not_require_word) == -1)
+        return require and not_require
 
 def grab_newest_nft_from_market(target_dict, contract_dict, cookie_dict, send_wx_msg=False):
     wx_msg_count = 0
