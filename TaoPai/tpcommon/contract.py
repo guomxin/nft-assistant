@@ -256,6 +256,19 @@ Limitless_Contract_Address = "cfx:acbmhd5km15u68eyy17xusmr5a1jy1hthuavs06mhw"
 PartyCat_Contract_Address = "cfx:acdj66ya20g2b5j9me489pmrv4bu60ut32hjfpxpgp"
 DFTYRB_Contract_Address = "cfx:aca8tg7zd85zth9hmw92ucxajgnxuwfd4j4uucd61b"
 
+Bosie_Contract_Address = "cfx:accvuj004k127vd4cprcfju1wzw4pm5bj6u1gkvtds"
+XY_Contract_Address = "cfx:acappbfbk3xh5ptt60xugbgyut6jvwja3e80bzrj98"
+XMZDY_Contract_Address = "cfx:accj4mwd3172x4ahak2jzphw3dragg399jgn47crpu"
+MGKJ_Contract_Address = "cfx:acgs9h18atyd9ubsgy48am8xxtaeuye4makpcsdp5w"
+SZK_Contract_Address = "cfx:acfbyvmgd0hmrgbfxaphb5u9pt2mesvhn6m8rxr8pj"
+PolisSpace_Contract_Address = "cfx:achcs1t9xhu97ufjspwpn5g37ja9cznc0yfd1xyn10"
+YCF_Contract_Address = "cfx:aceue8g8013k4aysvm0jxht4xdyavjvd1un6nbdz0s"
+GoofyCity_Contract_Address = "cfx:aca9f9u4nxy97tu0ydsy4p6wepnmvcmb3ek97ueucn"
+SJWH_Contract_Address = "cfx:acgpwdyjcx5tpufj7x6taw1f3r3jpu2x0pjx33xyyt"
+KZJG_Contract_Address = "cfx:acbs61xtcfe001au604nrf207pn2u4pdeawpx3f782"
+JYY_Contract_Address = "cfx:acb30r4jzu5ek6espf9mzz7nbnhwjeddej91cdb9uf"
+YSWJ_Contract_Address = "cfx:acc8vpap61kdxa7sv769c62vx1n5phh83619ccxp3v"
+
 ContractAddress2Id = {
 # ContractId通过https://nft.taopainft.com/v1/market/v2/product/list接口返回获得contractId
     TaopaiNFT_Contract_Address: 2,
@@ -277,21 +290,21 @@ ContractAddress2Id = {
     HTKJ_Contract_Address: 49,
     TLH_Contract_Address: 48,
     HYYS_Contract_Address: 34,
-    # 熊猫总动员: 32,
-    # Bosie: 14,
-    # 芒果科技: 18,
-    # 深圳客: 29,
+    XMZDY_Contract_Address: 32, # 熊猫总动员: 32,
+    Bosie_Contract_Address: 14, # Bosie: 14,
+    MGKJ_Contract_Address: 18, # 芒果科技: 18,
+    SZK_Contract_Address: 29, # 深圳客: 29,
     UOVA_Contract_Address: 13,
-    # PolisSpace: 3,
+    PolisSpace_Contract_Address: 3,# PolisSpace: 3,
     ATSJ_Contract_Address: 40,
-    # 御赐福: 35,
-    # GoofyCity: 24,
-    # 星源（唐卡等）: 19,
-    # 舍九文化: 26,
-    # 烤仔建工: 28,
-    # 金羽翼: 15,
+    YCF_Contract_Address: 35, # 御赐福: 35,
+    GoofyCity_Contract_Address: 24, # GoofyCity: 24,
+    XY_Contract_Address: 19, # 星源（唐卡等）: 19,
+    SJWH_Contract_Address: 26, # 舍九文化: 26,
+    KZJG_Contract_Address: 28, # 烤仔建工: 28,
+    JYY_Contract_Address: 15, # 金羽翼: 15,
     # TODO: DAO纪念
-    # 艺术玩家实验室: 23,
+    YSWJ_Contract_Address: 23, #艺术玩家实验室: 23,
     # TODO: Luluz, 王星星, Misaki, YSX, 不走调音乐社, YAO, WPP 
 }
 
