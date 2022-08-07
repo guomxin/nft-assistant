@@ -5,9 +5,10 @@ import datetime
 import requests
 import time
 import json
-from selenium import webdriver
 import os
 
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
 from conflux import (
     Conflux,
     HTTPProvider
@@ -74,19 +75,23 @@ PAY_NAME_INDEX = 0
 PAY_PRICE_INDEX = 1
 PAY_TIME_INDEX = 2
 
-MAX_INTERVAL = 600 # s, 10分钟，淘派最大付款时间
+MAX_INTERVAL = 900 # s, 15分钟，上链时间
 
 TRANS_NAME_INDEX = 0
-TRANS_PRICE_INDEX = 1
-TRANS_TIME_INDEX = 2
-TRANS_FROM_INDEX = 3
-TRANS_TO_INDEX = 4
-TRANS_PID_INDEX = 5
-TRANS_CONTRADDR_INDEX = 6
-TRANS_CONTRID_INDEX = 7
-TRANS_ITEM_COUNT = 8
+TRANS_TOKENID_INDEX = 1
+TRANS_PRICE_INDEX = 2
+TRANS_TIME_INDEX = 3
+TRANS_FROM_INDEX = 4
+TRANS_TO_INDEX = 5
+TRANS_PID_INDEX = 6
+TRANS_CONTRADDR_INDEX = 7
+TRANS_CONTRID_INDEX = 8
+TRANS_ITEM_COUNT = 9
 
 def grab_trans_nft_price(cookie_dict):
+    opt = Options()
+    opt.add_argument("--headless")
+    opt.add_argument("--disable-gpu")
     driver = webdriver.Chrome()
     driver.implicitly_wait(20)
 
@@ -98,7 +103,7 @@ def grab_trans_nft_price(cookie_dict):
     access_token = get_access_token(driver)
     paying_products = {}
     # 循环一定次数后重启浏览器
-    for i in range(800):
+    for i in range(1600):
         offset = 0
         scan_to_end = False
         paying_prod_cnt = 0
@@ -160,14 +165,26 @@ def grab_trans_nft_price(cookie_dict):
                 for line in price_result_file:
                     pinfo = [None] * TRANS_ITEM_COUNT
                     items = line.strip().split(",")
-                    pinfo[TRANS_NAME_INDEX] = items[0]
-                    pinfo[TRANS_PRICE_INDEX] = float(items[1])
-                    pinfo[TRANS_TIME_INDEX] = items[2]
-                    pinfo[TRANS_FROM_INDEX] = items[3]
-                    pinfo[TRANS_TO_INDEX] = items[4]
-                    pinfo[TRANS_PID_INDEX] = items[5]
-                    pinfo[TRANS_CONTRADDR_INDEX] = items[6]
-                    pinfo[TRANS_CONTRID_INDEX] = int(items[7])
+                    if len(items) == TRANS_ITEM_COUNT:
+                        pinfo[TRANS_NAME_INDEX] = items[0]
+                        pinfo[TRANS_TOKENID_INDEX] = items[1]
+                        pinfo[TRANS_PRICE_INDEX] = float(items[2])
+                        pinfo[TRANS_TIME_INDEX] = items[3]
+                        pinfo[TRANS_FROM_INDEX] = items[4]
+                        pinfo[TRANS_TO_INDEX] = items[5]
+                        pinfo[TRANS_PID_INDEX] = items[6]
+                        pinfo[TRANS_CONTRADDR_INDEX] = items[7]
+                        pinfo[TRANS_CONTRID_INDEX] = int(items[8])
+                    elif len(items) == TRANS_ITEM_COUNT - 1:
+                        # 兼容未增加tokenid的版本
+                        pinfo[TRANS_NAME_INDEX] = items[0]
+                        pinfo[TRANS_PRICE_INDEX] = float(items[1])
+                        pinfo[TRANS_TIME_INDEX] = items[2]
+                        pinfo[TRANS_FROM_INDEX] = items[3]
+                        pinfo[TRANS_TO_INDEX] = items[4]
+                        pinfo[TRANS_PID_INDEX] = items[5]
+                        pinfo[TRANS_CONTRADDR_INDEX] = items[6]
+                        pinfo[TRANS_CONTRID_INDEX] = int(items[7])
                     price_infos.append(pinfo)
         
         account_tokens = get_account_tokens(trans.Taopai_Conflux_Address)
@@ -215,6 +232,8 @@ def grab_trans_nft_price(cookie_dict):
                 price_info[TRANS_CONTRADDR_INDEX] = contract_address
                 price_info[TRANS_CONTRID_INDEX] = cur_contract_id
                 price_info[TRANS_PRICE_INDEX] = -1
+                price_info[TRANS_NAME_INDEX] = contract.get_token_name(contract_address, token_id)
+                price_info[TRANS_TOKENID_INDEX] = token_id
                 ## 从扫描的网页端支付信息里面匹配
                 if cur_contract_id not in paying_products:
                     price_infos.append(price_info)
@@ -241,11 +260,18 @@ def grab_trans_nft_price(cookie_dict):
                     price_info[TRANS_NAME_INDEX] = target_name
                     price_info[TRANS_PID_INDEX] = target_pid
                     price_info[TRANS_PRICE_INDEX] = target_price
+                    # 删除指定信息
+                    del paying_products[cur_contract_id][token_id][target_pid]
+                    if len(paying_products[cur_contract_id][token_id]) == 0:
+                        del paying_products[cur_contract_id][token_id]
+                    if len(paying_products[cur_contract_id]) == 0:
+                        del paying_products[cur_contract_id]
+                
                 price_infos.append(price_info)
             if max_trans_time != None:
                 contract2starttime[contract_address] = max_trans_time
         print("{} new priced products in this round.".format(priced_prod_cnt))
-        #print(contract2starttime)
+        print(paying_products)
         ## 按价格排序价格信息并输出
         price_infos.sort(key=lambda p: p[TRANS_PRICE_INDEX], reverse=True)
         with open(price_result_file_name, "w+", encoding="utf-8-sig") as price_result_file:
