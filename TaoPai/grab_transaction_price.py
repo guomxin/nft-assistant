@@ -92,7 +92,7 @@ def grab_trans_nft_price(cookie_dict):
     opt = Options()
     opt.add_argument("--headless")
     opt.add_argument("--disable-gpu")
-    driver = webdriver.Chrome()
+    driver = webdriver.Chrome(chrome_options=opt)
     driver.implicitly_wait(20)
 
     driver.get(SCAN_URL.format(1, "", 0, 0))
