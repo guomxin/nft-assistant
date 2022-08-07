@@ -41,35 +41,40 @@ def get_access_token(driver):
         driver.get(SCAN_URL.format(1, "", 0, 0))
         return driver.get_cookie("accessToken")['value']
     except Exception as e:
-        #driver.close()
+        driver.close()
         raise e
 
 GET_PRODUCT_URL = "https://nft.taopainft.com/v1/market/v2/product/list"
 TOP_COUNT = 100
 
 def get_newest_product_list(driver, offset, cnt, access_token):
-    try:
-        data = {
-            "marketType": 1,
-            "offset": offset,
-            "limit": cnt,
-            "types": "all",
-            "publisherId": 0,
-            "name": "",
-            "sortType": 3,
-            "virtualCategory": 0 
-        }
-        headers = {
-            "authorization": "Bearer " + access_token,
-        }
-        res = requests.post(GET_PRODUCT_URL, data=json.dumps(data), headers=headers).json()
-        if res["code"] != 0:
-            return (res["code"], None, None)
-        else:
-            return (res["code"], res["data"]["list"], res["data"]["total"])
-    except Exception as e:
-        driver.close()
-        raise e
+    for _ in range(10):
+        try:
+            data = {
+                "marketType": 1,
+                "offset": offset,
+                "limit": cnt,
+                "types": "all",
+                "publisherId": 0,
+                "name": "",
+                "sortType": 3,
+                "virtualCategory": 0 
+            }
+            headers = {
+                "authorization": "Bearer " + access_token,
+            }
+            res = requests.post(GET_PRODUCT_URL, data=json.dumps(data), headers=headers).json()
+            if res["code"] != 0:
+                return (res["code"], None, None)
+            else:
+                return (res["code"], res["data"]["list"], res["data"]["total"])
+        except Exception as e:
+            time.sleep(0.5)
+            print(e)
+            #return (1, None, None)
+            #driver.close()
+            #raise e
+    return (1, None, None)
 
 PAY_NAME_INDEX = 0
 PAY_PRICE_INDEX = 1
