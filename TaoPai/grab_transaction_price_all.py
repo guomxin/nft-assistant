@@ -168,8 +168,8 @@ def grab_trans_nft_price(cookie_dict):
             offset += len(res)
         print("{} {} products, {} is paying".format(datetime.datetime.now(), offset, paying_prod_cnt))
 
-        # 如果循环满50次，大约15分钟，扫描链上交易
-        if (i+1) % 50 != 0:
+        # 如果循环满200次，大约1小时，扫描链上交易
+        if (i+1) % 200 != 0:
             continue
         date_str = datetime.datetime.now().strftime("%Y%m%d")
         price_result_file_name = "data/_grap_ALL_nft_price_result_{}.csv".format(
