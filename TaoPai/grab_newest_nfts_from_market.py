@@ -81,28 +81,33 @@ def buy_nft(access_token, product_id, price, keywords, send_wx_msg=False):
             utils.send_wx_msg(msg)
 
 def get_newest_product_list(driver, cnt, access_token):
-    try:
-        data = {
-            "marketType": 1,
-            "offset": 0,
-            "limit": cnt,
-            "types": "all",
-            "publisherId": 0,
-            "name": "",
-            "sortType": 3,
-            "virtualCategory": 0 
-        }
-        headers = {
-            "authorization": "Bearer " + access_token,
-        }
-        res = requests.post(GET_PRODUCT_URL, data=json.dumps(data), headers=headers).json()
-        if res["code"] != 0:
-            return (res["code"], None)
-        else:
-            return (res["code"], res["data"]["list"])
-    except Exception as e:
-        driver.close()
-        raise e
+    for _ in range(10):
+        try:
+            data = {
+                "marketType": 1,
+                "offset": 0,
+                "limit": cnt,
+                "types": "all",
+                "publisherId": 0,
+                "name": "",
+                "sortType": 3,
+                "virtualCategory": 0 
+            }
+            headers = {
+                "authorization": "Bearer " + access_token,
+            }
+            res = requests.post(GET_PRODUCT_URL, data=json.dumps(data), headers=headers).json()
+            if res["code"] != 0:
+                return (res["code"], None)
+            else:
+                return (res["code"], res["data"]["list"])
+        except Exception as e:
+            time.sleep(0.5)
+            print(e)
+            #return (1, None, None)
+            #driver.close()
+            #raise e
+    return (1, None, None)
 
 def is_name_match(name, keyword):
     items = keyword.split("not")
