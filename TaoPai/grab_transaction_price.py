@@ -238,7 +238,7 @@ def grab_trans_nft_price(cookie_dict):
                 price_info[TRANS_CONTRID_INDEX] = cur_contract_id
                 price_info[TRANS_PRICE_INDEX] = -1
                 price_info[TRANS_NAME_INDEX] = contract.get_token_name(contract_address, token_id)
-                price_info[TRANS_TOKENID_INDEX] = token_id
+                price_info[TRANS_TOKENID_INDEX] = "#"+ str(token_id)
                 ## 从扫描的网页端支付信息里面匹配
                 if cur_contract_id not in paying_products:
                     price_infos.append(price_info)
