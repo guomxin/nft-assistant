@@ -72,6 +72,8 @@ def get_contract_address_ABI_from_name(name):
         return (Limitless_Contract_Address, TaoPai_ABI)
     elif name == "dftyrb":
         return (DFTYRB_Contract_Address, TaoPai_ABI)
+    elif name == "xiyouxingqiu":
+        return (TCJC_Contract_Address, TaoPai_ABI)
 
     #--- 豹豹青春宇宙 ---#
     elif name == "kaoshenglaile":
@@ -194,7 +196,7 @@ def get_token_name(contract_address, token_id):
             resp_json = resp.json()
             return resp_json['data']['name']
         except Exception as e:
-            print(e)
+            print(resp_json, e)
             print("fetch {} info error".format(token_id))
 
 def dump_contract_tokenid2name(contract_address, contract_ABI, dump_file_name, ranges=[], verbose=True):
@@ -255,6 +257,7 @@ BOBOSG_Contract_Address = "cfx:acc3ea44baypswat4s37wvyk0ewc6e6bnevs8zvnj1"
 Limitless_Contract_Address = "cfx:acbmhd5km15u68eyy17xusmr5a1jy1hthuavs06mhw"
 PartyCat_Contract_Address = "cfx:acdj66ya20g2b5j9me489pmrv4bu60ut32hjfpxpgp"
 DFTYRB_Contract_Address = "cfx:aca8tg7zd85zth9hmw92ucxajgnxuwfd4j4uucd61b"
+TCJC_Contract_Address = "cfx:achmp3kyw693n9d0fftjbvsy06a5zp6g1axypnvyte"
 
 Bosie_Contract_Address = "cfx:accvuj004k127vd4cprcfju1wzw4pm5bj6u1gkvtds"
 XY_Contract_Address = "cfx:acappbfbk3xh5ptt60xugbgyut6jvwja3e80bzrj98"
@@ -331,7 +334,6 @@ CJZ_Contract_Address = "cfx:achtgrev6s2sn9ekkgybbm79m59zj6chnjhgyg0x2p"
 RYZ_Contract_Address = "cfx:acgcbwrwm0eysx8xp3dxsm5a7ypbux02a24wmhwtb2"
 HTZ_Contract_Address = "cfx:acgrgnbckwuh6ckmxmfd0r7psstu8bv9eu8npdsa1w"
 TD_Contract_Address = "cfx:acffc81krae11vd395v50u1p8kyb828dyjhv9h4huk"
-TCJC_Contract_Address = "cfx:achmp3kyw693n9d0fftjbvsy06a5zp6g1axypnvyte"
 HJ_Contract_Address = "cfx:acgzpncte8che3g7gewprt19bvk7p920tjukva5hys"
 AYTK_Contract_Address = "cfx:acgk5c07j7yxvu2h5r1yeuxmb6xsv5a0ta5k9w4cxd"
 
@@ -358,7 +360,9 @@ BaoBao_Contract_Dict = {
     CJZ_Contract_Address: 1,
     RYZ_Contract_Address: 1,
     HTZ_Contract_Address: 1,
-
+    TD_Contract_Address: 1,
+    HJ_Contract_Address: 1,
+    AYTK_Contract_Address: 1,
 }
 
 def is_taopai_contract(contract_address):
