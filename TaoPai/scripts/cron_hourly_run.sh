@@ -120,6 +120,11 @@ python transaction_conflux_contract_hourly_online.py partycat $date $hour \
 901,3838 \
 GONGYOU $tag
 
+echo "---西游星球---"
+python transaction_conflux_contract_hourly_online.py xiyouxingqiu $date $hour \
+1,4100\;4201,5020\;4101,4200 \
+PUTONG\;PUTONG\;XIANLIANG $tag
+
 echo "---活跃账户---"
 python stat_active_users.py ${date_short}
 

@@ -106,6 +106,8 @@ def get_idrangedict_by_nftname(nft_name):
         return PartyCat_IdRange2Name
     elif nft_name == "dftyrb":
         return DFTYRB_IdRange2Name
+    elif nft_name == "xiyouxingqiu":
+        return XiYouXingQiu_IdRange2Name
 
     #--- 豹豹青春宇宙 ---#
     elif nft_name == "kaoshenglaile":
@@ -120,6 +122,12 @@ def get_name_by_tokenid(idrange2name, token_id):
     for ((min_tid, max_tid), name) in idrange2name.items():
         if (token_id >= min_tid) and (token_id <= max_tid):
             return name
+
+XiYouXingQiu_IdRange2Name = {
+    (1,4100): "普通款",
+    (4101,4200): "限量款",
+    (4201,5020): "普通款",
+}
 
 DFTYRB_IdRange2Name = {
     (1,1000): "《东方体育日报》申城花开头版",

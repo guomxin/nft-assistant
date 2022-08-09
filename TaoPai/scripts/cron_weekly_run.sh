@@ -108,3 +108,8 @@ echo "---派对猫---"
 python transaction_conflux_contract_online.py partycat $oneweekago $yesterday \
 901,3838 \
 GONGYOU $tag
+
+echo "---西游星球---"
+python transaction_conflux_contract_online.py xiyouxingqiu $oneweekago $yesterday \
+1,4100\;4201,5020\;4101,4200 \
+PUTONG\;PUTONG\;XIANLIANG $tag
