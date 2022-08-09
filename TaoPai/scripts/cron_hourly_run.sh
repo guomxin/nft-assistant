@@ -127,4 +127,4 @@ python stat_active_users.py ${date_short}
 cd data/hourly;mkdir $tag;rm -f $tag/*
 mv *$tag*.csv $tag;mv ../_stat_activeuser_*_result_*${date_short}*.csv $tag;zip -q $tag $tag/*
 zip_file=`pwd`/$tag.zip
-cd ../..;python upload_baidudisk.py $zip_file ${date_short};python upload_baidudisk.py data/_grap_nft_price_result_${date_short}.csv ${date_short}
+cd ../..;python upload_baidudisk.py $zip_file ${date_short};python upload_baidudisk.py data/_grap_ALL_nft_price_result_${date_short}.csv ${date_short}
