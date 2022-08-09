@@ -131,8 +131,11 @@ def grab_trans_nft_price(cookie_dict):
 
     access_token = get_access_token(driver)
     in_sale_products = {}
-    # 循环一定次数后重启浏览器
-    for i in range(1600):
+    # 一天结束后退出
+    day_end_exit = False
+    scan_cnt = 0
+    while not day_end_exit:
+        scan_cnt += 1
         offset = 0
         scan_to_end = False
         paying_prod_cnt = 0
@@ -166,13 +169,17 @@ def grab_trans_nft_price(cookie_dict):
                 else:
                     in_sale_products[contract_id][token_id][product_id][SALE_TIME_INDEX] = datetime.datetime.now()
             offset += len(res)
-        print("{} {} products, {} is paying".format(datetime.datetime.now(), offset, paying_prod_cnt))
+        if scan_cnt % 10 == 0:
+            print("{} {} products, {} is paying".format(datetime.datetime.now(), offset, paying_prod_cnt))
 
         # 如果循环满100次，大约30分钟，扫描链上交易
         now_time = datetime.datetime.now()
-        if ((i+1) % 100 != 0) and (now_time.hour != 23 or now_time.minute != 59):
+        if (scan_cnt % 100 != 0) and (now_time.hour != 23 or now_time.minute != 59):
             # 满100次或进入23:59分之后扫描链上
             continue
+        if now_time.hour == 23 and now_time.minute == 59:
+            # 设置退出循环，重启浏览器标记
+            day_end_exit = True
         date_str = now_time.strftime("%Y%m%d")
         price_result_file_name = "data/_grap_ALL_nft_price_result_{}.csv".format(
             date_str
