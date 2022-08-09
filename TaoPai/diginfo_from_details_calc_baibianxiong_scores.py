@@ -45,13 +45,17 @@ if __name__ == "__main__":
             elif token_name == "熊熊奶嘴":
                 score += 50
             elif token_name == "SSR-熊熊铁军":
-                pass
+                score += 20
+            elif token_name == "SR-七夕节限定":
+                score += 5
             elif token_name == "百变熊宝-金":
                 pass
             elif token_name == "百变熊宝-银":
                 pass
             elif token_name == "百变熊宝-铜":
-                pass            
+                pass
+            elif token_name == "SSR-变身计划":
+                pass          
             else:
                 print("[calc_baibianxiong_scores]" + token_name)
 
