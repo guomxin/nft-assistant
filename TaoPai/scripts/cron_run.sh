@@ -90,6 +90,10 @@ sh dig_detail-trans_pcatmem.sh $today $yesterday $yesterday
 echo "---派对猫---"
 sh dig_detail-trans_partycat.sh $today $yesterday $yesterday
 
+# 西游星球
+echo "---西游星球---"
+sh dig_detail-trans_xiyouxingqiu.sh $today $yesterday $yesterday
+
 echo "---统计昨日活跃账户情况---"
 cd ..
 python stat_active_users.py ${yesterday_short}

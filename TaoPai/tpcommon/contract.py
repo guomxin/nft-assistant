@@ -308,6 +308,7 @@ ContractAddress2Id = {
     JYY_Contract_Address: 15, # 金羽翼: 15,
     # TODO: DAO纪念
     YSWJ_Contract_Address: 23, #艺术玩家实验室: 23,
+    TCJC_Contract_Address: 64, # 西游星球
     # TODO: Luluz, 王星星, Misaki, YSX, 不走调音乐社, YAO, WPP 
 }
 
@@ -336,6 +337,8 @@ HTZ_Contract_Address = "cfx:acgrgnbckwuh6ckmxmfd0r7psstu8bv9eu8npdsa1w"
 TD_Contract_Address = "cfx:acffc81krae11vd395v50u1p8kyb828dyjhv9h4huk"
 HJ_Contract_Address = "cfx:acgzpncte8che3g7gewprt19bvk7p920tjukva5hys"
 AYTK_Contract_Address = "cfx:acgk5c07j7yxvu2h5r1yeuxmb6xsv5a0ta5k9w4cxd"
+GRDZ_Contract_Address = "cfx:acekmy4nsa8d5rardfa33bsp4c11ck27he87vb8ctk"
+AYXL_Contract_Address = "cfx:acdt8kdv908ntcpuueb9fyyn0y0nnwf7spp0j7xe6n"
 
 BaoBao_Contract_Dict = {
     KaoShengLaiLe_Contract_Address: 1,
