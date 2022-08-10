@@ -167,7 +167,8 @@ def grab_trans_nft_price(cookie_dict):
                 if product_id not in in_sale_products[contract_id][token_id]:
                     in_sale_products[contract_id][token_id][product_id] = [name, price, datetime.datetime.now()]
                 else:
-                    in_sale_products[contract_id][token_id][product_id][SALE_TIME_INDEX] = datetime.datetime.now()
+                    pass
+                    #in_sale_products[contract_id][token_id][product_id][SALE_TIME_INDEX] = datetime.datetime.now()
             offset += len(res)
         if scan_cnt % 10 == 0:
             print("{} {} products, {} is paying".format(datetime.datetime.now(), offset, paying_prod_cnt))
@@ -291,9 +292,14 @@ def grab_trans_nft_price(cookie_dict):
                         access_token = get_access_token(driver)
                         (res_code, res) = get_product_detail(pid, access_token)
                         if res_code != 0:
-                            print("{} 重取accessToken后依然获取藏品列表失败!".format(datetime.datetime.now()))
-                            continue
-                    if res["status"] == 3 and res["payStatus"] == 1:
+                            print("{} accessToken可能已过期,第二次重新获取...".format(datetime.datetime.now()))
+                            access_token = get_access_token(driver)
+                            (res_code, res) = get_product_detail(pid, access_token)
+                            if res_code != 0:
+                                print("{} 第二次重取accessToken后依然获取藏品列表失败!".format(datetime.datetime.now()))
+                                continue
+                    if res["payStatus"] == 1:
+                    #if res["status"] == 3 and res["payStatus"] == 1:
                         target_pid = pid
 
                 if target_pid != None:
