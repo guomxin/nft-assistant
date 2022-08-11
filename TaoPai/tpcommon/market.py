@@ -27,7 +27,7 @@ Keywords_Dict = {
     "SR-百变熊熊 not SR-百变熊熊-父亲节 not SR-百变熊熊-七夕节限定": 800,
     "SSR-百变熊熊 not SSR-百变熊熊-端午 not SSR-百变熊熊-熊熊铁军": 2000,
     "SR-百变熊熊-七夕节限定": 100, # 熊熊奶嘴空投
-    "SR-百变熊熊-父亲节": 120, # 空投
+    "SR-百变熊熊-父亲节": 100, # 空投
     "SSR-百变熊熊-端午": 500, # SSR空投
     "熊熊碎片": 45, # 空投
     "熊熊奶嘴": 1000, # 8R+20N合成
@@ -39,7 +39,7 @@ Keywords_Dict = {
 
     # 敦煌菩萨
     "美女菩萨": 10.0,
-    "美女菩萨-紫": 50.0,
+    "美女菩萨-紫": 30.0,
     "美女菩萨-金": 50.0,
     "彩虹": 100.0,
     "满金": 500.0,
@@ -59,7 +59,7 @@ Keywords_Dict = {
     "聪明小子": 30, # 空投龙舟或端午粽子
     #"龙舟":(35,0,50),
     "端午粽子": 30, # 聪明小子空投
-    "最勇划手-SR": 100, 
+    "最勇划手": 100, # TODO: 临时投机 300 2022/8/11
     "富家": 80,
     "怪力": 20, # 合成SR-农大户
     "村口": 20, # 合成R-劳动模范
@@ -69,8 +69,8 @@ Keywords_Dict = {
 
     # BOBOSG
     "曹操": 20,
-    "刘备": 60,
-    "诸葛亮": 100,
+    "刘备": 50,
+    "诸葛亮": 80,
     "桃园结义": 100,
 
     # 潮虎
@@ -87,7 +87,7 @@ Keywords_Dict = {
     # 离碳
     #"春之花": 60,
     #"夏之花": 30,
-    "云起龙骧": 80,
+    "云起龙骧": 60,
     "蝶恋花": 100,
     "原石": 250,
 
@@ -100,12 +100,16 @@ Keywords_Dict = {
     #"ACUEBEE": 15,
     #"ACUEBEE-003": 80,
     #"ACUEBEE-002": 80,
-    "ACUEBEE-001": 100,
-    "ACUEBEE-SP": 120,
+    "ACUEBEE-001": 50,
+    "ACUEBEE-SP": 50,
 
     # 派对猫
     "派对猫首发纪念卡": 150,
     "派对猫#":700,
+
+    # 西游星球
+    "孙悟空-盲盒-LP": 50,
+    "孙悟空-盲盒-OP": 500,
 }
 
 Target_Dict_1 = {
@@ -204,7 +208,7 @@ Target_Dict_2 = {
 
 Cookie_Dict_2 = {
 # 159****9963
-    'refreshToken': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NjAxNzU5MTMsImlhdCI6MTY1NzU4MzkxMywidXNlclVJRCI6eyJ1c2VySWQiOjEyMDM5fX0.2eb5RYfDy8QwEbed1-cYmeQ1W1Ca8TQqJSy9OVo567o',
-    'accessToken': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTc1ODQ1MTMsImlhdCI6MTY1NzU4MzkxMywidXNlclVJRCI6eyJ1c2VySWQiOjEyMDM5fX0.LI36i2XzzsPrrew05YXQ_k7EeTbHGKDOdWn3dzdWjlg',
+    'refreshToken': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NjI3NzAzOTcsImlhdCI6MTY2MDE3ODM5NywidXNlclVJRCI6eyJ1c2VySWQiOjEyMDM5fX0.uUUyGxPD2ud-PcApibPiie3r8E-5Gf2MniyutyNPNFU',
+    'accessToken': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NjAxNzg5OTcsImlhdCI6MTY2MDE3ODM5NywidXNlclVJRCI6eyJ1c2VySWQiOjEyMDM5fX0.YYbGZQ0vhn86MLhzOMzG4yfwcnJDgYF32whMxXvl9Jo',
     'cert': '1',
 }
