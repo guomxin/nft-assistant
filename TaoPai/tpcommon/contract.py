@@ -339,6 +339,7 @@ HJ_Contract_Address = "cfx:acgzpncte8che3g7gewprt19bvk7p920tjukva5hys"
 AYTK_Contract_Address = "cfx:acgk5c07j7yxvu2h5r1yeuxmb6xsv5a0ta5k9w4cxd"
 GRDZ_Contract_Address = "cfx:acekmy4nsa8d5rardfa33bsp4c11ck27he87vb8ctk"
 AYXL_Contract_Address = "cfx:acdt8kdv908ntcpuueb9fyyn0y0nnwf7spp0j7xe6n"
+ELC_Contract_Address = "cfx:acdbnea1z1dx1e4j9pc50a91ydb9a2a8yj23d50gws"
 
 BaoBao_Contract_Dict = {
     KaoShengLaiLe_Contract_Address: 1,
@@ -366,6 +367,8 @@ BaoBao_Contract_Dict = {
     TD_Contract_Address: 1,
     HJ_Contract_Address: 1,
     AYTK_Contract_Address: 1,
+    GRDZ_Contract_Address: 1,
+    AYXL_Contract_Address: 1,
 }
 
 def is_taopai_contract(contract_address):
