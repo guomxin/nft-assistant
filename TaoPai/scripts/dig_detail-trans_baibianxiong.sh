@@ -1,4 +1,4 @@
-# $1-detail tag, $2-start_date, $3-end_date
+# $1-detail tag, $3-start_date, $4-end_date
 
 cd ..
 
@@ -7,12 +7,12 @@ python detail_conflux_contract.py baibianxiong $1
 python diginfo_from_details_calc_baibianxiong_scores.py data/_details_conflux_baibianxiong_result_$1.csv $1
 
 # 2. dig info for SSR&SR
-python diginfo_from_details_conflux.py baibianxiong 1 data/_details_conflux_baibianxiong_result_$1.csv 1 12649  ANY $1
-python diginfo_from_details_conflux.py baibianxiong 1 data/_details_conflux_baibianxiong_result_$1.csv 1 50 SSR $1
-python diginfo_from_details_conflux.py baibianxiong 1 data/_details_conflux_baibianxiong_result_$1.csv 10001 10015 SSR-DUANWU $1
-python diginfo_from_details_conflux.py baibianxiong 1 data/_details_conflux_baibianxiong_result_$1.csv 51 500 SR $1
-python diginfo_from_details_conflux.py baibianxiong 1 data/_details_conflux_baibianxiong_result_$1.csv 11001 12420 SUIPIAN $1
-python diginfo_from_details_conflux.py baibianxiong 1 data/_details_conflux_baibianxiong_result_$1.csv 12500 12649 SR-FATHERDAY $1
+python diginfo_from_details_conflux.py baibianxiong 1 data/_details_conflux_baibianxiong_result_$1.csv 1,17300  ANY $1
+python diginfo_from_details_conflux.py baibianxiong 1 data/_details_conflux_baibianxiong_result_$1.csv 1,15\;13501,13501\;14001,14035 SSR $1
+python diginfo_from_details_conflux.py baibianxiong 1 data/_details_conflux_baibianxiong_result_$1.csv 10001,10015 SSR-DUANWU $1
+python diginfo_from_details_conflux.py baibianxiong 1 data/_details_conflux_baibianxiong_result_$1.csv 51,185\;13502,13503\;14036,14350 SR $1
+python diginfo_from_details_conflux.py baibianxiong 1 data/_details_conflux_baibianxiong_result_$1.csv 11001,12420 SUIPIAN $1
+python diginfo_from_details_conflux.py baibianxiong 1 data/_details_conflux_baibianxiong_result_$1.csv 12500,12649 SR-FATHERDAY $1
 python diginfo_from_details_conflux.py baibianxiong 1 data/_details_conflux_baibianxiong_result_$1.csv 13001,13300 NAIZUI $1
 python diginfo_from_details_conflux.py baibianxiong 1 data/_details_conflux_baibianxiong_result_$1.csv 12701,12746 SSR-TIEJUN $1
 python diginfo_from_details_conflux.py baibianxiong 1 data/_details_conflux_baibianxiong_result_$1.csv 13301,13500 SR-QIXI $1
@@ -27,7 +27,7 @@ python diginfo_from_details_conflux.py baibianxiong 3 data/_details_conflux_baib
 
 # 5. analyze tranctions
 python transaction_conflux_contract_online.py baibianxiong $2 $3 \
-1,50\;51,500\;501,3000\;3001,10000\;10001,10015\;11001,12420\;12500,12649\;13001,13300\;12701,12746\;12747,12749\;13301,13500 \
-SSR\;SR\;R\;N\;SSR-DUANWU\;SUIPIAN\;SR-FATHERDAY\;NAIZUI\;TIEJUN\;XIONGBAO\;QIXI $1
+1,50\;51,500\;501,3000\;3001,10000\;10001,10015\;11001,12420\;12500,12649\;13001,13300\;12701,12746\;12747,12749\;13301,13500\;14001,14035\;14036,14350\;14351,15100\;15101,17300 \
+SSR\;SR\;R\;N\;SSR-DUANWU\;SUIPIAN\;SR-FATHERDAY\;NAIZUI\;TIEJUN\;XIONGBAO\;QIXI\;SSR\;SR\;R\;N $1
 
 cd scripts
