@@ -66,6 +66,8 @@ def get_idrangedict_by_nftname(nft_name):
         return TaoPaiChuangShi_IdRange2Name
     elif nft_name == "baibianxiong":
         return BaiBianXiong_IdRange2Name
+    elif nft_name == "baibianxiong3":
+        return BaiBianXiong3_IdRange2Name
     elif nft_name == "laodongcun":
         return LaoDongCun_IdRange2Name
     elif nft_name == "laodongcun2":
