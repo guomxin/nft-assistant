@@ -11,7 +11,7 @@ python diginfo_from_details_conflux.py xunzhang 1 data/_details_conflux_xunzhang
 python diginfo_from_details_conflux.py xunzhang 1 data/_details_conflux_xunzhang_result_%1.csv 219 303 JINGYING %1
 python diginfo_from_details_conflux.py xunzhang 1 data/_details_conflux_xunzhang_result_%1.csv 2501 2705 CESHIDASHI %1
 python diginfo_from_details_conflux.py xunzhang 1 data/_details_conflux_xunzhang_result_%1.csv 70001 82000 QINGLIANG %1
-python diginfo_from_details_conflux.py xunzhang 1 data/_details_conflux_xunzhang_result_%1.csv 1 200 WANGZHE %1
+python diginfo_from_details_conflux.py xunzhang 1 data/_details_conflux_xunzhang_result_%1.csv 1,200;300013,300015 WANGZHE %1
 python diginfo_from_details_conflux.py xunzhang 1 data/_details_conflux_xunzhang_result_%1.csv 4001,4200 ZHIYUANZHE %1
 python diginfo_from_details_conflux.py xunzhang 1 data/_details_conflux_xunzhang_result_%1.csv 1101,1700 LVMA %1
 
@@ -24,7 +24,7 @@ python diginfo_from_details_conflux.py xunzhang 3 data/_details_conflux_xunzhang
 
 rem 5. analyze tranctions
 python transaction_conflux_contract_online.py xunzhang %2 %3 ^
-60001,70000;201,218;219,303;401,605;2501,2705;1,200;4001,4200;1101,1700 ^
-ZAONIAO;DASHI;JINGYING;CESHIDASHI;QINGLIANG;WANGZHE;ZHIYUANZHE;LVMA %1
+60001,70000;201,218;219,303;401,605;2501,2705;1,200;4001,4200;1101,1700;300013,300015 ^
+ZAONIAO;DASHI;JINGYING;CESHIDASHI;QINGLIANG;WANGZHE;ZHIYUANZHE;LVMA;WANGZHE %1
 
 cd scripts
