@@ -60,8 +60,8 @@ python transaction_conflux_contract_online.py tiantanbopu $oneweekago $yesterday
 
 echo "---水晶博物馆---"
 python transaction_conflux_contract_online.py shuijing $oneweekago $yesterday \
-1,2000\;2001,4000\;4001,6000\;6001,8000\;8001,9500\;9501,10000\;10301,10600\;11001,11078\;11501,11800 \
-R-MA\;R-PING\;R-YIN\;R-E\;SR-RUYI\;SSR-RENWU\;WUDAJUXING\;HEIMAO\;JIXIE $tag
+1,2000\;2001,4000\;4001,6000\;6001,8000\;8001,9500\;9501,10000\;10301,10600\;11001,11078\;11501,11800\;12301,12400 \
+R-MA\;R-PING\;R-YIN\;R-E\;SR-RUYI\;SSR-RENWU\;WUDAJUXING\;HEIMAO\;JIXIE\;LIULI $tag
 
 echo "---佛系熊猫---"
 python transaction_conflux_contract_online.py fxpandaall $oneweekago $yesterday \
