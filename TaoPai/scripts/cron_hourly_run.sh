@@ -125,11 +125,12 @@ python transaction_conflux_contract_hourly_online.py xiyouxingqiu $date $hour \
 1,4100\;4201,5020\;4101,4200 \
 PUTONG\;PUTONG\;XIANLIANG $tag
 
-echo "---活跃账户---"
-python stat_active_users.py ${date_short}
+#echo "---活跃账户---"
+#python stat_active_users.py ${date_short}
 
 #------ 后处理 ------#
 cd data/hourly;mkdir $tag;rm -f $tag/*
-mv *$tag*.csv $tag;mv ../_stat_activeuser_*_result_*${date_short}*.csv $tag;zip -q $tag $tag/*
+#mv *$tag*.csv $tag;mv ../_stat_activeuser_*_result_*${date_short}*.csv $tag;zip -q $tag $tag/*
+mv *$tag*.csv $tag;zip -q $tag $tag/*
 zip_file=`pwd`/$tag.zip
 cd ../..;python upload_baidudisk.py $zip_file ${date_short};python upload_baidudisk.py data/_grap_ALL_nft_price_result_${date_short}.csv ${date_short}
