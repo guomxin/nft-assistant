@@ -369,6 +369,7 @@ BaoBao_Contract_Dict = {
     AYTK_Contract_Address: 1,
     GRDZ_Contract_Address: 1,
     AYXL_Contract_Address: 1,
+    ELC_Contract_Address: 1,
 }
 
 def is_taopai_contract(contract_address):
