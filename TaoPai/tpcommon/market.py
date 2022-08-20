@@ -18,17 +18,17 @@ Keywords_Dict = {
 
     # 烤仔的朋友
     "烤仔的朋友": 100,
-    "金色款-烤仔的朋友": 1000,
+    "金色款-烤仔的朋友": 800,
     "Evo2k": 300,
 
     # 百变熊熊
     "N-百变熊熊": 45,
-    "R-百变熊熊": 90,
-    "SR-百变熊熊 not SR-百变熊熊-父亲节 not SR-百变熊熊-七夕节限定": 800,
-    "SSR-百变熊熊 not SSR-百变熊熊-端午 not SSR-百变熊熊-熊熊铁军": 2000,
+    "R-百变熊熊": 80,
+    "SR-百变熊熊 not SR-百变熊熊-父亲节 not SR-百变熊熊-七夕节限定": 400,
+    "SSR-百变熊熊 not SSR-百变熊熊-端午 not SSR-百变熊熊-熊熊铁军": 1500,
     "SR-百变熊熊-七夕节限定": 100, # 熊熊奶嘴空投
     "SR-百变熊熊-父亲节": 100, # 空投
-    "SSR-百变熊熊-端午": 500, # SSR空投
+    "SSR-百变熊熊-端午": 400, # SSR空投
     "熊熊碎片": 45, # 空投
     "熊熊奶嘴": 1000, # 8R+20N合成
     "SSR-百变熊熊-熊熊铁军": 500, # 积分满200用户空投
@@ -36,6 +36,8 @@ Keywords_Dict = {
     # 佛系惠二
     "佛系创世": 3000,
     "大圆满": 600,
+    "茶道": 600,
+    "友情岁月": 600,
 
     # 敦煌菩萨
     "美女菩萨": 10.0,
@@ -56,7 +58,7 @@ Keywords_Dict = {
     "憨勇小子": 20, # 合成SR-最勇划手
     "勤劳大叔": 20, # 合成R-劳动模范
     "尖嘴汉": 20, # 合成SR-农大户
-    "聪明小子": 30, # 空投龙舟或端午粽子
+    "聪明小子": 25, # 空投龙舟或端午粽子
     #"龙舟":(35,0,50),
     "端午粽子": 30, # 聪明小子空投
     "最勇划手": 100, # TODO: 临时投机 300 2022/8/11
@@ -90,6 +92,7 @@ Keywords_Dict = {
     "云起龙骧": 60,
     "蝶恋花": 100,
     "原石": 250,
+    "史诗卡牌": 500,
 
     # 天坛波普
     "天坛波普系列SS": 100,
@@ -104,12 +107,17 @@ Keywords_Dict = {
     "ACUEBEE-SP": 50,
 
     # 派对猫
-    "派对猫首发纪念卡": 150,
+    "派对猫首发纪念卡": 100,
     "派对猫#":700,
 
     # 西游星球
     "孙悟空-盲盒-LP": 50,
     "孙悟空-盲盒-OP": 500,
+}
+
+BlindBox_Keywords_Dict = {
+    # 百变熊熊
+    "百变熊熊第三期": 100,
 }
 
 Target_Dict_1 = {
@@ -162,8 +170,8 @@ Target_Dict_1 = {
 
 Cookie_Dict_1 = {
 # 173****6961
-    'refreshToken': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NjA5NjQ2NTcsImlhdCI6MTY1ODM3MjY1NywidXNlclVJRCI6eyJ1c2VySWQiOjEyMDQyfX0.JdS1RWd-47WCXHxsWKVUucyQBU3bEvuRmbIbKee2IqA',
-    'accessToken': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTgzNzMyNTcsImlhdCI6MTY1ODM3MjY1NywidXNlclVJRCI6eyJ1c2VySWQiOjEyMDQyfX0.poUTz32L8U8y5kC7hT7bg4TuGDEOgrPxH6KTUezHPJA',
+    'refreshToken': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NjM1NTg2MzksImlhdCI6MTY2MDk2NjYzOSwidXNlclVJRCI6eyJ1c2VySWQiOjEyMDQyfX0.fpVkL3etr3Svx5CHs6qpfnm7SI8SI1-i792bhgO39e0',
+    'accessToken': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NjA5NjcyMzksImlhdCI6MTY2MDk2NjYzOSwidXNlclVJRCI6eyJ1c2VySWQiOjEyMDQyfX0.Jw3VZEpO8408irpTmweBm5E_5sc7co4OPIylj5c5uzI',
     'cert': '1',
 }
 

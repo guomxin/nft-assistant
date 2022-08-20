@@ -264,7 +264,7 @@ def dig_circulation_from_details(nft_name, details_file_name, dump_file_name):
         if (owner == Taopai_Conflux_Address) or (owner == Taopai_Prev_Conflux_Address) or (owner == Taopai_Recycle_Conflux_Address):
             # negelect Taopai account
             continue
-        if (nft_name == "partycat") or  (nft_name == "fxxunzhang") or (nft_name == "fxfunneng") \
+        if (nft_name == "partycat") or  (nft_name == "fxxunzhang") or (nft_name == "fxfuneng") \
             or (nft_name == "fxpanda") or (nft_name == "fxpanda2") or (nft_name == "fxpandaall"):
             if owner == Taopai_FXHE_Conflux_Address or owner == Taopai_FXHE_Conflux_Address_2 \
                 or owner == Taopai_FXHE_Conflux_Address_3:
