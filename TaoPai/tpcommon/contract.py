@@ -340,6 +340,9 @@ AYTK_Contract_Address = "cfx:acgk5c07j7yxvu2h5r1yeuxmb6xsv5a0ta5k9w4cxd"
 GRDZ_Contract_Address = "cfx:acekmy4nsa8d5rardfa33bsp4c11ck27he87vb8ctk"
 AYXL_Contract_Address = "cfx:acdt8kdv908ntcpuueb9fyyn0y0nnwf7spp0j7xe6n"
 ELC_Contract_Address = "cfx:acdbnea1z1dx1e4j9pc50a91ydb9a2a8yj23d50gws"
+GXGB_Contract_Address = "cfx:acck5bdvy6xd94we1nm1vv80p7b6wyfvh6hbxnha3d"
+CYBC_Contract_Address = "cfx:acez76vvhmj121uuhn88wcexs46fzysmxu9jdzbj2r"
+XZSD_Contract_Address = "cfx:accrbm9f7rth2je3m9se1ut2f1uhwt325enhtmneys"
 
 BaoBao_Contract_Dict = {
     KaoShengLaiLe_Contract_Address: 1,
