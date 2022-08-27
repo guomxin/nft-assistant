@@ -196,7 +196,7 @@ def get_token_name(contract_address, token_id):
             resp_json = resp.json()
             return resp_json['data']['name']
         except Exception as e:
-            print(resp_json, e)
+            #print(resp_json, e)
             print("fetch {} info error".format(token_id))
 
 def dump_contract_tokenid2name(contract_address, contract_ABI, dump_file_name, ranges=[], verbose=True):
