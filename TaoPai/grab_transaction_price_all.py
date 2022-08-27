@@ -119,6 +119,11 @@ TRANS_CONTRADDR_INDEX = 7
 TRANS_CONTRID_INDEX = 8
 TRANS_ITEM_COUNT = 9
 
+def clean_token_name(token_name):
+    token_name = token_name.replace("\n", "|")
+    token_name = token_name.replace(",", "")
+    return token_name
+
 def match_and_dump_trans_info(driver, now_time, in_sale_products, access_token):
     date_str = now_time.strftime("%Y%m%d")
     price_result_file_name = "data/_grap_ALL_nft_price_result_{}.csv".format(
@@ -210,7 +215,7 @@ def match_and_dump_trans_info(driver, now_time, in_sale_products, access_token):
             price_info[TRANS_CONTRADDR_INDEX] = contract_address
             price_info[TRANS_CONTRID_INDEX] = cur_contract_id
             price_info[TRANS_PRICE_INDEX] = -1
-            price_info[TRANS_NAME_INDEX] = contract.get_token_name(contract_address, token_id)
+            price_info[TRANS_NAME_INDEX] = clean_token_name(contract.get_token_name(contract_address, token_id))
             price_info[TRANS_TOKENID_INDEX] = "#"+ str(token_id)
             ## 从扫描的网页端支付信息里面匹配
             if cur_contract_id not in in_sale_products:
