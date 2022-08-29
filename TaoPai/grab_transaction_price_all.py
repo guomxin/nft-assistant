@@ -248,8 +248,8 @@ def match_and_dump_trans_info(driver, now_time, in_sale_products, access_token):
                 in_sale_products[cur_contract_id][token_id][pid][SALE_TIME_INDEX] = sale_time
                 if sale_time > trans_time:
                     continue
-                if res["payStatus"] == 1:
-                #if res["status"] == 3 and res["payStatus"] == 1:
+                if res["status"] == 3 and res["payStatus"] == 1:
+                # status == 2初步推断为下架，看自己下架的藏品payStatus为0，用别的账户看payStatus为1，原因未知
                     target_pid = pid
 
             if target_pid != None:
