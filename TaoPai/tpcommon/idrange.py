@@ -516,7 +516,7 @@ BaiBianXiong_IdRange2Name = {
     (18982,18984): "熊熊神像-青铜神像",
     (18985,18991): "熊熊神像-白银神像",
     (18992,18999): "熊熊神像-黄金神像",
-    (19000,19000): "熊熊神像-钻石神像",
+    (19000,19100): "熊熊神像-钻石神像",
 }
 
 TaoPaiChuangShi_IdRange2Name = {
@@ -663,6 +663,7 @@ HuTouFeiTian_IdRange2Name = {
 HuaCeDaTu_IdRange2Name = {
     (46201,46400): '长歌行-大结局视频',    
     (68001,69000): '纪念版人物徽章海报',
+    (4501,4520): "华策创世勋章",
 }
 
 YuJunQiaSi_IdRange2Name = {
