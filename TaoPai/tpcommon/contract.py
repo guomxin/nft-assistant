@@ -74,6 +74,8 @@ def get_contract_address_ABI_from_name(name):
         return (DFTYRB_Contract_Address, TaoPai_ABI)
     elif name == "xiyouxingqiu":
         return (TCJC_Contract_Address, TaoPai_ABI)
+    elif name == "taopaistar":
+        return (TaoPaiXXX_Contract_Address, TaoPai_ABI)
 
     #--- 豹豹青春宇宙 ---#
     elif name == "kaoshenglaile":
@@ -233,6 +235,7 @@ def dump_contract_tokenid2name(contract_address, contract_ABI, dump_file_name, r
         ))
     result_file.close()
 
+TaoPaiXXX_Contract_Address = "cfx:acdx6zn3209e3m46r12jc8favhwtgn5v5et4exbwkb"
 BOOOM_Contract_Address = "cfx:acaxpets034fjcp73fj5x1eveut913a752jtbkc3as"
 ATSJ_Contract_Address ="cfx:acb7hr0ecyatev5gzjnys9mt31xxa22hzuzb3tprps"
 LT_Contract_Address = "cfx:acaha2pz5j1g6b0fbv9xazv5umm587xucjcdu83b02"

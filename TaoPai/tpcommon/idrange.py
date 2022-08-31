@@ -110,6 +110,8 @@ def get_idrangedict_by_nftname(nft_name):
         return DFTYRB_IdRange2Name
     elif nft_name == "xiyouxingqiu":
         return XiYouXingQiu_IdRange2Name
+    elif nft_name == "taopaistar":
+        return TaoPaiStar_IdRange2Name
 
     #--- 豹豹青春宇宙 ---#
     elif nft_name == "kaoshenglaile":
@@ -124,6 +126,10 @@ def get_name_by_tokenid(idrange2name, token_id):
     for ((min_tid, max_tid), name) in idrange2name.items():
         if (token_id >= min_tid) and (token_id <= max_tid):
             return name
+
+TaoPaiStar_IdRange2Name = {
+    (1,382): "小星星",
+}
 
 XiYouXingQiu_IdRange2Name = {
     (1,4100): "普通款",
@@ -914,6 +920,7 @@ DH_IdRange2Name = {
 
 LTCard_IdRange2Name = {
     (11001,11066): "史诗卡牌",
+    (2701,2766): "传奇卡牌",
 }
 
 LT_IdRange2Name = {
