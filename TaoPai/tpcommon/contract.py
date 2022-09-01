@@ -1,6 +1,7 @@
 # coding: utf-8
 import time
 import requests
+import datetime
 
 from conflux import (
     Conflux,
@@ -235,6 +236,75 @@ def dump_contract_tokenid2name(contract_address, contract_ABI, dump_file_name, r
         ))
     result_file.close()
 
+GET_TRANS_URL = "https://confluxscan.net/v1/transfer?address={}&limit=20&skip=0&tokenId={}&transferType=ERC721"
+def get_token_trans(contract_address, token_id):
+    while True:
+    # 最多试10次
+        try:
+            resp = requests.get(GET_TRANS_URL.format(contract_address, token_id))
+            resp_json = resp.json()
+            return resp_json["data"]["list"]
+        except Exception as e:
+            print("fetch {} trans info error".format(token_id))
+
+def analyze_contract_holders(contract_address, contract_ABI, tokenid2name, snapshot_time, dump_file_name):
+    provider = HTTPProvider('https://main.confluxrpc.com')
+    c = Conflux(provider)
+
+    token_cnt = c.call_contract_method(contract_address, contract_ABI, 'totalSupply')
+    token_ids = []
+    for index in range(0, token_cnt, 10000):
+        _, tids = c.call_contract_method(contract_address, contract_ABI, 'tokens', index, 10000)
+        token_ids.extend(tids)
+    holding_infos = []
+    address2holdingcnt = {}
+    target_token_cnt = 0
+    for token_id in token_ids:
+        if token_id not in tokenid2name:
+            print("Cannot find name for token:{}.".format(token_id))
+            return
+        token_name = tokenid2name[token_id]
+        token_trans_list = get_token_trans(contract_address, token_id)
+        ## 获取的交易信息已按时间倒序排序，获取第一个小于等于快照时间的交易计算持有时长
+        target_to_address = None
+        target_trans_date = None
+        for token_tran in token_trans_list:
+            to_address = token_tran["to"]
+            trans_date = datetime.datetime.fromtimestamp(token_tran["timestamp"])
+            if trans_date <= snapshot_time:
+                target_to_address = to_address
+                target_trans_date = trans_date
+                break
+        if target_to_address == None or target_trans_date == None:
+            print("Cannot find corresponding trans for token:{}.".format(token_id))
+            return
+        if target_to_address not in address2holdingcnt:
+            address2holdingcnt[target_to_address] = 0
+        address2holdingcnt[target_to_address] += 1
+        holding_duration = round((snapshot_time - target_trans_date).total_seconds() / 3600)
+        target_token_cnt += 1
+        holding_infos.append(
+            [contract_address, token_id, token_name, target_to_address, holding_duration, target_trans_date, snapshot_time])
+        if target_token_cnt % 100 == 0:
+            print("{} tokens scaned.".format(target_token_cnt))
+    
+    print("{} tokens in total.".format(target_token_cnt))
+
+    # 按持有数量倒序排列
+    for hinfo in holding_infos:
+        to_address = hinfo[3]
+        hinfo.append(address2holdingcnt[to_address])
+    holding_infos.sort(key=lambda h: h[7], reverse=True)
+    with open(dump_file_name, "w") as dump_file:
+        dump_file.write("合约地址,TokenID,TokenName,持有地址,持有时长(h),持有开始时间,快照时间,持有数量\n")
+        for hinfo in holding_infos:
+            dump_file.write("{},{},{},{},{},{},{},{}\n".format(
+                hinfo[0], hinfo[1], hinfo[2], hinfo[3], hinfo[4],
+                hinfo[5].strftime("%Y/%m/%d %H:%M"),
+                hinfo[6].strftime("%Y/%m/%d %H:%M"),
+                hinfo[7]
+            ))
+
 TaoPaiXXX_Contract_Address = "cfx:acdx6zn3209e3m46r12jc8favhwtgn5v5et4exbwkb"
 BOOOM_Contract_Address = "cfx:acaxpets034fjcp73fj5x1eveut913a752jtbkc3as"
 ATSJ_Contract_Address ="cfx:acb7hr0ecyatev5gzjnys9mt31xxa22hzuzb3tprps"
@@ -376,6 +446,9 @@ BaoBao_Contract_Dict = {
     GRDZ_Contract_Address: 1,
     AYXL_Contract_Address: 1,
     ELC_Contract_Address: 1,
+    GXGB_Contract_Address: 1,
+    CYBC_Contract_Address: 1,
+    XZSD_Contract_Address: 1,
 }
 
 def is_taopai_contract(contract_address):
