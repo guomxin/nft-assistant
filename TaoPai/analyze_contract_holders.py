@@ -4,13 +4,24 @@ from datetime import datetime
 from tpcommon import contract
 
 if __name__ == "__main__":
+    nft_name = None
+    tokenid2name_file_name = None
+    snapshot_time = None
     if len(sys.argv) < 4:
-        print("{} <nft_name> <tokenid2name_file> <snapshot_time>(e.g. 2022/9/1 12:00)".format(sys.argv[0]))
-        sys.exit(1)
-
-    nft_name = sys.argv[1]
-    tokenid2name_file_name = sys.argv[2]
-    snapshot_time = datetime.strptime(sys.argv[3], "%Y/%m/%d %H:%M")
+        line_index = 0
+        for line in open("config.txt"):
+            if line_index == 0:
+                nft_name = line.strip()
+            elif line_index == 1:
+                tokenid2name_file_name = line.strip()
+            elif line_index == 2:
+                snapshot_time = datetime.strptime(line.strip(), "%Y/%m/%d %H:%M")
+            line_index += 1
+    else:
+        nft_name = sys.argv[1]
+        tokenid2name_file_name = sys.argv[2]
+        snapshot_time = datetime.strptime(sys.argv[3], "%Y/%m/%d %H:%M")
+    
     print("snapshot time: {}.".format(snapshot_time))
     tokenid2name = {}
     noname_token_cnt = 0
