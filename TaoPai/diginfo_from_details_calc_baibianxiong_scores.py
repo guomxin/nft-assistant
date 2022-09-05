@@ -28,36 +28,34 @@ if __name__ == "__main__":
         tokenids = [int(i) for i in items[2].split(":")]
         for tid in tokenids:
             token_name = idrange.get_name_by_tokenid(idrange2name, tid)
-            if token_name == "SSR":
+            if token_name == "SSR" or token_name == "SSR-变身计划":
                 score += 80
-            elif token_name == "SR":
-                score += 25
-            elif token_name == "SSR-变身计划":
-                score += 80
-            elif token_name == "SR-变身计划":
-                score += 25          
+            elif token_name == "SR" or token_name == "SR-变身计划":
+                score += 25   
             elif token_name == "R":
                 score += 3
             elif token_name == "N":
                 score += 2
-            elif token_name == "SSR-端午限定":
+            elif token_name == "SSR-端午限定" or token_name == "SSR-熊熊铁军" or token_name == "SSR-熊熊强者":
                 score += 20
             elif token_name == "熊熊碎片":
                 score += 3
-            elif token_name == "SR-父亲节限定":
+            elif token_name == "SR-父亲节限定" or token_name == "SR-七夕节限定" or \
+                token_name == "SR-熊熊铁粉" or token_name == "SR-非洲土著":
                 score += 5
             elif token_name == "熊熊奶嘴":
                 score += 50
-            elif token_name == "SSR-熊熊铁军":
-                score += 20
-            elif token_name == "SR-七夕节限定":
+            elif token_name == "百变熊宝-金" or token_name == "百变熊宝-银" or token_name == "百变熊宝-铜" or \
+                token_name == "百变熊宝-天选之子" or token_name == "百变熊宝-熊熊王者":
+                score += 70
+            elif token_name == "熊熊神像-青铜神像":
+                score += 1
+            elif token_name == "熊熊神像-白银神像":
+                score += 2
+            elif token_name == "熊熊神像-黄金神像":
                 score += 5
-            elif token_name == "百变熊宝-金":
-                pass
-            elif token_name == "百变熊宝-银":
-                pass
-            elif token_name == "百变熊宝-铜":
-                pass        
+            elif token_name == "熊熊神像-钻石神像":
+                score += 20                        
             else:
                 print("[calc_baibianxiong_scores]" + token_name)
 
