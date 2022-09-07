@@ -52,9 +52,9 @@ echo "---佛系惠二---"
 sh dig_detail-trans_fxpanda_all.sh  $today $yesterday $yesterday
 sh dig_detail-trans_fxxunzhang.sh  $today $yesterday $yesterday
 
-# YCY
-echo "---水晶博物馆---"
-sh dig_detail-trans_shuijing.sh $today $yesterday $yesterday
+# YCY 2022/9/7 曝出老鼠仓
+#echo "---水晶博物馆---"
+#sh dig_detail-trans_shuijing.sh $today $yesterday $yesterday
 
 # YQXK
 echo "---天坛波普---"
