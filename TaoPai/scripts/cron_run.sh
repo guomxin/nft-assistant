@@ -104,7 +104,7 @@ cd ../data;mkdir -p upload/$today;rm -f upload/$today/*
 cp *$today* upload/$today;cp _stat_activeuser_*_result_${yesterday_short}.csv upload/$today;cd upload/$today
 
 for nft in "kaozaifriends" "taopai2022" "xunzhang" "letaotao" "taopaitest"  \
-"guizi" "laodongcun" "baibianxiong" "fxpandaall" "shuijing" "tiantanbopu" \
+"guizi" "laodongcun" "baibianxiong" "fxpandaall"  "tiantanbopu" \
 "huakaiyunqi" "pcatmem" "partycat" "xiyouxingqiu" "activeuser"
 do
     mkdir $nft;mv *$nft*.csv $nft;zip -q $nft-$today $nft/*
