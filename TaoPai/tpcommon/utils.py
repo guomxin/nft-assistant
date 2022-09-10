@@ -4,7 +4,12 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 import json
 
-from wxauto import WeChat
+try:
+    from wxauto import WeChat
+    WX = WeChat()
+except:
+    # for linux
+    pass
 
 FLAG = "TokenID:"
 
@@ -40,7 +45,6 @@ def send_msg(msg_text):
 
     server.quit()
 
-WX = WeChat()
 def send_wx_msg(msg):
     try:
         WX.ChatWith("shark")
