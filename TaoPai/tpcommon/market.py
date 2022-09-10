@@ -19,26 +19,28 @@ Keywords_Dict = {
     # 烤仔的朋友
     "烤仔的朋友": 100,
     "金色款-烤仔的朋友": 800,
-    "Evo2k": 250,
+    "Evo2k": 200,
 
     # 百变熊熊
     "N-百变熊熊": 20,
     "R-百变熊熊": 30,
-    "SR-百变熊熊 not SR-百变熊熊-父亲节 not SR-百变熊熊-七夕节限定 not SR-百变熊熊-非洲土著 not SR-百变熊熊-熊熊铁粉": 400,
-    "SSR-百变熊熊 not SSR-百变熊熊-端午 not SSR-百变熊熊-熊熊铁军 not SSR-百变熊熊-熊熊强者": 1500,
-    "SR-百变熊熊-七夕节限定": 80, # 熊熊奶嘴空投
-    "SR-百变熊熊-父亲节": 80, # 空投
-    "SR-百变熊熊-非洲土著": 80, # 三期购买6N（10）活动
-    "SR-百变熊熊-熊熊铁粉": 80, # 三期购买盲盒积分第6-10名
-    "SSR-百变熊熊-熊熊强者": 400, # 三期购买盲盒积分第2-5名
-    "SSR-百变熊熊-端午": 400, # SSR空投
-    "SSR-百变熊熊-熊熊铁军": 400, # 积分满200用户空投
-    "熊熊碎片": 40, # 空投
-    "熊熊奶嘴": 1000, # 8R+20N合成
+    "SR-百变熊熊 not SR-百变熊熊-父亲节 not SR-百变熊熊-七夕节限定 not SR-百变熊熊-非洲土著 not SR-百变熊熊-熊熊铁粉": 300,
+    "SSR-百变熊熊 not SSR-百变熊熊-端午 not SSR-百变熊熊-熊熊铁军 not SSR-百变熊熊-熊熊强者 not SSR-百变熊熊-中秋限定": 1000,
+    "SR-百变熊熊-七夕节限定": 50, # 熊熊奶嘴空投
+    "SR-百变熊熊-父亲节": 50, # 空投
+    "SR-百变熊熊-非洲土著": 50, # 三期购买6N（10）活动
+    "SR-百变熊熊-熊熊铁粉": 50, # 三期购买盲盒积分第6-10名
+    "SSR-百变熊熊-熊熊强者": 300, # 三期购买盲盒积分第2-5名
+    "SSR-百变熊熊-端午": 300, # SSR空投
+    "SSR-百变熊熊-熊熊铁军": 300, # 积分满200用户空投
+    "SSR-百变熊熊-中秋限定": 300, # SSR、百变熊宝、奶嘴空投
+    "熊熊碎片": 30, # 空投
+    "熊熊奶嘴": 800, # 8R+20N合成
     #"青铜神像": 15, # 6N空投
-    "白银神像": 20, # 3R空投
+    "白银神像": 15, # 3R空投
     "黄金神像": 100, # SR空投
-    "钻石神像": 400, # SSR空投
+    "钻石神像": 200, # SSR空投
+    "熊熊蜜罐": 100, # 钻石神像空投
 
     # 佛系惠二
     "佛系创世": 3000,
@@ -65,20 +67,20 @@ Keywords_Dict = {
     "憨勇小子": 10, # 合成SR-最勇划手
     "勤劳大叔": 8, # 合成R-劳动模范
     "尖嘴汉": 8, # 合成SR-农大户
-    "聪明小子": 20, # 空投龙舟或端午粽子
+    "聪明小子": 15, # 空投龙舟或端午粽子
     #"龙舟":(35,0,50), # 合成最勇划手
     "端午粽子": 20, # 聪明小子空投
-    "最勇划手": 100, # 
-    "富家": 80,
+    "最勇划手": 60, # 憨勇+龙舟合成
+    "富家": 60,
     "怪力": 10, # 合成SR-农大户
     "村口": 8, # 合成R-劳动模范
-    "拾荒": 30,
-    "农大户": 200, # SR
-    "劳动模范": 50, # R
+    "拾荒": 20,
+    "农大户": 100, # SR 1*R-怪力+2*N-尖嘴合成
+    "劳动模范": 30, # R 1*N-村口+2*N-勤劳合成
 
     # BOBOSG
     #"曹操": 20,
-    #"刘备": 20,
+    "刘备": 20,
     "诸葛亮": 20,
     "桃园结义": 20,
 
@@ -98,7 +100,7 @@ Keywords_Dict = {
     #"夏之花": 30,
     "云起龙骧": 60,
     #"蝶恋花": 100,
-    "原石": 250,
+    "原石": 150,
     "史诗卡牌": 500,
     "传奇卡牌": 300,
 
@@ -115,18 +117,18 @@ Keywords_Dict = {
     "ACUEBEE-SP": 20,
 
     # 派对猫
-    "派对猫首发纪念卡": 80,
+    "派对猫首发纪念卡": 60,
     "派对猫#":700,
 
     # 西游星球
-    "孙悟空-盲盒-LP": 50,
+    "孙悟空-盲盒-LP": 20,
     "孙悟空-盲盒-OP": 500,
 
     # 凹凸世界
     "SSR-卡米尔": 5,
     "SSR-安迷修": 5,
-    "UR": 10,
-    "XR": 20,
+    "UR": 15,
+    "XR": 50,
 }
 
 BlindBox_Keywords_Dict = {
@@ -182,12 +184,14 @@ Target_Dict_1 = {
     #"徽章海报":(26,0,300),
 }
 
+"""
 Cookie_Dict_1 = {
 # 173****6961
     'refreshToken': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NjM1NTg2MzksImlhdCI6MTY2MDk2NjYzOSwidXNlclVJRCI6eyJ1c2VySWQiOjEyMDQyfX0.fpVkL3etr3Svx5CHs6qpfnm7SI8SI1-i792bhgO39e0',
     'accessToken': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NjA5NjcyMzksImlhdCI6MTY2MDk2NjYzOSwidXNlclVJRCI6eyJ1c2VySWQiOjEyMDQyfX0.Jw3VZEpO8408irpTmweBm5E_5sc7co4OPIylj5c5uzI',
     'cert': '1',
 }
+"""
 
 Target_Dict_2 = {
     # 敦煌菩萨
@@ -228,9 +232,11 @@ Target_Dict_2 = {
     #"创世王者勋章": (2,0,5000),
 }
 
+"""
 Cookie_Dict_2 = {
 # 159****9963
-    'refreshToken': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NjI3NzAzOTcsImlhdCI6MTY2MDE3ODM5NywidXNlclVJRCI6eyJ1c2VySWQiOjEyMDM5fX0.uUUyGxPD2ud-PcApibPiie3r8E-5Gf2MniyutyNPNFU',
-    'accessToken': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NjAxNzg5OTcsImlhdCI6MTY2MDE3ODM5NywidXNlclVJRCI6eyJ1c2VySWQiOjEyMDM5fX0.YYbGZQ0vhn86MLhzOMzG4yfwcnJDgYF32whMxXvl9Jo',
+    'refreshToken': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NjUzNjU1MjMsImlhdCI6MTY2Mjc3MzUyMywidXNlclVJRCI6eyJ1c2VySWQiOjEyMDM5fX0.eWd1dPAw2QuCcJEU-JbmgVhUVZllHVs9PcnqYehFLeM',
+    'accessToken': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NjI3NzQxMjMsImlhdCI6MTY2Mjc3MzUyMywidXNlclVJRCI6eyJ1c2VySWQiOjEyMDM5fX0.QWiEhV_L8RRoV-TBiFR6m12VdAEUO3YFuB7RgegPDpg',
     'cert': '1',
 }
+"""

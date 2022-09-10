@@ -2,6 +2,7 @@
 import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
+import json
 
 from wxauto import WeChat
 
@@ -46,3 +47,20 @@ def send_wx_msg(msg):
         WX.SendMsg(msg)
     except:
         pass
+
+def dump_cookie_dict(select_id, cookie_dict):
+    if select_id == 1:
+        cookie_file_name = "config/cookie_dict_1.json"
+    elif select_id == 2:
+        cookie_file_name = "config/cookie_dict_2.json"
+    with open(cookie_file_name, "w") as cookie_file:
+        json.dump(cookie_dict, cookie_file)
+
+def load_cookie_dict(select_id):
+    if select_id == 1:
+        cookie_file_name = "config/cookie_dict_1.json"
+    elif select_id == 2:
+        cookie_file_name = "config/cookie_dict_2.json"
+    with open(cookie_file_name) as cookie_file:
+        cookie_dict = json.load(cookie_file)
+        return cookie_dict

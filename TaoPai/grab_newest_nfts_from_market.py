@@ -84,10 +84,16 @@ GET_PRODUCT_URL = "https://nft.taopainft.com/v1/market/v2/product/list"
 CREATE_ORDER_URL = "https://nft.taopainft.com/v1/market/order/create"
 TOP_COUNT = 50
 
-def get_access_token(driver):
+def get_access_token(driver, select_id, cookie_dict):
     try:
         driver.get(SCAN_URL.format(1, "", 0, 0))
-        return driver.get_cookie("accessToken")['value']
+        access_token = driver.get_cookie("accessToken")["value"]
+        refresh_token = driver.get_cookie("refreshToken")["value"]
+        if access_token != cookie_dict["accessToken"]:
+            cookie_dict["accessToken"] = access_token
+            cookie_dict["refreshToken"] = refresh_token
+            utils.dump_cookie_dict(select_id, cookie_dict)
+        return access_token
     except Exception as e:
         driver.close()
         raise e
@@ -190,13 +196,12 @@ def grab_newest_nft_from_market(target_dict, contract_dict, blindbox_dict, cooki
     driver.get(SCAN_URL.format(1, "", 0, 0))
     driver.add_cookie({'name':'refreshToken', 'value':cookie_dict['refreshToken'], 'path':'/'})
     driver.add_cookie({'name':'accessToken', 'value':cookie_dict['accessToken'], 'path':'/'})
-    driver.add_cookie({'name':'cert', 'value':cookie_dict['cert'], 'path':'/'})
 
     ##### 调试设置cookie后的用户信息
     #driver.get(SCAN_URL.format(1, "", 0, 0))
     #time.sleep(100) 
 
-    access_token = get_access_token(driver)
+    access_token = get_access_token(driver, select_id, cookie_dict)
     # 循环一定次数后重启浏览器
     for i in range(10000):
         ## 获取藏品市场信息
@@ -204,7 +209,7 @@ def grab_newest_nft_from_market(target_dict, contract_dict, blindbox_dict, cooki
         if res_code != 0:
             # access_token可能已过期，重新获得
             print("{} accessToken可能已过期,重新获取...".format(datetime.now()))
-            access_token = get_access_token(driver)
+            access_token = get_access_token(driver, select_id, cookie_dict)
             (res_code, res) = get_newest_product_list(driver, TOP_COUNT, access_token)
             if res_code != 0:
                 print("{} 重取accessToken后依然获取藏品列表失败!".format(datetime.now()))
@@ -284,7 +289,7 @@ def grab_newest_nft_from_market(target_dict, contract_dict, blindbox_dict, cooki
         if res_code != 0:
             # access_token可能已过期，重新获得
             print("{} accessToken可能已过期,重新获取...".format(datetime.now()))
-            access_token = get_access_token(driver)
+            access_token = get_access_token(driver, select_id, cookie_dict)
             (res_code, res) = get_newest_blindbox_list(driver, TOP_COUNT, access_token)
             if res_code != 0:
                 print("{} 重取accessToken后依然获取盲盒列表失败!".format(datetime.now()))
@@ -329,10 +334,7 @@ if __name__ == "__main__":
         print("{} <target_dict_id>.".format(sys.argv[0]))
         sys.exit(1)
     select_id = int(sys.argv[1])
-    if select_id == 1:
-        cookie_dict = market.Cookie_Dict_1
-    elif select_id == 2:
-        cookie_dict = market.Cookie_Dict_2
+    cookie_dict = utils.load_cookie_dict(select_id)
     target_dict = market.Keywords_Dict
     contract_dict = market.Contract_Dict
     blindbox_dict = market.BlindBox_Keywords_Dict

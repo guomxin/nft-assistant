@@ -17,6 +17,7 @@ from conflux import (
 from tpcommon import trans
 from tpcommon import contract
 from tpcommon import market
+from tpcommon import utils
 
 SCAN_URL = "https://nft.taopainft.com/trade?type=bb86903952ad5df5f5016c8d3d4d895ae892ee89&p={}&s=3&k={}&pid={}&vid={}"
 GET_ACCOUNT_TOKEN_URL = "https://api.confluxscan.net/account/tokens?account={}"
@@ -37,10 +38,16 @@ def get_account_tokens(account_address):
             time.sleep(0.5)
             print(e)
 
-def get_access_token(driver):
+def get_access_token(driver, select_id, cookie_dict):
     try:
         driver.get(SCAN_URL.format(1, "", 0, 0))
-        return driver.get_cookie("accessToken")['value']
+        access_token = driver.get_cookie("accessToken")["value"]
+        refresh_token = driver.get_cookie("refreshToken")["value"]
+        if access_token != cookie_dict["accessToken"]:
+            cookie_dict["accessToken"] = access_token
+            cookie_dict["refreshToken"] = refresh_token
+            utils.dump_cookie_dict(select_id, cookie_dict)
+        return access_token
     except Exception as e:
         driver.close()
         raise e
@@ -124,7 +131,7 @@ def clean_token_name(token_name):
     token_name = token_name.replace(",", "")
     return token_name
 
-def match_and_dump_trans_info(driver, now_time, in_sale_products, access_token):
+def match_and_dump_trans_info(driver, now_time, in_sale_products, access_token, select_id, cookie_dict):
     date_str = now_time.strftime("%Y%m%d")
     price_result_file_name = "data/_grap_ALL_nft_price_result_{}.csv".format(
         date_str
@@ -234,11 +241,11 @@ def match_and_dump_trans_info(driver, now_time, in_sale_products, access_token):
                 if res_code != 0:
                     # access_token可能已过期，重新获得
                     print("{} accessToken可能已过期,重新获取...".format(datetime.datetime.now()))
-                    access_token = get_access_token(driver)
+                    access_token = get_access_token(driver, select_id, cookie_dict)
                     (res_code, res) = get_product_detail(pid, access_token)
                     if res_code != 0:
                         print("{} accessToken可能已过期,第二次重新获取...".format(datetime.datetime.now()))
-                        access_token = get_access_token(driver)
+                        access_token = get_access_token(driver, select_id, cookie_dict)
                         (res_code, res) = get_product_detail(pid, access_token)
                         if res_code != 0:
                             print("{} 第二次重取accessToken后依然获取藏品列表失败!".format(datetime.datetime.now()))
@@ -286,7 +293,7 @@ def match_and_dump_trans_info(driver, now_time, in_sale_products, access_token):
                 caddr, ttime.strftime("%Y/%m/%d %H:%M:%S")
             ))
 
-def grab_trans_nft_price(cookie_dict):
+def grab_trans_nft_price(select_id, cookie_dict):
     opt = Options()
     opt.add_argument("--headless")
     opt.add_argument("--disable-gpu")
@@ -296,9 +303,8 @@ def grab_trans_nft_price(cookie_dict):
     driver.get(SCAN_URL.format(1, "", 0, 0))
     driver.add_cookie({'name':'refreshToken', 'value':cookie_dict['refreshToken'], 'path':'/'})
     driver.add_cookie({'name':'accessToken', 'value':cookie_dict['accessToken'], 'path':'/'})
-    driver.add_cookie({'name':'cert', 'value':cookie_dict['cert'], 'path':'/'})
 
-    access_token = get_access_token(driver)
+    access_token = get_access_token(driver, select_id, cookie_dict)
     in_sale_products = {}
     # 一天结束后退出
     day_end_exit = False
@@ -313,7 +319,7 @@ def grab_trans_nft_price(cookie_dict):
             if res_code != 0:
                 # access_token可能已过期，重新获得
                 print("{} accessToken可能已过期,重新获取...".format(datetime.datetime.now()))
-                access_token = get_access_token(driver)
+                access_token = get_access_token(driver, select_id, cookie_dict)
                 (res_code, res, _) = get_newest_product_list(driver, offset, TOP_COUNT, access_token)
                 if res_code != 0:
                     print("{} 重取accessToken后依然获取藏品列表失败!".format(datetime.datetime.now()))
@@ -349,7 +355,7 @@ def grab_trans_nft_price(cookie_dict):
         if now_time.hour == 23 and now_time.minute == 59:
             # 设置退出循环，重启浏览器标记
             day_end_exit = True
-        match_and_dump_trans_info(driver, now_time, in_sale_products, access_token)
+        match_and_dump_trans_info(driver, now_time, in_sale_products, access_token, select_id, cookie_dict)
 
     driver.close()
 
@@ -358,14 +364,11 @@ if __name__ == "__main__":
         print("{} <target_dict_id>.".format(sys.argv[0]))
         sys.exit(1)
     select_id = int(sys.argv[1])
-    if select_id == 1:
-        cookie_dict = market.Cookie_Dict_1
-    elif select_id == 2:
-        cookie_dict = market.Cookie_Dict_2
+    cookie_dict = utils.load_cookie_dict(select_id)
 
     while True:
         try:
-            grab_trans_nft_price(cookie_dict)
+            grab_trans_nft_price(select_id, cookie_dict)
         except Exception as e:
             print(e)
             # 出错后等待一段时间
