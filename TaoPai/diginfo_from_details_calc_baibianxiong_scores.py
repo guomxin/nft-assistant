@@ -36,7 +36,8 @@ if __name__ == "__main__":
                 score += 3
             elif token_name == "N":
                 score += 2
-            elif token_name == "SSR-端午限定" or token_name == "SSR-熊熊铁军" or token_name == "SSR-熊熊强者":
+            elif token_name == "SSR-端午限定" or token_name == "SSR-熊熊铁军" or \
+                token_name == "SSR-熊熊强者" or token_name == "SSR-中秋限定":
                 score += 20
             elif token_name == "熊熊碎片":
                 score += 3
@@ -55,7 +56,9 @@ if __name__ == "__main__":
             elif token_name == "熊熊神像-黄金神像":
                 score += 5
             elif token_name == "熊熊神像-钻石神像":
-                score += 20                        
+                score += 20
+            elif token_name == "熊熊蜜罐":
+                pass                        
             else:
                 print("[calc_baibianxiong_scores]" + token_name)
 
