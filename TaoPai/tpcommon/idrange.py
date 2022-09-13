@@ -128,8 +128,7 @@ def get_name_by_tokenid(idrange2name, token_id):
             return name
 
 TaoPaiStar_IdRange2Name = {
-    (1,382): "小星星",
-    (401,883): "小星星",
+    (1,4185): "小星星",
 }
 
 XiYouXingQiu_IdRange2Name = {
