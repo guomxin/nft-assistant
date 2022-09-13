@@ -520,6 +520,8 @@ BaiBianXiong_IdRange2Name = {
 
     (19101,19191): "SSR-中秋限定",
     (19201,19323): "熊熊蜜罐",
+
+    (19324,19373): "熊熊神像-钻石神像",
 }
 
 TaoPaiChuangShi_IdRange2Name = {
