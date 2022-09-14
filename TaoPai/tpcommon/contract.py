@@ -421,6 +421,7 @@ BJTSG_Contract_Address = "cfx:acdnkc7u6npvjjneupryz9dn0271db0tyj4rxk4b74"
 GJTSGZGBQ_Contract_Address = "cfx:ace4zz6apgh0gpeynyxwguuh0gpdjuaxbec5ndf5fh"
 GLBPTSG_Contract_Address = "cfx:acgukm2yd33crw9bkfwnufrvx625zn222eck5dxwe5"
 JSTSG_Contract_Address = "cfx:acg9xc7ea53e62gk2xkwczvt0ebpne84v26z18jev6"
+WindowsDHJ_Contract_Address = "cfx:acchhfhzkgfbkbr3g5y29955nw1fvpjj1jgvucx817"
 
 BaoBao_Contract_Dict = {
     KaoShengLaiLe_Contract_Address: 1,
@@ -459,6 +460,7 @@ BaoBao_Contract_Dict = {
     GLBPTSG_Contract_Address: 1,
     GJTSGZGBQ_Contract_Address: 1,
     JSTSG_Contract_Address: 1,
+    WindowsDHJ_Contract_Address: 1,
 }
 
 def is_taopai_contract(contract_address):
