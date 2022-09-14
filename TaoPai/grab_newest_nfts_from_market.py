@@ -48,6 +48,7 @@ def get_product_detail(product_id, access_token):
 
     return (1, None)
 
+"""
 def buy_nft_from_page(driver, product_id, price, keywords):
     driver.get(PRODUCT_URL.format(product_id))
     
@@ -72,12 +73,13 @@ def buy_nft_from_page(driver, product_id, price, keywords):
 
         msg = "{} {}:{}:{}".format(datetime.now(), desp, keywords, price)
         print(msg)
-        utils.send_msg(msg)
+        utils.send_msg(from_addr, password, to_addr, msg)
         #utils.send_wx_msg(msg)
     else:
         msg = "{} {}:{}:{}".format(datetime.now(), desp, keywords, price)        
         print(msg)
         utils.send_wx_msg(msg)
+"""
 
 INTERVAL_BETWEEN_PAGES = 0.2 # (s)
 GET_PRODUCT_URL = "https://nft.taopainft.com/v1/market/v2/product/list"
@@ -109,7 +111,7 @@ def buy_nft(access_token, product_id, price, keywords, send_wx_msg=False):
     if res["code"] == 0:
         msg = "购买 {}:{}:{}".format(datetime.now(), keywords, price)
         print(msg)
-        utils.send_msg(msg)
+        utils.send_msg(from_addr, password, to_addr, msg)
     else:
         msg = "下单失败 {}:{}:{}:{}".format(datetime.now(), keywords, price, res["message"])
         print(msg)
@@ -338,6 +340,12 @@ if __name__ == "__main__":
     target_dict = market.Keywords_Dict
     contract_dict = market.Contract_Dict
     blindbox_dict = market.BlindBox_Keywords_Dict
+
+    with open("mailconfig") as config_file:
+        items = config_file.readline().strip().split(",")
+        from_addr = items[0]
+        password = items[1]
+        to_addr = items[2]
 
     while True:
         try:

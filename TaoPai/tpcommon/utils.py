@@ -27,10 +27,7 @@ def return_fig_count(idrange2name, fig_name):
             fig_count += (high-low+1)
     return fig_count
 
-def send_msg(msg_text):
-    from_addr = "1621949016@qq.com"
-    password = "crtlhcujsozpdidc"
-    to_addr = "1621949016@qq.com"
+def send_msg(from_addr, password, to_addr, msg_text):
     smtp_server = "smtp.qq.com"
 
     server = smtplib.SMTP_SSL()
