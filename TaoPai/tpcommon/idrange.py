@@ -529,6 +529,8 @@ BaiBianXiong_IdRange2Name = {
     (19201,19323): "熊熊蜜罐",
 
     (19324,19373): "熊熊神像-钻石神像",
+
+    (19374,19433): "熊宝凭证",
 }
 
 TaoPaiChuangShi_IdRange2Name = {

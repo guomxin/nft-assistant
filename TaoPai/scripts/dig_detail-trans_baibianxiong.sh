@@ -7,7 +7,7 @@ python detail_conflux_contract.py baibianxiong $1
 python diginfo_from_details_calc_baibianxiong_scores.py data/_details_conflux_baibianxiong_result_$1.csv $1
 
 # 2. dig info for SSR&SR
-python diginfo_from_details_conflux.py baibianxiong 1 data/_details_conflux_baibianxiong_result_$1.csv 1,17300  ANY $1
+python diginfo_from_details_conflux.py baibianxiong 1 data/_details_conflux_baibianxiong_result_$1.csv 1,19433  ANY $1
 python diginfo_from_details_conflux.py baibianxiong 1 data/_details_conflux_baibianxiong_result_$1.csv 1,15\;13501,13501\;14001,14035 SSR $1
 python diginfo_from_details_conflux.py baibianxiong 1 data/_details_conflux_baibianxiong_result_$1.csv 10001,10015\;12701,12746\;10060,10063\;19101,19191 SSR-KONGTOU $1
 python diginfo_from_details_conflux.py baibianxiong 1 data/_details_conflux_baibianxiong_result_$1.csv 51,185\;13502,13503\;14036,14350 SR $1
@@ -17,14 +17,15 @@ python diginfo_from_details_conflux.py baibianxiong 1 data/_details_conflux_baib
 python diginfo_from_details_conflux.py baibianxiong 1 data/_details_conflux_baibianxiong_result_$1.csv 18962,18981\;19000,19100\;19324,19373 ZUANSHISX $1
 python diginfo_from_details_conflux.py baibianxiong 1 data/_details_conflux_baibianxiong_result_$1.csv 18778,18961\;18992,18999 HUANGJINSX $1
 python diginfo_from_details_conflux.py baibianxiong 1 data/_details_conflux_baibianxiong_result_$1.csv 19201,19323 MIGUAN $1
+python diginfo_from_details_conflux.py baibianxiong 1 data/_details_conflux_baibianxiong_result_$1.csv 19374,19433 XBPINGZHENG $1
 
 # 3. dig info for fullset
 # python diginfo_from_details_conflux.py baibianxiong 2 data/_details_conflux_baibianxiong_result_$1.csv 3001,10000 18 N18 $1
 # python diginfo_from_details_conflux.py baibianxiong 2 data/_details_conflux_baibianxiong_result_$1.csv 501,3000 6 R6 $1
 # python diginfo_from_details_conflux.py baibianxiong 2 data/_details_conflux_baibianxiong_result_$1.csv 501,3000\;3001,10000 3\;6 FRAGMENT $1
 python diginfo_from_details_conflux.py baibianxiong 2 data/_details_conflux_baibianxiong_result_$1.csv \
-18001,18437\;18438,18777\;18778,18961\;18982,18984\;18985,18991\;18992,18999 \
-1\;1\;1\;1\;1\;1 HECHENG-ZUANSHISX $1
+13001,13300\;19201,19323\;11001,12420 \
+1\;2\;15 HECHENG-XIONGBAO $1
 
 # 4. dig count in circulation
 python diginfo_from_details_conflux.py baibianxiong 3 data/_details_conflux_baibianxiong_result_$1.csv $1
