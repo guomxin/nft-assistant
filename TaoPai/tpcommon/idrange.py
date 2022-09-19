@@ -127,8 +127,13 @@ def get_name_by_tokenid(idrange2name, token_id):
         if (token_id >= min_tid) and (token_id <= max_tid):
             return name
 
+
+TaopaiNFT_TODO = {
+    (250001,251200): "TODO"
+}
+
 TaoPaiStar_IdRange2Name = {
-    (1,4185): "小星星",
+    (1,4582): "小星星",
 }
 
 XiYouXingQiu_IdRange2Name = {

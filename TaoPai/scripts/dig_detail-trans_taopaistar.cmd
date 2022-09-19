@@ -6,12 +6,12 @@ rem 1. generate details
 python detail_conflux_contract.py taopaistar %1
 
 rem 2. dig info for Star
-python diginfo_from_details_conflux.py taopaistar 1 data/_details_conflux_taopaistar_result_%1.csv 1,4185 STAR %1
+python diginfo_from_details_conflux.py taopaistar 1 data/_details_conflux_taopaistar_result_%1.csv 1,4582 STAR %1
 
 rem 3. dig count in circulation
 python diginfo_from_details_conflux.py taopaistar 3 data/_details_conflux_taopaistar_result_%1.csv %1
 
 rem 5. analyze tranctions for Star
-python transaction_conflux_contract_online.py taopaistar %2 %3 1,4185 Star %1
+python transaction_conflux_contract_online.py taopaistar %2 %3 1,4582 Star %1
 
 cd scripts
