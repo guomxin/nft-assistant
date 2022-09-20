@@ -112,6 +112,8 @@ def get_idrangedict_by_nftname(nft_name):
         return XiYouXingQiu_IdRange2Name
     elif nft_name == "taopaistar":
         return TaoPaiStar_IdRange2Name
+    elif nft_name == "taopaishop":
+        return TaoPaiShopGongCe_IdRange2Name
 
     #--- 豹豹青春宇宙 ---#
     elif nft_name == "kaoshenglaile":
@@ -127,9 +129,8 @@ def get_name_by_tokenid(idrange2name, token_id):
         if (token_id >= min_tid) and (token_id <= max_tid):
             return name
 
-
-TaopaiNFT_TODO = {
-    (250001,251200): "TODO"
+TaoPaiShopGongCe_IdRange2Name = {
+    (250001,251200): "淘派商城公测纪念藏品",
 }
 
 TaoPaiStar_IdRange2Name = {

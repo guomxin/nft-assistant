@@ -41,6 +41,9 @@ python transaction_conflux_contract_hourly_online.py taopaitest $date $hour 1000
 echo "---乐淘淘---"
 python transaction_conflux_contract_hourly_online.py letaotao $date $hour 50001,51496\;51636,52163 PART1\;PART2 $tag
 
+echo "--商城公测纪念---"
+python transaction_conflux_contract_hourly_online.py taopaishop $date $hour 250001,251200 ShopGongCe $tag
+
 echo "---柜子---"
 python transaction_conflux_contract_hourly_online.py guizi $date $hour 1,1000\;1001,4000 GUIZI-SR\;GUIZI-N $tag
 

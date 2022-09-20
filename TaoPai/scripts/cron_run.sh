@@ -35,6 +35,8 @@ sh dig_detail-trans_letaotao.sh  $today $yesterday $yesterday
 echo "---公测内测---"
 sh dig_detail-trans_taopaitest.sh  $today $yesterday $yesterday
 #sh dig_detail-trans_chuangshi.sh  $today
+echo "---商城公测纪念---"
+sh dig_detail-trans_taopaishop.sh  $today $yesterday $yesterday
 
 # UXON
 echo "---劳动村---"
@@ -103,7 +105,7 @@ cd scripts
 cd ../data;mkdir -p upload/$today;rm -f upload/$today/*
 cp *$today* upload/$today;cp _stat_activeuser_*_result_${yesterday_short}.csv upload/$today;cd upload/$today
 
-for nft in "kaozaifriends" "taopai2022" "xunzhang" "letaotao" "taopaitest"  \
+for nft in "kaozaifriends" "taopai2022" "xunzhang" "letaotao" "taopaitest" "taopaishop" \
 "guizi" "laodongcun" "baibianxiong" "fxpandaall"  "tiantanbopu" \
 "huakaiyunqi" "pcatmem" "partycat" "xiyouxingqiu" "activeuser"
 do
