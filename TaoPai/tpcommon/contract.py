@@ -77,6 +77,8 @@ def get_contract_address_ABI_from_name(name):
         return (TCJC_Contract_Address, TaoPai_ABI)
     elif name == "taopaistar":
         return (TaoPaiXXX_Contract_Address, TaoPai_ABI)
+    elif name == "windowsdhj":
+        return (WindowsDHJ_Contract_Address, TaoPai_ABI)
 
     #--- 豹豹青春宇宙 ---#
     elif name == "kaoshenglaile":
@@ -331,6 +333,7 @@ Limitless_Contract_Address = "cfx:acbmhd5km15u68eyy17xusmr5a1jy1hthuavs06mhw"
 PartyCat_Contract_Address = "cfx:acdj66ya20g2b5j9me489pmrv4bu60ut32hjfpxpgp"
 DFTYRB_Contract_Address = "cfx:aca8tg7zd85zth9hmw92ucxajgnxuwfd4j4uucd61b"
 TCJC_Contract_Address = "cfx:achmp3kyw693n9d0fftjbvsy06a5zp6g1axypnvyte"
+WindowsDHJ_Contract_Address = "cfx:acchhfhzkgfbkbr3g5y29955nw1fvpjj1jgvucx817"
 
 Bosie_Contract_Address = "cfx:accvuj004k127vd4cprcfju1wzw4pm5bj6u1gkvtds"
 XY_Contract_Address = "cfx:acappbfbk3xh5ptt60xugbgyut6jvwja3e80bzrj98"
@@ -421,7 +424,7 @@ BJTSG_Contract_Address = "cfx:acdnkc7u6npvjjneupryz9dn0271db0tyj4rxk4b74"
 GJTSGZGBQ_Contract_Address = "cfx:ace4zz6apgh0gpeynyxwguuh0gpdjuaxbec5ndf5fh"
 GLBPTSG_Contract_Address = "cfx:acgukm2yd33crw9bkfwnufrvx625zn222eck5dxwe5"
 JSTSG_Contract_Address = "cfx:acg9xc7ea53e62gk2xkwczvt0ebpne84v26z18jev6"
-WindowsDHJ_Contract_Address = "cfx:acchhfhzkgfbkbr3g5y29955nw1fvpjj1jgvucx817"
+SXX_Contract_Address = "cfx:accxfzypd2rpke78m7j4gccx3cmr3xxme60p9hzcdx"
 
 BaoBao_Contract_Dict = {
     KaoShengLaiLe_Contract_Address: 1,
@@ -460,7 +463,7 @@ BaoBao_Contract_Dict = {
     GLBPTSG_Contract_Address: 1,
     GJTSGZGBQ_Contract_Address: 1,
     JSTSG_Contract_Address: 1,
-    WindowsDHJ_Contract_Address: 1,
+    SXX_Contract_Address: 1,
 }
 
 def is_taopai_contract(contract_address):
