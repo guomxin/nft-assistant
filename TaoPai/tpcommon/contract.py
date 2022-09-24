@@ -79,6 +79,8 @@ def get_contract_address_ABI_from_name(name):
         return (TaoPaiXXX_Contract_Address, TaoPai_ABI)
     elif name == "windowsdhj":
         return (WindowsDHJ_Contract_Address, TaoPai_ABI)
+    elif name == "xiebro":
+        return (Xiebro_Contract_Address, TaoPai_ABI)
 
     #--- 豹豹青春宇宙 ---#
     elif name == "kaoshenglaile":
@@ -334,6 +336,7 @@ PartyCat_Contract_Address = "cfx:acdj66ya20g2b5j9me489pmrv4bu60ut32hjfpxpgp"
 DFTYRB_Contract_Address = "cfx:aca8tg7zd85zth9hmw92ucxajgnxuwfd4j4uucd61b"
 TCJC_Contract_Address = "cfx:achmp3kyw693n9d0fftjbvsy06a5zp6g1axypnvyte"
 WindowsDHJ_Contract_Address = "cfx:acchhfhzkgfbkbr3g5y29955nw1fvpjj1jgvucx817"
+Xiebro_Contract_Address = "cfx:acezh9xrtc5fpwz3t680p4dyuf6ggzbyry044x5x4e"
 
 Bosie_Contract_Address = "cfx:accvuj004k127vd4cprcfju1wzw4pm5bj6u1gkvtds"
 XY_Contract_Address = "cfx:acappbfbk3xh5ptt60xugbgyut6jvwja3e80bzrj98"

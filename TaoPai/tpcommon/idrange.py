@@ -116,6 +116,8 @@ def get_idrangedict_by_nftname(nft_name):
         return TaoPaiShopGongCe_IdRange2Name
     elif nft_name == "windowsdhj":
         return WindowsDHJ_IdRange2Name
+    elif nft_name == "xiebro":
+        return Xiebro_IdRange2Name
 
     #--- 豹豹青春宇宙 ---#
     elif nft_name == "kaoshenglaile":
@@ -130,6 +132,15 @@ def get_name_by_tokenid(idrange2name, token_id):
     for ((min_tid, max_tid), name) in idrange2name.items():
         if (token_id >= min_tid) and (token_id <= max_tid):
             return name
+
+Xiebro_IdRange2Name = {
+    (1,1000): "拳击蟹",
+    (1001,2000): "滑板蟹",
+    (2001,3000): "潮流蟹",
+    (3001,4000): "蹦迪蟹",
+    (4001,5000): "酒鬼蟹",
+    (5001,6000): "摇滚蟹",
+}
 
 WindowsDHJ_IdRange2Name = {
     (10001,10100): "101大厦",
