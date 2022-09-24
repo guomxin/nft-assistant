@@ -118,6 +118,8 @@ def get_idrangedict_by_nftname(nft_name):
         return WindowsDHJ_IdRange2Name
     elif nft_name == "xiebro":
         return Xiebro_IdRange2Name
+    elif nft_name == "2pforest":
+        return TwoPeopleForest_IdRange2Name
 
     #--- 豹豹青春宇宙 ---#
     elif nft_name == "kaoshenglaile":
@@ -132,6 +134,13 @@ def get_name_by_tokenid(idrange2name, token_id):
     for ((min_tid, max_tid), name) in idrange2name.items():
         if (token_id >= min_tid) and (token_id <= max_tid):
             return name
+
+TwoPeopleForest_IdRange2Name = {
+    (4609,5408): "虞美人",
+    (5409,5608): "虞美人隐藏款",
+    (5609,6408): "庄羽",
+    (6409,6608): "庄羽隐藏款",
+}
 
 Xiebro_IdRange2Name = {
     (1,1000): "拳击蟹",
@@ -990,6 +999,8 @@ DH_IdRange2Name = {
     (38001,40000): '紫',
 
     (2501,2700): "冥想小星星",
+
+    (3001,5000): "", #TODO: 2022/9/24
 }
 
 LTCard_IdRange2Name = {
