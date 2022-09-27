@@ -188,12 +188,21 @@ WindowsDHJ_IdRange2Name = {
     (13001,13600): "折叠空间",
 }
 
+Voucher_IdRange2Name = {
+    (1,20): "Evo2k盲盒兑换券",
+    (21,120): "蟹bro盲盒兑换券",
+}
+
 TaoPaiShopGongCe_IdRange2Name = {
     (250001,251200): "淘派商城公测纪念藏品",
 }
 
+TaopaiMagicLiquid_IdRange2Name = {
+    (251201,251220): "魔法药水",
+}
+
 TaoPaiStar_IdRange2Name = {
-    (1,4668): "小星星",
+    (1,4688): "小星星",
 }
 
 XiYouXingQiu_IdRange2Name = {
