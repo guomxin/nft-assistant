@@ -140,6 +140,7 @@ TwoPeopleForest_IdRange2Name = {
     (5409,5608): "虞美人隐藏款",
     (5609,6408): "庄羽",
     (6409,6608): "庄羽隐藏款",
+    (6609,6808): "美庄蛋CP",
 }
 
 Xiebro_IdRange2Name = {
