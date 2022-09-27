@@ -1,5 +1,6 @@
 # coding: utf-8
 
+from lib2to3.pgen2 import token
 import sys
 
 from tpcommon import idrange
@@ -37,12 +38,13 @@ if __name__ == "__main__":
             elif token_name == "N":
                 score += 2
             elif token_name == "SSR-端午限定" or token_name == "SSR-熊熊铁军" or \
-                token_name == "SSR-熊熊强者" or token_name == "SSR-中秋限定":
+                token_name == "SSR-熊熊强者" or token_name == "SSR-中秋限定" or token_name == "SSR-荣耀王者":
                 score += 20
             elif token_name == "熊熊碎片":
                 score += 3
             elif token_name == "SR-父亲节限定" or token_name == "SR-七夕节限定" or \
-                token_name == "SR-熊熊铁粉" or token_name == "SR-非洲土著":
+                token_name == "SR-熊熊铁粉" or token_name == "SR-非洲土著" or token_name == "SR-荣耀战队" or \
+                token_name == "SR-荣耀战队":
                 score += 5
             elif token_name == "熊熊奶嘴":
                 score += 50
@@ -59,6 +61,8 @@ if __name__ == "__main__":
             elif token_name == "熊熊神像-钻石神像":
                 score += 20
             elif token_name == "熊熊蜜罐":
+                pass
+            elif token_name == "熊宝凭证":
                 pass                        
             else:
                 print("[calc_baibianxiong_scores]" + token_name)
