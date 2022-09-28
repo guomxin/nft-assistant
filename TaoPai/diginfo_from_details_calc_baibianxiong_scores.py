@@ -38,7 +38,8 @@ if __name__ == "__main__":
             elif token_name == "N":
                 score += 2
             elif token_name == "SSR-端午限定" or token_name == "SSR-熊熊铁军" or \
-                token_name == "SSR-熊熊强者" or token_name == "SSR-中秋限定" or token_name == "SSR-荣耀王者":
+                token_name == "SSR-熊熊强者" or token_name == "SSR-中秋限定" or token_name == "SSR-荣耀王者" or \
+                token_name == "SSR-国庆限定":
                 score += 20
             elif token_name == "熊熊碎片":
                 score += 3
