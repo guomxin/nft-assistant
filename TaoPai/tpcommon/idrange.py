@@ -203,7 +203,7 @@ TaopaiMagicLiquid_IdRange2Name = {
 }
 
 TaoPaiStar_IdRange2Name = {
-    (1,4688): "小星星",
+    (1,4968): "小星星",
 }
 
 XiYouXingQiu_IdRange2Name = {
