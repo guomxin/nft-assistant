@@ -390,6 +390,8 @@ ContractAddress2Id = {
     YSWJ_Contract_Address: 23, #艺术玩家实验室: 23,
     TCJC_Contract_Address: 64, # 西游星球
     # TODO: Luluz, 王星星, Misaki, YSX, 不走调音乐社, YAO, WPP 
+    WindowsDHJ_Contract_Address: 66,
+    Xiebro_Contract_Address: 70,
 }
 
 KaoShengLaiLe_Contract_Address = "cfx:achm40d1fuwpfxe1azk6ty607fpmdrsczpy5pcexuz"
