@@ -120,29 +120,35 @@ def get_product_detail(prod_id):
                     print("detailId:{} 未获取到足够的交易信息!".format(detail_id))
                     return None
                 # 找到相应的挂单记录，与detail接口的时间一致
-                target_index = None
+                target_sell_index = None
                 for i in range(len(trans)):
                     tinfo = trans[i]
                     if created_time == datetime.datetime.strptime(tinfo["created"], "%Y-%m-%d %H:%M:%S") and \
                         tinfo["sellPrice"]:
-                        target_index = i
+                        target_sell_index = i
                         break
-                if target_index == None:
+                if target_sell_index == None:
                     print("productId:{}, detailId:{} 未发现匹配的交易记录!".format(prod_id, detail_id))
                     return None
                 
-                sell_price = trans[target_index]["sellPrice"]
-                buy_price = trans[target_index-1]["buyPrice"]
+                sell_price = trans[target_sell_index]["sellPrice"]
+                target_buy_index = target_sell_index - 1
+                
+                # 如果买入和挂单时间一样，有时顺序会被打乱
+                if target_buy_index < 0 or (not trans[target_buy_index]["buyPrice"]):
+                    target_buy_index = target_sell_index + 1
+                
+                buy_price = trans[target_buy_index]["buyPrice"]
                 if sell_price != buy_price:
                     print("detailId:{} 买入{}和卖出{}价格不匹配".format(detail_id, buy_price, sell_price))
                     return None
-                buyer_name = trans[target_index-1]["nickName"]
-                seller_name = trans[target_index]["nickName"]
+                buyer_name = trans[target_buy_index]["nickName"]
+                seller_name = trans[target_sell_index]["nickName"]
                 
                 detail_info[DETAIL_SELLER_ID_INDEX] = user_id
                 detail_info[DETAIL_BUYER_INDEX] = buyer_name
                 detail_info[DETAIL_SELLER_INDEX] = seller_name
-                detail_info[DETAIL_SALE_TIME_INDEX] = datetime.datetime.strptime(trans[target_index-1]["created"], "%Y-%m-%d %H:%M:%S")
+                detail_info[DETAIL_SALE_TIME_INDEX] = datetime.datetime.strptime(trans[target_buy_index]["created"], "%Y-%m-%d %H:%M:%S")
                 detail_info[DETAIL_PRICE_INDEX] = float(buy_price)
                 detail_info[DETAIL_PROD_ID_INDEX] = prod_id
                 detail_info[DETAIL_DETAIL_ID_INDEX] = detail_id
