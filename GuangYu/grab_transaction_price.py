@@ -4,17 +4,28 @@ import sys
 import datetime
 import requests
 import time
-import json
 import os
 
 GET_ON_SALE_LIST_URL = "https://api.gandart.com/market/api/v2/resaleManage/resale/onSale"
 PAGE_SIZE = 10000
+TIME_OUT = 3
+GET_PRODUCT_DETAIL_URL = "https://api.gandart.com/market/api/v2/resaleManage/resale/collectionDetails"
+GET_TRANS_INFO_URL = "https://api.gandart.com/market/api/v2/resaleManage/resale/transactionInfo"
 
 TRAN_STATUS_SALED = 1
 
 PROD_ID_INDEX = 0
 TOKEN_ID_INDEX = 1
 PRICE_INDEX = 2
+
+DETAIL_BUYER_ID_INDEX = 0
+DETAIL_BUYER_INDEX = 1
+DETAIL_SELLER_INDEX = 2
+DETAIL_SALE_TIME_INDEX = 3
+DETAIL_PRICE_INDEX = 4
+DETAIL_PROD_ID_INDEX = 5
+DETAIL_DETAIL_ID_INDEX = 6
+DETAIL_ITEM_COUNT = 7
 
 def post_requests_json(url, data, timeout):
     for _ in range(10):
@@ -34,7 +45,7 @@ def get_saled_products(casting_id):
         "sort":2,
         "transactionStatus": TRAN_STATUS_SALED,
     }
-    res = post_requests_json(GET_ON_SALE_LIST_URL, data=data, timeout=3)
+    res = post_requests_json(GET_ON_SALE_LIST_URL, data=data, timeout=TIME_OUT)
     if not res:
         return (1, None)
     if res["code"] != 0:
@@ -58,6 +69,73 @@ def get_saled_products(casting_id):
                 for pinfo in res["obj"]["list"]:
                     saled_prods.append([pinfo["id"], pinfo["viewSort"], float(pinfo["resalePrice"])])
     return (0, saled_prods)
+
+def get_product_detail(prod_id):
+    detail_info = [None] * DETAIL_ITEM_COUNT
+
+    # Get detail data
+    data = {
+        "transactionRecordId": prod_id,
+    }
+    detail_id = None
+    user_id = None
+    while True:
+        try: 
+            res = requests.post(GET_PRODUCT_DETAIL_URL, data=data, timeout=TIME_OUT).json()
+            if res["code"] != 0:
+                return None
+            else:
+                detail_id = res["obj"]["detailId"]
+                user_id = res["obj"]["userId"]
+                print(detail_id, user_id)
+                break
+        except Exception as e:
+            time.sleep(0.5)
+            print(e)
+    if not detail_id:
+        return None
+    
+    # Get recent 2 transaction data
+    data = {
+        "detailId": detail_id,
+        "page": 1,
+        "pageSize": 2,
+    }
+    while True:
+        try: 
+            res = requests.post(GET_TRANS_INFO_URL, data=data, timeout=TIME_OUT).json()
+            if res["code"] != 0:
+                return None
+            else:
+                trans = res["obj"]["history"]["list"]
+                if len(trans) != 2:
+                    print("detailId:{} 未获取到足够的交易信息!".format(detail_id))
+                    return None
+                sell_price = trans[1]["sellPrice"]
+                if not sell_price:
+                    sell_price = trans[0]["sellPrice"]
+                buy_price = trans[0]["buyPrice"]
+                if not buy_price:
+                    buy_price = trans[1]["buyPrice"]
+                if sell_price != buy_price:
+                    print("detailId:{} 买入{}和卖出{}价格不匹配".format(detail_id, buy_price, sell_price))
+                    return None
+                buyer_name = trans[0]["nickName"]
+                seller_name = trans[1]["nickName"]
+                
+                detail_info[DETAIL_BUYER_ID_INDEX] = user_id
+                detail_info[DETAIL_BUYER_INDEX] = buyer_name
+                detail_info[DETAIL_SELLER_INDEX] = seller_name
+                detail_info[DETAIL_SALE_TIME_INDEX] = datetime.datetime.strptime(trans[0]["created"], "%Y-%m-%d %H:%M:%S")
+                detail_info[DETAIL_PRICE_INDEX] = float(buy_price)
+                detail_info[DETAIL_PROD_ID_INDEX] = prod_id
+                detail_info[DETAIL_DETAIL_ID_INDEX] = detail_id
+                break
+        except Exception as e:
+            time.sleep(0.5)
+            print(e)
+    
+    return detail_info
 
 """
 def match_and_dump_trans_info(driver, now_time, in_sale_products, access_token, select_id, cookie_dict):
@@ -296,8 +374,14 @@ if __name__ == "__main__":
     casting_id = int(sys.argv[1])
 
     (res_code, saled_prods) = get_saled_products(casting_id)
-    print(len(saled_prods))
-    print(saled_prods[:10])
+    if res_code != 0:
+        print("获取在售列表信息失败, res_code={}".format(res_code))
+        sys.exit(1)
+    for (prod_id, _, _) in saled_prods:
+        print(prod_id)
+        detail_info = get_product_detail(prod_id)
+        print(detail_info)
+
     """
     while True:
         try:
