@@ -19,9 +19,9 @@ TOKEN_ID_INDEX = 1
 PRICE_INDEX = 2
 CREATE_TINE_INDEX = 3
 
-DETAIL_BUYER_ID_INDEX = 0
-DETAIL_BUYER_INDEX = 1
-DETAIL_SELLER_INDEX = 2
+DETAIL_SELLER_ID_INDEX = 0
+DETAIL_SELLER_INDEX = 1
+DETAIL_BUYER_INDEX = 2
 DETAIL_SALE_TIME_INDEX = 3
 DETAIL_PRICE_INDEX = 4
 DETAIL_PROD_ID_INDEX = 5
@@ -92,7 +92,7 @@ def get_product_detail(prod_id):
                 detail_id = res["obj"]["detailId"]
                 user_id = res["obj"]["userId"]
                 created_time = datetime.datetime.strptime(res["obj"]["created"], "%Y-%m-%d %H:%M:%S")
-                print(detail_id, user_id, created_time)
+                #print(detail_id, user_id, created_time)
                 break
         except Exception as e:
             time.sleep(0.5)
@@ -128,7 +128,7 @@ def get_product_detail(prod_id):
                 buyer_name = trans[0]["nickName"]
                 seller_name = trans[1]["nickName"]
                 
-                detail_info[DETAIL_BUYER_ID_INDEX] = user_id
+                detail_info[DETAIL_SELLER_ID_INDEX] = user_id
                 detail_info[DETAIL_BUYER_INDEX] = buyer_name
                 detail_info[DETAIL_SELLER_INDEX] = seller_name
                 detail_info[DETAIL_SALE_TIME_INDEX] = datetime.datetime.strptime(trans[0]["created"], "%Y-%m-%d %H:%M:%S")
@@ -373,27 +373,47 @@ def grab_trans_nft_price(casting_id):
 """
 
 if __name__ == "__main__":
-    if len(sys.argv) < 2:
-        print("{} <casting_id>.".format(sys.argv[0]))
+    if len(sys.argv) < 3:
+        print("{} <casting_id> <tag>(YYYYmmdd)".format(sys.argv[0]))
         sys.exit(1)
     casting_id = int(sys.argv[1])
+    tag = sys.argv[2]
+    start_time = datetime.datetime.strptime(tag + " 0:0:0", "%Y%m%d %H:%M:%S")
+    end_time = datetime.datetime.strptime(tag + " 23:59:59", "%Y%m%d %H:%M:%S")
 
     (res_code, saled_prods) = get_saled_products(casting_id)
     if res_code != 0:
         print("获取在售列表信息失败, res_code={}".format(res_code))
         sys.exit(1)
+    print("{} saled info in total.".format(len(saled_prods)))
+    scan_cnt = 0
+    detail_info_list = []
     for (prod_id, _, _) in saled_prods:
-        print(prod_id)
         detail_info = get_product_detail(prod_id)
-        print(detail_info)
+        scan_cnt += 1
+        if scan_cnt % 50 == 0:
+            print("{} saled info scanned.".format(scan_cnt))
+        
+        if detail_info[DETAIL_SALE_TIME_INDEX] < start_time or detail_info[DETAIL_SALE_TIME_INDEX] > end_time:
+            # 超出时间范围，忽略
+            continue
+        detail_info_list.append(detail_info)
+    
 
-    """
-    while True:
-        try:
-            grab_nft_price(casting_id)
-        except Exception as e:
-            print(e)
-            # 出错后等待一段时间
-            time.sleep(5)
-    """
+    # 按成交时间倒序排序
+    detail_info_list.sort(key=lambda dinfo: dinfo[DETAIL_SALE_TIME_INDEX], reverse=True)
+    result_file_name = "data/_grab_nft_price_result_{}_{}.csv".format(
+        casting_id, tag
+    )
+    with open(result_file_name, "w", encoding="utf-8-sig") as result_file:
+        result_file.write("{},{},{},{},{},{},{}\n".format(
+            "卖出者Id", "卖出者昵称", "买入者昵称", "买入时间", "价格", "DEBUG1", "DEBUG2"
+        ))
+        for dinfo in detail_info_list:
+            result_file.write("{},{},{},{},{},{},{}\n".format(
+                dinfo[DETAIL_SELLER_ID_INDEX], dinfo[DETAIL_SELLER_INDEX], dinfo[DETAIL_BUYER_INDEX],
+                dinfo[DETAIL_SALE_TIME_INDEX].strftime("%Y/%m/%d %H:%M:%S"), dinfo[DETAIL_PRICE_INDEX],
+                dinfo[DETAIL_PROD_ID_INDEX], dinfo[DETAIL_DETAIL_ID_INDEX]
+            ))
 
+    
