@@ -137,7 +137,9 @@ def get_product_detail(prod_id):
                 # 如果买入和挂单时间一样，有时顺序会被打乱
                 if target_buy_index < 0 or (not trans[target_buy_index]["buyPrice"]):
                     target_buy_index = target_sell_index + 1
-                
+                if target_buy_index >= len(trans): # ProdId:119695, DetailId:97124
+                    return None
+
                 buy_price = trans[target_buy_index]["buyPrice"]
                 if sell_price != buy_price:
                     print("detailId:{} 买入{}和卖出{}价格不匹配".format(detail_id, buy_price, sell_price))
@@ -206,6 +208,9 @@ if __name__ == "__main__":
             detail_info = prodid2detailinfo[prod_id]
         else:
             detail_info = get_product_detail(prod_id)
+            if not detail_info:
+                print("无法获取ProdId:{}的详细信息!".format(prod_id))
+                continue
             detail_info[DETAIL_TOKEN_ID_INDEX] = token_id
             prodid2detailinfo[prod_id] = detail_info
         scan_cnt += 1
