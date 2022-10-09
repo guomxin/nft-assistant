@@ -200,6 +200,7 @@ TaoPaiShopGongCe_IdRange2Name = {
 
 TaopaiMagicLiquid_IdRange2Name = {
     (251201,251220): "魔法药水",
+    (251234,251445): "魔法药水",
 }
 
 TaoPaiStar_IdRange2Name = {
