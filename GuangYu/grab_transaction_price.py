@@ -17,6 +17,7 @@ TRAN_STATUS_SALED = 1
 PROD_ID_INDEX = 0
 TOKEN_ID_INDEX = 1
 PRICE_INDEX = 2
+CREATE_TINE_INDEX = 3
 
 DETAIL_BUYER_ID_INDEX = 0
 DETAIL_BUYER_INDEX = 1
@@ -52,7 +53,8 @@ def get_saled_products(casting_id):
         return (res["code"], None)
     else:
         for pinfo in res["obj"]["list"]:
-            saled_prods.append([pinfo["id"], pinfo["viewSort"], float(pinfo["resalePrice"])])
+            saled_prods.append(
+                [pinfo["id"], pinfo["viewSort"], float(pinfo["resalePrice"])])
         total = res["obj"]["total"]
         for pindex in range(2, total // PAGE_SIZE + 2):
             data = {
@@ -67,7 +69,8 @@ def get_saled_products(casting_id):
                 return (res["code"], None)
             else:
                 for pinfo in res["obj"]["list"]:
-                    saled_prods.append([pinfo["id"], pinfo["viewSort"], float(pinfo["resalePrice"])])
+                    saled_prods.append(
+                        [pinfo["id"], pinfo["viewSort"], float(pinfo["resalePrice"])])
     return (0, saled_prods)
 
 def get_product_detail(prod_id):
@@ -79,6 +82,7 @@ def get_product_detail(prod_id):
     }
     detail_id = None
     user_id = None
+    created_time = None
     while True:
         try: 
             res = requests.post(GET_PRODUCT_DETAIL_URL, data=data, timeout=TIME_OUT).json()
@@ -87,7 +91,8 @@ def get_product_detail(prod_id):
             else:
                 detail_id = res["obj"]["detailId"]
                 user_id = res["obj"]["userId"]
-                print(detail_id, user_id)
+                created_time = datetime.datetime.strptime(res["obj"]["created"], "%Y-%m-%d %H:%M:%S")
+                print(detail_id, user_id, created_time)
                 break
         except Exception as e:
             time.sleep(0.5)
