@@ -17,7 +17,7 @@ CastingId2MetaInfo = {
     31: ["HouTu", "山丘龙灵-厚土"],
     32: ["GanLin", "河流龙灵-甘霖"],
     33: ["HuiJin", "焰火龙灵-灰烬"],
-    34: ["Fujin", "金晶龙灵-浮金"],
+    34: ["FuJin", "金晶龙灵-浮金"],
 }
 
 Transaction_Logs_File_Name = "_guangyu_{}_trans_logs.csv"
