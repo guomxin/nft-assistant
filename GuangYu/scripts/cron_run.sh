@@ -25,7 +25,7 @@ echo "---启源I开拓者号---"
 python grab_transaction_price.py 54 ${yesterday}
 
 echo "---万象龙巢---"
-python grab_transaction_price.py 54 ${yesterday}
+python grab_transaction_price.py 59 ${yesterday}
 
 echo "---小小键盘-Shift仔---"
 python grab_transaction_price.py 60 ${yesterday}
@@ -46,7 +46,7 @@ echo "---金晶龙灵-浮金---"
 python grab_transaction_price.py 34 ${yesterday}
 
 #------ 后处理 ------#
-cd data;mkdir -p upload/$yesterday;rm -f upload/$yesterday/*
+cd data;mkdir -p upload/$yesterday;rm -rf upload/$yesterday/*
 cp *$yesterday* upload/$yesterday;cd upload/$yesterday
 
 for nft in "KaiTuoZhe" "WanXiangLongChao" "ShiftZai" "TaiKongShiftZai" \
