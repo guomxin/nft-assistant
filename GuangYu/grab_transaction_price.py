@@ -37,7 +37,7 @@ def post_requests_json(url, data, timeout):
             res = requests.post(url, data=data, timeout=timeout).json()
             return res
         except Exception as e:
-            time.sleep(0.5)
+            time.sleep(1)
             print(e)
 
 def get_saled_products(casting_id):
@@ -170,6 +170,7 @@ if __name__ == "__main__":
         print("CastingId:{} not exist!")
         sys.exit(1)
     casting_name = commoninfo.CastingId2MetaInfo[casting_id][0]
+    print("获取{}的交易信息...".format(casting_name))
     tag = sys.argv[2]
     start_time = datetime.datetime.strptime(tag + " 0:0:0", "%Y%m%d %H:%M:%S")
     end_time = datetime.datetime.strptime(tag + " 23:59:59", "%Y%m%d %H:%M:%S")
@@ -208,6 +209,8 @@ if __name__ == "__main__":
             detail_info = prodid2detailinfo[prod_id]
         else:
             detail_info = get_product_detail(prod_id)
+            # 防止被封禁
+            time.sleep(2)
             if not detail_info:
                 print("无法获取ProdId:{}的详细信息!".format(prod_id))
                 continue
