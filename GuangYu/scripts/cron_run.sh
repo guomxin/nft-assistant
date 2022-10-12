@@ -59,7 +59,7 @@ cd data;mkdir -p upload/$yesterday;rm -rf upload/$yesterday/*
 cp *$yesterday* upload/$yesterday;cd upload/$yesterday
 
 for nft in "KaiTuoZhe" "WanXiangLongChao" "ShiftZai" "TaiKongShiftZai" \
-"HouTu" "GanLin" "HuiJin" "FuJin"
+"HouTu" "GanLin" "HuiJin" "FuJin" "CtrlZai" "CZai" "VZai"
 do
     mkdir $nft;mv *$nft*.csv $nft;zip -q $nft-$yesterday $nft/*
 done
