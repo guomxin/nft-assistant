@@ -2,6 +2,7 @@
 from datetime import datetime
 import requests
 import time
+import sys
 
 from gycommon import commoninfo
 from gycommon import utils
@@ -20,17 +21,24 @@ PRICE_INDEX = 2
 HOME_PC_TOKEN = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjY2MTAzOTc1LCJzaWduSWQiOiI3YTI0ODNjZjYwMGY0MGQ5YmNmOWUwNTAyY2M0N2Y0ZSIsImlhdCI6MTY2NTQ5OTE3NX0.YcexoKivFKbnwIQYxAAPMah3Y-wjm16RCSOTolcuxZs"
 DESKTOP_TOKEN = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjY2MTAzOTc1LCJzaWduSWQiOiI3YTI0ODNjZjYwMGY0MGQ5YmNmOWUwNTAyY2M0N2Y0ZSIsImlhdCI6MTY2NTQ5OTE3NX0.YcexoKivFKbnwIQYxAAPMah3Y-wjm16RCSOTolcuxZs"
 
-CastingId2Price = {
+CastingId2Price_1 = {
     54: 1000, # 开拓者
     59: 1000, # 万象龙巢
     #56: 100, # Ctrl  #2022/10/11结束合成
     #66: 400, # V #2022/10/11结束合成
     #67: 400, # C #2022/10/11结束合成
 
-    #31: 100,
-    #32: 300,
-    33: 500,
-    34: 1000,
+    #31: 100, # 厚土
+    #32: 300, # 甘霖
+    33: 1000, # 灰烬
+    30: 2000, # 浮金
+}
+
+CastingId2Price_2 = {
+    32: 200, # 甘霖
+
+    60: 40, # Shift
+    61: 200, # 太空Shift
 }
 
 def post_requests_json(url, data, timeout):
@@ -110,7 +118,20 @@ def buy_product(casting_id, prod_id, detail_id, user_id):
             print(e)
 
 if __name__ == "__main__":
-    
+    if len(sys.argv) < 2:
+        print("{} <dict_id>.".format(sys.argv[0]))
+        sys.exit(1)
+    dict_id = int(sys.argv[1])
+    castingid2price = None
+    if dict_id == 1:
+        castingid2price = CastingId2Price_1
+    elif dict_id == 2:
+        castingid2price = CastingId2Price_2
+    if not castingid2price:
+        print("dict_id={} 没有对应信息!".format(dict_id))
+        sys.exit(1)
+    print(castingid2price)
+
     with open("mailconfig") as config_file:
         items = config_file.readline().strip().split(",")
         from_addr = items[0]
@@ -120,7 +141,7 @@ if __name__ == "__main__":
     loop_cnt = 0
     while True:
         try:
-            for casting_id in CastingId2Price:
+            for casting_id in castingid2price:
                 (res_code, saling_prods) = get_top_saling_products(casting_id)
                 if res_code != 0:
                     print("获取在售列表信息失败, res_code={}, casting_id={}".format(res_code, casting_id))
@@ -128,7 +149,7 @@ if __name__ == "__main__":
                 for saling_prod in saling_prods:
                     prod_id = saling_prod[PROD_ID_INDEX]
                     price = saling_prod[PRICE_INDEX]
-                    if price <= CastingId2Price[casting_id]:
+                    if price <= castingid2price[casting_id]:
                         (detail_id, user_id) = get_product_detail_id(prod_id)
                         if not detail_id:
                             print("获取detail_id失败, prod_id={}".format(prod_id))
