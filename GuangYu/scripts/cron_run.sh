@@ -58,7 +58,7 @@ python grab_transaction_price.py 30 ${yesterday} ${yesterday}
 cd data;mkdir -p upload/$yesterday;rm -rf upload/$yesterday/*
 cp *$yesterday* upload/$yesterday;cd upload/$yesterday
 
-for nft in "KaiTuoZhe" "WanXiangLongChao" "ShiftZai" "TaiKongShiftZai" \
+for nft in "KaiTuoZhe" "WanXiangLongChao" "TaiKongShiftZai" "ShiftZai" \
 "HouTu" "GanLin" "HuiJin" "FuJin" "CtrlZai" "CZai" "VZai"
 do
     mkdir $nft;mv *$nft*.csv $nft;zip -q $nft-$yesterday $nft/*
