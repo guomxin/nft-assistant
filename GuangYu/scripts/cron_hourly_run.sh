@@ -27,14 +27,20 @@ python grab_transaction_price.py 54 ${today} ${tag}
 echo "---万象龙巢---"
 python grab_transaction_price.py 59 ${today} ${tag}
 
+echo "---空间补给站-启能版---"
+python grab_transaction_price.py 39 ${today} ${tag}
+
+echo "---云木守护版---"
+python grab_transaction_price.py 57 ${today} ${tag}
+
 echo "---小小键盘-Ctrl仔---"
-#python grab_transaction_price.py 56 ${today} ${tag}
+python grab_transaction_price.py 56 ${today} ${tag}
 
 echo "---小小键盘-C仔---"
-#python grab_transaction_price.py 67 ${today} ${tag}
+python grab_transaction_price.py 67 ${today} ${tag}
 
 echo "---小小键盘-V仔---"
-#python grab_transaction_price.py 66 ${today} ${tag}
+python grab_transaction_price.py 66 ${today} ${tag}
 
 echo "---小小键盘-Shift仔---"
 python grab_transaction_price.py 60 ${today} ${tag}

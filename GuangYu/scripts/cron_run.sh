@@ -27,6 +27,12 @@ python grab_transaction_price.py 54 ${yesterday} ${yesterday}
 echo "---万象龙巢---"
 python grab_transaction_price.py 59 ${yesterday} ${yesterday}
 
+echo "---空间补给站-启能版---"
+python grab_transaction_price.py 39 ${yesterday} ${yesterday}
+
+echo "---云木守护版---"
+python grab_transaction_price.py 57 ${yesterday} ${yesterday}
+
 echo "---小小键盘-Ctrl仔---"
 python grab_transaction_price.py 56 ${yesterday} ${yesterday}
 
