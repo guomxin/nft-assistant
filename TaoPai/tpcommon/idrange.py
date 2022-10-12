@@ -150,6 +150,7 @@ Xiebro_IdRange2Name = {
     (3001,4000): "蹦迪蟹",
     (4001,5000): "酒鬼蟹",
     (5001,6000): "摇滚蟹",
+    (6001,6060): "蟹broDAO家族I",
 }
 
 WindowsDHJ_IdRange2Name = {
