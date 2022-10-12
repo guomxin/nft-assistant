@@ -162,8 +162,8 @@ def get_product_detail(prod_id):
     return detail_info
 
 if __name__ == "__main__":
-    if len(sys.argv) < 3:
-        print("{} <casting_id> <tag>(YYYYmmdd)".format(sys.argv[0]))
+    if len(sys.argv) < 4:
+        print("{} <casting_id> <date>(YYYYmmdd) <tag>".format(sys.argv[0]))
         sys.exit(1)
     casting_id = int(sys.argv[1])
     if casting_id not in commoninfo.CastingId2MetaInfo:
@@ -171,9 +171,10 @@ if __name__ == "__main__":
         sys.exit(1)
     casting_name = commoninfo.CastingId2MetaInfo[casting_id][0]
     print("获取{}的交易信息...".format(casting_name))
-    tag = sys.argv[2]
-    start_time = datetime.datetime.strptime(tag + " 0:0:0", "%Y%m%d %H:%M:%S")
-    end_time = datetime.datetime.strptime(tag + " 23:59:59", "%Y%m%d %H:%M:%S")
+    date = sys.argv[2]
+    start_time = datetime.datetime.strptime(date + " 0:0:0", "%Y%m%d %H:%M:%S")
+    end_time = datetime.datetime.strptime(date + " 23:59:59", "%Y%m%d %H:%M:%S")
+    tag = sys.argv[3]
 
     (res_code, saled_prods) = get_saled_products(casting_id)
     if res_code != 0:

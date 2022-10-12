@@ -17,49 +17,49 @@ unset __conda_setup
 conda activate nft;cd /mnt/ssd01/git/nft-assistant/GuangYu
 
 today=`date +%Y%m%d`
-yesterday=`date --date="1 day ago" +%Y%m%d`
+tag=`date +%Y%m%d%H`
 
-echo "------${today}------"
+echo "------${tag}------"
 
 echo "---启源I开拓者号---"
-python grab_transaction_price.py 54 ${yesterday} ${yesterday}
+python grab_transaction_price.py 54 ${today} ${tag}
 
 echo "---万象龙巢---"
-python grab_transaction_price.py 59 ${yesterday} ${yesterday}
+python grab_transaction_price.py 59 ${today} ${tag}
 
 echo "---小小键盘-Ctrl仔---"
-python grab_transaction_price.py 56 ${yesterday} ${yesterday}
+python grab_transaction_price.py 56 ${today} ${tag}
 
 echo "---小小键盘-C仔---"
-python grab_transaction_price.py 67 ${yesterday} ${yesterday}
+python grab_transaction_price.py 67 ${today} ${tag}
 
 echo "---小小键盘-V仔---"
-python grab_transaction_price.py 66 ${yesterday} ${yesterday}
+python grab_transaction_price.py 66 ${today} ${tag}
 
 echo "---小小键盘-Shift仔---"
-python grab_transaction_price.py 60 ${yesterday} ${yesterday}
+python grab_transaction_price.py 60 ${today} ${tag}
 
 echo "---传说奇遇-太空Shift仔---"
-python grab_transaction_price.py 61 ${yesterday} ${yesterday}
+python grab_transaction_price.py 61 ${today} ${tag}
 
 echo "---山丘龙灵-厚土---"
-python grab_transaction_price.py 31 ${yesterday} ${yesterday}
+python grab_transaction_price.py 31 ${today} ${tag}
 
 echo "---河流龙灵-甘霖---"
-python grab_transaction_price.py 32 ${yesterday} ${yesterday}
+python grab_transaction_price.py 32 ${today} ${tag}
 
 echo "---焰火龙灵-灰烬---"
-python grab_transaction_price.py 33 ${yesterday} ${yesterday}
+python grab_transaction_price.py 33 ${today} ${tag}
 
 echo "---金晶龙灵-浮金---"
-python grab_transaction_price.py 30 ${yesterday} ${yesterday}
+python grab_transaction_price.py 30 ${today} ${tag}
 
 #------ 后处理 ------#
-cd data;mkdir -p upload/$yesterday;rm -rf upload/$yesterday/*
-cp *$yesterday* upload/$yesterday;cd upload/$yesterday
+cd data;mkdir -p upload/$tag;rm -rf upload/$tag/*
+cp *$tag* upload/$tag;cd upload/$tag
 
 for nft in "KaiTuoZhe" "WanXiangLongChao" "ShiftZai" "TaiKongShiftZai" \
 "HouTu" "GanLin" "HuiJin" "FuJin"
 do
-    mkdir $nft;mv *$nft*.csv $nft;zip -q $nft-$yesterday $nft/*
+    mkdir $nft;mv *$nft*.csv $nft;zip -q $nft-$tag $nft/*
 done
