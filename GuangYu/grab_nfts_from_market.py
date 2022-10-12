@@ -17,9 +17,20 @@ TRAN_STATUS_SALING = 2
 PROD_ID_INDEX = 0
 PRICE_INDEX = 2
 
+HOME_PC_TOKEN = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjY2MTAzOTc1LCJzaWduSWQiOiI3YTI0ODNjZjYwMGY0MGQ5YmNmOWUwNTAyY2M0N2Y0ZSIsImlhdCI6MTY2NTQ5OTE3NX0.YcexoKivFKbnwIQYxAAPMah3Y-wjm16RCSOTolcuxZs"
+DESKTOP_TOKEN = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjY2MTAzOTc1LCJzaWduSWQiOiI3YTI0ODNjZjYwMGY0MGQ5YmNmOWUwNTAyY2M0N2Y0ZSIsImlhdCI6MTY2NTQ5OTE3NX0.YcexoKivFKbnwIQYxAAPMah3Y-wjm16RCSOTolcuxZs"
+
 CastingId2Price = {
-    54: 4000, # 开拓者
-    59: 4000, # 万象龙巢
+    54: 1000, # 开拓者
+    59: 1000, # 万象龙巢
+    #56: 100, # Ctrl  #2022/10/11结束合成
+    #66: 400, # V #2022/10/11结束合成
+    #67: 400, # C #2022/10/11结束合成
+
+    #31: 100,
+    #32: 300,
+    33: 500,
+    34: 1000,
 }
 
 def post_requests_json(url, data, timeout):
@@ -82,7 +93,7 @@ def buy_product(casting_id, prod_id, detail_id, user_id):
     }
 
     headers = {
-        "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjY2MDA5Mjk4LCJzaWduSWQiOiIyOGZkMjY1MGY0MzY0OWU0YTg3YTE0ODc2N2QyZjdiYiIsImlhdCI6MTY2NTQwNDQ5OH0.V9LPAuDN1DgOm3xbzzpp8080WGmwzFXsx8WtlfS9POY"
+        "token": HOME_PC_TOKEN,
     }
 
     while True:
@@ -131,12 +142,18 @@ if __name__ == "__main__":
                             msg = "下单失败 {}:{}:{}".format(datetime.now(), prod_name, price)
                             print(msg)
                             #utils.send_msg(from_addr, password, to_addr, msg)
+                # 防止被封禁
+                time.sleep(1)
                     
             loop_cnt += 1
             #print(loop_cnt)
             if loop_cnt % 100 == 0:
                 print("{} {} rounds.".format(datetime.now(), loop_cnt))
 
+            # 判断时间是否超过0点
+            cur_time = datetime.now()
+            if cur_time.hour == 0 :
+                break
         except Exception as e:
             print(e)
             # 出错后等待一段时间
