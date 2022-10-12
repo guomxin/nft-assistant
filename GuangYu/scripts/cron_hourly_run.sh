@@ -63,3 +63,5 @@ for nft in "KaiTuoZhe" "WanXiangLongChao" "TaiKongShiftZai" "ShiftZai" \
 do
     mkdir $nft;mv *$nft*.csv $nft;zip -q $nft-$tag $nft/*
 done
+
+python /mnt/ssd01/git/nft-assistant/GuangYu/upload_baidudisk.py /mnt/ssd01/git/nft-assistant/GuangYu/data/upload/$tag $today/$tag
