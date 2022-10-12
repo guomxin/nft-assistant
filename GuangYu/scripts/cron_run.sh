@@ -43,7 +43,7 @@ echo "---焰火龙灵-灰烬---"
 python grab_transaction_price.py 33 ${yesterday}
 
 echo "---金晶龙灵-浮金---"
-python grab_transaction_price.py 34 ${yesterday}
+python grab_transaction_price.py 30 ${yesterday}
 
 #------ 后处理 ------#
 cd data;mkdir -p upload/$yesterday;rm -rf upload/$yesterday/*
