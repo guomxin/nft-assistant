@@ -18,6 +18,8 @@ CastingId2MetaInfo = {
     32: ["GanLin", "河流龙灵-甘霖"],
     33: ["HuiJin", "焰火龙灵-灰烬"],
     30: ["FuJin", "金晶龙灵-浮金"],
+
+    75: ["LongFengKuai", "国庆节限定空投-龙凤筷"]
 }
 
 Transaction_Logs_File_Name = "_guangyu_{}_trans_logs.csv"
