@@ -68,6 +68,8 @@ def get_idrangedict_by_nftname(nft_name):
         return BaiBianXiong_IdRange2Name
     elif nft_name == "baibianxiong3":
         return BaiBianXiong3_IdRange2Name
+    elif nft_name == "baibianxiongch":
+        return BaiBianXiong_CH_IdRange2Name
     elif nft_name == "laodongcun":
         return LaoDongCun_IdRange2Name
     elif nft_name == "laodongcun2":
@@ -562,6 +564,34 @@ BaiBianXiong3_IdRange2Name = {
     (14036,14350): "SR",
     (14351,15100): "R",
     (15101,17300): "N", 
+}
+
+BaiBianXiong_CH_IdRange2Name = {
+    (10001,10015): "SSR-特殊空投",
+    (12500,12649): "SR-空投",
+    (12701,12746): "SSR-特殊空投", # 积分满200获得
+    (12747,12749): "百变熊宝",
+    (13301,13500): "SR-空投", 
+    
+    # 三期
+    (10021,10026): "SR-空投", # 空投：三期购买盲盒积分第6-10名
+    (10027,10059): "SR-空投", # 空投：三期购买至少6N（10）活动
+    (10060,10063): "SSR-空投", # 空投：三期购买盲盒积分第2-5名
+    (10064,10065): "百变熊宝", 
+
+    # 神像
+    (18962,18981): "钻石神像", # SSR空投
+    (19000,19100): "钻石神像",  # 黄金白银青铜合成
+
+    (19101,19191): "SSR-空投",
+    (19324,19373): "钻石神像", # 黄金白银青铜合成
+
+    (19434,19438): "SSR-空投",
+    (19439,19460): "SR-空投",
+
+    (19462,19502): "百变熊宝", 
+
+    (19503,19589): "SSR-空投", # SSR、熊宝、奶嘴空投
 }
 
 BaiBianXiong_IdRange2Name = {
