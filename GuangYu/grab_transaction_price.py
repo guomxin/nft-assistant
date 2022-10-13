@@ -205,6 +205,10 @@ if __name__ == "__main__":
     scan_cnt = 0
     selluser2cnt = {}
     detail_info_list = []
+    trans_cnt = 0
+    max_price = None
+    min_price = None
+    total_price = 0
     for (prod_id, token_id, _) in saled_prods:
         if prod_id in prodid2detailinfo:
             detail_info = prodid2detailinfo[prod_id]
@@ -225,6 +229,12 @@ if __name__ == "__main__":
         if detail_info[DETAIL_SALE_TIME_INDEX] < start_time or detail_info[DETAIL_SALE_TIME_INDEX] > end_time:
             # 超出时间范围，忽略
             continue
+        trans_cnt += 1
+        if max_price == None or detail_info[DETAIL_PRICE_INDEX] > max_price:
+            max_price = detail_info[DETAIL_PRICE_INDEX]
+        if min_price == None or detail_info[DETAIL_PRICE_INDEX] < min_price:
+            min_price = detail_info[DETAIL_PRICE_INDEX]
+        total_price += detail_info[DETAIL_PRICE_INDEX]
         detail_info_list.append(detail_info)
         selluser = detail_info[DETAIL_SELLER_ID_INDEX]
         if selluser not in selluser2cnt:
@@ -247,6 +257,10 @@ if __name__ == "__main__":
         casting_name, tag
     )
     with open(result_file_name, "w", encoding="utf-8-sig") as result_file:
+        avg_price = total_price/trans_cnt if trans_cnt > 0 else None 
+        result_file.write("成交{}笔，最高价格{:.2f}元，最低价格{:.2f}元，均价{:.2f}元。\n".format(
+            trans_cnt, max_price, min_price, avg_price
+        ))
         result_file.write("{},{},{},{},{},{},{},{}\n".format(
             "卖出者Id", "卖出者昵称", "买入者昵称", "买入时间", "价格", "TokenID", "DEBUG1", "DEBUG2"
         ))
