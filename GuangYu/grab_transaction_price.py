@@ -86,6 +86,7 @@ def get_product_detail(prod_id):
     detail_id = None
     user_id = None
     created_time = None
+    holder_name = None
     while True:
         try: 
             res = requests.post(GET_PRODUCT_DETAIL_URL, data=data, timeout=TIME_OUT).json()
@@ -95,6 +96,7 @@ def get_product_detail(prod_id):
                 detail_id = res["obj"]["detailId"]
                 user_id = res["obj"]["userId"]
                 created_time = datetime.datetime.strptime(res["obj"]["created"], "%Y-%m-%d %H:%M:%S")
+                holder_name = res["obj"]["holderName"]
                 #print(detail_id, user_id, created_time)
                 break
         except Exception as e:
@@ -145,11 +147,11 @@ def get_product_detail(prod_id):
                     print("detailId:{} 买入{}和卖出{}价格不匹配".format(detail_id, buy_price, sell_price))
                     return None
                 buyer_name = trans[target_buy_index]["nickName"]
-                seller_name = trans[target_sell_index]["nickName"]
+                #seller_name = trans[target_sell_index]["nickName"]
                 
                 detail_info[DETAIL_SELLER_ID_INDEX] = user_id
                 detail_info[DETAIL_BUYER_INDEX] = buyer_name
-                detail_info[DETAIL_SELLER_INDEX] = seller_name
+                detail_info[DETAIL_SELLER_INDEX] = holder_name
                 detail_info[DETAIL_SALE_TIME_INDEX] = datetime.datetime.strptime(trans[target_buy_index]["created"], "%Y-%m-%d %H:%M:%S")
                 detail_info[DETAIL_PRICE_INDEX] = float(buy_price)
                 detail_info[DETAIL_PROD_ID_INDEX] = prod_id
