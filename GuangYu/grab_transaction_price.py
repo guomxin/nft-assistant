@@ -261,9 +261,10 @@ if __name__ == "__main__":
     )
     with open(result_file_name, "w", encoding="utf-8-sig") as result_file:
         avg_price = total_price/trans_cnt if trans_cnt > 0 else None 
-        result_file.write("成交{}笔，最高价格{:.2f}元，最低价格{:.2f}元，均价{:.2f}元。\n".format(
-            trans_cnt, max_price, min_price, avg_price
-        ))
+        if trans_cnt > 0:
+            result_file.write("成交{}笔，最高价格{:.2f}元，最低价格{:.2f}元，均价{:.2f}元。\n".format(
+                trans_cnt, max_price, min_price, avg_price
+            ))
         result_file.write("{},{},{},{},{},{},{},{}\n".format(
             "卖出者Id", "卖出者昵称", "买入者昵称", "买入时间", "价格", "TokenID", "DEBUG1", "DEBUG2"
         ))
