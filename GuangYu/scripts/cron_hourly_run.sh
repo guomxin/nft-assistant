@@ -66,12 +66,15 @@ python grab_transaction_price.py 75 ${today} ${tag}
 echo "---龙图腾---"
 python grab_transaction_price.py 79 ${today} ${tag}
 
+echo "---龙凤守宝---"
+python grab_transaction_price.py 80 ${today} ${tag}
+
 #------ 后处理 ------#
 cd data;mkdir -p upload/$tag;rm -rf upload/$tag/*
 mv *$tag* upload/$tag;cd upload/$tag
 
 for nft in "KaiTuoZhe" "WanXiangLongChao" "KongJianBuJi-QiNeng" "YunMuShouHu" "TaiKongShiftZai" "ShiftZai" \
-"HouTu" "GanLin" "HuiJin" "FuJin" "CtrlZai" "CZai" "VZai" "LongFengKuai" "LongTuTeng"
+"HouTu" "GanLin" "HuiJin" "FuJin" "CtrlZai" "CZai" "VZai" "LongFengKuai" "LongTuTeng" "LongFengShouBao"
 do
     mkdir $nft;mv *$nft*.csv $nft;zip -q $nft-$tag $nft/*
 done
