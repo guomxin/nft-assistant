@@ -14,6 +14,8 @@ CastingId2MetaInfo = {
     66: ["VZai", "小小键盘-V仔"],
     60: ["ShiftZai", "小小键盘-Shift仔"],
     61: ["TaiKongShiftZai", "传说奇遇-太空Shift仔"],
+    83: ["TanSuoZhe-Ctrl", "探索者-Ctrl"],
+    84: ["TanSuoZhe-Shift", "探索者-Shift"],
 
     31: ["HouTu", "山丘龙灵-厚土"],
     32: ["GanLin", "河流龙灵-甘霖"],
