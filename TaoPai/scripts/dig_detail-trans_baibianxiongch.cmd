@@ -14,7 +14,7 @@ python diginfo_from_details_conflux.py baibianxiongch 2 data/_details_conflux_ba
 12500,12649;13301,13500;10021,10026;10027,10059;19439,19460 ^
 1;1;1;^
 1;1;^
-7;7;7;7;^
+8;8;8;8;^
 4;4;4;^
 9;9;9;9;9 ^
 CHUANGSHI %1

@@ -96,6 +96,9 @@ def dig_fullsetinfo_from_details_multi_adv(nft_name, details_file_name, ranges, 
             name = idrange.get_name_by_tokenid(idrange2name, tid)
             if name in owner2fullsetinfo[owner]:
                 owner2fullsetinfo[owner][name] += 1
+        # 对于百变熊创世合成来说，SSR-特殊空投属于SSR-空投
+        if nft_name == "baibianxiongch":
+            owner2fullsetinfo[owner]["SSR-空投"] += owner2fullsetinfo[owner]["SSR-特殊空投"]
     
     name2mincounts = {}
     for ((t1, t2), name) in idrange2name.items():
