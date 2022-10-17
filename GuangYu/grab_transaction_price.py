@@ -225,7 +225,7 @@ if __name__ == "__main__":
             prodid2detailinfo[prod_id] = detail_info
         scan_cnt += 1
         if scan_cnt % 100 == 0:
-            print("{} saled info scanned.".format(scan_cnt))
+            print("{} {} saled info scanned.".format(datetime.datetime.now(), scan_cnt))
         
         #print(prod_id, detail_info)
         if detail_info[DETAIL_SALE_TIME_INDEX] < start_time or detail_info[DETAIL_SALE_TIME_INDEX] > end_time:

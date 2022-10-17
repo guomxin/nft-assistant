@@ -18,27 +18,40 @@ TRAN_STATUS_SALING = 2
 PROD_ID_INDEX = 0
 PRICE_INDEX = 2
 
+# 131
 HOME_PC_TOKEN = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjY2MTAzOTc1LCJzaWduSWQiOiI3YTI0ODNjZjYwMGY0MGQ5YmNmOWUwNTAyY2M0N2Y0ZSIsImlhdCI6MTY2NTQ5OTE3NX0.YcexoKivFKbnwIQYxAAPMah3Y-wjm16RCSOTolcuxZs"
-DESKTOP_TOKEN = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjY2MTAzOTc1LCJzaWduSWQiOiI3YTI0ODNjZjYwMGY0MGQ5YmNmOWUwNTAyY2M0N2Y0ZSIsImlhdCI6MTY2NTQ5OTE3NX0.YcexoKivFKbnwIQYxAAPMah3Y-wjm16RCSOTolcuxZs"
+#159
+DESKTOP_TOKEN = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNTkxMDYxOTk2MyIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjY2NTc4NTE4LCJzaWduSWQiOiJhZDE0OGYxYzUzNzY0MTVkODgxZmI2ZjcyMjgyZmU3NSIsImlhdCI6MTY2NTk3MzcxOH0.1zrXRh-UMNYwbyoBTQKK7Qvcc111BvkT9DEhEC_I504"
 
 CastingId2Price_1 = {
-    54: 1000, # 开拓者
-    59: 1000, # 万象龙巢
+    54: 2000, # 开拓者
+    59: 2000, # 万象龙巢
     #56: 100, # Ctrl  #2022/10/11结束合成
     #66: 400, # V #2022/10/11结束合成
     #67: 400, # C #2022/10/11结束合成
 
     #31: 100, # 厚土
     #32: 300, # 甘霖
-    33: 1000, # 灰烬
-    30: 2000, # 浮金
+    #33: 1000, # 灰烬
+    #30: 2000, # 浮金
+
+    #75: 400, # 龙凤筷
+    79: 200, # 龙图腾
 }
 
 CastingId2Price_2 = {
-    32: 200, # 甘霖
+    # 32: 200, # 甘霖
+    33: 1000, # 灰烬
+    30: 2000, # 浮金
 
-    60: 40, # Shift
-    61: 200, # 太空Shift
+    80: 2000, # 龙凤守宝
+    #60: 40, # Shift
+    #61: 200, # 太空Shift
+}
+
+CastingId2Price_3 = {
+    83: 150, # 探索者-Ctrl
+    84: 100, # 探索者-Shift
 }
 
 def post_requests_json(url, data, timeout):
@@ -92,7 +105,7 @@ def get_product_detail_id(prod_id):
             print(e)
     return (detail_id, user_id)
 
-def buy_product(casting_id, prod_id, detail_id, user_id):
+def buy_product(casting_id, prod_id, detail_id, user_id, token):
     data =  {
         "castingId": casting_id,
         "detailId": detail_id,
@@ -101,7 +114,7 @@ def buy_product(casting_id, prod_id, detail_id, user_id):
     }
 
     headers = {
-        "token": HOME_PC_TOKEN,
+        "token": token,
     }
 
     while True:
@@ -123,10 +136,16 @@ if __name__ == "__main__":
         sys.exit(1)
     dict_id = int(sys.argv[1])
     castingid2price = None
+    token = None
     if dict_id == 1:
         castingid2price = CastingId2Price_1
+        token = HOME_PC_TOKEN
     elif dict_id == 2:
         castingid2price = CastingId2Price_2
+        token = HOME_PC_TOKEN
+    elif dict_id == 3:
+        castingid2price = CastingId2Price_3
+        token = DESKTOP_TOKEN
     if not castingid2price:
         print("dict_id={} 没有对应信息!".format(dict_id))
         sys.exit(1)
