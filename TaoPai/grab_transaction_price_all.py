@@ -222,7 +222,11 @@ def match_and_dump_trans_info(driver, now_time, in_sale_products, access_token, 
             price_info[TRANS_CONTRADDR_INDEX] = contract_address
             price_info[TRANS_CONTRID_INDEX] = cur_contract_id
             price_info[TRANS_PRICE_INDEX] = -1
-            price_info[TRANS_NAME_INDEX] = clean_token_name(contract.get_token_name(contract_address, token_id))
+            token_name = contract.get_token_name(contract_address, token_id)
+            if not token_name:
+                # 未成功获取到token_name
+                continue
+            price_info[TRANS_NAME_INDEX] = clean_token_name(token_name)
             price_info[TRANS_TOKENID_INDEX] = "#"+ str(token_id)
             ## 从扫描的网页端支付信息里面匹配
             if cur_contract_id not in in_sale_products:
