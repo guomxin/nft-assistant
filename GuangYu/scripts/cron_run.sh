@@ -21,6 +21,8 @@ yesterday=`date --date="1 day ago" +%Y%m%d`
 
 echo "------${today}------"
 
+python scan_circulation_info.py $today
+
 echo "---启源I开拓者号---"
 python grab_transaction_price.py 54 ${yesterday} ${yesterday}
 
@@ -75,12 +77,28 @@ python grab_transaction_price.py 83 ${yesterday} ${yesterday}
 echo "---探索者-Shift---"
 python grab_transaction_price.py 84 ${yesterday} ${yesterday}
 
+echo "---物资传输面板---"
+python grab_transaction_price.py 28 ${yesterday} ${yesterday}
+
+echo "---栖龙云木---"
+python grab_transaction_price.py 29 ${yesterday} ${yesterday}
+
+echo "---梦幻小龙---"
+python grab_transaction_price.py 46 ${yesterday} ${yesterday}
+
+echo "---山岭树龙---"
+python grab_transaction_price.py 55 ${yesterday} ${yesterday}
+
+echo "---凤图腾---"
+python grab_transaction_price.py 87 ${yesterday} ${yesterday}
+
 #------ 后处理 ------#
 cd data;mkdir -p upload/$yesterday;rm -rf upload/$yesterday/*
 cp *$yesterday* upload/$yesterday;cd upload/$yesterday
 
 for nft in "KaiTuoZhe" "WanXiangLongChao" "KongJianBuJi-QiNeng" "YunMuShouHu" "TaiKongShiftZai" "ShiftZai" \
-"HouTu" "GanLin" "HuiJin" "FuJin" "CtrlZai" "CZai" "VZai" "LongFengKuai" "LongTuTeng" "LongFengShouBao" \
+"HouTu" "GanLin" "HuiJin" "FuJin" "CtrlZai" "CZai" "VZai" "LongFengKuai" "LongTuTeng" "LongFengShouBao" "FengTuTeng" \
+"ChuanShuMianBan" "QiLongYunMu" "MengHuanXiaoLong" "ShanLingShuLong" \
 "TanSuoZhe-Ctrl" "TanSuoZhe-Shift"
 do
     mkdir $nft;mv *$nft*.csv $nft;zip -q $nft-$yesterday $nft/*

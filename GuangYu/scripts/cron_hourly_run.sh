@@ -75,12 +75,28 @@ python grab_transaction_price.py 83 ${today} ${tag}
 echo "---探索者-Shift---"
 python grab_transaction_price.py 84 ${today} ${tag}
 
+echo "---物资传输面板---"
+python grab_transaction_price.py 28 ${today} ${tag}
+
+echo "---栖龙云木---"
+python grab_transaction_price.py 29 ${today} ${tag}
+
+echo "---梦幻小龙---"
+python grab_transaction_price.py 46 ${today} ${tag}
+
+echo "---山岭树龙---"
+python grab_transaction_price.py 55 ${today} ${tag}
+
+echo "---凤图腾---"
+python grab_transaction_price.py 87 ${today} ${tag}
+
 #------ 后处理 ------#
 cd data;mkdir -p upload/$tag;rm -rf upload/$tag/*
 mv *$tag* upload/$tag;cd upload/$tag
 
 for nft in "KaiTuoZhe" "WanXiangLongChao" "KongJianBuJi-QiNeng" "YunMuShouHu" "TaiKongShiftZai" "ShiftZai" \
-"HouTu" "GanLin" "HuiJin" "FuJin" "CtrlZai" "CZai" "VZai" "LongFengKuai" "LongTuTeng" "LongFengShouBao" \
+"HouTu" "GanLin" "HuiJin" "FuJin" "CtrlZai" "CZai" "VZai" "LongFengKuai" "LongTuTeng" "LongFengShouBao" "FengTuTeng" \
+"ChuanShuMianBan" "QiLongYunMu" "MengHuanXiaoLong" "ShanLingShuLong" \
 "TanSuoZhe-Ctrl" "TanSuoZhe-Shift"
 do
     mkdir $nft;mv *$nft*.csv $nft;zip -q $nft-$tag $nft/*

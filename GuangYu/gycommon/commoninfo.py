@@ -24,6 +24,7 @@ CastingId2MetaInfo = {
 
     75: ["LongFengKuai", "国庆节限定空投-龙凤筷"],
     79: ["LongTuTeng", "龙图腾"],
+    87: ["FengTuTeng", "凤图腾"],
 }
 
 Transaction_Logs_File_Name = "_guangyu_{}_trans_logs.csv"
