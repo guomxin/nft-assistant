@@ -50,8 +50,10 @@ CastingId2Price_2 = {
 }
 
 CastingId2Price_3 = {
-    83: 150, # 探索者-Ctrl
-    84: 100, # 探索者-Shift
+    #83: 150, # 探索者-Ctrl
+    #84: 100, # 探索者-Shift
+    #32: 500, # 甘霖
+    87:  1900,
 }
 
 def post_requests_json(url, data, timeout):
@@ -174,7 +176,7 @@ if __name__ == "__main__":
                             print("获取detail_id失败, prod_id={}".format(prod_id))
                             continue
                         prod_name = commoninfo.CastingId2MetaInfo[casting_id][1]
-                        if buy_product(casting_id, prod_id, detail_id, user_id):
+                        if buy_product(casting_id, prod_id, detail_id, user_id, token):
                             msg = "购买 {}:{}:{}".format(datetime.now(), prod_name, price)
                             print(msg)
                             utils.send_msg(from_addr, password, to_addr, msg)
