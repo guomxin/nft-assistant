@@ -18,14 +18,14 @@ TRAN_STATUS_SALING = 2
 PROD_ID_INDEX = 0
 PRICE_INDEX = 2
 
-# 131
-HOME_PC_TOKEN = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjY2MTAzOTc1LCJzaWduSWQiOiI3YTI0ODNjZjYwMGY0MGQ5YmNmOWUwNTAyY2M0N2Y0ZSIsImlhdCI6MTY2NTQ5OTE3NX0.YcexoKivFKbnwIQYxAAPMah3Y-wjm16RCSOTolcuxZs"
-#159
+# 173
+HOME_PC_TOKEN = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjY2NzQ3MjAwLCJzaWduSWQiOiI0MDdmZWFlOWE5YTU0YTk2OTJhOTU5NGI2ZTA1NmE5NiIsImlhdCI6MTY2NjE0MjQwMH0.n_Zko_RQAsVZz6z7pSL8XZZw3zvAX1cO2Rh6gC7S0O0"
+# 159
 DESKTOP_TOKEN = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNTkxMDYxOTk2MyIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjY2NTc4NTE4LCJzaWduSWQiOiJhZDE0OGYxYzUzNzY0MTVkODgxZmI2ZjcyMjgyZmU3NSIsImlhdCI6MTY2NTk3MzcxOH0.1zrXRh-UMNYwbyoBTQKK7Qvcc111BvkT9DEhEC_I504"
 
 CastingId2Price_1 = {
-    54: 2000, # 开拓者
-    59: 2000, # 万象龙巢
+    #54: 2000, # 开拓者
+    #59: 2000, # 万象龙巢
     #56: 100, # Ctrl  #2022/10/11结束合成
     #66: 400, # V #2022/10/11结束合成
     #67: 400, # C #2022/10/11结束合成
@@ -36,24 +36,27 @@ CastingId2Price_1 = {
     #30: 2000, # 浮金
 
     #75: 400, # 龙凤筷
-    79: 200, # 龙图腾
+    79: 500, # 龙图腾
+    #46: 180, # 梦幻小龙
 }
 
 CastingId2Price_2 = {
     # 32: 200, # 甘霖
-    33: 1000, # 灰烬
-    30: 2000, # 浮金
+    #33: 1000, # 灰烬
+    #30: 2000, # 浮金
 
-    80: 2000, # 龙凤守宝
+    #80: 2000, # 龙凤守宝
     #60: 40, # Shift
     #61: 200, # 太空Shift
+
+    87:  2000, # 凤图腾
 }
 
 CastingId2Price_3 = {
     #83: 150, # 探索者-Ctrl
     #84: 100, # 探索者-Shift
     #32: 500, # 甘霖
-    87:  1900,
+    87:  1500, # 凤图腾
 }
 
 def post_requests_json(url, data, timeout):
