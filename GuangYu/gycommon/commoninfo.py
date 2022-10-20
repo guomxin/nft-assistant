@@ -8,6 +8,7 @@ CastingId2MetaInfo = {
     57: ["1-YunMuShouHu", "云木守护版"],
     59: ["1-WanXiangLongChao", "万象龙巢"],
     80: ["1-LongFengShouBao", "龙凤守宝"],
+    96: ["1-NiePanZhiDi", "涅槃之地"],
 
     56: ["2-CtrlZai", "小小键盘-Ctrl仔"],
     67: ["2-CZai", "小小键盘-C仔"],

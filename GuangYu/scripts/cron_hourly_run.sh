@@ -96,6 +96,8 @@ python grab_transaction_price.py 94 ${today} ${tag}
 echo "---魂魄提灯---"
 python grab_transaction_price.py 95 ${today} ${tag}
 
+echo "---涅槃之地---"
+python grab_transaction_price.py 96 ${today} ${tag}
 
 #------ 后处理 ------#
 cd data;mkdir -p upload/$tag;rm -rf upload/$tag/*
@@ -104,7 +106,7 @@ mv *$tag* upload/$tag;cd upload/$tag
 for nft in "1-KaiTuoZhe" "1-WanXiangLongChao" "1-KongJianBuJi-QiNeng" "1-YunMuShouHu" "2-TaiKongShiftZai" "2-ShiftZai" \
 "3-HouTu" "3-GanLin" "3-HuiJin" "3-FuJin" "2-CtrlZai" "2-CZai" "2-VZai" "4-LongFengKuai" "4-LongTuTeng" "1-LongFengShouBao" "4-FengTuTeng" \
 "1-ChuanShuMianBan" "1-QiLongYunMu" "1-MengHuanXiaoLong" "1-ShanLingShuLong" "5-AErFaYan" "5-HunPoTiDeng" \
-"5-TanSuoZhe-Ctrl" "5-TanSuoZhe-Shift"
+"5-TanSuoZhe-Ctrl" "5-TanSuoZhe-Shift" "1-NiePanZhiDi"
 do
     mkdir $nft;mv *$nft*.csv $nft;zip -q $nft-$tag $nft/*
 done
