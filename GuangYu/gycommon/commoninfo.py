@@ -29,6 +29,9 @@ CastingId2MetaInfo = {
     84: ["5-TanSuoZhe-Shift", "探索者-Shift"],
     94: ["5-AErFaYan", "阿尔法之眼"],
     95: ["5-HunPoTiDeng", "魂魄提灯"],
+    100: ["5-QiWuSuiPian-ShiJianMoPan", "奇物碎片-时间磨盘"],
+    99: ["5-QiWuMiBao-ShiJianMoPan", "奇物秘宝-时间磨盘"],
+    101: ["5-FengYiLei", "凤翊泪"],
 }
 
 Transaction_Logs_File_Name = "_guangyu_{}_trans_logs.csv"
