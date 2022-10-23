@@ -24,6 +24,7 @@ CastingId2MetaInfo = {
     75: ["4-LongFengKuai", "国庆节限定空投-龙凤筷"],
     79: ["4-LongTuTeng", "龙图腾"],
     87: ["4-FengTuTeng", "凤图腾"],
+    71: ["4-PingAnGuo", "国庆节限定空投-平安果"],
 
     83: ["5-TanSuoZhe-Ctrl", "探索者-Ctrl"],
     84: ["5-TanSuoZhe-Shift", "探索者-Shift"],
