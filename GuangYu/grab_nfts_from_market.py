@@ -19,40 +19,50 @@ PROD_ID_INDEX = 0
 PRICE_INDEX = 2
 
 # 173
-HOME_PC_TOKEN = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjY2NzQ3MjAwLCJzaWduSWQiOiI0MDdmZWFlOWE5YTU0YTk2OTJhOTU5NGI2ZTA1NmE5NiIsImlhdCI6MTY2NjE0MjQwMH0.n_Zko_RQAsVZz6z7pSL8XZZw3zvAX1cO2Rh6gC7S0O0"
+HOME_PC_TOKEN = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjY2ODcyODUwLCJzaWduSWQiOiI2M2Y1MWZhY2JlODU0ZGUxYTk1MTU5YzRhZTkxYWY2NCIsImlhdCI6MTY2NjI2ODA1MH0.gSUT0zuwPucK11jUe8MF0iCMIwX6vxkaRYdX3DzMmSg"
 # 159
-DESKTOP_TOKEN = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNTkxMDYxOTk2MyIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjY2NTc4NTE4LCJzaWduSWQiOiJhZDE0OGYxYzUzNzY0MTVkODgxZmI2ZjcyMjgyZmU3NSIsImlhdCI6MTY2NTk3MzcxOH0.1zrXRh-UMNYwbyoBTQKK7Qvcc111BvkT9DEhEC_I504"
+LAPTOP_TOKEN = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNTkxMDYxOTk2MyIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjY2NTc4NTE4LCJzaWduSWQiOiJhZDE0OGYxYzUzNzY0MTVkODgxZmI2ZjcyMjgyZmU3NSIsImlhdCI6MTY2NTk3MzcxOH0.1zrXRh-UMNYwbyoBTQKK7Qvcc111BvkT9DEhEC_I504"
 
 CastingId2Price_1 = {
-    #54: 2000, # 开拓者
-    #59: 2000, # 万象龙巢
+    54: 3000, # 开拓者
+    59: 4500, # 万象龙巢
     #56: 100, # Ctrl  #2022/10/11结束合成
     #66: 400, # V #2022/10/11结束合成
     #67: 400, # C #2022/10/11结束合成
 
     #31: 100, # 厚土
-    #32: 300, # 甘霖
+    #32: 2100, # 甘霖
     #33: 1000, # 灰烬
     #30: 2000, # 浮金
 
     #75: 400, # 龙凤筷
-    79: 500, # 龙图腾
+    #79: 500, # 龙图腾
     #46: 180, # 梦幻小龙
 }
 
 CastingId2Price_2 = {
-    # 32: 200, # 甘霖
+    #31: 500, # 厚土
+    #32: 2420, # 甘霖
+    #29: 360, # 栖龙云木
     #33: 1000, # 灰烬
     #30: 2000, # 浮金
 
     #80: 2000, # 龙凤守宝
     #60: 40, # Shift
     #61: 200, # 太空Shift
-
-    87:  2000, # 凤图腾
+    #79:  900, # 龙图腾
+    #87:  2000, # 凤图腾
+    99: 2000, # 奇物秘宝-时间磨盘
 }
 
 CastingId2Price_3 = {
+    #83: 150, # 探索者-Ctrl
+    #84: 100, # 探索者-Shift
+    #32: 500, # 甘霖
+    87:  1500, # 凤图腾
+}
+
+CastingId2Price_4 = {
     #83: 150, # 探索者-Ctrl
     #84: 100, # 探索者-Shift
     #32: 500, # 甘霖
@@ -150,7 +160,10 @@ if __name__ == "__main__":
         token = HOME_PC_TOKEN
     elif dict_id == 3:
         castingid2price = CastingId2Price_3
-        token = DESKTOP_TOKEN
+        token = LAPTOP_TOKEN
+    elif dict_id == 4:
+        castingid2price = CastingId2Price_4
+        token = LAPTOP_TOKEN
     if not castingid2price:
         print("dict_id={} 没有对应信息!".format(dict_id))
         sys.exit(1)
@@ -163,6 +176,7 @@ if __name__ == "__main__":
         to_addr = items[2]
     
     loop_cnt = 0
+    wx_msg_count = 0
     while True:
         try:
             for casting_id in castingid2price:
@@ -180,13 +194,32 @@ if __name__ == "__main__":
                             continue
                         prod_name = commoninfo.CastingId2MetaInfo[casting_id][1]
                         if buy_product(casting_id, prod_id, detail_id, user_id, token):
+                            content = """
+光予: 购买{}
+>时间: {}
+>价格: {}""".format(prod_name, datetime.now(), price)
+                            print(content)
+                            utils.send_workwx_msg("markdown", content)
+                            """
                             msg = "购买 {}:{}:{}".format(datetime.now(), prod_name, price)
                             print(msg)
                             utils.send_msg(from_addr, password, to_addr, msg)
+                            """
                         else:
+                            wx_msg_count += 1
+                            if wx_msg_count == 10:
+                                content = """
+光予: 下单失败{}
+>时间: {}
+>价格: {}""".format(prod_name, datetime.now(), price)
+                                print(content)
+                                utils.send_workwx_msg("markdown", content)
+                                wx_msg_count = 0
+                            """                       
                             msg = "下单失败 {}:{}:{}".format(datetime.now(), prod_name, price)
                             print(msg)
                             #utils.send_msg(from_addr, password, to_addr, msg)
+                            """
                 # 防止被封禁
                 time.sleep(1)
                     
