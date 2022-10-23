@@ -109,14 +109,31 @@ def buy_nft(access_token, product_id, price, keywords, send_wx_msg=False):
     }
     res = requests.post(CREATE_ORDER_URL, data=json.dumps(data), headers=headers).json()
     if res["code"] == 0:
+        content = """
+淘派: 购买{}
+>时间: {}
+>价格: {}""".format(keywords, datetime.now(), price)
+        print(content)
+        utils.send_workwx_msg("markdown", content)
+        """
         msg = "购买 {}:{}:{}".format(datetime.now(), keywords, price)
         print(msg)
         utils.send_msg(from_addr, password, to_addr, msg)
+        """
     else:
+        content = """
+淘派: 下单失败{}
+>时间: {}
+>价格: {}
+>原因: {}""".format(keywords, datetime.now(), price, res["message"])
+        print(content)
+        utils.send_workwx_msg("markdown", content)
+        """
         msg = "下单失败 {}:{}:{}:{}".format(datetime.now(), keywords, price, res["message"])
         print(msg)
         if send_wx_msg:
             utils.send_wx_msg(msg)
+        """
 
 def get_newest_blindbox_list(driver, cnt, access_token):
     for _ in range(10):
@@ -192,6 +209,8 @@ def is_name_match(name, keyword):
 
 def grab_newest_nft_from_market(target_dict, contract_dict, blindbox_dict, cookie_dict, send_wx_msg=False):
     wx_msg_count = 0
+    #options = webdriver.ChromeOptions()
+    #options.add_argument('--ignore-certificate-errors')
     driver = webdriver.Chrome()
     driver.implicitly_wait(20)
 
@@ -235,10 +254,18 @@ def grab_newest_nft_from_market(target_dict, contract_dict, blindbox_dict, cooki
                     else:
                         wx_msg_count += 1
                         if wx_msg_count == 200:
+                            content = """
+淘派: 支付中{}
+>时间: {}
+>价格: {}""".format(name, datetime.now(), price)
+                            print(content)
+                            utils.send_workwx_msg("markdown", content)
+                            """
                             msg = "藏品 {} {}:{}:{}".format(datetime.now(), "支付中", name, price)        
                             print(msg)
                             if send_wx_msg:
                                 utils.send_wx_msg(msg)
+                            """
                             wx_msg_count = 0
                     if keyword not in target_prods:
                         target_prods[keyword] = []
@@ -262,10 +289,18 @@ def grab_newest_nft_from_market(target_dict, contract_dict, blindbox_dict, cooki
                             else:
                                 wx_msg_count += 1
                                 if wx_msg_count == 200:
+                                    content = """
+淘派: 支付中{}
+>时间: {}
+>价格: {}""".format(name, datetime.now(), price)
+                                    print(content)
+                                    utils.send_workwx_msg("markdown", content)
+                                    """
                                     msg = "藏品 {} {}:{}:{}".format(datetime.now(), "支付中", name, price)        
                                     print(msg)
                                     if send_wx_msg:
                                         utils.send_wx_msg(msg)
+                                    """
                                     wx_msg_count = 0
                         else:
                             target_prods[keyword].remove((pid, name, price))
@@ -279,10 +314,18 @@ def grab_newest_nft_from_market(target_dict, contract_dict, blindbox_dict, cooki
                     else:
                         wx_msg_count += 1
                         if wx_msg_count == 200:
+                            content = """
+淘派: 支付中{}
+>时间: {}
+>价格: {}""".format(name, datetime.now(), price)
+                            print(content)
+                            utils.send_workwx_msg("markdown", content)
+                            """
                             msg = "藏品 {} {}:{}:{}".format(datetime.now(), "支付中", name, price)        
                             print(msg)
                             if send_wx_msg:
                                 utils.send_wx_msg(msg)
+                            """
                             wx_msg_count = 0
 
         ## 获取盲盒市场信息

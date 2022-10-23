@@ -3,6 +3,7 @@ import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 import json
+import requests
 
 try:
     from wxauto import WeChat
@@ -49,6 +50,32 @@ def send_wx_msg(msg):
     except:
         pass
 
+def send_workwx_msg(msg_type, content):
+    webhook_url = "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=692ffa3b-8c4d-4b98-87fe-15561e7e4edb"
+    try:
+        data = None
+        if msg_type == "text":
+            data = {
+                "msgtype": msg_type,
+                "text": {
+                    "content": content
+                }
+            }
+        elif msg_type == "markdown":
+            data = {
+                "msgtype": msg_type,
+                "markdown": {
+                    "content": content
+                }
+            }        
+
+        if data:
+            requests.post(webhook_url, data=json.dumps(data))
+    except Exception as e:
+        print(e)
+
+
+
 def dump_cookie_dict(select_id, cookie_dict):
     if select_id == 1:
         cookie_file_name = "config/cookie_dict_1.json"
@@ -65,3 +92,13 @@ def load_cookie_dict(select_id):
     with open(cookie_file_name) as cookie_file:
         cookie_dict = json.load(cookie_file)
         return cookie_dict
+
+
+if __name__ == "__main__":
+    content = """
+实时新增用户反馈132例，请相关同事注意。
+>类型:用户反馈
+>普通用户反馈:117例
+>VIP用户反馈:<font color="comment">{}例</font>
+""".format("1")
+    send_workwx_msg("markdown", content)
