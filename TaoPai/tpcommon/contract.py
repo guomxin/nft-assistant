@@ -207,6 +207,41 @@ def get_token_name(contract_address, token_id):
             #print(resp_json, e)
             print("fetch {} info error".format(token_id))
 
+def dump_contract_all_tokenid2name(contract_address, contract_ABI, existing_tokenid2name, dump_file_name, verbose=True):
+    provider = HTTPProvider('https://main.confluxrpc.com')
+    c = Conflux(provider)
+
+    tokenid_name_list = []
+    token_cnt = c.call_contract_method(contract_address, contract_ABI, 'totalSupply')
+    token_ids = []
+    for index in range(0, token_cnt, 10000):
+        _, tids = c.call_contract_method(contract_address, contract_ABI, 'tokens', index, 10000)
+        token_ids.extend(tids)
+    target_token_cnt = 0
+    for token_id in token_ids:
+        if token_id not in existing_tokenid2name:
+            token_name = get_token_name(contract_address, token_id)
+            time.sleep(1)
+        else:
+            token_name = existing_tokenid2name[token_id]
+        tokenid_name_list.append((token_id, token_name))
+        print("{}:{}".format(token_id, token_name))
+        target_token_cnt += 1
+        if verbose:
+            if target_token_cnt % 500 == 0:
+                print("{} tokens scanned.".format(target_token_cnt))
+    if verbose:
+        print("{} tokens.".format(len(tokenid_name_list)))
+
+
+    result_file = open(dump_file_name, "w")
+    for (token_id, token_name) in tokenid_name_list:
+        result_file.write("{},{}\n".format(
+            token_id,
+            token_name
+        ))
+    result_file.close()
+
 def dump_contract_tokenid2name(contract_address, contract_ABI, dump_file_name, ranges=[], verbose=True):
     provider = HTTPProvider('https://main.confluxrpc.com')
     c = Conflux(provider)
