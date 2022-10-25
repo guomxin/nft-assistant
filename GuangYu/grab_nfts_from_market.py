@@ -24,8 +24,8 @@ HOME_PC_TOKEN = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MS
 LAPTOP_TOKEN = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNTkxMDYxOTk2MyIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjY2NTc4NTE4LCJzaWduSWQiOiJhZDE0OGYxYzUzNzY0MTVkODgxZmI2ZjcyMjgyZmU3NSIsImlhdCI6MTY2NTk3MzcxOH0.1zrXRh-UMNYwbyoBTQKK7Qvcc111BvkT9DEhEC_I504"
 
 CastingId2Price_1 = {
-    54: 3000, # 开拓者
-    59: 4500, # 万象龙巢
+    #54: 3000, # 开拓者
+    #59: 4000, # 万象龙巢
     #56: 100, # Ctrl  #2022/10/11结束合成
     #66: 400, # V #2022/10/11结束合成
     #67: 400, # C #2022/10/11结束合成
@@ -38,11 +38,15 @@ CastingId2Price_1 = {
     #75: 400, # 龙凤筷
     #79: 500, # 龙图腾
     #46: 180, # 梦幻小龙
+
+    #101: 258, # 凤翊泪
+    #71: 400, # 平安果
+    99: 600, # 奇物秘宝-时间磨盘
 }
 
 CastingId2Price_2 = {
     #31: 500, # 厚土
-    #32: 2420, # 甘霖
+    #32: 1000, # 甘霖
     #29: 360, # 栖龙云木
     #33: 1000, # 灰烬
     #30: 2000, # 浮金
@@ -52,7 +56,13 @@ CastingId2Price_2 = {
     #61: 200, # 太空Shift
     #79:  900, # 龙图腾
     #87:  2000, # 凤图腾
-    99: 2000, # 奇物秘宝-时间磨盘
+    #99: 2000, # 奇物秘宝-时间磨盘
+    #71: 360, # 平安果
+    #101: 200, # 凤翊泪
+    #94: 3000, # 阿尔法之眼
+    #100: 360, # 奇物碎片-时间磨盘
+    #71: 400, # 平安果
+    99: 600, # 奇物秘宝-时间磨盘
 }
 
 CastingId2Price_3 = {
@@ -207,7 +217,7 @@ if __name__ == "__main__":
                             """
                         else:
                             wx_msg_count += 1
-                            if wx_msg_count == 10:
+                            if wx_msg_count == 50:
                                 content = """
 光予: 下单失败{}
 >时间: {}
@@ -230,8 +240,8 @@ if __name__ == "__main__":
 
             # 判断时间是否超过0点
             cur_time = datetime.now()
-            if cur_time.hour == 0 :
-                break
+            #if cur_time.hour == 0 :
+            #    break
         except Exception as e:
             print(e)
             # 出错后等待一段时间

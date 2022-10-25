@@ -33,6 +33,9 @@ CastingId2MetaInfo = {
     100: ["5-QiWuSuiPian-ShiJianMoPan", "奇物碎片-时间磨盘"],
     99: ["5-QiWuMiBao-ShiJianMoPan", "奇物秘宝-时间磨盘"],
     101: ["5-FengYiLei", "凤翊泪"],
+    104: ["5-TongXingZheng", "电子通行证"],
+    105: ["5-BuLaoQuan", "充盈不老泉"],
+    106: ["5-ShiZhiSha", "一抨时之砂"],
 }
 
 Transaction_Logs_File_Name = "_guangyu_{}_trans_logs.csv"
