@@ -258,17 +258,17 @@ Taopai_FXHE_Conflux_Address_3 = "cfx:aajsd02wfexpj4r3t6httyn6ycujyfgzy6cuxbn4tz"
 
 def dig_circulation_from_details(nft_name, details_file_name, dump_file_name):
     idrange2name = idrange.get_idrangedict_by_nftname(nft_name)
-    circulation_dict = {} # name->count
+    circulation_dict = {} # name->[publish_count, circulation_count]
     for (_, name) in idrange2name.items():
-        circulation_dict[name] = 0
+        circulation_dict[name] = [0, 0]
     
     for line in open(details_file_name):
         items = line.split(",")
         owner = items[0].strip()
-        if (owner == Taopai_Conflux_Address) or (owner == Taopai_Prev_Conflux_Address) or \
-            (owner == Taopai_Recycle_Conflux_Address) or (owner == Taopai_Recycle_Conflux_Address_2):
-            # negelect Taopai account
-            continue
+        #if (owner == Taopai_Conflux_Address) or (owner == Taopai_Prev_Conflux_Address) or \
+        #    (owner == Taopai_Recycle_Conflux_Address) or (owner == Taopai_Recycle_Conflux_Address_2):
+        #    # negelect Taopai account
+        #    continue
         #if (nft_name == "partycat") or  (nft_name == "fxxunzhang") or (nft_name == "fxfuneng") \
         #    or (nft_name == "fxpanda") or (nft_name == "fxpanda2") or (nft_name == "fxpandaall"):
         #    if owner == Taopai_FXHE_Conflux_Address or owner == Taopai_FXHE_Conflux_Address_2 \
@@ -279,10 +279,15 @@ def dig_circulation_from_details(nft_name, details_file_name, dump_file_name):
         for tid in tokenids:
             name = idrange.get_name_by_tokenid(idrange2name, tid)
             if name not in circulation_dict:
-                circulation_dict[name] = 0
-            circulation_dict[name] += 1
+                circulation_dict[name] = [0, 0]
+            circulation_dict[name][0] += 1
+            circulation_dict[name][1] += 1
+            if (owner == Taopai_Conflux_Address) or (owner == Taopai_Prev_Conflux_Address) or \
+            (owner == Taopai_Recycle_Conflux_Address) or (owner == Taopai_Recycle_Conflux_Address_2):
+            # 计算流通量扣除淘派账号
+                circulation_dict[name][1] -= 1
     
     dump_file = open(dump_file_name, "w", encoding="utf-8-sig")
-    for (fig, cnt) in circulation_dict.items():
-        dump_file.write("{},{}\n".format(fig, cnt))
+    for (fig, cnts) in circulation_dict.items():
+        dump_file.write("{},{},{}\n".format(fig, cnts[0], cnts[1]))
     dump_file.close()
