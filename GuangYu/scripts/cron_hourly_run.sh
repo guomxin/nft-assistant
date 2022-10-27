@@ -120,6 +120,9 @@ python grab_transaction_price.py 105 ${today} ${tag}
 echo "---一抨时之砂---"
 python grab_transaction_price.py 106 ${today} ${tag}
 
+echo "---拾荒者---"
+python grab_transaction_price.py 111 ${today} ${tag}
+
 #------ 后处理 ------#
 cd data;mkdir -p upload/$tag;rm -rf upload/$tag/*
 mv *$tag* upload/$tag;cd upload/$tag
@@ -128,7 +131,7 @@ for nft in "1-KaiTuoZhe" "1-WanXiangLongChao" "1-KongJianBuJi-QiNeng" "1-YunMuSh
 "3-HouTu" "3-GanLin" "3-HuiJin" "3-FuJin" "2-CtrlZai" "2-CZai" "2-VZai" "4-LongFengKuai" "4-LongTuTeng" "1-LongFengShouBao" "4-FengTuTeng" \
 "1-ChuanShuMianBan" "1-QiLongYunMu" "1-MengHuanXiaoLong" "1-ShanLingShuLong" "5-AErFaYan" "5-HunPoTiDeng" \
 "5-TanSuoZhe-Ctrl" "5-TanSuoZhe-Shift" "1-NiePanZhiDi" "5-QiWuSuiPian-ShiJianMoPan" "5-QiWuMiBao-ShiJianMoPan" "5-FengYiLei" \
-"4-PingAnGuo" "5-TongXingZheng" "5-BuLaoQuan" "5-ShiZhiSha"
+"4-PingAnGuo" "5-TongXingZheng" "5-BuLaoQuan" "5-ShiZhiSha" "5-ShiHuangZhe"
 do
     mkdir $nft;mv *$nft*.csv $nft;zip -q $nft-$tag $nft/*
 done

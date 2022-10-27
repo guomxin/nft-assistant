@@ -28,6 +28,7 @@ CastingId2MetaInfo = {
 
     83: ["5-TanSuoZhe-Ctrl", "探索者-Ctrl"],
     84: ["5-TanSuoZhe-Shift", "探索者-Shift"],
+    111: ["5-ShiHuangZhe", "拾荒者"],
     94: ["5-AErFaYan", "阿尔法之眼"],
     95: ["5-HunPoTiDeng", "魂魄提灯"],
     100: ["5-QiWuSuiPian-ShiJianMoPan", "奇物碎片-时间磨盘"],
