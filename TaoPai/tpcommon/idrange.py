@@ -710,6 +710,8 @@ BaiBianXiong_IdRange2Name = {
     (19462,19502): "百变熊宝", # 熊宝凭证空投
 
     (19503,19589): "SSR-国庆限定", # SSR、熊宝、奶嘴空投
+
+    (19690,19712): "百变熊宝-创世",
 }
 
 TaoPaiChuangShi_IdRange2Name = {
