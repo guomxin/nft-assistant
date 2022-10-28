@@ -91,6 +91,8 @@ echo "---派对猫首发纪念卡---"
 sh dig_detail-trans_pcatmem.sh $today $yesterday $yesterday
 echo "---派对猫---"
 sh dig_detail-trans_partycat.sh $today $yesterday $yesterday
+echo "---派对猫蛋---"
+sh dig_detail-trans_partycategg.sh $today $yesterday $yesterday
 
 # 西游星球
 echo "---西游星球---"
@@ -107,7 +109,7 @@ cp *$today* upload/$today;cp _stat_activeuser_*_result_${yesterday_short}.csv up
 
 for nft in "kaozaifriends" "taopai2022" "xunzhang" "letaotao" "taopaitest" "taopaishop" \
 "guizi" "laodongcun" "baibianxiong" "fxpandaall"  "tiantanbopu" \
-"huakaiyunqi" "pcatmem" "partycat" "xiyouxingqiu" "activeuser"
+"huakaiyunqi" "pcatmem" "partycategg" "partycat" "xiyouxingqiu" "activeuser"
 do
     mkdir $nft;mv *$nft*.csv $nft;zip -q $nft-$today $nft/*
 done
