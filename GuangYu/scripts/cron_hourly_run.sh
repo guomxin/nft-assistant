@@ -123,6 +123,8 @@ python grab_transaction_price.py 106 ${today} ${tag}
 echo "---拾荒者---"
 python grab_transaction_price.py 111 ${today} ${tag}
 
+python agg_special_transactions.py ${tag}
+
 #------ 后处理 ------#
 cd data;mkdir -p upload/$tag;rm -rf upload/$tag/*
 mv *$tag* upload/$tag;cd upload/$tag
