@@ -76,6 +76,9 @@ def get_saled_products(casting_id):
                         [pinfo["id"], pinfo["viewSort"], float(pinfo["resalePrice"])])
     return (0, saled_prods)
 
+def clean_name(name):
+    return name.replace(",", "")
+
 def get_product_detail(prod_id):
     detail_info = [None] * DETAIL_ITEM_COUNT
 
@@ -96,7 +99,7 @@ def get_product_detail(prod_id):
                 detail_id = res["obj"]["detailId"]
                 user_id = res["obj"]["userId"]
                 created_time = datetime.datetime.strptime(res["obj"]["created"], "%Y-%m-%d %H:%M:%S")
-                holder_name = res["obj"]["holderName"]
+                holder_name = clean_name(res["obj"]["holderName"])
                 #print(detail_id, user_id, created_time)
                 break
         except Exception as e:
@@ -146,7 +149,7 @@ def get_product_detail(prod_id):
                 if sell_price != buy_price:
                     print("detailId:{} 买入{}和卖出{}价格不匹配".format(detail_id, buy_price, sell_price))
                     return None
-                buyer_name = trans[target_buy_index]["nickName"]
+                buyer_name = clean_name(trans[target_buy_index]["nickName"])
                 #seller_name = trans[target_sell_index]["nickName"]
                 
                 detail_info[DETAIL_SELLER_ID_INDEX] = user_id
