@@ -195,7 +195,7 @@ if __name__ == "__main__":
             # 加载已有的交易信息
             for line in trans_logs_file:
                 dinfo = [None] * DETAIL_ITEM_COUNT
-                items = line.strip().split(",")
+                items = line.strip().replace(",,", ",").split(",")
                 dinfo[DETAIL_SELLER_ID_INDEX] = int(items[DETAIL_SELLER_ID_INDEX])
                 dinfo[DETAIL_SELLER_INDEX] = items[DETAIL_SELLER_INDEX]
                 dinfo[DETAIL_BUYER_INDEX] = items[DETAIL_BUYER_INDEX]
