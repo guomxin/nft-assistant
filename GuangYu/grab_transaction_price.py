@@ -240,7 +240,7 @@ if __name__ == "__main__":
         detail_info_list.append(detail_info)
         selluser = detail_info[DETAIL_SELLER_ID_INDEX]
         selluser_nickname = detail_info[DETAIL_SELLER_INDEX]
-        if selluser not in selluser2cnt:
+        if selluser_nickname not in selluser2cnt:
             selluser2cnt[selluser_nickname] = [0, selluser]
         selluser2cnt[selluser_nickname][0] += 1
     
