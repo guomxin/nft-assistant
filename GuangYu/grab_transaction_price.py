@@ -241,8 +241,8 @@ if __name__ == "__main__":
         selluser = detail_info[DETAIL_SELLER_ID_INDEX]
         selluser_nickname = detail_info[DETAIL_SELLER_INDEX]
         if selluser not in selluser2cnt:
-            selluser2cnt[selluser] = [0, selluser_nickname]
-        selluser2cnt[selluser][0] += 1
+            selluser2cnt[selluser_nickname] = [0, selluser]
+        selluser2cnt[selluser_nickname][0] += 1
     
 
     # 刷新交易信息文件
@@ -285,7 +285,7 @@ if __name__ == "__main__":
         casting_name, tag
     )
     with open(result_file_name, "w", encoding="utf-8-sig") as result_file:
-        for (sid, sname, cnt) in sellers_info:
+        for (sname, sid, cnt) in sellers_info:
             result_file.write("{},{},{}\n".format(
                 sid, sname, cnt
             ))
