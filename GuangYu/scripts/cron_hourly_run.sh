@@ -123,8 +123,6 @@ python grab_transaction_price.py 106 ${today} ${tag}
 echo "---拾荒者---"
 python grab_transaction_price.py 111 ${today} ${tag}
 
-python agg_special_transactions.py ${tag}
-
 #------ 后处理 ------#
 cd data;mkdir -p upload/$tag;rm -rf upload/$tag/*
 mv *$tag* upload/$tag;cd upload/$tag
@@ -137,5 +135,7 @@ for nft in "1-KaiTuoZhe" "1-WanXiangLongChao" "1-KongJianBuJi-QiNeng" "1-YunMuSh
 do
     mkdir $nft;mv *$nft*.csv $nft;zip -q $nft-$tag $nft/*
 done
+
+python agg_special_transactions.py ${tag}
 
 python /mnt/ssd01/git/nft-assistant/GuangYu/upload_baidudisk.py /mnt/ssd01/git/nft-assistant/GuangYu/data/upload/$tag $today/$tag

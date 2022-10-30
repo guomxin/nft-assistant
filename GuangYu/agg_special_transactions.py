@@ -7,6 +7,8 @@ from gycommon import commoninfo
 from gycommon import utils
 
 BLACK8_NICK_NAME = "s*****"
+HONG_NICK_NAME = "翃*" # 翃翾
+
 SELLER_NAME_INDEX = 1
 BUYER_NAME_INDEX = 2
 TRANS_PRICE_INDEX = 4
@@ -79,3 +81,7 @@ if __name__ == "__main__":
     ## 黑8
     analyze_users(BLACK8_NICK_NAME, BUYER_NAME_INDEX, tag, "黑8-买入")
     analyze_users(BLACK8_NICK_NAME, SELLER_NAME_INDEX, tag, "黑8-卖出", True)
+
+    ## 翃翾
+    analyze_users(HONG_NICK_NAME, BUYER_NAME_INDEX, tag, "翃翾-买入")
+    analyze_users(HONG_NICK_NAME, SELLER_NAME_INDEX, tag, "翃翾-卖出", True)

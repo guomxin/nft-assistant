@@ -159,8 +159,6 @@ echo "---拾荒者---"
 python grab_transaction_price.py 111 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 111 ${yesterday} 100
 
-python agg_special_transactions.py ${yesterday}
-
 #------ 后处理 ------#
 cd data;mkdir -p upload/$yesterday;rm -rf upload/$yesterday/*
 cp *$yesterday* upload/$yesterday;cd upload/$yesterday
@@ -173,3 +171,5 @@ for nft in "1-KaiTuoZhe" "1-WanXiangLongChao" "1-KongJianBuJi-QiNeng" "1-YunMuSh
 do
     mkdir $nft;mv *$nft*.csv $nft;zip -q $nft-$yesterday $nft/*
 done
+
+python agg_special_transactions.py ${yesterday}
