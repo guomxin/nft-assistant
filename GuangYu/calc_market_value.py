@@ -71,7 +71,11 @@ def get_casting_info(casting_id):
     return casting_info
 
 if __name__ == "__main__":
-    tag = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    if len(sys.argv) < 2:
+        print("{} <tag>".format(sys.argv[0]))
+        sys.exit(1)
+    tag = sys.argv[1]
+
     casting2value = {}
     total_value = 0
     for casting_id in commoninfo.CastingId2MetaInfo:
@@ -103,4 +107,18 @@ if __name__ == "__main__":
     utils.send_workwx_msg("markdown", content)
 
 
-
+    result_file_name = "data/_calc_market_value_{}.csv".format(
+        tag
+    )
+    with open(result_file_name, "w", encoding="utf-8-sig") as result_file:
+        result_file.write("总市值: {:.2f}万\n".format(total_value / 10000))
+        result_file.write("{},{},{},{}\n".format(
+            "名称", "流通量", "挂牌最低价", "市值(万)"
+        ))
+        for casting_name in casting2value:
+            result_file.write("{},{},{},{:.2f}\n".format(
+               casting_name,
+               casting2value[casting_name][0], 
+               casting2value[casting_name][1],
+               casting2value[casting_name][2] / 10000
+            ))
