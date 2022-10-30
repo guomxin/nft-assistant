@@ -7,27 +7,25 @@ from gycommon import commoninfo
 from gycommon import utils
 
 BLACK8_NICK_NAME = "s*****"
+SELLER_NAME_INDEX = 1
+BUYER_NAME_INDEX = 2
+TRANS_PRICE_INDEX = 4
 
-if __name__ == "__main__":
-    if len(sys.argv) < 2:
-        print("{} <tag>".format(sys.argv[0]))
-        sys.exit(1)
-    tag = sys.argv[1]
-
-    black82info = {}
+def analyze_users(target_nick_name, name_index, tag, head, only_match_len_and_start=False):
+    target2info = {}
 
     for casting_id in commoninfo.CastingId2MetaInfo:
         casting_name = commoninfo.CastingId2MetaInfo[casting_id][0]
         casting_ch_name = commoninfo.CastingId2MetaInfo[casting_id][1]
-        result_file_name = "data/_grab_nft_price_result_{}_{}.csv".format(
+        result_file_name = "data/{}/{}/_grab_nft_price_result_{}_{}.csv".format(
+            tag, casting_name,
             casting_name, tag
         )
-        #print(result_file_name)
         cnt = 0
-        b8_min_price = None
-        b8_max_price = None
-        b8_total_price = 0
-        b8_cnt = 0
+        target_min_price = None
+        target_max_price = None
+        target_total_price = 0
+        target_cnt = 0
         #if not os.path.exists(result_file_name):
         #    continue
         with open(result_file_name,  encoding="utf-8-sig") as result_file:
@@ -37,36 +35,47 @@ if __name__ == "__main__":
                     # 忽略总结行和标题行
                     continue
                 items = line.strip().split(",")
-                buyer_nickname = items[2]
-                price = float(items[4])
-                if buyer_nickname == BLACK8_NICK_NAME:
-                    b8_cnt += 1
-                    if not b8_min_price:
-                        b8_min_price = price
-                    if not b8_max_price:
-                        b8_max_price = price
-                    if price < b8_min_price:
-                        b8_min_price = price
-                    if price > b8_max_price:
-                        b8_max_price = price
-                    b8_total_price += price
-            black82info[casting_ch_name] = [b8_cnt, b8_min_price, b8_max_price, 
-                b8_total_price / b8_cnt if b8_cnt > 0 else None, b8_total_price]
+                nickname = items[name_index]
+                if only_match_len_and_start and len(nickname) > 0:
+                    nickname = nickname[0] + "*"*(len(nickname)-1)
+                #print(nickname)
+                price = float(items[TRANS_PRICE_INDEX])
+                if nickname == target_nick_name:
+                    target_cnt += 1
+                    if not target_min_price:
+                        target_min_price = price
+                    if not target_max_price:
+                        target_max_price = price
+                    if price < target_min_price:
+                        target_min_price = price
+                    if price > target_max_price:
+                        target_max_price = price
+                    target_total_price += price
+            target2info[casting_ch_name] = [target_cnt, target_min_price, target_max_price, 
+                target_total_price / target_cnt if target_cnt > 0 else None, target_total_price]
     
-    black8_infos = []
-    for casting_ch_name in black82info:
+    target_infos = []
+    for casting_ch_name in target2info:
         info = [casting_ch_name]
-        info.extend(black82info[casting_ch_name])
-        black8_infos.append(info)
-    black8_infos.sort(key=lambda i: i[-1], reverse=True)
+        info.extend(target2info[casting_ch_name])
+        target_infos.append(info)
+    target_infos.sort(key=lambda i: i[-1], reverse=True)
     
     # 输出
-    content = "**黑8:{}**\n".format(tag)
-    for (casting_ch_name, cnt, min_price, max_price, avg_price, total_price) in black8_infos:
+    content = "**{}:{}**\n".format(head, tag)
+    for (casting_ch_name, cnt, min_price, max_price, avg_price, total_price) in target_infos:
         if cnt > 0:
             content += "{}\n>数量:{}\n>最低价:{}\n>最高价:{}\n>均价:{}\n>合计:{}\n\n".format(
                 casting_ch_name, cnt, min_price,
                 max_price, avg_price, total_price)
     utils.send_workwx_msg("markdown", content)
-            
-        
+
+if __name__ == "__main__":
+    if len(sys.argv) < 2:
+        print("{} <tag>".format(sys.argv[0]))
+        sys.exit(1)
+    tag = sys.argv[1]
+
+    ## 黑8
+    analyze_users(BLACK8_NICK_NAME, BUYER_NAME_INDEX, tag, "黑8-买入")
+    analyze_users(BLACK8_NICK_NAME, SELLER_NAME_INDEX, tag, "黑8-卖出", True)
