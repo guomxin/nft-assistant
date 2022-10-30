@@ -19,7 +19,7 @@ def analyze_users(target_nick_name, name_index, tag, head, only_match_len_and_st
     for casting_id in commoninfo.CastingId2MetaInfo:
         casting_name = commoninfo.CastingId2MetaInfo[casting_id][0]
         casting_ch_name = commoninfo.CastingId2MetaInfo[casting_id][1]
-        result_file_name = "data/{}/{}/_grab_nft_price_result_{}_{}.csv".format(
+        result_file_name = "data/upload/{}/{}/_grab_nft_price_result_{}_{}.csv".format(
             tag, casting_name,
             casting_name, tag
         )

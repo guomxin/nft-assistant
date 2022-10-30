@@ -172,4 +172,5 @@ do
     mkdir $nft;mv *$nft*.csv $nft;zip -q $nft-$yesterday $nft/*
 done
 
+cd ../../..
 python agg_special_transactions.py ${yesterday}
