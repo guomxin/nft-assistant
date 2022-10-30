@@ -21,6 +21,9 @@ tag=`date +%Y%m%d%H`
 
 echo "------${tag}------"
 
+echo "---计算市值---"
+python calc_market_value.py
+
 echo "---启源I开拓者号---"
 python grab_transaction_price.py 54 ${today} ${tag}
 

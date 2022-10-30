@@ -1,0 +1,106 @@
+# coding: utf-8
+
+import sys
+import datetime
+import requests
+import time
+
+from gycommon import commoninfo
+from gycommon import utils
+
+TIME_OUT = 3
+CASTING_INFO_COLL_AMOUNT_INDEX = 0
+CASTING_INFO_CIRCU_INDEX = 1
+CASTING_INFO_ONSALE_AMOUNT_INDEX = 2
+CASTING_INFO_ITEM_COUNT = 3
+GET_CASTING_INFO_URL = "https://api.gandart.com/market/api/v2/resaleManage/resale/collectionDetailsByCastingId"
+
+GET_ON_SALE_LIST_URL = "https://api.gandart.com/market/api/v2/resaleManage/resale/onSale"
+PRICE_INDEX = 2
+
+def post_requests_json(url, data, timeout):
+    for _ in range(10):
+        try:
+            res = requests.post(url, data=data, timeout=timeout).json()
+            return res
+        except Exception as e:
+            time.sleep(0.5)
+            print(e)
+
+def get_top_saling_products(casting_id):
+    saling_prods = []
+    data = {
+        "castingId": casting_id,
+        "page":1,
+        "pageSize":10,
+        "sort":2,
+        "transactionStatus": 2,
+    }
+    res = post_requests_json(GET_ON_SALE_LIST_URL, data=data, timeout=TIME_OUT)
+    if not res:
+        return (1, None)
+    if res["code"] != 0:
+        return (res["code"], None)
+    else:
+        for pinfo in res["obj"]["list"]:
+            saling_prods.append(
+                [pinfo["id"], pinfo["viewSort"], float(pinfo["resalePrice"])])
+    return (0, saling_prods)
+
+def get_casting_info(casting_id):
+    casting_info = [None] * CASTING_INFO_ITEM_COUNT
+
+    # Get detail data
+    data = {
+        "castingId": casting_id,
+    }
+    
+    while True:
+        try: 
+            res = requests.post(GET_CASTING_INFO_URL, data=data, timeout=TIME_OUT).json()
+            if res["code"] != 0:
+                return None
+            else:
+                casting_info[CASTING_INFO_COLL_AMOUNT_INDEX] = res["obj"]["collectionAmount"]
+                casting_info[CASTING_INFO_CIRCU_INDEX] = res["obj"]["collectionCirculation"]
+                casting_info[CASTING_INFO_ONSALE_AMOUNT_INDEX] = res["obj"]["collectionSale"]
+                break
+        except Exception as e:
+            time.sleep(0.5)
+            print(e)
+    return casting_info
+
+if __name__ == "__main__":
+    tag = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    casting2value = {}
+    total_value = 0
+    for casting_id in commoninfo.CastingId2MetaInfo:
+        time.sleep(2)
+        casting_name = commoninfo.CastingId2MetaInfo[casting_id][1]
+        print("获取[{}]的信息...".format(casting_name))
+        casting_info = get_casting_info(casting_id)
+        if not casting_info:
+            print("获取[{}]的信息失败！".format(casting_name))
+            sys.exit(1)
+        circu_cnt = int(casting_info[CASTING_INFO_CIRCU_INDEX])
+        (res_code, saling_prods) = get_top_saling_products(casting_id)
+        if res_code != 0:
+            print("获取在售列表信息失败, res_code={}, casting={}".format(res_code, casting_name))
+            sys.exit(1)
+        if len(saling_prods) == 0:
+            print("无在售信息, casting={}".format(casting_name))
+            sys.exit(1)
+        min_price = saling_prods[0][PRICE_INDEX]
+        casting2value[casting_name] = [circu_cnt, min_price, circu_cnt * min_price]
+        total_value += circu_cnt * min_price
+    
+    # 输出
+    content = "**{} 光予市值:{:.2f}万**\n".format(tag, total_value / 10000)
+    for casting_name in casting2value:
+        content += "{}\n>流通量:{}\n>挂牌最低价:{}\n>市值:{:.2f}万\n\n".format(
+            casting_name, casting2value[casting_name][0], 
+            casting2value[casting_name][1], casting2value[casting_name][2] / 10000)
+    utils.send_workwx_msg("markdown", content)
+
+
+
