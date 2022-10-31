@@ -107,6 +107,16 @@ if __name__ == "__main__":
     utils.send_workwx_msg("markdown", content)
 
 
+    casting_value_infos = []
+    for casting_name in casting2value:
+        casting_value_infos.append([
+            casting_name,
+            casting2value[casting_name][0], 
+            casting2value[casting_name][1],
+            casting2value[casting_name][2] 
+        ])
+    # 按最低挂单价倒序排序
+    casting_value_infos.sort(key=lambda ci: ci[2], reverse=True)
     result_file_name = "data/_calc_market_value_{}.csv".format(
         tag
     )
@@ -115,10 +125,10 @@ if __name__ == "__main__":
         result_file.write("{},{},{},{}\n".format(
             "名称", "流通量", "挂牌最低价", "市值(万)"
         ))
-        for casting_name in casting2value:
+        for (casting_name, circu_cnt, min_price, mvalue) in casting_value_infos:
             result_file.write("{},{},{},{:.2f}\n".format(
                casting_name,
-               casting2value[casting_name][0], 
-               casting2value[casting_name][1],
-               casting2value[casting_name][2] / 10000
+               circu_cnt, 
+               min_price,
+               mvalue / 10000
             ))
