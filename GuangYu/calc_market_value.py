@@ -98,15 +98,6 @@ if __name__ == "__main__":
         casting2value[casting_name] = [circu_cnt, min_price, circu_cnt * min_price]
         total_value += circu_cnt * min_price
     
-    # 输出
-    content = "**{} 光予市值:{:.2f}万**\n".format(tag, total_value / 10000)
-    for casting_name in casting2value:
-        content += "{}\n>流通量:{}\n>挂牌最低价:{}\n>市值:{:.2f}万\n\n".format(
-            casting_name, casting2value[casting_name][0], 
-            casting2value[casting_name][1], casting2value[casting_name][2] / 10000)
-    utils.send_workwx_msg("markdown", content)
-
-
     casting_value_infos = []
     for casting_name in casting2value:
         casting_value_infos.append([
@@ -117,6 +108,15 @@ if __name__ == "__main__":
         ])
     # 按最低挂单价倒序排序
     casting_value_infos.sort(key=lambda ci: ci[2], reverse=True)
+
+    # 输出
+    content = "**{} 光予市值:{:.2f}万**\n".format(tag, total_value / 10000)
+    for (casting_name, circu_cnt, min_price, mvalue) in casting2value:
+        content += "{}\n>流通量:{}\n>挂牌最低价:{}\n>市值:{:.2f}万\n\n".format(
+            casting_name, circu_cnt, 
+            min_price, mvalue / 10000)
+    utils.send_workwx_msg("markdown", content)
+
     result_file_name = "data/_calc_market_value_{}.csv".format(
         tag
     )
