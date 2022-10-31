@@ -111,7 +111,7 @@ if __name__ == "__main__":
 
     # 输出
     content = "**{} 光予市值:{:.2f}万**\n".format(tag, total_value / 10000)
-    for (casting_name, circu_cnt, min_price, mvalue) in casting2value:
+    for (casting_name, circu_cnt, min_price, mvalue) in casting_value_infos:
         content += "{}\n>流通量:{}\n>挂牌最低价:{}\n>市值:{:.2f}万\n\n".format(
             casting_name, circu_cnt, 
             min_price, mvalue / 10000)
