@@ -79,8 +79,8 @@ if __name__ == "__main__":
     casting2value = {}
     total_value = 0
     for casting_id in commoninfo.CastingId2MetaInfo:
-        if casting_id == 87:
-            # 忽略凤图腾
+        if casting_id == 87 or casting_id == 75:
+            # 忽略凤图腾和龙凤筷
             continue
         time.sleep(2)
         casting_name = commoninfo.CastingId2MetaInfo[casting_id][1]
