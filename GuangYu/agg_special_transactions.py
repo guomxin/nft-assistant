@@ -6,12 +6,18 @@ import os
 from gycommon import commoninfo
 from gycommon import utils
 
-BLACK8_NICK_NAME = "s*****"
-HONG_NICK_NAME = "翃*" # 翃翾
+BLACK8_NICK_NAME = ["s*****", "拔*******", "u******"]
+HONG_NICK_NAME = ["翃*"] # 翃翾
 
 SELLER_NAME_INDEX = 1
 BUYER_NAME_INDEX = 2
 TRANS_PRICE_INDEX = 4
+
+def match_target_name(nick_name, target_nick_name):
+    for tname in target_nick_name:
+        if nick_name == tname:
+            return True
+    return False
 
 def analyze_users(target_nick_name, name_index, tag, head, only_match_len_and_start=False):
     target2info = {}
@@ -42,7 +48,7 @@ def analyze_users(target_nick_name, name_index, tag, head, only_match_len_and_st
                     nickname = nickname[0] + "*"*(len(nickname)-1)
                 #print(nickname)
                 price = float(items[TRANS_PRICE_INDEX])
-                if nickname == target_nick_name:
+                if match_target_name(nickname, target_nick_name):
                     target_cnt += 1
                     if not target_min_price:
                         target_min_price = price
