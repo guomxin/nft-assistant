@@ -79,6 +79,9 @@ if __name__ == "__main__":
     casting2value = {}
     total_value = 0
     for casting_id in commoninfo.CastingId2MetaInfo:
+        if casting_id == 87:
+            # 忽略凤图腾
+            continue
         time.sleep(2)
         casting_name = commoninfo.CastingId2MetaInfo[casting_id][1]
         print("获取[{}]的信息...".format(casting_name))
@@ -94,15 +97,22 @@ if __name__ == "__main__":
                 sys.exit(1)
             if len(saling_prods) == 0:
                 # 按已退市，按最高限额计算
-                print("无在售信息, casting={}".format(casting_name))
+                print("\t无在售信息, casting={}".format(casting_name))
                 min_price = commoninfo.HighestValue_Products_Info[casting_id][1]
             else:
                 min_price = saling_prods[0][PRICE_INDEX]
         else:
-            # 已退市，按最高限价计算
-            print("已退市, casting={}".format(casting_name))
-            circu_cnt = commoninfo.HighestValue_Products_Info[casting_id][0]
-            min_price = commoninfo.HighestValue_Products_Info[casting_id][1]
+            # 已退市或关闭寄售
+            if casting_id in commoninfo.HighestValue_Products_Info:
+                # 已退市，按最高限价计算
+                print("\t已退市, casting={}".format(casting_name))
+                circu_cnt = commoninfo.HighestValue_Products_Info[casting_id][0]
+                min_price = commoninfo.HighestValue_Products_Info[casting_id][1]
+            else:
+                # 已关闭寄售，暂不处理
+                print("\t已关闭寄售, casting={}".format(casting_name))
+                continue
+
         casting2value[casting_name] = [circu_cnt, min_price, circu_cnt * min_price]
         total_value += circu_cnt * min_price
     
