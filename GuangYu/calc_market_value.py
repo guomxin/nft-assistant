@@ -86,15 +86,23 @@ if __name__ == "__main__":
         if not casting_info:
             print("获取[{}]的信息失败！".format(casting_name))
             sys.exit(1)
-        circu_cnt = int(casting_info[CASTING_INFO_CIRCU_INDEX])
-        (res_code, saling_prods) = get_top_saling_products(casting_id)
-        if res_code != 0:
-            print("获取在售列表信息失败, res_code={}, casting={}".format(res_code, casting_name))
-            sys.exit(1)
-        if len(saling_prods) == 0:
-            print("无在售信息, casting={}".format(casting_name))
-            sys.exit(1)
-        min_price = saling_prods[0][PRICE_INDEX]
+        if casting_info[CASTING_INFO_CIRCU_INDEX] != "":
+            circu_cnt = int(casting_info[CASTING_INFO_CIRCU_INDEX])
+            (res_code, saling_prods) = get_top_saling_products(casting_id)
+            if res_code != 0:
+                print("获取在售列表信息失败, res_code={}, casting={}".format(res_code, casting_name))
+                sys.exit(1)
+            if len(saling_prods) == 0:
+                # 按已退市，按最高限额计算
+                print("无在售信息, casting={}".format(casting_name))
+                min_price = commoninfo.HighestValue_Products_Info[casting_id][1]
+            else:
+                min_price = saling_prods[0][PRICE_INDEX]
+        else:
+            # 已退市，按最高限价计算
+            print("已退市, casting={}".format(casting_name))
+            circu_cnt = commoninfo.HighestValue_Products_Info[casting_id][0]
+            min_price = commoninfo.HighestValue_Products_Info[casting_id][1]
         casting2value[casting_name] = [circu_cnt, min_price, circu_cnt * min_price]
         total_value += circu_cnt * min_price
     

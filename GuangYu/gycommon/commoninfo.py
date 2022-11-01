@@ -47,3 +47,8 @@ CastingId2MetaInfo = {
 }
 
 Transaction_Logs_File_Name = "_guangyu_{}_trans_logs.csv"
+
+HighestValue_Products_Info = {
+    80: [258, 45000.0],
+    30: [88, 45000.0],
+}
