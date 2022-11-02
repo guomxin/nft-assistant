@@ -18,15 +18,6 @@ GET_CASTING_INFO_URL = "https://api.gandart.com/market/api/v2/resaleManage/resal
 GET_ON_SALE_LIST_URL = "https://api.gandart.com/market/api/v2/resaleManage/resale/onSale"
 PRICE_INDEX = 2
 
-def post_requests_json(url, data, timeout):
-    for _ in range(10):
-        try:
-            res = requests.post(url, data=data, timeout=timeout).json()
-            return res
-        except Exception as e:
-            time.sleep(0.5)
-            print(e)
-
 def get_top_saling_products(casting_id):
     saling_prods = []
     data = {
@@ -36,7 +27,7 @@ def get_top_saling_products(casting_id):
         "sort":2,
         "transactionStatus": 2,
     }
-    res = post_requests_json(GET_ON_SALE_LIST_URL, data=data, timeout=TIME_OUT)
+    res = utils.post_requests_json(GET_ON_SALE_LIST_URL, data=data, timeout=TIME_OUT)
     if not res:
         return (1, None)
     if res["code"] != 0:

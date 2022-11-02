@@ -4,6 +4,7 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 import json
 import requests
+import time
 
 def send_msg(from_addr, password, to_addr, msg_text):
     smtp_server = "smtp.qq.com"
@@ -43,3 +44,12 @@ def send_workwx_msg(msg_type, content):
             requests.post(webhook_url, data=json.dumps(data))
     except Exception as e:
         print(e)
+
+def post_requests_json(url, data, timeout):
+    for _ in range(100):
+        try:
+            res = requests.post(url, data=data, timeout=timeout).json()
+            return res
+        except Exception as e:
+            time.sleep(1)
+            print(e)

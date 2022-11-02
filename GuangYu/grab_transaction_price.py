@@ -7,6 +7,7 @@ import time
 import os
 
 from gycommon import commoninfo
+from gycommon import utils
 
 GET_ON_SALE_LIST_URL = "https://api.gandart.com/market/api/v2/resaleManage/resale/onSale"
 PAGE_SIZE = 10000
@@ -31,15 +32,6 @@ DETAIL_PROD_ID_INDEX = 6
 DETAIL_DETAIL_ID_INDEX = 7
 DETAIL_ITEM_COUNT = 8
 
-def post_requests_json(url, data, timeout):
-    for _ in range(10):
-        try:
-            res = requests.post(url, data=data, timeout=timeout).json()
-            return res
-        except Exception as e:
-            time.sleep(1)
-            print(e)
-
 def get_saled_products(casting_id):
     saled_prods = []
     data = {
@@ -49,7 +41,7 @@ def get_saled_products(casting_id):
         "sort":2,
         "transactionStatus": TRAN_STATUS_SALED,
     }
-    res = post_requests_json(GET_ON_SALE_LIST_URL, data=data, timeout=TIME_OUT)
+    res = utils.post_requests_json(GET_ON_SALE_LIST_URL, data=data, timeout=TIME_OUT)
     if not res:
         return (1, None)
     if res["code"] != 0:
@@ -67,7 +59,7 @@ def get_saled_products(casting_id):
                 "sort":2,
                 "transactionStatus": TRAN_STATUS_SALED,
             }
-            res = post_requests_json(GET_ON_SALE_LIST_URL, data=data, timeout=3)
+            res = utils.post_requests_json(GET_ON_SALE_LIST_URL, data=data, timeout=3)
             if res["code"] != 0:
                 return (res["code"], None)
             else:
