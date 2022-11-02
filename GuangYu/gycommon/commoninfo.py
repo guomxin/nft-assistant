@@ -20,6 +20,7 @@ CastingId2MetaInfo = {
     32: ["3-GanLin", "河流龙灵-甘霖"],
     33: ["3-HuiJin", "焰火龙灵-灰烬"],
     30: ["3-FuJin", "金晶龙灵-浮金"],
+    112: ["3-QiYiLongDan", "奇异龙蛋"],
 
     75: ["4-LongFengKuai", "国庆节限定空投-龙凤筷"],
     79: ["4-LongTuTeng", "龙图腾"],
