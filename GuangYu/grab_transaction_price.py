@@ -201,6 +201,7 @@ if __name__ == "__main__":
     
     scan_cnt = 0
     selluser2cnt = {}
+    buyer2cnt = {}
     detail_info_list = []
     trans_cnt = 0
     max_price = None
@@ -235,9 +236,13 @@ if __name__ == "__main__":
         detail_info_list.append(detail_info)
         selluser = detail_info[DETAIL_SELLER_ID_INDEX]
         selluser_nickname = detail_info[DETAIL_SELLER_INDEX]
+        buyer_nickname = detail_info[DETAIL_BUYER_INDEX]
         if selluser_nickname not in selluser2cnt:
             selluser2cnt[selluser_nickname] = [0, selluser]
         selluser2cnt[selluser_nickname][0] += 1
+        if buyer_nickname not in buyer2cnt:
+            buyer2cnt[buyer_nickname] = 0
+        buyer2cnt[buyer_nickname] += 1
     
 
     # 刷新交易信息文件
@@ -283,4 +288,18 @@ if __name__ == "__main__":
         for (sname, sid, cnt) in sellers_info:
             result_file.write("{},{},{}\n".format(
                 sid, sname, cnt
+            ))
+    
+    # 输出买入者信息
+    buyers_info = []
+    for b in buyer2cnt:
+        buyers_info.append([b, buyer2cnt[b]])
+    buyers_info.sort(key=lambda b: b[1], reverse=True)
+    result_file_name = "data/_grab_nft_price_result_{}_{}.csv.buyersinfo.csv".format(
+        casting_name, tag
+    )
+    with open(result_file_name, "w", encoding="utf-8-sig") as result_file:
+        for (bname, cnt) in buyers_info:
+            result_file.write("{},{}\n".format(
+                bname, cnt
             ))
