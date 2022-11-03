@@ -39,12 +39,14 @@ CastingId2MetaInfo = {
     #104: ["5-TongXingZheng", "电子通行证"],
     #105: ["5-BuLaoQuan", "充盈不老泉"],
     #106: ["5-ShiZhiSha", "一抨时之砂"],
+    130: ["5-ChongZuHaiGu", "虫族骸骨"],
+    129: ["5-NengYuanDianChi", "X型能源电池"],
+    128: ["5-LuoPanZhiZhen", "罗盘指针"],
 
     65: ["6-SR-CaiHouZhiShen", "SR-彩猴之神"],
     64: ["6-R-HouGeLiTe", "R-猴格丽特"],
     63: ["6-R-PDHou", "R-PD猴"],
     62: ["6-N-BaoZuHou", "N-包租猴"],
-
 }
 
 Transaction_Logs_File_Name = "_guangyu_{}_trans_logs.csv"
