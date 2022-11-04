@@ -3,6 +3,8 @@
 import sys
 import datetime
 
+from docx import Document
+
 from gycommon import commoninfo
 
 DETAIL_SELLER_ID_INDEX = 0
@@ -44,7 +46,14 @@ if __name__ == "__main__":
             else:
                 if sale_time > token2price[token_id][1]:
                     token2price[token_id] = [price, sale_time]
-    
+   
+ 
+    # 生成docx文件
+    docx_file_name = "data/_grab_nft_price_result_{}_{}.docx".format(
+        casting_name, tag
+    )
+    doc = Document(docx_file_name) # 追加到已有文件
+
     # 按成交价格倒序排列
     token_price_info = []
     for (token_id, (price, _)) in token2price.items():
@@ -63,6 +72,16 @@ if __name__ == "__main__":
         buckets[bucket_index] += 1
     result_file_name = "data/_analyze_trans_price_result_{}_{}.csv".format(casting_name, tag)
     with open(result_file_name, "w", encoding="utf-8-sig") as result_file:
+        doc.add_heading("筹码分布数据", level=3)
+        doc.add_paragraph("总数量:{}".format(token_cnt))
+        table = doc.add_table(1, 4)
+        table.style = "TableGrid"
+        heading_cells = table.rows[0].cells
+        heading_cells[0].text = "价格区间"
+        heading_cells[1].text = "数量"
+        heading_cells[2].text = "占比"
+        heading_cells[2].text = "累积"
+        
         result_file.write("总数量:{}\n".format(token_cnt))
         result_file.write("价格区间,数量,占比,累积\n")
         for i in range(len(buckets)):
@@ -71,3 +90,10 @@ if __name__ == "__main__":
                 buckets[i], buckets[i] / token_cnt,
                 sum(buckets[:i+1]) / token_cnt
             ))
+            cells = table.add_row().cells
+            cells[0].text = "[{}-{})".format(i * bucket_size, (i + 1) * bucket_size)
+            cells[1].text = str(buckets[i])
+            cells[2].text = "{:.2%}".format(buckets[i] / token_cnt)
+            cells[3].text = "{:.2%}".format(sum(buckets[:i+1]) / token_cnt)
+   
+    doc.save(docx_file_name)

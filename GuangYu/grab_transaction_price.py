@@ -275,7 +275,7 @@ if __name__ == "__main__":
                 trans_cnt, max_price, min_price, avg_price
             )
             result_file.write(summary)
-            doc.add_paragraph(summary)
+            doc.add_paragraph(summary.strip())
         
         table = doc.add_table(1, 6)
         table.style = "TableGrid"
@@ -306,6 +306,7 @@ if __name__ == "__main__":
             cells[5].text = "#"+ str(dinfo[DETAIL_TOKEN_ID_INDEX])
 
     # 输出卖出者信息
+    doc.add_heading("卖出者信息", level=3)
     sellers_info = []
     for s in selluser2cnt:
         sellers_info.append([s, selluser2cnt[s][1], selluser2cnt[s][0]])
@@ -314,12 +315,21 @@ if __name__ == "__main__":
         casting_name, tag
     )
     with open(result_file_name, "w", encoding="utf-8-sig") as result_file:
+        table = doc.add_table(1, 2)
+        table.style = "TableGrid"
+        heading_cells = table.rows[0].cells
+        heading_cells[0].text = "卖出者昵称"
+        heading_cells[1].text = "数量"
         for (sname, sid, cnt) in sellers_info:
             result_file.write("{},{},{}\n".format(
                 sid, sname, cnt
             ))
+            cells = table.add_row().cells
+            cells[0].text = sname
+            cells[1].text = str(cnt)
     
     # 输出买入者信息
+    doc.add_heading("买入者信息", level=3)
     buyers_info = []
     for b in buyer2cnt:
         buyers_info.append([b, buyer2cnt[b]])
@@ -328,9 +338,17 @@ if __name__ == "__main__":
         casting_name, tag
     )
     with open(result_file_name, "w", encoding="utf-8-sig") as result_file:
+        table = doc.add_table(1, 2)
+        table.style = "TableGrid"
+        heading_cells = table.rows[0].cells
+        heading_cells[0].text = "买入者昵称"
+        heading_cells[1].text = "数量"
         for (bname, cnt) in buyers_info:
             result_file.write("{},{}\n".format(
                 bname, cnt
             ))
+            cells = table.add_row().cells
+            cells[0].text = bname
+            cells[1].text = str(cnt)
     
     doc.save(docx_file_name)
