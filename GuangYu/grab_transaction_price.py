@@ -6,6 +6,8 @@ import requests
 import time
 import os
 
+from docx import Document
+
 from gycommon import commoninfo
 from gycommon import utils
 
@@ -254,7 +256,14 @@ if __name__ == "__main__":
                 dinfo[DETAIL_TOKEN_ID_INDEX], dinfo[DETAIL_PROD_ID_INDEX], dinfo[DETAIL_DETAIL_ID_INDEX]
             ))
 
+    # 生成docx文件
+    docx_file_name = "data/_grab_nft_price_result_{}_{}.docx".format(
+        casting_name, tag
+    )
+    doc = Document()
+
     # 按成交时间倒序排序，输出
+    doc.add_heading("交易数据", level=3)
     detail_info_list.sort(key=lambda dinfo: dinfo[DETAIL_SALE_TIME_INDEX], reverse=True)
     result_file_name = "data/_grab_nft_price_result_{}_{}.csv".format(
         casting_name, tag
@@ -262,9 +271,22 @@ if __name__ == "__main__":
     with open(result_file_name, "w", encoding="utf-8-sig") as result_file:
         avg_price = total_price/trans_cnt if trans_cnt > 0 else None 
         if trans_cnt > 0:
-            result_file.write("成交{}笔，最高价格{:.2f}元，最低价格{:.2f}元，均价{:.2f}元。\n".format(
+            summary = "成交{}笔，最高价格{:.2f}元，最低价格{:.2f}元，均价{:.2f}元。\n".format(
                 trans_cnt, max_price, min_price, avg_price
-            ))
+            )
+            result_file.write(summary)
+            doc.add_paragraph(summary)
+        
+        table = doc.add_table(1, 6)
+        table.style = "TableGrid"
+        heading_cells = table.rows[0].cells
+        heading_cells[0].text = "卖出者Id"
+        heading_cells[1].text = "卖出者昵称"
+        heading_cells[2].text = "买入者昵称"
+        heading_cells[3].text = "买入时间"
+        heading_cells[4].text = "价格"
+        heading_cells[5].text = "TokenID"
+
         result_file.write("{},{},{},{},{},{},{},{}\n".format(
             "卖出者Id", "卖出者昵称", "买入者昵称", "买入时间", "价格", "TokenID", "DEBUG1", "DEBUG2"
         ))
@@ -275,6 +297,13 @@ if __name__ == "__main__":
                 "#"+ str(dinfo[DETAIL_TOKEN_ID_INDEX]),
                 dinfo[DETAIL_PROD_ID_INDEX], dinfo[DETAIL_DETAIL_ID_INDEX]
             ))
+            cells = table.add_row().cells
+            cells[0].text = str(dinfo[DETAIL_SELLER_ID_INDEX])
+            cells[1].text = dinfo[DETAIL_SELLER_INDEX]
+            cells[2].text = dinfo[DETAIL_BUYER_INDEX]
+            cells[3].text = dinfo[DETAIL_SALE_TIME_INDEX].strftime("%Y/%m/%d %H:%M:%S")
+            cells[4].text = str(dinfo[DETAIL_PRICE_INDEX])
+            cells[5].text = "#"+ str(dinfo[DETAIL_TOKEN_ID_INDEX])
 
     # 输出卖出者信息
     sellers_info = []
@@ -303,3 +332,5 @@ if __name__ == "__main__":
             result_file.write("{},{}\n".format(
                 bname, cnt
             ))
+    
+    doc.save(docx_file_name)
