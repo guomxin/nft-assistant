@@ -20,7 +20,7 @@ CastingId2MetaInfo = {
     32: ["3-GanLin", "河流龙灵-甘霖"],
     33: ["3-HuiJin", "焰火龙灵-灰烬"],
     30: ["3-FuJin", "金晶龙灵-浮金"],
-    112: ["3-QiYiLongDan", "奇异龙蛋"],
+    #112: ["3-QiYiLongDan", "奇异龙蛋"],
 
     75: ["4-LongFengKuai", "国庆节限定空投-龙凤筷"],
     79: ["4-LongTuTeng", "龙图腾"],
@@ -47,6 +47,7 @@ CastingId2MetaInfo = {
     64: ["6-R-HouGeLiTe", "R-猴格丽特"],
     63: ["6-R-PDHou", "R-PD猴"],
     62: ["6-N-BaoZuHou", "N-包租猴"],
+    140: ["6-YunMuFangZhou", "云木方舟"],
 }
 
 Transaction_Logs_File_Name = "_guangyu_{}_trans_logs.csv"
