@@ -171,9 +171,19 @@ if __name__ == "__main__":
     casting_name = commoninfo.CastingId2MetaInfo[casting_id][0]
     print("获取{}的交易信息...".format(casting_name))
     date = sys.argv[2]
-    start_time = datetime.datetime.strptime(date + " 0:0:0", "%Y%m%d %H:%M:%S")
-    end_time = datetime.datetime.strptime(date + " 23:59:59", "%Y%m%d %H:%M:%S")
     tag = sys.argv[3]
+    if len(tag) == 8:
+        # dayly
+        start_time = datetime.datetime.strptime(date + " 0:0:0", "%Y%m%d %H:%M:%S")
+        end_time = datetime.datetime.strptime(date + " 23:59:59", "%Y%m%d %H:%M:%S")
+    elif len(tag) == 10:
+        # hourly
+        start_time = datetime.datetime.strptime(date + " 0:0:0", "%Y%m%d %H:%M:%S")
+        end_time = datetime.datetime.strptime(tag, "%Y%m%d%H")
+    else:
+        print("错误的tag, tag={}!".format(tag))
+        sys.exit(1)
+    time_span_str = "时间段：{} - {}".format(start_time.strftime("%Y/%m/%d %H:%M:%S"), end_time.strftime("%Y/%m/%d %H:%M:%S"))
 
     (res_code, saled_prods) = get_saled_products(casting_id)
     if res_code != 0:
@@ -262,8 +272,10 @@ if __name__ == "__main__":
     )
     doc = Document()
 
+
     # 按成交时间倒序排序，输出
-    doc.add_heading("交易数据", level=3)
+    doc.add_heading("{}交易数据".format(casting_name), level=3)
+    doc.add_paragraph(time_span_str)
     detail_info_list.sort(key=lambda dinfo: dinfo[DETAIL_SALE_TIME_INDEX], reverse=True)
     result_file_name = "data/_grab_nft_price_result_{}_{}.csv".format(
         casting_name, tag
@@ -306,7 +318,8 @@ if __name__ == "__main__":
             cells[5].text = "#"+ str(dinfo[DETAIL_TOKEN_ID_INDEX])
 
     # 输出卖出者信息
-    doc.add_heading("卖出者信息", level=3)
+    doc.add_heading("{}卖出者信息".format(casting_name), level=3)
+    doc.add_paragraph(time_span_str)
     sellers_info = []
     for s in selluser2cnt:
         sellers_info.append([s, selluser2cnt[s][1], selluser2cnt[s][0]])
@@ -329,7 +342,8 @@ if __name__ == "__main__":
             cells[1].text = str(cnt)
     
     # 输出买入者信息
-    doc.add_heading("买入者信息", level=3)
+    doc.add_heading("{}买入者信息".format(casting_name), level=3)
+    doc.add_paragraph(time_span_str)
     buyers_info = []
     for b in buyer2cnt:
         buyers_info.append([b, buyer2cnt[b]])
