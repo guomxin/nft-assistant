@@ -124,7 +124,7 @@ if __name__ == "__main__":
         content += "{}\n>流通量:{}\n>挂牌最低价:{}\n>市值:{:.2f}万\n\n".format(
             casting_name, circu_cnt, 
             min_price, mvalue / 10000)
-    utils.send_workwx_msg("markdown", content)
+    utils.send_workwx_msg_agg(utils.StockValue_MSG, "markdown", content)
 
     result_file_name = "data/_calc_market_value_{}.csv".format(
         tag

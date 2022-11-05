@@ -61,7 +61,7 @@ def analyze_trans(tag):
             content += "{}\n>数量:{}\n>最低价:{}\n>最高价:{}\n>均价:{:.2f}\n>合计:{:.2f}万\n\n".format(
                 casting_ch_name, cnt, min_price,
                 max_price, avg_price, total_price/10000)
-    utils.send_workwx_msg("markdown", content)
+    utils.send_workwx_msg_agg(utils.TradingValue_MSG, "markdown", content)
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:

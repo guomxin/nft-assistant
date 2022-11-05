@@ -19,7 +19,7 @@ PROD_ID_INDEX = 0
 PRICE_INDEX = 2
 
 # 173
-HOME_PC_TOKEN = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjY2ODcyODUwLCJzaWduSWQiOiI2M2Y1MWZhY2JlODU0ZGUxYTk1MTU5YzRhZTkxYWY2NCIsImlhdCI6MTY2NjI2ODA1MH0.gSUT0zuwPucK11jUe8MF0iCMIwX6vxkaRYdX3DzMmSg"
+HOME_PC_TOKEN = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjY4MTM1MDI0LCJzaWduSWQiOiI2OTcwYWE1ZDBlOTg0NzVmOTM5NDFiNGQzODllMzdkZCIsImlhdCI6MTY2NzUzMDIyNH0.osr2WTIcsF47gVzKuFIFHhcTc7AjM_1uX9WknlVILpo"
 # 159
 LAPTOP_TOKEN = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNTkxMDYxOTk2MyIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjY2NTc4NTE4LCJzaWduSWQiOiJhZDE0OGYxYzUzNzY0MTVkODgxZmI2ZjcyMjgyZmU3NSIsImlhdCI6MTY2NTk3MzcxOH0.1zrXRh-UMNYwbyoBTQKK7Qvcc111BvkT9DEhEC_I504"
 
@@ -30,22 +30,38 @@ CastingId2Price_1 = {
     #66: 400, # V #2022/10/11结束合成
     #67: 400, # C #2022/10/11结束合成
 
-    #31: 100, # 厚土
+    #31: 800, # 厚土
     #32: 2100, # 甘霖
     #33: 1000, # 灰烬
     #30: 2000, # 浮金
 
     #75: 400, # 龙凤筷
     #79: 500, # 龙图腾
-    #46: 180, # 梦幻小龙
+    #46: 400, # 梦幻小龙
 
-    #101: 258, # 凤翊泪
+    #101: 290, # 凤翊泪
     #71: 400, # 平安果
-    99: 600, # 奇物秘宝-时间磨盘
+    ## 99: 2000, # 奇物秘宝-时间磨盘
+    #100: 600, # 奇物碎片-时间磨盘
+
+    #104: 500, #["5-TongXingZheng", "电子通行证"],
+    #105: 1020, #["5-BuLaoQuan", "充盈不老泉"],
+    #106: 400, #["5-ShiZhiSha", "一抨时之砂"],
+    #111: 1000, # 拾荒者
+    #72: 1000, # 抚琴
+    #95: 800, # 魂魄提灯
+    #94: 1000, # 阿尔法之眼
+    #65: 4000, #彩猴之神
+    #112: 1200,
+    #84: 550,
+    #130: 800,
+    ## 129: 1000, # 能源电池 
+    #128: 2000, # 罗盘指针
+    140: 2000, # 云木方舟
 }
 
 CastingId2Price_2 = {
-    #31: 500, # 厚土
+    #31: 800, # 厚土
     #32: 1000, # 甘霖
     #29: 360, # 栖龙云木
     #33: 1000, # 灰烬
@@ -53,16 +69,31 @@ CastingId2Price_2 = {
 
     #80: 2000, # 龙凤守宝
     #60: 40, # Shift
-    #61: 200, # 太空Shift
+    #61: 1000, # 太空Shift
+    #46: 400, # 梦幻小龙
     #79:  900, # 龙图腾
     #87:  2000, # 凤图腾
-    #99: 2000, # 奇物秘宝-时间磨盘
     #71: 360, # 平安果
-    #101: 200, # 凤翊泪
-    #94: 3000, # 阿尔法之眼
-    #100: 360, # 奇物碎片-时间磨盘
+    #101: 290, # 凤翊泪
+    94: 7500, # 阿尔法之眼
+    #100: 600, # 奇物碎片-时间磨盘
     #71: 400, # 平安果
-    99: 600, # 奇物秘宝-时间磨盘
+    #99: 1000, # 奇物秘宝-时间磨盘
+
+    #104: 500, #["5-TongXingZheng", "电子通行证"],
+    #105: 1050, #["5-BuLaoQuan", "充盈不老泉"],
+    #106: 400, #["5-ShiZhiSha", "一抨时之砂"],
+    #111: 1000, # 拾荒者
+    #72: 1000, # 抚琴
+    #95: 800, # 魂魄提灯
+    #65: 4000, #彩猴之神
+    #112: 1200,
+    #111: 6000, # 拾荒者
+    #84: 550,
+    #130: 800,
+    #129: 1000,
+    128: 2000, #罗盘指针
+    ## 140: 2000, # 云木方舟
 }
 
 CastingId2Price_3 = {
@@ -146,8 +177,8 @@ def buy_product(casting_id, prod_id, detail_id, user_id, token):
         try: 
             res = requests.post(BUY_URL, data=data, headers=headers, timeout=TIME_OUT).json()
             if not res["success"]:
-                print("下单失败: {} casting_id={},prod_id={},msg={}".format(
-                    datetime.now(), casting_id, prod_id, res["msg"]))
+                print("下单失败: {} casting_id={},prod_id={},detail_id={},user_id={},msg={}".format(
+                    datetime.now(), casting_id, prod_id, detail_id, user_id, res["msg"]))
                 return False
             else:
                 return True
@@ -209,7 +240,7 @@ if __name__ == "__main__":
 >时间: {}
 >价格: {}""".format(prod_name, datetime.now(), price)
                             print(content)
-                            utils.send_workwx_msg("markdown", content)
+                            utils.send_workwx_msg_agg(utils.GrabNFTs_MSG, "markdown", content)
                             """
                             msg = "购买 {}:{}:{}".format(datetime.now(), prod_name, price)
                             print(msg)
@@ -223,7 +254,7 @@ if __name__ == "__main__":
 >时间: {}
 >价格: {}""".format(prod_name, datetime.now(), price)
                                 print(content)
-                                utils.send_workwx_msg("markdown", content)
+                                utils.send_workwx_msg_agg(utils.GrabNFTs_MSG, "markdown", content)
                                 wx_msg_count = 0
                             """                       
                             msg = "下单失败 {}:{}:{}".format(datetime.now(), prod_name, price)

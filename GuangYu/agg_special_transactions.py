@@ -76,7 +76,7 @@ def analyze_users(target_nick_name, name_index, tag, head, only_match_len_and_st
             content += "{}\n>数量:{}\n>最低价:{}\n>最高价:{}\n>均价:{}\n>合计:{}\n\n".format(
                 casting_ch_name, cnt, min_price,
                 max_price, avg_price, total_price)
-    utils.send_workwx_msg("markdown", content)
+    utils.send_workwx_msg_agg(utils.SpecialAccStatus_MSG, "markdown", content)
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
