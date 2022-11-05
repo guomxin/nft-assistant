@@ -26,6 +26,7 @@ if __name__ == "__main__":
         print("CastingId:{} not exist!")
         sys.exit(1)
     casting_name = commoninfo.CastingId2MetaInfo[casting_id][0]
+    casting_ch_name = commoninfo.CastingId2MetaInfo[casting_id][1]
     tag = sys.argv[2]
     bucket_size = int(sys.argv[3])
 
@@ -47,8 +48,10 @@ if __name__ == "__main__":
                 if sale_time > token2price[token_id][1]:
                     token2price[token_id] = [price, sale_time]
    
- 
+    
+     
     # 生成docx文件
+    timestamp = datetime.datetime.now().strftime("%Y/%m/%d %H:%M:%S") 
     docx_file_name = "data/_grab_nft_price_result_{}_{}.docx".format(
         casting_name, tag
     )
@@ -72,8 +75,8 @@ if __name__ == "__main__":
         buckets[bucket_index] += 1
     result_file_name = "data/_analyze_trans_price_result_{}_{}.csv".format(casting_name, tag)
     with open(result_file_name, "w", encoding="utf-8-sig") as result_file:
-        doc.add_heading("筹码分布数据", level=3)
-        doc.add_paragraph("总数量:{}".format(token_cnt))
+        doc.add_heading("{}筹码分布数据".format(casting_ch_name), level=3)
+        doc.add_paragraph("截至{}, 总数量:{}".format(timestamp, token_cnt))
         table = doc.add_table(1, 4)
         table.style = "TableGrid"
         heading_cells = table.rows[0].cells

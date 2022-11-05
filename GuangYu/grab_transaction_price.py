@@ -169,6 +169,7 @@ if __name__ == "__main__":
         print("CastingId:{} not exist!")
         sys.exit(1)
     casting_name = commoninfo.CastingId2MetaInfo[casting_id][0]
+    casting_ch_name = commoninfo.CastingId2MetaInfo[casting_id][1]
     print("获取{}的交易信息...".format(casting_name))
     date = sys.argv[2]
     tag = sys.argv[3]
@@ -274,7 +275,7 @@ if __name__ == "__main__":
 
 
     # 按成交时间倒序排序，输出
-    doc.add_heading("{}交易数据".format(casting_name), level=3)
+    doc.add_heading("{}交易数据".format(casting_ch_name), level=3)
     doc.add_paragraph(time_span_str)
     detail_info_list.sort(key=lambda dinfo: dinfo[DETAIL_SALE_TIME_INDEX], reverse=True)
     result_file_name = "data/_grab_nft_price_result_{}_{}.csv".format(
@@ -318,7 +319,7 @@ if __name__ == "__main__":
             cells[5].text = "#"+ str(dinfo[DETAIL_TOKEN_ID_INDEX])
 
     # 输出卖出者信息
-    doc.add_heading("{}卖出者信息".format(casting_name), level=3)
+    doc.add_heading("{}卖出者信息".format(casting_ch_name), level=3)
     doc.add_paragraph(time_span_str)
     sellers_info = []
     for s in selluser2cnt:
@@ -342,7 +343,7 @@ if __name__ == "__main__":
             cells[1].text = str(cnt)
     
     # 输出买入者信息
-    doc.add_heading("{}买入者信息".format(casting_name), level=3)
+    doc.add_heading("{}买入者信息".format(casting_ch_name), level=3)
     doc.add_paragraph(time_span_str)
     buyers_info = []
     for b in buyer2cnt:
