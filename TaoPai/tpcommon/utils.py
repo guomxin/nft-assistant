@@ -51,7 +51,7 @@ def send_wx_msg(msg):
         pass
 
 def send_workwx_msg(msg_type, content):
-    webhook_url = "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=692ffa3b-8c4d-4b98-87fe-15561e7e4edb"
+    webhook_url = "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=619a7fca-d3d7-40d5-8736-2e195369b0d2"
     try:
         data = None
         if msg_type == "text":
