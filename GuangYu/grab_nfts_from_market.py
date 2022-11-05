@@ -24,7 +24,7 @@ HOME_PC_TOKEN = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MS
 LAPTOP_TOKEN = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNTkxMDYxOTk2MyIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjY2NTc4NTE4LCJzaWduSWQiOiJhZDE0OGYxYzUzNzY0MTVkODgxZmI2ZjcyMjgyZmU3NSIsImlhdCI6MTY2NTk3MzcxOH0.1zrXRh-UMNYwbyoBTQKK7Qvcc111BvkT9DEhEC_I504"
 
 CastingId2Price_1 = {
-    #54: 3000, # 开拓者
+    54: 3000, # 开拓者
     #59: 4000, # 万象龙巢
     #56: 100, # Ctrl  #2022/10/11结束合成
     #66: 400, # V #2022/10/11结束合成
@@ -53,11 +53,12 @@ CastingId2Price_1 = {
     #94: 1000, # 阿尔法之眼
     #65: 4000, #彩猴之神
     #112: 1200,
-    #84: 550,
+    ## 84: 800, # 探索者-Shift"
     #130: 800,
     ## 129: 1000, # 能源电池 
     #128: 2000, # 罗盘指针
-    140: 2000, # 云木方舟
+    #140: 2000, # 云木方舟
+    61: 2000, # ["2-TaiKongShiftZai", "传说奇遇-太空Shift仔"],
 }
 
 CastingId2Price_2 = {
@@ -76,7 +77,7 @@ CastingId2Price_2 = {
     #71: 360, # 平安果
     #101: 290, # 凤翊泪
     94: 7500, # 阿尔法之眼
-    #100: 600, # 奇物碎片-时间磨盘
+    ## 100: 800, # 奇物碎片-时间磨盘
     #71: 400, # 平安果
     #99: 1000, # 奇物秘宝-时间磨盘
 
@@ -92,7 +93,7 @@ CastingId2Price_2 = {
     #84: 550,
     #130: 800,
     #129: 1000,
-    128: 2000, #罗盘指针
+    128: 3000, #罗盘指针
     ## 140: 2000, # 云木方舟
 }
 
@@ -208,7 +209,8 @@ if __name__ == "__main__":
     if not castingid2price:
         print("dict_id={} 没有对应信息!".format(dict_id))
         sys.exit(1)
-    print(castingid2price)
+    for casting_id in castingid2price:
+        print("{}:{}".format(commoninfo.CastingId2MetaInfo[casting_id][1], castingid2price[casting_id]))
 
     with open("mailconfig") as config_file:
         items = config_file.readline().strip().split(",")
