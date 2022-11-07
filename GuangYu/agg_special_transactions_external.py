@@ -6,8 +6,6 @@ import os
 from gycommon import commoninfo
 from gycommon import utils
 
-BLACK8_NICK_NAME = ["s*****", "拔*******", "u******"]
-HONG_NICK_NAME = ["翃翾"] # 翃翾
 HEILONG_NICK_NAME = ["黑龙重生之传说键盘", "重生我在光予当大户"] #["重生我在光予当大户"]
 
 SELLER_NAME_INDEX = 1
@@ -83,7 +81,7 @@ def analyze_users(target_nick_name, name_index, tag, head, msg_ids, only_match_l
                 casting_ch_name, cnt, min_price,
                 max_price, avg_price, total_price)
     for msg_id in msg_ids:
-        utils.send_workwx_msg_agg(msg_id, "markdown", content)
+        utils.send_workwx_msg_agg(msg_id, "text", content)
     #print(content)
 
 if __name__ == "__main__":
@@ -92,14 +90,6 @@ if __name__ == "__main__":
         sys.exit(1)
     tag = sys.argv[1]
 
-    ## 黑8
-    analyze_users(BLACK8_NICK_NAME, BUYER_NAME_INDEX, tag, "黑8-买入", [utils.SpecialAccStatus_MSG], True)
-    analyze_users(BLACK8_NICK_NAME, SELLER_NAME_INDEX, tag, "黑8-卖出", [utils.SpecialAccStatus_MSG], True)
-
-    ## 翃翾
-    analyze_users(HONG_NICK_NAME, BUYER_NAME_INDEX, tag, "翃翾-买入", [utils.SpecialAccStatus_MSG], True)
-    analyze_users(HONG_NICK_NAME, SELLER_NAME_INDEX, tag, "翃翾-卖出", [utils.SpecialAccStatus_MSG])
-
     ## 黑龙重生之传说键盘
-    analyze_users(HEILONG_NICK_NAME, BUYER_NAME_INDEX, tag, "黑龙重生-买入", [utils.SpecialAccStatus_MSG], True)
-    analyze_users(HEILONG_NICK_NAME, SELLER_NAME_INDEX, tag, "黑龙重生-卖出", [utils.SpecialAccStatus_MSG])
+    analyze_users(HEILONG_NICK_NAME, BUYER_NAME_INDEX, tag, "黑龙重生-买入", [utils.Ext_HeiLongStatus_MSG], True)
+    analyze_users(HEILONG_NICK_NAME, SELLER_NAME_INDEX, tag, "黑龙重生-卖出", [utils.Ext_HeiLongStatus_MSG])

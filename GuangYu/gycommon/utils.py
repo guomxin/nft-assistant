@@ -35,16 +35,22 @@ TradingValue_WebHook_URL = "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key
 SpecialAccStatus_WebHook_URL = "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=6b8b7734-9f97-4d13-b07d-cafed27bac92"
 GrabNFTs_WebHook_URL = "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=ed5e492a-f936-4cb9-b547-cd49d09b5182"
 
+Ext_HeiLongStatus_WebHook_URL = "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=40027396-e35e-43ad-9232-d37850bf2125"
+
 StockValue_MSG = 0
 TradingValue_MSG = 1
 SpecialAccStatus_MSG = 2
 GrabNFTs_MSG = 3
+
+Ext_HeiLongStatus_MSG = 4
 
 Notification_Config = {
     StockValue_MSG: [StockValue_WebHook_URL],
     TradingValue_MSG: [TradingValue_WebHook_URL],
     SpecialAccStatus_MSG: [SpecialAccStatus_WebHook_URL],
     GrabNFTs_MSG: [GrabNFTs_WebHook_URL],
+    
+    Ext_HeiLongStatus_MSG: [Ext_HeiLongStatus_WebHook_URL],
 }
 
 def send_workwx_msg_agg(msg_id, msg_type, content):
