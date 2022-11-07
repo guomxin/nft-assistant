@@ -7,16 +7,23 @@ from gycommon import commoninfo
 from gycommon import utils
 
 BLACK8_NICK_NAME = ["s*****", "拔*******", "u******"]
-HONG_NICK_NAME = ["翃*"] # 翃翾
+HONG_NICK_NAME = ["翃翾"] # 翃翾
+HEILONG_NICK_NAME = ["黑龙重生之传说键盘", "重生我在光予当大户"] #["重生我在光予当大户"]
 
 SELLER_NAME_INDEX = 1
 BUYER_NAME_INDEX = 2
 TRANS_PRICE_INDEX = 4
 
-def match_target_name(nick_name, target_nick_name):
+def match_target_name(nick_name, target_nick_name, only_match_len_and_start):
     for tname in target_nick_name:
-        if nick_name == tname:
-            return True
+        if not only_match_len_and_start:
+            if nick_name == tname:
+                return True
+        else:
+            mask_nick_name = nick_name[0] + "*"*(len(nick_name)-1)
+            mask_tname = tname[0] + "*"*(len(tname)-1)
+            if mask_nick_name == mask_tname:
+                return True
     return False
 
 def analyze_users(target_nick_name, name_index, tag, head, only_match_len_and_start=False):
@@ -29,6 +36,8 @@ def analyze_users(target_nick_name, name_index, tag, head, only_match_len_and_st
             tag, casting_name,
             casting_name, tag
         )
+        if not os.path.exists(result_file_name):
+            continue
         cnt = 0
         target_min_price = None
         target_max_price = None
@@ -44,11 +53,8 @@ def analyze_users(target_nick_name, name_index, tag, head, only_match_len_and_st
                     continue
                 items = line.strip().split(",")
                 nickname = items[name_index]
-                if only_match_len_and_start and len(nickname) > 0:
-                    nickname = nickname[0] + "*"*(len(nickname)-1)
-                #print(nickname)
                 price = float(items[TRANS_PRICE_INDEX])
-                if match_target_name(nickname, target_nick_name):
+                if match_target_name(nickname, target_nick_name, only_match_len_and_start):
                     target_cnt += 1
                     if not target_min_price:
                         target_min_price = price
@@ -77,6 +83,7 @@ def analyze_users(target_nick_name, name_index, tag, head, only_match_len_and_st
                 casting_ch_name, cnt, min_price,
                 max_price, avg_price, total_price)
     utils.send_workwx_msg_agg(utils.SpecialAccStatus_MSG, "markdown", content)
+    #print(content)
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
@@ -85,9 +92,13 @@ if __name__ == "__main__":
     tag = sys.argv[1]
 
     ## 黑8
-    analyze_users(BLACK8_NICK_NAME, BUYER_NAME_INDEX, tag, "黑8-买入")
+    analyze_users(BLACK8_NICK_NAME, BUYER_NAME_INDEX, tag, "黑8-买入", True)
     analyze_users(BLACK8_NICK_NAME, SELLER_NAME_INDEX, tag, "黑8-卖出", True)
 
     ## 翃翾
-    analyze_users(HONG_NICK_NAME, BUYER_NAME_INDEX, tag, "翃翾-买入")
-    analyze_users(HONG_NICK_NAME, SELLER_NAME_INDEX, tag, "翃翾-卖出", True)
+    analyze_users(HONG_NICK_NAME, BUYER_NAME_INDEX, tag, "翃翾-买入", True)
+    analyze_users(HONG_NICK_NAME, SELLER_NAME_INDEX, tag, "翃翾-卖出")
+
+    ## 黑龙重生之传说键盘
+    analyze_users(HEILONG_NICK_NAME, BUYER_NAME_INDEX, tag, "黑龙重生-买入", True)
+    analyze_users(HEILONG_NICK_NAME, SELLER_NAME_INDEX, tag, "黑龙重生-卖出")
