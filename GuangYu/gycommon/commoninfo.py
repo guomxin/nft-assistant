@@ -48,6 +48,7 @@ CastingId2MetaInfo = {
     63: ["6-R-PDHou", "R-PD猴"],
     62: ["6-N-BaoZuHou", "N-包租猴"],
     140: ["6-YunMuFangZhou", "云木方舟"],
+    134: ["6-JingShiSuiPian", "晶石碎块-未鉴定"],
 }
 
 Transaction_Logs_File_Name = "_guangyu_{}_trans_logs.csv"
