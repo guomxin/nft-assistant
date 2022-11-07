@@ -317,7 +317,7 @@ def analyze_contract_holders(contract_address, contract_ABI, tokenid2name, snaps
                 break
         if target_to_address == None or target_trans_date == None:
             print("Cannot find corresponding trans for token:{}.".format(token_id))
-            return
+            continue
         if target_to_address not in address2holdingcnt:
             address2holdingcnt[target_to_address] = 0
         address2holdingcnt[target_to_address] += 1
