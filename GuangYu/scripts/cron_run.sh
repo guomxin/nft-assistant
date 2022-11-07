@@ -215,4 +215,5 @@ done
 
 cd ../../..
 python agg_special_transactions.py ${yesterday}
+python agg_special_transactions_external.py ${yesterday}
 python agg_transactions.py ${yesterday}

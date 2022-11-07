@@ -172,6 +172,7 @@ done
 
 cd ../../..
 python agg_special_transactions.py ${tag}
+python agg_special_transactions_external.py ${tag}
 python agg_transactions.py ${tag}
 
 python /mnt/ssd01/git/nft-assistant/GuangYu/upload_baidudisk.py /mnt/ssd01/git/nft-assistant/GuangYu/data/upload/$tag $today/$tag
