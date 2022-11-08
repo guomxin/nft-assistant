@@ -19,12 +19,12 @@ PROD_ID_INDEX = 0
 PRICE_INDEX = 2
 
 # 173
-HOME_PC_TOKEN = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjY4MTM1MDI0LCJzaWduSWQiOiI2OTcwYWE1ZDBlOTg0NzVmOTM5NDFiNGQzODllMzdkZCIsImlhdCI6MTY2NzUzMDIyNH0.osr2WTIcsF47gVzKuFIFHhcTc7AjM_1uX9WknlVILpo"
+HOME_PC_TOKEN = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjY4NTEwNjY1LCJzaWduSWQiOiIwNWM3ODU4OWUwNmI0YTg2OWExYWZiYTY3Y2IxMWI1NiIsImlhdCI6MTY2NzkwNTg2NX0.Gw8MRDfeQhcOfj3jPFry2hKCwAV20b2_ux0t_O0Txxk"
 # 159
 LAPTOP_TOKEN = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNTkxMDYxOTk2MyIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjY2NTc4NTE4LCJzaWduSWQiOiJhZDE0OGYxYzUzNzY0MTVkODgxZmI2ZjcyMjgyZmU3NSIsImlhdCI6MTY2NTk3MzcxOH0.1zrXRh-UMNYwbyoBTQKK7Qvcc111BvkT9DEhEC_I504"
 
 CastingId2Price_1 = {
-    54: 3000, # 开拓者
+    #54: 3000, # 开拓者
     #59: 4000, # 万象龙巢
     #56: 100, # Ctrl  #2022/10/11结束合成
     #66: 400, # V #2022/10/11结束合成
@@ -41,8 +41,8 @@ CastingId2Price_1 = {
 
     #101: 290, # 凤翊泪
     #71: 400, # 平安果
-    ## 99: 2000, # 奇物秘宝-时间磨盘
-    #100: 600, # 奇物碎片-时间磨盘
+    #99: 2000, # 奇物秘宝-时间磨盘
+    #100: 1300, # 奇物碎片-时间磨盘
 
     #104: 500, #["5-TongXingZheng", "电子通行证"],
     #105: 1020, #["5-BuLaoQuan", "充盈不老泉"],
@@ -53,12 +53,14 @@ CastingId2Price_1 = {
     #94: 1000, # 阿尔法之眼
     #65: 4000, #彩猴之神
     #112: 1200,
-    ## 84: 800, # 探索者-Shift"
+    #84: 950, # 探索者-Shift
     #130: 800,
     ## 129: 1000, # 能源电池 
     #128: 2000, # 罗盘指针
     #140: 2000, # 云木方舟
-    61: 2000, # ["2-TaiKongShiftZai", "传说奇遇-太空Shift仔"],
+    #61: 2000, # ["2-TaiKongShiftZai", "传说奇遇-太空Shift仔"],
+    #60: 600, #["2-ShiftZai", "小小键盘-Shift仔"],
+    134: 1900,
 }
 
 CastingId2Price_2 = {
@@ -76,10 +78,12 @@ CastingId2Price_2 = {
     #87:  2000, # 凤图腾
     #71: 360, # 平安果
     #101: 290, # 凤翊泪
-    94: 7500, # 阿尔法之眼
-    ## 100: 800, # 奇物碎片-时间磨盘
+    #94: 7500, # 阿尔法之眼
+    #100: 950, # 奇物碎片-时间磨盘
     #71: 400, # 平安果
-    #99: 1000, # 奇物秘宝-时间磨盘
+    # 99: 2000, # 奇物秘宝-时间磨盘
+    #84: 800, # 探索者-Shift
+    #61: 2000, # ["2-TaiKongShiftZai", "传说奇遇-太空Shift仔"],
 
     #104: 500, #["5-TongXingZheng", "电子通行证"],
     #105: 1050, #["5-BuLaoQuan", "充盈不老泉"],
@@ -93,8 +97,9 @@ CastingId2Price_2 = {
     #84: 550,
     #130: 800,
     #129: 1000,
-    128: 3000, #罗盘指针
+    #   128: 3000, #罗盘指针
     ## 140: 2000, # 云木方舟
+    148: 2500,
 }
 
 CastingId2Price_3 = {

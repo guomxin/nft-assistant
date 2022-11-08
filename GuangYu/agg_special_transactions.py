@@ -6,7 +6,7 @@ import os
 from gycommon import commoninfo
 from gycommon import utils
 
-BLACK8_NICK_NAME = ["s*****", "拔*******", "u******"]
+BLACK8_NICK_NAME = ["s*****", "拔*******", "u******", "u********"]
 HONG_NICK_NAME = ["翃翾"] # 翃翾
 HEILONG_NICK_NAME = ["黑龙重生之传说键盘", "重生我在光予当大户"] #["重生我在光予当大户"]
 
