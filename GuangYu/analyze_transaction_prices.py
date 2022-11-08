@@ -52,7 +52,7 @@ if __name__ == "__main__":
      
     # 生成docx文件
     timestamp = datetime.datetime.now().strftime("%Y/%m/%d %H:%M:%S") 
-    docx_file_name = "data/_grab_nft_price_result_{}_{}.docx".format(
+    docx_file_name = "data/{}_{}.docx".format(
         casting_name, tag
     )
     doc = Document(docx_file_name) # 追加到已有文件
