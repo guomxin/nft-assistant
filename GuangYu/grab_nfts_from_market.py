@@ -19,7 +19,7 @@ PROD_ID_INDEX = 0
 PRICE_INDEX = 2
 
 # 173
-HOME_PC_TOKEN = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjY4NTEwNjY1LCJzaWduSWQiOiIwNWM3ODU4OWUwNmI0YTg2OWExYWZiYTY3Y2IxMWI1NiIsImlhdCI6MTY2NzkwNTg2NX0.Gw8MRDfeQhcOfj3jPFry2hKCwAV20b2_ux0t_O0Txxk"
+HOME_PC_TOKEN = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjY4NTYzMDAzLCJzaWduSWQiOiI1YzEyMmFjOWRlYmY0Y2VmYmYzNTkwMzkzYTVjODNlZCIsImlhdCI6MTY2Nzk1ODIwM30.fzju8Os3ldRkPc2XbUQvr4i5TD6ppAt5yf_gTTpoS0Q"
 # 159
 LAPTOP_TOKEN = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNTkxMDYxOTk2MyIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjY2NTc4NTE4LCJzaWduSWQiOiJhZDE0OGYxYzUzNzY0MTVkODgxZmI2ZjcyMjgyZmU3NSIsImlhdCI6MTY2NTk3MzcxOH0.1zrXRh-UMNYwbyoBTQKK7Qvcc111BvkT9DEhEC_I504"
 
@@ -53,14 +53,14 @@ CastingId2Price_1 = {
     #94: 1000, # 阿尔法之眼
     #65: 4000, #彩猴之神
     #112: 1200,
-    #84: 950, # 探索者-Shift
+    #84: 1600, # 探索者-Shift
     #130: 800,
     ## 129: 1000, # 能源电池 
     #128: 2000, # 罗盘指针
     #140: 2000, # 云木方舟
     #61: 2000, # ["2-TaiKongShiftZai", "传说奇遇-太空Shift仔"],
     #60: 600, #["2-ShiftZai", "小小键盘-Shift仔"],
-    134: 1900,
+    134: 1900, # 晶石碎块-未鉴定
 }
 
 CastingId2Price_2 = {
@@ -99,7 +99,7 @@ CastingId2Price_2 = {
     #129: 1000,
     #   128: 3000, #罗盘指针
     ## 140: 2000, # 云木方舟
-    148: 2500,
+    148: 2500, # 合金
 }
 
 CastingId2Price_3 = {
