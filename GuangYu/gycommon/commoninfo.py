@@ -51,6 +51,7 @@ CastingId2MetaInfo = {
     134: ["6-JingShiSuiPian", "晶石碎块-未鉴定"],
 
     148: ["7-HeJin", "合金"],
+    132: ["7-FeiLiWuTingMuXia", "奇物秘宝-非礼勿听木匣"],
 }
 
 Transaction_Logs_File_Name = "_guangyu_{}_trans_logs.csv"
