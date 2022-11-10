@@ -34,6 +34,7 @@ StockValue_WebHook_URL = "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=6
 TradingValue_WebHook_URL = "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=44b129f9-747b-4797-8ccb-250c1d8b0dbe"
 SpecialAccStatus_WebHook_URL = "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=6b8b7734-9f97-4d13-b07d-cafed27bac92"
 GrabNFTs_WebHook_URL = "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=ed5e492a-f936-4cb9-b547-cd49d09b5182"
+HoldingShare_WebHook_URL = "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=1d39cbe8-2697-4599-8472-e38ce7ccbd48"
 
 Ext_HeiLongStatus_WebHook_URL = "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=40027396-e35e-43ad-9232-d37850bf2125"
 
@@ -41,14 +42,16 @@ StockValue_MSG = 0
 TradingValue_MSG = 1
 SpecialAccStatus_MSG = 2
 GrabNFTs_MSG = 3
+HoldingShare_MSG = 5
 
 Ext_HeiLongStatus_MSG = 4
 
 Notification_Config = {
     StockValue_MSG: [StockValue_WebHook_URL],
-    TradingValue_MSG: [TradingValue_WebHook_URL, StockValue_WebHook_URL],
+    TradingValue_MSG: [TradingValue_WebHook_URL],
     SpecialAccStatus_MSG: [SpecialAccStatus_WebHook_URL],
     GrabNFTs_MSG: [GrabNFTs_WebHook_URL],
+    HoldingShare_MSG: [HoldingShare_WebHook_URL],
     
     Ext_HeiLongStatus_MSG: [Ext_HeiLongStatus_WebHook_URL],
 }

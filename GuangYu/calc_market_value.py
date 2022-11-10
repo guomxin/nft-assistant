@@ -7,6 +7,7 @@ import time
 
 from gycommon import commoninfo
 from gycommon import utils
+from holdingshare import MyHoldingShare
 
 TIME_OUT = 3
 CASTING_INFO_COLL_AMOUNT_INDEX = 0
@@ -68,7 +69,9 @@ if __name__ == "__main__":
     tag = sys.argv[1]
 
     casting2value = {}
+    casting2holding = {}
     total_value = 0
+    my_share_value = 0
     for casting_id in commoninfo.CastingId2MetaInfo:
         if casting_id == 87 or casting_id == 75:
             # 忽略凤图腾和龙凤筷
@@ -105,7 +108,11 @@ if __name__ == "__main__":
                 continue
 
         casting2value[casting_name] = [circu_cnt, min_price, circu_cnt * min_price]
+        my_holding_cnt = MyHoldingShare[casting_id][2]
+        if my_holding_cnt > 0:
+            casting2holding[casting_name] = [my_holding_cnt, min_price, min_price * my_holding_cnt]
         total_value += circu_cnt * min_price
+        my_share_value += my_holding_cnt * min_price
     
     casting_value_infos = []
     for casting_name in casting2value:
@@ -118,6 +125,16 @@ if __name__ == "__main__":
     # 按最低挂单价倒序排序
     casting_value_infos.sort(key=lambda ci: ci[2], reverse=True)
 
+    share_value_infos = []
+    for casting_name in casting2holding:
+        share_value_infos.append([
+            casting_name,
+            casting2holding[casting_name][0],
+            casting2holding[casting_name][1],
+            casting2holding[casting_name][2],            
+        ])
+    share_value_infos.sort(key=lambda si: si[3], reverse=True)
+
     # 输出
     content = "**{} 光予市值:{:.2f}万**\n".format(tag, total_value / 10000)
     for (casting_name, circu_cnt, min_price, mvalue) in casting_value_infos:
@@ -125,6 +142,13 @@ if __name__ == "__main__":
             casting_name, circu_cnt, 
             min_price, mvalue / 10000)
     utils.send_workwx_msg_agg(utils.StockValue_MSG, "markdown", content)
+
+    content = "**{} 我的持仓:{:.2f}万**\n".format(tag, my_share_value / 10000)
+    for (casting_name, holding_cnt, min_price, hvalue) in share_value_infos:
+        content += "{}\n>持仓量:{}\n>当前最低价:{}\n>当前价值:{:.2f}万\n\n".format(
+            casting_name, holding_cnt, 
+            min_price, hvalue / 10000)
+    utils.send_workwx_msg_agg(utils.HoldingShare_MSG, "markdown", content)
 
     result_file_name = "data/_calc_market_value_{}.csv".format(
         tag
