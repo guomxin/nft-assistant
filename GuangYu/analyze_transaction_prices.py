@@ -53,7 +53,7 @@ if __name__ == "__main__":
     # 生成docx文件
     timestamp = datetime.datetime.now().strftime("%Y/%m/%d %H:%M:%S") 
     docx_file_name = "data/{}_{}.docx".format(
-        casting_name, tag
+        casting_name[:2]+casting_ch_name, tag
     )
     doc = Document(docx_file_name) # 追加到已有文件
 
@@ -83,7 +83,7 @@ if __name__ == "__main__":
         heading_cells[0].text = "价格区间"
         heading_cells[1].text = "数量"
         heading_cells[2].text = "占比"
-        heading_cells[2].text = "累积"
+        heading_cells[3].text = "累积"
         
         result_file.write("总数量:{}\n".format(token_cnt))
         result_file.write("价格区间,数量,占比,累积\n")

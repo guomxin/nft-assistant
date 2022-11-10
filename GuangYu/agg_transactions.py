@@ -81,7 +81,7 @@ def analyze_trans(tag):
     heading_cells[0].text = "名称"
     heading_cells[1].text = "数量"
     heading_cells[2].text = "均价"
-    heading_cells[2].text = "合计"
+    heading_cells[3].text = "合计(万)"
 
     # 输出
     content = "**{}-总成交额:{:.2f}万**\n".format(tag, all_total_price/10000)
@@ -93,8 +93,8 @@ def analyze_trans(tag):
             cells = table.add_row().cells
             cells[0].text = casting_ch_name
             cells[1].text = str(cnt)
-            cells[2].text = "{:.2%}".format(avg_price)
-            cells[3].text = "{:.2%}".format(total_price/10000)
+            cells[2].text = "{:.2f}".format(avg_price)
+            cells[3].text = "{:.2f}".format(total_price/10000)
     doc.save(docx_file_name)
     
     utils.send_workwx_msg_agg(utils.TradingValue_MSG, "markdown", content)
