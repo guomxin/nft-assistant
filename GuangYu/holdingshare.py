@@ -54,4 +54,5 @@ MyHoldingShare = {
     132: ["7-FeiLiWuTingMuXia", "奇物秘宝-非礼勿听木匣", 2],
     150: ["7-JianMu", "建木", 6],
     151: ["7-LiuLi", "琉璃", 3],
+    154: ["7-JuNeng", "启源II聚能号", 1],
 }
