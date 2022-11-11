@@ -54,6 +54,7 @@ CastingId2MetaInfo = {
     132: ["7-FeiLiWuTingMuXia", "奇物秘宝-非礼勿听木匣"],
     150: ["7-JianMu", "建木"],
     151: ["7-LiuLi", "琉璃"],
+    154: ["7-JuNeng", "启源II聚能号"],
 }
 
 Transaction_Logs_File_Name = "_guangyu_{}_trans_logs.csv"
