@@ -56,6 +56,7 @@ CastingId2MetaInfo = {
     151: ["7-LiuLi", "琉璃"],
     154: ["7-JuNeng", "启源II聚能号"],
     126: ["7-QingTongShiXiang", "奇物秘宝-青铜石像"],
+    153: ["7-ChuiDiaoXuKe", "垂钓许可"],
 }
 
 Transaction_Logs_File_Name = "_guangyu_{}_trans_logs.csv"
