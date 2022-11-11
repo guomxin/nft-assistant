@@ -23,6 +23,8 @@ def analyze_trans(tag):
             tag, casting_name,
             casting_name, tag
         )
+        if not os.path.exists(result_file_name):
+            continue
         line_cnt = 0
         trans_min_price = None
         trans_max_price = None
