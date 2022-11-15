@@ -58,6 +58,8 @@ CastingId2MetaInfo = {
     126: ["7-QingTongShiXiang", "奇物秘宝-青铜石像"],
     153: ["7-ChuiDiaoXuKe", "垂钓许可"],
     156: ["7-EnterZai", "小小键盘-Enter仔"],
+
+    74: ["8-KeLe", "国庆节限定空投-可乐"],
 }
 
 Transaction_Logs_File_Name = "_guangyu_{}_trans_logs.csv"
