@@ -60,6 +60,7 @@ CastingId2MetaInfo = {
     156: ["7-EnterZai", "小小键盘-Enter仔"],
 
     74: ["8-KeLe", "国庆节限定空投-可乐"],
+    73: ["8-YuanJie", "国庆节限定空投-缘结"],
 }
 
 Transaction_Logs_File_Name = "_guangyu_{}_trans_logs.csv"
