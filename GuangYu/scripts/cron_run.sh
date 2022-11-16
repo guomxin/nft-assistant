@@ -87,13 +87,17 @@ echo "---龙凤守宝---"
 python grab_transaction_price.py 80 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 80 ${yesterday} 50
 
-echo "---探索者-Ctrl---"
-python grab_transaction_price.py 83 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 83 ${yesterday} 50
+echo "---探索者I---"
+python grab_transaction_price.py 82 ${yesterday} ${yesterday}
+python analyze_transaction_prices.py 82 ${yesterday} 50
 
-echo "---探索者-Shift---"
-python grab_transaction_price.py 84 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 84 ${yesterday} 50
+#echo "---探索者-Ctrl---"
+#python grab_transaction_price.py 83 ${yesterday} ${yesterday}
+#python analyze_transaction_prices.py 83 ${yesterday} 50
+
+#echo "---探索者-Shift---"
+#python grab_transaction_price.py 84 ${yesterday} ${yesterday}
+#python analyze_transaction_prices.py 84 ${yesterday} 50
 
 echo "---物资传输面板---"
 python grab_transaction_price.py 28 ${yesterday} ${yesterday}

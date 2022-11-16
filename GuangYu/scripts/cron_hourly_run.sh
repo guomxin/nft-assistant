@@ -72,11 +72,14 @@ python grab_transaction_price.py 79 ${today} ${tag}
 echo "---龙凤守宝---"
 python grab_transaction_price.py 80 ${today} ${tag}
 
-echo "---探索者-Ctrl---"
-python grab_transaction_price.py 83 ${today} ${tag}
+echo "---探索者I---"
+python grab_transaction_price.py 82 ${today} ${tag}
 
-echo "---探索者-Shift---"
-python grab_transaction_price.py 84 ${today} ${tag}
+#echo "---探索者-Ctrl---"
+#python grab_transaction_price.py 83 ${today} ${tag}
+
+#echo "---探索者-Shift---"
+#python grab_transaction_price.py 84 ${today} ${tag}
 
 echo "---物资传输面板---"
 python grab_transaction_price.py 28 ${today} ${tag}
@@ -182,9 +185,6 @@ python grab_transaction_price.py 153 ${today} ${tag}
 
 echo "---小小键盘-Enter仔---"
 python grab_transaction_price.py 156 ${today} ${tag}
-
-echo "---小小键盘-Enter仔---"
-python grab_transaction_price.py -1 ${today} ${tag}
 
 echo "---国庆节限定空投-可乐---"
 python grab_transaction_price.py 74 ${today} ${tag}
