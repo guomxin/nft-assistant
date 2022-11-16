@@ -61,6 +61,7 @@ CastingId2MetaInfo = {
 
     74: ["8-KeLe", "国庆节限定空投-可乐"],
     73: ["8-YuanJie", "国庆节限定空投-缘结"],
+    155: ["8-LanHaiYouDie", "奇物秘宝-蓝海幽蝶"],
 }
 
 Transaction_Logs_File_Name = "_guangyu_{}_trans_logs.csv"
