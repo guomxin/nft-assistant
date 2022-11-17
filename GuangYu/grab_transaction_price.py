@@ -12,7 +12,7 @@ from gycommon import commoninfo
 from gycommon import utils
 
 GET_ON_SALE_LIST_URL = "https://api.gandart.com/market/api/v2/resaleManage/resale/onSale"
-PAGE_SIZE = 10000
+PAGE_SIZE = 500
 TIME_OUT = 3
 GET_PRODUCT_DETAIL_URL = "https://api.gandart.com/market/api/v2/resaleManage/resale/collectionDetails"
 GET_TRANS_INFO_URL = "https://api.gandart.com/market/api/v2/resaleManage/resale/transactionInfo"
@@ -54,6 +54,7 @@ def get_saled_products(casting_id):
                 [pinfo["id"], pinfo["viewSort"], float(pinfo["resalePrice"])])
         total = res["obj"]["total"]
         for pindex in range(2, total // PAGE_SIZE + 2):
+            print("{}/{}".format(pindex, total // PAGE_SIZE + 1))
             data = {
                 "castingId": casting_id,
                 "page":pindex,
@@ -68,6 +69,8 @@ def get_saled_products(casting_id):
                 for pinfo in res["obj"]["list"]:
                     saled_prods.append(
                         [pinfo["id"], pinfo["viewSort"], float(pinfo["resalePrice"])])
+            # 防止被封禁
+            time.sleep(1) 
     return (0, saled_prods)
 
 def clean_name(name):
@@ -97,7 +100,7 @@ def get_product_detail(prod_id):
                 #print(detail_id, user_id, created_time)
                 break
         except Exception as e:
-            time.sleep(0.5)
+            time.sleep(2)
             print(e)
     if not detail_id:
         return None
@@ -155,7 +158,7 @@ def get_product_detail(prod_id):
                 detail_info[DETAIL_DETAIL_ID_INDEX] = detail_id
                 break
         except Exception as e:
-            time.sleep(0.5)
+            time.sleep(2)
             print(e)
     
     return detail_info
