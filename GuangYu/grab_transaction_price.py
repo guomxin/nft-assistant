@@ -144,7 +144,7 @@ def get_product_detail(prod_id):
 
                 buy_price = trans[target_buy_index]["buyPrice"]
                 # 有时价格会有微小差别（比如差一分)
-                if abs(sell_price - buy_price) > 0.02:
+                if abs(float(sell_price) - float(buy_price)) > 0.02:
                     print("detailId:{} 买入{}和卖出{}价格不匹配".format(detail_id, buy_price, sell_price))
                     return None
                 buyer_name = clean_name(trans[target_buy_index]["nickName"])
