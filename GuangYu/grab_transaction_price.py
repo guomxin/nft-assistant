@@ -294,7 +294,7 @@ if __name__ == "__main__":
             result_file.write(summary)
             doc.add_paragraph(summary.strip())
         
-        table = doc.add_table(1, 6)
+        table = doc.add_table(1 + len(detail_info_list), 6)
         table.style = "TableGrid"
         heading_cells = table.rows[0].cells
         heading_cells[0].text = "卖出者Id"
@@ -307,6 +307,7 @@ if __name__ == "__main__":
         result_file.write("{},{},{},{},{},{},{},{}\n".format(
             "卖出者Id", "卖出者昵称", "买入者昵称", "买入时间", "价格", "TokenID", "DEBUG1", "DEBUG2"
         ))
+        row_index = 1
         for dinfo in detail_info_list:
             result_file.write("{},{},{},{},{},{},{},{}\n".format(
                 dinfo[DETAIL_SELLER_ID_INDEX], dinfo[DETAIL_SELLER_INDEX], dinfo[DETAIL_BUYER_INDEX],
@@ -314,13 +315,14 @@ if __name__ == "__main__":
                 "#"+ str(dinfo[DETAIL_TOKEN_ID_INDEX]),
                 dinfo[DETAIL_PROD_ID_INDEX], dinfo[DETAIL_DETAIL_ID_INDEX]
             ))
-            cells = table.add_row().cells
+            cells = table.rows[row_index].cells
             cells[0].text = str(dinfo[DETAIL_SELLER_ID_INDEX])
             cells[1].text = dinfo[DETAIL_SELLER_INDEX]
             cells[2].text = dinfo[DETAIL_BUYER_INDEX]
             cells[3].text = dinfo[DETAIL_SALE_TIME_INDEX].strftime("%Y/%m/%d %H:%M:%S")
             cells[4].text = str(dinfo[DETAIL_PRICE_INDEX])
             cells[5].text = "#"+ str(dinfo[DETAIL_TOKEN_ID_INDEX])
+            row_index += 1
 
     # 输出卖出者信息
     doc.add_heading("{}卖出者信息".format(casting_ch_name), level=3)
