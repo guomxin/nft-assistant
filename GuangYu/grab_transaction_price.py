@@ -279,6 +279,7 @@ if __name__ == "__main__":
 
 
     # 按成交时间倒序排序，输出
+    doc.add_heading(casting_ch_name, level=2)
     doc.add_heading("{}交易数据".format(casting_ch_name), level=3)
     doc.add_paragraph(time_span_str)
     detail_info_list.sort(key=lambda dinfo: dinfo[DETAIL_SALE_TIME_INDEX], reverse=True)

@@ -251,6 +251,26 @@ echo "---奇物秘宝-蓝海幽蝶---"
 python grab_transaction_price.py 155 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 155 ${yesterday} 500
 
+echo "---鱼饵---"
+python grab_transaction_price.py 172 ${yesterday} ${yesterday}
+python analyze_transaction_prices.py 172 ${yesterday} 50
+
+echo "---精致的钓具-空投版本---"
+python grab_transaction_price.py 169 ${yesterday} ${yesterday}
+python analyze_transaction_prices.py 169 ${yesterday} 50
+
+echo "---精致的钓具-兑换版本---"
+python grab_transaction_price.py 164 ${yesterday} ${yesterday}
+python analyze_transaction_prices.py 164 ${yesterday} 50
+
+echo "---巡航者-空投版本---"
+python grab_transaction_price.py 170 ${yesterday} ${yesterday}
+python analyze_transaction_prices.py 170 ${yesterday} 50
+
+echo "---巡航者-兑换版本---"
+python grab_transaction_price.py 159 ${yesterday} ${yesterday}
+python analyze_transaction_prices.py 159 ${yesterday} 50
+
 #------ 后处理 ------#
 cd data;mkdir -p upload/$yesterday;rm -rf upload/$yesterday/*
 cp *$yesterday* upload/$yesterday;cd upload/$yesterday
@@ -261,7 +281,8 @@ for nft in "1-KaiTuoZhe" "1-WanXiangLongChao" "1-KongJianBuJi-QiNeng" "1-YunMuSh
 "1-NiePanZhiDi" "5-QiWuSuiPian-ShiJianMoPan" "5-QiWuMiBao-ShiJianMoPan" "5-FengYiLei" \
 "4-PingAnGuo" "5-ShiHuangZhe" "4-FuQin" "6-SR-CaiHouZhiShen" "6-R-HouGeLiTe" "6-R-PDHou" "6-N-BaoZuHou"  \
 "5-ChongZuHaiGu" "5-NengYuanDianChi" "5-LuoPanZhiZhen" "6-YunMuFangZhou" "6-JingShiSuiPian" "7-HeJin" "7-FeiLiWuTingMuXia" \
-"7-JianMu" "7-LiuLi" "7-JuNeng" "7-QingTongShiXiang" "7-ChuiDiaoXuKe" "7-EnterZai" "8-KeLe" "8-YuanJie" "8-LanHaiYouDie"
+"7-JianMu" "7-LiuLi" "7-JuNeng" "7-QingTongShiXiang" "7-ChuiDiaoXuKe" "7-EnterZai" "8-KeLe" "8-YuanJie" "8-LanHaiYouDie" \
+"8-YuEr" "8-JingZhiDiaoJu-KongTou" "8-JingZhiDiaoJu-DuiHuan" "8-XunHangZhe-KongTou" "8-XunHangZhe-DuiHuan"
 do
     mkdir $nft;mv *$nft*.csv $nft;zip -q $nft-$yesterday $nft/*
 done
