@@ -100,7 +100,7 @@ def get_product_detail(prod_id):
                 #print(detail_id, user_id, created_time)
                 break
         except Exception as e:
-            time.sleep(2)
+            time.sleep(3)
             print(e)
     if not detail_id:
         return None
@@ -230,7 +230,7 @@ if __name__ == "__main__":
         else:
             detail_info = get_product_detail(prod_id)
             # 防止被封禁
-            time.sleep(2)
+            time.sleep(1)
             if not detail_info:
                 print("无法获取ProdId:{}的详细信息!".format(prod_id))
                 continue
@@ -294,7 +294,7 @@ if __name__ == "__main__":
             result_file.write(summary)
             doc.add_paragraph(summary.strip())
         
-        table = doc.add_table(1 + len(detail_info_list), 6)
+        table = doc.add_table(1+len(detail_info_list), 6)
         table.style = "TableGrid"
         heading_cells = table.rows[0].cells
         heading_cells[0].text = "卖出者Id"
@@ -335,18 +335,20 @@ if __name__ == "__main__":
         casting_name, tag
     )
     with open(result_file_name, "w", encoding="utf-8-sig") as result_file:
-        table = doc.add_table(1, 2)
+        table = doc.add_table(1+len(sellers_info), 2)
         table.style = "TableGrid"
         heading_cells = table.rows[0].cells
         heading_cells[0].text = "卖出者昵称"
         heading_cells[1].text = "数量"
+        row_index = 1
         for (sname, sid, cnt) in sellers_info:
             result_file.write("{},{},{}\n".format(
                 sid, sname, cnt
             ))
-            cells = table.add_row().cells
+            cells = table.rows[row_index].cells
             cells[0].text = sname
             cells[1].text = str(cnt)
+            row_index += 1
     
     # 输出买入者信息
     doc.add_heading("{}买入者信息".format(casting_ch_name), level=3)
@@ -359,17 +361,19 @@ if __name__ == "__main__":
         casting_name, tag
     )
     with open(result_file_name, "w", encoding="utf-8-sig") as result_file:
-        table = doc.add_table(1, 2)
+        table = doc.add_table(1+len(buyers_info), 2)
         table.style = "TableGrid"
         heading_cells = table.rows[0].cells
         heading_cells[0].text = "买入者昵称"
         heading_cells[1].text = "数量"
+        row_index = 1
         for (bname, cnt) in buyers_info:
             result_file.write("{},{}\n".format(
                 bname, cnt
             ))
-            cells = table.add_row().cells
+            cells = table.rows[row_index].cells
             cells[0].text = bname
             cells[1].text = str(cnt)
+            row_index += 1
     
     doc.save(docx_file_name)
