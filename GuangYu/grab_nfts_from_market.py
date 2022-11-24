@@ -3,12 +3,13 @@ from datetime import datetime
 import requests
 import time
 import sys
+import random
 
 from gycommon import commoninfo
 from gycommon import utils
 
 GET_ON_SALE_LIST_URL = "https://api.gandart.com/market/api/v2/resaleManage/resale/onSale"
-PAGE_SIZE = 10
+PAGE_SIZE = 50
 TIME_OUT = 3
 GET_PRODUCT_DETAIL_URL = "https://api.gandart.com/market/api/v2/resaleManage/resale/collectionDetails"
 BUY_URL = "https://api.gandart.com/base/v2/resaleManage/resale/buy"
@@ -17,20 +18,16 @@ TRAN_STATUS_SALING = 2
 
 PROD_ID_INDEX = 0
 PRICE_INDEX = 2
-
-# 173
-HOME_PC_TOKEN = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjY4NTYzMDAzLCJzaWduSWQiOiI1YzEyMmFjOWRlYmY0Y2VmYmYzNTkwMzkzYTVjODNlZCIsImlhdCI6MTY2Nzk1ODIwM30.fzju8Os3ldRkPc2XbUQvr4i5TD6ppAt5yf_gTTpoS0Q"
-# 159
-LAPTOP_TOKEN = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNTkxMDYxOTk2MyIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjY2NTc4NTE4LCJzaWduSWQiOiJhZDE0OGYxYzUzNzY0MTVkODgxZmI2ZjcyMjgyZmU3NSIsImlhdCI6MTY2NTk3MzcxOH0.1zrXRh-UMNYwbyoBTQKK7Qvcc111BvkT9DEhEC_I504"
+TRANS_STATUS_INDEX = 3
 
 CastingId2Price_1 = {
-    #54: 3000, # 开拓者
-    #59: 4000, # 万象龙巢
+    #54: 5000, # 开拓者
+    #59: 5000, # 万象龙巢
     #56: 100, # Ctrl  #2022/10/11结束合成
     #66: 400, # V #2022/10/11结束合成
     #67: 400, # C #2022/10/11结束合成
 
-    #31: 800, # 厚土
+    #31: 300, # 厚土
     #32: 2100, # 甘霖
     #33: 1000, # 灰烬
     #30: 2000, # 浮金
@@ -39,7 +36,7 @@ CastingId2Price_1 = {
     #79: 500, # 龙图腾
     #46: 400, # 梦幻小龙
 
-    #101: 290, # 凤翊泪
+    #101: 1000, # 凤翊泪
     #71: 400, # 平安果
     #99: 2000, # 奇物秘宝-时间磨盘
     #100: 1300, # 奇物碎片-时间磨盘
@@ -48,22 +45,38 @@ CastingId2Price_1 = {
     #105: 1020, #["5-BuLaoQuan", "充盈不老泉"],
     #106: 400, #["5-ShiZhiSha", "一抨时之砂"],
     #111: 1000, # 拾荒者
-    #72: 1000, # 抚琴
+    #72: 2688, # 抚琴
     #95: 800, # 魂魄提灯
     #94: 1000, # 阿尔法之眼
     #65: 4000, #彩猴之神
     #112: 1200,
-    #84: 1600, # 探索者-Shift
+    #84: 1200, # 探索者-Shift
     #130: 800,
-    ## 129: 1000, # 能源电池 
-    #128: 2000, # 罗盘指针
+    #128: 6000, # 罗盘指针
     #140: 2000, # 云木方舟
     #61: 2000, # ["2-TaiKongShiftZai", "传说奇遇-太空Shift仔"],
     #60: 600, #["2-ShiftZai", "小小键盘-Shift仔"],
-    134: 1900, # 晶石碎块-未鉴定
+    #134: 1900, # 晶石碎块-未鉴定
+    #132: 2200,#["7-FeiLiWuTingMuXia", "奇物秘宝-非礼勿听木匣"],
+    #129: 1500, #["5-NengYuanDianChi", "X型能源电池"],
+    #150: 2000, # 建木
+
+    #55: 1600,
+    #126: 2200, #["7-QingTongShiXiang", "奇物秘宝-青铜石像"],
+    #154: 5000,#["7-JuNeng", "启源II聚能号"],
+
+    #156: 599, #["7-EnterZai", "小小键盘-Enter仔"],
+    #55: 1600, #["1-ShanLingShuLong", "山岭树龙"],
+    #130: 1000, # 虫族骸骨
+    #74: 3000, # 可乐
+    #155: 8000, #奇物秘宝-蓝海幽蝶
+    #55: 1400, #["1-ShanLingShuLong", "山岭树龙"],
+    #172: 10,
+    169: 250,
 }
 
 CastingId2Price_2 = {
+    #54: 3000, # 开拓者
     #31: 800, # 厚土
     #32: 1000, # 甘霖
     #29: 360, # 栖龙云木
@@ -77,8 +90,8 @@ CastingId2Price_2 = {
     #79:  900, # 龙图腾
     #87:  2000, # 凤图腾
     #71: 360, # 平安果
-    #101: 290, # 凤翊泪
-    #94: 7500, # 阿尔法之眼
+    #101: 1700, # 凤翊泪
+    94: 7500, # 阿尔法之眼
     #100: 950, # 奇物碎片-时间磨盘
     #71: 400, # 平安果
     # 99: 2000, # 奇物秘宝-时间磨盘
@@ -88,7 +101,7 @@ CastingId2Price_2 = {
     #104: 500, #["5-TongXingZheng", "电子通行证"],
     #105: 1050, #["5-BuLaoQuan", "充盈不老泉"],
     #106: 400, #["5-ShiZhiSha", "一抨时之砂"],
-    #111: 1000, # 拾荒者
+    #111: 5000, # 拾荒者
     #72: 1000, # 抚琴
     #95: 800, # 魂魄提灯
     #65: 4000, #彩猴之神
@@ -97,9 +110,23 @@ CastingId2Price_2 = {
     #84: 550,
     #130: 800,
     #129: 1000,
-    #   128: 3000, #罗盘指针
+    #128: 4000, #罗盘指针
     ## 140: 2000, # 云木方舟
-    148: 2500, # 合金
+    #148: 3000, # 合金
+    #101: 1000, # 凤翊泪
+    #151: 3500, #琉璃
+    #126: 2000, #["7-QingTongShiXiang", "奇物秘宝-青铜石像"],
+    #154: 5000,#["7-JuNeng", "启源II聚能号"],
+    #156: 700, #["7-EnterZai", "小小键盘-Enter仔"],
+    #130: 1500, #["5-ChongZuHaiGu", "虫族骸骨"],
+    #153: 1000,
+    #72: 2500, # 福琴
+    #73: 3000, # 缘结
+    #83: 1200, #["5-TanSuoZhe-Ctrl", "探索者-Ctrl"],
+    #155: 8000, #奇物秘宝-蓝海幽蝶
+    #74: 3000, # 可乐
+    #169: 270,
+    #172: 20,
 }
 
 CastingId2Price_3 = {
@@ -142,7 +169,7 @@ def get_top_saling_products(casting_id):
     else:
         for pinfo in res["obj"]["list"]:
             saling_prods.append(
-                [pinfo["id"], pinfo["viewSort"], float(pinfo["resalePrice"])])
+                [pinfo["id"], pinfo["viewSort"], float(pinfo["resalePrice"]), pinfo["transactionStatus"]])
     return (0, saling_prods)
 
 def get_product_detail_id(prod_id):
@@ -201,16 +228,16 @@ if __name__ == "__main__":
     token = None
     if dict_id == 1:
         castingid2price = CastingId2Price_1
-        token = HOME_PC_TOKEN
+        token = commoninfo.Home_Token
     elif dict_id == 2:
         castingid2price = CastingId2Price_2
-        token = HOME_PC_TOKEN
+        token = commoninfo.Home_Token
     elif dict_id == 3:
         castingid2price = CastingId2Price_3
-        token = LAPTOP_TOKEN
+        token = commoninfo.Home_Token
     elif dict_id == 4:
         castingid2price = CastingId2Price_4
-        token = LAPTOP_TOKEN
+        token = commoninfo.Home_Token
     if not castingid2price:
         print("dict_id={} 没有对应信息!".format(dict_id))
         sys.exit(1)
@@ -235,6 +262,9 @@ if __name__ == "__main__":
                 for saling_prod in saling_prods:
                     prod_id = saling_prod[PROD_ID_INDEX]
                     price = saling_prod[PRICE_INDEX]
+                    trans_status = saling_prod[TRANS_STATUS_INDEX]
+                    #if trans_status != TRAN_STATUS_SALING:
+                    #    continue
                     if price <= castingid2price[casting_id]:
                         (detail_id, user_id) = get_product_detail_id(prod_id)
                         if not detail_id:
@@ -270,6 +300,7 @@ if __name__ == "__main__":
                             """
                 # 防止被封禁
                 time.sleep(1)
+                #time.sleep(random.random())
                     
             loop_cnt += 1
             #print(loop_cnt)
