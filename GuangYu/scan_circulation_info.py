@@ -6,6 +6,7 @@ import requests
 import time
 
 from gycommon import commoninfo
+from gycommon import utils
 
 TIME_OUT = 3
 CASTING_INFO_COLL_AMOUNT_INDEX = 0
@@ -21,7 +22,8 @@ def get_casting_info(casting_id):
     data = {
         "castingId": casting_id,
     }
-    
+    data = utils.decorate_api_data(data)
+
     while True:
         try: 
             res = requests.post(GET_CASTING_INFO_URL, data=data, timeout=TIME_OUT).json()
