@@ -77,6 +77,7 @@ Transaction_Logs_File_Name = "_guangyu_{}_trans_logs.csv"
 HighestValue_Products_Info = {
     80: [258, 60000.0],
     30: [88, 60000.0],
+    172: [50359, 50.0],
 }
 
 Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjY5ODgyMDQ2LCJzaWduSWQiOiJhZWViMmJiZDlhNzk0NDkzOTFmZDI5ODhkNDMyYjA1NCIsImlhdCI6MTY2OTI3NzI0Nn0.zNxlnKKN9MIHdEpaLlolUGNv8Rz6q5Lr7bsQ3BQXfLA"
