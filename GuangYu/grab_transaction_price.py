@@ -43,6 +43,7 @@ def get_saled_products(casting_id):
         "sort":2,
         "transactionStatus": TRAN_STATUS_SALED,
     }
+    data = utils.decorate_api_data(data)
     res = utils.post_requests_json(GET_ON_SALE_LIST_URL, data=data, timeout=TIME_OUT)
     if not res:
         return (1, None)
@@ -83,6 +84,7 @@ def get_product_detail(prod_id):
     data = {
         "transactionRecordId": prod_id,
     }
+    data = utils.decorate_api_data(data)
     detail_id = None
     user_id = None
     created_time = None
@@ -111,6 +113,7 @@ def get_product_detail(prod_id):
         "page": 1,
         "pageSize": PAGE_SIZE,
     }
+    data = utils.decorate_api_data(data)
     while True:
         try: 
             res = requests.post(GET_TRANS_INFO_URL, data=data, timeout=TIME_OUT).json()

@@ -5,6 +5,7 @@ from email.mime.multipart import MIMEMultipart
 import json
 import requests
 import time
+import hashlib
 
 def send_msg(from_addr, password, to_addr, msg_text):
     smtp_server = "smtp.qq.com"
@@ -20,6 +21,26 @@ def send_msg(from_addr, password, to_addr, msg_text):
     server.sendmail(from_addr, to_addr, msg.as_string())
 
     server.quit()
+
+def get_md5_hash(s3):
+    _0x14b4f0 = ["e9", "0a", "9", "29", "e", "c" , "3"]
+    merged = str(s3) + "".join(_0x14b4f0)
+    return hashlib.md5(merged.encode(encoding="utf-8")).hexdigest()
+
+"""
+光予api于2022/11/25发生升级，需要时间戳验证
+"""
+def decorate_api_data(data):
+    s2 = int(time.time() * 1000)
+    s1 = s2 - 20000
+    s3 = s2 + 20000
+    s4 = s2 + 40000
+    data["s1"] = s1
+    data["s2"] = s2
+    data["s3"] = s3
+    data["s4"] = s4
+    data["s5"] = get_md5_hash(s3)
+    return data
 
 def post_requests_json(url, data, timeout):
     for _ in range(100):
