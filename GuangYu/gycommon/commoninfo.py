@@ -70,6 +70,7 @@ CastingId2MetaInfo = {
     159: ["8-XunHangZhe-DuiHuan", "巡航者-兑换版本"],
 
     205: ["9-MengHuanShuiLong", "梦幻水龙"],
+    211: ["9-ShenHaiQiPao", "深海气泡"],
 }
 
 Transaction_Logs_File_Name = "_guangyu_{}_trans_logs.csv"
