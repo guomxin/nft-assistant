@@ -42,9 +42,11 @@ def decorate_api_data(data):
     data["s5"] = get_md5_hash(s3)
     return data
 
-def post_requests_json(url, data, timeout):
+def post_requests_json(url, data, timeout, decorate=False):
     for _ in range(100):
         try:
+            if decorate:
+                data = decorate_api_data(data)
             res = requests.post(url, data=data, timeout=timeout).json()
             return res
         except Exception as e:
