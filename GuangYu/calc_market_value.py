@@ -28,6 +28,7 @@ def get_top_saling_products(casting_id):
         "sort":2,
         "transactionStatus": 2,
     }
+    data = utils.decorate_api_data(data)
     res = utils.post_requests_json(GET_ON_SALE_LIST_URL, data=data, timeout=TIME_OUT)
     if not res:
         return (1, None)
@@ -46,6 +47,7 @@ def get_casting_info(casting_id):
     data = {
         "castingId": casting_id,
     }
+    data = utils.decorate_api_data(data)
     
     while True:
         try: 
