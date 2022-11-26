@@ -85,13 +85,13 @@ def get_product_detail(prod_id):
     data = {
         "transactionRecordId": prod_id,
     }
-    data = utils.decorate_api_data(data)
     detail_id = None
     user_id = None
     created_time = None
     holder_name = None
     while True:
         try: 
+            data = utils.decorate_api_data(data)
             res = requests.post(GET_PRODUCT_DETAIL_URL, data=data, timeout=TIME_OUT).json()
             if res["code"] != 0:
                 return None
@@ -114,9 +114,9 @@ def get_product_detail(prod_id):
         "page": 1,
         "pageSize": PAGE_SIZE,
     }
-    data = utils.decorate_api_data(data)
     while True:
         try: 
+            data = utils.decorate_api_data(data)
             res = requests.post(GET_TRANS_INFO_URL, data=data, timeout=TIME_OUT).json()
             if res["code"] != 0:
                 return None

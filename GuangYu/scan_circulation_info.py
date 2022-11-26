@@ -22,10 +22,10 @@ def get_casting_info(casting_id):
     data = {
         "castingId": casting_id,
     }
-    data = utils.decorate_api_data(data)
 
     while True:
-        try: 
+        try:
+            data = utils.decorate_api_data(data) 
             res = requests.post(GET_CASTING_INFO_URL, data=data, timeout=TIME_OUT).json()
             if res["code"] != 0:
                 return None
