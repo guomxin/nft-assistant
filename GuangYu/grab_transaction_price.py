@@ -44,7 +44,7 @@ def get_saled_products(casting_id):
         "transactionStatus": TRAN_STATUS_SALED,
     }
     data = utils.decorate_api_data(data)
-    res = utils.post_requests_json(GET_ON_SALE_LIST_URL, data=data, timeout=TIME_OUT)
+    res = utils.post_requests_json(GET_ON_SALE_LIST_URL, data=data, timeout=TIME_OUT, decorate=True)
     if not res:
         return (1, None)
     if res["code"] != 0:
