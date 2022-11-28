@@ -72,6 +72,8 @@ CastingId2MetaInfo = {
     205: ["9-MengHuanShuiLong", "梦幻水龙"],
     211: ["9-ShenHaiQiPao", "深海气泡"],
     210: ["9-YuEr-DuiHuan", "鱼饵-兑换版本"],
+    77: ["9-KuaiJieZuHe-FuZhi", "快捷组合-复制"],
+    76: ["9-KuaiJieZuHe-ZhanTie", "快捷组合-粘贴"],
 }
 
 Transaction_Logs_File_Name = "_guangyu_{}_trans_logs.csv"
