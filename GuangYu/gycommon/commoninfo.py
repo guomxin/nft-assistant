@@ -74,6 +74,8 @@ CastingId2MetaInfo = {
     210: ["9-YuEr-DuiHuan", "鱼饵-兑换版本"],
     77: ["9-KuaiJieZuHe-FuZhi", "快捷组合-复制"],
     76: ["9-KuaiJieZuHe-ZhanTie", "快捷组合-粘贴"],
+    201: ["9-ShenHaiJingShi", "深海晶石"],
+    198: ["9-DiJiuQuZhengJian", "第九区证件"],
 }
 
 Transaction_Logs_File_Name = "_guangyu_{}_trans_logs.csv"
