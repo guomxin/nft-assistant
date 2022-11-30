@@ -29,6 +29,7 @@ CastingId2MetaInfo = {
     72: ["4-FuQin", "国庆节限定空投-福琴"],
 
     82: ["5-TanSuoZheI", "探索者I"],
+    231: ["5-TanSuoZheII", "探索者II"],
     #83: ["5-TanSuoZhe-Ctrl", "探索者-Ctrl"],
     #84: ["5-TanSuoZhe-Shift", "探索者-Shift"],
     111: ["5-ShiHuangZhe", "拾荒者"],
