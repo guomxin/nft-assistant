@@ -76,6 +76,7 @@ CastingId2MetaInfo = {
     76: ["9-KuaiJieZuHe-ZhanTie", "快捷组合-粘贴"],
     201: ["9-ShenHaiJingShi", "深海晶石"],
     198: ["9-DiJiuQuZhengJian", "第九区证件"],
+    223: ["9-JiXieHouTu", "机械厚土"],
 }
 
 Transaction_Logs_File_Name = "_guangyu_{}_trans_logs.csv"
@@ -86,4 +87,4 @@ HighestValue_Products_Info = {
     #172: [50359, 100.0],
 }
 
-Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjcwMTMyNzAzLCJzaWduSWQiOiI2OGM5OTNiMzMzZTI0MzI4YTA0Y2FmMzg2YTYxZGIwYiIsImlhdCI6MTY2OTUyNzkwM30.QUGNvwXqQ1IRbXyrfKnTb7CvIW7UJcm0xZ-qhvPjMh8"
+Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjcwMzM5NjIyLCJzaWduSWQiOiI2YmVmYTgxNjFhZWY0MDY0YTE2YmYzOWE0NDQ0MjE3OCIsImlhdCI6MTY2OTczNDgyMn0.CHDYAzobwm-inybYeG2yonT1jgwQf7Ec9mjX0gX5flo"
