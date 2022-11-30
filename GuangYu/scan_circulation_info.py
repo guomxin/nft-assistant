@@ -26,7 +26,7 @@ def get_casting_info(casting_id):
     while True:
         try:
             data = utils.decorate_api_data(data) 
-            res = requests.post(GET_CASTING_INFO_URL, data=data, timeout=TIME_OUT).json()
+            res = requests.post(GET_CASTING_INFO_URL, headers=commoninfo.GanDart_Headers, data=data, timeout=TIME_OUT).json()
             if res["code"] != 0:
                 return None
             else:

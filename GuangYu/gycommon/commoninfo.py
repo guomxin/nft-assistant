@@ -88,3 +88,9 @@ HighestValue_Products_Info = {
 }
 
 Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjcwMzM5NjIyLCJzaWduSWQiOiI2YmVmYTgxNjFhZWY0MDY0YTE2YmYzOWE0NDQ0MjE3OCIsImlhdCI6MTY2OTczNDgyMn0.CHDYAzobwm-inybYeG2yonT1jgwQf7Ec9mjX0gX5flo"
+
+GanDart_Headers = {
+    "Host": "api2.gandart.com",
+    "Origin": "https://www.gandart.com",
+    "Referer": "https://www.gandart.com/",
+}
