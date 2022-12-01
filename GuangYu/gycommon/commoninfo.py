@@ -71,13 +71,14 @@ CastingId2MetaInfo = {
     159: ["8-XunHangZhe-DuiHuan", "巡航者-兑换版本"],
 
     205: ["9-MengHuanShuiLong", "梦幻水龙"],
-    211: ["9-ShenHaiQiPao", "深海气泡"],
+    #211: ["9-ShenHaiQiPao", "深海气泡"],
     210: ["9-YuEr-DuiHuan", "鱼饵-兑换版本"],
     77: ["9-KuaiJieZuHe-FuZhi", "快捷组合-复制"],
     76: ["9-KuaiJieZuHe-ZhanTie", "快捷组合-粘贴"],
     201: ["9-ShenHaiJingShi", "深海晶石"],
     198: ["9-DiJiuQuZhengJian", "第九区证件"],
     223: ["9-JiXieHouTu", "机械厚土"],
+    232: ["9-ZuDuiKaI", "组队卡I"],
 }
 
 Transaction_Logs_File_Name = "_guangyu_{}_trans_logs.csv"
