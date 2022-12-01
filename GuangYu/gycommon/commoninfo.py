@@ -79,6 +79,9 @@ CastingId2MetaInfo = {
     198: ["9-DiJiuQuZhengJian", "第九区证件"],
     223: ["9-JiXieHouTu", "机械厚土"],
     232: ["9-ZuDuiKaI", "组队卡I"],
+
+    183: ["10-XiuBuXueTu", "修补学徒"],
+    185: ["10-JianBaoXueTu", "鉴宝学徒"],
 }
 
 Transaction_Logs_File_Name = "_guangyu_{}_trans_logs.csv"
