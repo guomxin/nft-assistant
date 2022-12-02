@@ -277,7 +277,7 @@ if __name__ == "__main__":
 
     # 生成docx文件
     docx_file_name = "data/{}_{}.docx".format(
-        casting_name[:2]+casting_ch_name, tag
+        commoninfo.gen_docx_file_tag(casting_name, casting_ch_name), tag
     )
     doc = Document()
 

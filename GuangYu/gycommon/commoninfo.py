@@ -92,10 +92,18 @@ HighestValue_Products_Info = {
     #172: [50359, 100.0],
 }
 
-Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjcwMzM5NjIyLCJzaWduSWQiOiI2YmVmYTgxNjFhZWY0MDY0YTE2YmYzOWE0NDQ0MjE3OCIsImlhdCI6MTY2OTczNDgyMn0.CHDYAzobwm-inybYeG2yonT1jgwQf7Ec9mjX0gX5flo"
+Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjcwNDk5NTA1LCJzaWduSWQiOiJlNDIzM2YxZjRiODQ0ZWJhODRiMDFhNWRlZDc2ZWIyYyIsImlhdCI6MTY2OTg5NDcwNX0.52hlsLsdcbzCLGVB1tJ4Z553izWqtWsJgMfJR5X1z9I"
 
 GanDart_Headers = {
     "Host": "api2.gandart.com",
     "Origin": "https://www.gandart.com",
     "Referer": "https://www.gandart.com/",
 }
+
+def gen_docx_file_tag(casting_name, casting_ch_name):
+    pos = casting_name.find("-")
+    if pos != -1:
+        ser_no = casting_name[:pos]
+    else:
+        ser_no = casting_name
+    return "{}-{}".format(ser_no, casting_ch_name)
