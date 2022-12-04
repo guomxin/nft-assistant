@@ -5,8 +5,6 @@ import os
 import datetime
 
 from docx import Document
-from docx2pdf import convert
-from PyPDF2 import PdfFileWriter, PdfFileReader
 
 from gycommon import commoninfo
 from gycommon import utils
@@ -65,9 +63,6 @@ def analyze_trans(tag):
     docx_file_name = "data/日交易额_{}.docx".format(
         tag
     )
-    pdf_file_name = "data/日交易额_{}.pdf".format(
-        tag
-    )    
     if len(tag) == 8:
         # dayly
         start_time = datetime.datetime.strptime(tag + " 0:0:0", "%Y%m%d %H:%M:%S")
@@ -103,19 +98,6 @@ def analyze_trans(tag):
             cells[2].text = "{:.2f}".format(avg_price)
             cells[3].text = "{:.2f}".format(total_price/10000)
     doc.save(docx_file_name)
-    convert(docx_file_name, pdf_file_name)
-    # 禁掉pdf的各种权限（包括复制）
-    pdf_reader = PdfFileReader(pdf_file_name)
-    pdf_writer = PdfFileWriter()
-    for pi in range(pdf_reader.getNumPages()):
-        page = pdf_reader.getPage(pi)
-        watermark = PdfFileReader("watermark.pdf")
-        wm_page = watermark.pages[0]
-        wm_page.mergePage(page)
-        pdf_writer.addPage(wm_page)
-    pdf_writer.encrypt("", "shuang", permissions_flag = 0)
-    with open(pdf_file_name, "wb") as out:
-        pdf_writer.write(out)
     
     utils.send_workwx_msg_agg(utils.TradingValue_MSG, "markdown", content)
 
