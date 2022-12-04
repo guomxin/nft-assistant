@@ -107,8 +107,12 @@ def analyze_trans(tag):
     # 禁掉pdf的各种权限（包括复制）
     pdf_reader = PdfFileReader(pdf_file_name)
     pdf_writer = PdfFileWriter()
-    for page in range(pdf_reader.getNumPages()):
-        pdf_writer.addPage(pdf_reader.getPage(page))
+    for pi in range(pdf_reader.getNumPages()):
+        page = pdf_reader.getPage(pi)
+        watermark = PdfFileReader("watermark.pdf")
+        wm_page = watermark.pages[0]
+        wm_page.mergePage(page)
+        pdf_writer.addPage(wm_page)
     pdf_writer.encrypt("", "shuang", permissions_flag = 0)
     with open(pdf_file_name, "wb") as out:
         pdf_writer.write(out)
