@@ -85,6 +85,8 @@ CastingId2MetaInfo = {
     186: ["10-XingHuiDian", "星辉殿"],
     230: ["10-HanYueSi", "寒月寺"],
     258: ["10-FuZhiBaoZhu", "福至宝珠"],
+    133: ["10-EMengGuoShi", "噩梦果实"],
+    260: ["10-ShouLieZhe", "狩猎者"],
 }
 
 Transaction_Logs_File_Name = "_guangyu_{}_trans_logs.csv"
