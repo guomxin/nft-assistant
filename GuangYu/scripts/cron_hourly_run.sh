@@ -282,6 +282,9 @@ python grab_transaction_price.py 268 ${today} ${tag}
 echo "---传说武器---"
 python grab_transaction_price.py 275 ${today} ${tag}
 
+echo "---智慧之心---"
+python grab_transaction_price.py 259 ${today} ${tag}
+
 #------ 后处理 ------#
 cd data;mkdir -p upload/$tag;rm -rf upload/$tag/*
 mv *$tag* upload/$tag;cd upload/$tag
@@ -297,7 +300,7 @@ for nft in "1-KaiTuoZhe" "1-WanXiangLongChao" "1-KongJianBuJi-QiNeng" "1-YunMuSh
 "9-YuEr-DuiHuan" "9-KuaiJieZuHe-FuZhi" "9-KuaiJieZuHe-ZhanTie" "9-ShenHaiJingShi" "9-DiJiuQuZhengJian" \
 "9-JiXieHouTu" "9-ZuDuiKaI" "10-XiuBuXueTu" "10-JianBaoXueTu" "10-XingHuiDian" "10-HanYueSi" "10-FuZhiBaoZhu" \
 "10-EMengGuoShi" "10-ShouLieZhe" "10-LiuGuangMoFang-QingJin" "11-PuTongWuQi" "11-ChuanSongJieZhi-LongXueRongDong" \
-"11-ChuanSongJieZhi-JianXiaoFeiXu" "11-ChuanSongJieZhi-JuFengXiaGu" "11-JingZhiWuQi" "11-ChuanShuoWuQi"
+"11-ChuanSongJieZhi-JianXiaoFeiXu" "11-ChuanSongJieZhi-JuFengXiaGu" "11-JingZhiWuQi" "11-ChuanShuoWuQi" "11-ZhiHuiZhiXin"
 do
     mkdir $nft;mv *$nft*.csv $nft;zip -q $nft-$tag $nft/*
 done

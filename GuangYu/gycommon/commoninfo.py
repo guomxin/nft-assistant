@@ -95,6 +95,7 @@ CastingId2MetaInfo = {
     270: ["11-ChuanSongJieZhi-JuFengXiaGu", "传送戒指-飓风峡谷"],
     268: ["11-JingZhiWuQi", "精致武器"],
     275: ["11-ChuanShuoWuQi", "传说武器"],
+    259: ["11-ZhiHuiZhiXin", "智慧之心"],
 }
 
 Transaction_Logs_File_Name = "_guangyu_{}_trans_logs.csv"
