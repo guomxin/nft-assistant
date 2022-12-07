@@ -90,7 +90,10 @@ CastingId2MetaInfo = {
     242: ["10-LiuGuangMoFang-QingJin", "流光魔方-青金"],
     
     266: ["11-PuTongWuQi", "普通武器"],
-} 
+    272: ["11-ChuanSongJieZhi-LongXueRongDong", "传送戒指-龙血熔洞"],
+    271: ["11-ChuanSongJieZhi-JianXiaoFeiXu", "传送戒指-尖啸废墟"],
+    270: ["11-ChuanSongJieZhi-JuFengXiaGu", "传送戒指-飓风峡谷"],
+    268: ["11-JingZhiWuQi", "精致武器"],
 }
 
 Transaction_Logs_File_Name = "_guangyu_{}_trans_logs.csv"
