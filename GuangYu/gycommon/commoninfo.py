@@ -94,6 +94,7 @@ CastingId2MetaInfo = {
     271: ["11-ChuanSongJieZhi-JianXiaoFeiXu", "传送戒指-尖啸废墟"],
     270: ["11-ChuanSongJieZhi-JuFengXiaGu", "传送戒指-飓风峡谷"],
     268: ["11-JingZhiWuQi", "精致武器"],
+    275: ["11-ChuanShuoWuQi", "传说武器"],
 }
 
 Transaction_Logs_File_Name = "_guangyu_{}_trans_logs.csv"
@@ -104,7 +105,7 @@ HighestValue_Products_Info = {
     #172: [50359, 100.0],
 }
 
-Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjcwNDk5NTA1LCJzaWduSWQiOiJlNDIzM2YxZjRiODQ0ZWJhODRiMDFhNWRlZDc2ZWIyYyIsImlhdCI6MTY2OTg5NDcwNX0.52hlsLsdcbzCLGVB1tJ4Z553izWqtWsJgMfJR5X1z9I"
+Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjcxMDEzODcxLCJzaWduSWQiOiJjMzBkMWFjODY3MDM0Njg4OGJiMjViNTYwYzg2OWU5NSIsImlhdCI6MTY3MDQwOTA3MX0.TxUAxIj5eqwU8R9iM8243bXX3LQiqVC-cEBwmyK_M54"
 
 GanDart_Headers = {
     "Host": "api2.gandart.com",
