@@ -96,6 +96,7 @@ CastingId2MetaInfo = {
     268: ["11-JingZhiWuQi", "精致武器"],
     275: ["11-ChuanShuoWuQi", "传说武器"],
     259: ["11-ZhiHuiZhiXin", "智慧之心"],
+    281: ["11-YiZhiZhiXin", "意志之心"],
 }
 
 Transaction_Logs_File_Name = "_guangyu_{}_trans_logs.csv"
@@ -106,7 +107,7 @@ HighestValue_Products_Info = {
     #172: [50359, 100.0],
 }
 
-Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjcxMDEzODcxLCJzaWduSWQiOiJjMzBkMWFjODY3MDM0Njg4OGJiMjViNTYwYzg2OWU5NSIsImlhdCI6MTY3MDQwOTA3MX0.TxUAxIj5eqwU8R9iM8243bXX3LQiqVC-cEBwmyK_M54"
+Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjcxMTAwNDk0LCJzaWduSWQiOiJlNjM2MmEwMjgwZjE0MzlhYWMzOTQxMzA1ZmUzZjg2NyIsImlhdCI6MTY3MDQ5NTY5NH0.dCBaOnDPLRSDhe3w7Gop_fSW5IGfimHsZ9uKMqosz5I"
 
 GanDart_Headers = {
     "Host": "api2.gandart.com",
