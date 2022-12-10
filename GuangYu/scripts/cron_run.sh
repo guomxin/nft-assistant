@@ -255,21 +255,21 @@ echo "---奇物秘宝-蓝海幽蝶---"
 python grab_transaction_price.py 155 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 155 ${yesterday} 500
 
-echo "---鱼饵---"
-python grab_transaction_price.py 172 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 172 ${yesterday} 50
+##echo "---鱼饵---"
+##python grab_transaction_price.py 172 ${yesterday} ${yesterday}
+##python analyze_transaction_prices.py 172 ${yesterday} 50
 
-echo "---鱼饵-兑换版本---"
-python grab_transaction_price.py 210 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 210 ${yesterday} 50
+##echo "---鱼饵-兑换版本---"
+##python grab_transaction_price.py 210 ${yesterday} ${yesterday}
+##python analyze_transaction_prices.py 210 ${yesterday} 50
 
-echo "---精致的钓具-空投版本---"
-python grab_transaction_price.py 169 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 169 ${yesterday} 50
+##echo "---精致的钓具-空投版本---"
+##python grab_transaction_price.py 169 ${yesterday} ${yesterday}
+##python analyze_transaction_prices.py 169 ${yesterday} 50
 
-echo "---精致的钓具-兑换版本---"
-python grab_transaction_price.py 164 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 164 ${yesterday} 50
+##echo "---精致的钓具-兑换版本---"
+##python grab_transaction_price.py 164 ${yesterday} ${yesterday}
+##python analyze_transaction_prices.py 164 ${yesterday} 50
 
 echo "---巡航者-空投版本---"
 python grab_transaction_price.py 170 ${yesterday} ${yesterday}

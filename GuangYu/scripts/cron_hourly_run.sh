@@ -198,17 +198,17 @@ python grab_transaction_price.py 73 ${today} ${tag}
 echo "---奇物秘宝-蓝海幽蝶---"
 python grab_transaction_price.py 155 ${today} ${tag}
 
-echo "---鱼饵---"
-python grab_transaction_price.py 172 ${today} ${tag}
+##echo "---鱼饵---"
+##python grab_transaction_price.py 172 ${today} ${tag}
 
-echo "---鱼饵-兑换版本---"
-python grab_transaction_price.py 210 ${today} ${tag}
+##echo "---鱼饵-兑换版本---"
+##python grab_transaction_price.py 210 ${today} ${tag}
 
-echo "---精致的钓具-空投版本---"
-python grab_transaction_price.py 169 ${today} ${tag}
+##echo "---精致的钓具-空投版本---"
+##python grab_transaction_price.py 169 ${today} ${tag}
 
-echo "---精致的钓具-兑换版本---"
-python grab_transaction_price.py 164 ${today} ${tag}
+##echo "---精致的钓具-兑换版本---"
+##python grab_transaction_price.py 164 ${today} ${tag}
 
 echo "---巡航者-空投版本---"
 python grab_transaction_price.py 170 ${today} ${tag}
