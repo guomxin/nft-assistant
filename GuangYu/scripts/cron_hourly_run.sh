@@ -288,6 +288,9 @@ python grab_transaction_price.py 259 ${today} ${tag}
 echo "---意志之心---"
 python grab_transaction_price.py 281 ${today} ${tag}
 
+echo "---炼金学徒---"
+python grab_transaction_price.py 184 ${today} ${tag}
+
 #------ 后处理 ------#
 cd data;mkdir -p upload/$tag;rm -rf upload/$tag/*
 mv *$tag* upload/$tag;cd upload/$tag
@@ -302,7 +305,8 @@ for nft in "1-KaiTuoZhe" "1-WanXiangLongChao" "1-KongJianBuJi-QiNeng" "1-YunMuSh
 "8-YuEr" "8-JingZhiDiaoJu-KongTou" "8-JingZhiDiaoJu-DuiHuan" "8-XunHangZhe-KongTou" "8-XunHangZhe-DuiHuan" "9-MengHuanShuiLong" \
 "9-YuEr-DuiHuan" "9-KuaiJieZuHe-FuZhi" "9-KuaiJieZuHe-ZhanTie" "9-ShenHaiJingShi" "9-DiJiuQuZhengJian" \
 "9-JiXieHouTu" "9-ZuDuiKaI" "10-XiuBuXueTu" "10-JianBaoXueTu" "10-XingHuiDian" "10-HanYueSi" "10-FuZhiBaoZhu" \
-"10-EMengGuoShi" "10-ShouLieZhe" "10-LiuGuangMoFang-QingJin" "11-ChuanShuoWuQi" "11-ZhiHuiZhiXin" "11-YiZhiZhiXin"
+"10-EMengGuoShi" "10-ShouLieZhe" "10-LiuGuangMoFang-QingJin" "11-ChuanShuoWuQi" "11-ZhiHuiZhiXin" "11-YiZhiZhiXin" \
+"12-LianJinXueTu"
 do
     mkdir $nft;mv *$nft*.csv $nft;zip -q $nft-$tag $nft/*
 done
