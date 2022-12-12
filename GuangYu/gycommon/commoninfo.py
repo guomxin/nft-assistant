@@ -99,6 +99,7 @@ CastingId2MetaInfo = {
     281: ["11-YiZhiZhiXin", "意志之心"],
 
     184: ["12-LianJinXueTu", "炼金学徒"],
+    241: ["12-LiuGuangMoFang-ShanHu", "流光魔方-珊瑚"],
 }
 
 Transaction_Logs_File_Name = "_guangyu_{}_trans_logs.csv"
