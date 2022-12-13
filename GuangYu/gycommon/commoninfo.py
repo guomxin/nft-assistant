@@ -110,12 +110,17 @@ HighestValue_Products_Info = {
     #172: [50359, 100.0],
 }
 
+# 173
 Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjcxMjY3NzEwLCJzaWduSWQiOiJhOTNlNGQ5NTc2NGE0YWM0Yjc3NjI3NjZkN2YzMzdhZSIsImlhdCI6MTY3MDY2MjkxMH0.GX7iUySw5Z5C0k3wC9-x5x8ClEP3T93mc9ANkN0OL50"
+
+# 159
+Query_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNTkxMDYxOTk2MyIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjcxNTQxMzQzLCJzaWduSWQiOiJhMjcxMzhmYTJlMTY0NWYwOWNmZTg2ZjcyZjk5NzYxMCIsImlhdCI6MTY3MDkzNjU0M30.sw_I94oGhapfyC8hmAFT8wFkmfBxMQns5BLk99ijqeQ"
 
 GanDart_Headers = {
     "Host": "api2.gandart.com",
     "Origin": "https://www.gandart.com",
     "Referer": "https://www.gandart.com/",
+    "token": Query_Token,
 }
 
 def gen_docx_file_tag(casting_name, casting_ch_name):
