@@ -100,6 +100,7 @@ CastingId2MetaInfo = {
 
     184: ["12-LianJinXueTu", "炼金学徒"],
     241: ["12-LiuGuangMoFang-ShanHu", "流光魔方-珊瑚"],
+    453: ["12-QiYuanGai-WangChuanJuFeng", "启源改-忘川飓风"],
 }
 
 Transaction_Logs_File_Name = "_guangyu_{}_trans_logs.csv"
@@ -111,7 +112,7 @@ HighestValue_Products_Info = {
 }
 
 # 173
-Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjcxNTkwMTQzLCJzaWduSWQiOiJhZmQ2Y2YyYzc0YmI0YzNhOGE4YmEyNDZhNTViYWZkNSIsImlhdCI6MTY3MDk4NTM0M30.Ht5U8SdIwdd_17N7LsgF7RPYrQEpCSahjNyD2JBaEzo"
+Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjcxNjEzNDE1LCJzaWduSWQiOiIwZjI1YjI1ZjZlYjY0OTlkOWY1MjdiYjUwNWNmYTY5MCIsImlhdCI6MTY3MTAwODYxNX0.HBhcq3VBEwBhmhbKAdNl285pWcEyBGBwvQuh3kKYYLI"
 
 # 159
 Query_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNTkxMDYxOTk2MyIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjcxNjEzMDkwLCJzaWduSWQiOiI0YWVhNTQ5NjEwMmE0MTlkOWEzYmIyNmQyOGM1ZGNiNyIsImlhdCI6MTY3MTAwODI5MH0.24iOlwo570CBVz3OvngAH9uxRuMxfnVjb9u4X8lI1Os"
