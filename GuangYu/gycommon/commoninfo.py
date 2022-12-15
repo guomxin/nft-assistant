@@ -101,6 +101,7 @@ CastingId2MetaInfo = {
     184: ["12-LianJinXueTu", "炼金学徒"],
     241: ["12-LiuGuangMoFang-ShanHu", "流光魔方-珊瑚"],
     453: ["12-QiYuanGai-WangChuanJuFeng", "启源改-忘川飓风"],
+    203: ["12-WeiJianDing-WuQiTuZhi", "未鉴定的武器图纸"],
 }
 
 Transaction_Logs_File_Name = "_guangyu_{}_trans_logs.csv"
