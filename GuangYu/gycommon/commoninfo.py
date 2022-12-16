@@ -102,6 +102,7 @@ CastingId2MetaInfo = {
     241: ["12-LiuGuangMoFang-ShanHu", "流光魔方-珊瑚"],
     453: ["12-QiYuanGai-WangChuanJuFeng", "启源改-忘川飓风"],
     203: ["12-WeiJianDing-WuQiTuZhi", "未鉴定的武器图纸"],
+    474: ["12-ShenTu-TongDan", "神兔-铜蛋"],
 }
 
 Transaction_Logs_File_Name = "_guangyu_{}_trans_logs.csv"
@@ -113,7 +114,7 @@ HighestValue_Products_Info = {
 }
 
 # 173
-Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjcxNjEzNDE1LCJzaWduSWQiOiIwZjI1YjI1ZjZlYjY0OTlkOWY1MjdiYjUwNWNmYTY5MCIsImlhdCI6MTY3MTAwODYxNX0.HBhcq3VBEwBhmhbKAdNl285pWcEyBGBwvQuh3kKYYLI"
+Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjcxNzg1NDQ2LCJzaWduSWQiOiIyNjllZjhjOWQ2ZDc0OTkzODgzMmEwNjk4MGFmOWU3NSIsImlhdCI6MTY3MTE4MDY0Nn0.L6kU_mfP9vEovcgFzcFK6j_V4u3fjlNykyk97ISpq_I"
 
 # 159
 Query_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNTkxMDYxOTk2MyIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjcxNjEzMDkwLCJzaWduSWQiOiI0YWVhNTQ5NjEwMmE0MTlkOWEzYmIyNmQyOGM1ZGNiNyIsImlhdCI6MTY3MTAwODI5MH0.24iOlwo570CBVz3OvngAH9uxRuMxfnVjb9u4X8lI1Os"
