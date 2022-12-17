@@ -105,6 +105,7 @@ CastingId2MetaInfo = {
     203: ["12-WeiJianDing-WuQiTuZhi", "未鉴定的武器图纸"],
     474: ["12-ShenTu-TongDan", "神兔-铜蛋"],
     479: ["12-ShenTu-YinDan", "神兔-银蛋"],
+    526: ["12-ShenTu-JinDan", "神兔-金蛋"],
 }
 
 Transaction_Logs_File_Name = "_guangyu_{}_trans_logs.csv"
