@@ -97,12 +97,14 @@ CastingId2MetaInfo = {
     275: ["11-ChuanShuoWuQi", "传说武器"],
     259: ["11-ZhiHuiZhiXin", "智慧之心"],
     281: ["11-YiZhiZhiXin", "意志之心"],
+    388: ["11-AnHeiLingGe", "暗黑灵鸽"],
 
     184: ["12-LianJinXueTu", "炼金学徒"],
     241: ["12-LiuGuangMoFang-ShanHu", "流光魔方-珊瑚"],
     453: ["12-QiYuanGai-WangChuanJuFeng", "启源改-忘川飓风"],
     203: ["12-WeiJianDing-WuQiTuZhi", "未鉴定的武器图纸"],
     474: ["12-ShenTu-TongDan", "神兔-铜蛋"],
+    479: ["12-ShenTu-YinDan", "神兔-银蛋"],
 }
 
 Transaction_Logs_File_Name = "_guangyu_{}_trans_logs.csv"
