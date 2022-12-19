@@ -98,6 +98,7 @@ CastingId2MetaInfo = {
     259: ["11-ZhiHuiZhiXin", "智慧之心"],
     281: ["11-YiZhiZhiXin", "意志之心"],
     388: ["11-AnHeiLingGe", "暗黑灵鸽"],
+    380: ["11-MaoXianZheZhiXin", "冒险者之心"],
 
     184: ["12-LianJinXueTu", "炼金学徒"],
     241: ["12-LiuGuangMoFang-ShanHu", "流光魔方-珊瑚"],
@@ -117,7 +118,7 @@ HighestValue_Products_Info = {
 }
 
 # 173
-Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjcxNzg1NDQ2LCJzaWduSWQiOiIyNjllZjhjOWQ2ZDc0OTkzODgzMmEwNjk4MGFmOWU3NSIsImlhdCI6MTY3MTE4MDY0Nn0.L6kU_mfP9vEovcgFzcFK6j_V4u3fjlNykyk97ISpq_I"
+Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjcxOTU2OTMyLCJzaWduSWQiOiIyMzg1MGYxYjM0NzM0MTQ0YWM4ODhkOTY0ZTc2NmVmYiIsImlhdCI6MTY3MTM1MjEzMn0.PCi3M_02WQ9j4ysz6YoPV09zehaI3xdghv9Z_QRXOLQ"
 
 # 159
 Query_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNTkxMDYxOTk2MyIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjcxNjEzMDkwLCJzaWduSWQiOiI0YWVhNTQ5NjEwMmE0MTlkOWEzYmIyNmQyOGM1ZGNiNyIsImlhdCI6MTY3MTAwODI5MH0.24iOlwo570CBVz3OvngAH9uxRuMxfnVjb9u4X8lI1Os"
