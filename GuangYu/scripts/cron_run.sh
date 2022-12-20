@@ -391,21 +391,21 @@ echo "---未鉴定的武器图纸---"
 python grab_transaction_price.py 203 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 203 ${yesterday} 50
 
-echo "---神兔-铜蛋---"
-python grab_transaction_price.py 474 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 474 ${yesterday} 50
+#echo "---神兔-铜蛋---"
+#python grab_transaction_price.py 474 ${yesterday} ${yesterday}
+#python analyze_transaction_prices.py 474 ${yesterday} 50
 
-echo "---神兔-银蛋---"
-python grab_transaction_price.py 479 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 479 ${yesterday} 100
+#echo "---神兔-银蛋---"
+#python grab_transaction_price.py 479 ${yesterday} ${yesterday}
+#python analyze_transaction_prices.py 479 ${yesterday} 100
 
 echo "---暗黑灵鸽---"
 python grab_transaction_price.py 388 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 388 ${yesterday} 100
 
-echo "---神兔-金蛋---"
-python grab_transaction_price.py 526 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 526 ${yesterday} 500
+#echo "---神兔-金蛋---"
+#python grab_transaction_price.py 526 ${yesterday} ${yesterday}
+#python analyze_transaction_prices.py 526 ${yesterday} 500
 
 echo "---冒险者之心---"
 python grab_transaction_price.py 380 ${yesterday} ${yesterday}

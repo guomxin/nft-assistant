@@ -300,17 +300,17 @@ python grab_transaction_price.py 453 ${today} ${tag}
 echo "---未鉴定的武器图纸---"
 python grab_transaction_price.py 203 ${today} ${tag}
 
-echo "---神兔-铜蛋---"
-python grab_transaction_price.py 474 ${today} ${tag}
+#echo "---神兔-铜蛋---"
+#python grab_transaction_price.py 474 ${today} ${tag}
 
-echo "---神兔-银蛋---"
-python grab_transaction_price.py 479 ${today} ${tag}
+#echo "---神兔-银蛋---"
+#python grab_transaction_price.py 479 ${today} ${tag}
 
 echo "---暗黑灵鸽---"
 python grab_transaction_price.py 388 ${today} ${tag}
 
-echo "---神兔-金蛋---"
-python grab_transaction_price.py 526 ${today} ${tag}
+#echo "---神兔-金蛋---"
+#python grab_transaction_price.py 526 ${today} ${tag}
 
 echo "---冒险者之心---"
 python grab_transaction_price.py 380 ${today} ${tag}
