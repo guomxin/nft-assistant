@@ -107,6 +107,7 @@ CastingId2MetaInfo = {
     474: ["12-ShenTu-TongDan", "神兔-铜蛋"],
     479: ["12-ShenTu-YinDan", "神兔-银蛋"],
     526: ["12-ShenTu-JinDan", "神兔-金蛋"],
+    568: ["12-DaTiKa", "答题卡"],
 }
 
 Transaction_Logs_File_Name = "_guangyu_{}_trans_logs.csv"
@@ -118,7 +119,7 @@ HighestValue_Products_Info = {
 }
 
 # 173
-Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjcxOTU2OTMyLCJzaWduSWQiOiIyMzg1MGYxYjM0NzM0MTQ0YWM4ODhkOTY0ZTc2NmVmYiIsImlhdCI6MTY3MTM1MjEzMn0.PCi3M_02WQ9j4ysz6YoPV09zehaI3xdghv9Z_QRXOLQ"
+Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjcyMTMxMjIwLCJzaWduSWQiOiI2MzA3YzlmZjcxNDY0OWQzODQ1NWFkMmM1ZTg1NGY2MiIsImlhdCI6MTY3MTUyNjQyMH0.YgFRPgJNy4SFRI0zurE3ogYhYAoG3dVbv2YaiDP6qhY"
 
 # 159
 Query_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNTkxMDYxOTk2MyIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjcxNjEzMDkwLCJzaWduSWQiOiI0YWVhNTQ5NjEwMmE0MTlkOWEzYmIyNmQyOGM1ZGNiNyIsImlhdCI6MTY3MTAwODI5MH0.24iOlwo570CBVz3OvngAH9uxRuMxfnVjb9u4X8lI1Os"
