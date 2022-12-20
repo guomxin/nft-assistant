@@ -99,6 +99,9 @@ CastingId2MetaInfo = {
     281: ["11-YiZhiZhiXin", "意志之心"],
     388: ["11-AnHeiLingGe", "暗黑灵鸽"],
     380: ["11-MaoXianZheZhiXin", "冒险者之心"],
+    187: ["11-CiOuJingSuiPian", "磁欧晶碎片"],
+    269: ["11-TianChengYi", "天成仪"],
+    389: ["11-TianChengYiII", "天成仪II"],
 
     184: ["12-LianJinXueTu", "炼金学徒"],
     241: ["12-LiuGuangMoFang-ShanHu", "流光魔方-珊瑚"],
