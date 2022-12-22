@@ -115,6 +115,7 @@ CastingId2MetaInfo = {
     568: ["12-DaTiKa", "答题卡"],
 
     243: ["13-LiuGuangMoFang-HuPo", "流光魔方-琥珀"],
+    593: ["13-ChaoJiXunHangZhe", "超级巡航者"],
 }
 
 Transaction_Logs_File_Name = "_guangyu_{}_trans_logs.csv"
