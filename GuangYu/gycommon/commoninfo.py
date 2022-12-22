@@ -28,8 +28,9 @@ CastingId2MetaInfo = {
     71: ["4-PingAnGuo", "国庆节限定空投-平安果"],
     72: ["4-FuQin", "国庆节限定空投-福琴"],
 
-    82: ["5-TanSuoZheI", "探索者I"],
-    231: ["5-TanSuoZheII", "探索者II"],
+    #82: ["5-TanSuoZheI", "探索者I"],
+    #231: ["5-TanSuoZheII", "探索者II"],
+    592: ["5-TanSuoZheIII", "探索者III"],
     #83: ["5-TanSuoZhe-Ctrl", "探索者-Ctrl"],
     #84: ["5-TanSuoZhe-Shift", "探索者-Shift"],
     111: ["5-ShiHuangZhe", "拾荒者"],
@@ -67,8 +68,9 @@ CastingId2MetaInfo = {
     172: ["8-YuEr", "鱼饵"],
     169: ["8-JingZhiDiaoJu-KongTou", "精致的钓具-空投版本"],
     164: ["8-JingZhiDiaoJu-DuiHuan", "精致的钓具-兑换版本"],
-    170: ["8-XunHangZhe-KongTou", "巡航者-空投版本"],
-    159: ["8-XunHangZhe-DuiHuan", "巡航者-兑换版本"],
+    590: ["8-XunHangZheI", "巡航者I"],
+    #170: ["8-XunHangZhe-KongTou", "巡航者-空投版本"],
+    #159: ["8-XunHangZhe-DuiHuan", "巡航者-兑换版本"],
 
     205: ["9-MengHuanShuiLong", "梦幻水龙"],
     #211: ["9-ShenHaiQiPao", "深海气泡"],
@@ -111,6 +113,8 @@ CastingId2MetaInfo = {
     479: ["12-ShenTu-YinDan", "神兔-银蛋"],
     526: ["12-ShenTu-JinDan", "神兔-金蛋"],
     568: ["12-DaTiKa", "答题卡"],
+
+    243: ["13-LiuGuangMoFang-HuPo", "流光魔方-琥珀"],
 }
 
 Transaction_Logs_File_Name = "_guangyu_{}_trans_logs.csv"
@@ -122,7 +126,7 @@ HighestValue_Products_Info = {
 }
 
 # 173
-Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjcyMjAyODI4LCJzaWduSWQiOiI0Y2VlZTg5ZmI1MDE0NTk2YmQ4MTMwZDkxM2Q1NThiOSIsImlhdCI6MTY3MTU5ODAyOH0.LHN4UQTk2hH2PsaiQiF0S-S23Yo-DbJscwTwXsm6sYk"
+Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjcyMjcyNDc3LCJzaWduSWQiOiIwMzM0Yjg2OTYxOTA0ZmVkOTJlNDJjODI4YTE2OTA0MSIsImlhdCI6MTY3MTY2NzY3N30.WFDheQkzFrd1LpvQ-UA0g3QFJq3DBDq-dvCKMatdDCM"
 
 # 159
 Query_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNTkxMDYxOTk2MyIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjcyMjE5MTE5LCJzaWduSWQiOiJhMGIyNzAyMDA2ZTA0YTg4YTE2MGQzOWQ0NmIzNzA2OCIsImlhdCI6MTY3MTYxNDMxOX0.J-5NZMQcIdwpCWuQk9Er8np5TFAiLtY-u5qT3ciSt3w"
