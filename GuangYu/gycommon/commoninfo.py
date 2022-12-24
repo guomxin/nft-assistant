@@ -118,6 +118,7 @@ CastingId2MetaInfo = {
     593: ["13-ChaoJiXunHangZhe", "超级巡航者"],
     594: ["13-ChaoJiTanSuoZhe", "超级探索者"],
     595: ["13-ZhanJiaHouTu", "战甲厚土"],
+    246: ["13-LiuGuangBaoHe-LengCui", "流光宝盒-冷翠"],
 }
 
 Transaction_Logs_File_Name = "_guangyu_{}_trans_logs.csv"
@@ -129,7 +130,7 @@ HighestValue_Products_Info = {
 }
 
 # 173
-Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjcyMjcyNDc3LCJzaWduSWQiOiIwMzM0Yjg2OTYxOTA0ZmVkOTJlNDJjODI4YTE2OTA0MSIsImlhdCI6MTY3MTY2NzY3N30.WFDheQkzFrd1LpvQ-UA0g3QFJq3DBDq-dvCKMatdDCM"
+Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjcyNDcxNDM4LCJzaWduSWQiOiI4MDk1NWVjYjAyNWY0ODM3OTMwMWE3YWE3MzhjMzliNSIsImlhdCI6MTY3MTg2NjYzOH0.LaysT9YC9PR49orKuOrJT4CjUbQ-spehn12t2tMchIs"
 
 # 159
 Query_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNTkxMDYxOTk2MyIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjcyMjE5MTE5LCJzaWduSWQiOiJhMGIyNzAyMDA2ZTA0YTg4YTE2MGQzOWQ0NmIzNzA2OCIsImlhdCI6MTY3MTYxNDMxOX0.J-5NZMQcIdwpCWuQk9Er8np5TFAiLtY-u5qT3ciSt3w"
