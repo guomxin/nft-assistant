@@ -119,6 +119,7 @@ CastingId2MetaInfo = {
     594: ["13-ChaoJiTanSuoZhe", "超级探索者"],
     595: ["13-ZhanJiaHouTu", "战甲厚土"],
     246: ["13-LiuGuangBaoHe-LengCui", "流光宝盒-冷翠"],
+    600: ["13-LengCuiJingHua", "冷翠精华"],
 }
 
 Transaction_Logs_File_Name = "_guangyu_{}_trans_logs.csv"
