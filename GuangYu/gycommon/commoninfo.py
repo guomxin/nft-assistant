@@ -125,6 +125,8 @@ CastingId2MetaInfo = {
     174: ["14-MKMaKaLong", "MK马卡龙"],
     176: ["14-MKXuanZhuanBei", "MK旋转杯"],
     173: ["14-MKLaoYeChe", "MK老爷车"],
+    602: ["14-PXShiMin", "PX市民"],
+    254: ["14-ZZai", "小小键盘-Z仔"],
 }
 
 Transaction_Logs_File_Name = "_guangyu_{}_trans_logs.csv"
