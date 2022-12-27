@@ -127,6 +127,7 @@ CastingId2MetaInfo = {
     173: ["14-MKLaoYeChe", "MK老爷车"],
     602: ["14-PXShiMin", "PX市民"],
     254: ["14-ZZai", "小小键盘-Z仔"],
+    604: ["14-FuGuShouBing", "复古手柄"],
 }
 
 Transaction_Logs_File_Name = "_guangyu_{}_trans_logs.csv"
