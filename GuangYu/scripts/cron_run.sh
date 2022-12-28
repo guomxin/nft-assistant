@@ -131,9 +131,9 @@ echo "---奇物秘宝-时间磨盘---"
 python grab_transaction_price.py 99 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 99 ${yesterday} 100
 
-echo "---凤翊泪---"
-python grab_transaction_price.py 101 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 101 ${yesterday} 50
+#echo "---凤翊泪---"
+#python grab_transaction_price.py 101 ${yesterday} ${yesterday}
+#python analyze_transaction_prices.py 101 ${yesterday} 50
 
 #echo "---国庆节限定空投-平安果---"
 #python grab_transaction_price.py 71 ${yesterday} ${yesterday}
@@ -275,9 +275,9 @@ echo "---机械厚土---"
 python grab_transaction_price.py 223 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 223 ${yesterday} 100
 
-echo "---组队卡I---"
-python grab_transaction_price.py 232 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 232 ${yesterday} 100
+#echo "---组队卡I---"
+#python grab_transaction_price.py 232 ${yesterday} ${yesterday}
+#python analyze_transaction_prices.py 232 ${yesterday} 100
 
 echo "---修补学徒---"
 python grab_transaction_price.py 183 ${yesterday} ${yesterday}
@@ -403,9 +403,9 @@ echo "---流光宝盒-冷翠---"
 python grab_transaction_price.py 246 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 246 ${yesterday} 100
 
-echo "---冷翠精华---"
-python grab_transaction_price.py 600 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 600 ${yesterday} 100
+#echo "---冷翠精华---"
+#python grab_transaction_price.py 600 ${yesterday} ${yesterday}
+#python analyze_transaction_prices.py 600 ${yesterday} 100
 
 echo "---MK魔术帽---"
 python grab_transaction_price.py 175 ${yesterday} ${yesterday}
@@ -436,8 +436,8 @@ python grab_transaction_price.py 604 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 604 ${yesterday} 50
 
 echo "---5号电池---"
-python grab_transaction_price.py 604 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 604 ${yesterday} 50
+python grab_transaction_price.py 605 ${yesterday} ${yesterday}
+python analyze_transaction_prices.py 605 ${yesterday} 50
 
 #------ 后处理 ------#
 cd data;mkdir -p upload/$yesterday;rm -rf upload/$yesterday/*

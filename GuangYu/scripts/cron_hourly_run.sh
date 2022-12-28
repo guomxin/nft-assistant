@@ -105,8 +105,8 @@ python grab_transaction_price.py 100 ${today} ${tag}
 echo "---奇物秘宝-时间磨盘---"
 python grab_transaction_price.py 99 ${today} ${tag}
 
-echo "---凤翊泪---"
-python grab_transaction_price.py 101 ${today} ${tag}
+#echo "---凤翊泪---"
+#python grab_transaction_price.py 101 ${today} ${tag}
 
 #echo "---国庆节限定空投-平安果---"
 #python grab_transaction_price.py 71 ${today} ${tag}
@@ -213,8 +213,8 @@ python grab_transaction_price.py 198 ${today} ${tag}
 echo "---机械厚土---"
 python grab_transaction_price.py 223 ${today} ${tag}
 
-echo "---组队卡I---"
-python grab_transaction_price.py 232 ${today} ${tag}
+#echo "---组队卡I---"
+#python grab_transaction_price.py 232 ${today} ${tag}
 
 echo "---修补学徒---"
 python grab_transaction_price.py 183 ${today} ${tag}
@@ -309,8 +309,8 @@ python grab_transaction_price.py 595 ${today} ${tag}
 echo "---流光宝盒-冷翠---"
 python grab_transaction_price.py 246 ${today} ${tag}
 
-echo "---冷翠精华---"
-python grab_transaction_price.py 600 ${today} ${tag}
+#echo "---冷翠精华---"
+#python grab_transaction_price.py 600 ${today} ${tag}
 
 echo "---MK魔术帽---"
 python grab_transaction_price.py 175 ${today} ${tag}
