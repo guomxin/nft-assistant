@@ -129,6 +129,7 @@ CastingId2MetaInfo = {
     254: ["14-ZZai", "小小键盘-Z仔"],
     604: ["14-FuGuShouBing", "复古手柄"],
     605: ["14-5HaoDianChi", "5号电池"],
+    607: ["14-XuanZeKa", "选择卡"],
 }
 
 Transaction_Logs_File_Name = "_guangyu_{}_trans_logs.csv"
