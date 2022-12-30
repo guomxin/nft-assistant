@@ -125,11 +125,12 @@ CastingId2MetaInfo = {
     174: ["14-MKMaKaLong", "MK马卡龙"],
     176: ["14-MKXuanZhuanBei", "MK旋转杯"],
     173: ["14-MKLaoYeChe", "MK老爷车"],
-    602: ["14-PXShiMin", "PX市民"],
-    254: ["14-ZZai", "小小键盘-Z仔"],
-    604: ["14-FuGuShouBing", "复古手柄"],
-    605: ["14-5HaoDianChi", "5号电池"],
-    607: ["14-XuanZeKa", "选择卡"],
+    602: ["14-PXShiMin", "PX市民"], #
+    254: ["14-ZZai", "小小键盘-Z仔"], #
+    604: ["14-FuGuShouBing", "复古手柄"], #
+    605: ["14-5HaoDianChi", "5号电池"], #
+    607: ["14-XuanZeKa", "选择卡"], #
+    608: ["14-FuGuHongBaiJi", "复古红白机"],
 }
 
 Transaction_Logs_File_Name = "_guangyu_{}_trans_logs.csv"
