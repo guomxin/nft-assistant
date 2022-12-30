@@ -423,25 +423,25 @@ echo "---MK老爷车---"
 python grab_transaction_price.py 173 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 173 ${yesterday} 100
 
-echo "---PX市民---"
-python grab_transaction_price.py 602 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 602 ${yesterday} 100
+#echo "---PX市民---"
+#python grab_transaction_price.py 602 ${yesterday} ${yesterday}
+#python analyze_transaction_prices.py 602 ${yesterday} 100
 
 #echo "---小小键盘-Z仔---"
 #python grab_transaction_price.py 254 ${yesterday} ${yesterday}
 #python analyze_transaction_prices.py 254 ${yesterday} 100
 
-echo "---复古手柄---"
-python grab_transaction_price.py 604 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 604 ${yesterday} 50
+#echo "---复古手柄---"
+#python grab_transaction_price.py 604 ${yesterday} ${yesterday}
+#python analyze_transaction_prices.py 604 ${yesterday} 50
 
-echo "---5号电池---"
-python grab_transaction_price.py 605 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 605 ${yesterday} 50
+#echo "---5号电池---"
+#python grab_transaction_price.py 605 ${yesterday} ${yesterday}
+#python analyze_transaction_prices.py 605 ${yesterday} 50
 
-echo "---选择卡---"
-python grab_transaction_price.py 607 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 607 ${yesterday} 50
+#echo "---选择卡---"
+#python grab_transaction_price.py 607 ${yesterday} ${yesterday}
+#python analyze_transaction_prices.py 607 ${yesterday} 50
 
 #------ 后处理 ------#
 cd data;mkdir -p upload/$yesterday;rm -rf upload/$yesterday/*

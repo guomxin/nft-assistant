@@ -324,20 +324,20 @@ python grab_transaction_price.py 176 ${today} ${tag}
 echo "---MK老爷车---"
 python grab_transaction_price.py 173 ${today} ${tag}
 
-echo "---PX市民---"
-python grab_transaction_price.py 602 ${today} ${tag}
+#echo "---PX市民---"
+#python grab_transaction_price.py 602 ${today} ${tag}
 
 #echo "---小小键盘-Z仔---"
 #python grab_transaction_price.py 254 ${today} ${tag}
 
-echo "---复古手柄---"
-python grab_transaction_price.py 604 ${today} ${tag}
+#echo "---复古手柄---"
+#python grab_transaction_price.py 604 ${today} ${tag}
 
-echo "---5号电池---"
-python grab_transaction_price.py 605 ${today} ${tag}
+#echo "---5号电池---"
+#python grab_transaction_price.py 605 ${today} ${tag}
 
-echo "---选择卡---"
-python grab_transaction_price.py 607 ${today} ${tag}
+#echo "---选择卡---"
+#python grab_transaction_price.py 607 ${today} ${tag}
 
 #------ 后处理 ------#
 cd data;mkdir -p upload/$tag;rm -rf upload/$tag/*
