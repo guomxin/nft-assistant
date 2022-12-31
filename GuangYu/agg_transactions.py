@@ -13,6 +13,47 @@ from gycommon import utils
 #BUYER_NAME_INDEX = 2
 TRANS_PRICE_INDEX = 4
 
+def gen_output(tag, docx_file_name, all_total_price, trans_infos, send_msg=True):
+    # 生成docx文件
+    if len(tag) == 8:
+        # dayly
+        start_time = datetime.datetime.strptime(tag + " 0:0:0", "%Y%m%d %H:%M:%S")
+        end_time = datetime.datetime.strptime(tag + " 23:59:59", "%Y%m%d %H:%M:%S")
+    elif len(tag) == 10:
+        # hourly
+        start_time = datetime.datetime.strptime(tag[:8] + " 0:0:0", "%Y%m%d %H:%M:%S")
+        end_time = datetime.datetime.strptime(tag, "%Y%m%d%H")
+    else:
+        print("错误的tag, tag={}!".format(tag))
+        return
+    time_span_str = "时间段：{} - {}".format(start_time.strftime("%Y/%m/%d %H:%M:%S"), end_time.strftime("%Y/%m/%d %H:%M:%S"))
+    doc = Document() # 追加到已有文件
+    doc.add_paragraph("{}, 总成交额: {:.2f}万".format(time_span_str, all_total_price/10000))
+    table = doc.add_table(1, 4)
+    table.style = "TableGrid"
+    heading_cells = table.rows[0].cells
+    heading_cells[0].text = "名称"
+    heading_cells[1].text = "数量"
+    heading_cells[2].text = "均价"
+    heading_cells[3].text = "合计(万)"
+
+    # 输出
+    content = "**{}-总成交额:{:.2f}万**\n".format(tag, all_total_price/10000)
+    for (casting_ch_name, cnt, min_price, max_price, avg_price, total_price) in trans_infos:
+        if cnt > 0:
+            content += "{}\n>数量:{}\n>最低价:{}\n>最高价:{}\n>均价:{:.2f}\n>合计:{:.2f}万\n\n".format(
+                casting_ch_name, cnt, min_price,
+                max_price, avg_price, total_price/10000)
+            cells = table.add_row().cells
+            cells[0].text = casting_ch_name
+            cells[1].text = str(cnt)
+            cells[2].text = "{:.2f}".format(avg_price)
+            cells[3].text = "{:.2f}".format(total_price/10000)
+    doc.save(docx_file_name)
+    
+    if send_msg:
+        utils.send_workwx_msg_agg(utils.TradingValue_MSG, "markdown", content)
+
 def analyze_trans(tag):
     casting2info = {}
     all_total_price = 0.0
@@ -57,49 +98,21 @@ def analyze_trans(tag):
         info = [casting_ch_name]
         info.extend(casting2info[casting_ch_name])
         trans_infos.append(info)
-    trans_infos.sort(key=lambda i: i[-1], reverse=True)
     
-    # 生成docx文件
-    docx_file_name = "data/日交易额_{}.docx".format(
+    # 按交易额排序
+    trans_infos.sort(key=lambda i: i[-1], reverse=True)    
+    docx_file_name = "data/日交易额_{}_按交易额排序.docx".format(
         tag
     )
-    if len(tag) == 8:
-        # dayly
-        start_time = datetime.datetime.strptime(tag + " 0:0:0", "%Y%m%d %H:%M:%S")
-        end_time = datetime.datetime.strptime(tag + " 23:59:59", "%Y%m%d %H:%M:%S")
-    elif len(tag) == 10:
-        # hourly
-        start_time = datetime.datetime.strptime(tag[:8] + " 0:0:0", "%Y%m%d %H:%M:%S")
-        end_time = datetime.datetime.strptime(tag, "%Y%m%d%H")
-    else:
-        print("错误的tag, tag={}!".format(tag))
-        return
-    time_span_str = "时间段：{} - {}".format(start_time.strftime("%Y/%m/%d %H:%M:%S"), end_time.strftime("%Y/%m/%d %H:%M:%S"))
-    doc = Document() # 追加到已有文件
-    doc.add_paragraph("{}, 总成交额: {:.2f}万".format(time_span_str, all_total_price/10000))
-    table = doc.add_table(1, 4)
-    table.style = "TableGrid"
-    heading_cells = table.rows[0].cells
-    heading_cells[0].text = "名称"
-    heading_cells[1].text = "数量"
-    heading_cells[2].text = "均价"
-    heading_cells[3].text = "合计(万)"
+    gen_output(tag, docx_file_name, all_total_price, trans_infos)
 
-    # 输出
-    content = "**{}-总成交额:{:.2f}万**\n".format(tag, all_total_price/10000)
-    for (casting_ch_name, cnt, min_price, max_price, avg_price, total_price) in trans_infos:
-        if cnt > 0:
-            content += "{}\n>数量:{}\n>最低价:{}\n>最高价:{}\n>均价:{:.2f}\n>合计:{:.2f}万\n\n".format(
-                casting_ch_name, cnt, min_price,
-                max_price, avg_price, total_price/10000)
-            cells = table.add_row().cells
-            cells[0].text = casting_ch_name
-            cells[1].text = str(cnt)
-            cells[2].text = "{:.2f}".format(avg_price)
-            cells[3].text = "{:.2f}".format(total_price/10000)
-    doc.save(docx_file_name)
-    
-    utils.send_workwx_msg_agg(utils.TradingValue_MSG, "markdown", content)
+    # 按交易数量排序
+    trans_infos.sort(key=lambda i: i[1], reverse=True)    
+    docx_file_name = "data/日交易额_{}_按交易量排序.docx".format(
+        tag
+    )
+    gen_output(tag, docx_file_name, all_total_price, trans_infos, False)
+
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
