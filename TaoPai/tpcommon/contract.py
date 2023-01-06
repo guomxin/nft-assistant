@@ -234,7 +234,7 @@ def dump_contract_all_tokenid2name(contract_address, contract_ABI, existing_toke
         print("{} tokens.".format(len(tokenid_name_list)))
 
 
-    result_file = open(dump_file_name, "w")
+    result_file = open(dump_file_name, "w", encoding="utf-8-sig")
     for (token_id, token_name) in tokenid_name_list:
         result_file.write("{},{}\n".format(
             token_id,
@@ -335,7 +335,7 @@ def analyze_contract_holders(contract_address, contract_ABI, tokenid2name, snaps
         to_address = hinfo[3]
         hinfo.append(address2holdingcnt[to_address])
     holding_infos.sort(key=lambda h: h[7], reverse=True)
-    with open(dump_file_name, "w") as dump_file:
+    with open(dump_file_name, "w", encoding="utf-8-sig") as dump_file:
         dump_file.write("合约地址,TokenID,TokenName,持有地址,持有时长(h),持有开始时间,快照时间,持有数量\n")
         for hinfo in holding_infos:
             dump_file.write("{},{},{},{},{},{},{},{}\n".format(

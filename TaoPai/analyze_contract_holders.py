@@ -25,7 +25,7 @@ if __name__ == "__main__":
     print("snapshot time: {}.".format(snapshot_time))
     tokenid2name = {}
     noname_token_cnt = 0
-    for line in open(tokenid2name_file_name):
+    for line in open(tokenid2name_file_name, encoding="utf-8-sig"):
         items = line.strip().split(",")
         token_id = int(items[0])
         token_name = items[1]

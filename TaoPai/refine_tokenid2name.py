@@ -15,8 +15,8 @@ if __name__ == "__main__":
     contract_address, _ = contract.get_contract_address_ABI_from_name(nft_name)
     no_name_token_cnt_before = 0
     no_name_token_cnt_after = 0
-    with open(dump_file_name, "w") as dump_file:
-        for line in open(tokenid2name_file_name):
+    with open(dump_file_name, "w", encoding="utf-8-sig") as dump_file:
+        for line in open(tokenid2name_file_name, encoding="utf-8-sig"):
             items = line.strip().split(",")
             token_id = int(items[0])
             token_name = items[1]
