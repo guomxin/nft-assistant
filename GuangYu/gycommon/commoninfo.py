@@ -131,6 +131,7 @@ CastingId2MetaInfo = {
     605: ["14-5HaoDianChi", "5号电池"], #
     607: ["14-XuanZeKa", "选择卡"], #
     608: ["14-FuGuHongBaiJi", "复古红白机"],
+    611: ["14-MoRen-ShiZhiNiZhuan", "魔刃-时之逆转"],
 }
 
 Transaction_Logs_File_Name = "_guangyu_{}_trans_logs.csv"
