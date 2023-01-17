@@ -139,9 +139,9 @@ python analyze_transaction_prices.py 99 ${yesterday} 100
 #python grab_transaction_price.py 71 ${yesterday} ${yesterday}
 #python analyze_transaction_prices.py 71 ${yesterday} 50
 
-echo "---国庆节限定空投-抚琴---"
+echo "---国庆节限定空投-福琴---"
 python grab_transaction_price.py 72 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 72 ${yesterday} 100
+python analyze_transaction_prices.py 72 ${yesterday} 50
 
 echo "---拾荒者---"
 python grab_transaction_price.py 111 ${yesterday} ${yesterday}
@@ -217,11 +217,11 @@ python analyze_transaction_prices.py 153 ${yesterday} 100
 
 echo "---国庆节限定空投-可乐---"
 python grab_transaction_price.py 74 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 74 ${yesterday} 100
+python analyze_transaction_prices.py 74 ${yesterday} 50
 
 echo "---国庆节限定空投-缘结---"
 python grab_transaction_price.py 73 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 73 ${yesterday} 100
+python analyze_transaction_prices.py 73 ${yesterday} 50
 
 echo "---奇物秘宝-蓝海幽蝶---"
 python grab_transaction_price.py 155 ${yesterday} ${yesterday}
