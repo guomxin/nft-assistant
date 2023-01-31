@@ -354,6 +354,9 @@ python grab_transaction_price.py 662 ${today} ${tag}
 echo "---指引卡---"
 python grab_transaction_price.py 663 ${today} ${tag}
 
+echo "---新春福袋---"
+python grab_transaction_price.py 736 ${today} ${tag}
+
 #------ 后处理 ------#
 cd data;mkdir -p upload/$tag;rm -rf upload/$tag/*
 mv *$tag* upload/$tag;cd upload/$tag
@@ -373,7 +376,7 @@ for nft in "1-KaiTuoZhe" "1-WanXiangLongChao" "1-KongJianBuJi-QiNeng" "1-YunMuSh
 "12-ShenTu-YinDan" "11-AnHeiLingGe" "12-ShenTu-JinDan" "11-MaoXianZheZhiXin" "12-DaTiKa" "11-CiOuJingSuiPian" "11-TianChengYi" "11-TianChengYiII" \
 "13-LiuGuangMoFang-HuPo" "13-ChaoJiXunHangZhe" "13-ChaoJiTanSuoZhe" "13-ZhanJiaHouTu" "13-LiuGuangBaoHe-LengCui" "13-LengCuiJingHua" \
 "14-MKMoShuMao" "14-MKMaKaLong" "14-MKXuanZhuanBei" "14-MKLaoYeChe" "14-PXShiMin" "14-ZZai" "14-FuGuShouBing" "14-5HaoDianChi" "14-XuanZeKa" \
-"14-FuGuHongBaiJi" "14-MoRen-ShiZhiNiZhuan" "13-HangHaiKa" "13-LuYunKa" "13-ZhiYinKa"
+"14-FuGuHongBaiJi" "14-MoRen-ShiZhiNiZhuan" "13-HangHaiKa" "13-LuYunKa" "13-ZhiYinKa" "14-XinChunFuDai"
 do
     mkdir $nft;mv *$nft*.csv $nft;zip -q $nft-$tag $nft/*
 done
