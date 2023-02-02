@@ -90,6 +90,7 @@ CastingId2MetaInfo = {
     133: ["10-EMengGuoShi", "噩梦果实"],
     260: ["10-ShouLieZhe", "狩猎者"],
     242: ["10-LiuGuangMoFang-QingJin", "流光魔方-青金"],
+    614: ["10-BaiGuCao", "白骨草"],
     
     #266: ["11-PuTongWuQi", "普通武器"],
     #272: ["11-ChuanSongJieZhi-LongXueRongDong", "传送戒指-龙血熔洞"],
@@ -138,6 +139,8 @@ CastingId2MetaInfo = {
     611: ["14-MoRen-ShiZhiNiZhuan", "魔刃-时之逆转"],
     736: ["14-XinChunFuDai", "新春福袋"],
     615: ["14-ShuangSheZhang", "双蛇杖"],
+
+    754: ["15-ZhuanLunPan", "转轮盘"],
 }
 
 Transaction_Logs_File_Name = "_guangyu_{}_trans_logs.csv"
