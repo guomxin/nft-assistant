@@ -141,6 +141,7 @@ CastingId2MetaInfo = {
     615: ["14-ShuangSheZhang", "双蛇杖"],
 
     754: ["15-ZhuanLunPan", "转轮盘"],
+    240: ["15-XiaoPingYuLei", "小瓶鱼泪"],
 }
 
 Transaction_Logs_File_Name = "_guangyu_{}_trans_logs.csv"
@@ -152,7 +153,7 @@ HighestValue_Products_Info = {
 }
 
 # 173
-Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjc1ODEzMTIzLCJzaWduSWQiOiI4ZmVjN2QwYmYzYWI0ZmUwYjZiNGZmMDk5YTlhNDE4ZCIsImlhdCI6MTY3NTIwODMyM30.qo-ao89Rm-zR_30rTETxtu_E3uBxr7F6ePXHwOSvfhQ"
+Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjc1OTkwMTkwLCJzaWduSWQiOiI0OTY2MjYwNGU4NGY0ZTE3OTE4Mjg2MzI5ZTU1MjJkNCIsImlhdCI6MTY3NTM4NTM5MH0.909ea4HKhukz2ZalIIfDpvxgw4IydtvfwMvmm5hH7DM"
 
 # 159
 Query_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNTkxMDYxOTk2MyIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjc1OTA1NjQ5LCJzaWduSWQiOiJjZmNkZDI2MjFlNzg0MjgyYjZmYWUwZGY2ODkwMGRhMiIsImlhdCI6MTY3NTMwMDg0OX0.EYIiMQVHHK0LfZ-8UXGx7mKwoAGXkl_yKA8vHd1ccmw"
