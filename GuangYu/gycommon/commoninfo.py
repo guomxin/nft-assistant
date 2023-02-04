@@ -144,6 +144,7 @@ CastingId2MetaInfo = {
     240: ["15-XiaoPingYuLei", "小瓶鱼泪"],
     711: ["15-SiXiZheShan", "四喜折扇"],
     792: ["15-HuaCaoTuan", "花草团"],
+    793: ["15-ShengShuZhongZi", "圣树种子"],
 }
 
 Transaction_Logs_File_Name = "_guangyu_{}_trans_logs.csv"
