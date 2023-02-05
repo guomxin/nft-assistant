@@ -125,7 +125,6 @@ CastingId2MetaInfo = {
     662: ["13-LuYunKa", "陆运卡"],
     663: ["13-ZhiYinKa", "指引卡"],
 
-    
     175: ["14-MKMoShuMao", "MK魔术帽"],
     174: ["14-MKMaKaLong", "MK马卡龙"],
     176: ["14-MKXuanZhuanBei", "MK旋转杯"],
@@ -145,6 +144,8 @@ CastingId2MetaInfo = {
     711: ["15-SiXiZheShan", "四喜折扇"],
     792: ["15-HuaCaoTuan", "花草团"],
     793: ["15-ShengShuZhongZi", "圣树种子"],
+    709: ["15-MoFaYaoShui", "魔法药水"],
+    715: ["15-YongShengZhiHua", "永生之花"],
 }
 
 Transaction_Logs_File_Name = "_guangyu_{}_trans_logs.csv"
@@ -156,7 +157,7 @@ HighestValue_Products_Info = {
 }
 
 # 173
-Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjc1OTkwMTkwLCJzaWduSWQiOiI0OTY2MjYwNGU4NGY0ZTE3OTE4Mjg2MzI5ZTU1MjJkNCIsImlhdCI6MTY3NTM4NTM5MH0.909ea4HKhukz2ZalIIfDpvxgw4IydtvfwMvmm5hH7DM"
+Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjc2MTk4NjI4LCJzaWduSWQiOiI1YWFjZjkxYWRjNGY0ZDlkOTM1MDE2ZDM5MzY4M2E4ZSIsImlhdCI6MTY3NTU5MzgyOH0.4cjgwLHPdGsPM9q3hYoni5GrSyZusULvEgxnGmhzdwA"
 
 # 159
 Query_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNTkxMDYxOTk2MyIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjc1OTA1NjQ5LCJzaWduSWQiOiJjZmNkZDI2MjFlNzg0MjgyYjZmYWUwZGY2ODkwMGRhMiIsImlhdCI6MTY3NTMwMDg0OX0.EYIiMQVHHK0LfZ-8UXGx7mKwoAGXkl_yKA8vHd1ccmw"
