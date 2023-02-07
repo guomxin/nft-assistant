@@ -146,6 +146,7 @@ CastingId2MetaInfo = {
     793: ["15-ShengShuZhongZi", "圣树种子"],
     709: ["15-MoFaYaoShui", "魔法药水"],
     715: ["15-YongShengZhiHua", "永生之花"],
+    815: ["15-YongShengShouMenRen", "永生守门人"],
 }
 
 Transaction_Logs_File_Name = "_guangyu_{}_trans_logs.csv"
@@ -157,7 +158,7 @@ HighestValue_Products_Info = {
 }
 
 # 173
-Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjc2MTk4NjI4LCJzaWduSWQiOiI1YWFjZjkxYWRjNGY0ZDlkOTM1MDE2ZDM5MzY4M2E4ZSIsImlhdCI6MTY3NTU5MzgyOH0.4cjgwLHPdGsPM9q3hYoni5GrSyZusULvEgxnGmhzdwA"
+Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjc2MzY3MTg1LCJzaWduSWQiOiJkYzk0ZGNlZDU5YTc0ZGFhOTlmNDY5OThiYzNjOTExNCIsImlhdCI6MTY3NTc2MjM4NX0.5rJ66_yaZ5v3mxR_uLC1pTaOAbCdPPBroDnNiJmczX0"
 
 # 159
 Query_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNTkxMDYxOTk2MyIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjc1OTA1NjQ5LCJzaWduSWQiOiJjZmNkZDI2MjFlNzg0MjgyYjZmYWUwZGY2ODkwMGRhMiIsImlhdCI6MTY3NTMwMDg0OX0.EYIiMQVHHK0LfZ-8UXGx7mKwoAGXkl_yKA8vHd1ccmw"
