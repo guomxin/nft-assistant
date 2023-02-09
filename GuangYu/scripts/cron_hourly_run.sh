@@ -345,14 +345,14 @@ python grab_transaction_price.py 608 ${today} ${tag}
 echo "---魔刃-时之逆转---"
 python grab_transaction_price.py 611 ${today} ${tag}
 
-echo "---航海卡---"
-python grab_transaction_price.py 664 ${today} ${tag}
+#echo "---航海卡---"
+#python grab_transaction_price.py 664 ${today} ${tag}
 
-echo "---陆运卡---"
-python grab_transaction_price.py 662 ${today} ${tag}
+#echo "---陆运卡---"
+#python grab_transaction_price.py 662 ${today} ${tag}
 
-echo "---指引卡---"
-python grab_transaction_price.py 663 ${today} ${tag}
+#echo "---指引卡---"
+#python grab_transaction_price.py 663 ${today} ${tag}
 
 echo "---新春福袋---"
 python grab_transaction_price.py 736 ${today} ${tag}
@@ -409,7 +409,7 @@ for nft in "1-KaiTuoZhe" "1-WanXiangLongChao" "1-KongJianBuJi-QiNeng" "1-YunMuSh
 "12-ShenTu-YinDan" "11-AnHeiLingGe" "12-ShenTu-JinDan" "11-MaoXianZheZhiXin" "12-DaTiKa" "11-CiOuJingSuiPian" "11-TianChengYiII" "11-TianChengYi" \
 "13-LiuGuangMoFang-HuPo" "13-ChaoJiXunHangZhe" "13-ChaoJiTanSuoZhe" "13-ZhanJiaHouTu" "13-LiuGuangBaoHe-LengCui" "13-LengCuiJingHua" \
 "14-MKMoShuMao" "14-MKMaKaLong" "14-MKXuanZhuanBei" "14-MKLaoYeChe" "14-PXShiMin" "14-ZZai" "14-FuGuShouBing" "14-5HaoDianChi" "14-XuanZeKa" \
-"14-FuGuHongBaiJi" "14-MoRen-ShiZhiNiZhuan" "13-HangHaiKa" "13-LuYunKa" "13-ZhiYinKa" "14-XinChunFuDai" "14-ShuangSheZhang" "10-BaiGuCao" \
+"14-FuGuHongBaiJi" "14-MoRen-ShiZhiNiZhuan"  "14-XinChunFuDai" "14-ShuangSheZhang" "10-BaiGuCao" \
 "15-ZhuanLunPan" "15-XiaoPingYuLei" "15-SiXiZheShan" "15-HuaCaoTuan" "15-ShengShuZhongZi" "15-MoFaYaoShui" "15-YongShengZhiHua" "15-YongShengShouMenRen" \
 "16-XiaoJingLing-NeiCeZiGeKa"
 do
