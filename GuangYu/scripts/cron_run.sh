@@ -511,6 +511,10 @@ echo "---小精灵-内测资格卡---"
 python grab_transaction_price.py 844 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 844 ${yesterday} 50
 
+echo "---混沌土---"
+python grab_transaction_price.py 854 ${yesterday} ${yesterday}
+python analyze_transaction_prices.py 854 ${yesterday} 50
+
 #------ 后处理 ------#
 cd data;mkdir -p upload/$yesterday;rm -rf upload/$yesterday/*
 cp *$yesterday* upload/$yesterday;cd upload/$yesterday
@@ -532,7 +536,7 @@ for nft in "1-KaiTuoZhe" "1-WanXiangLongChao" "1-KongJianBuJi-QiNeng" "1-YunMuSh
 "14-MKMoShuMao" "14-MKMaKaLong" "14-MKXuanZhuanBei" "14-MKLaoYeChe" "14-PXShiMin" "14-ZZai" "14-FuGuShouBing" "14-5HaoDianChi" "14-XuanZeKa" \
 "14-FuGuHongBaiJi" "14-MoRen-ShiZhiNiZhuan" "14-XinChunFuDai" "14-ShuangSheZhang" "10-BaiGuCao" \
 "15-ZhuanLunPan" "15-XiaoPingYuLei" "15-SiXiZheShan" "15-HuaCaoTuan" "15-ShengShuZhongZi" "15-MoFaYaoShui" "15-YongShengZhiHua" "15-YongShengShouMenRen" \
-"16-XiaoJingLing-NeiCeZiGeKa"
+"16-XiaoJingLing-NeiCeZiGeKa" "16-HunDunTu"
 do
     mkdir $nft;mv *$nft*.csv $nft;zip -q $nft-$yesterday $nft/*
 done

@@ -121,9 +121,9 @@ CastingId2MetaInfo = {
     595: ["13-ZhanJiaHouTu", "战甲厚土"],
     246: ["13-LiuGuangBaoHe-LengCui", "流光宝盒-冷翠"],
     600: ["13-LengCuiJingHua", "冷翠精华"],
-    664: ["13-HangHaiKa", "航海卡"],
-    662: ["13-LuYunKa", "陆运卡"],
-    663: ["13-ZhiYinKa", "指引卡"],
+    #664: ["13-HangHaiKa", "航海卡"],
+    #662: ["13-LuYunKa", "陆运卡"],
+    #663: ["13-ZhiYinKa", "指引卡"],
 
     175: ["14-MKMoShuMao", "MK魔术帽"],
     174: ["14-MKMaKaLong", "MK马卡龙"],
@@ -149,6 +149,7 @@ CastingId2MetaInfo = {
     815: ["15-YongShengShouMenRen", "永生守门人"],
 
     844: ["16-XiaoJingLing-NeiCeZiGeKa", "小精灵-内测资格卡"],
+    854: ["16-HunDunTu", "混沌土"],
 }
 
 Transaction_Logs_File_Name = "_guangyu_{}_trans_logs.csv"
@@ -160,7 +161,7 @@ HighestValue_Products_Info = {
 }
 
 # 173
-Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjc2NDQ5OTU3LCJzaWduSWQiOiI4ZWI0ZTcxYThkNjU0OTU1OWUwNTEwYTIyNDUxNzg4OCIsImlhdCI6MTY3NTg0NTE1N30.HzYfSpc4VYTR7g7V2FknP8OB55qBh_xb2OUS7X6-kqM"
+Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjc2NTI4ODEwLCJzaWduSWQiOiIzNTQzNGRmYWVkNDQ0YWU0OWI5ZDg2MmQ5YTM0NTIxMSIsImlhdCI6MTY3NTkyNDAxMH0.er58lAQXvroVLZrlC_5U9NPNYTSmZD-t8bzeOMI5Gpw"
 
 # 159
 Query_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNTkxMDYxOTk2MyIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjc2NTI4NDc3LCJzaWduSWQiOiI3YWQ1YzU0NzBlNmU0YzIxYmFkYWJiNWI5YjllMGRiZSIsImlhdCI6MTY3NTkyMzY3N30.01mNmwsC-TU3IonZ73IfAWWcC8zIiou-XFdUWDcjbv4"
