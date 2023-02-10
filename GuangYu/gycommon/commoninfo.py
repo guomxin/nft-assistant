@@ -150,6 +150,7 @@ CastingId2MetaInfo = {
 
     844: ["16-XiaoJingLing-NeiCeZiGeKa", "小精灵-内测资格卡"],
     854: ["16-HunDunTu", "混沌土"],
+    855: ["16-HuangJinShu-YouLing", "黄金树-有灵"],
 }
 
 Transaction_Logs_File_Name = "_guangyu_{}_trans_logs.csv"
