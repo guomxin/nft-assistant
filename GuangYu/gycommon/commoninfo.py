@@ -143,7 +143,7 @@ CastingId2MetaInfo = {
     240: ["15-XiaoPingYuLei", "小瓶鱼泪"],
     711: ["15-SiXiZheShan", "四喜折扇", 200],
     792: ["15-HuaCaoTuan", "花草团", 2000],
-    793: ["15-ShengShuZhongZi", "圣树种子", 500],
+    793: ["15-ShengShuZhongZi", "圣树种子"],
     709: ["15-MoFaYaoShui", "魔法药水"],
     715: ["15-YongShengZhiHua", "永生之花"],
     815: ["15-YongShengShouMenRen", "永生守门人"],
@@ -152,6 +152,9 @@ CastingId2MetaInfo = {
     854: ["16-HunDunTu", "混沌土"],
     855: ["16-HuangJinShu-YouLing", "黄金树-有灵", 1000],
     853: ["16-CiKongJianLaLian", "次空间拉链", 300],
+    861: ["16-QiYuanKa", "祈愿卡", 300],
+    856: ["16-FuGuYuanHuan", "缚骨圆环", 1000],
+
 }
 
 DEFAULT_MIN_PRICE = 50

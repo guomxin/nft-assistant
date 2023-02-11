@@ -399,6 +399,12 @@ python grab_transaction_price.py 855 ${today} ${tag}
 echo "---次空间拉链---"
 python grab_transaction_price.py 853 ${today} ${tag}
 
+echo "---祈愿卡---"
+python grab_transaction_price.py 861 ${today} ${tag}
+
+echo "---缚骨圆环---"
+python grab_transaction_price.py 856 ${today} ${tag}
+
 #------ 后处理 ------#
 cd data;mkdir -p upload/$tag;rm -rf upload/$tag/*
 mv *$tag* upload/$tag;cd upload/$tag
@@ -420,7 +426,7 @@ for nft in "1-KaiTuoZhe" "1-WanXiangLongChao" "1-KongJianBuJi-QiNeng" "1-YunMuSh
 "14-MKMoShuMao" "14-MKMaKaLong" "14-MKXuanZhuanBei" "14-MKLaoYeChe" "14-PXShiMin" "14-ZZai" "14-FuGuShouBing" "14-5HaoDianChi" "14-XuanZeKa" \
 "14-FuGuHongBaiJi" "14-MoRen-ShiZhiNiZhuan"  "14-XinChunFuDai" "14-ShuangSheZhang" "10-BaiGuCao" \
 "15-ZhuanLunPan" "15-XiaoPingYuLei" "15-SiXiZheShan" "15-HuaCaoTuan" "15-ShengShuZhongZi" "15-MoFaYaoShui" "15-YongShengZhiHua" "15-YongShengShouMenRen" \
-"16-XiaoJingLing-NeiCeZiGeKa" "16-HunDunTu" "16-HuangJinShu-YouLing" "16-CiKongJianLaLian"
+"16-XiaoJingLing-NeiCeZiGeKa" "16-HunDunTu" "16-HuangJinShu-YouLing" "16-CiKongJianLaLian" "16-QiYuanKa" "16-FuGuYuanHuan"
 do
     mkdir $nft;mv *$nft*.csv $nft;zip -q $nft-$tag $nft/*
 done
