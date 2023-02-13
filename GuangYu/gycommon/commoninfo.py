@@ -154,7 +154,8 @@ CastingId2MetaInfo = {
     853: ["16-CiKongJianLaLian", "次空间拉链", 300],
     861: ["16-QiYuanKa", "祈愿卡", 300],
     856: ["16-FuGuYuanHuan", "缚骨圆环", 1000],
-
+    865: ["16-ShiJian", "时间", 500],
+    616: ["16-LingSheZhu", "灵蛇珠", 3000],
 }
 
 DEFAULT_MIN_PRICE = 50
