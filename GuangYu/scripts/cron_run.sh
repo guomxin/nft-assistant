@@ -544,8 +544,8 @@ python grab_transaction_price.py 867 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 867 ${yesterday} 100
 
 echo "---小小键盘-Tab仔---"
-python grab_transaction_price.py 891 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 891 ${yesterday} 100
+python grab_transaction_price.py 895 ${yesterday} ${yesterday}
+python analyze_transaction_prices.py 895 ${yesterday} 100
 
 #------ 后处理 ------#
 cd data;mkdir -p upload/$yesterday;rm -rf upload/$yesterday/*
