@@ -149,7 +149,7 @@ CastingId2MetaInfo = {
     793: ["15-ShengShuZhongZi", "圣树种子"],
     709: ["15-MoFaYaoShui", "魔法药水"],
     715: ["15-YongShengZhiHua", "永生之花"],
-    815: ["15-YongShengShouMenRen", "永生守门人"],
+    815: ["15-YongShengShouMenRen", "永生守门人", 500],
 
     844: ["16-XiaoJingLing-NeiCeZiGeKa", "小精灵-内测资格卡"],
     854: ["16-HunDunTu", "混沌土"],
@@ -159,6 +159,8 @@ CastingId2MetaInfo = {
     856: ["16-FuGuYuanHuan", "缚骨圆环", 1000],
     865: ["16-ShiJian", "时间", 500],
     616: ["16-LingSheZhu", "灵蛇珠", 3000],
+
+    127: ["17-XingHongBaoShi", "猩红宝石", 5000],
 }
 
 DEFAULT_MIN_PRICE = 50

@@ -551,6 +551,10 @@ echo "---神秘石板---"
 python grab_transaction_price.py 398 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 398 ${yesterday} 100
 
+echo "---猩红宝石---"
+python grab_transaction_price.py 127 ${yesterday} ${yesterday}
+python analyze_transaction_prices.py 127 ${yesterday} 100
+
 #------ 后处理 ------#
 cd data;mkdir -p upload/$yesterday;rm -rf upload/$yesterday/*
 cp *$yesterday* upload/$yesterday;cd upload/$yesterday
