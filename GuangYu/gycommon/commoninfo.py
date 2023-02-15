@@ -126,6 +126,7 @@ CastingId2MetaInfo = {
     #663: ["13-ZhiYinKa", "指引卡"],
     867: ["13-MoGuangGuMian", "魔光骨冕", 1000],
     895: ["13-TabZai", "小小键盘-Tab仔", 10],
+    398: ["13-ShenMiShiBan", "神秘石板", 100],
 
     175: ["14-MKMoShuMao", "MK魔术帽"],
     174: ["14-MKMaKaLong", "MK马卡龙"],
