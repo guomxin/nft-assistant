@@ -567,6 +567,26 @@ echo "---血菩提---"
 python grab_transaction_price.py 402 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 402 ${yesterday} 50
 
+echo "---未觉者---"
+python grab_transaction_price.py 459 ${yesterday} ${yesterday}
+python analyze_transaction_prices.py 459 ${yesterday} 50
+
+echo "---觉醒者---"
+python grab_transaction_price.py 458 ${yesterday} ${yesterday}
+python analyze_transaction_prices.py 458 ${yesterday} 50
+
+echo "---撕裂者---"
+python grab_transaction_price.py 457 ${yesterday} ${yesterday}
+python analyze_transaction_prices.py 457 ${yesterday} 100
+
+echo "---吞噬者---"
+python grab_transaction_price.py 456 ${yesterday} ${yesterday}
+python analyze_transaction_prices.py 456 ${yesterday} 100
+
+echo "---灵智者---"
+python grab_transaction_price.py 455 ${yesterday} ${yesterday}
+python analyze_transaction_prices.py 455 ${yesterday} 100
+
 #------ 后处理 ------#
 cd data;mkdir -p upload/$yesterday;rm -rf upload/$yesterday/*
 cp *$yesterday* upload/$yesterday;cd upload/$yesterday

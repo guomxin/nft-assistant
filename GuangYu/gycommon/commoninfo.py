@@ -153,17 +153,23 @@ CastingId2MetaInfo = {
 
     844: ["16-XiaoJingLing-NeiCeZiGeKa", "小精灵-内测资格卡"],
     854: ["16-HunDunTu", "混沌土"],
-    855: ["16-HuangJinShu-YouLing", "黄金树-有灵", 1000],
+    855: ["16-HuangJinShu-YouLing", "黄金树-有灵"],
     853: ["16-CiKongJianLaLian", "次空间拉链", 300],
     861: ["16-QiYuanKa", "祈愿卡", 300],
     856: ["16-FuGuYuanHuan", "缚骨圆环", 1000],
     865: ["16-ShiJian", "时间", 500],
     616: ["16-LingSheZhu", "灵蛇珠", 3000],
 
-    127: ["17-XingHongBaoShi", "猩红宝石", 5000],
-    896: ["17-SenZhiXi", "森之息", 1000],
-    894: ["17-HuangJinShu-ShengShu", "黄金树-圣树", 1000],
-    402: ["17-XuePuTi", "血菩提", 100],
+    127: ["17-XingHongBaoShi", "猩红宝石"],
+    896: ["17-SenZhiXi", "森之息"],
+    894: ["17-HuangJinShu-ShengShu", "黄金树-圣树"],
+    402: ["17-XuePuTi", "血菩提"],
+
+    459: ["18-Kulolo-WeiJueZhe", "Kulolo-未觉者"],
+    458: ["18-Kulolo-JueXingZhe", "Kulolo-觉醒者"],
+    457: ["18-Kulolo-SiLieZhe", "Kulolo-撕裂者"],
+    456: ["18-Kulolo-TunChiZhe", "Kulolo-吞噬者", 1500],
+    455: ["18-Kulolo-LingZhiZhe", "Kulolo-灵智者", 5000],
 }
 
 DEFAULT_MIN_PRICE = 50
