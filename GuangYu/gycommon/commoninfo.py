@@ -161,6 +161,7 @@ CastingId2MetaInfo = {
     616: ["16-LingSheZhu", "灵蛇珠", 3000],
 
     127: ["17-XingHongBaoShi", "猩红宝石", 5000],
+    896: ["17-SenZhiXi", "森之息", 1000],
 }
 
 DEFAULT_MIN_PRICE = 50
