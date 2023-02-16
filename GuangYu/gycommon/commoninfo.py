@@ -163,6 +163,7 @@ CastingId2MetaInfo = {
     127: ["17-XingHongBaoShi", "猩红宝石", 5000],
     896: ["17-SenZhiXi", "森之息", 1000],
     894: ["17-HuangJinShu-ShengShu", "黄金树-圣树", 1000],
+    402: ["17-XuePuTi", "血菩提", 100],
 }
 
 DEFAULT_MIN_PRICE = 50
