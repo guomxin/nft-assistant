@@ -545,7 +545,7 @@ python analyze_transaction_prices.py 867 ${yesterday} 100
 
 echo "---小小键盘-Tab仔---"
 python grab_transaction_price.py 895 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 895 ${yesterday} 100
+python analyze_transaction_prices.py 895 ${yesterday} 10
 
 echo "---神秘石板---"
 python grab_transaction_price.py 398 ${yesterday} ${yesterday}
