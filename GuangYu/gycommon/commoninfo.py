@@ -164,6 +164,7 @@ CastingId2MetaInfo = {
     896: ["17-SenZhiXi", "森之息"],
     894: ["17-HuangJinShu-ShengShu", "黄金树-圣树"],
     402: ["17-XuePuTi", "血菩提"],
+    897: ["17-FengMoLingShu", "封魔灵树", 6000],
 
     459: ["18-Kulolo-WeiJueZhe", "Kulolo-未觉者"],
     458: ["18-Kulolo-JueXingZhe", "Kulolo-觉醒者"],
