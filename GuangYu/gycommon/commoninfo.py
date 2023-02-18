@@ -166,6 +166,7 @@ CastingId2MetaInfo = {
     402: ["17-XuePuTi", "血菩提"],
     897: ["17-FengMoLingShu", "封魔灵树", 6000],
     902: ["17-LiuSuYuZhui", "流苏玉坠", 200],
+    899: ["17-HuangJinShengShu", "黄金圣树", 2000],
 
     459: ["18-Kulolo-WeiJueZhe", "Kulolo-未觉者"],
     458: ["18-Kulolo-JueXingZhe", "Kulolo-觉醒者"],
@@ -185,7 +186,7 @@ HighestValue_Products_Info = {
 }
 
 # 173
-Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjc2Nzg4ODM5LCJzaWduSWQiOiJhY2Q3OGNjNWY5ZGY0ZTI0ODU5YWFkMGE3OGE4MWYzMSIsImlhdCI6MTY3NjE4NDAzOX0.2qSRSPJHIFOPxFI8VXon9imN2Kziozku-CnHy-psZow"
+Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjc3MzIxMDY1LCJzaWduSWQiOiI3MTI4MDcxYWVhMTM0NDExODJlOGIzNDJjMjkwZmY5YiIsImlhdCI6MTY3NjcxNjI2NX0.a9cX143eq99zJek-Ong-wlsC-2pKL3KGsyh3e9_Zq6k"
 
 # 159
 Query_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNTkxMDYxOTk2MyIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjc3MTM0MzM0LCJzaWduSWQiOiJmOTk4ZmZjYjFkMWY0ZjFkOGRhMTcwZGY3MjdmODgzNCIsImlhdCI6MTY3NjUyOTUzNH0.613oESKmjWRXRbQ1pB-5oD3tl2djICxLPXDtmb3GFRk"
