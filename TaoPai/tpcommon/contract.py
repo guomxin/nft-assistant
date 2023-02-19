@@ -373,6 +373,7 @@ DFTYRB_Contract_Address = "cfx:aca8tg7zd85zth9hmw92ucxajgnxuwfd4j4uucd61b"
 TCJC_Contract_Address = "cfx:achmp3kyw693n9d0fftjbvsy06a5zp6g1axypnvyte"
 WindowsDHJ_Contract_Address = "cfx:acchhfhzkgfbkbr3g5y29955nw1fvpjj1jgvucx817"
 Xiebro_Contract_Address = "cfx:acezh9xrtc5fpwz3t680p4dyuf6ggzbyry044x5x4e"
+TaopaiNFTSe_Contract_Address = "cfx:accw171npx4xmy473dz7z36ezevj44xufjy0m52gvb"
 
 Bosie_Contract_Address = "cfx:accvuj004k127vd4cprcfju1wzw4pm5bj6u1gkvtds"
 XY_Contract_Address = "cfx:acappbfbk3xh5ptt60xugbgyut6jvwja3e80bzrj98"
@@ -427,6 +428,7 @@ ContractAddress2Id = {
     # TODO: Luluz, 王星星, Misaki, YSX, 不走调音乐社, YAO, WPP 
     WindowsDHJ_Contract_Address: 66,
     Xiebro_Contract_Address: 70,
+    TaopaiNFTSe_Contract_Address: 77,
 }
 
 KaoShengLaiLe_Contract_Address = "cfx:achm40d1fuwpfxe1azk6ty607fpmdrsczpy5pcexuz"
