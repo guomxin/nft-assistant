@@ -483,9 +483,9 @@ echo "---小瓶鱼泪---"
 python grab_transaction_price.py 240 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 240 ${yesterday} 10
 
-echo "---四喜折扇---"
-python grab_transaction_price.py 711 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 711 ${yesterday} 50
+#echo "---四喜折扇---"
+#python grab_transaction_price.py 711 ${yesterday} ${yesterday}
+#python analyze_transaction_prices.py 711 ${yesterday} 50
 
 echo "---花草团---"
 python grab_transaction_price.py 792 ${yesterday} ${yesterday}
@@ -507,25 +507,25 @@ echo "---永生守门人---"
 python grab_transaction_price.py 815 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 815 ${yesterday} 50
 
-echo "---小精灵-内测资格卡---"
-python grab_transaction_price.py 844 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 844 ${yesterday} 50
+#echo "---小精灵-内测资格卡---"
+#python grab_transaction_price.py 844 ${yesterday} ${yesterday}
+#python analyze_transaction_prices.py 844 ${yesterday} 50
 
 echo "---混沌土---"
 python grab_transaction_price.py 854 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 854 ${yesterday} 50
 
-echo "---黄金树-有灵---"
-python grab_transaction_price.py 855 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 855 ${yesterday} 50
+#echo "---黄金树-有灵---"
+#python grab_transaction_price.py 855 ${yesterday} ${yesterday}
+#python analyze_transaction_prices.py 855 ${yesterday} 50
 
 echo "---次空间拉链---"
 python grab_transaction_price.py 853 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 853 ${yesterday} 50
 
-echo "---祈愿卡---"
-python grab_transaction_price.py 861 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 861 ${yesterday} 50
+#echo "---祈愿卡---"
+#python grab_transaction_price.py 861 ${yesterday} ${yesterday}
+#python analyze_transaction_prices.py 861 ${yesterday} 50
 
 echo "---缚骨圆环---"
 python grab_transaction_price.py 856 ${yesterday} ${yesterday}
@@ -551,17 +551,17 @@ echo "---神秘石板---"
 python grab_transaction_price.py 398 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 398 ${yesterday} 100
 
-echo "---猩红宝石---"
-python grab_transaction_price.py 127 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 127 ${yesterday} 100
+#echo "---猩红宝石---"
+#python grab_transaction_price.py 127 ${yesterday} ${yesterday}
+#python analyze_transaction_prices.py 127 ${yesterday} 100
 
 echo "---森之息---"
 python grab_transaction_price.py 896 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 896 ${yesterday} 100
 
-echo "---黄金树-圣树---"
-python grab_transaction_price.py 894 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 894 ${yesterday} 100
+#echo "---黄金树-圣树---"
+#python grab_transaction_price.py 894 ${yesterday} ${yesterday}
+#python analyze_transaction_prices.py 894 ${yesterday} 100
 
 echo "---血菩提---"
 python grab_transaction_price.py 402 ${yesterday} ${yesterday}

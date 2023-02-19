@@ -369,8 +369,8 @@ python grab_transaction_price.py 754 ${today} ${tag}
 echo "---小瓶鱼泪---"
 python grab_transaction_price.py 240 ${today} ${tag}
 
-echo "---四喜折扇---"
-python grab_transaction_price.py 711 ${today} ${tag}
+#echo "---四喜折扇---"
+#python grab_transaction_price.py 711 ${today} ${tag}
 
 echo "---花草团---"
 python grab_transaction_price.py 792 ${today} ${tag}
@@ -387,20 +387,20 @@ python grab_transaction_price.py 715 ${today} ${tag}
 echo "---永生守门人---"
 python grab_transaction_price.py 815 ${today} ${tag}
 
-echo "---小精灵-内测资格卡---"
-python grab_transaction_price.py 844 ${today} ${tag}
+#echo "---小精灵-内测资格卡---"
+#python grab_transaction_price.py 844 ${today} ${tag}
 
 echo "---混沌土---"
 python grab_transaction_price.py 854 ${today} ${tag}
 
-echo "---黄金树-有灵---"
-python grab_transaction_price.py 855 ${today} ${tag}
+#echo "---黄金树-有灵---"
+#python grab_transaction_price.py 855 ${today} ${tag}
 
 echo "---次空间拉链---"
 python grab_transaction_price.py 853 ${today} ${tag}
 
-echo "---祈愿卡---"
-python grab_transaction_price.py 861 ${today} ${tag}
+#echo "---祈愿卡---"
+#python grab_transaction_price.py 861 ${today} ${tag}
 
 echo "---缚骨圆环---"
 python grab_transaction_price.py 856 ${today} ${tag}
@@ -420,14 +420,14 @@ python grab_transaction_price.py 895 ${today} ${tag}
 echo "---神秘石板---"
 python grab_transaction_price.py 398 ${today} ${tag}
 
-echo "---猩红宝石---"
-python grab_transaction_price.py 127 ${today} ${tag}
+#echo "---猩红宝石---"
+#python grab_transaction_price.py 127 ${today} ${tag}
 
 echo "---森之息---"
 python grab_transaction_price.py 896 ${today} ${tag}
 
-echo "---黄金树-圣树---"
-python grab_transaction_price.py 894 ${today} ${tag}
+#echo "---黄金树-圣树---"
+#python grab_transaction_price.py 894 ${today} ${tag}
 
 echo "---血菩提---"
 python grab_transaction_price.py 402 ${today} ${tag}
