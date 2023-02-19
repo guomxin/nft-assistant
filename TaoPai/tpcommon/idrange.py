@@ -114,6 +114,8 @@ def get_idrangedict_by_nftname(nft_name):
         return DFTYRB_IdRange2Name
     elif nft_name == "xiyouxingqiu":
         return XiYouXingQiu_IdRange2Name
+    elif nft_name == "xiyouxingqiu2":
+        return XiYouXingQiu2_IdRange2Name
     elif nft_name == "taopaistar":
         return TaoPaiStar_IdRange2Name
     elif nft_name == "taopaishop":
@@ -272,6 +274,11 @@ TaopaiMagicLiquid_IdRange2Name = {
 
 TaoPaiStar_IdRange2Name = {
     (1,5072): "小星星",
+}
+
+XiYouXingQiu2_IdRange2Name = {
+    (20001, 24900): "猪八戒-普通款",
+    (24901, 25000): "猪八戒-稀有款",
 }
 
 XiYouXingQiu_IdRange2Name = {

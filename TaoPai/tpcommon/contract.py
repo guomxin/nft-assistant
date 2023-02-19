@@ -74,8 +74,8 @@ def get_contract_address_ABI_from_name(name):
         return (Limitless_Contract_Address, TaoPai_ABI)
     elif name == "dftyrb":
         return (DFTYRB_Contract_Address, TaoPai_ABI)
-    elif name == "xiyouxingqiu":
-        return (TCJC_Contract_Address, TaoPai_ABI)
+    elif name == "xiyouxingqiu" or name == "xiyouxingqiu2":
+        return (TCJC_Contract_Address, TaoPai_ABI)       
     elif name == "taopaistar":
         return (TaoPaiXXX_Contract_Address, TaoPai_ABI)
     elif name == "windowsdhj":
