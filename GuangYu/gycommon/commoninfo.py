@@ -161,14 +161,15 @@ CastingId2MetaInfo = {
     616: ["16-LingSheZhu", "灵蛇珠", 3000],
     713: ["16-BaBaoNuoMiFan", "八宝糯米饭", 200],
 
-    127: ["17-XingHongBaoShi", "猩红宝石"],
+    127: ["17-XingHongBaoShi", "猩红宝石"], #
     896: ["17-SenZhiXi", "森之息"],
-    894: ["17-HuangJinShu-ShengShu", "黄金树-圣树"],
+    894: ["17-HuangJinShu-ShengShu", "黄金树-圣树"], #
     402: ["17-XuePuTi", "血菩提"],
     897: ["17-FengMoLingShu", "封魔灵树", 6000],
     902: ["17-LiuSuYuZhui", "流苏玉坠", 200],
     899: ["17-HuangJinShengShu", "黄金圣树", 2000],
     923: ["17-BaFangLaiFeng", "八方来风", 1500],
+    898: ["17-JuBaoShenShu", "聚宝神树", 4000],
 
     459: ["18-Kulolo-WeiJueZhe", "Kulolo-未觉者"],
     458: ["18-Kulolo-JueXingZhe", "Kulolo-觉醒者"],
