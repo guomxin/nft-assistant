@@ -151,14 +151,15 @@ CastingId2MetaInfo = {
     715: ["15-YongShengZhiHua", "永生之花"],
     815: ["15-YongShengShouMenRen", "永生守门人", 500],
 
-    844: ["16-XiaoJingLing-NeiCeZiGeKa", "小精灵-内测资格卡"],
+    844: ["16-XiaoJingLing-NeiCeZiGeKa", "小精灵-内测资格卡"], #
     854: ["16-HunDunTu", "混沌土"],
-    855: ["16-HuangJinShu-YouLing", "黄金树-有灵"],
+    855: ["16-HuangJinShu-YouLing", "黄金树-有灵"], #
     853: ["16-CiKongJianLaLian", "次空间拉链", 300],
-    861: ["16-QiYuanKa", "祈愿卡", 300],
+    861: ["16-QiYuanKa", "祈愿卡", 300], #
     856: ["16-FuGuYuanHuan", "缚骨圆环", 1000],
     865: ["16-ShiJian", "时间", 500],
     616: ["16-LingSheZhu", "灵蛇珠", 3000],
+    713: ["16-BaBaoNuoMiFan", "八宝糯米饭", 200],
 
     127: ["17-XingHongBaoShi", "猩红宝石"],
     896: ["17-SenZhiXi", "森之息"],
