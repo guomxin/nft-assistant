@@ -160,6 +160,7 @@ CastingId2MetaInfo = {
     865: ["16-ShiJian", "时间", 500],
     616: ["16-LingSheZhu", "灵蛇珠", 3000],
     713: ["16-BaBaoNuoMiFan", "八宝糯米饭", 200],
+    113: ["16-WeiLaiYanJiuYuan", "未来研究院", 1000],
 
     127: ["17-XingHongBaoShi", "猩红宝石"], #
     896: ["17-SenZhiXi", "森之息"],
