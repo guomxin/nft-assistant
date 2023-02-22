@@ -14,7 +14,7 @@ CastingId2MetaInfo = {
     67: ["2-CZai", "小小键盘-C仔"],
     66: ["2-VZai", "小小键盘-V仔"],
     60: ["2-ShiftZai", "小小键盘-Shift仔"],
-    61: ["2-TaiKongShiftZai", "传说奇遇-太空Shift仔", 1000],
+    61: ["2-TaiKongShiftZai", "传说奇遇-太空Shift仔", 2000],
 
     31: ["3-HouTu", "山丘龙灵-厚土"],
     32: ["3-GanLin", "河流龙灵-甘霖"],
@@ -75,8 +75,8 @@ CastingId2MetaInfo = {
     205: ["9-MengHuanShuiLong", "梦幻水龙", 1200],
     #211: ["9-ShenHaiQiPao", "深海气泡"],
     210: ["9-YuEr-DuiHuan", "鱼饵-兑换版本"],
-    77: ["9-KuaiJieZuHe-FuZhi", "快捷组合-复制", 200],
-    76: ["9-KuaiJieZuHe-ZhanTie", "快捷组合-粘贴", 200],
+    77: ["9-KuaiJieZuHe-FuZhi", "快捷组合-复制", 500],
+    76: ["9-KuaiJieZuHe-ZhanTie", "快捷组合-粘贴", 500],
     201: ["9-ShenHaiJingShi", "深海晶石"],
     198: ["9-DiJiuQuZhengJian", "第九区证件"],
     223: ["9-JiXieHouTu", "机械厚土"],
@@ -161,16 +161,17 @@ CastingId2MetaInfo = {
     616: ["16-LingSheZhu", "灵蛇珠", 3000],
     713: ["16-BaBaoNuoMiFan", "八宝糯米饭", 200],
     113: ["16-WeiLaiYanJiuYuan", "未来研究院", 1000],
+    931: ["16-WanNengXiaoJianPan", "万能小键盘"],
 
     127: ["17-XingHongBaoShi", "猩红宝石"], #
     896: ["17-SenZhiXi", "森之息"],
     894: ["17-HuangJinShu-ShengShu", "黄金树-圣树"], #
     402: ["17-XuePuTi", "血菩提"],
-    897: ["17-FengMoLingShu", "封魔灵树", 6000],
+    897: ["17-FengMoLingShu", "封魔灵树", 10000],
     902: ["17-LiuSuYuZhui", "流苏玉坠", 200],
     899: ["17-HuangJinShengShu", "黄金圣树", 2000],
     923: ["17-BaFangLaiFeng", "八方来风", 1500],
-    898: ["17-JuBaoShenShu", "聚宝神树", 4000],
+    898: ["17-JuBaoShenShu", "聚宝神树", 5000],
 
     459: ["18-Kulolo-WeiJueZhe", "Kulolo-未觉者"],
     458: ["18-Kulolo-JueXingZhe", "Kulolo-觉醒者"],
