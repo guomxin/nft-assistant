@@ -172,6 +172,7 @@ CastingId2MetaInfo = {
     899: ["17-HuangJinShengShu", "黄金圣树", 2000],
     923: ["17-BaFangLaiFeng", "八方来风", 1500],
     898: ["17-JuBaoShenShu", "聚宝神树", 5000],
+    889: ["17-JingHuaSuiPian", "镜花碎片", 20],
 
     459: ["18-Kulolo-WeiJueZhe", "Kulolo-未觉者"],
     458: ["18-Kulolo-JueXingZhe", "Kulolo-觉醒者"],
