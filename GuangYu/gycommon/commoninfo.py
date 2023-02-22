@@ -179,6 +179,7 @@ CastingId2MetaInfo = {
     457: ["18-Kulolo-SiLieZhe", "Kulolo-撕裂者"],
     456: ["18-Kulolo-TunChiZhe", "Kulolo-吞噬者", 1500],
     455: ["18-Kulolo-LingZhiZhe", "Kulolo-灵智者", 5000],
+    932: ["18-JianPanLingXiu-ChaoJiYingXiong", "键盘领袖-超级英雄", 3000],
 }
 
 DEFAULT_MIN_PRICE = 50
