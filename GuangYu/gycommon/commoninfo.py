@@ -180,6 +180,13 @@ CastingId2MetaInfo = {
     456: ["18-Kulolo-TunChiZhe", "Kulolo-吞噬者", 1500],
     455: ["18-Kulolo-LingZhiZhe", "Kulolo-灵智者", 5000],
     932: ["18-JianPanLingXiu-ChaoJiYingXiong", "键盘领袖-超级英雄", 3000],
+
+    942: ["19-QiaoKeLiGongRen", "巧克力工人", 200],
+    943: ["19-MianBaoGongRen", "面包工人", 200],
+    944: ["19-BuDingGongRen", "布丁工人", 200],
+    945: ["19-MianHuaTangGongRen", "棉花糖工人", 200],
+    946: ["19-NaiYouGongRen", "奶油工人", 200],
+
 }
 
 DEFAULT_MIN_PRICE = 50
