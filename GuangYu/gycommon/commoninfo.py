@@ -57,7 +57,7 @@ CastingId2MetaInfo = {
     132: ["7-FeiLiWuTingMuXia", "奇物秘宝-非礼勿听木匣", 500],
     150: ["7-JianMu", "建木"],
     151: ["7-LiuLi", "琉璃"],
-    154: ["7-JuNeng", "启源II聚能号", 1500],
+    154: ["7-JuNeng", "启源II聚能号", 1200],
     126: ["7-QingTongShiXiang", "奇物秘宝-青铜石像", 300],
     153: ["7-ChuiDiaoXuKe", "垂钓许可"],
     156: ["7-EnterZai", "小小键盘-Enter仔"],
@@ -124,7 +124,7 @@ CastingId2MetaInfo = {
     #664: ["13-HangHaiKa", "航海卡"],
     #662: ["13-LuYunKa", "陆运卡"],
     #663: ["13-ZhiYinKa", "指引卡"],
-    867: ["13-MoGuangGuMian", "魔光骨冕", 1000],
+    867: ["13-MoGuangGuMian", "魔光骨冕", 2500],
     895: ["13-TabZai", "小小键盘-Tab仔", 10],
     398: ["13-ShenMiShiBan", "神秘石板", 100],
 
@@ -171,7 +171,7 @@ CastingId2MetaInfo = {
     902: ["17-LiuSuYuZhui", "流苏玉坠", 200],
     899: ["17-HuangJinShengShu", "黄金圣树", 2000],
     923: ["17-BaFangLaiFeng", "八方来风", 1500],
-    898: ["17-JuBaoShenShu", "聚宝神树", 5000],
+    898: ["17-JuBaoShenShu", "聚宝神树", 4000],
     889: ["17-JingHuaSuiPian", "镜花碎片", 20],
 
     459: ["18-Kulolo-WeiJueZhe", "Kulolo-未觉者"],
