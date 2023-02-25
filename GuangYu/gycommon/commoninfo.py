@@ -179,7 +179,7 @@ CastingId2MetaInfo = {
     457: ["18-Kulolo-SiLieZhe", "Kulolo-撕裂者"],
     456: ["18-Kulolo-TunChiZhe", "Kulolo-吞噬者", 1500],
     455: ["18-Kulolo-LingZhiZhe", "Kulolo-灵智者", 5000],
-    932: ["18-JianPanLingXiu-ChaoJiYingXiong", "键盘领袖-超级英雄", 3000],
+    932: ["18-JianPanLingXiu-ChaoJiYingXiong", "键盘领袖-超级英雄", 5000],
     135: ["18-XingHeNian", "星河念", 3000],
 
     942: ["19-QiaoKeLiGongRen", "巧克力工人", 200],
@@ -204,7 +204,7 @@ HighestValue_Products_Info = {
 Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjc3ODg5OTY2LCJzaWduSWQiOiI0N2I5MWEzMmEyZTk0ZWZkOWIyYmFiYWMzYTZlZWMxNiIsImlhdCI6MTY3NzI4NTE2Nn0.qy2T6GO2jqh3LKTwbdSZjZAeg3QiopqVM9FIw0COC2k"
 
 # 159
-Query_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNTkxMDYxOTk2MyIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjc3NzQyNDExLCJzaWduSWQiOiI3NDFlNWEzYjE4M2Q0NTNhOGI5OTUwNmRmZDg1NjIyZCIsImlhdCI6MTY3NzEzNzYxMX0.H2LSpB1BCRcOQp9NJI9zTpnwu5zJY8nAQDbhxfj2svY"
+Query_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxMzE1NjE2MTA5MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjc3OTAyMDAyLCJzaWduSWQiOiJkOTcwNjMzZDUyZTg0YTUwOGI4NGZjMGJmZDZiZWM4ZSIsImlhdCI6MTY3NzI5NzIwMn0.WFtDi-pqYHmSxL8zneaGXtFoQ_IpSu1aDsnGmxVMLK8"
 
 GanDart_Headers = {
     "Host": "api2.gandart.com",
