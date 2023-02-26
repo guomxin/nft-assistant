@@ -108,7 +108,7 @@ CastingId2MetaInfo = {
 
     184: ["12-LianJinXueTu", "炼金学徒", 1000],
     241: ["12-LiuGuangMoFang-ShanHu", "流光魔方-珊瑚"],
-    453: ["12-QiYuanGai-WangChuanJuFeng", "启源改-忘川飓风", 8000],
+    453: ["12-QiYuanGai-WangChuanJuFeng", "启源改-忘川飓风", 7000],
     203: ["12-WeiJianDing-WuQiTuZhi", "未鉴定的武器图纸"],
     474: ["12-ShenTu-TongDan", "神兔-铜蛋"],
     479: ["12-ShenTu-YinDan", "神兔-银蛋"],
@@ -124,8 +124,8 @@ CastingId2MetaInfo = {
     #664: ["13-HangHaiKa", "航海卡"],
     #662: ["13-LuYunKa", "陆运卡"],
     #663: ["13-ZhiYinKa", "指引卡"],
-    867: ["13-MoGuangGuMian", "魔光骨冕", 2500],
-    895: ["13-TabZai", "小小键盘-Tab仔", 10],
+    867: ["13-MoGuangGuMian", "魔光骨冕", 2000],
+    895: ["13-TabZai", "小小键盘-Tab仔"],
     398: ["13-ShenMiShiBan", "神秘石板", 100],
 
     175: ["14-MKMoShuMao", "MK魔术帽"],
@@ -144,7 +144,7 @@ CastingId2MetaInfo = {
 
     754: ["15-ZhuanLunPan", "转轮盘", 1000],
     240: ["15-XiaoPingYuLei", "小瓶鱼泪"],
-    711: ["15-SiXiZheShan", "四喜折扇", 200],
+    711: ["15-SiXiZheShan", "四喜折扇"],
     792: ["15-HuaCaoTuan", "花草团", 2000],
     793: ["15-ShengShuZhongZi", "圣树种子"],
     709: ["15-MoFaYaoShui", "魔法药水"],
@@ -154,12 +154,12 @@ CastingId2MetaInfo = {
     844: ["16-XiaoJingLing-NeiCeZiGeKa", "小精灵-内测资格卡"], #
     854: ["16-HunDunTu", "混沌土"],
     855: ["16-HuangJinShu-YouLing", "黄金树-有灵"], #
-    853: ["16-CiKongJianLaLian", "次空间拉链", 300],
-    861: ["16-QiYuanKa", "祈愿卡", 300], #
+    853: ["16-CiKongJianLaLian", "次空间拉链"],
+    861: ["16-QiYuanKa", "祈愿卡"], #
     856: ["16-FuGuYuanHuan", "缚骨圆环", 1000],
-    865: ["16-ShiJian", "时间", 500],
-    616: ["16-LingSheZhu", "灵蛇珠", 3000],
-    713: ["16-BaBaoNuoMiFan", "八宝糯米饭", 200],
+    865: ["16-ShiJian", "时间", 400],
+    616: ["16-LingSheZhu", "灵蛇珠", 5000],
+    713: ["16-BaBaoNuoMiFan", "八宝糯米饭"],
     113: ["16-WeiLaiYanJiuYuan", "未来研究院", 1000],
     931: ["16-WanNengXiaoJianPan", "万能小键盘"],
 
@@ -167,11 +167,11 @@ CastingId2MetaInfo = {
     896: ["17-SenZhiXi", "森之息"],
     894: ["17-HuangJinShu-ShengShu", "黄金树-圣树"], #
     402: ["17-XuePuTi", "血菩提"],
-    897: ["17-FengMoLingShu", "封魔灵树", 10000],
+    897: ["17-FengMoLingShu", "封魔灵树", 8000],
     902: ["17-LiuSuYuZhui", "流苏玉坠", 200],
     899: ["17-HuangJinShengShu", "黄金圣树", 2000],
-    923: ["17-BaFangLaiFeng", "八方来风", 1500],
-    898: ["17-JuBaoShenShu", "聚宝神树", 4000],
+    923: ["17-BaFangLaiFeng", "八方来风", 2000],
+    898: ["17-JuBaoShenShu", "聚宝神树", 3600],
     889: ["17-JingHuaSuiPian", "镜花碎片", 20],
 
     459: ["18-Kulolo-WeiJueZhe", "Kulolo-未觉者"],
@@ -183,11 +183,16 @@ CastingId2MetaInfo = {
     135: ["18-XingHeNian", "星河念", 3000],
     901: ["18-AZai", "小小键盘-A仔"],
 
-    942: ["19-QiaoKeLiGongRen", "巧克力工人", 200],
-    943: ["19-MianBaoGongRen", "面包工人", 200],
-    944: ["19-BuDingGongRen", "布丁工人", 200],
-    945: ["19-MianHuaTangGongRen", "棉花糖工人", 200],
-    946: ["19-NaiYouGongRen", "奶油工人", 200],
+    #942: ["19-QiaoKeLiGongRen", "巧克力工人", 200],
+    #943: ["19-MianBaoGongRen", "面包工人", 200],
+    #944: ["19-BuDingGongRen", "布丁工人", 200],
+    #945: ["19-MianHuaTangGongRen", "棉花糖工人", 200],
+    #946: ["19-NaiYouGongRen", "奶油工人", 200],
+    1108: ["19-QiaoKeLiGongRenII", "巧克力工人II", 200],
+    1109: ["19-MianBaoGongRenII", "面包工人II", 200],
+    1110: ["19-BuDingGongRenII", "布丁工人II", 200],
+    1111: ["19-MianHuaTangGongRenII", "棉花糖工人II", 200],
+    1112: ["19-NaiYouGongRenII", "奶油工人II", 200],
 
 }
 
