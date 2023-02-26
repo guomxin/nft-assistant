@@ -11,11 +11,11 @@ from docx import Document
 from gycommon import commoninfo
 from gycommon import utils
 
-GET_ON_SALE_LIST_URL = "https://api.gandart.com/market/api/v2/resaleManage/resale/onSale"
+GET_ON_SALE_LIST_URL = "https://api2.gandart.com/market/api/v2/resaleManage/resale/onSale"
 PAGE_SIZE = 500
 TIME_OUT = 3
-GET_PRODUCT_DETAIL_URL = "https://api.gandart.com/market/api/v2/resaleManage/resale/collectionDetails"
-GET_TRANS_INFO_URL = "https://api.gandart.com/market/api/v2/resaleManage/resale/transactionInfo"
+GET_PRODUCT_DETAIL_URL = "https://api2.gandart.com/market/api/v2/resaleManage/resale/collectionDetails"
+GET_TRANS_INFO_URL = "https://api2.gandart.com/market/api/v2/resaleManage/resale/transactionInfo"
 
 TRAN_STATUS_SALED = 1
 
