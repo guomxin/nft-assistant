@@ -193,7 +193,7 @@ CastingId2MetaInfo = {
     1110: ["19-BuDingGongRenII", "布丁工人II", 200],
     1111: ["19-MianHuaTangGongRenII", "棉花糖工人II", 200],
     1112: ["19-NaiYouGongRenII", "奶油工人II", 200],
-
+    1122: ["19-ChangShengZhu", "长生竹", 500],
 }
 
 DEFAULT_MIN_PRICE = 50
