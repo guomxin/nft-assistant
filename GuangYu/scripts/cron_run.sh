@@ -653,24 +653,24 @@ python analyze_transaction_prices.py 1207 ${yesterday} 100
 
 #------ 工人 ------#
 echo "---巧克力工人---"
-python grab_transaction_price.py 1108 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 1108 ${yesterday} 50
+python grab_transaction_price.py 1256 ${yesterday} ${yesterday}
+python analyze_transaction_prices.py 1256 ${yesterday} 50
 
 echo "---面包工人---"
-python grab_transaction_price.py 1109 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 1109 ${yesterday} 50
+python grab_transaction_price.py 1258 ${yesterday} ${yesterday}
+python analyze_transaction_prices.py 1258 ${yesterday} 50
 
 echo "---布丁工人---"
-python grab_transaction_price.py 1110 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 1110 ${yesterday} 50
+python grab_transaction_price.py 1260 ${yesterday} ${yesterday}
+python analyze_transaction_prices.py 1260 ${yesterday} 50
 
 echo "---棉花糖工人---"
-python grab_transaction_price.py 1111 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 1111 ${yesterday} 50
+python grab_transaction_price.py 1259 ${yesterday} ${yesterday}
+python analyze_transaction_prices.py 1259 ${yesterday} 50
 
 echo "---奶油工人---"
-python grab_transaction_price.py 1112 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 1112 ${yesterday} 50
+python grab_transaction_price.py 1257 ${yesterday} ${yesterday}
+python analyze_transaction_prices.py 1257 ${yesterday} 50
 #------ 工人 ------#
 
 #------ 后处理 ------#
@@ -699,7 +699,7 @@ for nft in "1-KaiTuoZhe" "1-WanXiangLongChao" "1-KongJianBuJi-QiNeng" "1-YunMuSh
 "17-XuePuTi" "18-Kulolo-WeiJueZhe" "18-Kulolo-JueXingZhe" "18-Kulolo-SiLieZhe" "18-Kulolo-TunChiZhe" "18-Kulolo-LingZhiZhe" "17-FengMoLingShu" \
 "17-LiuSuYuZhui" "17-HuangJinShengShu" "17-BaFangLaiFeng" "16-BaBaoNuoMiFan" "17-JuBaoShenShu" "16-WeiLaiYanJiuYuan" "16-WanNengXiaoJianPan" \
 "17-JingHuaSuiPian" "18-JianPanLingXiu-ChaoJiYingXiong" "18-XingHeNian" "19-ChangShengZhu" "19-ShenMiQuanShui" "19-JingMeiDianXinHe" \
-"19-QiaoKeLiGongRenII" "19-MianBaoGongRenII" "19-BuDingGongRenII" "19-MianHuaTangGongRenII" "19-NaiYouGongRenII" \
+"19-QiaoKeLiGongRenIII" "19-MianBaoGongRenIII" "19-BuDingGongRenIII" "19-MianHuaTangGongRenIII" "19-NaiYouGongRenIII" \
 "18-AZai" "20-DianDengQi"
 do
     mkdir $nft;mv *$nft*.csv $nft;zip -q $nft-$yesterday $nft/*
