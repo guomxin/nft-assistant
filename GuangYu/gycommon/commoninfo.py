@@ -8,13 +8,13 @@ CastingId2MetaInfo = {
     57: ["1-YunMuShouHu", "云木守护版"],
     59: ["1-WanXiangLongChao", "万象龙巢", 1500],
     80: ["1-LongFengShouBao", "龙凤守宝", 10000],
-    96: ["1-NiePanZhiDi", "涅槃之地", 3000],
+    96: ["1-NiePanZhiDi", "涅槃之地", 2500],
 
     56: ["2-CtrlZai", "小小键盘-Ctrl仔"],
     67: ["2-CZai", "小小键盘-C仔"],
     66: ["2-VZai", "小小键盘-V仔"],
     60: ["2-ShiftZai", "小小键盘-Shift仔"],
-    61: ["2-TaiKongShiftZai", "传说奇遇-太空Shift仔", 2000],
+    61: ["2-TaiKongShiftZai", "传说奇遇-太空Shift仔"],
 
     31: ["3-HouTu", "山丘龙灵-厚土"],
     32: ["3-GanLin", "河流龙灵-甘霖"],
@@ -57,7 +57,7 @@ CastingId2MetaInfo = {
     132: ["7-FeiLiWuTingMuXia", "奇物秘宝-非礼勿听木匣", 500],
     150: ["7-JianMu", "建木"],
     151: ["7-LiuLi", "琉璃"],
-    154: ["7-JuNeng", "启源II聚能号", 1200],
+    154: ["7-JuNeng", "启源II聚能号", 1000],
     126: ["7-QingTongShiXiang", "奇物秘宝-青铜石像", 300],
     153: ["7-ChuiDiaoXuKe", "垂钓许可"],
     156: ["7-EnterZai", "小小键盘-Enter仔"],
@@ -118,7 +118,7 @@ CastingId2MetaInfo = {
     243: ["13-LiuGuangMoFang-HuPo", "流光魔方-琥珀"],
     593: ["13-ChaoJiXunHangZhe", "超级巡航者", 200],
     594: ["13-ChaoJiTanSuoZhe", "超级探索者", 200],
-    595: ["13-ZhanJiaHouTu", "战甲厚土", 500],
+    595: ["13-ZhanJiaHouTu", "战甲厚土", 400],
     246: ["13-LiuGuangBaoHe-LengCui", "流光宝盒-冷翠"],
     600: ["13-LengCuiJingHua", "冷翠精华"],
     #664: ["13-HangHaiKa", "航海卡"],
@@ -145,7 +145,7 @@ CastingId2MetaInfo = {
     754: ["15-ZhuanLunPan", "转轮盘", 1000],
     240: ["15-XiaoPingYuLei", "小瓶鱼泪"],
     711: ["15-SiXiZheShan", "四喜折扇"],
-    792: ["15-HuaCaoTuan", "花草团", 2000],
+    792: ["15-HuaCaoTuan", "花草团"],
     793: ["15-ShengShuZhongZi", "圣树种子"],
     709: ["15-MoFaYaoShui", "魔法药水"],
     715: ["15-YongShengZhiHua", "永生之花"],
@@ -156,9 +156,9 @@ CastingId2MetaInfo = {
     855: ["16-HuangJinShu-YouLing", "黄金树-有灵"], #
     853: ["16-CiKongJianLaLian", "次空间拉链"],
     861: ["16-QiYuanKa", "祈愿卡"], #
-    856: ["16-FuGuYuanHuan", "缚骨圆环", 1000],
+    856: ["16-FuGuYuanHuan", "缚骨圆环"],
     865: ["16-ShiJian", "时间", 400],
-    616: ["16-LingSheZhu", "灵蛇珠", 5000],
+    616: ["16-LingSheZhu", "灵蛇珠"],
     713: ["16-BaBaoNuoMiFan", "八宝糯米饭"],
     113: ["16-WeiLaiYanJiuYuan", "未来研究院", 1000],
     931: ["16-WanNengXiaoJianPan", "万能小键盘"],
@@ -195,7 +195,9 @@ CastingId2MetaInfo = {
     1112: ["19-NaiYouGongRenII", "奶油工人II", 200],
     1122: ["19-ChangShengZhu", "长生竹", 500],
     1123: ["19-ShenMiQuanShui", "神秘泉水", 100],
-    1085: ["19-JingMeiDianXinHe", "精美点心盒", 200]
+    1085: ["19-JingMeiDianXinHe", "精美点心盒", 200],
+
+    1207: ["20-DianDengQi", "点灯器", 200],
 }
 
 DEFAULT_MIN_PRICE = 50
