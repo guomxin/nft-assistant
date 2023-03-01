@@ -203,6 +203,7 @@ CastingId2MetaInfo = {
     1085: ["19-JingMeiDianXinHe", "精美点心盒", 200],
 
     1207: ["20-DianDengQi", "点灯器", 200],
+    888: ["20-JingZhongHua", "镜中花", 100],
 }
 
 DEFAULT_MIN_PRICE = 50
