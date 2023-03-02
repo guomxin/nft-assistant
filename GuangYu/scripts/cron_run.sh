@@ -655,6 +655,10 @@ echo "---镜中花---"
 python grab_transaction_price.py 888 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 888 ${yesterday} 50
 
+echo "---初心者布衣---"
+python grab_transaction_price.py 1127 ${yesterday} ${yesterday}
+python analyze_transaction_prices.py 1127 ${yesterday} 10
+
 #------ 工人 ------#
 echo "---巧克力工人---"
 python grab_transaction_price.py 1256 ${yesterday} ${yesterday}
