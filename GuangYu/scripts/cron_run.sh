@@ -708,7 +708,7 @@ for nft in "1-KaiTuoZhe" "1-WanXiangLongChao" "1-KongJianBuJi-QiNeng" "1-YunMuSh
 "17-LiuSuYuZhui" "17-HuangJinShengShu" "17-BaFangLaiFeng" "16-BaBaoNuoMiFan" "17-JuBaoShenShu" "16-WeiLaiYanJiuYuan" "16-WanNengXiaoJianPan" \
 "17-JingHuaSuiPian" "18-JianPanLingXiu-ChaoJiYingXiong" "18-XingHeNian" "19-ChangShengZhu" "19-ShenMiQuanShui" "19-JingMeiDianXinHe" \
 "19-QiaoKeLiGongRenIII" "19-MianBaoGongRenIII" "19-BuDingGongRenIII" "19-MianHuaTangGongRenIII" "19-NaiYouGongRenIII" \
-"18-AZai" "20-DianDengQi" "20-JingZhongHua"
+"18-AZai" "20-DianDengQi" "20-JingZhongHua" "20-ChuXinZheBuYi"
 do
     mkdir $nft;mv *$nft*.csv $nft;zip -q $nft-$yesterday $nft/*
 done
