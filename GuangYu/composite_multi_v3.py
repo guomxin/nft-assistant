@@ -9,7 +9,7 @@ from gycommon import commoninfo
 from gycommon import utils
 
 ADD_COL_URL = "https://api.gandart.com/read/api/composite/getDetailByCasting"
-COMPOSITE_URL = "https://api.gandart.com/base/v2/composite/v3/confirmComposite"
+COMPOSITE_URL = "https://api.gandart.com/base/v2/composite/v3/confirmCompositeV2"
 TIME_OUT = 3
 PAGE_SIZE = 1000
 
@@ -20,6 +20,7 @@ def add_collections(casting_ids, token):
         if res_code != 0:
             print("获取合成材料失败!")
             sys.exit(1)
+        print("CastingId:{}, Count:{}".format(casting_id, len(comp_data_col)))
         comp_data_cols.append(comp_data_col)
     return comp_data_cols
 
@@ -67,7 +68,7 @@ def composite(data, token):
             time.sleep(3)
             print(e)
 
-START_HOUR = 15
+START_HOUR = 11
 
 if __name__ == "__main__":
     if len(sys.argv) < 6:
@@ -79,6 +80,7 @@ if __name__ == "__main__":
     batch_count = int(sys.argv[4])
     loops = int(sys.argv[5])
     
+    """
     lp_cnt = 0
     while True:
         lp_cnt += 1
@@ -91,6 +93,7 @@ if __name__ == "__main__":
         else:
             break
     time.sleep(1)
+    """
 
     # 获取已有材料
     comp_data_cols = add_collections(casting_ids, commoninfo.Home_Token)
