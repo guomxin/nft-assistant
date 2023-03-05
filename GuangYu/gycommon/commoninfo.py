@@ -205,6 +205,7 @@ CastingId2MetaInfo = {
     1207: ["20-DianDengQi", "点灯器", 200],
     888: ["20-JingZhongHua", "镜中花", 100],
     1127: ["20-ChuXinZheBuYi", "初心者布衣"],
+    1124: ["20-LiangJieDeng", "两界灯", 6000],
 }
 
 DEFAULT_MIN_PRICE = 50
