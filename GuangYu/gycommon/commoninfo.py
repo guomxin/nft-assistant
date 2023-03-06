@@ -8,7 +8,7 @@ CastingId2MetaInfo = {
     57: ["1-YunMuShouHu", "云木守护版"],
     59: ["1-WanXiangLongChao", "万象龙巢", 1500],
     80: ["1-LongFengShouBao", "龙凤守宝", 10000],
-    96: ["1-NiePanZhiDi", "涅槃之地", 2500],
+    96: ["1-NiePanZhiDi", "涅槃之地", 2000],
 
     56: ["2-CtrlZai", "小小键盘-Ctrl仔"],
     67: ["2-CZai", "小小键盘-C仔"],
@@ -26,7 +26,7 @@ CastingId2MetaInfo = {
     79: ["4-LongTuTeng", "龙图腾"],
     87: ["4-FengTuTeng", "凤图腾"],
     71: ["4-PingAnGuo", "国庆节限定空投-平安果"],
-    72: ["4-FuQin", "国庆节限定空投-福琴", 200],
+    72: ["4-FuQin", "国庆节限定空投-福琴", 250],
 
     #82: ["5-TanSuoZheI", "探索者I"],
     #231: ["5-TanSuoZheII", "探索者II"],
@@ -62,8 +62,8 @@ CastingId2MetaInfo = {
     153: ["7-ChuiDiaoXuKe", "垂钓许可"],
     156: ["7-EnterZai", "小小键盘-Enter仔"],
 
-    74: ["8-KeLe", "国庆节限定空投-可乐", 300],
-    73: ["8-YuanJie", "国庆节限定空投-缘结", 300],
+    74: ["8-KeLe", "国庆节限定空投-可乐", 400],
+    73: ["8-YuanJie", "国庆节限定空投-缘结", 400],
     155: ["8-LanHaiYouDie", "奇物秘宝-蓝海幽蝶"],
     172: ["8-YuEr", "鱼饵"],
     169: ["8-JingZhiDiaoJu-KongTou", "精致的钓具-空投版本"],
@@ -75,8 +75,8 @@ CastingId2MetaInfo = {
     205: ["9-MengHuanShuiLong", "梦幻水龙", 1200],
     #211: ["9-ShenHaiQiPao", "深海气泡"],
     210: ["9-YuEr-DuiHuan", "鱼饵-兑换版本"],
-    77: ["9-KuaiJieZuHe-FuZhi", "快捷组合-复制", 500],
-    76: ["9-KuaiJieZuHe-ZhanTie", "快捷组合-粘贴", 500],
+    77: ["9-KuaiJieZuHe-FuZhi", "快捷组合-复制", 300],
+    76: ["9-KuaiJieZuHe-ZhanTie", "快捷组合-粘贴", 300],
     201: ["9-ShenHaiJingShi", "深海晶石"],
     198: ["9-DiJiuQuZhengJian", "第九区证件"],
     223: ["9-JiXieHouTu", "机械厚土"],
@@ -108,7 +108,7 @@ CastingId2MetaInfo = {
 
     184: ["12-LianJinXueTu", "炼金学徒", 1000],
     241: ["12-LiuGuangMoFang-ShanHu", "流光魔方-珊瑚"],
-    453: ["12-QiYuanGai-WangChuanJuFeng", "启源改-忘川飓风", 7000],
+    453: ["12-QiYuanGai-WangChuanJuFeng", "启源改-忘川飓风", 5000],
     203: ["12-WeiJianDing-WuQiTuZhi", "未鉴定的武器图纸"],
     474: ["12-ShenTu-TongDan", "神兔-铜蛋"],
     479: ["12-ShenTu-YinDan", "神兔-银蛋"],
@@ -118,7 +118,7 @@ CastingId2MetaInfo = {
     243: ["13-LiuGuangMoFang-HuPo", "流光魔方-琥珀"],
     593: ["13-ChaoJiXunHangZhe", "超级巡航者", 200],
     594: ["13-ChaoJiTanSuoZhe", "超级探索者", 200],
-    595: ["13-ZhanJiaHouTu", "战甲厚土", 400],
+    595: ["13-ZhanJiaHouTu", "战甲厚土"],
     246: ["13-LiuGuangBaoHe-LengCui", "流光宝盒-冷翠"],
     600: ["13-LengCuiJingHua", "冷翠精华"],
     #664: ["13-HangHaiKa", "航海卡"],
@@ -160,7 +160,7 @@ CastingId2MetaInfo = {
     865: ["16-ShiJian", "时间", 400],
     616: ["16-LingSheZhu", "灵蛇珠"],
     713: ["16-BaBaoNuoMiFan", "八宝糯米饭"],
-    113: ["16-WeiLaiYanJiuYuan", "未来研究院", 1000],
+    113: ["16-WeiLaiYanJiuYuan", "未来研究院"],
     931: ["16-WanNengXiaoJianPan", "万能小键盘"],
 
     127: ["17-XingHongBaoShi", "猩红宝石"], #
@@ -171,7 +171,7 @@ CastingId2MetaInfo = {
     902: ["17-LiuSuYuZhui", "流苏玉坠", 200],
     899: ["17-HuangJinShengShu", "黄金圣树", 1500],
     923: ["17-BaFangLaiFeng", "八方来风", 2000],
-    898: ["17-JuBaoShenShu", "聚宝神树", 3600],
+    898: ["17-JuBaoShenShu", "聚宝神树", 3500],
     889: ["17-JingHuaSuiPian", "镜花碎片", 20],
 
     459: ["18-Kulolo-WeiJueZhe", "Kulolo-未觉者"],
@@ -197,18 +197,19 @@ CastingId2MetaInfo = {
     #1258: ["19-MianBaoGongRenIII", "面包工人III", 200],
     #1260: ["19-BuDingGongRenIII", "布丁工人III", 200],
     #1259: ["19-MianHuaTangGongRenIII", "棉花糖工人III", 200],
-    1257: ["19-NaiYouGongRenIII", "奶油工人III", 200],
+    #1257: ["19-NaiYouGongRenIII", "奶油工人III", 200],
     1122: ["19-ChangShengZhu", "长生竹", 500],
     1123: ["19-ShenMiQuanShui", "神秘泉水", 100],
     1085: ["19-JingMeiDianXinHe", "精美点心盒", 200],
+    1320: ["19-JiangLinDaoXinWu", "降临岛信物", 10],
 
     1207: ["20-DianDengQi", "点灯器", 200],
-    888: ["20-JingZhongHua", "镜中花", 100],
+    888: ["20-JingZhongHua", "镜中花"],
     1127: ["20-ChuXinZheBuYi", "初心者布衣"],
     1124: ["20-LiangJieDeng", "两界灯", 6000],
 }
 
-DEFAULT_MIN_PRICE = 50
+DEFAULT_MIN_PRICE = 30
 
 Transaction_Logs_File_Name = "_guangyu_{}_trans_logs.csv"
 
