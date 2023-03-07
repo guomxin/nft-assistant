@@ -202,6 +202,7 @@ CastingId2MetaInfo = {
     1123: ["19-ShenMiQuanShui", "神秘泉水", 100],
     1085: ["19-JingMeiDianXinHe", "精美点心盒", 200],
     1320: ["19-JiangLinDaoXinWu", "降临岛信物", 10],
+    1342: ["19-ShiPinTuZhi", "饰品图纸"],
 
     1207: ["20-DianDengQi", "点灯器", 200],
     888: ["20-JingZhongHua", "镜中花"],
