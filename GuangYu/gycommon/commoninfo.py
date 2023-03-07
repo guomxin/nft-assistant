@@ -124,7 +124,7 @@ CastingId2MetaInfo = {
     #664: ["13-HangHaiKa", "航海卡"],
     #662: ["13-LuYunKa", "陆运卡"],
     #663: ["13-ZhiYinKa", "指引卡"],
-    867: ["13-MoGuangGuMian", "魔光骨冕", 2000],
+    867: ["13-MoGuangGuMian", "魔光骨冕", 1500],
     895: ["13-TabZai", "小小键盘-Tab仔"],
     398: ["13-ShenMiShiBan", "神秘石板", 100],
 
@@ -143,7 +143,7 @@ CastingId2MetaInfo = {
     615: ["14-ShuangSheZhang", "双蛇杖"],
 
     754: ["15-ZhuanLunPan", "转轮盘", 1000],
-    240: ["15-XiaoPingYuLei", "小瓶鱼泪"],
+    1357: ["15-XiaoPingYuLei", "小瓶鱼泪"],
     711: ["15-SiXiZheShan", "四喜折扇"],
     792: ["15-HuaCaoTuan", "花草团"],
     793: ["15-ShengShuZhongZi", "圣树种子"],
@@ -157,7 +157,7 @@ CastingId2MetaInfo = {
     853: ["16-CiKongJianLaLian", "次空间拉链"],
     861: ["16-QiYuanKa", "祈愿卡"], #
     856: ["16-FuGuYuanHuan", "缚骨圆环"],
-    865: ["16-ShiJian", "时间", 400],
+    865: ["16-ShiJian", "时间", 300],
     616: ["16-LingSheZhu", "灵蛇珠"],
     713: ["16-BaBaoNuoMiFan", "八宝糯米饭"],
     113: ["16-WeiLaiYanJiuYuan", "未来研究院"],
@@ -167,11 +167,11 @@ CastingId2MetaInfo = {
     896: ["17-SenZhiXi", "森之息"],
     894: ["17-HuangJinShu-ShengShu", "黄金树-圣树"], #
     402: ["17-XuePuTi", "血菩提"],
-    897: ["17-FengMoLingShu", "封魔灵树", 8000],
+    897: ["17-FengMoLingShu", "封魔灵树", 5000],
     902: ["17-LiuSuYuZhui", "流苏玉坠", 200],
-    899: ["17-HuangJinShengShu", "黄金圣树", 1500],
-    923: ["17-BaFangLaiFeng", "八方来风", 2000],
-    898: ["17-JuBaoShenShu", "聚宝神树", 3500],
+    899: ["17-HuangJinShengShu", "黄金圣树", 1000],
+    923: ["17-BaFangLaiFeng", "八方来风", 1500],
+    898: ["17-JuBaoShenShu", "聚宝神树", 2500],
     889: ["17-JingHuaSuiPian", "镜花碎片", 20],
 
     459: ["18-Kulolo-WeiJueZhe", "Kulolo-未觉者"],
@@ -180,7 +180,7 @@ CastingId2MetaInfo = {
     456: ["18-Kulolo-TunChiZhe", "Kulolo-吞噬者", 1500],
     455: ["18-Kulolo-LingZhiZhe", "Kulolo-灵智者", 5000],
     932: ["18-JianPanLingXiu-ChaoJiYingXiong", "键盘领袖-超级英雄", 5000],
-    135: ["18-XingHeNian", "星河念", 3000],
+    135: ["18-XingHeNian", "星河念", 2000],
     901: ["18-AZai", "小小键盘-A仔"],
 
     #942: ["19-QiaoKeLiGongRen", "巧克力工人", 200],

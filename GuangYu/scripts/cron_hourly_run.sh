@@ -367,7 +367,7 @@ echo "---转轮盘---"
 python grab_transaction_price.py 754 ${today} ${tag}
 
 echo "---小瓶鱼泪---"
-python grab_transaction_price.py 240 ${today} ${tag}
+python grab_transaction_price.py 1357 ${today} ${tag}
 
 #echo "---四喜折扇---"
 #python grab_transaction_price.py 711 ${today} ${tag}

@@ -480,8 +480,8 @@ python grab_transaction_price.py 754 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 754 ${yesterday} 50
 
 echo "---小瓶鱼泪---"
-python grab_transaction_price.py 240 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 240 ${yesterday} 10
+python grab_transaction_price.py 1357 ${yesterday} ${yesterday}
+python analyze_transaction_prices.py 1357 ${yesterday} 10
 
 #echo "---四喜折扇---"
 #python grab_transaction_price.py 711 ${yesterday} ${yesterday}
