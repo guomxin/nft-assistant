@@ -57,7 +57,7 @@ CastingId2MetaInfo = {
     132: ["7-FeiLiWuTingMuXia", "奇物秘宝-非礼勿听木匣", 500],
     150: ["7-JianMu", "建木"],
     151: ["7-LiuLi", "琉璃"],
-    154: ["7-JuNeng", "启源II聚能号", 1000],
+    154: ["7-JuNeng", "启源II聚能号", 900],
     126: ["7-QingTongShiXiang", "奇物秘宝-青铜石像", 250],
     153: ["7-ChuiDiaoXuKe", "垂钓许可"],
     156: ["7-EnterZai", "小小键盘-Enter仔"],
@@ -179,7 +179,7 @@ CastingId2MetaInfo = {
     457: ["18-Kulolo-SiLieZhe", "Kulolo-撕裂者"],
     456: ["18-Kulolo-TunChiZhe", "Kulolo-吞噬者", 1500],
     455: ["18-Kulolo-LingZhiZhe", "Kulolo-灵智者", 5000],
-    932: ["18-JianPanLingXiu-ChaoJiYingXiong", "键盘领袖-超级英雄", 5000],
+    1374: ["18-JianPanLingXiu-ChaoJiYingXiong", "键盘领袖-超级英雄", 4000],
     135: ["18-XingHeNian", "星河念", 2000],
     901: ["18-AZai", "小小键盘-A仔"],
 
@@ -212,6 +212,7 @@ CastingId2MetaInfo = {
     1127: ["20-ChuXinZheBuYi", "初心者布衣"],
     1124: ["20-LiangJieDeng", "两界灯", 6000],
     1391: ["20-KongJianSuiPian", "空间碎片"],
+    1392: ["20-TianLanShiLaiMu", "天蓝史莱姆"],
 }
 
 DEFAULT_MIN_PRICE = 30
@@ -225,7 +226,7 @@ HighestValue_Products_Info = {
 }
 
 # 173
-Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjc4NjE5MTE3LCJzaWduSWQiOiI0M2EwMDZjMDU0Njk0MjNlYTc5MDFiMTMyM2JmNzEwMSIsImlhdCI6MTY3ODAxNDMxN30.4gZd2O30MQxroCg6DBtAW8HMyOrmutWJkp3D7YI5Ddw"
+Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjc4ODc3MjY3LCJzaWduSWQiOiI4Yjc4M2EzNjBkMWE0ZDI2YTc4ZGMyZDRkZjQ0NzlkNSIsImlhdCI6MTY3ODI3MjQ2N30.HVOdkd_riImjdlTzyHCttG_OvjbXmyu26VarSvrZ93I"
 
 # 131
 Query_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxMzE1NjE2MTA5MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjc4NjE5NjA2LCJzaWduSWQiOiI3ZTc2MDljYzBjOWI0NjY5YWQ3NmZiYWY0ZWE5MTVhYiIsImlhdCI6MTY3ODAxNDgwNn0.ngeqvNLM_M8vZNh6eJSPl3Wl4jXMILeXmyglOOmoq1Q"
