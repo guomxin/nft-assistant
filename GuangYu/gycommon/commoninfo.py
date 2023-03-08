@@ -26,7 +26,7 @@ CastingId2MetaInfo = {
     79: ["4-LongTuTeng", "龙图腾"],
     87: ["4-FengTuTeng", "凤图腾"],
     71: ["4-PingAnGuo", "国庆节限定空投-平安果"],
-    72: ["4-FuQin", "国庆节限定空投-福琴", 250],
+    72: ["4-FuQin", "国庆节限定空投-福琴", 220],
 
     #82: ["5-TanSuoZheI", "探索者I"],
     #231: ["5-TanSuoZheII", "探索者II"],
@@ -58,12 +58,12 @@ CastingId2MetaInfo = {
     150: ["7-JianMu", "建木"],
     151: ["7-LiuLi", "琉璃"],
     154: ["7-JuNeng", "启源II聚能号", 1000],
-    126: ["7-QingTongShiXiang", "奇物秘宝-青铜石像", 300],
+    126: ["7-QingTongShiXiang", "奇物秘宝-青铜石像", 250],
     153: ["7-ChuiDiaoXuKe", "垂钓许可"],
     156: ["7-EnterZai", "小小键盘-Enter仔"],
 
-    74: ["8-KeLe", "国庆节限定空投-可乐", 400],
-    73: ["8-YuanJie", "国庆节限定空投-缘结", 400],
+    74: ["8-KeLe", "国庆节限定空投-可乐", 360],
+    73: ["8-YuanJie", "国庆节限定空投-缘结", 300],
     155: ["8-LanHaiYouDie", "奇物秘宝-蓝海幽蝶"],
     172: ["8-YuEr", "鱼饵"],
     169: ["8-JingZhiDiaoJu-KongTou", "精致的钓具-空投版本"],
@@ -211,6 +211,7 @@ CastingId2MetaInfo = {
     888: ["20-JingZhongHua", "镜中花"],
     1127: ["20-ChuXinZheBuYi", "初心者布衣"],
     1124: ["20-LiangJieDeng", "两界灯", 6000],
+    1391: ["20-KongJianSuiPian", "空间碎片"],
 }
 
 DEFAULT_MIN_PRICE = 30
