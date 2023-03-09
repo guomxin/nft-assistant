@@ -213,6 +213,7 @@ CastingId2MetaInfo = {
     1124: ["20-LiangJieDeng", "两界灯", 6000],
     1391: ["20-KongJianSuiPian", "空间碎片"],
     1392: ["20-TianLanShiLaiMu", "天蓝史莱姆"],
+    1351: ["20-MoShenJuanZhou", "魔神卷轴"],
 }
 
 DEFAULT_MIN_PRICE = 30
