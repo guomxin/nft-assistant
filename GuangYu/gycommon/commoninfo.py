@@ -214,6 +214,7 @@ CastingId2MetaInfo = {
     1391: ["20-KongJianSuiPian", "空间碎片"],
     1392: ["20-TianLanShiLaiMu", "天蓝史莱姆"],
     1351: ["20-MoShenJuanZhou", "魔神卷轴"],
+    613: ["20-LinPian", "鳞片"],
 }
 
 DEFAULT_MIN_PRICE = 30
