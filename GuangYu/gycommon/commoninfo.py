@@ -215,6 +215,8 @@ CastingId2MetaInfo = {
     1392: ["20-TianLanShiLaiMu", "天蓝史莱姆"],
     1351: ["20-MoShenJuanZhou", "魔神卷轴"],
     613: ["20-LinPian", "鳞片"],
+
+    1408: ["21-TianYuanJing", "天圆境"],
 }
 
 DEFAULT_MIN_PRICE = 30
