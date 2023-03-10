@@ -534,6 +534,9 @@ python grab_transaction_price.py 613 ${today} ${tag}
 echo "---天圆镜---"
 python grab_transaction_price.py 1408 ${today} ${tag}
 
+echo "---魂珠---"
+python grab_transaction_price.py 399 ${today} ${tag}
+
 #------ 工人 ------#
 #echo "---巧克力工人---"
 #python grab_transaction_price.py 1256 ${today} ${tag}
@@ -579,7 +582,7 @@ for nft in "1-KaiTuoZhe" "1-WanXiangLongChao" "1-KongJianBuJi-QiNeng" "1-YunMuSh
 "17-JingHuaSuiPian" "18-JianPanLingXiu-ChaoJiYingXiong" "18-XingHeNian" "19-ChangShengZhu" "19-ShenMiQuanShui" "19-JingMeiDianXinHe" \
 "18-AZai" "20-DianDengQi" "20-JingZhongHua" "20-ChuXinZheBuYi" "20-LiangJieDeng" "19-JiangLinDaoXinWu" "19-ShiPinTuZhi" \
 "19-CaiFengTuZhi" "19-DuanZaoTuZhi" "19-WuQiMuJu" "20-KongJianSuiPian" "20-TianLanShiLaiMu" "20-MoShenJuanZhou" "20-LinPian" \
-"21-TianYuanJing"
+"21-TianYuanJing" "21-HunZhu"
 do
     mkdir $nft;mv *$nft*.csv $nft;zip -q $nft-$tag $nft/*
 done

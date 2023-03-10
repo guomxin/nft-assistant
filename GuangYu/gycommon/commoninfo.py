@@ -217,6 +217,7 @@ CastingId2MetaInfo = {
     613: ["20-LinPian", "鳞片"],
 
     1408: ["21-TianYuanJing", "天圆境"],
+    399: ["21-HunZhu", "魂珠"],
 }
 
 DEFAULT_MIN_PRICE = 30
