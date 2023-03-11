@@ -79,9 +79,9 @@ python analyze_transaction_prices.py 30 ${yesterday} 500
 #python grab_transaction_price.py 75 ${yesterday} ${yesterday}
 #python analyze_transaction_prices.py 75 ${yesterday} 100
 
-echo "---龙图腾---"
-python grab_transaction_price.py 79 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 79 ${yesterday} 100
+#echo "---龙图腾---"
+#python grab_transaction_price.py 79 ${yesterday} ${yesterday}
+#python analyze_transaction_prices.py 79 ${yesterday} 100
 
 echo "---龙凤守宝---"
 python grab_transaction_price.py 80 ${yesterday} ${yesterday}
@@ -91,21 +91,21 @@ echo "---探索者III---"
 python grab_transaction_price.py 592 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 592 ${yesterday} 50
 
-echo "---物资传输面板---"
-python grab_transaction_price.py 28 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 28 ${yesterday} 50
+#echo "---物资传输面板---"
+#python grab_transaction_price.py 28 ${yesterday} ${yesterday}
+#python analyze_transaction_prices.py 28 ${yesterday} 50
 
-echo "---栖龙云木---"
-python grab_transaction_price.py 29 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 29 ${yesterday} 50
+#echo "---栖龙云木---"
+#python grab_transaction_price.py 29 ${yesterday} ${yesterday}
+#python analyze_transaction_prices.py 29 ${yesterday} 50
 
-echo "---梦幻小龙---"
-python grab_transaction_price.py 46 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 46 ${yesterday} 50
+#echo "---梦幻小龙---"
+#python grab_transaction_price.py 46 ${yesterday} ${yesterday}
+#python analyze_transaction_prices.py 46 ${yesterday} 50
 
-echo "---山岭树龙---"
-python grab_transaction_price.py 55 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 55 ${yesterday} 100
+#echo "---山岭树龙---"
+#python grab_transaction_price.py 55 ${yesterday} ${yesterday}
+#python analyze_transaction_prices.py 55 ${yesterday} 100
 
 #echo "---凤图腾---"
 #python grab_transaction_price.py 87 ${yesterday} ${yesterday}
@@ -207,9 +207,9 @@ echo "---奇物秘宝-青铜石像---"
 python grab_transaction_price.py 126 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 126 ${yesterday} 100
 
-echo "---垂钓许可---"
-python grab_transaction_price.py 153 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 153 ${yesterday} 100
+#echo "---垂钓许可---"
+#python grab_transaction_price.py 153 ${yesterday} ${yesterday}
+#python analyze_transaction_prices.py 153 ${yesterday} 100
 
 #echo "---小小键盘-Enter仔---"
 #python grab_transaction_price.py 156 ${yesterday} ${yesterday}
@@ -383,9 +383,9 @@ echo "---天成仪II---"
 python grab_transaction_price.py 389 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 389 ${yesterday} 50
 
-echo "---流光魔方-琥珀---"
-python grab_transaction_price.py 243 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 243 ${yesterday} 100
+#echo "---流光魔方-琥珀---"
+#python grab_transaction_price.py 243 ${yesterday} ${yesterday}
+#python analyze_transaction_prices.py 243 ${yesterday} 100
 
 echo "---超级巡航者---"
 python grab_transaction_price.py 593 ${yesterday} ${yesterday}
@@ -603,9 +603,9 @@ echo "---八方来风---"
 python grab_transaction_price.py 923 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 923 ${yesterday} 100
 
-echo "---八宝糯米饭---"
-python grab_transaction_price.py 713 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 713 ${yesterday} 50
+#echo "---八宝糯米饭---"
+#python grab_transaction_price.py 713 ${yesterday} ${yesterday}
+#python analyze_transaction_prices.py 713 ${yesterday} 50
 
 echo "---聚宝神树---"
 python grab_transaction_price.py 898 ${yesterday} ${yesterday}
@@ -615,9 +615,9 @@ echo "---未来研究院---"
 python grab_transaction_price.py 113 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 113 ${yesterday} 100
 
-echo "---万能小键盘---"
-python grab_transaction_price.py 931 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 931 ${yesterday} 100
+#echo "---万能小键盘---"
+#python grab_transaction_price.py 931 ${yesterday} ${yesterday}
+#python analyze_transaction_prices.py 931 ${yesterday} 100
 
 echo "---镜花碎片---"
 python grab_transaction_price.py 889 ${yesterday} ${yesterday}
@@ -734,25 +734,24 @@ cd data;mkdir -p upload/$yesterday;rm -rf upload/$yesterday/*
 cp *$yesterday* upload/$yesterday;cd upload/$yesterday
 
 for nft in "1-KaiTuoZhe" "1-WanXiangLongChao" "1-KongJianBuJi-QiNeng" "1-YunMuShouHu" "2-TaiKongShiftZai" "2-ShiftZai" \
-"3-HouTu" "3-GanLin" "3-HuiJin" "3-FuJin" "2-CtrlZai" "2-CZai" "2-VZai" "4-LongFengKuai" "4-LongTuTeng" "1-LongFengShouBao" "4-FengTuTeng" \
-"1-ChuanShuMianBan" "1-QiLongYunMu" "1-MengHuanXiaoLong" "1-ShanLingShuLong" "5-AErFaYan" "5-HunPoTiDeng" \
-"1-NiePanZhiDi" "5-QiWuSuiPian-ShiJianMoPan" "5-QiWuMiBao-ShiJianMoPan" "5-FengYiLei" "5-TanSuoZheIII" \
+"3-HouTu" "3-GanLin" "3-HuiJin" "3-FuJin" "2-CtrlZai" "2-CZai" "2-VZai" "4-LongFengKuai" "1-LongFengShouBao" "4-FengTuTeng" \
+"5-AErFaYan" "5-HunPoTiDeng" "1-NiePanZhiDi" "5-QiWuSuiPian-ShiJianMoPan" "5-QiWuMiBao-ShiJianMoPan" "5-FengYiLei" "5-TanSuoZheIII"  \
 "4-PingAnGuo" "5-ShiHuangZhe" "4-FuQin" "6-SR-CaiHouZhiShen" "6-R-HouGeLiTe" "6-R-PDHou" "6-N-BaoZuHou"  \
 "5-NengYuanDianChi" "5-LuoPanZhiZhen" "6-YunMuFangZhou" "6-JingShiSuiPian" "7-HeJin" "7-FeiLiWuTingMuXia" \
-"7-JianMu" "7-LiuLi" "7-JuNeng" "7-QingTongShiXiang" "7-ChuiDiaoXuKe" "7-EnterZai" "8-KeLe" "8-YuanJie" "8-LanHaiYouDie" \
+"7-JianMu" "7-LiuLi" "7-JuNeng" "7-QingTongShiXiang" "7-EnterZai" "8-KeLe" "8-YuanJie" "8-LanHaiYouDie" \
 "8-YuEr" "8-JingZhiDiaoJu-KongTou" "8-JingZhiDiaoJu-DuiHuan" "8-XunHangZheI" "9-MengHuanShuiLong" \
 "9-YuEr-DuiHuan" "9-KuaiJieZuHe-FuZhi" "9-KuaiJieZuHe-ZhanTie" "9-ShenHaiJingShi" "9-DiJiuQuZhengJian" \
 "9-JiXieHouTu" "9-ZuDuiKaI" "10-XiuBuXueTu" "10-JianBaoXueTu" "10-XingHuiDian" "10-HanYueSi" "10-FuZhiBaoZhu" \
 "10-EMengGuoShi" "10-ShouLieZhe" "10-LiuGuangMoFang-QingJin" "11-ChuanShuoWuQi" "11-ZhiHuiZhiXin" "11-YiZhiZhiXin" \
 "12-LianJinXueTu" "12-LiuGuangMoFang-ShanHu" "12-QiYuanGai-WangChuanJuFeng" "12-WeiJianDing-WuQiTuZhi" "12-ShenTu-TongDan" \
 "12-ShenTu-YinDan" "11-AnHeiLingGe" "12-ShenTu-JinDan" "11-MaoXianZheZhiXin" "12-DaTiKa" "11-CiOuJingSuiPian" "11-TianChengYiII" "11-TianChengYi" \
-"13-LiuGuangMoFang-HuPo" "13-ChaoJiXunHangZhe" "13-ChaoJiTanSuoZhe" "13-ZhanJiaHouTu" "13-LiuGuangBaoHe-LengCui" "13-LengCuiJingHua" \
-"14-PXShiMin" "14-ZZai" "14-FuGuShouBing" "14-5HaoDianChi" "14-XuanZeKa" "14-MoRen-ShiZhiNiZhuan" "14-XinChunFuDai" "14-ShuangSheZhang" "10-BaiGuCao" \
+"13-ChaoJiXunHangZhe" "13-ChaoJiTanSuoZhe" "13-ZhanJiaHouTu" "13-LiuGuangBaoHe-LengCui" "13-LengCuiJingHua" \
+"14-PXShiMin" "14-ZZai" "14-FuGuShouBing" "14-5HaoDianChi" "14-XuanZeKa" "14-MoRen-ShiZhiNiZhuan"  "14-XinChunFuDai" "14-ShuangSheZhang" "10-BaiGuCao" \
 "15-ZhuanLunPan" "15-XiaoPingYuLei" "15-SiXiZheShan" "15-HuaCaoTuan" "15-ShengShuZhongZi" "15-MoFaYaoShui" "15-YongShengZhiHua" "15-YongShengShouMenRen" \
 "16-XiaoJingLing-NeiCeZiGeKa" "16-HunDunTu" "16-HuangJinShu-YouLing" "16-CiKongJianLaLian" "16-QiYuanKa" "16-FuGuYuanHuan" \
 "16-ShiJian" "16-LingSheZhu" "13-MoGuangGuMian" "13-TabZai" "13-ShenMiShiBan" "17-XingHongBaoShi" "17-SenZhiXi" "17-HuangJinShu-ShengShu" \
 "17-XuePuTi" "18-Kulolo-WeiJueZhe" "18-Kulolo-JueXingZhe" "18-Kulolo-SiLieZhe" "18-Kulolo-TunChiZhe" "18-Kulolo-LingZhiZhe" "17-FengMoLingShu" \
-"17-LiuSuYuZhui" "17-HuangJinShengShu" "17-BaFangLaiFeng" "16-BaBaoNuoMiFan" "17-JuBaoShenShu" "16-WeiLaiYanJiuYuan" "16-WanNengXiaoJianPan" \
+"17-LiuSuYuZhui" "17-HuangJinShengShu" "17-BaFangLaiFeng" "17-JuBaoShenShu" "16-WeiLaiYanJiuYuan"  \
 "17-JingHuaSuiPian" "18-JianPanLingXiu-ChaoJiYingXiong" "18-XingHeNian" "19-ChangShengZhu" "19-ShenMiQuanShui" "19-JingMeiDianXinHe" \
 "18-AZai" "20-DianDengQi" "20-JingZhongHua" "20-ChuXinZheBuYi" "20-LiangJieDeng" "19-JiangLinDaoXinWu" "19-ShiPinTuZhi" \
 "19-CaiFengTuZhi" "19-DuanZaoTuZhi" "19-WuQiMuJu" "20-KongJianSuiPian" "20-TianLanShiLaiMu" "20-MoShenJuanZhou" "20-LinPian" \
