@@ -129,8 +129,8 @@ python grab_transaction_price.py 63 ${today} ${tag}
 echo "---N-包租猴---"
 python grab_transaction_price.py 62 ${today} ${tag}
 
-echo "---虫族骸骨---"
-python grab_transaction_price.py 130 ${today} ${tag}
+#echo "---虫族骸骨---"
+#python grab_transaction_price.py 130 ${today} ${tag}
 
 #echo "---X型能源电池---"
 #python grab_transaction_price.py 129 ${today} ${tag}
@@ -312,17 +312,17 @@ python grab_transaction_price.py 246 ${today} ${tag}
 #echo "---冷翠精华---"
 #python grab_transaction_price.py 600 ${today} ${tag}
 
-echo "---MK魔术帽---"
-python grab_transaction_price.py 175 ${today} ${tag}
+#echo "---MK魔术帽---"
+#python grab_transaction_price.py 175 ${today} ${tag}
 
-echo "---MK马卡龙---"
-python grab_transaction_price.py 174 ${today} ${tag}
+#echo "---MK马卡龙---"
+#python grab_transaction_price.py 174 ${today} ${tag}
 
-echo "---MK旋转杯---"
-python grab_transaction_price.py 176 ${today} ${tag}
+#echo "---MK旋转杯---"
+#python grab_transaction_price.py 176 ${today} ${tag}
 
-echo "---MK老爷车---"
-python grab_transaction_price.py 173 ${today} ${tag}
+#echo "---MK老爷车---"
+#python grab_transaction_price.py 173 ${today} ${tag}
 
 #echo "---PX市民---"
 #python grab_transaction_price.py 602 ${today} ${tag}
@@ -339,8 +339,8 @@ python grab_transaction_price.py 173 ${today} ${tag}
 #echo "---选择卡---"
 #python grab_transaction_price.py 607 ${today} ${tag}
 
-echo "---复古红白机---"
-python grab_transaction_price.py 608 ${today} ${tag}
+#echo "---复古红白机---"
+#python grab_transaction_price.py 608 ${today} ${tag}
 
 echo "---魔刃-时之逆转---"
 python grab_transaction_price.py 611 ${today} ${tag}
@@ -563,7 +563,7 @@ for nft in "1-KaiTuoZhe" "1-WanXiangLongChao" "1-KongJianBuJi-QiNeng" "1-YunMuSh
 "1-ChuanShuMianBan" "1-QiLongYunMu" "1-MengHuanXiaoLong" "1-ShanLingShuLong" "5-AErFaYan" "5-HunPoTiDeng" \
 "1-NiePanZhiDi" "5-QiWuSuiPian-ShiJianMoPan" "5-QiWuMiBao-ShiJianMoPan" "5-FengYiLei" "5-TanSuoZheIII"  \
 "4-PingAnGuo" "5-ShiHuangZhe" "4-FuQin" "6-SR-CaiHouZhiShen" "6-R-HouGeLiTe" "6-R-PDHou" "6-N-BaoZuHou"  \
-"5-ChongZuHaiGu" "5-NengYuanDianChi" "5-LuoPanZhiZhen" "6-YunMuFangZhou" "6-JingShiSuiPian" "7-HeJin" "7-FeiLiWuTingMuXia" \
+"5-NengYuanDianChi" "5-LuoPanZhiZhen" "6-YunMuFangZhou" "6-JingShiSuiPian" "7-HeJin" "7-FeiLiWuTingMuXia" \
 "7-JianMu" "7-LiuLi" "7-JuNeng" "7-QingTongShiXiang" "7-ChuiDiaoXuKe" "7-EnterZai" "8-KeLe" "8-YuanJie" "8-LanHaiYouDie" \
 "8-YuEr" "8-JingZhiDiaoJu-KongTou" "8-JingZhiDiaoJu-DuiHuan" "8-XunHangZheI" "9-MengHuanShuiLong" \
 "9-YuEr-DuiHuan" "9-KuaiJieZuHe-FuZhi" "9-KuaiJieZuHe-ZhanTie" "9-ShenHaiJingShi" "9-DiJiuQuZhengJian" \
@@ -572,8 +572,7 @@ for nft in "1-KaiTuoZhe" "1-WanXiangLongChao" "1-KongJianBuJi-QiNeng" "1-YunMuSh
 "12-LianJinXueTu" "12-LiuGuangMoFang-ShanHu" "12-QiYuanGai-WangChuanJuFeng" "12-WeiJianDing-WuQiTuZhi" "12-ShenTu-TongDan" \
 "12-ShenTu-YinDan" "11-AnHeiLingGe" "12-ShenTu-JinDan" "11-MaoXianZheZhiXin" "12-DaTiKa" "11-CiOuJingSuiPian" "11-TianChengYiII" "11-TianChengYi" \
 "13-LiuGuangMoFang-HuPo" "13-ChaoJiXunHangZhe" "13-ChaoJiTanSuoZhe" "13-ZhanJiaHouTu" "13-LiuGuangBaoHe-LengCui" "13-LengCuiJingHua" \
-"14-MKMoShuMao" "14-MKMaKaLong" "14-MKXuanZhuanBei" "14-MKLaoYeChe" "14-PXShiMin" "14-ZZai" "14-FuGuShouBing" "14-5HaoDianChi" "14-XuanZeKa" \
-"14-FuGuHongBaiJi" "14-MoRen-ShiZhiNiZhuan"  "14-XinChunFuDai" "14-ShuangSheZhang" "10-BaiGuCao" \
+"14-PXShiMin" "14-ZZai" "14-FuGuShouBing" "14-5HaoDianChi" "14-XuanZeKa" "14-MoRen-ShiZhiNiZhuan"  "14-XinChunFuDai" "14-ShuangSheZhang" "10-BaiGuCao" \
 "15-ZhuanLunPan" "15-XiaoPingYuLei" "15-SiXiZheShan" "15-HuaCaoTuan" "15-ShengShuZhongZi" "15-MoFaYaoShui" "15-YongShengZhiHua" "15-YongShengShouMenRen" \
 "16-XiaoJingLing-NeiCeZiGeKa" "16-HunDunTu" "16-HuangJinShu-YouLing" "16-CiKongJianLaLian" "16-QiYuanKa" "16-FuGuYuanHuan" \
 "16-ShiJian" "16-LingSheZhu" "13-MoGuangGuMian" "13-TabZai" "13-ShenMiShiBan" "17-XingHongBaoShi" "17-SenZhiXi" "17-HuangJinShu-ShengShu" \

@@ -42,7 +42,7 @@ CastingId2MetaInfo = {
     #104: ["5-TongXingZheng", "电子通行证"],
     #105: ["5-BuLaoQuan", "充盈不老泉"],
     #106: ["5-ShiZhiSha", "一抨时之砂"],
-    130: ["5-ChongZuHaiGu", "虫族骸骨"],
+    #130: ["5-ChongZuHaiGu", "虫族骸骨"],
     129: ["5-NengYuanDianChi", "X型能源电池"],
     128: ["5-LuoPanZhiZhen", "罗盘指针", 500],
 
@@ -128,16 +128,16 @@ CastingId2MetaInfo = {
     895: ["13-TabZai", "小小键盘-Tab仔"],
     398: ["13-ShenMiShiBan", "神秘石板", 100],
 
-    175: ["14-MKMoShuMao", "MK魔术帽"],
-    174: ["14-MKMaKaLong", "MK马卡龙"],
-    176: ["14-MKXuanZhuanBei", "MK旋转杯"],
-    173: ["14-MKLaoYeChe", "MK老爷车"],
+    #175: ["14-MKMoShuMao", "MK魔术帽"],
+    #174: ["14-MKMaKaLong", "MK马卡龙"],
+    #176: ["14-MKXuanZhuanBei", "MK旋转杯"],
+    #173: ["14-MKLaoYeChe", "MK老爷车"],
     602: ["14-PXShiMin", "PX市民"], #
     254: ["14-ZZai", "小小键盘-Z仔"], #
     604: ["14-FuGuShouBing", "复古手柄"], #
     605: ["14-5HaoDianChi", "5号电池"], #
     607: ["14-XuanZeKa", "选择卡"], #
-    608: ["14-FuGuHongBaiJi", "复古红白机"],
+    #608: ["14-FuGuHongBaiJi", "复古红白机"],
     611: ["14-MoRen-ShiZhiNiZhuan", "魔刃-时之逆转", 1200],
     736: ["14-XinChunFuDai", "新春福袋", 200],
     615: ["14-ShuangSheZhang", "双蛇杖"],
