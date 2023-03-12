@@ -17,7 +17,7 @@ CastingId2MetaInfo = {
     61: ["2-TaiKongShiftZai", "传说奇遇-太空Shift仔"],
 
     31: ["3-HouTu", "山丘龙灵-厚土"],
-    32: ["3-GanLin", "河流龙灵-甘霖"],
+    #32: ["3-GanLin", "河流龙灵-甘霖"],
     33: ["3-HuiJin", "焰火龙灵-灰烬"],
     30: ["3-FuJin", "金晶龙灵-浮金"],
     #112: ["3-QiYiLongDan", "奇异龙蛋"],
@@ -89,7 +89,7 @@ CastingId2MetaInfo = {
     258: ["10-FuZhiBaoZhu", "福至宝珠"],
     133: ["10-EMengGuoShi", "噩梦果实"],
     260: ["10-ShouLieZhe", "狩猎者"],
-    242: ["10-LiuGuangMoFang-QingJin", "流光魔方-青金"],
+    #242: ["10-LiuGuangMoFang-QingJin", "流光魔方-青金"],
     614: ["10-BaiGuCao", "白骨草"],
     
     #266: ["11-PuTongWuQi", "普通武器"],
@@ -98,9 +98,9 @@ CastingId2MetaInfo = {
     #270: ["11-ChuanSongJieZhi-JuFengXiaGu", "传送戒指-飓风峡谷"],
     #268: ["11-JingZhiWuQi", "精致武器"],
     275: ["11-ChuanShuoWuQi", "传说武器", 500],
-    259: ["11-ZhiHuiZhiXin", "智慧之心"],
-    281: ["11-YiZhiZhiXin", "意志之心"],
-    388: ["11-AnHeiLingGe", "暗黑灵鸽"],
+    #259: ["11-ZhiHuiZhiXin", "智慧之心"],
+    #281: ["11-YiZhiZhiXin", "意志之心"],
+    #388: ["11-AnHeiLingGe", "暗黑灵鸽"],
     380: ["11-MaoXianZheZhiXin", "冒险者之心"],
     187: ["11-CiOuJingSuiPian", "磁欧晶碎片"],
     269: ["11-TianChengYi", "天成仪"],
@@ -109,18 +109,18 @@ CastingId2MetaInfo = {
     184: ["12-LianJinXueTu", "炼金学徒", 1000],
     241: ["12-LiuGuangMoFang-ShanHu", "流光魔方-珊瑚"],
     453: ["12-QiYuanGai-WangChuanJuFeng", "启源改-忘川飓风", 5000],
-    203: ["12-WeiJianDing-WuQiTuZhi", "未鉴定的武器图纸"],
-    474: ["12-ShenTu-TongDan", "神兔-铜蛋"],
-    479: ["12-ShenTu-YinDan", "神兔-银蛋"],
-    526: ["12-ShenTu-JinDan", "神兔-金蛋"],
-    568: ["12-DaTiKa", "答题卡"],
+    #203: ["12-WeiJianDing-WuQiTuZhi", "未鉴定的武器图纸"],
+    #474: ["12-ShenTu-TongDan", "神兔-铜蛋"],
+    #479: ["12-ShenTu-YinDan", "神兔-银蛋"],
+    #526: ["12-ShenTu-JinDan", "神兔-金蛋"],
+    #568: ["12-DaTiKa", "答题卡"],
 
     #243: ["13-LiuGuangMoFang-HuPo", "流光魔方-琥珀"],
     593: ["13-ChaoJiXunHangZhe", "超级巡航者", 200],
     594: ["13-ChaoJiTanSuoZhe", "超级探索者", 200],
     595: ["13-ZhanJiaHouTu", "战甲厚土"],
     246: ["13-LiuGuangBaoHe-LengCui", "流光宝盒-冷翠"],
-    600: ["13-LengCuiJingHua", "冷翠精华"],
+    #600: ["13-LengCuiJingHua", "冷翠精华"],
     #664: ["13-HangHaiKa", "航海卡"],
     #662: ["13-LuYunKa", "陆运卡"],
     #663: ["13-ZhiYinKa", "指引卡"],
@@ -132,11 +132,11 @@ CastingId2MetaInfo = {
     #174: ["14-MKMaKaLong", "MK马卡龙"],
     #176: ["14-MKXuanZhuanBei", "MK旋转杯"],
     #173: ["14-MKLaoYeChe", "MK老爷车"],
-    602: ["14-PXShiMin", "PX市民"], #
-    254: ["14-ZZai", "小小键盘-Z仔"], #
-    604: ["14-FuGuShouBing", "复古手柄"], #
-    605: ["14-5HaoDianChi", "5号电池"], #
-    607: ["14-XuanZeKa", "选择卡"], #
+    #602: ["14-PXShiMin", "PX市民"], #
+    #254: ["14-ZZai", "小小键盘-Z仔"], #
+    #604: ["14-FuGuShouBing", "复古手柄"], #
+    #605: ["14-5HaoDianChi", "5号电池"], #
+    #607: ["14-XuanZeKa", "选择卡"], #
     #608: ["14-FuGuHongBaiJi", "复古红白机"],
     611: ["14-MoRen-ShiZhiNiZhuan", "魔刃-时之逆转", 1200],
     736: ["14-XinChunFuDai", "新春福袋", 200],
@@ -144,18 +144,18 @@ CastingId2MetaInfo = {
 
     754: ["15-ZhuanLunPan", "转轮盘", 1000],
     1357: ["15-XiaoPingYuLei", "小瓶鱼泪"],
-    711: ["15-SiXiZheShan", "四喜折扇"],
+    #711: ["15-SiXiZheShan", "四喜折扇"],
     792: ["15-HuaCaoTuan", "花草团"],
     793: ["15-ShengShuZhongZi", "圣树种子"],
     709: ["15-MoFaYaoShui", "魔法药水"],
     715: ["15-YongShengZhiHua", "永生之花"],
     815: ["15-YongShengShouMenRen", "永生守门人", 500],
 
-    844: ["16-XiaoJingLing-NeiCeZiGeKa", "小精灵-内测资格卡"], #
+    #844: ["16-XiaoJingLing-NeiCeZiGeKa", "小精灵-内测资格卡"], #
     854: ["16-HunDunTu", "混沌土"],
-    855: ["16-HuangJinShu-YouLing", "黄金树-有灵"], #
+    #855: ["16-HuangJinShu-YouLing", "黄金树-有灵"], #
     853: ["16-CiKongJianLaLian", "次空间拉链"],
-    861: ["16-QiYuanKa", "祈愿卡"], #
+    #861: ["16-QiYuanKa", "祈愿卡"], #
     856: ["16-FuGuYuanHuan", "缚骨圆环"],
     865: ["16-ShiJian", "时间", 300],
     616: ["16-LingSheZhu", "灵蛇珠"],
@@ -163,9 +163,9 @@ CastingId2MetaInfo = {
     113: ["16-WeiLaiYanJiuYuan", "未来研究院"],
     #931: ["16-WanNengXiaoJianPan", "万能小键盘"],
 
-    127: ["17-XingHongBaoShi", "猩红宝石"], #
+    #127: ["17-XingHongBaoShi", "猩红宝石"], #
     896: ["17-SenZhiXi", "森之息"],
-    894: ["17-HuangJinShu-ShengShu", "黄金树-圣树"], #
+    #894: ["17-HuangJinShu-ShengShu", "黄金树-圣树"], #
     402: ["17-XuePuTi", "血菩提"],
     897: ["17-FengMoLingShu", "封魔灵树", 5000],
     902: ["17-LiuSuYuZhui", "流苏玉坠", 200],
@@ -228,6 +228,7 @@ HighestValue_Products_Info = {
     80: [258, 60000.0],
     30: [88, 60000.0],
     #172: [50359, 100.0],
+    1124: [296, 60000.0],
 }
 
 # 173
