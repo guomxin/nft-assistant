@@ -51,7 +51,7 @@ CastingId2MetaInfo = {
     63: ["6-R-PDHou", "R-PD猴"],
     62: ["6-N-BaoZuHou", "N-包租猴"],
     140: ["6-YunMuFangZhou", "云木方舟", 200],
-    134: ["6-JingShiSuiPian", "晶石碎块-未鉴定"],
+    #134: ["6-JingShiSuiPian", "晶石碎块-未鉴定"],
 
     #148: ["7-HeJin", "合金"],
     132: ["7-FeiLiWuTingMuXia", "奇物秘宝-非礼勿听木匣", 500],
@@ -60,7 +60,7 @@ CastingId2MetaInfo = {
     154: ["7-JuNeng", "启源II聚能号", 900],
     126: ["7-QingTongShiXiang", "奇物秘宝-青铜石像", 250],
     #153: ["7-ChuiDiaoXuKe", "垂钓许可"],
-    156: ["7-EnterZai", "小小键盘-Enter仔"],
+    #156: ["7-EnterZai", "小小键盘-Enter仔"],
 
     74: ["8-KeLe", "国庆节限定空投-可乐", 360],
     73: ["8-YuanJie", "国庆节限定空投-缘结", 300],
