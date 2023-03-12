@@ -81,6 +81,8 @@ CastingId2MetaInfo = {
     198: ["9-DiJiuQuZhengJian", "第九区证件"],
     223: ["9-JiXieHouTu", "机械厚土"],
     #232: ["9-ZuDuiKaI", "组队卡I"],
+    1424: ["9-TianShenJuanZhou", "天神卷轴"],
+    1353: ["9-JingLingJuanZhou", "精灵卷轴"],
 
     183: ["10-XiuBuXueTu", "修补学徒", 1000],
     185: ["10-JianBaoXueTu", "鉴宝学徒", 1000],
@@ -235,7 +237,7 @@ HighestValue_Products_Info = {
 Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjc4ODc3MjY3LCJzaWduSWQiOiI4Yjc4M2EzNjBkMWE0ZDI2YTc4ZGMyZDRkZjQ0NzlkNSIsImlhdCI6MTY3ODI3MjQ2N30.HVOdkd_riImjdlTzyHCttG_OvjbXmyu26VarSvrZ93I"
 
 # 131
-Query_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxMzE1NjE2MTA5MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjc4NjE5NjA2LCJzaWduSWQiOiI3ZTc2MDljYzBjOWI0NjY5YWQ3NmZiYWY0ZWE5MTVhYiIsImlhdCI6MTY3ODAxNDgwNn0.ngeqvNLM_M8vZNh6eJSPl3Wl4jXMILeXmyglOOmoq1Q"
+Query_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxMzE1NjE2MTA5MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjc5MjI1MDkyLCJzaWduSWQiOiI5NGVhZWFjOWI2NzY0MjEzYjU4ZGE2NDhjZDIwZGY4ZSIsImlhdCI6MTY3ODYyMDI5Mn0.K7U12b0lhfF20TeXLHNu8TIV14qGC9CANqo0svOieCk"
 
 GanDart_Headers = {
     "Host": "api2.gandart.com",
