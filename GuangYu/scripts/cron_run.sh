@@ -719,6 +719,10 @@ echo "---白银宝箱---"
 python grab_transaction_price.py 1445 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 1445 ${yesterday} 50
 
+echo "---仙鹤画卷---"
+python grab_transaction_price.py 1438 ${yesterday} ${yesterday}
+python analyze_transaction_prices.py 1438 ${yesterday} 100
+
 #------ 工人 ------#
 #echo "---巧克力工人---"
 #python grab_transaction_price.py 1256 ${yesterday} ${yesterday}
@@ -756,7 +760,7 @@ for nft in "1-KaiTuoZhe" "1-WanXiangLongChao" "1-KongJianBuJi-QiNeng" "2-TaiKong
 "10-EMengGuoShi" "10-ShouLieZhe" "11-ChuanShuoWuQi" "12-LianJinXueTu" "12-QiYuanGai-WangChuanJuFeng" \
 "11-MaoXianZheZhiXin" "11-CiOuJingSuiPian" "11-TianChengYiII" "11-TianChengYi" \
 "13-ChaoJiXunHangZhe" "13-ChaoJiTanSuoZhe" "13-ZhanJiaHouTu" "13-LiuGuangBaoHe-LengCui" "13-BaiYinBaoXiang" \
-"14-MoRen-ShiZhiNiZhuan"  "14-XinChunFuDai" "14-ShuangSheZhang" "10-BaiGuCao" \
+"14-MoRen-ShiZhiNiZhuan"  "14-XinChunFuDai" "14-ShuangSheZhang" "10-BaiGuCao" "14-XianHeHuaJuan" \
 "15-ZhuanLunPan" "15-XiaoPingYuLei" "15-HuaCaoTuan" "15-ShengShuZhongZi" "15-MoFaYaoShui" "15-YongShengZhiHua" "15-YongShengShouMenRen" \
 "16-HunDunTu" "16-CiKongJianLaLian" "16-FuGuYuanHuan" \
 "16-ShiJian" "16-LingSheZhu" "13-MoGuangGuMian" "13-TabZai" "13-ShenMiShiBan" "17-SenZhiXi" \

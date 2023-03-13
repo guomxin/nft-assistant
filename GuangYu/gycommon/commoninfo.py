@@ -144,6 +144,7 @@ CastingId2MetaInfo = {
     611: ["14-MoRen-ShiZhiNiZhuan", "魔刃-时之逆转", 1200],
     736: ["14-XinChunFuDai", "新春福袋", 200],
     615: ["14-ShuangSheZhang", "双蛇杖"],
+    1438: ["14-XianHeHuaJuan", "仙鹤画卷"],
 
     754: ["15-ZhuanLunPan", "转轮盘", 1000],
     1357: ["15-XiaoPingYuLei", "小瓶鱼泪"],
