@@ -145,6 +145,7 @@ CastingId2MetaInfo = {
     736: ["14-XinChunFuDai", "新春福袋", 200],
     615: ["14-ShuangSheZhang", "双蛇杖"],
     1438: ["14-XianHeHuaJuan", "仙鹤画卷"],
+    245: ["14-LiuGuangBaoHe-MuAi", "流光宝盒-暮霭"],
 
     754: ["15-ZhuanLunPan", "转轮盘", 1000],
     1357: ["15-XiaoPingYuLei", "小瓶鱼泪"],
