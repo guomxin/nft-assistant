@@ -16,7 +16,7 @@ CastingId2MetaInfo = {
     #60: ["2-ShiftZai", "小小键盘-Shift仔"],
     61: ["2-TaiKongShiftZai", "传说奇遇-太空Shift仔"],
 
-    31: ["3-HouTu", "山丘龙灵-厚土"],
+    31: ["3-HouTu", "山丘龙灵-厚土", 400],
     #32: ["3-GanLin", "河流龙灵-甘霖"],
     33: ["3-HuiJin", "焰火龙灵-灰烬"],
     30: ["3-FuJin", "金晶龙灵-浮金"],
@@ -49,7 +49,7 @@ CastingId2MetaInfo = {
     65: ["6-SR-CaiHouZhiShen", "SR-彩猴之神"],
     64: ["6-R-HouGeLiTe", "R-猴格丽特"],
     63: ["6-R-PDHou", "R-PD猴"],
-    62: ["6-N-BaoZuHou", "N-包租猴"],
+    62: ["6-N-BaoZuHou", "N-包租猴", 400],
     140: ["6-YunMuFangZhou", "云木方舟", 200],
     #134: ["6-JingShiSuiPian", "晶石碎块-未鉴定"],
 
@@ -146,6 +146,7 @@ CastingId2MetaInfo = {
     615: ["14-ShuangSheZhang", "双蛇杖"],
     1438: ["14-XianHeHuaJuan", "仙鹤画卷"],
     245: ["14-LiuGuangBaoHe-MuAi", "流光宝盒-暮霭"],
+    1447: ["14-Lv2TianLanShiLaiMu", "Lv2天蓝史莱姆"],
 
     754: ["15-ZhuanLunPan", "转轮盘", 1000],
     1357: ["15-XiaoPingYuLei", "小瓶鱼泪"],
@@ -179,7 +180,7 @@ CastingId2MetaInfo = {
     898: ["17-JuBaoShenShu", "聚宝神树", 2500],
     889: ["17-JingHuaSuiPian", "镜花碎片", 20],
 
-    459: ["18-Kulolo-WeiJueZhe", "Kulolo-未觉者"],
+    459: ["18-Kulolo-WeiJueZhe", "Kulolo-未觉者", 400],
     458: ["18-Kulolo-JueXingZhe", "Kulolo-觉醒者"],
     457: ["18-Kulolo-SiLieZhe", "Kulolo-撕裂者"],
     456: ["18-Kulolo-TunChiZhe", "Kulolo-吞噬者", 1500],
