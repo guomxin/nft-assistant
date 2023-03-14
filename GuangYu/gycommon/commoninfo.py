@@ -6,7 +6,7 @@ CastingId2MetaInfo = {
     54: ["1-KaiTuoZhe", "启源I开拓者号", 600],
     #55: ["1-ShanLingShuLong", "山岭树龙"],
     #57: ["1-YunMuShouHu", "云木守护版"],
-    59: ["1-WanXiangLongChao", "万象龙巢", 1200],
+    59: ["1-WanXiangLongChao", "万象龙巢", 1000],
     80: ["1-LongFengShouBao", "龙凤守宝", 10000],
     96: ["1-NiePanZhiDi", "涅槃之地", 2000],
 
@@ -57,7 +57,7 @@ CastingId2MetaInfo = {
     132: ["7-FeiLiWuTingMuXia", "奇物秘宝-非礼勿听木匣", 500],
     #150: ["7-JianMu", "建木"],
     #151: ["7-LiuLi", "琉璃"],
-    154: ["7-JuNeng", "启源II聚能号", 900],
+    154: ["7-JuNeng", "启源II聚能号", 800],
     126: ["7-QingTongShiXiang", "奇物秘宝-青铜石像", 250],
     #153: ["7-ChuiDiaoXuKe", "垂钓许可"],
     #156: ["7-EnterZai", "小小键盘-Enter仔"],
@@ -147,6 +147,7 @@ CastingId2MetaInfo = {
     1438: ["14-XianHeHuaJuan", "仙鹤画卷"],
     245: ["14-LiuGuangBaoHe-MuAi", "流光宝盒-暮霭"],
     1447: ["14-Lv2TianLanShiLaiMu", "Lv2天蓝史莱姆"],
+    1321: ["14-JiangLinDaoJingTi", "降临岛晶体"],
 
     754: ["15-ZhuanLunPan", "转轮盘", 1000],
     1357: ["15-XiaoPingYuLei", "小瓶鱼泪"],
