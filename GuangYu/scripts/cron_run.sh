@@ -724,8 +724,8 @@ python grab_transaction_price.py 1438 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 1438 ${yesterday} 100
 
 echo "---流光宝盒-暮霭---"
-python grab_transaction_price.py 1438 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 1438 ${yesterday} 50
+python grab_transaction_price.py 245 ${yesterday} ${yesterday}
+python analyze_transaction_prices.py 245 ${yesterday} 50
 
 #------ 工人 ------#
 #echo "---巧克力工人---"
