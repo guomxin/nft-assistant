@@ -226,6 +226,9 @@ CastingId2MetaInfo = {
 
     1408: ["21-TianYuanJing", "天圆境"],
     399: ["21-HunZhu", "魂珠"],
+    1517: ["21-HuangJinBaoXiang", "黄金宝箱"],
+    1516: ["21-MiJingBaoXiang", "秘境宝箱"],
+    1515: ["21-ShenHuaBaoXiang", "神话宝箱"],
 }
 
 DEFAULT_MIN_PRICE = 30
