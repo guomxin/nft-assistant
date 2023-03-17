@@ -229,6 +229,8 @@ CastingId2MetaInfo = {
     1517: ["21-HuangJinBaoXiang", "黄金宝箱"],
     1516: ["21-MiJingBaoXiang", "秘境宝箱"],
     1515: ["21-ShenHuaBaoXiang", "神话宝箱"],
+    1518: ["21-WenYinBaoXiang", "纹银宝箱"],
+    1531: ["21-YuanJi", "原几"],
 }
 
 DEFAULT_MIN_PRICE = 30

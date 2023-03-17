@@ -570,6 +570,12 @@ python grab_transaction_price.py 1516 ${today} ${tag}
 echo "---神话宝箱---"
 python grab_transaction_price.py 1515 ${today} ${tag}
 
+echo "---纹银宝箱---"
+python grab_transaction_price.py 1518 ${today} ${tag}
+
+echo "---原几---"
+python grab_transaction_price.py 1531 ${today} ${tag}
+
 #------ 工人 ------#
 #echo "---巧克力工人---"
 #python grab_transaction_price.py 1256 ${today} ${tag}
@@ -611,7 +617,7 @@ for nft in "1-KaiTuoZhe" "1-WanXiangLongChao" "1-KongJianBuJi-QiNeng" "2-TaiKong
 "17-JingHuaSuiPian" "18-JianPanLingXiu-ChaoJiYingXiong" "18-XingHeNian" "19-ChangShengZhu" "19-ShenMiQuanShui" "19-JingMeiDianXinHe" \
 "18-AZai" "20-DianDengQi" "20-JingZhongHua" "20-ChuXinZheBuYi" "20-LiangJieDeng" "19-JiangLinDaoXinWu" "19-ShiPinTuZhi" \
 "19-CaiFengTuZhi" "19-DuanZaoTuZhi" "19-WuQiMuJu" "20-KongJianSuiPian" "20-TianLanShiLaiMu" "20-MoShenJuanZhou" "20-LinPian" \
-"21-TianYuanJing" "21-HunZhu" "21-HuangJinBaoXiang" "21-MiJingBaoXiang" "21-ShenHuaBaoXiang"
+"21-TianYuanJing" "21-HunZhu" "21-HuangJinBaoXiang" "21-MiJingBaoXiang" "21-ShenHuaBaoXiang" "21-WenYinBaoXiang" "21-YuanJi"
 do
     mkdir $nft;mv *$nft*.csv $nft;zip -q $nft-$tag $nft/*
 done
