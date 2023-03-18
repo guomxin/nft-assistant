@@ -145,10 +145,11 @@ CastingId2MetaInfo = {
     736: ["14-XinChunFuDai", "新春福袋", 200],
     615: ["14-ShuangSheZhang", "双蛇杖"],
     1438: ["14-XianHeHuaJuan", "仙鹤画卷"],
-    245: ["14-LiuGuangBaoHe-MuAi", "流光宝盒-暮霭"],
+    #245: ["14-LiuGuangBaoHe-MuAi", "流光宝盒-暮霭"],
     1447: ["14-Lv2TianLanShiLaiMu", "Lv2天蓝史莱姆"],
     1321: ["14-JiangLinDaoJingTi", "降临岛晶体"],
     1488: ["14-XingYunXing", "幸运星"],
+    1542: ["14-DianJi", "电几"],
 
     754: ["15-ZhuanLunPan", "转轮盘", 1000],
     1357: ["15-XiaoPingYuLei", "小瓶鱼泪"],
@@ -158,6 +159,7 @@ CastingId2MetaInfo = {
     709: ["15-MoFaYaoShui", "魔法药水"],
     715: ["15-YongShengZhiHua", "永生之花"],
     815: ["15-YongShengShouMenRen", "永生守门人", 500],
+    1563: ["15-WuSeYunNi", "五色云泥"],
 
     #844: ["16-XiaoJingLing-NeiCeZiGeKa", "小精灵-内测资格卡"], #
     854: ["16-HunDunTu", "混沌土"],
