@@ -71,6 +71,7 @@ CastingId2MetaInfo = {
     590: ["8-XunHangZheI", "巡航者I"],
     #170: ["8-XunHangZhe-KongTou", "巡航者-空投版本"],
     #159: ["8-XunHangZhe-DuiHuan", "巡航者-兑换版本"],
+    1565: ["8-MiaoMoXinHua", "妙墨心画"],
 
     205: ["9-MengHuanShuiLong", "梦幻水龙", 1200],
     #211: ["9-ShenHaiQiPao", "深海气泡"],
