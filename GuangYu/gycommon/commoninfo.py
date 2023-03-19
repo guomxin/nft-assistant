@@ -130,7 +130,8 @@ CastingId2MetaInfo = {
     867: ["13-MoGuangGuMian", "魔光骨冕", 1000],
     895: ["13-TabZai", "小小键盘-Tab仔"],
     398: ["13-ShenMiShiBan", "神秘石板"],
-    1445: ["13-BaiYinBaoXiang", "白银宝箱"],
+    #1445: ["13-BaiYinBaoXiang", "白银宝箱"],
+    1347: ["13-QZai", "小小键盘-Q仔"],
 
     #175: ["14-MKMoShuMao", "MK魔术帽"],
     #174: ["14-MKMaKaLong", "MK马卡龙"],
@@ -234,7 +235,7 @@ CastingId2MetaInfo = {
     1517: ["21-HuangJinBaoXiang", "黄金宝箱"],
     1516: ["21-MiJingBaoXiang", "秘境宝箱"],
     1515: ["21-ShenHuaBaoXiang", "神话宝箱"],
-    1518: ["21-WenYinBaoXiang", "纹银宝箱"],
+    #1518: ["21-WenYinBaoXiang", "纹银宝箱"],
     1531: ["21-YuanJi", "原几"],
     1532: ["21-ZhiJi", "质几"],
 }
