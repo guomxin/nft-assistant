@@ -173,6 +173,8 @@ CastingId2MetaInfo = {
     #713: ["16-BaBaoNuoMiFan", "八宝糯米饭"],
     113: ["16-WeiLaiYanJiuYuan", "未来研究院"],
     #931: ["16-WanNengXiaoJianPan", "万能小键盘"],
+    1579: ["16-MoYinTuLu", "墨隐图录"],
+    1311: ["16-NiePanChongSheng", "涅槃重生"],
 
     #127: ["17-XingHongBaoShi", "猩红宝石"], #
     896: ["17-SenZhiXi", "森之息"],
