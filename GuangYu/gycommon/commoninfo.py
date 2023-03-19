@@ -238,6 +238,7 @@ CastingId2MetaInfo = {
     #1518: ["21-WenYinBaoXiang", "纹银宝箱"],
     1531: ["21-YuanJi", "原几"],
     1532: ["21-ZhiJi", "质几"],
+    1581: ["21-WanJuanShuGe", "万卷书阁"],
 }
 
 DEFAULT_MIN_PRICE = 30
