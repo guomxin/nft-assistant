@@ -3,10 +3,10 @@ CastingId2MetaInfo = {
     #29: ["1-QiLongYunMu", "栖龙云木"],
     39: ["1-KongJianBuJi-QiNeng", "空间补给站-启能版"],
     #46: ["1-MengHuanXiaoLong", "梦幻小龙"],
-    54: ["1-KaiTuoZhe", "启源I开拓者号", 600],
+    54: ["1-KaiTuoZhe", "启源I开拓者号", 400],
     #55: ["1-ShanLingShuLong", "山岭树龙"],
     #57: ["1-YunMuShouHu", "云木守护版"],
-    59: ["1-WanXiangLongChao", "万象龙巢", 1000],
+    59: ["1-WanXiangLongChao", "万象龙巢", 600],
     80: ["1-LongFengShouBao", "龙凤守宝", 10000],
     96: ["1-NiePanZhiDi", "涅槃之地", 2000],
 
@@ -16,7 +16,7 @@ CastingId2MetaInfo = {
     #60: ["2-ShiftZai", "小小键盘-Shift仔"],
     61: ["2-TaiKongShiftZai", "传说奇遇-太空Shift仔"],
 
-    31: ["3-HouTu", "山丘龙灵-厚土", 200],
+    31: ["3-HouTu", "山丘龙灵-厚土"],
     #32: ["3-GanLin", "河流龙灵-甘霖"],
     33: ["3-HuiJin", "焰火龙灵-灰烬"],
     30: ["3-FuJin", "金晶龙灵-浮金"],
@@ -26,7 +26,7 @@ CastingId2MetaInfo = {
     #79: ["4-LongTuTeng", "龙图腾"],
     #87: ["4-FengTuTeng", "凤图腾"],
     #71: ["4-PingAnGuo", "国庆节限定空投-平安果"],
-    72: ["4-FuQin", "国庆节限定空投-福琴", 220],
+    72: ["4-FuQin", "国庆节限定空投-福琴", 150],
 
     #82: ["5-TanSuoZheI", "探索者I"],
     #231: ["5-TanSuoZheII", "探索者II"],
@@ -49,7 +49,7 @@ CastingId2MetaInfo = {
     65: ["6-SR-CaiHouZhiShen", "SR-彩猴之神"],
     64: ["6-R-HouGeLiTe", "R-猴格丽特"],
     63: ["6-R-PDHou", "R-PD猴"],
-    62: ["6-N-BaoZuHou", "N-包租猴", 200],
+    62: ["6-N-BaoZuHou", "N-包租猴"],
     140: ["6-YunMuFangZhou", "云木方舟", 200],
     #134: ["6-JingShiSuiPian", "晶石碎块-未鉴定"],
 
@@ -57,12 +57,12 @@ CastingId2MetaInfo = {
     132: ["7-FeiLiWuTingMuXia", "奇物秘宝-非礼勿听木匣", 500],
     #150: ["7-JianMu", "建木"],
     #151: ["7-LiuLi", "琉璃"],
-    154: ["7-JuNeng", "启源II聚能号", 800],
-    126: ["7-QingTongShiXiang", "奇物秘宝-青铜石像", 250],
+    154: ["7-JuNeng", "启源II聚能号", 500],
+    126: ["7-QingTongShiXiang", "奇物秘宝-青铜石像", 200],
     #153: ["7-ChuiDiaoXuKe", "垂钓许可"],
     #156: ["7-EnterZai", "小小键盘-Enter仔"],
 
-    74: ["8-KeLe", "国庆节限定空投-可乐", 360],
+    74: ["8-KeLe", "国庆节限定空投-可乐", 300],
     73: ["8-YuanJie", "国庆节限定空投-缘结", 300],
     155: ["8-LanHaiYouDie", "奇物秘宝-蓝海幽蝶"],
     172: ["8-YuEr", "鱼饵"],
@@ -85,8 +85,8 @@ CastingId2MetaInfo = {
     1424: ["9-TianShenJuanZhou", "天神卷轴"],
     1353: ["9-JingLingJuanZhou", "精灵卷轴"],
 
-    183: ["10-XiuBuXueTu", "修补学徒", 1000],
-    185: ["10-JianBaoXueTu", "鉴宝学徒", 1000],
+    183: ["10-XiuBuXueTu", "修补学徒", 800],
+    185: ["10-JianBaoXueTu", "鉴宝学徒", 800],
     186: ["10-XingHuiDian", "星辉殿"],
     230: ["10-HanYueSi", "寒月寺"],
     258: ["10-FuZhiBaoZhu", "福至宝珠"],
@@ -127,9 +127,9 @@ CastingId2MetaInfo = {
     #664: ["13-HangHaiKa", "航海卡"],
     #662: ["13-LuYunKa", "陆运卡"],
     #663: ["13-ZhiYinKa", "指引卡"],
-    867: ["13-MoGuangGuMian", "魔光骨冕", 1500],
+    867: ["13-MoGuangGuMian", "魔光骨冕", 1000],
     895: ["13-TabZai", "小小键盘-Tab仔"],
-    398: ["13-ShenMiShiBan", "神秘石板", 100],
+    398: ["13-ShenMiShiBan", "神秘石板"],
     1445: ["13-BaiYinBaoXiang", "白银宝箱"],
 
     #175: ["14-MKMoShuMao", "MK魔术帽"],
@@ -159,7 +159,7 @@ CastingId2MetaInfo = {
     793: ["15-ShengShuZhongZi", "圣树种子"],
     709: ["15-MoFaYaoShui", "魔法药水"],
     715: ["15-YongShengZhiHua", "永生之花"],
-    815: ["15-YongShengShouMenRen", "永生守门人", 500],
+    815: ["15-YongShengShouMenRen", "永生守门人"],
     1563: ["15-WuSeYunNi", "五色云泥"],
 
     #844: ["16-XiaoJingLing-NeiCeZiGeKa", "小精灵-内测资格卡"], #
@@ -168,7 +168,7 @@ CastingId2MetaInfo = {
     853: ["16-CiKongJianLaLian", "次空间拉链"],
     #861: ["16-QiYuanKa", "祈愿卡"], #
     856: ["16-FuGuYuanHuan", "缚骨圆环"],
-    865: ["16-ShiJian", "时间", 300],
+    865: ["16-ShiJian", "时间"],
     616: ["16-LingSheZhu", "灵蛇珠"],
     #713: ["16-BaBaoNuoMiFan", "八宝糯米饭"],
     113: ["16-WeiLaiYanJiuYuan", "未来研究院"],
@@ -181,18 +181,18 @@ CastingId2MetaInfo = {
     #894: ["17-HuangJinShu-ShengShu", "黄金树-圣树"], #
     402: ["17-XuePuTi", "血菩提"],
     897: ["17-FengMoLingShu", "封魔灵树", 5000],
-    902: ["17-LiuSuYuZhui", "流苏玉坠", 200],
-    899: ["17-HuangJinShengShu", "黄金圣树", 1000],
-    923: ["17-BaFangLaiFeng", "八方来风", 1500],
-    898: ["17-JuBaoShenShu", "聚宝神树", 2500],
-    889: ["17-JingHuaSuiPian", "镜花碎片", 20],
+    902: ["17-LiuSuYuZhui", "流苏玉坠"],
+    899: ["17-HuangJinShengShu", "黄金圣树", 800],
+    923: ["17-BaFangLaiFeng", "八方来风", 1000],
+    898: ["17-JuBaoShenShu", "聚宝神树", 2000],
+    889: ["17-JingHuaSuiPian", "镜花碎片"],
 
-    459: ["18-Kulolo-WeiJueZhe", "Kulolo-未觉者", 200],
+    459: ["18-Kulolo-WeiJueZhe", "Kulolo-未觉者"],
     458: ["18-Kulolo-JueXingZhe", "Kulolo-觉醒者"],
     457: ["18-Kulolo-SiLieZhe", "Kulolo-撕裂者"],
-    456: ["18-Kulolo-TunChiZhe", "Kulolo-吞噬者", 1500],
-    455: ["18-Kulolo-LingZhiZhe", "Kulolo-灵智者", 5000],
-    1374: ["18-JianPanLingXiu-ChaoJiYingXiong", "键盘领袖-超级英雄", 4000],
+    456: ["18-Kulolo-TunChiZhe", "Kulolo-吞噬者", 1000],
+    455: ["18-Kulolo-LingZhiZhe", "Kulolo-灵智者", 3000],
+    1374: ["18-JianPanLingXiu-ChaoJiYingXiong", "键盘领袖-超级英雄", 3000],
     135: ["18-XingHeNian", "星河念", 2000],
     901: ["18-AZai", "小小键盘-A仔"],
 
@@ -212,7 +212,7 @@ CastingId2MetaInfo = {
     #1259: ["19-MianHuaTangGongRenIII", "棉花糖工人III", 200],
     #1257: ["19-NaiYouGongRenIII", "奶油工人III", 200],
     1122: ["19-ChangShengZhu", "长生竹"],
-    1123: ["19-ShenMiQuanShui", "神秘泉水", 100],
+    1123: ["19-ShenMiQuanShui", "神秘泉水"],
     1085: ["19-JingMeiDianXinHe", "精美点心盒", 200],
     1320: ["19-JiangLinDaoXinWu", "降临岛信物", 10],
     1342: ["19-ShiPinTuZhi", "饰品图纸"],
@@ -220,7 +220,7 @@ CastingId2MetaInfo = {
     1345: ["19-DuanZaoTuZhi", "锻造图纸"],
     1343: ["19-WuQiMuJu", "武器模具"],
 
-    1207: ["20-DianDengQi", "点灯器", 200],
+    1207: ["20-DianDengQi", "点灯器"],
     888: ["20-JingZhongHua", "镜中花"],
     1127: ["20-ChuXinZheBuYi", "初心者布衣"],
     1124: ["20-LiangJieDeng", "两界灯", 6000],
@@ -254,7 +254,7 @@ HighestValue_Products_Info = {
 Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjc4ODc3MjY3LCJzaWduSWQiOiI4Yjc4M2EzNjBkMWE0ZDI2YTc4ZGMyZDRkZjQ0NzlkNSIsImlhdCI6MTY3ODI3MjQ2N30.HVOdkd_riImjdlTzyHCttG_OvjbXmyu26VarSvrZ93I"
 
 # 131
-Query_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxMzE1NjE2MTA5MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjc5MjI1MDkyLCJzaWduSWQiOiI5NGVhZWFjOWI2NzY0MjEzYjU4ZGE2NDhjZDIwZGY4ZSIsImlhdCI6MTY3ODYyMDI5Mn0.K7U12b0lhfF20TeXLHNu8TIV14qGC9CANqo0svOieCk"
+Query_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxMzE1NjE2MTA5MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjc5ODMyMTM0LCJzaWduSWQiOiI3ZTUyYTFhNzFlODk0YTBiYjJhODAzMTFiZGNmMzAwNiIsImlhdCI6MTY3OTIyNzMzNH0.fsiFHEjgN8EVbMwWuoOrS_QLNappAIpLiwKxes9Zu_E"
 
 GanDart_Headers = {
     "Host": "api2.gandart.com",
