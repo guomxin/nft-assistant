@@ -153,6 +153,7 @@ CastingId2MetaInfo = {
     1488: ["14-XingYunXing", "幸运星"],
     1542: ["14-DianJi", "电几"],
     1485: ["14-ZhuLinYinShi", "竹林隐士"],
+    1590: ["14-ZhuJiXinFa", "竹击心法"],
 
     754: ["15-ZhuanLunPan", "转轮盘", 1000],
     1357: ["15-XiaoPingYuLei", "小瓶鱼泪"],

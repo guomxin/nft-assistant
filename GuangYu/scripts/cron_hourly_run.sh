@@ -603,6 +603,9 @@ python grab_transaction_price.py 1581 ${today} ${tag}
 echo "---竹林隐士---"
 python grab_transaction_price.py 1485 ${today} ${tag}
 
+echo "---竹击心法---"
+python grab_transaction_price.py 1590 ${today} ${tag}
+
 #------ 工人 ------#
 #echo "---巧克力工人---"
 #python grab_transaction_price.py 1256 ${today} ${tag}
@@ -625,7 +628,7 @@ cd data;mkdir -p upload/$tag;rm -rf upload/$tag/*
 mv *$tag* upload/$tag;cd upload/$tag
 
 for nft in "1-KaiTuoZhe" "1-WanXiangLongChao" "1-KongJianBuJi-QiNeng" "2-TaiKongShiftZai" \
-"3-HouTu" "3-HuiJin" "3-FuJin" "1-LongFengShouBao" "14-ZhuLinYinShi" \
+"3-HouTu" "3-HuiJin" "3-FuJin" "1-LongFengShouBao" "14-ZhuLinYinShi" "14-ZhuJiXinFa" \
 "5-HunPoTiDeng" "1-NiePanZhiDi" "5-QiWuSuiPian-ShiJianMoPan" "5-QiWuMiBao-ShiJianMoPan" "5-TanSuoZheIII"  \
 "5-ShiHuangZhe" "4-FuQin" "6-SR-CaiHouZhiShen" "6-R-HouGeLiTe" "6-R-PDHou" "6-N-BaoZuHou"  \
 "5-LuoPanZhiZhen" "6-YunMuFangZhou" "7-FeiLiWuTingMuXia" "7-JuNeng" "7-QingTongShiXiang" "8-KeLe" "8-YuanJie" "8-LanHaiYouDie" \
