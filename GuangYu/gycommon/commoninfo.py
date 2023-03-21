@@ -37,7 +37,7 @@ CastingId2MetaInfo = {
     #94: ["5-AErFaYan", "阿尔法之眼"],
     95: ["5-HunPoTiDeng", "魂魄提灯", 200],
     100: ["5-QiWuSuiPian-ShiJianMoPan", "奇物碎片-时间磨盘"],
-    99: ["5-QiWuMiBao-ShiJianMoPan", "奇物秘宝-时间磨盘", 500],
+    99: ["5-QiWuMiBao-ShiJianMoPan", "奇物秘宝-时间磨盘"],
     #101: ["5-FengYiLei", "凤翊泪"],
     #104: ["5-TongXingZheng", "电子通行证"],
     #105: ["5-BuLaoQuan", "充盈不老泉"],
@@ -225,6 +225,7 @@ CastingId2MetaInfo = {
     1597: ["19-YuLinWei", "羽林尉"],
     1598: ["19-HanShanYuanDi", "寒山远笛"],
     1626: ["19-JingXinMoYan", "净心墨砚"],
+    1624: ["19-ShuangHeTingQuan", "双鹤听泉"],
 
     1207: ["20-DianDengQi", "点灯器"],
     888: ["20-JingZhongHua", "镜中花"],
