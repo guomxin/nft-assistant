@@ -153,7 +153,7 @@ CastingId2MetaInfo = {
     1488: ["14-XingYunXing", "幸运星"],
     1542: ["14-DianJi", "电几"],
     1485: ["14-ZhuLinYinShi", "竹林隐士"],
-    1590: ["14-ZhuJiXinFa", "竹击心法"],
+    #1590: ["14-ZhuJiXinFa", "竹击心法"],
 
     754: ["15-ZhuanLunPan", "转轮盘", 1000],
     1357: ["15-XiaoPingYuLei", "小瓶鱼泪"],
@@ -176,7 +176,7 @@ CastingId2MetaInfo = {
     #713: ["16-BaBaoNuoMiFan", "八宝糯米饭"],
     113: ["16-WeiLaiYanJiuYuan", "未来研究院"],
     #931: ["16-WanNengXiaoJianPan", "万能小键盘"],
-    1579: ["16-MoYinTuLu", "墨隐图录"],
+    #1579: ["16-MoYinTuLu", "墨隐图录"],
     1311: ["16-NiePanChongSheng", "涅槃重生"],
 
     #127: ["17-XingHongBaoShi", "猩红宝石"], #
@@ -236,7 +236,7 @@ CastingId2MetaInfo = {
     1408: ["21-TianYuanJing", "天圆境"],
     399: ["21-HunZhu", "魂珠"],
     #1517: ["21-HuangJinBaoXiang", "黄金宝箱"],
-    1516: ["21-MiJingBaoXiang", "秘境宝箱"],
+    #1516: ["21-MiJingBaoXiang", "秘境宝箱"],
     1515: ["21-ShenHuaBaoXiang", "神话宝箱"],
     #1518: ["21-WenYinBaoXiang", "纹银宝箱"],
     1531: ["21-YuanJi", "原几"],

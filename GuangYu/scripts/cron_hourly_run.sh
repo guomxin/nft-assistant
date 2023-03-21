@@ -564,8 +564,8 @@ python grab_transaction_price.py 1488 ${today} ${tag}
 #echo "---黄金宝箱---"
 #python grab_transaction_price.py 1517 ${today} ${tag}
 
-echo "---秘境宝箱---"
-python grab_transaction_price.py 1516 ${today} ${tag}
+#echo "---秘境宝箱---"
+#python grab_transaction_price.py 1516 ${today} ${tag}
 
 echo "---神话宝箱---"
 python grab_transaction_price.py 1515 ${today} ${tag}
@@ -588,8 +588,8 @@ python grab_transaction_price.py 1563 ${today} ${tag}
 echo "---妙墨心画---"
 python grab_transaction_price.py 1565 ${today} ${tag}
 
-echo "---墨隐图录---"
-python grab_transaction_price.py 1579 ${today} ${tag}
+#echo "---墨隐图录---"
+#python grab_transaction_price.py 1579 ${today} ${tag}
 
 echo "---涅槃重生---"
 python grab_transaction_price.py 1311 ${today} ${tag}
@@ -603,8 +603,8 @@ python grab_transaction_price.py 1581 ${today} ${tag}
 echo "---竹林隐士---"
 python grab_transaction_price.py 1485 ${today} ${tag}
 
-echo "---竹击心法---"
-python grab_transaction_price.py 1590 ${today} ${tag}
+#echo "---竹击心法---"
+#python grab_transaction_price.py 1590 ${today} ${tag}
 
 echo "---羽林尉---"
 python grab_transaction_price.py 1597 ${today} ${tag}
@@ -631,7 +631,7 @@ cd data;mkdir -p upload/$tag;rm -rf upload/$tag/*
 mv *$tag* upload/$tag;cd upload/$tag
 
 for nft in "1-KaiTuoZhe" "1-WanXiangLongChao" "1-KongJianBuJi-QiNeng" "2-TaiKongShiftZai" \
-"3-HouTu" "3-HuiJin" "3-FuJin" "1-LongFengShouBao" "14-ZhuLinYinShi" "14-ZhuJiXinFa" "19-YuLinWei" \
+"3-HouTu" "3-HuiJin" "3-FuJin" "1-LongFengShouBao" "14-ZhuLinYinShi" "19-YuLinWei" \
 "5-HunPoTiDeng" "1-NiePanZhiDi" "5-QiWuSuiPian-ShiJianMoPan" "5-QiWuMiBao-ShiJianMoPan" "5-TanSuoZheIII"  \
 "5-ShiHuangZhe" "4-FuQin" "6-SR-CaiHouZhiShen" "6-R-HouGeLiTe" "6-R-PDHou" "6-N-BaoZuHou"  \
 "5-LuoPanZhiZhen" "6-YunMuFangZhou" "7-FeiLiWuTingMuXia" "7-JuNeng" "7-QingTongShiXiang" "8-KeLe" "8-YuanJie" "8-LanHaiYouDie" \
@@ -649,8 +649,8 @@ for nft in "1-KaiTuoZhe" "1-WanXiangLongChao" "1-KongJianBuJi-QiNeng" "2-TaiKong
 "17-LiuSuYuZhui" "17-HuangJinShengShu" "17-BaFangLaiFeng" "17-JuBaoShenShu" "16-WeiLaiYanJiuYuan"  \
 "17-JingHuaSuiPian" "18-JianPanLingXiu-ChaoJiYingXiong" "18-XingHeNian" "19-ChangShengZhu" "19-ShenMiQuanShui" "19-JingMeiDianXinHe" \
 "18-AZai" "20-DianDengQi" "20-JingZhongHua" "20-ChuXinZheBuYi" "20-LiangJieDeng" "20-LinPian" \
-"21-TianYuanJing" "21-HunZhu" "21-MiJingBaoXiang" "21-ShenHuaBaoXiang" "21-YuanJi" "21-ZhiJi" \
-"14-DianJi" "15-WuSeYunNi" "8-MiaoMoXinHua" "16-MoYinTuLu" "16-NiePanChongSheng" "21-WanJuanShuGe"
+"21-TianYuanJing" "21-HunZhu" "21-ShenHuaBaoXiang" "21-YuanJi" "21-ZhiJi" \
+"14-DianJi" "15-WuSeYunNi" "8-MiaoMoXinHua" "16-NiePanChongSheng" "21-WanJuanShuGe"
 do
     mkdir $nft;mv *$nft*.csv $nft;zip -q $nft-$tag $nft/*
 done
