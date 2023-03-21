@@ -223,6 +223,7 @@ CastingId2MetaInfo = {
     #1345: ["19-DuanZaoTuZhi", "锻造图纸"],
     #1343: ["19-WuQiMuJu", "武器模具"],
     1597: ["19-YuLinWei", "羽林尉"],
+    1598: ["19-HanShanYuanDi", "寒山远笛"],
 
     1207: ["20-DianDengQi", "点灯器"],
     888: ["20-JingZhongHua", "镜中花"],
