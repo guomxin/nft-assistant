@@ -84,6 +84,7 @@ CastingId2MetaInfo = {
     #232: ["9-ZuDuiKaI", "组队卡I"],
     #1424: ["9-TianShenJuanZhou", "天神卷轴"],
     #1353: ["9-JingLingJuanZhou", "精灵卷轴"],
+    1599: ["9-ChiZhuWuFu-ChuJi", "尺竹伍符-初级"],
 
     183: ["10-XiuBuXueTu", "修补学徒", 800],
     185: ["10-JianBaoXueTu", "鉴宝学徒", 800],

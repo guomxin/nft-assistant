@@ -815,6 +815,10 @@ echo "---双鹤听泉---"
 python grab_transaction_price.py 1624 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 1624 ${yesterday} 100
 
+echo "---尺竹伍符-初级---"
+python grab_transaction_price.py 1599 ${yesterday} ${yesterday}
+python analyze_transaction_prices.py 1599 ${yesterday} 100
+
 #------ 工人 ------#
 #echo "---巧克力工人---"
 #python grab_transaction_price.py 1256 ${yesterday} ${yesterday}
@@ -846,7 +850,7 @@ for nft in "1-KaiTuoZhe" "1-WanXiangLongChao" "1-KongJianBuJi-QiNeng" "2-TaiKong
 "5-HunPoTiDeng" "1-NiePanZhiDi" "5-QiWuSuiPian-ShiJianMoPan" "5-QiWuMiBao-ShiJianMoPan" "5-TanSuoZheIII"  \
 "5-ShiHuangZhe" "4-FuQin" "6-SR-CaiHouZhiShen" "6-R-HouGeLiTe" "6-R-PDHou" "6-N-BaoZuHou"  \
 "5-LuoPanZhiZhen" "6-YunMuFangZhou" "7-FeiLiWuTingMuXia" "7-JuNeng" "7-QingTongShiXiang" "8-KeLe" "8-YuanJie" "8-LanHaiYouDie" \
-"8-YuEr" "8-JingZhiDiaoJu-KongTou" "8-JingZhiDiaoJu-DuiHuan" "8-XunHangZheI" "9-MengHuanShuiLong" \
+"8-YuEr" "8-JingZhiDiaoJu-KongTou" "8-JingZhiDiaoJu-DuiHuan" "8-XunHangZheI" "9-MengHuanShuiLong" "9-ChiZhuWuFu-ChuJi" \
 "9-YuEr-DuiHuan" "9-KuaiJieZuHe-FuZhi" "9-KuaiJieZuHe-ZhanTie" "9-DiJiuQuZhengJian" "19-JingXinMoYan" \
 "9-JiXieHouTu" "10-XiuBuXueTu" "10-JianBaoXueTu" "10-XingHuiDian" "10-HanYueSi" "10-FuZhiBaoZhu" \
 "10-EMengGuoShi" "10-ShouLieZhe" "11-ChuanShuoWuQi" "12-LianJinXueTu" "12-QiYuanGai-WangChuanJuFeng" \
