@@ -122,7 +122,7 @@ CastingId2MetaInfo = {
     593: ["13-ChaoJiXunHangZhe", "超级巡航者", 200],
     594: ["13-ChaoJiTanSuoZhe", "超级探索者", 200],
     595: ["13-ZhanJiaHouTu", "战甲厚土"],
-    246: ["13-LiuGuangBaoHe-LengCui", "流光宝盒-冷翠"],
+    #246: ["13-LiuGuangBaoHe-LengCui", "流光宝盒-冷翠"],
     #600: ["13-LengCuiJingHua", "冷翠精华"],
     #664: ["13-HangHaiKa", "航海卡"],
     #662: ["13-LuYunKa", "陆运卡"],
@@ -145,7 +145,7 @@ CastingId2MetaInfo = {
     #608: ["14-FuGuHongBaiJi", "复古红白机"],
     611: ["14-MoRen-ShiZhiNiZhuan", "魔刃-时之逆转", 1200],
     736: ["14-XinChunFuDai", "新春福袋", 200],
-    615: ["14-ShuangSheZhang", "双蛇杖"],
+    #615: ["14-ShuangSheZhang", "双蛇杖"],
     1438: ["14-XianHeHuaJuan", "仙鹤画卷"],
     #245: ["14-LiuGuangBaoHe-MuAi", "流光宝盒-暮霭"],
     #1447: ["14-Lv2TianLanShiLaiMu", "Lv2天蓝史莱姆"],
@@ -161,7 +161,7 @@ CastingId2MetaInfo = {
     792: ["15-HuaCaoTuan", "花草团"],
     793: ["15-ShengShuZhongZi", "圣树种子"],
     709: ["15-MoFaYaoShui", "魔法药水"],
-    715: ["15-YongShengZhiHua", "永生之花"],
+    #715: ["15-YongShengZhiHua", "永生之花"],
     815: ["15-YongShengShouMenRen", "永生守门人"],
     1563: ["15-WuSeYunNi", "五色云泥"],
 
@@ -182,7 +182,7 @@ CastingId2MetaInfo = {
     #127: ["17-XingHongBaoShi", "猩红宝石"], #
     896: ["17-SenZhiXi", "森之息"],
     #894: ["17-HuangJinShu-ShengShu", "黄金树-圣树"], #
-    402: ["17-XuePuTi", "血菩提"],
+    #402: ["17-XuePuTi", "血菩提"],
     897: ["17-FengMoLingShu", "封魔灵树", 5000],
     902: ["17-LiuSuYuZhui", "流苏玉坠"],
     899: ["17-HuangJinShengShu", "黄金圣树", 800],
@@ -197,7 +197,7 @@ CastingId2MetaInfo = {
     455: ["18-Kulolo-LingZhiZhe", "Kulolo-灵智者", 3000],
     1374: ["18-JianPanLingXiu-ChaoJiYingXiong", "键盘领袖-超级英雄", 3000],
     135: ["18-XingHeNian", "星河念", 2000],
-    901: ["18-AZai", "小小键盘-A仔"],
+    #901: ["18-AZai", "小小键盘-A仔"],
 
     #942: ["19-QiaoKeLiGongRen", "巧克力工人", 200],
     #943: ["19-MianBaoGongRen", "面包工人", 200],
@@ -214,7 +214,7 @@ CastingId2MetaInfo = {
     #1260: ["19-BuDingGongRenIII", "布丁工人III", 200],
     #1259: ["19-MianHuaTangGongRenIII", "棉花糖工人III", 200],
     #1257: ["19-NaiYouGongRenIII", "奶油工人III", 200],
-    1122: ["19-ChangShengZhu", "长生竹"],
+    #1122: ["19-ChangShengZhu", "长生竹"],
     1123: ["19-ShenMiQuanShui", "神秘泉水"],
     1085: ["19-JingMeiDianXinHe", "精美点心盒", 200],
     #1320: ["19-JiangLinDaoXinWu", "降临岛信物", 10],
@@ -223,7 +223,7 @@ CastingId2MetaInfo = {
     #1345: ["19-DuanZaoTuZhi", "锻造图纸"],
     #1343: ["19-WuQiMuJu", "武器模具"],
     1597: ["19-YuLinWei", "羽林尉"],
-    1598: ["19-HanShanYuanDi", "寒山远笛"],
+    #1598: ["19-HanShanYuanDi", "寒山远笛"],
     1626: ["19-JingXinMoYan", "净心墨砚"],
     1624: ["19-ShuangHeTingQuan", "双鹤听泉"],
 

@@ -399,9 +399,9 @@ echo "---战甲厚土---"
 python grab_transaction_price.py 595 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 595 ${yesterday} 100
 
-echo "---流光宝盒-冷翠---"
-python grab_transaction_price.py 246 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 246 ${yesterday} 100
+#echo "---流光宝盒-冷翠---"
+#python grab_transaction_price.py 246 ${yesterday} ${yesterday}
+#python analyze_transaction_prices.py 246 ${yesterday} 100
 
 #echo "---冷翠精华---"
 #python grab_transaction_price.py 600 ${yesterday} ${yesterday}
@@ -467,9 +467,9 @@ echo "---新春福袋---"
 python grab_transaction_price.py 736 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 736 ${yesterday} 50
 
-echo "---双蛇杖---"
-python grab_transaction_price.py 615 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 615 ${yesterday} 50
+#echo "---双蛇杖---"
+#python grab_transaction_price.py 615 ${yesterday} ${yesterday}
+#python analyze_transaction_prices.py 615 ${yesterday} 50
 
 echo "---白骨草---"
 python grab_transaction_price.py 614 ${yesterday} ${yesterday}
@@ -499,9 +499,9 @@ echo "---魔法药水---"
 python grab_transaction_price.py 709 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 709 ${yesterday} 50
 
-echo "---永生之花---"
-python grab_transaction_price.py 715 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 715 ${yesterday} 50
+#echo "---永生之花---"
+#python grab_transaction_price.py 715 ${yesterday} ${yesterday}
+#python analyze_transaction_prices.py 715 ${yesterday} 50
 
 echo "---永生守门人---"
 python grab_transaction_price.py 815 ${yesterday} ${yesterday}
@@ -563,9 +563,9 @@ python analyze_transaction_prices.py 896 ${yesterday} 100
 #python grab_transaction_price.py 894 ${yesterday} ${yesterday}
 #python analyze_transaction_prices.py 894 ${yesterday} 100
 
-echo "---血菩提---"
-python grab_transaction_price.py 402 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 402 ${yesterday} 50
+#echo "---血菩提---"
+#python grab_transaction_price.py 402 ${yesterday} ${yesterday}
+#python analyze_transaction_prices.py 402 ${yesterday} 50
 
 echo "---未觉者---"
 python grab_transaction_price.py 459 ${yesterday} ${yesterday}
@@ -631,13 +631,13 @@ echo "---星河念---"
 python grab_transaction_price.py 135 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 135 ${yesterday} 100
 
-echo "---小小键盘-A仔---"
-python grab_transaction_price.py 901 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 901 ${yesterday} 10
+#echo "---小小键盘-A仔---"
+#python grab_transaction_price.py 901 ${yesterday} ${yesterday}
+#python analyze_transaction_prices.py 901 ${yesterday} 10
 
-echo "---长生竹---"
-python grab_transaction_price.py 1122 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 1122 ${yesterday} 100
+#echo "---长生竹---"
+#python grab_transaction_price.py 1122 ${yesterday} ${yesterday}
+#python analyze_transaction_prices.py 1122 ${yesterday} 100
 
 echo "---神秘泉水---"
 python grab_transaction_price.py 1123 ${yesterday} ${yesterday}
@@ -803,9 +803,9 @@ echo "---羽林尉---"
 python grab_transaction_price.py 1597 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 1597 ${yesterday} 100
 
-echo "---寒山远笛---"
-python grab_transaction_price.py 1598 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 1598 ${yesterday} 100
+#echo "---寒山远笛---"
+#python grab_transaction_price.py 1598 ${yesterday} ${yesterday}
+#python analyze_transaction_prices.py 1598 ${yesterday} 100
 
 echo "---净心墨砚---"
 python grab_transaction_price.py 1626 ${yesterday} ${yesterday}
@@ -842,7 +842,7 @@ cd data;mkdir -p upload/$yesterday;rm -rf upload/$yesterday/*
 cp *$yesterday* upload/$yesterday;cd upload/$yesterday
 
 for nft in "1-KaiTuoZhe" "1-WanXiangLongChao" "1-KongJianBuJi-QiNeng" "2-TaiKongShiftZai" \
-"3-HouTu" "3-HuiJin" "3-FuJin" "1-LongFengShouBao" "14-ZhuLinYinShi" "19-YuLinWei" "19-HanShanYuanDi" \
+"3-HouTu" "3-HuiJin" "3-FuJin" "1-LongFengShouBao" "14-ZhuLinYinShi" "19-YuLinWei"  \
 "5-HunPoTiDeng" "1-NiePanZhiDi" "5-QiWuSuiPian-ShiJianMoPan" "5-QiWuMiBao-ShiJianMoPan" "5-TanSuoZheIII"  \
 "5-ShiHuangZhe" "4-FuQin" "6-SR-CaiHouZhiShen" "6-R-HouGeLiTe" "6-R-PDHou" "6-N-BaoZuHou"  \
 "5-LuoPanZhiZhen" "6-YunMuFangZhou" "7-FeiLiWuTingMuXia" "7-JuNeng" "7-QingTongShiXiang" "8-KeLe" "8-YuanJie" "8-LanHaiYouDie" \
@@ -851,15 +851,15 @@ for nft in "1-KaiTuoZhe" "1-WanXiangLongChao" "1-KongJianBuJi-QiNeng" "2-TaiKong
 "9-JiXieHouTu" "10-XiuBuXueTu" "10-JianBaoXueTu" "10-XingHuiDian" "10-HanYueSi" "10-FuZhiBaoZhu" \
 "10-EMengGuoShi" "10-ShouLieZhe" "11-ChuanShuoWuQi" "12-LianJinXueTu" "12-QiYuanGai-WangChuanJuFeng" \
 "11-MaoXianZheZhiXin" "11-CiOuJingSuiPian" "11-TianChengYiII" "11-TianChengYi" "19-ShuangHeTingQuan" \
-"13-ChaoJiXunHangZhe" "13-ChaoJiTanSuoZhe" "13-ZhanJiaHouTu" "13-LiuGuangBaoHe-LengCui" "13-QZai" \
-"14-MoRen-ShiZhiNiZhuan"  "14-XinChunFuDai" "14-ShuangSheZhang" "10-BaiGuCao" "14-XianHeHuaJuan"  \
-"15-ZhuanLunPan" "15-XiaoPingYuLei" "15-HuaCaoTuan" "15-ShengShuZhongZi" "15-MoFaYaoShui" "15-YongShengZhiHua" "15-YongShengShouMenRen" \
+"13-ChaoJiXunHangZhe" "13-ChaoJiTanSuoZhe" "13-ZhanJiaHouTu" "13-QZai" \
+"14-MoRen-ShiZhiNiZhuan"  "14-XinChunFuDai" "10-BaiGuCao" "14-XianHeHuaJuan"  \
+"15-ZhuanLunPan" "15-XiaoPingYuLei" "15-HuaCaoTuan" "15-ShengShuZhongZi" "15-MoFaYaoShui" "15-YongShengShouMenRen" \
 "16-HunDunTu" "16-CiKongJianLaLian" "16-FuGuYuanHuan" "14-XingYunXing" \
 "16-ShiJian" "16-LingSheZhu" "13-MoGuangGuMian" "13-TabZai" "13-ShenMiShiBan" "17-SenZhiXi" \
-"17-XuePuTi" "18-Kulolo-WeiJueZhe" "18-Kulolo-JueXingZhe" "18-Kulolo-SiLieZhe" "18-Kulolo-TunChiZhe" "18-Kulolo-LingZhiZhe" "17-FengMoLingShu" \
+"18-Kulolo-WeiJueZhe" "18-Kulolo-JueXingZhe" "18-Kulolo-SiLieZhe" "18-Kulolo-TunChiZhe" "18-Kulolo-LingZhiZhe" "17-FengMoLingShu" \
 "17-LiuSuYuZhui" "17-HuangJinShengShu" "17-BaFangLaiFeng" "17-JuBaoShenShu" "16-WeiLaiYanJiuYuan"  \
-"17-JingHuaSuiPian" "18-JianPanLingXiu-ChaoJiYingXiong" "18-XingHeNian" "19-ChangShengZhu" "19-ShenMiQuanShui" "19-JingMeiDianXinHe" \
-"18-AZai" "20-DianDengQi" "20-JingZhongHua" "20-ChuXinZheBuYi" "20-LiangJieDeng" "20-LinPian" \
+"17-JingHuaSuiPian" "18-JianPanLingXiu-ChaoJiYingXiong" "18-XingHeNian" "19-ShenMiQuanShui" "19-JingMeiDianXinHe" \
+"20-DianDengQi" "20-JingZhongHua" "20-ChuXinZheBuYi" "20-LiangJieDeng" "20-LinPian" \
 "21-TianYuanJing" "21-HunZhu" "21-ShenHuaBaoXiang" "21-YuanJi" "21-ZhiJi" \
 "14-DianJi" "15-WuSeYunNi" "8-MiaoMoXinHua" "16-NiePanChongSheng" "21-WanJuanShuGe"
 do
