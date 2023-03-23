@@ -26,7 +26,7 @@ CastingId2MetaInfo = {
     #79: ["4-LongTuTeng", "龙图腾"],
     #87: ["4-FengTuTeng", "凤图腾"],
     #71: ["4-PingAnGuo", "国庆节限定空投-平安果"],
-    72: ["4-FuQin", "国庆节限定空投-福琴", 150],
+    #72: ["4-FuQin", "国庆节限定空投-福琴", 150],
 
     #82: ["5-TanSuoZheI", "探索者I"],
     #231: ["5-TanSuoZheII", "探索者II"],
@@ -35,7 +35,7 @@ CastingId2MetaInfo = {
     #84: ["5-TanSuoZhe-Shift", "探索者-Shift"],
     111: ["5-ShiHuangZhe", "拾荒者", 2000],
     #94: ["5-AErFaYan", "阿尔法之眼"],
-    95: ["5-HunPoTiDeng", "魂魄提灯", 200],
+    #95: ["5-HunPoTiDeng", "魂魄提灯", 200],
     100: ["5-QiWuSuiPian-ShiJianMoPan", "奇物碎片-时间磨盘"],
     99: ["5-QiWuMiBao-ShiJianMoPan", "奇物秘宝-时间磨盘"],
     #101: ["5-FengYiLei", "凤翊泪"],
@@ -84,7 +84,7 @@ CastingId2MetaInfo = {
     #232: ["9-ZuDuiKaI", "组队卡I"],
     #1424: ["9-TianShenJuanZhou", "天神卷轴"],
     #1353: ["9-JingLingJuanZhou", "精灵卷轴"],
-    1599: ["9-ChiZhuWuFu-ChuJi", "尺竹伍符-初级"],
+    #1599: ["9-ChiZhuWuFu-ChuJi", "尺竹伍符-初级"],
     1625: ["9-ChiZhuWuFu-ZhongJi", "尺竹伍符-中级"],
 
     183: ["10-XiuBuXueTu", "修补学徒", 800],
