@@ -86,6 +86,7 @@ CastingId2MetaInfo = {
     #1353: ["9-JingLingJuanZhou", "精灵卷轴"],
     #1599: ["9-ChiZhuWuFu-ChuJi", "尺竹伍符-初级"],
     1625: ["9-ChiZhuWuFu-ZhongJi", "尺竹伍符-中级"],
+    1628: ["9-YuHeGuiChao", "羽鹤归巢"],
 
     183: ["10-XiuBuXueTu", "修补学徒", 800],
     185: ["10-JianBaoXueTu", "鉴宝学徒", 800],
