@@ -170,6 +170,7 @@ CastingId2MetaInfo = {
     #715: ["15-YongShengZhiHua", "永生之花"],
     815: ["15-YongShengShouMenRen", "永生守门人"],
     1563: ["15-WuSeYunNi", "五色云泥"],
+    1638: ["15-BeiHai", "北海"],
 
     #844: ["16-XiaoJingLing-NeiCeZiGeKa", "小精灵-内测资格卡"], #
     854: ["16-HunDunTu", "混沌土"],
