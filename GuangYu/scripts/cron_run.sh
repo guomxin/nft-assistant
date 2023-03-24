@@ -595,9 +595,9 @@ echo "---流苏玉坠---"
 python grab_transaction_price.py 902 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 902 ${yesterday} 100
 
-echo "---黄金圣树---"
-python grab_transaction_price.py 899 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 899 ${yesterday} 100
+#echo "---黄金圣树---"
+#python grab_transaction_price.py 899 ${yesterday} ${yesterday}
+#python analyze_transaction_prices.py 899 ${yesterday} 100
 
 echo "---八方来风---"
 python grab_transaction_price.py 923 ${yesterday} ${yesterday}
@@ -843,6 +843,18 @@ echo "---北海---"
 python grab_transaction_price.py 1638 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 1638 ${yesterday} 100
 
+echo "---尺竹伍符-高级---"
+python grab_transaction_price.py 1635 ${yesterday} ${yesterday}
+python analyze_transaction_prices.py 1635 ${yesterday} 100
+
+echo "---锦上花开---"
+python grab_transaction_price.py 885 ${yesterday} ${yesterday}
+python analyze_transaction_prices.py 885 ${yesterday} 100
+
+echo "---空间转化器---"
+python grab_transaction_price.py 1639 ${yesterday} ${yesterday}
+python analyze_transaction_prices.py 1639 ${yesterday} 100
+
 #------ 工人 ------#
 #echo "---巧克力工人---"
 #python grab_transaction_price.py 1256 ${yesterday} ${yesterday}
@@ -870,7 +882,7 @@ cd data;mkdir -p upload/$yesterday;rm -rf upload/$yesterday/*
 cp *$yesterday* upload/$yesterday;cd upload/$yesterday
 
 for nft in "1-KaiTuoZhe" "1-WanXiangLongChao" "1-KongJianBuJi-QiNeng" "2-TaiKongShiftZai" \
-"3-HouTu" "3-HuiJin" "3-FuJin" "1-LongFengShouBao" "14-ZhuLinYinShi" "19-YuLinWei"  \
+"3-HouTu" "3-HuiJin" "3-FuJin" "1-LongFengShouBao" "14-ZhuLinYinShi" "19-YuLinWei"  "16-ChiZhuWuFu-GaoJi" \
 "1-NiePanZhiDi" "5-QiWuSuiPian-ShiJianMoPan" "5-QiWuMiBao-ShiJianMoPan" "5-TanSuoZheIII"  \
 "5-ShiHuangZhe" "6-SR-CaiHouZhiShen" "6-R-HouGeLiTe" "6-R-PDHou" "6-N-BaoZuHou" "15-BeiHai" \
 "5-LuoPanZhiZhen" "6-YunMuFangZhou" "7-FeiLiWuTingMuXia" "7-JuNeng" "7-QingTongShiXiang" "8-KeLe" "8-YuanJie" "8-LanHaiYouDie" \
@@ -882,8 +894,8 @@ for nft in "1-KaiTuoZhe" "1-WanXiangLongChao" "1-KongJianBuJi-QiNeng" "2-TaiKong
 "13-ChaoJiXunHangZhe" "13-ChaoJiTanSuoZhe" "13-ZhanJiaHouTu" "13-QZai" "9-ChiZhuWuFu-ZhongJi" "13-LingBoLianDeng" \
 "14-MoRen-ShiZhiNiZhuan"  "14-XinChunFuDai" "10-BaiGuCao" "14-XianHeHuaJuan" "9-YuHeGuiChao" "14-UXingZhuanHuaQi" \
 "15-ZhuanLunPan" "15-XiaoPingYuLei" "15-HuaCaoTuan" "15-ShengShuZhongZi" "15-MoFaYaoShui" "15-YongShengShouMenRen" \
-"16-HunDunTu" "16-CiKongJianLaLian" "16-FuGuYuanHuan" "14-XingYunXing" "14-YuZhouChangWan" \
-"16-ShiJian" "16-LingSheZhu" "13-MoGuangGuMian" "13-TabZai" "13-ShenMiShiBan" "17-SenZhiXi" \
+"16-HunDunTu" "16-CiKongJianLaLian" "16-FuGuYuanHuan" "14-XingYunXing" "14-YuZhouChangWan" "17-JinShangHuaKai" \
+"16-ShiJian" "16-LingSheZhu" "13-MoGuangGuMian" "13-TabZai" "13-ShenMiShiBan" "17-SenZhiXi" "17-KongJianZhuanHuaQi" \
 "18-Kulolo-WeiJueZhe" "18-Kulolo-JueXingZhe" "18-Kulolo-SiLieZhe" "18-Kulolo-TunChiZhe" "18-Kulolo-LingZhiZhe" "17-FengMoLingShu" \
 "17-LiuSuYuZhui" "17-HuangJinShengShu" "17-BaFangLaiFeng" "17-JuBaoShenShu" "16-WeiLaiYanJiuYuan"  \
 "17-JingHuaSuiPian" "18-JianPanLingXiu-ChaoJiYingXiong" "18-XingHeNian" "19-ShenMiQuanShui" "19-JingMeiDianXinHe" \

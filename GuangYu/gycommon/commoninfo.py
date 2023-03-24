@@ -185,6 +185,7 @@ CastingId2MetaInfo = {
     #931: ["16-WanNengXiaoJianPan", "万能小键盘"],
     #1579: ["16-MoYinTuLu", "墨隐图录"],
     1311: ["16-NiePanChongSheng", "涅槃重生"],
+    1635: ["16-ChiZhuWuFu-GaoJi", "尺竹伍符-高级"], 
 
     #127: ["17-XingHongBaoShi", "猩红宝石"], #
     896: ["17-SenZhiXi", "森之息"],
@@ -192,10 +193,12 @@ CastingId2MetaInfo = {
     #402: ["17-XuePuTi", "血菩提"],
     897: ["17-FengMoLingShu", "封魔灵树", 5000],
     902: ["17-LiuSuYuZhui", "流苏玉坠"],
-    899: ["17-HuangJinShengShu", "黄金圣树", 800],
+    #899: ["17-HuangJinShengShu", "黄金圣树", 800],
     923: ["17-BaFangLaiFeng", "八方来风", 1000],
     898: ["17-JuBaoShenShu", "聚宝神树", 2000],
     889: ["17-JingHuaSuiPian", "镜花碎片"],
+    885: ["17-JinShangHuaKai", "锦上花开"],
+    1639: ["17-KongJianZhuanHuaQi", "空间转化器"], 
 
     459: ["18-Kulolo-WeiJueZhe", "Kulolo-未觉者"],
     458: ["18-Kulolo-JueXingZhe", "Kulolo-觉醒者"],
@@ -266,7 +269,7 @@ HighestValue_Products_Info = {
 }
 
 # 173
-Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjgwMDkyOTc0LCJzaWduSWQiOiI2ZTg4MGZhZTQ1ODU0ZmJiODkyZDJmZWFlYzYxMDMyNCIsImlhdCI6MTY3OTQ4ODE3NH0.XVIhgqm_oYaDpC-WLzZijyg2udauRdRhME1wp-gJj5I"
+Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjgwMjI5MDkxLCJzaWduSWQiOiJhYmVjZDM0N2I1YTE0NzkwODg5NTQ5MTJjMGJiYjVmMSIsImlhdCI6MTY3OTYyNDI5MX0.-YQo08skhF-KCH7w3sHKPNHLa4jUTewDdzM7JW5z39M"
 
 # 131
 Query_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxMzE1NjE2MTA5MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjc5ODMyMTM0LCJzaWduSWQiOiI3ZTUyYTFhNzFlODk0YTBiYjJhODAzMTFiZGNmMzAwNiIsImlhdCI6MTY3OTIyNzMzNH0.fsiFHEjgN8EVbMwWuoOrS_QLNappAIpLiwKxes9Zu_E"
