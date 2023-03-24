@@ -237,6 +237,7 @@ CastingId2MetaInfo = {
     #1598: ["19-HanShanYuanDi", "寒山远笛"],
     1626: ["19-JingXinMoYan", "净心墨砚"],
     1624: ["19-ShuangHeTingQuan", "双鹤听泉"],
+    1637: ["19-YuanMuChiDan", "缘木齿丹"],
 
     1207: ["20-DianDengQi", "点灯器"],
     888: ["20-JingZhongHua", "镜中花"],
