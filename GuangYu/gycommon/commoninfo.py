@@ -208,6 +208,7 @@ CastingId2MetaInfo = {
     1374: ["18-JianPanLingXiu-ChaoJiYingXiong", "键盘领袖-超级英雄", 3000],
     135: ["18-XingHeNian", "星河念", 2000],
     #901: ["18-AZai", "小小键盘-A仔"],
+    1641: ["18-YanHuoXiaoEMo", "焱火小恶魔"],
 
     #942: ["19-QiaoKeLiGongRen", "巧克力工人", 200],
     #943: ["19-MianBaoGongRen", "面包工人", 200],
