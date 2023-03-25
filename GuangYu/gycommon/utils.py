@@ -42,16 +42,27 @@ def decorate_api_data(data):
     data["s5"] = get_md5_hash(s3)
     return data
 
-def post_requests_json(url, headers, data, timeout, decorate=False):
-    for _ in range(100):
-        try:
-            if decorate:
-                data = decorate_api_data(data)
-            res = requests.post(url, headers=headers, data=data, timeout=timeout).json()
-            return res
-        except Exception as e:
-            time.sleep(1)
-            print(e)
+def post_requests_json(url, headers, data, timeout, decorate=False, wait = False):
+    if wait:
+        while True:
+            try:
+                if decorate:
+                    data = decorate_api_data(data)
+                res = requests.post(url, headers=headers, data=data, timeout=timeout).json()
+                return res
+            except Exception as e:
+                time.sleep(1)
+                print(e)
+    else:
+        for _ in range(100):
+            try:
+                if decorate:
+                    data = decorate_api_data(data)
+                res = requests.post(url, headers=headers, data=data, timeout=timeout).json()
+                return res
+            except Exception as e:
+                time.sleep(1)
+                print(e)
 
 StockValue_WebHook_URL = "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=692ffa3b-8c4d-4b98-87fe-15561e7e4edb"
 TradingValue_WebHook_URL = "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=44b129f9-747b-4797-8ccb-250c1d8b0dbe"
