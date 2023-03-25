@@ -12,7 +12,7 @@ from gycommon import commoninfo
 from gycommon import utils
 
 GET_ON_SALE_LIST_URL = "https://api2.gandart.com/market/api/v2/resaleManage/resale/onSale"
-PAGE_SIZE = 500
+PAGE_SIZE = 15
 TIME_OUT = 3
 GET_PRODUCT_DETAIL_URL = "https://api2.gandart.com/market/api/v2/resaleManage/resale/collectionDetails"
 GET_TRANS_INFO_URL = "https://api2.gandart.com/market/api/v2/resaleManage/resale/transactionInfo"
@@ -44,7 +44,7 @@ def get_saled_products(casting_id):
         "transactionStatus": TRAN_STATUS_SALED,
     }
     data = utils.decorate_api_data(data)
-    res = utils.post_requests_json(GET_ON_SALE_LIST_URL, headers=commoninfo.GanDart_Headers, data=data, timeout=TIME_OUT, decorate=True)
+    res = utils.post_requests_json(GET_ON_SALE_LIST_URL, headers=commoninfo.GanDart_Headers, data=data, timeout=TIME_OUT, decorate=True, wait=True)
     if not res:
         return (1, None)
     if res["code"] != 0:
@@ -64,7 +64,7 @@ def get_saled_products(casting_id):
                 "transactionStatus": TRAN_STATUS_SALED,
             }
             data = utils.decorate_api_data(data)
-            res = utils.post_requests_json(GET_ON_SALE_LIST_URL, headers=commoninfo.GanDart_Headers, data=data, timeout=TIME_OUT, decorate=True)
+            res = utils.post_requests_json(GET_ON_SALE_LIST_URL, headers=commoninfo.GanDart_Headers, data=data, timeout=TIME_OUT, decorate=True, wait=True)
             if res["code"] != 0:
                 return (res["code"], None)
             else:
