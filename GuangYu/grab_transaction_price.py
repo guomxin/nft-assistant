@@ -13,7 +13,7 @@ from gycommon import utils
 
 GET_ON_SALE_LIST_URL = "https://api2.gandart.com/market/api/v2/resaleManage/resale/onSale"
 PAGE_SIZE = 15
-TIME_OUT = 3
+TIME_OUT = 10
 GET_PRODUCT_DETAIL_URL = "https://api2.gandart.com/market/api/v2/resaleManage/resale/collectionDetails"
 GET_TRANS_INFO_URL = "https://api2.gandart.com/market/api/v2/resaleManage/resale/transactionInfo"
 
@@ -72,7 +72,7 @@ def get_saled_products(casting_id):
                     saled_prods.append(
                         [pinfo["id"], pinfo["viewSort"], float(pinfo["resalePrice"])])
             # 防止被封禁
-            time.sleep(1) 
+            time.sleep(0.5) 
     return (0, saled_prods)
 
 def clean_name(name):
