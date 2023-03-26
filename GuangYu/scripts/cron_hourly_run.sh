@@ -99,8 +99,8 @@ python grab_transaction_price.py 592 ${today} ${tag}
 echo "---涅槃之地---"
 python grab_transaction_price.py 96 ${today} ${tag}
 
-echo "---奇物碎片-时间磨盘---"
-python grab_transaction_price.py 100 ${today} ${tag}
+#echo "---奇物碎片-时间磨盘---"
+#python grab_transaction_price.py 100 ${today} ${tag}
 
 echo "---奇物秘宝-时间磨盘---"
 python grab_transaction_price.py 99 ${today} ${tag}
@@ -680,7 +680,7 @@ mv *$tag* upload/$tag;cd upload/$tag
 
 for nft in "1-KaiTuoZhe" "1-WanXiangLongChao" "1-KongJianBuJi-QiNeng" "2-TaiKongShiftZai" \
 "3-HouTu" "3-HuiJin" "3-FuJin" "1-LongFengShouBao" "14-ZhuLinYinShi" "19-YuLinWei"  "16-ChiZhuWuFu-GaoJi" \
-"1-NiePanZhiDi" "5-QiWuSuiPian-ShiJianMoPan" "5-QiWuMiBao-ShiJianMoPan" "5-TanSuoZheIII"  \
+"1-NiePanZhiDi" "5-QiWuMiBao-ShiJianMoPan" "5-TanSuoZheIII"  \
 "5-ShiHuangZhe" "6-SR-CaiHouZhiShen" "6-R-HouGeLiTe" "6-R-PDHou" "6-N-BaoZuHou" "15-BeiHai" \
 "5-LuoPanZhiZhen" "6-YunMuFangZhou" "7-FeiLiWuTingMuXia" "7-JuNeng" "7-QingTongShiXiang" "8-KeLe" "8-YuanJie" "8-LanHaiYouDie" \
 "8-YuEr" "8-JingZhiDiaoJu-KongTou" "8-JingZhiDiaoJu-DuiHuan" "8-XunHangZheI" "9-MengHuanShuiLong" \
