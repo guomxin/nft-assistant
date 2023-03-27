@@ -131,7 +131,9 @@ if __name__ == "__main__":
                 continue
 
         casting2value[casting_name] = [circu_cnt, min_price, circu_cnt * min_price]
-        my_holding_cnt = MyHoldingShare[casting_id][2]
+        my_holding_cnt = 0
+        if casting_id in MyHoldingShare:
+            my_holding_cnt = MyHoldingShare[casting_id][2]
         if my_holding_cnt > 0:
             casting2holding[casting_name] = [my_holding_cnt, min_price, min_price * my_holding_cnt]
         total_value += circu_cnt * min_price
@@ -174,7 +176,7 @@ if __name__ == "__main__":
         content += "{}\n>持仓量:{}\n>当前最低价:{}\n>当前价值:{:.2f}万\n\n".format(
             casting_name, holding_cnt, 
             min_price, hvalue / 10000)
-    #utils.send_workwx_msg_agg(utils.HoldingShare_MSG, "markdown", content)
+    utils.send_workwx_msg_agg(utils.HoldingShare_MSG, "markdown", content)
 
     result_file_name = "data/_calc_market_value_{}.csv".format(
         tag
