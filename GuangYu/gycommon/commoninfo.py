@@ -85,7 +85,7 @@ CastingId2MetaInfo = {
     #1424: ["9-TianShenJuanZhou", "天神卷轴"],
     #1353: ["9-JingLingJuanZhou", "精灵卷轴"],
     #1599: ["9-ChiZhuWuFu-ChuJi", "尺竹伍符-初级"],
-    1625: ["9-ChiZhuWuFu-ZhongJi", "尺竹伍符-中级"],
+    #1625: ["9-ChiZhuWuFu-ZhongJi", "尺竹伍符-中级"],
     1628: ["9-YuHeGuiChao", "羽鹤归巢"],
 
     183: ["10-XiuBuXueTu", "修补学徒", 800],
@@ -251,6 +251,7 @@ CastingId2MetaInfo = {
     613: ["20-LinPian", "鳞片"],
     1662: ["20-AnYingMingGuan", "暗影冥冠"],
     1656: ["20-ZhongShuQiuHao", "中书秋毫"],
+    1672: ["20-GuangJi", "光几"],
 
     1408: ["21-TianYuanJing", "天圆境"],
     399: ["21-HunZhu", "魂珠"],
@@ -261,6 +262,7 @@ CastingId2MetaInfo = {
     1531: ["21-YuanJi", "原几"],
     1532: ["21-ZhiJi", "质几"],
     1581: ["21-WanJuanShuGe", "万卷书阁"],
+    1467: ["21-DiFangJing", "天宫系列-地方镜"],
 }
 
 DEFAULT_MIN_PRICE = 30
