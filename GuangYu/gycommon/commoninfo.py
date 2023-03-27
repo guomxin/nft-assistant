@@ -1,7 +1,7 @@
 CastingId2MetaInfo = {
     #28: ["1-ChuanShuMianBan","物资传输面板"],
     #29: ["1-QiLongYunMu", "栖龙云木"],
-    39: ["1-KongJianBuJi-QiNeng", "空间补给站-启能版"],
+    #39: ["1-KongJianBuJi-QiNeng", "空间补给站-启能版"],
     #46: ["1-MengHuanXiaoLong", "梦幻小龙"],
     54: ["1-KaiTuoZhe", "启源I开拓者号", 400],
     #55: ["1-ShanLingShuLong", "山岭树龙"],
@@ -62,8 +62,8 @@ CastingId2MetaInfo = {
     #153: ["7-ChuiDiaoXuKe", "垂钓许可"],
     #156: ["7-EnterZai", "小小键盘-Enter仔"],
 
-    74: ["8-KeLe", "国庆节限定空投-可乐", 300],
-    73: ["8-YuanJie", "国庆节限定空投-缘结", 300],
+    #74: ["8-KeLe", "国庆节限定空投-可乐", 300],
+    #73: ["8-YuanJie", "国庆节限定空投-缘结", 300],
     155: ["8-LanHaiYouDie", "奇物秘宝-蓝海幽蝶"],
     172: ["8-YuEr", "鱼饵"],
     169: ["8-JingZhiDiaoJu-KongTou", "精致的钓具-空投版本"],
@@ -96,7 +96,7 @@ CastingId2MetaInfo = {
     133: ["10-EMengGuoShi", "噩梦果实"],
     260: ["10-ShouLieZhe", "狩猎者"],
     #242: ["10-LiuGuangMoFang-QingJin", "流光魔方-青金"],
-    614: ["10-BaiGuCao", "白骨草"],
+    #614: ["10-BaiGuCao", "白骨草"],
     
     #266: ["11-PuTongWuQi", "普通武器"],
     #272: ["11-ChuanSongJieZhi-LongXueRongDong", "传送戒指-龙血熔洞"],
@@ -158,7 +158,7 @@ CastingId2MetaInfo = {
     1542: ["14-DianJi", "电几"],
     1485: ["14-ZhuLinYinShi", "竹林隐士"],
     #1590: ["14-ZhuJiXinFa", "竹击心法"],
-    1634: ["14-UXingZhuanHuaQi", "U型转化器"],
+    #1634: ["14-UXingZhuanHuaQi", "U型转化器"],
     1623: ["14-YuZhouChangWan", "渔舟唱晚"],
 
     754: ["15-ZhuanLunPan", "转轮盘", 1000],
@@ -197,7 +197,7 @@ CastingId2MetaInfo = {
     923: ["17-BaFangLaiFeng", "八方来风", 1000],
     898: ["17-JuBaoShenShu", "聚宝神树", 2000],
     889: ["17-JingHuaSuiPian", "镜花碎片"],
-    885: ["17-JinShangHuaKai", "锦上花开"],
+    #885: ["17-JinShangHuaKai", "锦上花开"],
     1639: ["17-KongJianZhuanHuaQi", "空间转化器"], 
 
     459: ["18-Kulolo-WeiJueZhe", "Kulolo-未觉者"],
