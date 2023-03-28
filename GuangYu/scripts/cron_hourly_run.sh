@@ -672,6 +672,9 @@ python grab_transaction_price.py 1672 ${today} ${tag}
 echo "---地方镜---"
 python grab_transaction_price.py 1467 ${today} ${tag}
 
+echo "---超能修补匠---"
+python grab_transaction_price.py 1659 ${today} ${tag}
+
 #------ 工人 ------#
 #echo "---巧克力工人---"
 #python grab_transaction_price.py 1256 ${today} ${tag}
@@ -693,7 +696,7 @@ python grab_transaction_price.py 1467 ${today} ${tag}
 cd data;mkdir -p upload/$tag;rm -rf upload/$tag/*
 mv *$tag* upload/$tag;cd upload/$tag
 
-for nft in "1-KaiTuoZhe" "1-WanXiangLongChao" "2-TaiKongShiftZai" \
+for nft in "1-KaiTuoZhe" "1-WanXiangLongChao" "2-TaiKongShiftZai" "1-ChaoNengXiuBuJiang" \
 "3-HouTu" "3-HuiJin" "3-FuJin" "1-LongFengShouBao" "14-ZhuLinYinShi" "19-YuLinWei"  "16-ChiZhuWuFu-GaoJi" \
 "1-NiePanZhiDi" "5-QiWuMiBao-ShiJianMoPan" "5-TanSuoZheIII" "19-GuoSeTianXiang" "20-AnYingMingGuan" "20-ZhongShuQiuHao" \
 "5-ShiHuangZhe" "6-SR-CaiHouZhiShen" "6-R-HouGeLiTe" "6-R-PDHou" "6-N-BaoZuHou" "15-BeiHai" \

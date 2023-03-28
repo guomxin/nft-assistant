@@ -9,6 +9,7 @@ CastingId2MetaInfo = {
     59: ["1-WanXiangLongChao", "万象龙巢", 600],
     80: ["1-LongFengShouBao", "龙凤守宝", 10000],
     96: ["1-NiePanZhiDi", "涅槃之地", 2000],
+    1659: ["1-ChaoNengXiuBuJiang", "超能修补匠"],
 
     #56: ["2-CtrlZai", "小小键盘-Ctrl仔"],
     #67: ["2-CZai", "小小键盘-C仔"],
