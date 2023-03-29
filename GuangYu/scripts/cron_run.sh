@@ -764,8 +764,8 @@ python grab_transaction_price.py 1676 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 1676 ${yesterday} 50
 
 echo "---电几---"
-python grab_transaction_price.py 1542 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 1542 ${yesterday} 50
+python grab_transaction_price.py 1541 ${yesterday} ${yesterday}
+python analyze_transaction_prices.py 1541 ${yesterday} 50
 
 echo "---五色云泥---"
 python grab_transaction_price.py 1563 ${yesterday} ${yesterday}
@@ -899,6 +899,10 @@ echo "---希格玛护目镜---"
 python grab_transaction_price.py 1681 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 1681 ${yesterday} 100
 
+echo "---历练者---"
+python grab_transaction_price.py 1698 ${yesterday} ${yesterday}
+python analyze_transaction_prices.py 1698 ${yesterday} 10
+
 #------ 工人 ------#
 #echo "---巧克力工人---"
 #python grab_transaction_price.py 1256 ${yesterday} ${yesterday}
@@ -931,7 +935,7 @@ for nft in "1-KaiTuoZhe" "1-WanXiangLongChao" "2-TaiKongShiftZai" "1-ChaoNengXiu
 "5-ShiHuangZhe" "6-SR-CaiHouZhiShen" "6-R-HouGeLiTe" "6-R-PDHou" "6-N-BaoZuHou" "15-BeiHai" \
 "5-LuoPanZhiZhen" "6-YunMuFangZhou" "7-FeiLiWuTingMuXia" "7-JuNeng" "7-QingTongShiXiang" "8-LanHaiYouDie" \
 "8-YuEr" "8-JingZhiDiaoJu-KongTou" "8-JingZhiDiaoJu-DuiHuan" "8-XunHangZheI" "9-MengHuanShuiLong" \
-"9-YuEr-DuiHuan" "9-KuaiJieZuHe-FuZhi" "9-KuaiJieZuHe-ZhanTie" "9-DiJiuQuZhengJian" \
+"9-YuEr-DuiHuan" "9-KuaiJieZuHe-FuZhi" "9-KuaiJieZuHe-ZhanTie" "9-DiJiuQuZhengJian" "8-LiLianZhe" \
 "9-JiXieHouTu" "10-XiuBuXueTu" "10-JianBaoXueTu" "10-XingHuiDian" "10-HanYueSi" "10-FuZhiBaoZhu" \
 "10-EMengGuoShi" "10-ShouLieZhe" "11-ChuanShuoWuQi" "12-LianJinXueTu" "12-QiYuanGai-WangChuanJuFeng" \
 "11-MaoXianZheZhiXin" "11-CiOuJingSuiPian" "11-TianChengYiII" "11-TianChengYi" "19-ShuangHeTingQuan" \
