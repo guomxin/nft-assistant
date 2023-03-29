@@ -157,7 +157,7 @@ CastingId2MetaInfo = {
     #1447: ["14-Lv2TianLanShiLaiMu", "Lv2天蓝史莱姆"],
     #1321: ["14-JiangLinDaoJingTi", "降临岛晶体"],
     1488: ["14-XingYunXing", "幸运星"],
-    1542: ["14-DianJi", "电几"],
+    1541: ["14-DianJi", "电几"],
     1485: ["14-ZhuLinYinShi", "竹林隐士"],
     #1590: ["14-ZhuJiXinFa", "竹击心法"],
     #1634: ["14-UXingZhuanHuaQi", "U型转化器"],
