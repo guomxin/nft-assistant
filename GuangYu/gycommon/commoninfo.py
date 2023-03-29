@@ -236,7 +236,7 @@ CastingId2MetaInfo = {
     #1343: ["19-WuQiMuJu", "武器模具"],
     1597: ["19-YuLinWei", "羽林尉"],
     #1598: ["19-HanShanYuanDi", "寒山远笛"],
-    1626: ["19-JingXinMoYan", "净心墨砚"],
+    #1626: ["19-JingXinMoYan", "净心墨砚"],
     1624: ["19-ShuangHeTingQuan", "双鹤听泉"],
     1637: ["19-YuanMuChiDan", "缘木齿丹"],
     1658: ["19-DaLiTingWei", "大理廷尉"],
@@ -251,7 +251,7 @@ CastingId2MetaInfo = {
     #1351: ["20-MoShenJuanZhou", "魔神卷轴"],
     613: ["20-LinPian", "鳞片"],
     1662: ["20-AnYingMingGuan", "暗影冥冠"],
-    1656: ["20-ZhongShuQiuHao", "中书秋毫"],
+    #1656: ["20-ZhongShuQiuHao", "中书秋毫"],
     1672: ["20-GuangJi", "光几"],
 
     1408: ["21-TianYuanJing", "天圆境"],

@@ -807,9 +807,9 @@ python analyze_transaction_prices.py 1597 ${yesterday} 100
 #python grab_transaction_price.py 1598 ${yesterday} ${yesterday}
 #python analyze_transaction_prices.py 1598 ${yesterday} 100
 
-echo "---净心墨砚---"
-python grab_transaction_price.py 1626 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 1626 ${yesterday} 100
+#echo "---净心墨砚---"
+#python grab_transaction_price.py 1626 ${yesterday} ${yesterday}
+#python analyze_transaction_prices.py 1626 ${yesterday} 100
 
 echo "---双鹤听泉---"
 python grab_transaction_price.py 1624 ${yesterday} ${yesterday}
@@ -875,9 +875,9 @@ echo "---暗影冥冠---"
 python grab_transaction_price.py 1662 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 1662 ${yesterday} 100
 
-echo "---中书秋毫---"
-python grab_transaction_price.py 1656 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 1656 ${yesterday} 100
+#echo "---中书秋毫---"
+#python grab_transaction_price.py 1656 ${yesterday} ${yesterday}
+#python analyze_transaction_prices.py 1656 ${yesterday} 100
 
 echo "---光几---"
 python grab_transaction_price.py 1672 ${yesterday} ${yesterday}
@@ -923,11 +923,11 @@ cp *$yesterday* upload/$yesterday;cd upload/$yesterday
 
 for nft in "1-KaiTuoZhe" "1-WanXiangLongChao" "2-TaiKongShiftZai" "1-ChaoNengXiuBuJiang" \
 "3-HouTu" "3-HuiJin" "3-FuJin" "1-LongFengShouBao" "14-ZhuLinYinShi" "19-YuLinWei"  "16-ChiZhuWuFu-GaoJi" \
-"1-NiePanZhiDi" "5-QiWuMiBao-ShiJianMoPan" "5-TanSuoZheIII" "19-GuoSeTianXiang" "20-AnYingMingGuan" "20-ZhongShuQiuHao" \
+"1-NiePanZhiDi" "5-QiWuMiBao-ShiJianMoPan" "5-TanSuoZheIII" "19-GuoSeTianXiang" "20-AnYingMingGuan" \
 "5-ShiHuangZhe" "6-SR-CaiHouZhiShen" "6-R-HouGeLiTe" "6-R-PDHou" "6-N-BaoZuHou" "15-BeiHai" \
 "5-LuoPanZhiZhen" "6-YunMuFangZhou" "7-FeiLiWuTingMuXia" "7-JuNeng" "7-QingTongShiXiang" "8-LanHaiYouDie" \
 "8-YuEr" "8-JingZhiDiaoJu-KongTou" "8-JingZhiDiaoJu-DuiHuan" "8-XunHangZheI" "9-MengHuanShuiLong" \
-"9-YuEr-DuiHuan" "9-KuaiJieZuHe-FuZhi" "9-KuaiJieZuHe-ZhanTie" "9-DiJiuQuZhengJian" "19-JingXinMoYan" \
+"9-YuEr-DuiHuan" "9-KuaiJieZuHe-FuZhi" "9-KuaiJieZuHe-ZhanTie" "9-DiJiuQuZhengJian" \
 "9-JiXieHouTu" "10-XiuBuXueTu" "10-JianBaoXueTu" "10-XingHuiDian" "10-HanYueSi" "10-FuZhiBaoZhu" \
 "10-EMengGuoShi" "10-ShouLieZhe" "11-ChuanShuoWuQi" "12-LianJinXueTu" "12-QiYuanGai-WangChuanJuFeng" \
 "11-MaoXianZheZhiXin" "11-CiOuJingSuiPian" "11-TianChengYiII" "11-TianChengYi" "19-ShuangHeTingQuan" \
