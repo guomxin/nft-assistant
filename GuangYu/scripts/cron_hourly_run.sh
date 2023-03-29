@@ -573,11 +573,11 @@ python grab_transaction_price.py 1515 ${today} ${tag}
 #echo "---纹银宝箱---"
 #python grab_transaction_price.py 1518 ${today} ${tag}
 
-echo "---原几---"
-python grab_transaction_price.py 1531 ${today} ${tag}
+echo "---原几II---"
+python grab_transaction_price.py 1675 ${today} ${tag}
 
-echo "---质几---"
-python grab_transaction_price.py 1532 ${today} ${tag}
+echo "---质几II---"
+python grab_transaction_price.py 1676 ${today} ${tag}
 
 echo "---电几---"
 python grab_transaction_price.py 1542 ${today} ${tag}
@@ -678,6 +678,9 @@ python grab_transaction_price.py 1659 ${today} ${tag}
 echo "---汀兰水榭---"
 python grab_transaction_price.py 1674 ${today} ${tag}
 
+echo "---希格玛护目镜---"
+python grab_transaction_price.py 1681 ${today} ${tag}
+
 #------ 工人 ------#
 #echo "---巧克力工人---"
 #python grab_transaction_price.py 1256 ${today} ${tag}
@@ -699,7 +702,7 @@ python grab_transaction_price.py 1674 ${today} ${tag}
 cd data;mkdir -p upload/$tag;rm -rf upload/$tag/*
 mv *$tag* upload/$tag;cd upload/$tag
 
-for nft in "1-KaiTuoZhe" "1-WanXiangLongChao" "2-TaiKongShiftZai" "1-ChaoNengXiuBuJiang" \
+for nft in "1-KaiTuoZhe" "1-WanXiangLongChao" "2-TaiKongShiftZai" "1-ChaoNengXiuBuJiang" "2-XiGeMaHuMuJing" \
 "3-HouTu" "3-HuiJin" "3-FuJin" "1-LongFengShouBao" "14-ZhuLinYinShi" "19-YuLinWei"  "16-ChiZhuWuFu-GaoJi" \
 "1-NiePanZhiDi" "5-QiWuMiBao-ShiJianMoPan" "5-TanSuoZheIII" "19-GuoSeTianXiang" "20-AnYingMingGuan" \
 "5-ShiHuangZhe" "6-SR-CaiHouZhiShen" "6-R-HouGeLiTe" "6-R-PDHou" "6-N-BaoZuHou" "15-BeiHai" \
@@ -718,8 +721,8 @@ for nft in "1-KaiTuoZhe" "1-WanXiangLongChao" "2-TaiKongShiftZai" "1-ChaoNengXiu
 "17-LiuSuYuZhui" "17-HuangJinShengShu" "17-BaFangLaiFeng" "17-JuBaoShenShu" "16-WeiLaiYanJiuYuan" "18-YanHuoXiaoEMo" \
 "17-JingHuaSuiPian" "18-JianPanLingXiu-ChaoJiYingXiong" "18-XingHeNian" "19-ShenMiQuanShui" "19-JingMeiDianXinHe" \
 "20-DianDengQi" "20-JingZhongHua" "20-ChuXinZheBuYi" "20-LiangJieDeng" "20-LinPian" "19-YuanMuChiDan" "19-DaLiTingWei" \
-"21-TianYuanJing" "21-HunZhu" "21-ShenHuaBaoXiang" "21-YuanJi" "21-ZhiJi" "20-GuangJi" "21-DiFangJing" \
-"14-DianJi" "15-WuSeYunNi" "8-MiaoMoXinHua" "16-NiePanChongSheng" "21-WanJuanShuGe"
+"21-TianYuanJing" "21-HunZhu" "21-ShenHuaBaoXiang" "21-YuanJiII" "21-ZhiJiII" "20-GuangJi" "21-DiFangJing" \
+"14-DianJi" "15-WuSeYunNi" "8-MiaoMoXinHua" "16-NiePanChongSheng" "21-WanJuanShuGe" 
 do
     mkdir $nft;mv *$nft*.csv $nft;zip -q $nft-$tag $nft/*
 done
