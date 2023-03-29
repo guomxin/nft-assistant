@@ -264,6 +264,7 @@ CastingId2MetaInfo = {
     1532: ["21-ZhiJi", "质几"],
     1581: ["21-WanJuanShuGe", "万卷书阁"],
     1467: ["21-DiFangJing", "天宫系列-地方镜"],
+    1674: ["21-TingLanShuiXie", "汀兰水榭"],
 }
 
 DEFAULT_MIN_PRICE = 30
