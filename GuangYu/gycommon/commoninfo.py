@@ -67,7 +67,7 @@ CastingId2MetaInfo = {
     #74: ["8-KeLe", "国庆节限定空投-可乐", 300],
     #73: ["8-YuanJie", "国庆节限定空投-缘结", 300],
     155: ["8-LanHaiYouDie", "奇物秘宝-蓝海幽蝶"],
-    172: ["8-YuEr", "鱼饵"],
+    #172: ["8-YuEr", "鱼饵"],
     #169: ["8-JingZhiDiaoJu-KongTou", "精致的钓具-空投版本"],
     #164: ["8-JingZhiDiaoJu-DuiHuan", "精致的钓具-兑换版本"],
     590: ["8-XunHangZheI", "巡航者I"],
