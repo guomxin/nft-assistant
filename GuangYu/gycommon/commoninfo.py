@@ -263,7 +263,7 @@ CastingId2MetaInfo = {
     399: ["21-HunZhu", "魂珠"],
     #1517: ["21-HuangJinBaoXiang", "黄金宝箱"],
     #1516: ["21-MiJingBaoXiang", "秘境宝箱"],
-    1515: ["21-ShenHuaBaoXiang", "神话宝箱"],
+    #1515: ["21-ShenHuaBaoXiang", "神话宝箱"],
     #1518: ["21-WenYinBaoXiang", "纹银宝箱"],
     #1531: ["21-YuanJi", "原几"],
     #1532: ["21-ZhiJi", "质几"],
@@ -272,6 +272,7 @@ CastingId2MetaInfo = {
     1581: ["21-WanJuanShuGe", "万卷书阁"],
     1467: ["21-DiFangJing", "天宫系列-地方镜"],
     1674: ["21-TingLanShuiXie", "汀兰水榭"],
+    887: ["21-HuLu", "葫芦"],
 }
 
 DEFAULT_MIN_PRICE = 30
@@ -286,7 +287,7 @@ HighestValue_Products_Info = {
 }
 
 # 173
-Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxMzE1NjE2MTA5MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjgwNDc3MDU5LCJzaWduSWQiOiI0YzRiZTZlNzUxMjU0YjRmOTAwYzExZDQ0N2I2MThhYSIsImlhdCI6MTY3OTg3MjI1OX0.apNvYUgj55zogtAWoRacGIOqlIZENcykdksHDJ3YTko"
+Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjgwNzcyNzgzLCJzaWduSWQiOiI4NmQ1OTBhYjYwMTY0ZTdkYTczNDIwMDA4ZTk1MDY1ZSIsImlhdCI6MTY4MDE2Nzk4M30.5A95VXJXh2u-fq_8wNxW8jW6wBJmHLCis6dbcXgeX6o"
 
 # 131
 Query_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxMzE1NjE2MTA5MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjgwNDc3MDU5LCJzaWduSWQiOiI0YzRiZTZlNzUxMjU0YjRmOTAwYzExZDQ0N2I2MThhYSIsImlhdCI6MTY3OTg3MjI1OX0.apNvYUgj55zogtAWoRacGIOqlIZENcykdksHDJ3YTko"
