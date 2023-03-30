@@ -102,6 +102,7 @@ CastingId2MetaInfo = {
     260: ["10-ShouLieZhe", "狩猎者"],
     #242: ["10-LiuGuangMoFang-QingJin", "流光魔方-青金"],
     #614: ["10-BaiGuCao", "白骨草"],
+    1699: ["10-DaLianJinShuShi", "大炼金术士"],
     
     #266: ["11-PuTongWuQi", "普通武器"],
     #272: ["11-ChuanSongJieZhi-LongXueRongDong", "传送戒指-龙血熔洞"],
