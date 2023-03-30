@@ -246,6 +246,7 @@ CastingId2MetaInfo = {
     1637: ["19-YuanMuChiDan", "缘木齿丹"],
     1658: ["19-DaLiTingWei", "大理廷尉"],
     1657: ["19-GuoSeTianXiang", "国色天香"],
+    1702: ["19-TianYuanLingJing", "天圆灵镜"],
 
     1207: ["20-DianDengQi", "点灯器"],
     888: ["20-JingZhongHua", "镜中花"],
@@ -258,6 +259,7 @@ CastingId2MetaInfo = {
     1662: ["20-AnYingMingGuan", "暗影冥冠"],
     #1656: ["20-ZhongShuQiuHao", "中书秋毫"],
     1672: ["20-GuangJi", "光几"],
+    1700: ["20-AnYingHuaJing", "暗影花镜"],
 
     1408: ["21-TianYuanJing", "天圆境"],
     399: ["21-HunZhu", "魂珠"],
