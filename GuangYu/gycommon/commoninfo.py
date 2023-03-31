@@ -47,6 +47,7 @@ CastingId2MetaInfo = {
     #130: ["5-ChongZuHaiGu", "虫族骸骨"],
     #129: ["5-NengYuanDianChi", "X型能源电池"],
     128: ["5-LuoPanZhiZhen", "罗盘指针", 500],
+    1125: ["5-TianJiPai", "天机牌"],
 
     65: ["6-SR-CaiHouZhiShen", "SR-彩猴之神"],
     64: ["6-R-HouGeLiTe", "R-猴格丽特"],
