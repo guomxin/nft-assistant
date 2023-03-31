@@ -143,6 +143,9 @@ CastingId2MetaInfo = {
     #1445: ["13-BaiYinBaoXiang", "白银宝箱"],
     #1347: ["13-QZai", "小小键盘-Q仔"],
     1631: ["13-LingBoLianDeng", "凌波莲灯"],
+    1706: ["13-ZhuYanZan-San", "筑颜簪-叁"],
+    1708: ["13-TianXiangBi-San", "添香匕-叁"],
+    1707: ["13-YuShiWengZhong-San", "玉石翁仲-叁"],
 
     #175: ["14-MKMoShuMao", "MK魔术帽"],
     #174: ["14-MKMaKaLong", "MK马卡龙"],
