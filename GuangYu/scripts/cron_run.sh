@@ -371,9 +371,9 @@ python analyze_transaction_prices.py 380 ${yesterday} 100
 #python grab_transaction_price.py 568 ${yesterday} ${yesterday}
 #python analyze_transaction_prices.py 568 ${yesterday} 50
 
-echo "---磁欧晶碎片---"
-python grab_transaction_price.py 187 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 187 ${yesterday} 50
+#echo "---磁欧晶碎片---"
+#python grab_transaction_price.py 187 ${yesterday} ${yesterday}
+#python analyze_transaction_prices.py 187 ${yesterday} 50
 
 echo "---天成仪---"
 python grab_transaction_price.py 269 ${yesterday} ${yesterday}
@@ -547,9 +547,9 @@ echo "---小小键盘-Tab仔---"
 python grab_transaction_price.py 895 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 895 ${yesterday} 10
 
-echo "---神秘石板---"
-python grab_transaction_price.py 398 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 398 ${yesterday} 100
+#echo "---神秘石板---"
+#python grab_transaction_price.py 398 ${yesterday} ${yesterday}
+#python analyze_transaction_prices.py 398 ${yesterday} 100
 
 #echo "---猩红宝石---"
 #python grab_transaction_price.py 127 ${yesterday} ${yesterday}
@@ -619,9 +619,9 @@ python analyze_transaction_prices.py 113 ${yesterday} 100
 #python grab_transaction_price.py 931 ${yesterday} ${yesterday}
 #python analyze_transaction_prices.py 931 ${yesterday} 100
 
-echo "---镜花碎片---"
-python grab_transaction_price.py 889 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 889 ${yesterday} 10
+#echo "---镜花碎片---"
+#python grab_transaction_price.py 889 ${yesterday} ${yesterday}
+#python analyze_transaction_prices.py 889 ${yesterday} 10
 
 echo "---键盘领袖---"
 python grab_transaction_price.py 1374 ${yesterday} ${yesterday}
@@ -639,9 +639,9 @@ python analyze_transaction_prices.py 135 ${yesterday} 100
 #python grab_transaction_price.py 1122 ${yesterday} ${yesterday}
 #python analyze_transaction_prices.py 1122 ${yesterday} 100
 
-echo "---神秘泉水---"
-python grab_transaction_price.py 1123 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 1123 ${yesterday} 50
+#echo "---神秘泉水---"
+#python grab_transaction_price.py 1123 ${yesterday} ${yesterday}
+#python analyze_transaction_prices.py 1123 ${yesterday} 50
 
 echo "---精美点心盒---"
 python grab_transaction_price.py 1085 ${yesterday} ${yesterday}
@@ -651,9 +651,9 @@ echo "---点灯器---"
 python grab_transaction_price.py 1207 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 1207 ${yesterday} 100
 
-echo "---镜中花---"
-python grab_transaction_price.py 888 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 888 ${yesterday} 50
+#echo "---镜中花---"
+#python grab_transaction_price.py 888 ${yesterday} ${yesterday}
+#python analyze_transaction_prices.py 888 ${yesterday} 50
 
 echo "---初心者布衣---"
 python grab_transaction_price.py 1127 ${yesterday} ${yesterday}
@@ -703,9 +703,9 @@ echo "---天圆镜---"
 python grab_transaction_price.py 1408 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 1408 ${yesterday} 50
 
-echo "---魂珠---"
-python grab_transaction_price.py 399 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 399 ${yesterday} 50
+#echo "---魂珠---"
+#python grab_transaction_price.py 399 ${yesterday} ${yesterday}
+#python analyze_transaction_prices.py 399 ${yesterday} 50
 
 #echo "---天神卷轴---"
 #python grab_transaction_price.py 1424 ${yesterday} ${yesterday}
@@ -735,9 +735,9 @@ python analyze_transaction_prices.py 1438 ${yesterday} 100
 #python grab_transaction_price.py 1321 ${yesterday} ${yesterday}
 #python analyze_transaction_prices.py 1321 ${yesterday} 50
 
-echo "---幸运星---"
-python grab_transaction_price.py 1488 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 1488 ${yesterday} 50
+#echo "---幸运星---"
+#python grab_transaction_price.py 1488 ${yesterday} ${yesterday}
+#python analyze_transaction_prices.py 1488 ${yesterday} 50
 
 #echo "---黄金宝箱---"
 #python grab_transaction_price.py 1517 ${yesterday} ${yesterday}
@@ -811,9 +811,9 @@ python analyze_transaction_prices.py 1597 ${yesterday} 100
 #python grab_transaction_price.py 1626 ${yesterday} ${yesterday}
 #python analyze_transaction_prices.py 1626 ${yesterday} 100
 
-echo "---双鹤听泉---"
-python grab_transaction_price.py 1624 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 1624 ${yesterday} 100
+#echo "---双鹤听泉---"
+#python grab_transaction_price.py 1624 ${yesterday} ${yesterday}
+#python analyze_transaction_prices.py 1624 ${yesterday} 100
 
 #echo "---尺竹伍符-初级---"
 #python grab_transaction_price.py 1599 ${yesterday} ${yesterday}
@@ -827,17 +827,17 @@ echo "---凌波莲灯---"
 python grab_transaction_price.py 1631 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 1631 ${yesterday} 100
 
-echo "---羽鹤归巢---"
-python grab_transaction_price.py 1628 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 1628 ${yesterday} 100
+#echo "---羽鹤归巢---"
+#python grab_transaction_price.py 1628 ${yesterday} ${yesterday}
+#python analyze_transaction_prices.py 1628 ${yesterday} 100
 
 #echo "---U型转化器---"
 #python grab_transaction_price.py 1634 ${yesterday} ${yesterday}
 #python analyze_transaction_prices.py 1634 ${yesterday} 100
 
-echo "---渔舟唱晚---"
-python grab_transaction_price.py 1623 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 1623 ${yesterday} 100
+#echo "---渔舟唱晚---"
+#python grab_transaction_price.py 1623 ${yesterday} ${yesterday}
+#python analyze_transaction_prices.py 1623 ${yesterday} 100
 
 echo "---北海---"
 python grab_transaction_price.py 1638 ${yesterday} ${yesterday}
@@ -871,9 +871,9 @@ echo "---国色天香---"
 python grab_transaction_price.py 1657 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 1657 ${yesterday} 100
 
-echo "---暗影冥冠---"
-python grab_transaction_price.py 1662 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 1662 ${yesterday} 100
+#echo "---暗影冥冠---"
+#python grab_transaction_price.py 1662 ${yesterday} ${yesterday}
+#python analyze_transaction_prices.py 1662 ${yesterday} 100
 
 #echo "---中书秋毫---"
 #python grab_transaction_price.py 1656 ${yesterday} ${yesterday}
@@ -915,9 +915,9 @@ echo "---大炼金术士---"
 python grab_transaction_price.py 1699 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 1699 ${yesterday} 100
 
-echo "---葫芦---"
-python grab_transaction_price.py 887 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 887 ${yesterday} 100
+#echo "---葫芦---"
+#python grab_transaction_price.py 887 ${yesterday} ${yesterday}
+#python analyze_transaction_prices.py 887 ${yesterday} 100
 
 echo "---暗影花镜---"
 python grab_transaction_price.py 1700 ${yesterday} ${yesterday}
@@ -955,25 +955,25 @@ cp *$yesterday* upload/$yesterday;cd upload/$yesterday
 
 for nft in "1-KaiTuoZhe" "1-WanXiangLongChao" "2-TaiKongShiftZai" "1-ChaoNengXiuBuJiang" "2-XiGeMaHuMuJing" \
 "3-HouTu" "3-HuiJin" "3-FuJin" "1-LongFengShouBao" "14-ZhuLinYinShi" "19-YuLinWei"  "16-ChiZhuWuFu-GaoJi" \
-"1-NiePanZhiDi" "5-QiWuMiBao-ShiJianMoPan" "5-TanSuoZheIII" "19-GuoSeTianXiang" "20-AnYingMingGuan" \
+"1-NiePanZhiDi" "5-QiWuMiBao-ShiJianMoPan" "5-TanSuoZheIII" "19-GuoSeTianXiang" \
 "5-ShiHuangZhe" "6-SR-CaiHouZhiShen" "6-R-HouGeLiTe" "6-R-PDHou" "6-N-BaoZuHou" "15-BeiHai" \
 "5-LuoPanZhiZhen" "6-YunMuFangZhou" "7-FeiLiWuTingMuXia" "7-JuNeng" "7-QingTongShiXiang" "8-LanHaiYouDie" "8-NianHeJi" \
 "8-YuEr" "8-JingZhiDiaoJu-KongTou" "8-JingZhiDiaoJu-DuiHuan" "8-XunHangZheI" "9-MengHuanShuiLong" "8-LengQueYe" \
 "9-YuEr-DuiHuan" "9-KuaiJieZuHe-FuZhi" "9-KuaiJieZuHe-ZhanTie" "9-DiJiuQuZhengJian" "8-LiLianZhe" \
 "9-JiXieHouTu" "10-XiuBuXueTu" "10-JianBaoXueTu" "10-XingHuiDian" "10-HanYueSi" "10-FuZhiBaoZhu" "10-DaLianJinShuShi" \
 "10-EMengGuoShi" "10-ShouLieZhe" "11-ChuanShuoWuQi" "12-LianJinXueTu" "12-QiYuanGai-WangChuanJuFeng" \
-"11-MaoXianZheZhiXin" "11-CiOuJingSuiPian" "11-TianChengYiII" "11-TianChengYi" "19-ShuangHeTingQuan" \
+"11-MaoXianZheZhiXin" "11-TianChengYiII" "11-TianChengYi" \
 "13-ChaoJiXunHangZhe" "13-ChaoJiTanSuoZhe" "13-ZhanJiaHouTu" "13-QZai" "13-LingBoLianDeng" \
-"14-MoRen-ShiZhiNiZhuan"  "14-XinChunFuDai" "14-XianHeHuaJuan" "9-YuHeGuiChao" "21-TingLanShuiXie" \
+"14-MoRen-ShiZhiNiZhuan"  "14-XinChunFuDai" "14-XianHeHuaJuan" "21-TingLanShuiXie" \
 "15-ZhuanLunPan" "15-XiaoPingYuLei" "15-HuaCaoTuan" "15-ShengShuZhongZi" "15-MoFaYaoShui" "15-YongShengShouMenRen" \
-"16-HunDunTu" "16-CiKongJianLaLian" "16-FuGuYuanHuan" "14-XingYunXing" "14-YuZhouChangWan" \
-"16-ShiJian" "16-LingSheZhu" "13-MoGuangGuMian" "13-TabZai" "13-ShenMiShiBan" "17-SenZhiXi" "17-KongJianZhuanHuaQi" \
+"16-HunDunTu" "16-CiKongJianLaLian" "16-FuGuYuanHuan" \
+"16-ShiJian" "16-LingSheZhu" "13-MoGuangGuMian" "13-TabZai" "17-SenZhiXi" "17-KongJianZhuanHuaQi" \
 "18-Kulolo-WeiJueZhe" "18-Kulolo-JueXingZhe" "18-Kulolo-SiLieZhe" "18-Kulolo-TunChiZhe" "18-Kulolo-LingZhiZhe" "17-FengMoLingShu" \
 "17-LiuSuYuZhui" "17-HuangJinShengShu" "17-BaFangLaiFeng" "17-JuBaoShenShu" "16-WeiLaiYanJiuYuan" "18-YanHuoXiaoEMo" \
-"17-JingHuaSuiPian" "18-JianPanLingXiu-ChaoJiYingXiong" "18-XingHeNian" "19-ShenMiQuanShui" "19-JingMeiDianXinHe" "19-TianYuanLingJing" \
-"20-DianDengQi" "20-JingZhongHua" "20-ChuXinZheBuYi" "20-LiangJieDeng" "20-LinPian" "19-YuanMuChiDan" "19-DaLiTingWei" \
-"21-TianYuanJing" "21-HunZhu" "21-YuanJiII" "21-ZhiJiII" "20-GuangJi" "21-DiFangJing" "20-AnYingHuaJing" \
-"14-DianJi" "15-WuSeYunNi" "8-MiaoMoXinHua" "16-NiePanChongSheng" "21-WanJuanShuGe" "21-HuLu"
+"18-JianPanLingXiu-ChaoJiYingXiong" "18-XingHeNian" "19-JingMeiDianXinHe" "19-TianYuanLingJing" \
+"20-DianDengQi" "20-ChuXinZheBuYi" "20-LiangJieDeng" "20-LinPian" "19-YuanMuChiDan" "19-DaLiTingWei" \
+"21-TianYuanJing" "21-YuanJiII" "21-ZhiJiII" "20-GuangJi" "21-DiFangJing" "20-AnYingHuaJing" \
+"14-DianJi" "15-WuSeYunNi" "8-MiaoMoXinHua" "16-NiePanChongSheng" "21-WanJuanShuGe"
 do
     mkdir $nft;mv *$nft*.csv $nft;zip -q $nft-$yesterday $nft/*
 done
