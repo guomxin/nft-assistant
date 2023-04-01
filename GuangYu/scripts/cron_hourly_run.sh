@@ -207,8 +207,8 @@ python grab_transaction_price.py 76 ${today} ${tag}
 #echo "---深海晶石---"
 #python grab_transaction_price.py 201 ${today} ${tag}
 
-echo "---第九区证件---"
-python grab_transaction_price.py 198 ${today} ${tag}
+#echo "---第九区证件---"
+#python grab_transaction_price.py 198 ${today} ${tag}
 
 echo "---机械厚土---"
 python grab_transaction_price.py 223 ${today} ${tag}
@@ -288,11 +288,11 @@ python grab_transaction_price.py 568 ${today} ${tag}
 #echo "---磁欧晶碎片---"
 #python grab_transaction_price.py 187 ${today} ${tag}
 
-echo "---天成仪---"
-python grab_transaction_price.py 269 ${today} ${tag}
+#echo "---天成仪---"
+#python grab_transaction_price.py 269 ${today} ${tag}
 
-echo "---天成仪II---"
-python grab_transaction_price.py 389 ${today} ${tag}
+#echo "---天成仪II---"
+#python grab_transaction_price.py 389 ${today} ${tag}
 
 #echo "---流光魔方-琥珀---"
 #python grab_transaction_price.py 243 ${today} ${tag}
@@ -669,8 +669,8 @@ python grab_transaction_price.py 1657 ${today} ${tag}
 echo "---光几---"
 python grab_transaction_price.py 1672 ${today} ${tag}
 
-echo "---地方镜---"
-python grab_transaction_price.py 1467 ${today} ${tag}
+#echo "---地方镜---"
+#python grab_transaction_price.py 1467 ${today} ${tag}
 
 echo "---超能修补匠---"
 python grab_transaction_price.py 1659 ${today} ${tag}
@@ -741,10 +741,10 @@ for nft in "1-KaiTuoZhe" "1-WanXiangLongChao" "2-TaiKongShiftZai" "1-ChaoNengXiu
 "5-ShiHuangZhe" "6-SR-CaiHouZhiShen" "6-R-HouGeLiTe" "6-R-PDHou" "6-N-BaoZuHou" "15-BeiHai" \
 "5-LuoPanZhiZhen" "6-YunMuFangZhou" "7-FeiLiWuTingMuXia" "7-JuNeng" "7-QingTongShiXiang" "8-LanHaiYouDie" "8-NianHeJi" \
 "8-YuEr" "8-JingZhiDiaoJu-KongTou" "8-JingZhiDiaoJu-DuiHuan" "8-XunHangZheI" "9-MengHuanShuiLong" "8-LengQueYe" \
-"9-YuEr-DuiHuan" "9-KuaiJieZuHe-FuZhi" "9-KuaiJieZuHe-ZhanTie" "9-DiJiuQuZhengJian" "8-LiLianZhe" \
+"9-YuEr-DuiHuan" "9-KuaiJieZuHe-FuZhi" "9-KuaiJieZuHe-ZhanTie" "8-LiLianZhe" \
 "9-JiXieHouTu" "10-XiuBuXueTu" "10-JianBaoXueTu" "10-XingHuiDian" "10-HanYueSi" "10-FuZhiBaoZhu" "10-DaLianJinShuShi" \
 "10-EMengGuoShi" "10-ShouLieZhe" "11-ChuanShuoWuQi" "12-LianJinXueTu" "12-QiYuanGai-WangChuanJuFeng" \
-"11-MaoXianZheZhiXin" "11-TianChengYiII" "11-TianChengYi" "13-ZhuYanZan-San" "13-TianXiangBi-San" "13-YuShiWengZhong-San" \
+"11-MaoXianZheZhiXin" "13-ZhuYanZan-San" "13-TianXiangBi-San" "13-YuShiWengZhong-San" \
 "13-ChaoJiXunHangZhe" "13-ChaoJiTanSuoZhe" "13-ZhanJiaHouTu" "13-QZai" "13-LingBoLianDeng" \
 "14-MoRen-ShiZhiNiZhuan"  "14-XinChunFuDai" "14-XianHeHuaJuan" "21-TingLanShuiXie" \
 "15-ZhuanLunPan" "15-XiaoPingYuLei" "15-HuaCaoTuan" "15-ShengShuZhongZi" "15-MoFaYaoShui" "15-YongShengShouMenRen" \
@@ -754,7 +754,7 @@ for nft in "1-KaiTuoZhe" "1-WanXiangLongChao" "2-TaiKongShiftZai" "1-ChaoNengXiu
 "17-LiuSuYuZhui" "17-HuangJinShengShu" "17-BaFangLaiFeng" "17-JuBaoShenShu" "16-WeiLaiYanJiuYuan" "18-YanHuoXiaoEMo" \
 "18-JianPanLingXiu-ChaoJiYingXiong" "18-XingHeNian" "19-JingMeiDianXinHe" "19-TianYuanLingJing" \
 "20-DianDengQi" "20-ChuXinZheBuYi" "20-LiangJieDeng" "20-LinPian" "19-YuanMuChiDan" "19-DaLiTingWei" \
-"21-TianYuanJing" "21-YuanJiII" "21-ZhiJiII" "20-GuangJi" "21-DiFangJing" "20-AnYingHuaJing" \
+"21-TianYuanJing" "21-YuanJiII" "21-ZhiJiII" "20-GuangJi" "20-AnYingHuaJing" \
 "14-DianJi" "15-WuSeYunNi" "8-MiaoMoXinHua" "16-NiePanChongSheng" "21-WanJuanShuGe"
 do
     mkdir $nft;mv *$nft*.csv $nft;zip -q $nft-$tag $nft/*

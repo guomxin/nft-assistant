@@ -85,7 +85,7 @@ CastingId2MetaInfo = {
     77: ["9-KuaiJieZuHe-FuZhi", "快捷组合-复制", 300],
     76: ["9-KuaiJieZuHe-ZhanTie", "快捷组合-粘贴", 300],
     #201: ["9-ShenHaiJingShi", "深海晶石"],
-    198: ["9-DiJiuQuZhengJian", "第九区证件"],
+    #198: ["9-DiJiuQuZhengJian", "第九区证件"],
     223: ["9-JiXieHouTu", "机械厚土"],
     #232: ["9-ZuDuiKaI", "组队卡I"],
     #1424: ["9-TianShenJuanZhou", "天神卷轴"],
@@ -116,8 +116,8 @@ CastingId2MetaInfo = {
     #388: ["11-AnHeiLingGe", "暗黑灵鸽"],
     380: ["11-MaoXianZheZhiXin", "冒险者之心"],
     #187: ["11-CiOuJingSuiPian", "磁欧晶碎片"],
-    269: ["11-TianChengYi", "天成仪"],
-    389: ["11-TianChengYiII", "天成仪II"],
+    #269: ["11-TianChengYi", "天成仪"],
+    #389: ["11-TianChengYiII", "天成仪II"],
 
     184: ["12-LianJinXueTu", "炼金学徒", 500],
     241: ["12-LiuGuangMoFang-ShanHu", "流光魔方-珊瑚"],
@@ -172,7 +172,7 @@ CastingId2MetaInfo = {
     #1623: ["14-YuZhouChangWan", "渔舟唱晚"],
 
     754: ["15-ZhuanLunPan", "转轮盘", 1000],
-    1357: ["15-XiaoPingYuLei", "小瓶鱼泪"],
+    #1357: ["15-XiaoPingYuLei", "小瓶鱼泪"],
     #711: ["15-SiXiZheShan", "四喜折扇"],
     792: ["15-HuaCaoTuan", "花草团"],
     793: ["15-ShengShuZhongZi", "圣树种子"],
@@ -276,7 +276,7 @@ CastingId2MetaInfo = {
     1675: ["21-YuanJiII", "原几II"],
     1676: ["21-ZhiJiII", "质几II"],
     1581: ["21-WanJuanShuGe", "万卷书阁"],
-    1467: ["21-DiFangJing", "天宫系列-地方镜"],
+    #1467: ["21-DiFangJing", "天宫系列-地方镜"],
     1674: ["21-TingLanShuiXie", "汀兰水榭"],
     #887: ["21-HuLu", "葫芦"],
 }
