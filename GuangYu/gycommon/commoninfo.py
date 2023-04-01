@@ -79,6 +79,8 @@ CastingId2MetaInfo = {
     1698: ["8-LiLianZhe", "历练者"],
     1690: ["8-NianHeJi", "粘合剂"],
     1691: ["8-LengQueYe", "冷却液"],
+    1689: ["8-ZuanTou", "钻头"],
+    1688: ["8-FaDianJi", "发电机"],
 
     205: ["9-MengHuanShuiLong", "梦幻水龙", 1200],
     #211: ["9-ShenHaiQiPao", "深海气泡"],
