@@ -479,9 +479,9 @@ echo "---转轮盘---"
 python grab_transaction_price.py 754 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 754 ${yesterday} 50
 
-echo "---小瓶鱼泪---"
-python grab_transaction_price.py 1357 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 1357 ${yesterday} 10
+#echo "---小瓶鱼泪---"
+#python grab_transaction_price.py 1357 ${yesterday} ${yesterday}
+#python analyze_transaction_prices.py 1357 ${yesterday} 10
 
 #echo "---四喜折扇---"
 #python grab_transaction_price.py 711 ${yesterday} ${yesterday}
@@ -959,6 +959,10 @@ echo "---发电机---"
 python grab_transaction_price.py 1688 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 1688 ${yesterday} 100
 
+echo "---人初灵镜---"
+python grab_transaction_price.py 1722 ${yesterday} ${yesterday}
+python analyze_transaction_prices.py 1722 ${yesterday} 100
+
 #------ 工人 ------#
 #echo "---巧克力工人---"
 #python grab_transaction_price.py 1256 ${yesterday} ${yesterday}
@@ -991,13 +995,13 @@ for nft in "1-KaiTuoZhe" "1-WanXiangLongChao" "2-TaiKongShiftZai" "1-ChaoNengXiu
 "5-ShiHuangZhe" "6-SR-CaiHouZhiShen" "6-R-HouGeLiTe" "6-R-PDHou" "6-N-BaoZuHou" "15-BeiHai" "9-ShengMingZhiShui" \
 "5-LuoPanZhiZhen" "6-YunMuFangZhou" "7-FeiLiWuTingMuXia" "7-JuNeng" "7-QingTongShiXiang" "8-LanHaiYouDie" "8-NianHeJi" \
 "8-YuEr" "8-JingZhiDiaoJu-KongTou" "8-JingZhiDiaoJu-DuiHuan" "8-XunHangZheI" "9-MengHuanShuiLong" "8-LengQueYe" \
-"9-YuEr-DuiHuan" "9-KuaiJieZuHe-FuZhi" "9-KuaiJieZuHe-ZhanTie" "8-LiLianZhe" "8-ZuanTou" "8-FaDianJi" \
+"9-YuEr-DuiHuan" "9-KuaiJieZuHe-FuZhi" "9-KuaiJieZuHe-ZhanTie" "8-LiLianZhe" "8-ZuanTou" "8-FaDianJi" "9-RenChuLingJing" \
 "9-JiXieHouTu" "10-XiuBuXueTu" "10-JianBaoXueTu" "10-XingHuiDian" "10-HanYueSi" "10-FuZhiBaoZhu" "10-DaLianJinShuShi" \
 "10-EMengGuoShi" "10-ShouLieZhe" "11-ChuanShuoWuQi" "12-LianJinXueTu" "12-QiYuanGai-WangChuanJuFeng" \
 "11-MaoXianZheZhiXin" "13-ZhuYanZan-San" "13-TianXiangBi-San" "13-YuShiWengZhong-San" \
 "13-ChaoJiXunHangZhe" "13-ChaoJiTanSuoZhe" "13-ZhanJiaHouTu" "13-QZai" "13-LingBoLianDeng" \
 "14-MoRen-ShiZhiNiZhuan"  "14-XinChunFuDai" "14-XianHeHuaJuan" "21-TingLanShuiXie" \
-"15-ZhuanLunPan" "15-XiaoPingYuLei" "15-HuaCaoTuan" "15-ShengShuZhongZi" "15-MoFaYaoShui" "15-YongShengShouMenRen" \
+"15-ZhuanLunPan" "15-HuaCaoTuan" "15-ShengShuZhongZi" "15-MoFaYaoShui" "15-YongShengShouMenRen" \
 "16-HunDunTu" "16-CiKongJianLaLian" "16-FuGuYuanHuan" \
 "16-ShiJian" "16-LingSheZhu" "13-MoGuangGuMian" "13-TabZai" "17-SenZhiXi" "17-KongJianZhuanHuaQi" \
 "18-Kulolo-WeiJueZhe" "18-Kulolo-JueXingZhe" "18-Kulolo-SiLieZhe" "18-Kulolo-TunChiZhe" "18-Kulolo-LingZhiZhe" "17-FengMoLingShu" \

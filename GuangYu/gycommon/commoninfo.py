@@ -97,6 +97,7 @@ CastingId2MetaInfo = {
     #1625: ["9-ChiZhuWuFu-ZhongJi", "尺竹伍符-中级"],
     #1628: ["9-YuHeGuiChao", "羽鹤归巢"],
     1704: ["9-ShengMingZhiShui", "生命之水"],
+    1722: ["9-RenChuLingJing", "人初灵镜"],
 
     183: ["10-XiuBuXueTu", "修补学徒", 500],
     185: ["10-JianBaoXueTu", "鉴宝学徒", 500],
