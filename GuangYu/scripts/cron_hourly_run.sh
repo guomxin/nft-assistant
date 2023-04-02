@@ -682,7 +682,7 @@ echo "---希格玛护目镜---"
 python grab_transaction_price.py 1681 ${today} ${tag}
 
 echo "---历练者---"
-python grab_transaction_price.py 1698 ${today} ${tag}
+python grab_transaction_price.py 1725 ${today} ${tag}
 
 echo "---粘合剂---"
 python grab_transaction_price.py 1690 ${today} ${tag}

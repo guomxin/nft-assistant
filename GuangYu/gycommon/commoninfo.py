@@ -76,7 +76,7 @@ CastingId2MetaInfo = {
     #170: ["8-XunHangZhe-KongTou", "巡航者-空投版本"],
     #159: ["8-XunHangZhe-DuiHuan", "巡航者-兑换版本"],
     1565: ["8-MiaoMoXinHua", "妙墨心画"],
-    1698: ["8-LiLianZhe", "历练者"],
+    1725: ["8-LiLianZhe", "历练者"],
     1690: ["8-NianHeJi", "粘合剂"],
     1691: ["8-LengQueYe", "冷却液"],
     1689: ["8-ZuanTou", "钻头"],
@@ -297,7 +297,7 @@ HighestValue_Products_Info = {
 }
 
 # 173
-Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjgwNzcyNzgzLCJzaWduSWQiOiI4NmQ1OTBhYjYwMTY0ZTdkYTczNDIwMDA4ZTk1MDY1ZSIsImlhdCI6MTY4MDE2Nzk4M30.5A95VXJXh2u-fq_8wNxW8jW6wBJmHLCis6dbcXgeX6o"
+Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjgwOTY1NDAyLCJzaWduSWQiOiIwMjQ2ODk0MzE0NDI0ODJhYTQ1ZTFmYjUxOTVmYmI0YyIsImlhdCI6MTY4MDM2MDYwMn0.bXSGkpHAXsmGf93dXWTB2bvgeQ4wcs6BBOsUNfJ6pgc"
 
 # 131
 Query_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxMzE1NjE2MTA5MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjgwNDc3MDU5LCJzaWduSWQiOiI0YzRiZTZlNzUxMjU0YjRmOTAwYzExZDQ0N2I2MThhYSIsImlhdCI6MTY3OTg3MjI1OX0.apNvYUgj55zogtAWoRacGIOqlIZENcykdksHDJ3YTko"

@@ -900,8 +900,8 @@ python grab_transaction_price.py 1681 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 1681 ${yesterday} 100
 
 echo "---历练者---"
-python grab_transaction_price.py 1698 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 1698 ${yesterday} 10
+python grab_transaction_price.py 1725 ${yesterday} ${yesterday}
+python analyze_transaction_prices.py 1725 ${yesterday} 10
 
 echo "---粘合剂---"
 python grab_transaction_price.py 1690 ${yesterday} ${yesterday}
