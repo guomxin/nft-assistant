@@ -98,6 +98,7 @@ CastingId2MetaInfo = {
     #1628: ["9-YuHeGuiChao", "羽鹤归巢"],
     1704: ["9-ShengMingZhiShui", "生命之水"],
     1722: ["9-RenChuLingJing", "人初灵镜"],
+    1710: ["9-DiFangLingJIng", "地方灵镜"],
 
     183: ["10-XiuBuXueTu", "修补学徒", 500],
     185: ["10-JianBaoXueTu", "鉴宝学徒", 500],
@@ -123,6 +124,7 @@ CastingId2MetaInfo = {
     #187: ["11-CiOuJingSuiPian", "磁欧晶碎片"],
     #269: ["11-TianChengYi", "天成仪"],
     #389: ["11-TianChengYiII", "天成仪II"],
+    1744: ["11-HongMengYu", "鸿蒙玉"],
 
     184: ["12-LianJinXueTu", "炼金学徒", 500],
     241: ["12-LiuGuangMoFang-ShanHu", "流光魔方-珊瑚"],
