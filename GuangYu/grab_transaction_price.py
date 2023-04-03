@@ -168,6 +168,9 @@ def get_product_detail(prod_id):
     
     return detail_info
 
+# 由于输出word时交易量太大会特别慢，设置上限
+MAX_TRANS_COUNT_FOR_OUTPUTWORD = 1000
+
 if __name__ == "__main__":
     if len(sys.argv) < 4:
         print("{} <casting_id> <date>(YYYYmmdd) <tag>".format(sys.argv[0]))
@@ -280,7 +283,9 @@ if __name__ == "__main__":
         commoninfo.gen_docx_file_tag(casting_name, casting_ch_name), tag
     )
     doc = Document()
-
+    output_docx_trans_details = True
+    if len(detail_info_list) > MAX_TRANS_COUNT_FOR_OUTPUTWORD:
+        output_docx_trans_details = False
 
     # 按成交时间倒序排序，输出
     doc.add_heading(casting_ch_name, level=2)
@@ -298,16 +303,16 @@ if __name__ == "__main__":
             )
             result_file.write(summary)
             doc.add_paragraph(summary.strip())
-        
-        table = doc.add_table(1+len(detail_info_list), 6)
-        table.style = "TableGrid"
-        heading_cells = table.rows[0].cells
-        heading_cells[0].text = "卖出者Id"
-        heading_cells[1].text = "卖出者昵称"
-        heading_cells[2].text = "买入者昵称"
-        heading_cells[3].text = "买入时间"
-        heading_cells[4].text = "价格"
-        heading_cells[5].text = "TokenID"
+        if output_docx_trans_details:
+            table = doc.add_table(1+len(detail_info_list), 6)
+            table.style = "TableGrid"
+            heading_cells = table.rows[0].cells
+            heading_cells[0].text = "卖出者Id"
+            heading_cells[1].text = "卖出者昵称"
+            heading_cells[2].text = "买入者昵称"
+            heading_cells[3].text = "买入时间"
+            heading_cells[4].text = "价格"
+            heading_cells[5].text = "TokenID"
 
         result_file.write("{},{},{},{},{},{},{},{}\n".format(
             "卖出者Id", "卖出者昵称", "买入者昵称", "买入时间", "价格", "TokenID", "DEBUG1", "DEBUG2"
@@ -320,13 +325,14 @@ if __name__ == "__main__":
                 "#"+ str(dinfo[DETAIL_TOKEN_ID_INDEX]),
                 dinfo[DETAIL_PROD_ID_INDEX], dinfo[DETAIL_DETAIL_ID_INDEX]
             ))
-            cells = table.rows[row_index].cells
-            cells[0].text = str(dinfo[DETAIL_SELLER_ID_INDEX])
-            cells[1].text = dinfo[DETAIL_SELLER_INDEX]
-            cells[2].text = dinfo[DETAIL_BUYER_INDEX]
-            cells[3].text = dinfo[DETAIL_SALE_TIME_INDEX].strftime("%Y/%m/%d %H:%M:%S")
-            cells[4].text = str(dinfo[DETAIL_PRICE_INDEX])
-            cells[5].text = "#"+ str(dinfo[DETAIL_TOKEN_ID_INDEX])
+            if output_docx_trans_details:
+                cells = table.rows[row_index].cells
+                cells[0].text = str(dinfo[DETAIL_SELLER_ID_INDEX])
+                cells[1].text = dinfo[DETAIL_SELLER_INDEX]
+                cells[2].text = dinfo[DETAIL_BUYER_INDEX]
+                cells[3].text = dinfo[DETAIL_SALE_TIME_INDEX].strftime("%Y/%m/%d %H:%M:%S")
+                cells[4].text = str(dinfo[DETAIL_PRICE_INDEX])
+                cells[5].text = "#"+ str(dinfo[DETAIL_TOKEN_ID_INDEX])
             row_index += 1
 
     # 输出卖出者信息
