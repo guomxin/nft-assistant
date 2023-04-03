@@ -136,8 +136,8 @@ CastingId2MetaInfo = {
     #568: ["12-DaTiKa", "答题卡"],
 
     #243: ["13-LiuGuangMoFang-HuPo", "流光魔方-琥珀"],
-    593: ["13-ChaoJiXunHangZhe", "超级巡航者", 150],
-    594: ["13-ChaoJiTanSuoZhe", "超级探索者", 200],
+    #593: ["13-ChaoJiXunHangZhe", "超级巡航者", 150],
+    #594: ["13-ChaoJiTanSuoZhe", "超级探索者", 200],
     595: ["13-ZhanJiaHouTu", "战甲厚土"],
     #246: ["13-LiuGuangBaoHe-LengCui", "流光宝盒-冷翠"],
     #600: ["13-LengCuiJingHua", "冷翠精华"],

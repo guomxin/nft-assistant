@@ -297,11 +297,11 @@ python grab_transaction_price.py 568 ${today} ${tag}
 #echo "---流光魔方-琥珀---"
 #python grab_transaction_price.py 243 ${today} ${tag}
 
-echo "---超级巡航者---"
-python grab_transaction_price.py 593 ${today} ${tag}
+#echo "---超级巡航者---"
+#python grab_transaction_price.py 593 ${today} ${tag}
 
-echo "---超级探索者---"
-python grab_transaction_price.py 594 ${today} ${tag}
+#echo "---超级探索者---"
+#python grab_transaction_price.py 594 ${today} ${tag}
 
 echo "---战甲厚土---"
 python grab_transaction_price.py 595 ${today} ${tag}
@@ -766,7 +766,7 @@ for nft in "1-KaiTuoZhe" "1-WanXiangLongChao" "2-TaiKongShiftZai" "1-ChaoNengXiu
 "9-JiXieHouTu" "10-XiuBuXueTu" "10-JianBaoXueTu" "10-XingHuiDian" "10-HanYueSi" "10-FuZhiBaoZhu" "10-DaLianJinShuShi" \
 "10-EMengGuoShi" "10-ShouLieZhe" "11-ChuanShuoWuQi" "12-LianJinXueTu" "12-QiYuanGai-WangChuanJuFeng" "9-DiFangLingJing" \
 "11-MaoXianZheZhiXin" "13-ZhuYanZan-San" "13-TianXiangBi-San" "13-YuShiWengZhong-San" "11-HongMengYu" \
-"13-ChaoJiXunHangZhe" "13-ChaoJiTanSuoZhe" "13-ZhanJiaHouTu" "13-QZai" "13-LingBoLianDeng" \
+"13-ZhanJiaHouTu" "13-QZai" "13-LingBoLianDeng" \
 "14-MoRen-ShiZhiNiZhuan"  "14-XinChunFuDai" "14-XianHeHuaJuan" "21-TingLanShuiXie" \
 "15-ZhuanLunPan" "15-HuaCaoTuan" "15-ShengShuZhongZi" "15-MoFaYaoShui" "15-YongShengShouMenRen" \
 "16-HunDunTu" "16-CiKongJianLaLian" "16-FuGuYuanHuan" \
