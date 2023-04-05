@@ -126,6 +126,7 @@ CastingId2MetaInfo = {
     #389: ["11-TianChengYiII", "天成仪II"],
     1744: ["11-HongMengYu", "鸿蒙玉"],
     1739: ["11-LiuYunZhan", "流云盏"],
+    1760: ["11-XianXingYaoShui", "显形药水"],
 
     184: ["12-LianJinXueTu", "炼金学徒", 500],
     241: ["12-LiuGuangMoFang-ShanHu", "流光魔方-珊瑚"],
@@ -154,6 +155,7 @@ CastingId2MetaInfo = {
     1706: ["13-ZhuYanZan-San", "筑颜簪-叁"],
     1708: ["13-TianXiangBi-San", "添香匕-叁"],
     1707: ["13-YuShiWengZhong-San", "玉石翁仲-叁"],
+    195: ["13-DiJiuQuDiTuSuiPian", "第九区地图碎片"],
 
     #175: ["14-MKMoShuMao", "MK魔术帽"],
     #174: ["14-MKMaKaLong", "MK马卡龙"],
