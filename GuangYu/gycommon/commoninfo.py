@@ -125,6 +125,7 @@ CastingId2MetaInfo = {
     #269: ["11-TianChengYi", "天成仪"],
     #389: ["11-TianChengYiII", "天成仪II"],
     1744: ["11-HongMengYu", "鸿蒙玉"],
+    1739: ["11-LiuYunZhan", "流云盏"],
 
     184: ["12-LianJinXueTu", "炼金学徒", 500],
     241: ["12-LiuGuangMoFang-ShanHu", "流光魔方-珊瑚"],
