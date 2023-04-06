@@ -182,6 +182,8 @@ CastingId2MetaInfo = {
     #1590: ["14-ZhuJiXinFa", "竹击心法"],
     #1634: ["14-UXingZhuanHuaQi", "U型转化器"],
     #1623: ["14-YuZhouChangWan", "渔舟唱晚"],
+    1753: ["14-JuLingZhu", "聚灵珠"],
+    1781: ["14-NiZhuanShi", "逆转石"],
 
     754: ["15-ZhuanLunPan", "转轮盘", 1000],
     #1357: ["15-XiaoPingYuLei", "小瓶鱼泪"],
