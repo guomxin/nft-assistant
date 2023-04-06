@@ -24,11 +24,11 @@ echo "------${tag}------"
 echo "---计算市值---"
 python calc_market_value.py ${tag}
 
-echo "---启源I开拓者号---"
-python grab_transaction_price.py 54 ${today} ${tag}
+#echo "---启源I开拓者号---"
+#python grab_transaction_price.py 54 ${today} ${tag}
 
-echo "---万象龙巢---"
-python grab_transaction_price.py 59 ${today} ${tag}
+#echo "---万象龙巢---"
+#python grab_transaction_price.py 59 ${today} ${tag}
 
 #echo "---空间补给站-启能版---"
 #python grab_transaction_price.py 39 ${today} ${tag}
@@ -405,8 +405,8 @@ python grab_transaction_price.py 853 ${today} ${tag}
 echo "---缚骨圆环---"
 python grab_transaction_price.py 856 ${today} ${tag}
 
-echo "---时间---"
-python grab_transaction_price.py 865 ${today} ${tag}
+#echo "---时间---"
+#python grab_transaction_price.py 865 ${today} ${tag}
 
 echo "---灵蛇珠---"
 python grab_transaction_price.py 616 ${today} ${tag}
@@ -771,7 +771,7 @@ python grab_transaction_price.py 1784 ${today} ${tag}
 cd data;mkdir -p upload/$tag;rm -rf upload/$tag/*
 mv *$tag* upload/$tag;cd upload/$tag
 
-for nft in "1-KaiTuoZhe" "1-WanXiangLongChao" "2-TaiKongShiftZai" "1-ChaoNengXiuBuJiang" "2-XiGeMaHuMuJing" \
+for nft in "2-TaiKongShiftZai" "1-ChaoNengXiuBuJiang" "2-XiGeMaHuMuJing" \
 "3-HouTu" "3-HuiJin" "3-FuJin" "1-LongFengShouBao" "14-ZhuLinYinShi" "19-YuLinWei"  "16-ChiZhuWuFu-GaoJi" \
 "1-NiePanZhiDi" "5-QiWuMiBao-ShiJianMoPan" "5-TanSuoZheIII" "19-GuoSeTianXiang" "5-TianJiPai" "5-WZai" \
 "5-ShiHuangZhe" "6-SR-CaiHouZhiShen" "6-R-HouGeLiTe" "6-R-PDHou" "6-N-BaoZuHou" "15-BeiHai" "9-ShengMingZhiShui" \
@@ -785,7 +785,7 @@ for nft in "1-KaiTuoZhe" "1-WanXiangLongChao" "2-TaiKongShiftZai" "1-ChaoNengXiu
 "14-MoRen-ShiZhiNiZhuan"  "14-XinChunFuDai" "14-XianHeHuaJuan" "21-TingLanShuiXie" \
 "15-ZhuanLunPan" "15-HuaCaoTuan" "15-ShengShuZhongZi" "15-MoFaYaoShui" "15-YongShengShouMenRen" \
 "16-HunDunTu" "16-CiKongJianLaLian" "16-FuGuYuanHuan" \
-"16-ShiJian" "16-LingSheZhu" "13-MoGuangGuMian" "13-TabZai" "17-SenZhiXi" "17-KongJianZhuanHuaQi" \
+"16-LingSheZhu" "13-MoGuangGuMian" "13-TabZai" "17-SenZhiXi" "17-KongJianZhuanHuaQi" \
 "18-Kulolo-WeiJueZhe" "18-Kulolo-JueXingZhe" "18-Kulolo-SiLieZhe" "18-Kulolo-TunChiZhe" "18-Kulolo-LingZhiZhe" "17-FengMoLingShu" \
 "17-LiuSuYuZhui" "17-HuangJinShengShu" "17-BaFangLaiFeng" "17-JuBaoShenShu" "16-WeiLaiYanJiuYuan" "18-YanHuoXiaoEMo" \
 "18-JianPanLingXiu-ChaoJiYingXiong" "18-XingHeNian" "19-JingMeiDianXinHe" "19-TianYuanLingJing" \
