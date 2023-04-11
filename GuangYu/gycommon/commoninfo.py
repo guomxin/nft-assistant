@@ -212,6 +212,7 @@ CastingId2MetaInfo = {
     #1579: ["16-MoYinTuLu", "墨隐图录"],
     1311: ["16-NiePanChongSheng", "涅槃重生"],
     1635: ["16-ChiZhuWuFu-GaoJi", "尺竹伍符-高级"], 
+    1783: ["16-YingXiongLing", "英雄令"],
 
     #127: ["17-XingHongBaoShi", "猩红宝石"], #
     896: ["17-SenZhiXi", "森之息"],

@@ -762,6 +762,9 @@ python grab_transaction_price.py 1823 ${today} ${tag}
 echo "---穿云号角---"
 python grab_transaction_price.py 1825 ${today} ${tag}
 
+echo "---英雄令---"
+python grab_transaction_price.py 1783 ${today} ${tag}
+
 #------ 工人 ------#
 #echo "---巧克力工人---"
 #python grab_transaction_price.py 1256 ${today} ${tag}
@@ -796,7 +799,7 @@ for nft in "2-TaiKongShiftZai" "1-ChaoNengXiuBuJiang" "2-XiGeMaHuMuJing" \
 "13-ZhanJiaHouTu" "13-QZai" "13-LingBoLianDeng" "11-XianXingYaoShui" "13-DiJiuQuDiTuSuiPian" "13-XOYanJiuYuan" "13-YinLiSuiPian" \
 "14-MoRen-ShiZhiNiZhuan"  "14-XinChunFuDai" "14-XianHeHuaJuan" "21-TingLanShuiXie" "14-JuLingZhu" "14-NiZhuanShi" \
 "15-ZhuanLunPan" "15-HuaCaoTuan" "15-ShengShuZhongZi" "15-MoFaYaoShui" "15-YongShengShouMenRen" "14-YiZhiZhaoShu" \
-"16-HunDunTu" "16-CiKongJianLaLian" "16-FuGuYuanHuan" "15-ChuanYunHaoJiao" \
+"16-HunDunTu" "16-CiKongJianLaLian" "16-FuGuYuanHuan" "15-ChuanYunHaoJiao" "16-YingXiongLing" \
 "16-LingSheZhu" "13-MoGuangGuMian" "13-TabZai" "17-SenZhiXi" "17-KongJianZhuanHuaQi" \
 "18-Kulolo-WeiJueZhe" "18-Kulolo-JueXingZhe" "18-Kulolo-SiLieZhe" "18-Kulolo-TunChiZhe" "18-Kulolo-LingZhiZhe" "17-FengMoLingShu" \
 "17-LiuSuYuZhui" "17-HuangJinShengShu" "17-BaFangLaiFeng" "17-JuBaoShenShu" "16-WeiLaiYanJiuYuan" "18-YanHuoXiaoEMo" \
