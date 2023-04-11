@@ -226,6 +226,7 @@ CastingId2MetaInfo = {
     #889: ["17-JingHuaSuiPian", "镜花碎片"],
     #885: ["17-JinShangHuaKai", "锦上花开"],
     1639: ["17-KongJianZhuanHuaQi", "空间转化器"], 
+    1826: ["17-LinLang-JingHong", "琳琅-荆虹"],
 
     459: ["18-Kulolo-WeiJueZhe", "Kulolo-未觉者"],
     458: ["18-Kulolo-JueXingZhe", "Kulolo-觉醒者"],
