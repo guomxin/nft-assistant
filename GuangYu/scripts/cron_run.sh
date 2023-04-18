@@ -1027,6 +1027,10 @@ echo "---蔚蓝之环---"
 python grab_transaction_price.py 1852 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 1852 ${yesterday} 50
 
+echo "---充能晶砂---"
+python grab_transaction_price.py 1860 ${yesterday} ${yesterday}
+python analyze_transaction_prices.py 1860 ${yesterday} 50
+
 #------ 工人 ------#
 #echo "---巧克力工人---"
 #python grab_transaction_price.py 1256 ${yesterday} ${yesterday}
@@ -1070,7 +1074,7 @@ for nft in "2-TaiKongShiftZai" "1-ChaoNengXiuBuJiang" "2-XiGeMaHuMuJing" \
 "16-LingSheZhu" "13-MoGuangGuMian" "13-TabZai" "17-SenZhiXi" "17-KongJianZhuanHuaQi" "17-XiuXingZhe" "19-JingNengYiGouTi" "19-WeiLanZhiHuan" \
 "18-Kulolo-WeiJueZhe" "18-Kulolo-JueXingZhe" "18-Kulolo-SiLieZhe" "18-Kulolo-TunChiZhe" "18-Kulolo-LingZhiZhe" "17-FengMoLingShu" \
 "17-LiuSuYuZhui" "17-HuangJinShengShu" "17-BaFangLaiFeng" "17-JuBaoShenShu" "16-WeiLaiYanJiuYuan" "18-YanHuoXiaoEMo" \
-"18-JianPanLingXiu-ChaoJiYingXiong" "18-XingHeNian" "19-JingMeiDianXinHe" "19-TianYuanLingJing" \
+"18-JianPanLingXiu-ChaoJiYingXiong" "18-XingHeNian" "19-JingMeiDianXinHe" "19-TianYuanLingJing" "20-ChongNengJingSha" \
 "20-DianDengQi" "20-ChuXinZheBuYi" "20-LiangJieDeng" "20-LinPian" "19-YuanMuChiDan" "19-DaLiTingWei" \
 "21-TianYuanJing" "21-YuanJiII" "21-ZhiJiII" "20-GuangJi" "20-AnYingHuaJing" \
 "14-DianJi" "15-WuSeYunNi" "8-MiaoMoXinHua" "16-NiePanChongSheng" "21-WanJuanShuGe"

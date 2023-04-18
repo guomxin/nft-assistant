@@ -285,6 +285,7 @@ CastingId2MetaInfo = {
     #1656: ["20-ZhongShuQiuHao", "中书秋毫"],
     1672: ["20-GuangJi", "光几"],
     1700: ["20-AnYingHuaJing", "暗影花镜"],
+    1860: ["20-ChongNengJingSha", "充能晶砂"],
 
     1408: ["21-TianYuanJing", "天圆境"],
     #399: ["21-HunZhu", "魂珠"],
