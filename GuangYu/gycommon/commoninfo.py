@@ -270,6 +270,8 @@ CastingId2MetaInfo = {
     1658: ["19-DaLiTingWei", "大理廷尉"],
     1657: ["19-GuoSeTianXiang", "国色天香"],
     1702: ["19-TianYuanLingJing", "天圆灵镜"],
+    1849: ["19-JingNengYiGouTi", "晶能异构体"],
+    1852: ["19-WeiLanZhiHuan", "蔚蓝之环"],
 
     1207: ["20-DianDengQi", "点灯器"],
     #888: ["20-JingZhongHua", "镜中花"],
