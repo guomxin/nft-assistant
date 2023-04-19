@@ -7,7 +7,7 @@ CastingId2MetaInfo = {
     #55: ["1-ShanLingShuLong", "山岭树龙"],
     #57: ["1-YunMuShouHu", "云木守护版"],
     #59: ["1-WanXiangLongChao", "万象龙巢", 600],
-    80: ["1-LongFengShouBao", "龙凤守宝", 10000],
+    1859: ["1-LongFengShouBao", "龙凤守宝", 10000],
     96: ["1-NiePanZhiDi", "涅槃之地", 1000],
     1659: ["1-ChaoNengXiuBuJiang", "超能修补匠", 1000],
 
@@ -276,7 +276,7 @@ CastingId2MetaInfo = {
     1207: ["20-DianDengQi", "点灯器"],
     #888: ["20-JingZhongHua", "镜中花"],
     1127: ["20-ChuXinZheBuYi", "初心者布衣"],
-    1124: ["20-LiangJieDeng", "两界灯", 6000],
+    1857: ["20-LiangJieDeng", "两界灯", 6000],
     #1391: ["20-KongJianSuiPian", "空间碎片"],
     #1392: ["20-TianLanShiLaiMu", "天蓝史莱姆"],
     #1351: ["20-MoShenJuanZhou", "魔神卷轴"],
@@ -286,6 +286,8 @@ CastingId2MetaInfo = {
     1672: ["20-GuangJi", "光几"],
     1700: ["20-AnYingHuaJing", "暗影花镜"],
     1860: ["20-ChongNengJingSha", "充能晶砂"],
+    1864: ["20-FenMiaoDiShi", "分秒滴石"],
+    1865: ["20-JingShaZhiLou", "晶砂之漏"],
 
     1408: ["21-TianYuanJing", "天圆境"],
     #399: ["21-HunZhu", "魂珠"],

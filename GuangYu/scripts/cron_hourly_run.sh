@@ -70,7 +70,7 @@ python grab_transaction_price.py 30 ${today} ${tag}
 #python grab_transaction_price.py 79 ${today} ${tag}
 
 echo "---龙凤守宝---"
-python grab_transaction_price.py 80 ${today} ${tag}
+python grab_transaction_price.py 1859 ${today} ${tag}
 
 echo "---探索者III---"
 python grab_transaction_price.py 592 ${today} ${tag}
@@ -502,7 +502,7 @@ echo "---初心者布衣---"
 python grab_transaction_price.py 1127 ${today} ${tag}
 
 echo "---两界灯---"
-python grab_transaction_price.py 1124 ${today} ${tag}
+python grab_transaction_price.py 1857 ${today} ${tag}
 
 #echo "---降临岛信物---"
 #python grab_transaction_price.py 1320 ${today} ${tag}
@@ -780,6 +780,12 @@ python grab_transaction_price.py 1852 ${today} ${tag}
 echo "---充能晶砂---"
 python grab_transaction_price.py 1860 ${today} ${tag}
 
+echo "---分滴秒石---"
+python grab_transaction_price.py 1864 ${today} ${tag}
+
+echo "---晶石之漏---"
+python grab_transaction_price.py 1865 ${today} ${tag}
+
 #------ 工人 ------#
 #echo "---巧克力工人---"
 #python grab_transaction_price.py 1256 ${today} ${tag}
@@ -820,7 +826,7 @@ for nft in "2-TaiKongShiftZai" "1-ChaoNengXiuBuJiang" "2-XiGeMaHuMuJing" \
 "17-LiuSuYuZhui" "17-HuangJinShengShu" "17-BaFangLaiFeng" "17-JuBaoShenShu" "16-WeiLaiYanJiuYuan" "18-YanHuoXiaoEMo" \
 "18-JianPanLingXiu-ChaoJiYingXiong" "18-XingHeNian" "19-JingMeiDianXinHe" "19-TianYuanLingJing" "20-ChongNengJingSha" \
 "20-DianDengQi" "20-ChuXinZheBuYi" "20-LiangJieDeng" "20-LinPian" "19-YuanMuChiDan" "19-DaLiTingWei" \
-"21-TianYuanJing" "21-YuanJiII" "21-ZhiJiII" "20-GuangJi" "20-AnYingHuaJing" \
+"21-TianYuanJing" "21-YuanJiII" "21-ZhiJiII" "20-GuangJi" "20-AnYingHuaJing" "20-FenMiaoDiShi" "20-JingShaZhiLou" \
 "14-DianJi" "15-WuSeYunNi" "8-MiaoMoXinHua" "16-NiePanChongSheng" "21-WanJuanShuGe"
 do
     mkdir $nft;mv *$nft*.csv $nft;zip -q $nft-$tag $nft/*
