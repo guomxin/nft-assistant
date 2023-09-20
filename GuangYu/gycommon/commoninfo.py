@@ -304,7 +304,7 @@ CastingId2MetaInfo = {
     # 1674: ["21-TingLanShuiXie", "汀兰水榭"],
     # #887: ["21-HuLu", "葫芦"],
 
-    3468: ["1-XiaoXiaoJianPan-XZai", "小小键盘-X仔"],
+    3550: ["1-SSR-ChaoShanDianCi", "超闪电磁"],
 }
 
 DEFAULT_MIN_PRICE = 30

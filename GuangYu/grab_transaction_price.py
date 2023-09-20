@@ -97,7 +97,7 @@ def get_product_detail(prod_id):
                 return None
             else:
                 detail_id = res["obj"]["detailId"]
-                user_id = res["obj"]["userId"]
+                user_id = res["obj"]["id"]
                 created_time = datetime.datetime.strptime(res["obj"]["created"], "%Y-%m-%d %H:%M:%S")
                 holder_name = clean_name(res["obj"]["holderName"])
                 #print(detail_id, user_id, created_time)
