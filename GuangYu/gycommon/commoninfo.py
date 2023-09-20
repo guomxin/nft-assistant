@@ -304,7 +304,20 @@ CastingId2MetaInfo = {
     # 1674: ["21-TingLanShuiXie", "汀兰水榭"],
     # #887: ["21-HuLu", "葫芦"],
 
+    3457: ["1-N-QingKongYuFengZhou", "晴空御风帚"],
+    3747: ["1-N-MengYouGeLou", "梦游阁楼"],
+    3548: ["1-N-ChaoNengMoJing", "超能墨镜"],
+    3458: ["1-SR-YingMuHuanShaPeng", "影幕幻纱篷"],
+    3549: ["1-SR-QuanJiShouTao", "拳击手套"],
+    2457: ["1-SSR-MoDengZhongXin", "摩登中心"],
+    2466: ["1-SSR-ZhongGuiTieDao", "重轨铁道"],
     3550: ["1-SSR-ChaoShanDianCi", "超闪电磁"],
+
+    2456: ["2-UR-WeiLaiDuShi", "未来都市"],
+    2468: ["2-UR-YuanYangDuLun", "远洋渡轮"],
+    3646: ["2-UR-ShiKongChuanSuoJi", "时空穿梭机"],
+    3751: ["2-UR-YueQiuShangCheng", "月球上城"],
+
 }
 
 DEFAULT_MIN_PRICE = 30
