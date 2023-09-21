@@ -12,7 +12,7 @@ GET_ALL_SALE_LIST_URL = "https://api2.gandart.com/market/api/v3/resaleManage/res
 PAGE_SIZE = 200
 TIME_OUT = 3
 GET_PRODUCT_DETAIL_URL = "https://api2.gandart.com/market/api/v2/resaleManage/resale/collectionDetails"
-BUY_URL = "https://api.gandart.com/base/v2/resaleManage/resale/buy"
+BUY_URL = "https://api.gandart.com/base/v2/resaleManage/resale/buy/v2"
 
 TRAN_STATUS_SALING = 2
 
@@ -40,8 +40,8 @@ TRANS_STATUS_INDEX = 4
 
 Proxies_List = [
     [{
-    "http": "http://7408150:se3cvgbh@121.41.8.23:16817/",
-    "https": "http://7408150:se3cvgbh@121.41.8.23:16817/"
+    "http": "http://7408150:se3cvgbh@114.215.140.117:16816/",
+    "https": "http://7408150:se3cvgbh@114.215.140.117:16816/"
     }, 0.15],
 ]
 
@@ -91,7 +91,7 @@ def get_product_detail_id(prod_id, proxies):
                 return (None, None)
             else:
                 detail_id = res["obj"]["detailId"]
-                user_id = res["obj"]["userId"]
+                user_id = res["obj"]["id"]
                 #created_time = datetime.datetime.strptime(res["obj"]["created"], "%Y-%m-%d %H:%M:%S")
                 break
         except Exception as e:
