@@ -71,13 +71,30 @@ echo "---月球上城---"
 python grab_transaction_price.py 3751 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 3751 ${yesterday} 500
 
+echo "---载福祥凰---"
+python grab_transaction_price.py 3535 ${yesterday} ${yesterday}
+python analyze_transaction_prices.py 3535 ${yesterday} 500
+
+echo "---龙吟万象---"
+python grab_transaction_price.py 2837 ${yesterday} ${yesterday}
+python analyze_transaction_prices.py 2837 ${yesterday} 500
+
+echo "---幻术师---"
+python grab_transaction_price.py 2616 ${yesterday} ${yesterday}
+python analyze_transaction_prices.py 2616 ${yesterday} 100
+
+echo "---魔术师---"
+python grab_transaction_price.py 2617 ${yesterday} ${yesterday}
+python analyze_transaction_prices.py 2617 ${yesterday} 100
+
 #------ 后处理 ------#
 cd data;mkdir -p upload/$yesterday;rm -rf upload/$yesterday/*
 cp *$yesterday* upload/$yesterday;cd upload/$yesterday
 
 for nft in "1-N-QingKongYuFengZhou" "1-N-MengYouGeLou" "1-N-ChaoNengMoJing" \
 "1-SR-YingMuHuanShaPeng" "1-SR-QuanJiShouTao" "1-SSR-MoDengZhongXin" "1-SSR-ZhongGuiTieDao" "1-SSR-ChaoShanDianCi" \
-"2-UR-WeiLaiDuShi" "2-UR-YuanYangDuLun" "2-UR-ShiKongChuanSuoJi" "2-UR-YueQiuShangCheng"
+"2-UR-WeiLaiDuShi" "2-UR-YuanYangDuLun" "2-UR-ShiKongChuanSuoJi" "2-UR-YueQiuShangCheng" \
+"2-ZaiFuXiangHuang" "2-LongYinWanXiang" "2-HuanShuShi" "2-MoShuShi"
 do
     mkdir $nft;mv *$nft*.csv $nft;zip -q $nft-$yesterday $nft/*
 done

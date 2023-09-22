@@ -317,7 +317,10 @@ CastingId2MetaInfo = {
     2468: ["2-UR-YuanYangDuLun", "远洋渡轮"],
     3646: ["2-UR-ShiKongChuanSuoJi", "时空穿梭机"],
     3751: ["2-UR-YueQiuShangCheng", "月球上城"],
-
+    3535: ["2-ZaiFuXiangHuang", "载福祥凰"],
+    2837: ["2-LongYinWanXiang", "龙吟万象"],
+    2616: ["2-HuanShuShi", "幻术师"], 
+    2617: ["2-MoShuShi", "魔术师"],
 }
 
 DEFAULT_MIN_PRICE = 30
