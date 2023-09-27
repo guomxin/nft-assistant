@@ -324,6 +324,7 @@ CastingId2MetaInfo = {
 
     2589: ["3-JiXingGuangLun", "先驱I-疾行光轮"],
     3056: ["3-BingHuangGuiZuo", "冰凰瑰座"],
+    3919: ["3-XiaoXiaoJianPan-KZai", "小小键盘-K仔"],
 }
 
 DEFAULT_MIN_PRICE = 30
