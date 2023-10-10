@@ -322,12 +322,15 @@ CastingId2MetaInfo = {
     2616: ["2-HuanShuShi", "幻术师"], 
     2617: ["2-MoShuShi", "魔术师"],
 
-    2589: ["3-JiXingGuangLun", "先驱I-疾行光轮"],
-    3056: ["3-BingHuangGuiZuo", "冰凰瑰座"],
+    #2589: ["3-JiXingGuangLun", "先驱I-疾行光轮"],
+    #3056: ["3-BingHuangGuiZuo", "冰凰瑰座"],
+    3982: ["3-ZhongYiWuSheng", "忠义武圣"],
+    3979: ["3-ChuFengMingTong", "雏凤明瞳"],
     3919: ["3-XiaoXiaoJianPan-KZai", "小小键盘-K仔"],
 
     3818: ["4-JieGouGuangShu", "解构光束"],
-    3733: ["4-ChaoSuChuanDongZhuangZhi", "超速传动装置"],
+    3946: ["4-YuanYueHuaDeng", "圆月花灯"],
+    #3733: ["4-ChaoSuChuanDongZhuangZhi", "超速传动装置"],
     3843: ["4-WeiJieXuZhuang", "未解序桩"],
     3851: ["4-DiHeRongYan", "地核熔岩"], 
 }
@@ -347,7 +350,7 @@ HighestValue_Products_Info = {
 Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjk1NzkzNjgzLCJzaWduSWQiOiI0NTkyNWI0ZTVkOWE0Njk3YjI3ZjcyODIyZTgyYzc2MyIsImlhdCI6MTY5NTE4ODg4M30.P9gWxutVxCmsKNmfZlDAmItmogKDGwIandyE9K4zC6k"
 
 # 131
-Query_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxMzE1NjE2MTA5MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjk2NDYyODc5LCJzaWduSWQiOiI4YzY4YWY0MDlkODA0MmFkYThiM2YzYzQ3YzY2Njg5ZiIsImlhdCI6MTY5NTg1ODA3OX0.f8ZfPOvB_c6F7oZOGRZP6vQ7A5fgNT-2q1bKUM-t02Q"
+Query_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxMzE1NjE2MTA5MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjk3NTgxOTc0LCJzaWduSWQiOiIxYTk1N2M5ZGFhZmQ0YmY4YjZiODBjODkwZGVjZjA2OCIsImlhdCI6MTY5Njk3NzE3NH0.w5HgOt42fIzSgDvocs7beQubEwJbyrPfDTZTp2laUoU"
 
 GanDart_Headers = {
     "Host": "api2.gandart.com",
