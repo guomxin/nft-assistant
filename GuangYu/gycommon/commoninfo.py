@@ -326,6 +326,8 @@ CastingId2MetaInfo = {
     #3056: ["3-BingHuangGuiZuo", "冰凰瑰座"],
     3982: ["3-ZhongYiWuSheng", "忠义武圣"],
     3979: ["3-ChuFengMingTong", "雏凤明瞳"],
+    3990: ["3-YingYongBiaoJiZiGeKa", "英勇骠骑资格卡"],
+    3997: ["3-ShunLeiJiMu", "瞬雷击木"],
     3919: ["3-XiaoXiaoJianPan-KZai", "小小键盘-K仔"],
 
     3818: ["4-JieGouGuangShu", "解构光束"],
