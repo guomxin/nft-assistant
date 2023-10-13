@@ -127,9 +127,13 @@ echo "---未解序桩---"
 python grab_transaction_price.py 3843 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 3843 ${yesterday} 50
 
-echo "---地核熔岩---"
-python grab_transaction_price.py 3851 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 3851 ${yesterday} 100
+echo "---等离子光剑---"
+python grab_transaction_price.py 3859 ${yesterday} ${yesterday}
+python analyze_transaction_prices.py 3859 ${yesterday} 100
+
+echo "---黑羽残翼---"
+python grab_transaction_price.py 3669 ${yesterday} ${yesterday}
+python analyze_transaction_prices.py 3669 ${yesterday} 50
 
 #------ 后处理 ------#
 cd data;mkdir -p upload/$yesterday;rm -rf upload/$yesterday/*
@@ -140,7 +144,7 @@ for nft in "1-N-QingKongYuFengZhou" "1-N-MengYouGeLou" "1-N-ChaoNengMoJing" \
 "2-UR-WeiLaiDuShi" "2-UR-YuanYangDuLun" "2-UR-ShiKongChuanSuoJi" "2-UR-YueQiuShangCheng" \
 "2-ZaiFuXiangHuang" "2-LongYinWanXiang" "2-HuanShuShi" "2-MoShuShi" "3-ZhongYiWuSheng" "3-ChuFengMingTong" \
 "3-XiaoXiaoJianPan-KZai" "3-YingYongBiaoJiZiGeKa" "3-ShunLeiJiMu" \
-"4-JieGouGuangShu" "4-YuanYueHuaDeng" "4-WeiJieXuZhuang" "4-DiHeRongYan"
+"4-JieGouGuangShu" "4-YuanYueHuaDeng" "4-WeiJieXuZhuang" "4-DengLiZiGuangJian" "4-HeiYuCanYi"
 do
     mkdir $nft;mv *$nft*.csv $nft;zip -q $nft-$yesterday $nft/*
 done

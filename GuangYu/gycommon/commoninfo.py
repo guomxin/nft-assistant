@@ -334,7 +334,9 @@ CastingId2MetaInfo = {
     3946: ["4-YuanYueHuaDeng", "圆月花灯"],
     #3733: ["4-ChaoSuChuanDongZhuangZhi", "超速传动装置"],
     3843: ["4-WeiJieXuZhuang", "未解序桩"],
-    3851: ["4-DiHeRongYan", "地核熔岩"], 
+    #3851: ["4-DiHeRongYan", "地核熔岩"], 
+    3669: ["4-HeiYuCanYi", "黑羽残翼"],
+    3859: ["4-DengLiZiGuangJian", "等离子光剑"],
 }
 
 DEFAULT_MIN_PRICE = 30
