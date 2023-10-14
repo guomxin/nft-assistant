@@ -339,7 +339,7 @@ CastingId2MetaInfo = {
     3669: ["4-HeiYuCanYi", "黑羽残翼"],
     3988: ["4-FeiHongZhiShan", "飞鸿纸扇"],
     3987: ["4-LuoXiaZhiShan", "落霞纸扇"],
-
+    3989: ["4-CiYiZhiYun", "瓷艺之韵"],
     #3859: ["4-DengLiZiGuangJian", "等离子光剑"],
 }
 
