@@ -332,12 +332,15 @@ CastingId2MetaInfo = {
     3919: ["3-XiaoXiaoJianPan-KZai", "小小键盘-K仔"],
 
     3818: ["4-JieGouGuangShu", "解构光束"],
-    3946: ["4-YuanYueHuaDeng", "圆月花灯"],
+    #3946: ["4-YuanYueHuaDeng", "圆月花灯"],
     #3733: ["4-ChaoSuChuanDongZhuangZhi", "超速传动装置"],
     3843: ["4-WeiJieXuZhuang", "未解序桩"],
     #3851: ["4-DiHeRongYan", "地核熔岩"], 
     3669: ["4-HeiYuCanYi", "黑羽残翼"],
-    3859: ["4-DengLiZiGuangJian", "等离子光剑"],
+    3988: ["4-FeiHongZhiShan", "飞鸿纸扇"],
+    3987: ["4-LuoXiaZhiShan", "落霞纸扇"],
+
+    #3859: ["4-DengLiZiGuangJian", "等离子光剑"],
 }
 
 DEFAULT_MIN_PRICE = 30
@@ -355,7 +358,7 @@ HighestValue_Products_Info = {
 Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjk1NzkzNjgzLCJzaWduSWQiOiI0NTkyNWI0ZTVkOWE0Njk3YjI3ZjcyODIyZTgyYzc2MyIsImlhdCI6MTY5NTE4ODg4M30.P9gWxutVxCmsKNmfZlDAmItmogKDGwIandyE9K4zC6k"
 
 # 131
-Query_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxMzE1NjE2MTA5MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjk3NTgxOTc0LCJzaWduSWQiOiIxYTk1N2M5ZGFhZmQ0YmY4YjZiODBjODkwZGVjZjA2OCIsImlhdCI6MTY5Njk3NzE3NH0.w5HgOt42fIzSgDvocs7beQubEwJbyrPfDTZTp2laUoU"
+Query_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxMzE1NjE2MTA5MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjk3ODU5MjY5LCJzaWduSWQiOiI0NTE0MWEzMmQzMzk0YmI5OWFjOGM0OThjNDIwY2IxZiIsImlhdCI6MTY5NzI1NDQ2OX0.vdV2DnNve91_yg2V8N3q7lvCFKOKFSq4iuIu45BMhts"
 
 GanDart_Headers = {
     "Host": "api2.gandart.com",
