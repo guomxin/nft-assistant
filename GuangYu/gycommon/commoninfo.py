@@ -329,6 +329,7 @@ CastingId2MetaInfo = {
     3980: ["3-YinXuJianDao", "银须箭道"],
     3990: ["3-YingYongBiaoJiZiGeKa", "英勇骠骑资格卡"],
     3997: ["3-ShunLeiJiMu", "瞬雷击木"],
+    4019: ["3-FengDengBaiGu", "丰登百谷"],
     3919: ["3-XiaoXiaoJianPan-KZai", "小小键盘-K仔"],
 
     3818: ["4-JieGouGuangShu", "解构光束"],
