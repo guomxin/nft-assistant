@@ -23,6 +23,7 @@ echo "------${today}------"
 
 #python scan_circulation_info.py $today
 
+#--- 幸运盒 ---#
 echo "---晴空御风帚---"
 python grab_transaction_price.py 3457 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 3457 ${yesterday} 50
@@ -71,6 +72,7 @@ echo "---月球上城---"
 python grab_transaction_price.py 3751 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 3751 ${yesterday} 500
 
+#--- 神话区---#
 echo "---载福祥凰---"
 python grab_transaction_price.py 3535 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 3535 ${yesterday} 500
@@ -78,6 +80,10 @@ python analyze_transaction_prices.py 3535 ${yesterday} 500
 echo "---龙吟万象---"
 python grab_transaction_price.py 2837 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 2837 ${yesterday} 500
+
+echo "---金躯玺印---"
+python grab_transaction_price.py 4014 ${yesterday} ${yesterday}
+python analyze_transaction_prices.py 4014 ${yesterday} 500
 
 echo "---幻术师---"
 python grab_transaction_price.py 2616 ${yesterday} ${yesterday}
@@ -87,14 +93,7 @@ echo "---魔术师---"
 python grab_transaction_price.py 2617 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 2617 ${yesterday} 100
 
-#echo "---先驱I-疾行光轮---"
-#python grab_transaction_price.py 2589 ${yesterday} ${yesterday}
-#python analyze_transaction_prices.py 2589 ${yesterday} 50
-
-#echo "---冰凰瑰座---"
-#python grab_transaction_price.py 3056 ${yesterday} ${yesterday}
-#python analyze_transaction_prices.py 3056 ${yesterday} 100
-
+#--- 三国区 ---#
 echo "---忠义武圣---"
 python grab_transaction_price.py 3982 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 3982 ${yesterday} 500
@@ -119,6 +118,7 @@ echo "---丰登百谷---"
 python grab_transaction_price.py 4019 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 4019 ${yesterday} 100
 
+#--- 推荐区 ---#
 echo "---小小键盘-K仔---"
 python grab_transaction_price.py 3919 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 3919 ${yesterday} 20
@@ -154,7 +154,7 @@ cp *$yesterday* upload/$yesterday;cd upload/$yesterday
 for nft in "1-N-QingKongYuFengZhou" "1-N-MengYouGeLou" "1-N-ChaoNengMoJing" \
 "1-SR-YingMuHuanShaPeng" "1-SR-QuanJiShouTao" "1-SSR-MoDengZhongXin" "1-SSR-ZhongGuiTieDao" "1-SSR-ChaoShanDianCi" \
 "2-UR-WeiLaiDuShi" "2-UR-YuanYangDuLun" "2-UR-ShiKongChuanSuoJi" "2-UR-YueQiuShangCheng" \
-"2-ZaiFuXiangHuang" "2-LongYinWanXiang" "2-HuanShuShi" "2-MoShuShi" "3-ZhongYiWuSheng" "3-ChuFengMingTong" \
+"2-ZaiFuXiangHuang" "2-LongYinWanXiang" "2-HuanShuShi" "2-MoShuShi" "2-JinQuXiYin" "3-ZhongYiWuSheng" "3-ChuFengMingTong" \
 "3-XiaoXiaoJianPan-KZai" "3-YingYongBiaoJiZiGeKa" "3-ShunLeiJiMu" "3-YinXuJianDao" "3-FengDengBaiGu" \
 "4-JieGouGuangShu" "4-WeiJieXuZhuang" "4-HeiYuCanYi" "4-FeiHongZhiShan" "4-LuoXiaZhiShan" "4-CiYiZhiYun"
 do

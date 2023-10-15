@@ -321,6 +321,7 @@ CastingId2MetaInfo = {
     2837: ["2-LongYinWanXiang", "龙吟万象"],
     2616: ["2-HuanShuShi", "幻术师"], 
     2617: ["2-MoShuShi", "魔术师"],
+    4014: ["2-JinQuXiYin", "金躯玺印"],
 
     #2589: ["3-JiXingGuangLun", "先驱I-疾行光轮"],
     #3056: ["3-BingHuangGuiZuo", "冰凰瑰座"],
