@@ -329,7 +329,8 @@ CastingId2MetaInfo = {
     3979: ["3-ChuFengMingTong", "雏凤明瞳"],
     3980: ["3-YinXuJianDao", "银须箭道"],
     3990: ["3-YingYongBiaoJiZiGeKa", "英勇骠骑资格卡"],
-    3997: ["3-ShunLeiJiMu", "瞬雷击木"],
+    #3997: ["3-ShunLeiJiMu", "瞬雷击木"],
+    4027: ["3-FuLeiXiongKai", "附雷胸铠"],
     4019: ["3-FengDengBaiGu", "丰登百谷"],
     3919: ["3-XiaoXiaoJianPan-KZai", "小小键盘-K仔"],
 
