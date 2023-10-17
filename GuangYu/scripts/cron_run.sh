@@ -139,10 +139,6 @@ echo "---落霞纸扇---"
 python grab_transaction_price.py 3987 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 3987 ${yesterday} 100
 
-echo "---黑羽残翼---"
-python grab_transaction_price.py 3669 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 3669 ${yesterday} 50
-
 echo "---瓷艺之韵---"
 python grab_transaction_price.py 3989 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 3989 ${yesterday} 100
@@ -156,7 +152,7 @@ for nft in "1-N-QingKongYuFengZhou" "1-N-MengYouGeLou" "1-N-ChaoNengMoJing" \
 "2-UR-WeiLaiDuShi" "2-UR-YuanYangDuLun" "2-UR-ShiKongChuanSuoJi" "2-UR-YueQiuShangCheng" \
 "2-ZaiFuXiangHuang" "2-LongYinWanXiang" "2-HuanShuShi" "2-MoShuShi" "2-JinQuXiYin" "3-ZhongYiWuSheng" "3-ChuFengMingTong" \
 "3-XiaoXiaoJianPan-KZai" "3-YingYongBiaoJiZiGeKa" "3-FuLeiXiongKai" "3-YinXuJianDao" "3-FengDengBaiGu" \
-"4-JieGouGuangShu" "4-WeiJieXuZhuang" "4-HeiYuCanYi" "4-FeiHongZhiShan" "4-LuoXiaZhiShan" "4-CiYiZhiYun"
+"4-JieGouGuangShu" "4-WeiJieXuZhuang" "4-FeiHongZhiShan" "4-LuoXiaZhiShan" "4-CiYiZhiYun"
 do
     mkdir $nft;mv *$nft*.csv $nft;zip -q $nft-$yesterday $nft/*
 done

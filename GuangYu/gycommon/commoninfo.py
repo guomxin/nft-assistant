@@ -339,7 +339,7 @@ CastingId2MetaInfo = {
     #3733: ["4-ChaoSuChuanDongZhuangZhi", "超速传动装置"],
     3843: ["4-WeiJieXuZhuang", "未解序桩"],
     #3851: ["4-DiHeRongYan", "地核熔岩"], 
-    3669: ["4-HeiYuCanYi", "黑羽残翼"],
+    #3669: ["4-HeiYuCanYi", "黑羽残翼"],
     3988: ["4-FeiHongZhiShan", "飞鸿纸扇"],
     3987: ["4-LuoXiaZhiShan", "落霞纸扇"],
     3989: ["4-CiYiZhiYun", "瓷艺之韵"],
