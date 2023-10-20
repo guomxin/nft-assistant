@@ -333,6 +333,7 @@ CastingId2MetaInfo = {
     #4027: ["3-FuLeiXiongKai", "附雷胸铠"],
     4083: ["3-HuBenZhanXue", "虎贲战靴"],
     4019: ["3-FengDengBaiGu", "丰登百谷"],
+    4127: ["3-YongMengShuBing", "勇猛戍兵"],
     3919: ["3-XiaoXiaoJianPan-KZai", "小小键盘-K仔"],
 
     3818: ["4-JieGouGuangShu", "解构光束"],
