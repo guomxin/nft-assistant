@@ -343,8 +343,8 @@ CastingId2MetaInfo = {
     #3851: ["4-DiHeRongYan", "地核熔岩"], 
     #3669: ["4-HeiYuCanYi", "黑羽残翼"],
     3988: ["4-FeiHongZhiShan", "飞鸿纸扇"],
-    3987: ["4-LuoXiaZhiShan", "落霞纸扇"],
-    3989: ["4-CiYiZhiYun", "瓷艺之韵"],
+    #3987: ["4-LuoXiaZhiShan", "落霞纸扇"],
+    #3989: ["4-CiYiZhiYun", "瓷艺之韵"],
     #3859: ["4-DengLiZiGuangJian", "等离子光剑"],
 }
 
@@ -363,7 +363,7 @@ HighestValue_Products_Info = {
 Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjk1NzkzNjgzLCJzaWduSWQiOiI0NTkyNWI0ZTVkOWE0Njk3YjI3ZjcyODIyZTgyYzc2MyIsImlhdCI6MTY5NTE4ODg4M30.P9gWxutVxCmsKNmfZlDAmItmogKDGwIandyE9K4zC6k"
 
 # 131
-Query_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxMzE1NjE2MTA5MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjk3ODU5MjY5LCJzaWduSWQiOiI0NTE0MWEzMmQzMzk0YmI5OWFjOGM0OThjNDIwY2IxZiIsImlhdCI6MTY5NzI1NDQ2OX0.vdV2DnNve91_yg2V8N3q7lvCFKOKFSq4iuIu45BMhts"
+Query_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxMzE1NjE2MTA5MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjk4NDU4NTg3LCJzaWduSWQiOiI4OGVkZTA0OGEwZjQ0NWI0YTEyNjUyODQwNzlhZjVjMyIsImlhdCI6MTY5Nzg1Mzc4N30.escc9HZT58AamN-XNZdNhYVoyvGVZ_eo9bygCcBQPkI"
 
 GanDart_Headers = {
     "Host": "api2.gandart.com",
