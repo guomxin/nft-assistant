@@ -348,6 +348,8 @@ CastingId2MetaInfo = {
     #3987: ["4-LuoXiaZhiShan", "落霞纸扇"],
     #3989: ["4-CiYiZhiYun", "瓷艺之韵"],
     #3859: ["4-DengLiZiGuangJian", "等离子光剑"],
+
+    4024: ["5-PanYanShengSuo", "磐炎圣所"],    
 }
 
 DEFAULT_MIN_PRICE = 30
