@@ -336,6 +336,7 @@ CastingId2MetaInfo = {
     4127: ["3-YongMengShuBing", "勇猛戍兵"],
     4167: ["3-KuaiHuRen", "刽虎刃"],
     4078: ["3-RuiFengJianLing", "锐锋箭翎"],
+    3981: ["3-YunYuYangFeng", "云羽扬风"],
     3919: ["3-XiaoXiaoJianPan-KZai", "小小键盘-K仔"],
 
     3818: ["4-JieGouGuangShu", "解构光束"],
