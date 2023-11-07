@@ -350,7 +350,9 @@ CastingId2MetaInfo = {
     #3989: ["4-CiYiZhiYun", "瓷艺之韵"],
     #3859: ["4-DengLiZiGuangJian", "等离子光剑"],
 
-    4024: ["5-PanYanShengSuo", "磐炎圣所"],    
+    4024: ["5-PanYanShengSuo", "磐炎圣所"], 
+    3960: ["5-XueYuZhiDu", "雪域之都"],
+    3965: ["5-QiongYuFeiLun", "先驱II-穹域飞轮"],
 }
 
 DEFAULT_MIN_PRICE = 30
