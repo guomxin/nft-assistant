@@ -353,6 +353,8 @@ CastingId2MetaInfo = {
     4024: ["5-PanYanShengSuo", "磐炎圣所"], 
     3960: ["5-XueYuZhiDu", "雪域之都"],
     3965: ["5-QiongYuFeiLun", "先驱II-穹域飞轮"],
+    4067: ["5-ChuangJieShengDian", "创界圣殿"],
+    4250: ["5-ShouHuYiZhi", "守护意志"],
 }
 
 DEFAULT_MIN_PRICE = 30
