@@ -357,6 +357,7 @@ CastingId2MetaInfo = {
     #3965: ["5-QiongYuFeiLun", "先驱II-穹域飞轮"],
     4067: ["5-ChuangJieShengDian", "创界圣殿"],
     4250: ["5-ShouHuYiZhi", "守护意志"],
+    4370: ["5-SanShengHuaXie", "三生花械"],
 }
 
 DEFAULT_MIN_PRICE = 30
@@ -374,7 +375,7 @@ HighestValue_Products_Info = {
 Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjk1NzkzNjgzLCJzaWduSWQiOiI0NTkyNWI0ZTVkOWE0Njk3YjI3ZjcyODIyZTgyYzc2MyIsImlhdCI6MTY5NTE4ODg4M30.P9gWxutVxCmsKNmfZlDAmItmogKDGwIandyE9K4zC6k"
 
 # 131
-Query_Token= "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxMzE1NjE2MTA5MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzAwMjY2MTUzLCJzaWduSWQiOiJhOGI2MTgwNDMxZGQ0NjE1YjQ0OWVmNjlmY2E3MzE0ZCIsImlhdCI6MTY5OTY2MTM1M30.g6U7MFySvM-Y-JRL5-cV2CsTUX3Y6mCXKvxI_w43XZg"
+Query_Token= "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxMzE1NjE2MTA5MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzAwMzg2NzIwLCJzaWduSWQiOiJkM2U3NzgzOGMxOTc0NzcyOTQwNzE5Y2RjZGIwMTVhNCIsImlhdCI6MTY5OTc4MTkyMH0.4iP_MLxiryqZ0yl1nJQjS9HkPQBbTa_821xuWzqpNKI"
 
 GanDart_Headers = {
     "Host": "api2.gandart.com",
