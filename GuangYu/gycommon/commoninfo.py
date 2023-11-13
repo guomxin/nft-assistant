@@ -340,6 +340,7 @@ CastingId2MetaInfo = {
     4078: ["3-RuiFengJianLing", "锐锋箭翎"],
     3981: ["3-YunYuYangFeng", "云羽扬风"],
     4243: ["3-ZhanGuLei", "战鼓擂"],
+    4246: ["3-DongFengChui", "东风吹"],
     #3919: ["3-XiaoXiaoJianPan-KZai", "小小键盘-K仔"],
 
     #3818: ["4-JieGouGuangShu", "解构光束"],
@@ -376,7 +377,7 @@ HighestValue_Products_Info = {
 Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjk1NzkzNjgzLCJzaWduSWQiOiI0NTkyNWI0ZTVkOWE0Njk3YjI3ZjcyODIyZTgyYzc2MyIsImlhdCI6MTY5NTE4ODg4M30.P9gWxutVxCmsKNmfZlDAmItmogKDGwIandyE9K4zC6k"
 
 # 131
-Query_Token= "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxMzE1NjE2MTA5MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzAwMzg2NzIwLCJzaWduSWQiOiJkM2U3NzgzOGMxOTc0NzcyOTQwNzE5Y2RjZGIwMTVhNCIsImlhdCI6MTY5OTc4MTkyMH0.4iP_MLxiryqZ0yl1nJQjS9HkPQBbTa_821xuWzqpNKI"
+Query_Token= "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxMzE1NjE2MTA5MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzAwNDgzNTUwLCJzaWduSWQiOiI1MDc4ZDUwZWQyN2Y0ZDFhYWE1NTdhYTJlNDAxMzI3NCIsImlhdCI6MTY5OTg3ODc1MH0.trC-64yw2P1ZNPom_xnYvum5SW6mI0VUjIvQUMY8lcI"
 
 GanDart_Headers = {
     "Host": "api2.gandart.com",
