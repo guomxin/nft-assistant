@@ -360,6 +360,7 @@ CastingId2MetaInfo = {
     4067: ["5-ChuangJieShengDian", "创界圣殿"],
     4250: ["5-ShouHuYiZhi", "守护意志"],
     4370: ["5-SanShengHuaXie", "三生花械"],
+    4375: ["5-GuangHeChuNengCang", "光合储能仓"],
 }
 
 DEFAULT_MIN_PRICE = 30
