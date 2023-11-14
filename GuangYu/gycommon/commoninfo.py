@@ -361,6 +361,7 @@ CastingId2MetaInfo = {
     4250: ["5-ShouHuYiZhi", "守护意志"],
     4370: ["5-SanShengHuaXie", "三生花械"],
     4375: ["5-GuangHeChuNengCang", "光合储能仓"],
+    4374: ["5-YuZhiGuoShi", "预制果实"],
 }
 
 DEFAULT_MIN_PRICE = 30
