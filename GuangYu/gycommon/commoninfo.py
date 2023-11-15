@@ -340,8 +340,8 @@ CastingId2MetaInfo = {
     4167: ["3-KuaiHuRen", "刽虎刃"],
     4078: ["3-RuiFengJianLing", "锐锋箭翎"],
     3981: ["3-YunYuYangFeng", "云羽扬风"],
-    4243: ["3-ZhanGuLei", "战鼓擂"],
-    4246: ["3-DongFengChui", "东风吹"],
+    #4243: ["3-ZhanGuLei", "战鼓擂"],
+    #4246: ["3-DongFengChui", "东风吹"],
     #3919: ["3-XiaoXiaoJianPan-KZai", "小小键盘-K仔"],
 
     #3818: ["4-JieGouGuangShu", "解构光束"],
@@ -350,7 +350,7 @@ CastingId2MetaInfo = {
     #3843: ["4-WeiJieXuZhuang", "未解序桩"],
     #3851: ["4-DiHeRongYan", "地核熔岩"], 
     #3669: ["4-HeiYuCanYi", "黑羽残翼"],
-    3988: ["4-FeiHongZhiShan", "飞鸿纸扇"],
+    #3988: ["4-FeiHongZhiShan", "飞鸿纸扇"],
     #3987: ["4-LuoXiaZhiShan", "落霞纸扇"],
     #3989: ["4-CiYiZhiYun", "瓷艺之韵"],
     #3859: ["4-DengLiZiGuangJian", "等离子光剑"],
@@ -363,6 +363,7 @@ CastingId2MetaInfo = {
     4370: ["5-SanShengHuaXie", "三生花械"],
     4375: ["5-GuangHeChuNengCang", "光合储能仓"],
     4374: ["5-YuZhiGuoShi", "预制果实"],
+    4393: ["5-WenKongGuoZaiBaoJian", "温控过载保件"],
 }
 
 DEFAULT_MIN_PRICE = 30
