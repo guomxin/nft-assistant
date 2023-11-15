@@ -69,6 +69,10 @@ echo "---大魔幻师---"
 python grab_transaction_price.py 4323 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 4323 ${yesterday} 100
 
+echo "---金莲灵盏---"
+python grab_transaction_price.py 4386 ${yesterday} ${yesterday}
+python analyze_transaction_prices.py 4386 ${yesterday} 50
+
 #--- 三国区 ---#
 echo "---忠义武圣---"
 python grab_transaction_price.py 3982 ${yesterday} ${yesterday}
@@ -145,7 +149,7 @@ cd data;mkdir -p upload/$yesterday;rm -rf upload/$yesterday/*
 cp *$yesterday* upload/$yesterday;cd upload/$yesterday
 
 for nft in "1-N-MengYouGeLou" "1-N-YouLingTianTai" "1-N-ChaoNengMoJing" \
-"1-SR-QuanJiShouTao" "1-SSR-ChaoShanDianCi" "2-UR-ShiKongChuanSuoJi" "2-UR-YueQiuShangCheng" "2-DaMoHuanShi" \
+"1-SR-QuanJiShouTao" "1-SSR-ChaoShanDianCi" "2-UR-ShiKongChuanSuoJi" "2-UR-YueQiuShangCheng" "2-DaMoHuanShi" "2-JinLianLingZhan" \
 "2-ZaiFuXiangHuang" "2-LongYinWanXiang" "2-JinQuXiYin" "3-ZhongYiWuSheng" "3-ChuFengMingTong" "3-ZhanGuLei" "3-DongFengChui" \
 "3-HuBenZhanXue" "3-YinXuJianDao" "3-FengDengBaiGu" "3-YongMengShuBing" "3-KuaiHuRen" "3-RuiFengJianLing" "3-YunYuYangFeng" \
 "4-FeiHongZhiShan" \
