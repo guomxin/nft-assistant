@@ -324,6 +324,7 @@ CastingId2MetaInfo = {
     #2617: ["2-MoShuShi", "魔术师"],
     4014: ["2-JinQuXiYin", "金躯玺印"],
     4386: ["2-JinLianLingZhan", "金莲灵盏"],
+    4384: ["2-YiShouFuTu", "异兽浮图"],
     4323: ["2-DaMoHuanShi", "大魔幻师"],
 
     #2589: ["3-JiXingGuangLun", "先驱I-疾行光轮"],
