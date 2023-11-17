@@ -365,6 +365,7 @@ CastingId2MetaInfo = {
     4375: ["5-GuangHeChuNengCang", "光合储能仓"],
     4374: ["5-YuZhiGuoShi", "预制果实"],
     4393: ["5-WenKongGuoZaiBaoJian", "温控过载保件"],
+    4406: ["5-SanShengLianYi", "三生涟漪"],
 }
 
 DEFAULT_MIN_PRICE = 30
