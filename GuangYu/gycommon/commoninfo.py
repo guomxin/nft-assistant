@@ -362,10 +362,13 @@ CastingId2MetaInfo = {
     4067: ["5-ChuangJieShengDian", "创界圣殿"],
     4250: ["5-ShouHuYiZhi", "守护意志"],
     4370: ["5-SanShengHuaXie", "三生花械"],
-    4375: ["5-GuangHeChuNengCang", "光合储能仓"],
-    4374: ["5-YuZhiGuoShi", "预制果实"],
-    4393: ["5-WenKongGuoZaiBaoJian", "温控过载保件"],
+    #4375: ["5-GuangHeChuNengCang", "光合储能仓"],
+    #4374: ["5-YuZhiGuoShi", "预制果实"],
+    #4393: ["5-WenKongGuoZaiBaoJian", "温控过载保件"],
     4406: ["5-SanShengLianYi", "三生涟漪"],
+    4373: ["5-FangShengPeiYangJi", "仿生培养基"],
+    4404: ["5-NongSuoBuJi", "浓缩补剂"],
+    4414: ["5-YeNengDongChe", "液能动车"],
 }
 
 DEFAULT_MIN_PRICE = 30

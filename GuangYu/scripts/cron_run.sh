@@ -129,21 +129,21 @@ echo "---三生花械---"
 python grab_transaction_price.py 4370 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 4370 ${yesterday} 50
 
-echo "---光合储能仓---"
-python grab_transaction_price.py 4375 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 4375 ${yesterday} 100
-
-echo "---预制果实---"
-python grab_transaction_price.py 4374 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 4374 ${yesterday} 50
-
-echo "---温控过载保件---"
-python grab_transaction_price.py 4393 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 4393 ${yesterday} 50
-
 echo "---三生涟漪---"
 python grab_transaction_price.py 4406 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 4406 ${yesterday} 50
+
+echo "---仿生培养基---"
+python grab_transaction_price.py 4373 ${yesterday} ${yesterday}
+python analyze_transaction_prices.py 4373 ${yesterday} 50
+
+echo "---浓缩补剂---"
+python grab_transaction_price.py 4404 ${yesterday} ${yesterday}
+python analyze_transaction_prices.py 4404 ${yesterday} 100
+
+echo "---液能动车---"
+python grab_transaction_price.py 4414 ${yesterday} ${yesterday}
+python analyze_transaction_prices.py 4414 ${yesterday} 100
 
 #------ 后处理 ------#
 cd data;mkdir -p upload/$yesterday;rm -rf upload/$yesterday/*
@@ -154,7 +154,7 @@ for nft in "1-N-MengYouGeLou" "1-N-YouLingTianTai" "1-N-ChaoNengMoJing" \
 "2-ZaiFuXiangHuang" "2-LongYinWanXiang" "2-JinQuXiYin" "2-YiShouFuTu" \
 "3-ZhongYiWuSheng" "3-ChuFengMingTong" \
 "3-HuBenZhanXue" "3-YinXuJianDao" "3-FengDengBaiGu" "3-YongMengShuBing" "3-KuaiHuRen" "3-RuiFengJianLing" "3-YunYuYangFeng" \
-"5-ChuangJieShengDian" "5-ShouHuYiZhi" "5-SanShengHuaXie" "5-GuangHeChuNengCang" "5-YuZhiGuoShi" "5-WenKongGuoZaiBaoJian" "5-SanShengLianYi"
+"5-ChuangJieShengDian" "5-ShouHuYiZhi" "5-SanShengHuaXie" "5-SanShengLianYi" "5-FangShengPeiYangJi" "5-NongSuoBuJi" "5-YeNengDongChe"
 do
     mkdir $nft;mv *$nft*.csv $nft;zip -q $nft-$yesterday $nft/*
 done
