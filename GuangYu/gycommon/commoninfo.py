@@ -344,6 +344,7 @@ CastingId2MetaInfo = {
     #4243: ["3-ZhanGuLei", "战鼓擂"],
     #4246: ["3-DongFengChui", "东风吹"],
     #3919: ["3-XiaoXiaoJianPan-KZai", "小小键盘-K仔"],
+    4389: ["3-ChongHuoFeiYan", "重火飞檐"],
 
     #3818: ["4-JieGouGuangShu", "解构光束"],
     #3946: ["4-YuanYueHuaDeng", "圆月花灯"],
@@ -369,6 +370,8 @@ CastingId2MetaInfo = {
     4373: ["5-FangShengPeiYangJi", "仿生培养基"],
     4404: ["5-NongSuoBuJi", "浓缩补剂"],
     4414: ["5-YeNengDongChe", "液能动车"],
+    4416: ["5-KeLePenQiBeiBao", "可乐喷气背包"],
+    4430: ["5-XinYangMiCheng", "信仰迷城"],
 }
 
 DEFAULT_MIN_PRICE = 30
