@@ -157,6 +157,15 @@ echo "---信仰迷城---"
 python grab_transaction_price.py 4430 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 4430 ${yesterday} 50
 
+echo "---霓彩风车---"
+python grab_transaction_price.py 4410 ${yesterday} ${yesterday}
+python analyze_transaction_prices.py 4410 ${yesterday} 100
+
+#--- 赛博狂潮 ---#
+echo "---虚实中枢---"
+python grab_transaction_price.py 4443 ${yesterday} ${yesterday}
+python analyze_transaction_prices.py 4443 ${yesterday} 10
+
 #------ 后处理 ------#
 cd data;mkdir -p upload/$yesterday;rm -rf upload/$yesterday/*
 cp *$yesterday* upload/$yesterday;cd upload/$yesterday
@@ -167,7 +176,8 @@ for nft in "1-N-MengYouGeLou" "1-N-YouLingTianTai" "1-N-ChaoNengMoJing" \
 "3-ZhongYiWuSheng" "3-ChuFengMingTong" "3-ChongHuoFeiYan" \
 "3-HuBenZhanXue" "3-YinXuJianDao" "3-FengDengBaiGu" "3-YongMengShuBing" "3-KuaiHuRen" "3-RuiFengJianLing" "3-YunYuYangFeng" \
 "5-ChuangJieShengDian" "5-ShouHuYiZhi" "5-SanShengHuaXie" "5-SanShengLianYi" "5-FangShengPeiYangJi" "5-NongSuoBuJi" "5-YeNengDongChe" \
-"5-KeLePenQiBeiBao" "5-XinYangMiCheng"
+"5-KeLePenQiBeiBao" "5-XinYangMiCheng" "5-NiCaiFengChe" \
+"6-XuShiZhongShu"
 do
     mkdir $nft;mv *$nft*.csv $nft;zip -q $nft-$yesterday $nft/*
 done

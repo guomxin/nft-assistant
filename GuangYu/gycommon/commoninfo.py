@@ -372,6 +372,9 @@ CastingId2MetaInfo = {
     4414: ["5-YeNengDongChe", "液能动车"],
     4416: ["5-KeLePenQiBeiBao", "可乐喷气背包"],
     4430: ["5-XinYangMiCheng", "信仰迷城"],
+    4410: ["5-NiCaiFengChe", "霓彩风车"],
+
+    4443: ["6-XuShiZhongShu", "虚实中枢"],
 }
 
 DEFAULT_MIN_PRICE = 30
@@ -389,7 +392,7 @@ HighestValue_Products_Info = {
 Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjk1NzkzNjgzLCJzaWduSWQiOiI0NTkyNWI0ZTVkOWE0Njk3YjI3ZjcyODIyZTgyYzc2MyIsImlhdCI6MTY5NTE4ODg4M30.P9gWxutVxCmsKNmfZlDAmItmogKDGwIandyE9K4zC6k"
 
 # 131
-Query_Token= "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxMzE1NjE2MTA5MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzAxMzg4NjgyLCJzaWduSWQiOiI3Njk5YzZkNjliZjQ0N2E1OWUwODY5NTA0ZGU5Y2YzMSIsImlhdCI6MTcwMDc4Mzg4Mn0.g1YBXbPnoITtj7Ahp6GS4yqe3zewYHunuOxPa3ODJAw"
+Query_Token= "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxMzE1NjE2MTA5MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzAxNTY3ODA1LCJzaWduSWQiOiI0OTlkMWU1ZTVhNzI0Nzg3YmQzZDIyN2RkNjhkNzIxZSIsImlhdCI6MTcwMDk2MzAwNX0.hQDO15Eb6wT1Lta6zufpEIzAidw6GwLod1qnEmKKoWk"
 
 GanDart_Headers = {
     "Host": "api2.gandart.com",
