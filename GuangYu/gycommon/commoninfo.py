@@ -370,11 +370,14 @@ CastingId2MetaInfo = {
     4373: ["5-FangShengPeiYangJi", "仿生培养基"],
     4404: ["5-NongSuoBuJi", "浓缩补剂"],
     4414: ["5-YeNengDongChe", "液能动车"],
-    4416: ["5-KeLePenQiBeiBao", "可乐喷气背包"],
+    #4416: ["5-KeLePenQiBeiBao", "可乐喷气背包"],
     4430: ["5-XinYangMiCheng", "信仰迷城"],
     4410: ["5-NiCaiFengChe", "霓彩风车"],
+    4397: ["5-CongZhongCiMei", "丛中刺玫"],
+    4417: ["5-BingShuangLengQueXiTong", "冰霜冷却系统"],
 
     4443: ["6-XuShiZhongShu", "虚实中枢"],
+    4448: ["6-XuNiLiRen", "虚拟利刃"],
 }
 
 DEFAULT_MIN_PRICE = 30
