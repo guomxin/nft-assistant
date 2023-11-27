@@ -375,9 +375,11 @@ CastingId2MetaInfo = {
     4410: ["5-NiCaiFengChe", "霓彩风车"],
     4397: ["5-CongZhongCiMei", "丛中刺玫"],
     4417: ["5-BingShuangLengQueXiTong", "冰霜冷却系统"],
+    4425: ["5-JiGuangLunGu", "极光轮毂"],
 
     4443: ["6-XuShiZhongShu", "虚实中枢"],
     4448: ["6-XuNiLiRen", "虚拟利刃"],
+    4451: ["6-GaoNengMaiChongBuQiang", "高能脉冲步枪"],
 }
 
 DEFAULT_MIN_PRICE = 30
