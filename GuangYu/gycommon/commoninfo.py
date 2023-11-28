@@ -376,6 +376,8 @@ CastingId2MetaInfo = {
     4397: ["5-CongZhongCiMei", "丛中刺玫"],
     4417: ["5-BingShuangLengQueXiTong", "冰霜冷却系统"],
     4425: ["5-JiGuangLunGu", "极光轮毂"],
+    4444: ["5-ChaoZaiKuaiChongZhan", "超载快充站"],
+    4442: ["5-DuoWeiCuoZhiHongQiao", "多维错致虹桥"],
 
     4443: ["6-XuShiZhongShu", "虚实中枢"],
     4448: ["6-XuNiLiRen", "虚拟利刃"],
