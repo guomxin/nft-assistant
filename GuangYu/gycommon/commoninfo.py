@@ -382,6 +382,7 @@ CastingId2MetaInfo = {
     4443: ["6-XuShiZhongShu", "虚实中枢"],
     4448: ["6-XuNiLiRen", "虚拟利刃"],
     4451: ["6-GaoNengMaiChongBuQiang", "高能脉冲步枪"],
+    4456: ["6-BianXieShiChaJian", "便携式插件"],
 }
 
 DEFAULT_MIN_PRICE = 30
