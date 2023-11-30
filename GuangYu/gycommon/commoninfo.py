@@ -378,11 +378,14 @@ CastingId2MetaInfo = {
     4425: ["5-JiGuangLunGu", "极光轮毂"],
     4444: ["5-ChaoZaiKuaiChongZhan", "超载快充站"],
     4442: ["5-DuoWeiCuoZhiHongQiao", "多维错致虹桥"],
+    4453: ["5-LiuHongFengFan", "流虹风帆"],
+    4454: ["5-QianJuanHuaJia", "缱卷花驾"],
 
     4443: ["6-XuShiZhongShu", "虚实中枢"],
-    4448: ["6-XuNiLiRen", "虚拟利刃"],
-    4451: ["6-GaoNengMaiChongBuQiang", "高能脉冲步枪"],
+    #4448: ["6-XuNiLiRen", "虚拟利刃"],
+    #4451: ["6-GaoNengMaiChongBuQiang", "高能脉冲步枪"],
     4456: ["6-BianXieShiChaJian", "便携式插件"],
+    4457: ["6-CODR-MaiChongShouQiang", "CODR-脉冲手枪"],
 }
 
 DEFAULT_MIN_PRICE = 30
@@ -400,7 +403,7 @@ HighestValue_Products_Info = {
 Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjk1NzkzNjgzLCJzaWduSWQiOiI0NTkyNWI0ZTVkOWE0Njk3YjI3ZjcyODIyZTgyYzc2MyIsImlhdCI6MTY5NTE4ODg4M30.P9gWxutVxCmsKNmfZlDAmItmogKDGwIandyE9K4zC6k"
 
 # 131
-Query_Token= "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxMzE1NjE2MTA5MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzAxNTY3ODA1LCJzaWduSWQiOiI0OTlkMWU1ZTVhNzI0Nzg3YmQzZDIyN2RkNjhkNzIxZSIsImlhdCI6MTcwMDk2MzAwNX0.hQDO15Eb6wT1Lta6zufpEIzAidw6GwLod1qnEmKKoWk"
+Query_Token= "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxMzE1NjE2MTA5MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzAxOTA3MzcxLCJzaWduSWQiOiI2MTc4NzRhZWRiOWQ0ZmM4OGRjOTY4NDVmOTAxMTg0NiIsImlhdCI6MTcwMTMwMjU3MX0.3nyGlPKuRRPSpU9z89RHDzCXKuXPx-tNCgVMyvHkN74"
 
 GanDart_Headers = {
     "Host": "api2.gandart.com",
