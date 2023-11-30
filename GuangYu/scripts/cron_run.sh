@@ -141,9 +141,9 @@ echo "---仿生培养基---"
 python grab_transaction_price.py 4373 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 4373 ${yesterday} 50
 
-echo "---浓缩补剂---"
-python grab_transaction_price.py 4404 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 4404 ${yesterday} 100
+echo "---梦马奇缘---"
+python grab_transaction_price.py 4450 ${yesterday} ${yesterday}
+python analyze_transaction_prices.py 4450 ${yesterday} 100
 
 echo "---液能动车---"
 python grab_transaction_price.py 4414 ${yesterday} ${yesterday}
@@ -198,6 +198,10 @@ echo "---CODR-脉冲手枪---"
 python grab_transaction_price.py 4457 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 4457 ${yesterday} 50
 
+echo "---免疫抑制剂---"
+python grab_transaction_price.py 4459 ${yesterday} ${yesterday}
+python analyze_transaction_prices.py 4459 ${yesterday} 50
+
 #------ 后处理 ------#
 cd data;mkdir -p upload/$yesterday;rm -rf upload/$yesterday/*
 cp *$yesterday* upload/$yesterday;cd upload/$yesterday
@@ -207,10 +211,10 @@ for nft in "1-N-MengYouGeLou" "1-N-YouLingTianTai" "1-N-ChaoNengMoJing" \
 "2-ZaiFuXiangHuang" "2-LongYinWanXiang" "2-JinQuXiYin" "2-YiShouFuTu" \
 "3-ZhongYiWuSheng" "3-ChuFengMingTong" "3-ChongHuoFeiYan" \
 "3-HuBenZhanXue" "3-YinXuJianDao" "3-FengDengBaiGu" "3-YongMengShuBing" "3-KuaiHuRen" "3-RuiFengJianLing" "3-YunYuYangFeng" \
-"5-ChuangJieShengDian" "5-ShouHuYiZhi" "5-SanShengHuaXie" "5-SanShengLianYi" "5-FangShengPeiYangJi" "5-NongSuoBuJi" "5-YeNengDongChe" \
+"5-ChuangJieShengDian" "5-ShouHuYiZhi" "5-SanShengHuaXie" "5-SanShengLianYi" "5-FangShengPeiYangJi" "5-MengMaQiYuan" "5-YeNengDongChe" \
 "5-XinYangMiCheng" "5-NiCaiFengChe" "5-CongZhongCiMei" "5-BingShuangLengQueXiTong" "5-JiGuangLunGu" "5-ChaoZaiKuaiChongZhan" "5-DuoWeiCuoZhiHongQiao" \
 "5-LiuHongFengFan" "5-QianJuanHuaJia" \
-"6-XuShiZhongShu" "6-BianXieShiChaJian" "6-CODR-MaiChongShouQiang"
+"6-XuShiZhongShu" "6-BianXieShiChaJian" "6-CODR-MaiChongShouQiang" "6-MianYiYiZhiJi"
 do
     mkdir $nft;mv *$nft*.csv $nft;zip -q $nft-$yesterday $nft/*
 done
