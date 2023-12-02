@@ -366,7 +366,7 @@ CastingId2MetaInfo = {
     #4375: ["5-GuangHeChuNengCang", "光合储能仓"],
     #4374: ["5-YuZhiGuoShi", "预制果实"],
     #4393: ["5-WenKongGuoZaiBaoJian", "温控过载保件"],
-    4406: ["5-SanShengLianYi", "三生涟漪"],
+    #4406: ["5-SanShengLianYi", "三生涟漪"],
     4373: ["5-FangShengPeiYangJi", "仿生培养基"],
     #4404: ["5-NongSuoBuJi", "浓缩补剂"],
     4414: ["5-YeNengDongChe", "液能动车"],
@@ -377,7 +377,7 @@ CastingId2MetaInfo = {
     4417: ["5-BingShuangLengQueXiTong", "冰霜冷却系统"],
     4425: ["5-JiGuangLunGu", "极光轮毂"],
     4444: ["5-ChaoZaiKuaiChongZhan", "超载快充站"],
-    4442: ["5-DuoWeiCuoZhiHongQiao", "多维错致虹桥"],
+    #4442: ["5-DuoWeiCuoZhiHongQiao", "多维错致虹桥"],
     4453: ["5-LiuHongFengFan", "流虹风帆"],
     4454: ["5-QianJuanHuaJia", "缱卷花驾"],
     4450: ["5-MengMaQiYuan", "梦马奇缘"],
@@ -388,6 +388,7 @@ CastingId2MetaInfo = {
     4456: ["6-BianXieShiChaJian", "便携式插件"],
     4457: ["6-CODR-MaiChongShouQiang", "CODR-脉冲手枪"],
     4459: ["6-MianYiYiZhiJi", "免疫抑制剂"],
+    4460: ["6-HaiKeWeiGongYi", "骇客微工椅"],
 }
 
 DEFAULT_MIN_PRICE = 30
