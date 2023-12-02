@@ -206,6 +206,10 @@ echo "---骇客微工椅---"
 python grab_transaction_price.py 4460 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 4460 ${yesterday} 50
 
+echo "---外置控制终端---"
+python grab_transaction_price.py 4468 ${yesterday} ${yesterday}
+python analyze_transaction_prices.py 4468 ${yesterday} 50
+
 #------ 后处理 ------#
 cd data;mkdir -p upload/$yesterday;rm -rf upload/$yesterday/*
 cp *$yesterday* upload/$yesterday;cd upload/$yesterday
@@ -218,7 +222,7 @@ for nft in "1-N-MengYouGeLou" "1-N-YouLingTianTai" "1-N-ChaoNengMoJing" \
 "5-ChuangJieShengDian" "5-ShouHuYiZhi" "5-SanShengHuaXie"  "5-FangShengPeiYangJi" "5-MengMaQiYuan" "5-YeNengDongChe" \
 "5-XinYangMiCheng" "5-NiCaiFengChe" "5-CongZhongCiMei" "5-BingShuangLengQueXiTong" "5-JiGuangLunGu" "5-ChaoZaiKuaiChongZhan" \
 "5-LiuHongFengFan" "5-QianJuanHuaJia" \
-"6-XuShiZhongShu" "6-BianXieShiChaJian" "6-CODR-MaiChongShouQiang" "6-MianYiYiZhiJi" "6-HaiKeWeiGongYi"
+"6-XuShiZhongShu" "6-BianXieShiChaJian" "6-CODR-MaiChongShouQiang" "6-MianYiYiZhiJi" "6-HaiKeWeiGongYi" "6-WaiZhiKongZhiZhongDuan"
 do
     mkdir $nft;mv *$nft*.csv $nft;zip -q $nft-$yesterday $nft/*
 done

@@ -389,6 +389,7 @@ CastingId2MetaInfo = {
     4457: ["6-CODR-MaiChongShouQiang", "CODR-脉冲手枪"],
     4459: ["6-MianYiYiZhiJi", "免疫抑制剂"],
     4460: ["6-HaiKeWeiGongYi", "骇客微工椅"],
+    4468: ["6-WaiZhiKongZhiZhongDuan", "外置控制终端"],
 }
 
 DEFAULT_MIN_PRICE = 30
