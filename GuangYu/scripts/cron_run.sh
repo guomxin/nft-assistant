@@ -145,9 +145,9 @@ echo "---梦马奇缘---"
 python grab_transaction_price.py 4450 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 4450 ${yesterday} 100
 
-echo "---液能动车---"
-python grab_transaction_price.py 4414 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 4414 ${yesterday} 100
+echo "---晶光胶囊---"
+python grab_transaction_price.py 4455 ${yesterday} ${yesterday}
+python analyze_transaction_prices.py 4455 ${yesterday} 50
 
 echo "---信仰迷城---"
 python grab_transaction_price.py 4430 ${yesterday} ${yesterday}
@@ -210,6 +210,10 @@ echo "---外置控制终端---"
 python grab_transaction_price.py 4468 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 4468 ${yesterday} 50
 
+echo "---移速增幅靴---"
+python grab_transaction_price.py 4469 ${yesterday} ${yesterday}
+python analyze_transaction_prices.py 4469 ${yesterday} 50
+
 #------ 后处理 ------#
 cd data;mkdir -p upload/$yesterday;rm -rf upload/$yesterday/*
 cp *$yesterday* upload/$yesterday;cd upload/$yesterday
@@ -219,10 +223,10 @@ for nft in "1-N-MengYouGeLou" "1-N-YouLingTianTai" "1-N-ChaoNengMoJing" \
 "2-ZaiFuXiangHuang" "2-LongYinWanXiang" "2-JinQuXiYin" "2-YiShouFuTu" \
 "3-ZhongYiWuSheng" "3-ChuFengMingTong" "3-ChongHuoFeiYan" \
 "3-HuBenZhanXue" "3-YinXuJianDao" "3-FengDengBaiGu" "3-YongMengShuBing" "3-KuaiHuRen" "3-RuiFengJianLing" "3-YunYuYangFeng" \
-"5-ChuangJieShengDian" "5-ShouHuYiZhi" "5-SanShengHuaXie"  "5-FangShengPeiYangJi" "5-MengMaQiYuan" "5-YeNengDongChe" \
+"5-ChuangJieShengDian" "5-ShouHuYiZhi" "5-SanShengHuaXie"  "5-FangShengPeiYangJi" "5-MengMaQiYuan" "5-JingGuangJiaoNang" \
 "5-XinYangMiCheng" "5-NiCaiFengChe" "5-CongZhongCiMei" "5-BingShuangLengQueXiTong" "5-JiGuangLunGu" "5-ChaoZaiKuaiChongZhan" \
 "5-LiuHongFengFan" "5-QianJuanHuaJia" \
-"6-XuShiZhongShu" "6-BianXieShiChaJian" "6-CODR-MaiChongShouQiang" "6-MianYiYiZhiJi" "6-HaiKeWeiGongYi" "6-WaiZhiKongZhiZhongDuan"
+"6-XuShiZhongShu" "6-BianXieShiChaJian" "6-CODR-MaiChongShouQiang" "6-MianYiYiZhiJi" "6-HaiKeWeiGongYi" "6-WaiZhiKongZhiZhongDuan" "6-YiSuZengFuXue"
 do
     mkdir $nft;mv *$nft*.csv $nft;zip -q $nft-$yesterday $nft/*
 done

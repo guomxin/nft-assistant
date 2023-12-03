@@ -369,7 +369,7 @@ CastingId2MetaInfo = {
     #4406: ["5-SanShengLianYi", "三生涟漪"],
     4373: ["5-FangShengPeiYangJi", "仿生培养基"],
     #4404: ["5-NongSuoBuJi", "浓缩补剂"],
-    4414: ["5-YeNengDongChe", "液能动车"],
+    #4414: ["5-YeNengDongChe", "液能动车"],
     #4416: ["5-KeLePenQiBeiBao", "可乐喷气背包"],
     4430: ["5-XinYangMiCheng", "信仰迷城"],
     4410: ["5-NiCaiFengChe", "霓彩风车"],
@@ -381,6 +381,7 @@ CastingId2MetaInfo = {
     4453: ["5-LiuHongFengFan", "流虹风帆"],
     4454: ["5-QianJuanHuaJia", "缱卷花驾"],
     4450: ["5-MengMaQiYuan", "梦马奇缘"],
+    4455: ["5-JingGuangJiaoNang", "晶光胶囊"],
 
     4443: ["6-XuShiZhongShu", "虚实中枢"],
     #4448: ["6-XuNiLiRen", "虚拟利刃"],
@@ -390,6 +391,7 @@ CastingId2MetaInfo = {
     4459: ["6-MianYiYiZhiJi", "免疫抑制剂"],
     4460: ["6-HaiKeWeiGongYi", "骇客微工椅"],
     4468: ["6-WaiZhiKongZhiZhongDuan", "外置控制终端"],
+    4469: ["6-YiSuZengFuXue", "移速增幅靴"],
 }
 
 DEFAULT_MIN_PRICE = 30
