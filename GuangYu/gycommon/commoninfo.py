@@ -362,7 +362,7 @@ CastingId2MetaInfo = {
     #3965: ["5-QiongYuFeiLun", "先驱II-穹域飞轮"],
     4067: ["5-ChuangJieShengDian", "创界圣殿"],
     4250: ["5-ShouHuYiZhi", "守护意志"],
-    4370: ["5-SanShengHuaXie", "三生花械"],
+    #4370: ["5-SanShengHuaXie", "三生花械"],
     #4375: ["5-GuangHeChuNengCang", "光合储能仓"],
     #4374: ["5-YuZhiGuoShi", "预制果实"],
     #4393: ["5-WenKongGuoZaiBaoJian", "温控过载保件"],
@@ -382,6 +382,7 @@ CastingId2MetaInfo = {
     4454: ["5-QianJuanHuaJia", "缱卷花驾"],
     4450: ["5-MengMaQiYuan", "梦马奇缘"],
     4455: ["5-JingGuangJiaoNang", "晶光胶囊"],
+    4479: ["5-HuoFengTouKui", "火风头盔"],
 
     4443: ["6-XuShiZhongShu", "虚实中枢"],
     #4448: ["6-XuNiLiRen", "虚拟利刃"],
@@ -392,6 +393,7 @@ CastingId2MetaInfo = {
     4460: ["6-HaiKeWeiGongYi", "骇客微工椅"],
     4468: ["6-WaiZhiKongZhiZhongDuan", "外置控制终端"],
     4469: ["6-YiSuZengFuXue", "移速增幅靴"],
+    4482: ["6-BuYingHeiKe", "捕影黑客"],
 }
 
 DEFAULT_MIN_PRICE = 30
