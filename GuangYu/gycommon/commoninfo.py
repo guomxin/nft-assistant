@@ -383,6 +383,10 @@ CastingId2MetaInfo = {
     4450: ["5-MengMaQiYuan", "梦马奇缘"],
     4455: ["5-JingGuangJiaoNang", "晶光胶囊"],
     4479: ["5-HuoFengTouKui", "火风头盔"],
+    4483: ["5-JuanHuaZhiZhan", "镌花之盏"],
+    4470: ["5-JiangCaiYingQuan", "绛彩映泉"],
+    4471: ["5-CiGanDianChi", "磁感电池"],
+    4420: ["5-ZhiReKuangZaoYinQing", "炙热狂躁引擎"],
 
     4443: ["6-XuShiZhongShu", "虚实中枢"],
     #4448: ["6-XuNiLiRen", "虚拟利刃"],
