@@ -389,7 +389,8 @@ CastingId2MetaInfo = {
     4420: ["5-ZhiReKuangZaoYinQing", "炙热狂躁引擎"],
     4494: ["5-LieYanZhuangXia", "烈焰装匣"],
     4475: ["5-ShiGuangHuaPu", "时光花谱"],
-    -1: ["5-YeDanJuNengGuan", "液氮聚能罐"],
+    4493: ["5-YeDanJuNengGuan", "液氮聚能罐"],
+    4458: ["5-XiangRiKuiJiNengZhuangZhi", "向日葵汲能装置"],
 
     4443: ["6-XuShiZhongShu", "虚实中枢"],
     #4448: ["6-XuNiLiRen", "虚拟利刃"],
@@ -401,6 +402,7 @@ CastingId2MetaInfo = {
     4468: ["6-WaiZhiKongZhiZhongDuan", "外置控制终端"],
     4469: ["6-YiSuZengFuXue", "移速增幅靴"],
     4482: ["6-BuYingHeiKe", "捕影黑客"],
+    4496: ["6-JunGongHuMuJing", "军工护目镜"],
 }
 
 DEFAULT_MIN_PRICE = 30
