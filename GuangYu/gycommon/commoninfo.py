@@ -403,6 +403,7 @@ CastingId2MetaInfo = {
     4469: ["6-YiSuZengFuXue", "移速增幅靴"],
     4482: ["6-BuYingHeiKe", "捕影黑客"],
     4496: ["6-JunGongHuMuJing", "军工护目镜"],
+    4515: ["6-ShuGuangPuJiZhan", "殊光谱基站"],
 }
 
 DEFAULT_MIN_PRICE = 30
