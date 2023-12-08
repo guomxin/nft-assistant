@@ -392,18 +392,19 @@ CastingId2MetaInfo = {
     4493: ["5-YeDanJuNengGuan", "液氮聚能罐"],
     4458: ["5-XiangRiKuiJiNengZhuangZhi", "向日葵汲能装置"],
 
-    4443: ["6-XuShiZhongShu", "虚实中枢"],
+    #4443: ["6-XuShiZhongShu", "虚实中枢"],
     #4448: ["6-XuNiLiRen", "虚拟利刃"],
     #4451: ["6-GaoNengMaiChongBuQiang", "高能脉冲步枪"],
     4456: ["6-BianXieShiChaJian", "便携式插件"],
-    4457: ["6-CODR-MaiChongShouQiang", "CODR-脉冲手枪"],
-    4459: ["6-MianYiYiZhiJi", "免疫抑制剂"],
-    4460: ["6-HaiKeWeiGongYi", "骇客微工椅"],
+    #4457: ["6-CODR-MaiChongShouQiang", "CODR-脉冲手枪"],
+    #4459: ["6-MianYiYiZhiJi", "免疫抑制剂"],
+    #4460: ["6-HaiKeWeiGongYi", "骇客微工椅"],
     4468: ["6-WaiZhiKongZhiZhongDuan", "外置控制终端"],
     4469: ["6-YiSuZengFuXue", "移速增幅靴"],
     4482: ["6-BuYingHeiKe", "捕影黑客"],
     4496: ["6-JunGongHuMuJing", "军工护目镜"],
     4515: ["6-ShuGuangPuJiZhan", "殊光谱基站"],
+    4514: ["6-KongJianTiDai", "空间提袋"],
 }
 
 DEFAULT_MIN_PRICE = 30
