@@ -407,6 +407,14 @@ CastingId2MetaInfo = {
     4496: ["6-JunGongHuMuJing", "军工护目镜"],
     4515: ["6-ShuGuangPuJiZhan", "殊光谱基站"],
     4514: ["6-KongJianTiDai", "空间提袋"],
+
+    3998: ["7-XiangSuQiJing", "像素奇晶"],
+    3544: ["7-TanXianZheIV", "探险者IV"],
+    3527: ["7-XunBaoZheI", "寻宝者I"],
+    4421: ["7-GongYunXiaoShao","公允啸哨"],
+    2742: ["7-HuanCaiGuBao", "幻彩菇堡"],
+    4381: ["7-FangBiaoZhiShiDeng", "芳标指示灯"],
+    3977: ["7-YeGuWangCheng", "邺菇王城"],
 }
 
 DEFAULT_MIN_PRICE = 30
