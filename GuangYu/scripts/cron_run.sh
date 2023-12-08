@@ -173,10 +173,6 @@ echo "---多维错致虹桥---"
 python grab_transaction_price.py 4442 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 4442 ${yesterday} 50
 
-echo "---流虹风帆---"
-python grab_transaction_price.py 4453 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 4453 ${yesterday} 50
-
 echo "---缱卷花驾---"
 python grab_transaction_price.py 4454 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 4454 ${yesterday} 50
@@ -204,10 +200,6 @@ python analyze_transaction_prices.py 4420 ${yesterday} 50
 echo "---烈焰装匣---"
 python grab_transaction_price.py 4494 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 4494 ${yesterday} 50
-
-echo "---时光花谱---"
-python grab_transaction_price.py 4475 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 4475 ${yesterday} 100
 
 echo "---液氮聚能罐---"
 python grab_transaction_price.py 4493 ${yesterday} ${yesterday}
@@ -269,8 +261,8 @@ for nft in "1-N-MengYouGeLou" "1-N-YouLingTianTai" "1-N-ChaoNengMoJing" \
 "3-HuBenZhanXue" "3-YinXuJianDao" "3-FengDengBaiGu" "3-YongMengShuBing" "3-KuaiHuRen" "3-RuiFengJianLing" "3-YunYuYangFeng" \
 "5-ChuangJieShengDian" "5-ShouHuYiZhi" "5-HuoFengTouKui" "5-FangShengPeiYangJi" "5-MengMaQiYuan" "5-JingGuangJiaoNang" \
 "5-XinYangMiCheng" "5-NiCaiFengChe" "5-CongZhongCiMei" "5-BingShuangLengQueXiTong" "5-JiGuangLunGu" "5-ChaoZaiKuaiChongZhan" \
-"5-LiuHongFengFan" "5-QianJuanHuaJia" "5-JuanHuaZhiZhan" "5-JiangCaiYingQuan" "5-CiGanDianChi" "5-ZhiReKuangZaoYinQing" \
-"5-LieYanZhuangXia" "5-ShiGuangHuaPu" "5-YeDanJuNengGuan" "5-XiangRiKuiJiNengZhuangZhi" \
+"5-QianJuanHuaJia" "5-JuanHuaZhiZhan" "5-JiangCaiYingQuan" "5-CiGanDianChi" "5-ZhiReKuangZaoYinQing" \
+"5-LieYanZhuangXia" "5-YeDanJuNengGuan" "5-XiangRiKuiJiNengZhuangZhi" \
 "6-XuShiZhongShu" "6-BianXieShiChaJian" "6-CODR-MaiChongShouQiang" "6-MianYiYiZhiJi" "6-HaiKeWeiGongYi" "6-WaiZhiKongZhiZhongDuan" \
 "6-YiSuZengFuXue" "6-BuYingHeiKe" "6-JunGongHuMuJing" "6-ShuGuangPuJiZhan"
 do
