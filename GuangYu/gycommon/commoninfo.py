@@ -403,9 +403,10 @@ CastingId2MetaInfo = {
     4468: ["6-WaiZhiKongZhiZhongDuan", "外置控制终端"],
     4469: ["6-YiSuZengFuXue", "移速增幅靴"],
     4482: ["6-BuYingHeiKe", "捕影黑客"],
-    4496: ["6-JunGongHuMuJing", "军工护目镜"],
+    #4496: ["6-JunGongHuMuJing", "军工护目镜"],
     4515: ["6-ShuGuangPuJiZhan", "殊光谱基站"],
     #4514: ["6-KongJianTiDai", "空间提袋"],
+    4562: ["6-ZhengZhaoJiJia", "征召机甲"],
 
     3998: ["7-XiangSuQiJing", "像素奇晶"],
     3544: ["7-TanXianZheIV", "探险者IV"],
