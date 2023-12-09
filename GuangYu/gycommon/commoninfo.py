@@ -376,10 +376,8 @@ CastingId2MetaInfo = {
     4397: ["5-CongZhongCiMei", "丛中刺玫"],
     4417: ["5-BingShuangLengQueXiTong", "冰霜冷却系统"],
     4425: ["5-JiGuangLunGu", "极光轮毂"],
-    4444: ["5-ChaoZaiKuaiChongZhan", "超载快充站"],
     #4442: ["5-DuoWeiCuoZhiHongQiao", "多维错致虹桥"],
     #4453: ["5-LiuHongFengFan", "流虹风帆"],
-    4454: ["5-QianJuanHuaJia", "缱卷花驾"],
     4450: ["5-MengMaQiYuan", "梦马奇缘"],
     4455: ["5-JingGuangJiaoNang", "晶光胶囊"],
     4479: ["5-HuoFengTouKui", "火风头盔"],
@@ -387,12 +385,13 @@ CastingId2MetaInfo = {
     4470: ["5-JiangCaiYingQuan", "绛彩映泉"],
     4471: ["5-CiGanDianChi", "磁感电池"],
     4420: ["5-ZhiReKuangZaoYinQing", "炙热狂躁引擎"],
-    4494: ["5-LieYanZhuangXia", "烈焰装匣"],
+    #4494: ["5-LieYanZhuangXia", "烈焰装匣"],
     #4475: ["5-ShiGuangHuaPu", "时光花谱"],
     4493: ["5-YeDanJuNengGuan", "液氮聚能罐"],
     4458: ["5-XiangRiKuiJiNengZhuangZhi", "向日葵汲能装置"],
     4502: ["5-CiNengXuanFuBan", "磁能悬浮板"],
     4481: ["5-ShenYuJiangCi", "神谕降赐"],
+    4500: ["5-LiuGuangYouShi", "流光邮匙"],
 
     #4443: ["6-XuShiZhongShu", "虚实中枢"],
     #4448: ["6-XuNiLiRen", "虚拟利刃"],
@@ -415,6 +414,10 @@ CastingId2MetaInfo = {
     2742: ["7-HuanCaiGuBao", "幻彩菇堡"],
     4381: ["7-FangBiaoZhiShiDeng", "芳标指示灯"],
     3977: ["7-YeGuWangCheng", "邺菇王城"],
+
+    4444: ["8-ChaoZaiKuaiChongZhan", "超载快充站"], 
+    4454: ["8-QianJuanHuaJia", "缱卷花驾"],
+    4149: ["8-XiaoXiaoJianPan-LZai", "小小键盘-L仔"],
 }
 
 DEFAULT_MIN_PRICE = 30
