@@ -230,6 +230,14 @@ echo "---多功能腕表---"
 python grab_transaction_price.py 4556 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 4556 ${yesterday} 50
 
+echo "---全息终端仪---"
+python grab_transaction_price.py 4560 ${yesterday} ${yesterday}
+python analyze_transaction_prices.py 4560 ${yesterday} 100
+
+echo "---移动战略能源---"
+python grab_transaction_price.py 4532 ${yesterday} ${yesterday}
+python analyze_transaction_prices.py 4532 ${yesterday} 50
+
 #--- 探险区 ---#
 echo "---像素奇晶---"
 python grab_transaction_price.py 3998 ${yesterday} ${yesterday}
@@ -285,8 +293,8 @@ for nft in "1-N-MengYouGeLou" "1-N-YouLingTianTai" "1-N-ChaoNengMoJing" \
 "5-XinYangMiCheng" "5-NiCaiFengChe" "5-CongZhongCiMei" "5-BingShuangLengQueXiTong" "5-JiGuangLunGu" \
 "5-JuanHuaZhiZhan" "5-JiangCaiYingQuan" "5-CiGanDianChi" "5-ZhiReKuangZaoYinQing" \
 "5-YeDanJuNengGuan" "5-XiangRiKuiJiNengZhuangZhi" "5-CiNengXuanFuBan" "5-ShenYuJiangCi" "5-LiuGuangYouShi" \
-"6-BianXieShiChaJian" "6-WaiZhiKongZhiZhongDuan" "6-YiSuZengFuXue" "6-BuYingHeiKe" "6-JunGongHuMuJing" "6-ShuGuangPuJiZhan" \
-"6-ZhengZhaoJiJia" "6-DuoGongNengWanBiao" \
+"6-BianXieShiChaJian" "6-WaiZhiKongZhiZhongDuan" "6-YiSuZengFuXue" "6-BuYingHeiKe" "6-ShuGuangPuJiZhan" \
+"6-ZhengZhaoJiJia" "6-DuoGongNengWanBiao" "6-QuanXiZhongDuanYi" "6-YiDongZhanLueNengYuan" \
 "7-XiangSuQiJing" "7-TanXianZheIV" "7-XunBaoZheI" "7-GongYunXiaoShao" "7-HuanCaiGuBao" "7-FangBiaoZhiShiDeng" "7-YeGuWangCheng" \
 "8-ChaoZaiKuaiChongZhan" "8-QianJuanHuaJia" "8-XiaoXiaoJianPan-LZai"
 do

@@ -408,6 +408,8 @@ CastingId2MetaInfo = {
     #4514: ["6-KongJianTiDai", "空间提袋"],
     4562: ["6-ZhengZhaoJiJia", "征召机甲"],
     4556: ["6-DuoGongNengWanBiao", "多功能腕表"],
+    4560: ["6-QuanXiZhongDuanYi", "全息终端仪"],
+    4532: ["6-YiDongZhanLueNengYuan", "移动战略能源"],
 
     3998: ["7-XiangSuQiJing", "像素奇晶"],
     3544: ["7-TanXianZheIV", "探险者IV"],
