@@ -419,9 +419,11 @@ CastingId2MetaInfo = {
     4444: ["8-ChaoZaiKuaiChongZhan", "超载快充站"], 
     4454: ["8-QianJuanHuaJia", "缱卷花驾"],
     4149: ["8-XiaoXiaoJianPan-LZai", "小小键盘-L仔"],
+
+    3840: ["88-PaoYingHuiMengQiang", "泡影绘梦枪"],
 }
 
-DEFAULT_MIN_PRICE = 30
+DEFAULT_MIN_PRICE = 0
 
 Transaction_Logs_File_Name = "_guangyu_{}_trans_logs.csv"
 
@@ -433,7 +435,7 @@ HighestValue_Products_Info = {
 }
 
 # 173
-Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjk1NzkzNjgzLCJzaWduSWQiOiI0NTkyNWI0ZTVkOWE0Njk3YjI3ZjcyODIyZTgyYzc2MyIsImlhdCI6MTY5NTE4ODg4M30.P9gWxutVxCmsKNmfZlDAmItmogKDGwIandyE9K4zC6k"
+Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzAyODg5MzQ1LCJzaWduSWQiOiI4MTUwMDRlYTE0NDk0OTUwOTk2MjliMTIxNjZkMzM3NyIsImlhdCI6MTcwMjI4NDU0NX0.KdQHC8skrTMOogu2dyLuSR25JVKZLVps1gYDjYAk1QA"
 
 # 131
 Query_Token= "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxMzE1NjE2MTA5MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzAyNzMzMDczLCJzaWduSWQiOiJkYzZjNDRlNzcxNGU0MzlmOWU5ODAxODMzMmY2NTg2MiIsImlhdCI6MTcwMjEyODI3M30.GvvpLAqswkMaICUv1tAGNWIIG765cmgB-QwNi6_4AQk"

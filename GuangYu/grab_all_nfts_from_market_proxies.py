@@ -40,8 +40,8 @@ TRANS_STATUS_INDEX = 4
 
 Proxies_List = [
     [{
-    "http": "http://7408150:se3cvgbh@114.215.140.117:16816/",
-    "https": "http://7408150:se3cvgbh@114.215.140.117:16816/"
+    "http": "http://7408150:se3cvgbh@121.41.11.179:16817/",
+    "https": "http://7408150:se3cvgbh@121.41.11.179:16817/"
     }, 0.15],
 ]
 
