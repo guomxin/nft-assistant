@@ -392,6 +392,7 @@ CastingId2MetaInfo = {
     4502: ["5-CiNengXuanFuBan", "磁能悬浮板"],
     4481: ["5-ShenYuJiangCi", "神谕降赐"],
     4500: ["5-LiuGuangYouShi", "流光邮匙"],
+    4484: ["5-ShuangHuaYanHuo", "双华烟火"],
 
     #4443: ["6-XuShiZhongShu", "虚实中枢"],
     #4448: ["6-XuNiLiRen", "虚拟利刃"],
