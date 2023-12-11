@@ -402,7 +402,7 @@ CastingId2MetaInfo = {
     #4459: ["6-MianYiYiZhiJi", "免疫抑制剂"],
     #4460: ["6-HaiKeWeiGongYi", "骇客微工椅"],
     4468: ["6-WaiZhiKongZhiZhongDuan", "外置控制终端"],
-    4469: ["6-YiSuZengFuXue", "移速增幅靴"],
+    4469: ["6-YiSuZengFuXue", "移速增幅靴"], #*
     4482: ["6-BuYingHeiKe", "捕影黑客"],
     #4496: ["6-JunGongHuMuJing", "军工护目镜"],
     4515: ["6-ShuGuangPuJiZhan", "殊光谱基站"],
@@ -411,6 +411,7 @@ CastingId2MetaInfo = {
     4556: ["6-DuoGongNengWanBiao", "多功能腕表"],
     4560: ["6-QuanXiZhongDuanYi", "全息终端仪"],
     4532: ["6-YiDongZhanLueNengYuan", "移动战略能源"],
+    4575: ["6-DianCiYuanJian", "电磁元件"],
 
     3998: ["7-XiangSuQiJing", "像素奇晶"],
     3544: ["7-TanXianZheIV", "探险者IV"],
