@@ -421,9 +421,10 @@ CastingId2MetaInfo = {
     4381: ["7-FangBiaoZhiShiDeng", "芳标指示灯"],
     3977: ["7-YeGuWangCheng", "邺菇王城"],
 
-    4444: ["8-ChaoZaiKuaiChongZhan", "超载快充站"], 
+    4444: ["8-ChaoZaiKuaiChongZhan", "超载快充站"], #*
     4454: ["8-QianJuanHuaJia", "缱卷花驾"],
     4149: ["8-XiaoXiaoJianPan-LZai", "小小键盘-L仔"],
+    4569: ["8-HuanXiaoQuQi", "欢笑曲奇"],
 
     3840: ["88-PaoYingHuiMengQiang", "泡影绘梦枪"],
 }
