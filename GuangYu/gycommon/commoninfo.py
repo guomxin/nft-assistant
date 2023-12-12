@@ -378,11 +378,11 @@ CastingId2MetaInfo = {
     4425: ["5-JiGuangLunGu", "极光轮毂"],
     #4442: ["5-DuoWeiCuoZhiHongQiao", "多维错致虹桥"],
     #4453: ["5-LiuHongFengFan", "流虹风帆"],
-    4450: ["5-MengMaQiYuan", "梦马奇缘"],
+    4450: ["5-MengMaQiYuan", "梦马奇缘"], #*
     4455: ["5-JingGuangJiaoNang", "晶光胶囊"],
     4479: ["5-HuoFengTouKui", "火风头盔"],
     4483: ["5-JuanHuaZhiZhan", "镌花之盏"],
-    4470: ["5-JiangCaiYingQuan", "绛彩映泉"],
+    4470: ["5-JiangCaiYingQuan", "绛彩映泉"], #*
     4471: ["5-CiGanDianChi", "磁感电池"],
     4420: ["5-ZhiReKuangZaoYinQing", "炙热狂躁引擎"],
     #4494: ["5-LieYanZhuangXia", "烈焰装匣"],
@@ -394,6 +394,7 @@ CastingId2MetaInfo = {
     4500: ["5-LiuGuangYouShi", "流光邮匙"],
     4484: ["5-ShuangHuaYanHuo", "双华烟火"],
     4499: ["5-HeiQiaoJiXieCheng", "黑巧机械城"],
+    4473: ["5-WeiDuSheXiangJi", "维度摄像机"],
 
     #4443: ["6-XuShiZhongShu", "虚实中枢"],
     #4448: ["6-XuNiLiRen", "虚拟利刃"],
