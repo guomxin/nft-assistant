@@ -133,10 +133,6 @@ echo "---仿生培养基---"
 python grab_transaction_price.py 4373 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 4373 ${yesterday} 50
 
-echo "---梦马奇缘---"
-python grab_transaction_price.py 4450 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 4450 ${yesterday} 100
-
 echo "---晶光胶囊---"
 python grab_transaction_price.py 4455 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 4455 ${yesterday} 50
@@ -164,10 +160,6 @@ python analyze_transaction_prices.py 4479 ${yesterday} 50
 echo "---镌花之盏---"
 python grab_transaction_price.py 4483 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 4483 ${yesterday} 50
-
-echo "---绛彩映泉---"
-python grab_transaction_price.py 4470 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 4470 ${yesterday} 50
 
 echo "---磁感电池---"
 python grab_transaction_price.py 4471 ${yesterday} ${yesterday}
@@ -220,6 +212,10 @@ python analyze_transaction_prices.py 4576 ${yesterday} 50
 echo "---知更花期---"
 python grab_transaction_price.py 4552 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 4552 ${yesterday} 50
+
+echo "---液能防御塔---"
+python grab_transaction_price.py 4559 ${yesterday} ${yesterday}
+python analyze_transaction_prices.py 4559 ${yesterday} 50
 
 #--- 赛博狂潮 ---#
 echo "---便携式插件---"
@@ -309,11 +305,11 @@ for nft in "1-N-MengYouGeLou" "1-N-YouLingTianTai" "1-N-ChaoNengMoJing" \
 "2-ZaiFuXiangHuang" "2-LongYinWanXiang" "2-JinQuXiYin" "2-YiShouFuTu" \
 "3-ZhongYiWuSheng" "3-ChuFengMingTong" "3-ChongHuoFeiYan" \
 "3-HuBenZhanXue" "3-YinXuJianDao" "3-FengDengBaiGu" "3-YongMengShuBing" "3-KuaiHuRen" "3-RuiFengJianLing" "3-YunYuYangFeng" \
-"5-ChuangJieShengDian" "5-ShouHuYiZhi" "5-HuoFengTouKui" "5-FangShengPeiYangJi" "5-MengMaQiYuan" "5-JingGuangJiaoNang" \
+"5-ChuangJieShengDian" "5-ShouHuYiZhi" "5-HuoFengTouKui" "5-FangShengPeiYangJi" "5-JingGuangJiaoNang" \
 "5-XinYangMiCheng" "5-CongZhongCiMei" "5-BingShuangLengQueXiTong" "5-JiGuangLunGu" "5-HeiQiaoJiXieCheng" "5-WeiDuSheXiangJi" \
-"5-JuanHuaZhiZhan" "5-JiangCaiYingQuan" "5-CiGanDianChi" "5-ZhiReKuangZaoYinQing" "5-ShuangHuaYanHuo" \
+"5-JuanHuaZhiZhan" "5-CiGanDianChi" "5-ZhiReKuangZaoYinQing" "5-ShuangHuaYanHuo" \
 "5-YeDanJuNengGuan" "5-XiangRiKuiJiNengZhuangZhi" "5-CiNengXuanFuBan" "5-ShenYuJiangCi" "5-LiuGuangYouShi" \
-"5-CanShuGuoZhi" "5-CangQiongYinDeng" "5-ZhiGengHuaQi" \
+"5-CanShuGuoZhi" "5-CangQiongYinDeng" "5-ZhiGengHuaQi" "5-YeNengFangYuTa" \
 "6-BianXieShiChaJian" "6-WaiZhiKongZhiZhongDuan" "6-BuYingHeiKe" "6-ShuGuangPuJiZhan" \
 "6-ZhengZhaoJiJia" "6-DuoGongNengWanBiao" "6-QuanXiZhongDuanYi" "6-YiDongZhanLueNengYuan" "6-DianCiYuanJian" \
 "7-XiangSuQiJing" "7-TanXianZheIV" "7-XunBaoZheI" "7-GongYunXiaoShao" "7-HuanCaiGuBao" "7-FangBiaoZhiShiDeng" "7-YeGuWangCheng" \
