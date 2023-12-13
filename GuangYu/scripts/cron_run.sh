@@ -296,6 +296,10 @@ echo "---欢笑曲奇---"
 python grab_transaction_price.py 4569 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 4569 ${yesterday} 50
 
+echo "---花漾旅包---"
+python grab_transaction_price.py 4570 ${yesterday} ${yesterday}
+python analyze_transaction_prices.py 4570 ${yesterday} 50
+
 #------ 后处理 ------#
 cd data;mkdir -p upload/$yesterday;rm -rf upload/$yesterday/*
 cp *$yesterday* upload/$yesterday;cd upload/$yesterday
@@ -313,7 +317,7 @@ for nft in "1-N-MengYouGeLou" "1-N-YouLingTianTai" "1-N-ChaoNengMoJing" \
 "6-BianXieShiChaJian" "6-WaiZhiKongZhiZhongDuan" "6-BuYingHeiKe" "6-ShuGuangPuJiZhan" \
 "6-ZhengZhaoJiJia" "6-DuoGongNengWanBiao" "6-QuanXiZhongDuanYi" "6-YiDongZhanLueNengYuan" "6-DianCiYuanJian" \
 "7-XiangSuQiJing" "7-TanXianZheIV" "7-XunBaoZheI" "7-GongYunXiaoShao" "7-HuanCaiGuBao" "7-FangBiaoZhiShiDeng" "7-YeGuWangCheng" \
-"8-QianJuanHuaJia" "8-XiaoXiaoJianPan-LZai" "8-HuanXiaoQuQi"
+"8-QianJuanHuaJia" "8-XiaoXiaoJianPan-LZai" "8-HuanXiaoQuQi" "8-HuaYangLvBao"
 do
     mkdir $nft;mv *$nft*.csv $nft;zip -q $nft-$yesterday $nft/*
 done

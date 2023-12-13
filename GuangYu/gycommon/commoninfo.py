@@ -431,6 +431,7 @@ CastingId2MetaInfo = {
     4454: ["8-QianJuanHuaJia", "缱卷花驾"],
     4149: ["8-XiaoXiaoJianPan-LZai", "小小键盘-L仔"],
     4569: ["8-HuanXiaoQuQi", "欢笑曲奇"],
+    4570: ["8-HuaYangLvBao", "花漾旅包"],
 
     3840: ["88-PaoYingHuiMengQiang", "泡影绘梦枪"],
 }
