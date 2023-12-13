@@ -395,6 +395,9 @@ CastingId2MetaInfo = {
     4484: ["5-ShuangHuaYanHuo", "双华烟火"],
     4499: ["5-HeiQiaoJiXieCheng", "黑巧机械城"],
     4473: ["5-WeiDuSheXiangJi", "维度摄像机"],
+    4446: ["5-CanShuGuoZhi", "参数果汁"],
+    4576: ["5-CangQiongYinDeng", "苍穹引灯"],
+    4552: ["5-ZhiGengHuaQi", "知更花期"],
 
     #4443: ["6-XuShiZhongShu", "虚实中枢"],
     #4448: ["6-XuNiLiRen", "虚拟利刃"],
