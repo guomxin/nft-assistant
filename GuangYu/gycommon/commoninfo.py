@@ -400,6 +400,7 @@ CastingId2MetaInfo = {
     4552: ["5-ZhiGengHuaQi", "知更花期"],
     4559: ["5-YeNengFangYuTa", "液能防御塔"],
     4574: ["5-CaiTangMengLeYuan", "彩糖梦乐园"],
+    4589: ["5-ShengJingZhiMen", "圣境之门"],
 
     #4443: ["6-XuShiZhongShu", "虚实中枢"],
     #4448: ["6-XuNiLiRen", "虚拟利刃"],
