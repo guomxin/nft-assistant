@@ -121,14 +121,6 @@ python analyze_transaction_prices.py 4389 ${yesterday} 50
 #--- 推荐区 ---#
 
 #--- 万象之界 ---#
-echo "---创界圣殿---"
-python grab_transaction_price.py 4067 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 4067 ${yesterday} 100
-
-echo "---守护意志---"
-python grab_transaction_price.py 4250 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 4250 ${yesterday} 100
-
 echo "---仿生培养基---"
 python grab_transaction_price.py 4373 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 4373 ${yesterday} 50
@@ -242,10 +234,6 @@ echo "---多功能腕表---"
 python grab_transaction_price.py 4556 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 4556 ${yesterday} 50
 
-echo "---全息终端仪---"
-python grab_transaction_price.py 4560 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 4560 ${yesterday} 100
-
 echo "---移动战略能源---"
 python grab_transaction_price.py 4532 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 4532 ${yesterday} 50
@@ -309,13 +297,13 @@ for nft in "1-N-MengYouGeLou" "1-N-YouLingTianTai" "1-N-ChaoNengMoJing" \
 "2-ZaiFuXiangHuang" "2-LongYinWanXiang" "2-JinQuXiYin" "2-YiShouFuTu" \
 "3-ZhongYiWuSheng" "3-ChuFengMingTong" "3-ChongHuoFeiYan" \
 "3-HuBenZhanXue" "3-YinXuJianDao" "3-FengDengBaiGu" "3-YongMengShuBing" "3-KuaiHuRen" "3-RuiFengJianLing" "3-YunYuYangFeng" \
-"5-ChuangJieShengDian" "5-ShouHuYiZhi" "5-HuoFengTouKui" "5-FangShengPeiYangJi" "5-JingGuangJiaoNang" \
+"5-HuoFengTouKui" "5-FangShengPeiYangJi" "5-JingGuangJiaoNang" \
 "5-XinYangMiCheng" "5-CongZhongCiMei" "5-BingShuangLengQueXiTong" "5-JiGuangLunGu" "5-HeiQiaoJiXieCheng" "5-WeiDuSheXiangJi" \
 "5-JuanHuaZhiZhan" "5-CiGanDianChi" "5-ZhiReKuangZaoYinQing" "5-ShuangHuaYanHuo" \
 "5-YeDanJuNengGuan" "5-XiangRiKuiJiNengZhuangZhi" "5-CiNengXuanFuBan" "5-ShenYuJiangCi" "5-LiuGuangYouShi" \
 "5-CanShuGuoZhi" "5-CangQiongYinDeng" "5-ZhiGengHuaQi" "5-YeNengFangYuTa" \
 "6-BianXieShiChaJian" "6-WaiZhiKongZhiZhongDuan" "6-BuYingHeiKe" "6-ShuGuangPuJiZhan" \
-"6-ZhengZhaoJiJia" "6-DuoGongNengWanBiao" "6-QuanXiZhongDuanYi" "6-YiDongZhanLueNengYuan" "6-DianCiYuanJian" \
+"6-ZhengZhaoJiJia" "6-DuoGongNengWanBiao" "6-YiDongZhanLueNengYuan" "6-DianCiYuanJian" \
 "7-XiangSuQiJing" "7-TanXianZheIV" "7-XunBaoZheI" "7-GongYunXiaoShao" "7-HuanCaiGuBao" "7-FangBiaoZhiShiDeng" "7-YeGuWangCheng" \
 "8-QianJuanHuaJia" "8-XiaoXiaoJianPan-LZai" "8-HuanXiaoQuQi" "8-HuaYangLvBao"
 do
