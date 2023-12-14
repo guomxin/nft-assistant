@@ -388,7 +388,7 @@ CastingId2MetaInfo = {
     #4494: ["5-LieYanZhuangXia", "烈焰装匣"],
     #4475: ["5-ShiGuangHuaPu", "时光花谱"],
     4493: ["5-YeDanJuNengGuan", "液氮聚能罐"],
-    4458: ["5-XiangRiKuiJiNengZhuangZhi", "向日葵汲能装置"],
+    4458: ["5-XiangRiKuiJiNengZhuangZhi", "向日葵汲能装置"],#*
     4502: ["5-CiNengXuanFuBan", "磁能悬浮板"],
     4481: ["5-ShenYuJiangCi", "神谕降赐"],
     4500: ["5-LiuGuangYouShi", "流光邮匙"],
@@ -418,12 +418,13 @@ CastingId2MetaInfo = {
     #4560: ["6-QuanXiZhongDuanYi", "全息终端仪"],
     4532: ["6-YiDongZhanLueNengYuan", "移动战略能源"],
     4575: ["6-DianCiYuanJian", "电磁元件"],
+    4567: ["6-YiDongChaoSuanJi", "移动超算机"],
 
     3998: ["7-XiangSuQiJing", "像素奇晶"],
     3544: ["7-TanXianZheIV", "探险者IV"],
     3527: ["7-XunBaoZheI", "寻宝者I"],
     4421: ["7-GongYunXiaoShao","公允啸哨"],
-    2742: ["7-HuanCaiGuBao", "幻彩菇堡"],
+    #2742: ["7-HuanCaiGuBao", "幻彩菇堡"],
     4381: ["7-FangBiaoZhiShiDeng", "芳标指示灯"],
     3977: ["7-YeGuWangCheng", "邺菇王城"],
 
@@ -431,7 +432,8 @@ CastingId2MetaInfo = {
     4454: ["8-QianJuanHuaJia", "缱卷花驾"],
     4149: ["8-XiaoXiaoJianPan-LZai", "小小键盘-L仔"],
     4569: ["8-HuanXiaoQuQi", "欢笑曲奇"],
-    4570: ["8-HuaYangLvBao", "花漾旅包"],
+    4570: ["8-HuaYangLvBao", "花漾旅包"], #*
+    4606: ["8-XiaoXiaoJianPan-DZai", "小小键盘-D仔"],
 
     3840: ["88-PaoYingHuiMengQiang", "泡影绘梦枪"],
 }
@@ -451,7 +453,7 @@ HighestValue_Products_Info = {
 Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzAyOTY3MTYyLCJzaWduSWQiOiJmOTFjN2NlMDljMGM0Njg5YWRiYjUxNTI2Y2MwNGM2ZSIsImlhdCI6MTcwMjM2MjM2Mn0.b3xRZ_Fg-eSemn7A1UXSActtZkQBDiGnH4-M2jlvOkE"
 
 # 131
-Query_Token= "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxMzE1NjE2MTA5MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzAyNzMzMDczLCJzaWduSWQiOiJkYzZjNDRlNzcxNGU0MzlmOWU5ODAxODMzMmY2NTg2MiIsImlhdCI6MTcwMjEyODI3M30.GvvpLAqswkMaICUv1tAGNWIIG765cmgB-QwNi6_4AQk"
+Query_Token= "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxMzE1NjE2MTA5MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzAzMTUwOTM1LCJzaWduSWQiOiI3ZTI3ZWIxNDM0YmY0ZDM4YjQxZjgxYTY3Njg2OGYzNSIsImlhdCI6MTcwMjU0NjEzNX0.csgqa2VqvKEFDOnCbif-fvDnbhE6DVYrxTGLv60y78k"
 
 GanDart_Headers = {
     "Host": "api2.gandart.com",
