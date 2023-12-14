@@ -399,6 +399,7 @@ CastingId2MetaInfo = {
     4576: ["5-CangQiongYinDeng", "苍穹引灯"],
     4552: ["5-ZhiGengHuaQi", "知更花期"],
     4559: ["5-YeNengFangYuTa", "液能防御塔"],
+    4574: ["5-CaiTangMengLeYuan", "彩糖梦乐园"],
 
     #4443: ["6-XuShiZhongShu", "虚实中枢"],
     #4448: ["6-XuNiLiRen", "虚拟利刃"],
@@ -419,6 +420,7 @@ CastingId2MetaInfo = {
     4532: ["6-YiDongZhanLueNengYuan", "移动战略能源"],
     4575: ["6-DianCiYuanJian", "电磁元件"],
     4567: ["6-YiDongChaoSuanJi", "移动超算机"],
+    4620: ["6-KuangChaoXunZhuZhe", "狂潮巡逐者"],
 
     3998: ["7-XiangSuQiJing", "像素奇晶"],
     3544: ["7-TanXianZheIV", "探险者IV"],
