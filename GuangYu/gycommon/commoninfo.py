@@ -388,7 +388,7 @@ CastingId2MetaInfo = {
     #4494: ["5-LieYanZhuangXia", "烈焰装匣"],
     #4475: ["5-ShiGuangHuaPu", "时光花谱"],
     4493: ["5-YeDanJuNengGuan", "液氮聚能罐"],
-    4458: ["5-XiangRiKuiJiNengZhuangZhi", "向日葵汲能装置"],#*
+    #4458: ["5-XiangRiKuiJiNengZhuangZhi", "向日葵汲能装置"],#*
     4502: ["5-CiNengXuanFuBan", "磁能悬浮板"],
     4481: ["5-ShenYuJiangCi", "神谕降赐"],
     4500: ["5-LiuGuangYouShi", "流光邮匙"],
@@ -422,6 +422,7 @@ CastingId2MetaInfo = {
     4575: ["6-DianCiYuanJian", "电磁元件"],
     4567: ["6-YiDongChaoSuanJi", "移动超算机"],
     4620: ["6-KuangChaoXunZhuZhe", "狂潮巡逐者"],
+    4478: ["6-XianGuangZhiYing", "弦光之鹰"],
 
     3998: ["7-XiangSuQiJing", "像素奇晶"],
     3544: ["7-TanXianZheIV", "探险者IV"],
@@ -435,10 +436,8 @@ CastingId2MetaInfo = {
     4454: ["8-QianJuanHuaJia", "缱卷花驾"],
     4149: ["8-XiaoXiaoJianPan-LZai", "小小键盘-L仔"],
     4569: ["8-HuanXiaoQuQi", "欢笑曲奇"],
-    4570: ["8-HuaYangLvBao", "花漾旅包"], #*
+    #4570: ["8-HuaYangLvBao", "花漾旅包"], #*
     4606: ["8-XiaoXiaoJianPan-DZai", "小小键盘-D仔"],
-
-    3840: ["88-PaoYingHuiMengQiang", "泡影绘梦枪"],
 }
 
 DEFAULT_MIN_PRICE = 0
