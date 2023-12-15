@@ -313,6 +313,8 @@ CastingId2MetaInfo = {
     #2457: ["1-SSR-MoDengZhongXin", "摩登中心"],
     #2466: ["1-SSR-ZhongGuiTieDao", "重轨铁道"],
     3550: ["1-SSR-ChaoShanDianCi", "超闪电磁"],
+    4629: ["1-WeiGuangFeiTan", "微光飞毯"],
+    4630: ["1-ShuGuangLuJian", "曙光陆舰"],
 
     #2456: ["2-UR-WeiLaiDuShi", "未来都市"],
     #2468: ["2-UR-YuanYangDuLun", "远洋渡轮"],
@@ -401,6 +403,7 @@ CastingId2MetaInfo = {
     4559: ["5-YeNengFangYuTa", "液能防御塔"],
     4574: ["5-CaiTangMengLeYuan", "彩糖梦乐园"],
     4589: ["5-ShengJingZhiMen", "圣境之门"],
+    4558: ["5-QiFuZhiChui", "祈福之槌"],
 
     #4443: ["6-XuShiZhongShu", "虚实中枢"],
     #4448: ["6-XuNiLiRen", "虚拟利刃"],
