@@ -425,7 +425,7 @@ CastingId2MetaInfo = {
     4575: ["6-DianCiYuanJian", "电磁元件"],
     4567: ["6-YiDongChaoSuanJi", "移动超算机"],
     4620: ["6-KuangChaoXunZhuZhe", "狂潮巡逐者"],
-    4478: ["6-XianGuangZhiYing", "弦光之鹰"],
+    #4478: ["6-XianGuangZhiYing", "弦光之鹰"],
 
     3998: ["7-XiangSuQiJing", "像素奇晶"],
     3544: ["7-TanXianZheIV", "探险者IV"],
