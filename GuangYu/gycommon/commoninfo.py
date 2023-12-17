@@ -442,6 +442,7 @@ CastingId2MetaInfo = {
     4515: ["9-ShuGuangPuJiZhan", "殊光谱基站"],
     4562: ["9-ZhengZhaoJiJia", "征召机甲"],
     4620: ["9-KuangChaoXunZhuZhe", "狂潮巡逐者"],
+    4642: ["9-TanSuoYuanShi", "探索原石"],
 }
 
 DEFAULT_MIN_PRICE = 0
@@ -456,7 +457,7 @@ HighestValue_Products_Info = {
 }
 
 # 173
-Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzAyOTY3MTYyLCJzaWduSWQiOiJmOTFjN2NlMDljMGM0Njg5YWRiYjUxNTI2Y2MwNGM2ZSIsImlhdCI6MTcwMjM2MjM2Mn0.b3xRZ_Fg-eSemn7A1UXSActtZkQBDiGnH4-M2jlvOkE"
+Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzAzNDIxMDQ0LCJzaWduSWQiOiJiOGZiZDU5ZmYwOWQ0MDUxYTI3ODU3ODliMDM3YmY4ZiIsImlhdCI6MTcwMjgxNjI0NH0.lnDGympwE2TDaf_r8H3It_-Wu723ixB8s-u3x8-tRvU"
 
 # 131
 Query_Token= "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxMzE1NjE2MTA5MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzAzMzI5MzU2LCJzaWduSWQiOiI3OWYyZDFhYzZjMTM0YmQ0YTk4NDJjMGNlNDMwN2FiMCIsImlhdCI6MTcwMjcyNDU1Nn0.UETweX3LxVF88zLC2dPfBXTTQmzY2aSRb4vK8lCK3eQ"
