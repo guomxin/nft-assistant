@@ -405,6 +405,7 @@ CastingId2MetaInfo = {
     4589: ["5-ShengJingZhiMen", "圣境之门"],
     4558: ["5-QiFuZhiChui", "祈福之槌"],
     4605: ["5-JingLianZengChanQi", "精炼增产器"],
+    4628: ["5-PingAnQiShiSuiPian", "平安启示碎片"],
 
     #4443: ["6-XuShiZhongShu", "虚实中枢"],
     #4448: ["6-XuNiLiRen", "虚拟利刃"],
@@ -459,7 +460,7 @@ HighestValue_Products_Info = {
 }
 
 # 173
-Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzAzNDIxMDQ0LCJzaWduSWQiOiJiOGZiZDU5ZmYwOWQ0MDUxYTI3ODU3ODliMDM3YmY4ZiIsImlhdCI6MTcwMjgxNjI0NH0.lnDGympwE2TDaf_r8H3It_-Wu723ixB8s-u3x8-tRvU"
+Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzAzNDkxNjY2LCJzaWduSWQiOiJiMTYzZDZmMWRjNDI0ZTRlYTNiY2I2YTM1NGExZDI2MiIsImlhdCI6MTcwMjg4Njg2Nn0.aFNUWCdy3YYQU8koOCHGaOzrdb6k2613YmvcY6EXy1Y"
 
 # 131
 Query_Token= "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxMzE1NjE2MTA5MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzAzMzI5MzU2LCJzaWduSWQiOiI3OWYyZDFhYzZjMTM0YmQ0YTk4NDJjMGNlNDMwN2FiMCIsImlhdCI6MTcwMjcyNDU1Nn0.UETweX3LxVF88zLC2dPfBXTTQmzY2aSRb4vK8lCK3eQ"
