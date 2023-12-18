@@ -417,7 +417,7 @@ CastingId2MetaInfo = {
     4482: ["6-BuYingHeiKe", "捕影黑客"],
     #4496: ["6-JunGongHuMuJing", "军工护目镜"],
     #4514: ["6-KongJianTiDai", "空间提袋"],
-    4556: ["6-DuoGongNengWanBiao", "多功能腕表"], #*
+    #4556: ["6-DuoGongNengWanBiao", "多功能腕表"], #*
     #4560: ["6-QuanXiZhongDuanYi", "全息终端仪"],
     4532: ["6-YiDongZhanLueNengYuan", "移动战略能源"],
     4575: ["6-DianCiYuanJian", "电磁元件"],
@@ -438,6 +438,7 @@ CastingId2MetaInfo = {
     4569: ["8-HuanXiaoQuQi", "欢笑曲奇"],
     #4570: ["8-HuaYangLvBao", "花漾旅包"], #*
     4606: ["8-XiaoXiaoJianPan-DZai", "小小键盘-D仔"],
+    4644: ["8-ShengDanSongGe", "圣诞颂歌"],
 
     4515: ["9-ShuGuangPuJiZhan", "殊光谱基站"],
     4562: ["9-ZhengZhaoJiJia", "征召机甲"],
