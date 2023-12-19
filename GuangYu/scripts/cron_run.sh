@@ -73,10 +73,6 @@ echo "---金躯玺印---"
 python grab_transaction_price.py 4014 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 4014 ${yesterday} 500
 
-echo "---大魔幻师---"
-python grab_transaction_price.py 4323 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 4323 ${yesterday} 100
-
 echo "---金莲灵盏---"
 python grab_transaction_price.py 4386 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 4386 ${yesterday} 50
@@ -84,6 +80,15 @@ python analyze_transaction_prices.py 4386 ${yesterday} 50
 echo "---异兽浮图---"
 python grab_transaction_price.py 4384 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 4384 ${yesterday} 100
+
+#--- 未归类 ---#
+echo "---大魔幻师---"
+python grab_transaction_price.py 4323 ${yesterday} ${yesterday}
+python analyze_transaction_prices.py 4323 ${yesterday} 100
+
+echo "---九重天外天---"
+python grab_transaction_price.py 4607 ${yesterday} ${yesterday}
+python analyze_transaction_prices.py 4607 ${yesterday} 100
 
 #--- 三国区 ---#
 echo "---忠义武圣---"
@@ -258,6 +263,10 @@ echo "---移动超算机---"
 python grab_transaction_price.py 4567 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 4567 ${yesterday} 10
 
+echo "---激光放射器---"
+python grab_transaction_price.py 4645 ${yesterday} ${yesterday}
+python analyze_transaction_prices.py 4645 ${yesterday} 50
+
 #--- 探险区 ---#
 echo "---像素奇晶---"
 python grab_transaction_price.py 3998 ${yesterday} ${yesterday}
@@ -328,7 +337,7 @@ cp *$yesterday* upload/$yesterday;cd upload/$yesterday
 for nft in "1-N-MengYouGeLou" "1-N-YouLingTianTai" "1-N-ChaoNengMoJing" \
 "1-SR-QuanJiShouTao" "1-SSR-ChaoShanDianCi" "1-WeiGuangFeiTan" "1-ShuGuangLuJian" \
 "2-UR-ShiKongChuanSuoJi" "2-UR-YueQiuShangCheng" "2-DaMoHuanShi" "2-JinLianLingZhan" \
-"2-ZaiFuXiangHuang" "2-LongYinWanXiang" "2-JinQuXiYin" "2-YiShouFuTu" \
+"2-ZaiFuXiangHuang" "2-LongYinWanXiang" "2-JinQuXiYin" "2-YiShouFuTu" "2-JiuChongTianWaiTian" \
 "3-ZhongYiWuSheng" "3-ChuFengMingTong" "3-ChongHuoFeiYan" \
 "3-HuBenZhanXue" "3-YinXuJianDao" "3-FengDengBaiGu" "3-YongMengShuBing" "3-KuaiHuRen" "3-RuiFengJianLing" "3-YunYuYangFeng" \
 "5-HuoFengTouKui" "5-FangShengPeiYangJi" "5-JingGuangJiaoNang" "5-ShengJingZhiMen" "5-QiFuZhiChui" "5-JingLianZengChanQi" \
@@ -336,7 +345,7 @@ for nft in "1-N-MengYouGeLou" "1-N-YouLingTianTai" "1-N-ChaoNengMoJing" \
 "5-JuanHuaZhiZhan" "5-CiGanDianChi" "5-ZhiReKuangZaoYinQing" "5-ShuangHuaYanHuo" "5-CaiTangMengLeYuan" "5-PingAnQiShiSuiPian" \
 "5-YeDanJuNengGuan" "5-CiNengXuanFuBan" "5-ShenYuJiangCi" "5-LiuGuangYouShi" \
 "5-CanShuGuoZhi" "5-CangQiongYinDeng" "5-ZhiGengHuaQi" "5-YeNengFangYuTa" \
-"6-BianXieShiChaJian" "6-WaiZhiKongZhiZhongDuan" "6-BuYingHeiKe" \
+"6-BianXieShiChaJian" "6-WaiZhiKongZhiZhongDuan" "6-BuYingHeiKe" "6-JiGuangFangSheQi" \
 "6-YiDongZhanLueNengYuan" "6-DianCiYuanJian" "6-YiDongChaoSuanJi" \
 "7-XiangSuQiJing" "7-TanXianZheIV" "7-XunBaoZheI" "7-GongYunXiaoShao" "7-FangBiaoZhiShiDeng" "7-YeGuWangCheng" \
 "8-QianJuanHuaJia" "8-XiaoXiaoJianPan-LZai" "8-HuanXiaoQuQi" "8-XiaoXiaoJianPan-DZai" "8-ShengDanSongGe" \
