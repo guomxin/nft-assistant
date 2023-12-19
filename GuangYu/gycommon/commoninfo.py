@@ -444,8 +444,9 @@ CastingId2MetaInfo = {
     #4570: ["8-HuaYangLvBao", "花漾旅包"], #*
     4606: ["8-XiaoXiaoJianPan-DZai", "小小键盘-D仔"],
     4644: ["8-ShengDanSongGe", "圣诞颂歌"],
+    4572: ["8-MoZhongLeYuan", "蘑钟乐园"],
 
-    4515: ["9-ShuGuangPuJiZhan", "殊光谱基站"],
+    4515: ["9-ShuGuangPuJiZhan", "殊光谱基站"], #*
     4562: ["9-ZhengZhaoJiJia", "征召机甲"],
     4620: ["9-KuangChaoXunZhuZhe", "狂潮巡逐者"],
     4642: ["9-TanSuoYuanShi", "探索原石"],
