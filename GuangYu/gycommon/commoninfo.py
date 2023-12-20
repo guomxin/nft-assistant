@@ -409,6 +409,7 @@ CastingId2MetaInfo = {
     4628: ["5-PingAnQiShiSuiPian", "平安启示碎片"],
     4646: ["5-XueYangLingYin", "雪漾铃音"],
     4652: ["5-ChenXiZhiAn", "晨曦之黯"],
+    4658: ["5-ZhiKongJiXieHuShou", "智控机械护手"],
 
     #4443: ["6-XuShiZhongShu", "虚实中枢"],
     #4448: ["6-XuNiLiRen", "虚拟利刃"],
@@ -425,10 +426,11 @@ CastingId2MetaInfo = {
     #4556: ["6-DuoGongNengWanBiao", "多功能腕表"], #*
     #4560: ["6-QuanXiZhongDuanYi", "全息终端仪"],
     4532: ["6-YiDongZhanLueNengYuan", "移动战略能源"],
-    4575: ["6-DianCiYuanJian", "电磁元件"],
+    4575: ["6-DianCiYuanJian", "电磁元件"], #*
     4567: ["6-YiDongChaoSuanJi", "移动超算机"],
     #4478: ["6-XianGuangZhiYing", "弦光之鹰"],
     4645: ["6-JiGuangFangSheQi", "激光放射器"],
+    4661: ["6-SaiBoPunK", "赛博PunK"],
 
     3998: ["7-XiangSuQiJing", "像素奇晶"],
     3544: ["7-TanXianZheIV", "探险者IV"],
@@ -450,7 +452,7 @@ CastingId2MetaInfo = {
 
     #4515: ["9-ShuGuangPuJiZhan", "殊光谱基站"], #*
     4562: ["9-ZhengZhaoJiJia", "征召机甲"],
-    4620: ["9-KuangChaoXunZhuZhe", "狂潮巡逐者"],
+    4620: ["9-KuangChaoXunZhuZhe", "狂潮巡逐者"], #*
     4642: ["9-TanSuoYuanShi", "探索原石"],
 }
 
@@ -466,7 +468,7 @@ HighestValue_Products_Info = {
 }
 
 # 173
-Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzAzNjM5NjEwLCJzaWduSWQiOiI4YThlY2I3MDAzMmE0NDFlYjExMzc2ZWM3OGM1NjM4OSIsImlhdCI6MTcwMzAzNDgxMH0.dxWJ0l21XlHrmZRTsD_bMlqkUL7FVNACe9lXKrrqJSs"
+Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzAzNjgwOTQ0LCJzaWduSWQiOiI3OTQzNzQ4ZjZiMjk0NzZhYjE5MTc1Y2ZiNTY2Yzg4NyIsImlhdCI6MTcwMzA3NjE0NH0.Ld-mxzLL11VFmrPOLgY8Ev29fc3jaW7VsBEhG-k9u_0"
 
 # 131
 Query_Token= "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxMzE1NjE2MTA5MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzAzMzI5MzU2LCJzaWduSWQiOiI3OWYyZDFhYzZjMTM0YmQ0YTk4NDJjMGNlNDMwN2FiMCIsImlhdCI6MTcwMjcyNDU1Nn0.UETweX3LxVF88zLC2dPfBXTTQmzY2aSRb4vK8lCK3eQ"
