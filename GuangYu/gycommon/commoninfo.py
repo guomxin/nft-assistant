@@ -426,7 +426,7 @@ CastingId2MetaInfo = {
     #4556: ["6-DuoGongNengWanBiao", "多功能腕表"], #*
     #4560: ["6-QuanXiZhongDuanYi", "全息终端仪"],
     4532: ["6-YiDongZhanLueNengYuan", "移动战略能源"],
-    4575: ["6-DianCiYuanJian", "电磁元件"], #*
+    #4575: ["6-DianCiYuanJian", "电磁元件"], #*
     4567: ["6-YiDongChaoSuanJi", "移动超算机"],
     #4478: ["6-XianGuangZhiYing", "弦光之鹰"],
     4645: ["6-JiGuangFangSheQi", "激光放射器"],
@@ -452,7 +452,7 @@ CastingId2MetaInfo = {
 
     #4515: ["9-ShuGuangPuJiZhan", "殊光谱基站"], #*
     4562: ["9-ZhengZhaoJiJia", "征召机甲"],
-    4620: ["9-KuangChaoXunZhuZhe", "狂潮巡逐者"], #*
+    #4620: ["9-KuangChaoXunZhuZhe", "狂潮巡逐者"], #*
     4642: ["9-TanSuoYuanShi", "探索原石"],
 }
 
@@ -468,7 +468,7 @@ HighestValue_Products_Info = {
 }
 
 # 173
-Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzAzNjgwOTQ0LCJzaWduSWQiOiI3OTQzNzQ4ZjZiMjk0NzZhYjE5MTc1Y2ZiNTY2Yzg4NyIsImlhdCI6MTcwMzA3NjE0NH0.Ld-mxzLL11VFmrPOLgY8Ev29fc3jaW7VsBEhG-k9u_0"
+Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzAzNzI3OTU1LCJzaWduSWQiOiI3MTZhYmVhNjg2MDQ0OTNlODY3NDEyZGUyNWQzNTZiMSIsImlhdCI6MTcwMzEyMzE1NX0.FuPkKNoOkZkEZ9WYkMpGzbpu44EWSZFbLZzkYDHqhYU"
 
 # 131
 Query_Token= "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxMzE1NjE2MTA5MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzAzMzI5MzU2LCJzaWduSWQiOiI3OWYyZDFhYzZjMTM0YmQ0YTk4NDJjMGNlNDMwN2FiMCIsImlhdCI6MTcwMjcyNDU1Nn0.UETweX3LxVF88zLC2dPfBXTTQmzY2aSRb4vK8lCK3eQ"
