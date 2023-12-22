@@ -433,6 +433,7 @@ CastingId2MetaInfo = {
     #4645: ["6-JiGuangFangSheQi", "激光放射器"], #-------
     4661: ["6-SaiBoPunK", "赛博PunK"],
     4668: ["6-SaiBoPig", "赛博Pig"],
+    4674: ["6-SaiBoCat", "赛博Cat"],
 
     3998: ["7-XiangSuQiJing", "像素奇晶"],
     3544: ["7-TanXianZheIV", "探险者IV"],
