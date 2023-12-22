@@ -230,6 +230,14 @@ echo "---千夜之钥---"
 python grab_transaction_price.py 4371 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 4371 ${yesterday} 10
 
+echo "---炽焰幻显---"
+python grab_transaction_price.py 4675 ${yesterday} ${yesterday}
+python analyze_transaction_prices.py 4675 ${yesterday} 100
+
+echo "---无限未来厂---"
+python grab_transaction_price.py 4672 ${yesterday} ${yesterday}
+python analyze_transaction_prices.py 4672 ${yesterday} 10
+
 #--- 赛博狂潮 ---#
 echo "---外置控制终端---"
 python grab_transaction_price.py 4468 ${yesterday} ${yesterday}
@@ -318,6 +326,14 @@ echo "---探索原石---"
 python grab_transaction_price.py 4642 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 4642 ${yesterday} 10
 
+echo "---钛岩均质者---"
+python grab_transaction_price.py 4654 ${yesterday} ${yesterday}
+python analyze_transaction_prices.py 4654 ${yesterday} 50
+
+echo "---自由之誓---"
+python grab_transaction_price.py 4659 ${yesterday} ${yesterday}
+python analyze_transaction_prices.py 4659 ${yesterday} 100
+
 #------ 后处理 ------#
 cd data;mkdir -p upload/$yesterday;rm -rf upload/$yesterday/*
 cp *$yesterday* upload/$yesterday;cd upload/$yesterday
@@ -329,7 +345,7 @@ for nft in "1-N-MengYouGeLou" "1-N-YouLingTianTai" "1-N-ChaoNengMoJing" \
 "3-ZhongYiWuSheng" "3-ChuFengMingTong" "3-ChongHuoFeiYan" \
 "3-HuBenZhanXue" "3-YinXuJianDao" "3-FengDengBaiGu" "3-YongMengShuBing" "3-KuaiHuRen" "3-RuiFengJianLing" "3-YunYuYangFeng" \
 "5-HuoFengTouKui" "5-FangShengPeiYangJi" "5-JingGuangJiaoNang" "5-ShengJingZhiMen" "5-QiFuZhiChui" "5-JingLianZengChanQi" \
-"5-BingShuangLengQueXiTong" "5-HeiQiaoJiXieCheng" "5-WeiDuSheXiangJi" \
+"5-BingShuangLengQueXiTong" "5-HeiQiaoJiXieCheng" "5-WeiDuSheXiangJi" "5-ChiYanHuanXian" "5-WuXiangWeiLaiChang" \
 "5-CiGanDianChi" "5-ShuangHuaYanHuo" "5-CaiTangMengLeYuan" "5-PingAnQiShiSuiPian" \
 "5-YeDanJuNengGuan" "5-CiNengXuanFuBan" "5-ShenYuJiangCi" "5-LiuGuangYouShi" "5-XueYangLingYin" "5-ZhiKongJiXieHuShou" \
 "5-CangQiongYinDeng" "5-ZhiGengHuaQi" "5-YeNengFangYuTa" "5-ChenXiZhiAn" "5-QianYeZhiYao" \
@@ -338,7 +354,7 @@ for nft in "1-N-MengYouGeLou" "1-N-YouLingTianTai" "1-N-ChaoNengMoJing" \
 "7-XiangSuQiJing" "7-TanXianZheIV" "7-XunBaoZheI" "7-GongYunXiaoShao" "7-FangBiaoZhiShiDeng" "7-YeGuWangCheng" \
 "8-QianJuanHuaJia" "8-XiaoXiaoJianPan-LZai" "8-HuanXiaoQuQi" "8-XiaoXiaoJianPan-DZai" "8-ShengDanSongGe" "8-MoZhongLeYuan" \
 "8-XingYaoLanTan" \
-"9-ZhengZhaoJiJia" "9-TanSuoYuanShi"
+"9-ZhengZhaoJiJia" "9-TanSuoYuanShi" "9-TaiYanJunZhiZhe" "9-ZiYouZhiShi"
 do
     mkdir $nft;mv *$nft*.csv $nft;zip -q $nft-$yesterday $nft/*
 done

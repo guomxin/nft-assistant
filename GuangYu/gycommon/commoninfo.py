@@ -411,6 +411,8 @@ CastingId2MetaInfo = {
     4652: ["5-ChenXiZhiAn", "晨曦之黯"],
     4658: ["5-ZhiKongJiXieHuShou", "智控机械护手"],
     4371: ["5-QianYeZhiYao", "千夜之钥"],
+    4675: ["5-ChiYanHuanXian", "炽焰幻显"],
+    4672: ["5-WuXiangWeiLaiChang", "无限未来厂"],
 
     #4443: ["6-XuShiZhongShu", "虚实中枢"],
     #4448: ["6-XuNiLiRen", "虚拟利刃"],
@@ -457,6 +459,8 @@ CastingId2MetaInfo = {
     4562: ["9-ZhengZhaoJiJia", "征召机甲"],
     #4620: ["9-KuangChaoXunZhuZhe", "狂潮巡逐者"], #*
     4642: ["9-TanSuoYuanShi", "探索原石"],
+    4654: ["9-TaiYanJunZhiZhe", "钛岩均质者"],
+    4659: ["9-ZiYouZhiShi", "自由之誓"],
 }
 
 DEFAULT_MIN_PRICE = 0
@@ -471,7 +475,7 @@ HighestValue_Products_Info = {
 }
 
 # 173
-Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzAzODEyNzYzLCJzaWduSWQiOiI5NDhlNDE2NjM4ODg0NDAzOTc0MzE1ZWExMmNmMmQ1NiIsImlhdCI6MTcwMzIwNzk2M30.kf6f4VkZQsqOa9eeLOrXFMm_rIOXlY9Si3lHBEc6eew"
+Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzAzODQ2MTc0LCJzaWduSWQiOiI2ZTlkZGVjZmMyMTc0ODdjOWU1NTlhYTg3NmEzYzUyYyIsImlhdCI6MTcwMzI0MTM3NH0.eMp2Pyl52AnkAZrSNOPQ93Uo-WZuid4mbIn5LxiKHA8"
 
 # 131
 Query_Token= "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxMzE1NjE2MTA5MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzAzMzI5MzU2LCJzaWduSWQiOiI3OWYyZDFhYzZjMTM0YmQ0YTk4NDJjMGNlNDMwN2FiMCIsImlhdCI6MTcwMjcyNDU1Nn0.UETweX3LxVF88zLC2dPfBXTTQmzY2aSRb4vK8lCK3eQ"
