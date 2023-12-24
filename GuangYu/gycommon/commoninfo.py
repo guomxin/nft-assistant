@@ -414,6 +414,7 @@ CastingId2MetaInfo = {
     4675: ["5-ChiYanHuanXian", "炽焰幻显"],
     4672: ["5-WuXiangWeiLaiChang", "无限未来厂"],
     4681: ["5-GuangKongKaQian", "光控卡钳"],
+    4647: ["5-Xmas-GuangLuXueQiao", "Xmas-光陆雪橇"],
 
     #4443: ["6-XuShiZhongShu", "虚实中枢"],
     #4448: ["6-XuNiLiRen", "虚拟利刃"],
@@ -439,6 +440,8 @@ CastingId2MetaInfo = {
     4674: ["6-SaiBoCat", "赛博Cat"],
     4678: ["6-SaiBoFeiXiangPig", "赛博飞翔Pig"],
     4682: ["6-SaiBoDengLuCang", "赛博登陆仓"],
+    4577: ["6-MiCaiZhiHuan", "秘彩之环"],
+    4636: ["6-JuChiDuanBi", "锯齿短匕"],
 
     3998: ["7-XiangSuQiJing", "像素奇晶"],
     3544: ["7-TanXianZheIV", "探险者IV"],

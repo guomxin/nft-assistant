@@ -242,6 +242,10 @@ echo "---光控卡钳---"
 python grab_transaction_price.py 4681 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 4681 ${yesterday} 100
 
+echo "---Xmas-光陆雪橇---"
+python grab_transaction_price.py 4647 ${yesterday} ${yesterday}
+python analyze_transaction_prices.py 4647 ${yesterday} 100
+
 #--- 赛博狂潮 ---#
 echo "---外置控制终端---"
 python grab_transaction_price.py 4468 ${yesterday} ${yesterday}
@@ -274,6 +278,14 @@ python analyze_transaction_prices.py 4678 ${yesterday} 50
 echo "---赛博登陆仓---"
 python grab_transaction_price.py 4682 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 4682 ${yesterday} 50
+
+echo "---秘彩之环---"
+python grab_transaction_price.py 4577 ${yesterday} ${yesterday}
+python analyze_transaction_prices.py 4577 ${yesterday} 50
+
+echo "---锯齿短匕---"
+python grab_transaction_price.py 4636 ${yesterday} ${yesterday}
+python analyze_transaction_prices.py 4636 ${yesterday} 50
 
 #--- 探险区 ---#
 echo "---像素奇晶---"
@@ -358,11 +370,11 @@ for nft in "1-N-MengYouGeLou" "1-N-YouLingTianTai" "1-N-ChaoNengMoJing" \
 "3-HuBenZhanXue" "3-YinXuJianDao" "3-FengDengBaiGu" "3-YongMengShuBing" "3-KuaiHuRen" "3-RuiFengJianLing" "3-YunYuYangFeng" \
 "5-HuoFengTouKui" "5-FangShengPeiYangJi" "5-JingGuangJiaoNang" "5-ShengJingZhiMen" "5-QiFuZhiChui" "5-JingLianZengChanQi" \
 "5-BingShuangLengQueXiTong" "5-HeiQiaoJiXieCheng" "5-WeiDuSheXiangJi" "5-ChiYanHuanXian" "5-WuXiangWeiLaiChang" \
-"5-CiGanDianChi" "5-ShuangHuaYanHuo" "5-CaiTangMengLeYuan" "5-PingAnQiShiSuiPian" "5-GuangKongKaQian" \
+"5-CiGanDianChi" "5-ShuangHuaYanHuo" "5-CaiTangMengLeYuan" "5-PingAnQiShiSuiPian" "5-GuangKongKaQian" "5-Xmas-GuangLuXueQiao" \
 "5-YeDanJuNengGuan" "5-CiNengXuanFuBan" "5-ShenYuJiangCi" "5-LiuGuangYouShi" "5-XueYangLingYin" "5-ZhiKongJiXieHuShou" \
 "5-CangQiongYinDeng" "5-ZhiGengHuaQi" "5-YeNengFangYuTa" "5-ChenXiZhiAn" "5-QianYeZhiYao" \
-"6-WaiZhiKongZhiZhongDuan" "6-BuYingHeiKe" "6-SaiBoCat" "6-SaiBoFeiXiangPig" "6-SaiBoDengLuCang" \
-"6-YiDongChaoSuanJi" "6-SaiBoPunK" "6-SaiBoPig" \
+"6-WaiZhiKongZhiZhongDuan" "6-BuYingHeiKe" "6-SaiBoCat" "6-SaiBoFeiXiangPig" "6-SaiBoDengLuCang" "6-MiCaiZhiHuan" \
+"6-YiDongChaoSuanJi" "6-SaiBoPunK" "6-SaiBoPig" "6-JuChiDuanBi" \
 "7-XiangSuQiJing" "7-TanXianZheIV" "7-XunBaoZheI" "7-GongYunXiaoShao" "7-FangBiaoZhiShiDeng" "7-YeGuWangCheng" \
 "8-QianJuanHuaJia" "8-XiaoXiaoJianPan-LZai" "8-HuanXiaoQuQi" "8-XiaoXiaoJianPan-DZai" "8-ShengDanSongGe" "8-MoZhongLeYuan" \
 "8-XingYaoLanTan" \
