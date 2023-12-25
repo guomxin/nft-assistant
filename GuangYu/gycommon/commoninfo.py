@@ -415,6 +415,7 @@ CastingId2MetaInfo = {
     4672: ["5-WuXiangWeiLaiChang", "无限未来厂"],
     4681: ["5-GuangKongKaQian", "光控卡钳"],
     4647: ["5-Xmas-GuangLuXueQiao", "Xmas-光陆雪橇"],
+    4688: ["5-XuWuJiTa", "虚舞吉他"],
 
     #4443: ["6-XuShiZhongShu", "虚实中枢"],
     #4448: ["6-XuNiLiRen", "虚拟利刃"],
