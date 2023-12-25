@@ -8,10 +8,10 @@ import random
 from gycommon import commoninfo
 from gycommon import utils
 
-GET_ALL_SALE_LIST_URL = "https://api2.gandart.com/market/api/v3/resaleManage/resale/tradingMarket"
+GET_ALL_SALE_LIST_URL = "https://api.gandart.com/corecenter/userSaleRecords/es/querySaleToElasticSearch"
 PAGE_SIZE = 200
 TIME_OUT = 3
-GET_PRODUCT_DETAIL_URL = "https://api2.gandart.com/market/api/v2/resaleManage/resale/collectionDetails"
+GET_CASTING_DETAIL_URL = "https://api2.gandart.com/market/api/v2/resaleManage/resale/collectionDetailsByCastingId"
 BUY_URL = "https://api.gandart.com/base/v2/resaleManage/resale/buy/v2"
 
 TRAN_STATUS_SALING = 2
@@ -40,9 +40,13 @@ TRANS_STATUS_INDEX = 4
 
 Proxies_List = [
     [{
-    "http": "http://7408150:se3cvgbh@121.41.11.179:16817/",
-    "https": "http://7408150:se3cvgbh@121.41.11.179:16817/"
-    }, 0.15],
+    "http": "http://7408150:se3cvgbh@123.56.246.33:16817/",
+    "https": "http://7408150:se3cvgbh@123.56.246.33:16817/"
+    }, 0.7],
+    [{
+    "http": "http://7408150:se3cvgbh@114.215.174.49:16817/",
+    "https": "http://7408150:se3cvgbh@114.215.174.49:16817/"
+    }, 0.5],
 ]
 
 def post_requests_json(url, headers, data, proxies, timeout, decorate=False):
@@ -56,50 +60,72 @@ def post_requests_json(url, headers, data, proxies, timeout, decorate=False):
             time.sleep(3)
             print(e)
 
+def post_requests_pure_json(url, headers, data, proxies, timeout, decorate=False):
+    for _ in range(10):
+        try:
+            if decorate:
+                data = utils.decorate_api_data(data)
+            res = requests.post(url, json=data, headers=headers, proxies=proxies, timeout=timeout).json()
+            return res
+        except Exception as e:
+            time.sleep(3)
+            print(e)
+
 def get_all_saling_products(proxies):
     saling_prods = []
     data = {
-        "page":1,
-        "pageSize":PAGE_SIZE,
-        "priceSort":1,
+        "classifyId": 24,
+        #"collectionName": "",
+        #"createdSort": "null",
+        "page": 1,
+        "pageSize": PAGE_SIZE,
+        "priceSort": 1,
+        "type": 24,
     }
     data = utils.decorate_api_data(data)
-    res = post_requests_json(GET_ALL_SALE_LIST_URL, commoninfo.GanDart_Headers, data, proxies, TIME_OUT, decorate=True)
+    GanDart_Headers = {
+        "Host": "api.gandart.com",
+        "Origin": "https://www.gandart.com",
+        "Referer": "https://www.gandart.com/",
+        "token": commoninfo.Query_Token,
+        "Content-Type": "application/json;charset=UTF-8;",
+    }
+    res = post_requests_pure_json(GET_ALL_SALE_LIST_URL, GanDart_Headers, data, proxies, TIME_OUT, decorate=True)
     if not res:
         return (1, None)
     if res["code"] != 0:
         return (res["code"], None)
     else:
         #print(res)
-        for sinfo in res["obj"]["list"]:
-            saling_prods.append(
-                [sinfo["castingId"], sinfo["id"], sinfo["viewSort"], float(sinfo["resalePrice"]), sinfo["transactionStatus"]])
+        for sinfo in res["data"]["list"]:
+            if sinfo["resalePrice"]:
+                saling_prods.append(
+                    [sinfo["castingId"], sinfo["id"], sinfo["viewSort"], float(sinfo["resalePrice"]), sinfo["transactionStatus"]])
+            else:
+                ### 已退市藏品无price
+                pass
     return (0, saling_prods)
 
-def get_product_detail_id(prod_id, proxies):
+def get_casting_detail_id(casting_id, proxies):
     data = {
-        "transactionRecordId": prod_id,
+        "castingId": casting_id,
     }
-    detail_id = None
-    user_id = None
-    #created_time = None
+    
     while True:
         try:
             data = utils.decorate_api_data(data) 
-            res = requests.post(GET_PRODUCT_DETAIL_URL, data=data, headers= commoninfo.GanDart_Headers, proxies=proxies, timeout=TIME_OUT).json()
+            res = requests.post(GET_CASTING_DETAIL_URL, data=data, headers= commoninfo.GanDart_Headers, proxies=proxies, timeout=TIME_OUT).json()
             if res["code"] != 0:
-                return (None, None)
+                return None
             else:
-                detail_id = res["obj"]["detailId"]
-                user_id = res["obj"]["id"]
-                #created_time = datetime.datetime.strptime(res["obj"]["created"], "%Y-%m-%d %H:%M:%S")
+                prod_id = res["obj"]["id"]
                 break
         except Exception as e:
             time.sleep(3)
             print(e)
-    return (detail_id, user_id)
+    return prod_id
 
-def buy_product(casting_id, prod_id, detail_id, user_id, token, proxies):
+def buy_product(casting_id, prod_id, token, proxies):
     data = {
         #"castingId": casting_id,
         #"detailId": detail_id,
@@ -116,8 +142,8 @@ def buy_product(casting_id, prod_id, detail_id, user_id, token, proxies):
             data = utils.decorate_api_data(data)
             res = requests.post(BUY_URL, data=data, headers=headers, proxies=proxies, timeout=TIME_OUT).json()
             if not res["success"]:
-                print("下单失败: {} casting_id={},prod_id={},detail_id={},user_id={},msg={}".format(
-                    datetime.now(), casting_id, prod_id, detail_id, user_id, res["msg"]))
+                print("下单失败: {} casting_id={},prod_id={},msg={}".format(
+                    datetime.now(), casting_id, prod_id, res["msg"]))
                 return False
             else:
                 return True
@@ -131,7 +157,7 @@ if __name__ == "__main__":
         sys.exit(1)
     proxy_id = int(sys.argv[1])
     crazy_mode = True
-    if len(sys.argv) >= 4:
+    if len(sys.argv) >= 3:
         crazy_mode = (int(sys.argv[2]) > 0)
     token = commoninfo.Home_Token
     proxies = Proxies_List[proxy_id][0]
@@ -161,7 +187,7 @@ if __name__ == "__main__":
                 print("获取在售列表信息失败, res_code={}, casting_id={}".format(res_code))
                 continue
             for saling_prod in saling_prods:
-                casting_id = saling_prod[CASTING_ID_INDEX]
+                casting_id = int(saling_prod[CASTING_ID_INDEX])
                 if casting_id not in commoninfo.CastingId2MetaInfo:
                     continue
                 min_price = commoninfo.DEFAULT_MIN_PRICE
@@ -169,19 +195,19 @@ if __name__ == "__main__":
                     min_price = commoninfo.CastingId2MetaInfo[casting_id][2] 
                 prod_id = saling_prod[PROD_ID_INDEX]
                 price = saling_prod[PRICE_INDEX]
-                trans_status = saling_prod[TRANS_STATUS_INDEX]
+                trans_status = int(saling_prod[TRANS_STATUS_INDEX])
                 if not crazy_mode:
                     if trans_status != TRAN_STATUS_SALING:
                         continue
                 #if (price <= min_price) and ((min_price - price) / min_price <= 0.2):
                 if price <= min_price:
-                    (detail_id, user_id) = get_product_detail_id(prod_id, proxies)
-                    if not detail_id:
+                    prod_id = get_casting_detail_id(casting_id, proxies)
+                    if not prod_id:
                         print("获取detail_id失败, prod_id={}".format(prod_id))
                         continue
                     prod_name = commoninfo.CastingId2MetaInfo[casting_id][1]
-                    print(prod_name, price, detail_id, prod_id)
-                    if True: #buy_product(casting_id, prod_id, detail_id, user_id, token, proxies):
+                    print(prod_name, price, prod_id)
+                    if buy_product(casting_id, prod_id, token, proxies):
                         content = """
 光予: 购买{}
 >时间: {}

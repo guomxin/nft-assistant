@@ -19,6 +19,7 @@ TRAN_STATUS_SALING = 2
 PROD_ID_INDEX = 0
 PRICE_INDEX = 2
 TRANS_STATUS_INDEX = 3
+#WALLET_LIST_INDEX = 4
 
 """
     [{
@@ -39,13 +40,21 @@ TRANS_STATUS_INDEX = 3
 
 Proxies_List = [
     [{
-    "http": "http://7408150:se3cvgbh@121.41.11.179:16817/",
-    "https": "http://7408150:se3cvgbh@121.41.11.179:16817/"
-    }, 0.15],
+    "http": "http://7408150:se3cvgbh@123.56.246.33:16817/",
+    "https": "http://7408150:se3cvgbh@123.56.246.33:16817/"
+    }, 0.7],
+    [{
+    "http": "http://7408150:se3cvgbh@114.215.174.49:16817/",
+    "https": "http://7408150:se3cvgbh@114.215.174.49:16817/"
+    }, 0.5],
 ]
 
 Targets_List = [
-    {3840: 30},
+    #{4642: 30, 4644: 148},
+    #{4575: 38, 4642: 30},
+    {4650: 50, 4644: 68},
+    {4682: 90, 4577: 200},
+    #{4642: 30, 4577: 200},
 ]
 
 def post_requests_json(url, headers, data, proxies, timeout, decorate=False):
@@ -77,8 +86,12 @@ def get_top_saling_products(casting_id, proxies):
     else:
         #print(res)
         for pinfo in res["obj"]["list"]:
+            walletList = pinfo["walletList"]
+            # 忽略只能用C钱包购买的商品
+            if len(walletList) == 1 and walletList[0] == 'C':
+                continue
             saling_prods.append(
-                [pinfo["id"], pinfo["viewSort"], float(pinfo["resalePrice"]), pinfo["transactionStatus"]])
+                [pinfo["id"], pinfo["viewSort"], float(pinfo["resalePrice"]), pinfo["transactionStatus"], pinfo["walletList"]])
     return (0, saling_prods)
 
 def get_product_detail_id(prod_id, proxies):
@@ -104,7 +117,7 @@ def get_product_detail_id(prod_id, proxies):
             print(e)
     return (detail_id, user_id)
 
-def buy_product(casting_id, prod_id, detail_id, user_id, token, proxies):
+def buy_product(casting_id, prod_id, token, proxies):
     data = {
         #"castingId": casting_id,
         #"detailId": detail_id,
@@ -121,8 +134,8 @@ def buy_product(casting_id, prod_id, detail_id, user_id, token, proxies):
             data = utils.decorate_api_data(data)
             res = requests.post(BUY_URL, data=data, headers=headers, proxies=proxies, timeout=TIME_OUT).json()
             if not res["success"]:
-                print("下单失败: {} casting_id={},prod_id={},detail_id={},user_id={},msg={}".format(
-                    datetime.now(), casting_id, prod_id, detail_id, user_id, res["msg"]))
+                print("下单失败: {} casting_id={},prod_id={},msg={}".format(
+                    datetime.now(), casting_id, prod_id, res["msg"]))
                 return False
             else:
                 return True
@@ -179,13 +192,13 @@ if __name__ == "__main__":
                         if trans_status != TRAN_STATUS_SALING:
                             continue
                     if price <= castingid2price[casting_id]:
-                        (detail_id, user_id) = get_product_detail_id(prod_id, proxies)
-                        if not detail_id:
-                            print("获取detail_id失败, prod_id={}".format(prod_id))
-                            continue
+                        #(detail_id, user_id) = get_product_detail_id(prod_id, proxies)
+                        #if not detail_id:
+                        #    print("获取detail_id失败, prod_id={}".format(prod_id))
+                        #    continue
                         prod_name = commoninfo.CastingId2MetaInfo[casting_id][1]
-                        print(prod_name, price, detail_id, prod_id)
-                        if buy_product(casting_id, prod_id, detail_id, user_id, token, proxies):
+                        print(prod_name, price, prod_id)
+                        if buy_product(casting_id, prod_id, token, proxies):
                             content = """
 光予: 购买{}
 >时间: {}

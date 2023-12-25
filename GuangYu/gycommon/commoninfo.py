@@ -312,28 +312,28 @@ CastingId2MetaInfo = {
     3549: ["1-SR-QuanJiShouTao", "拳击手套"],
     #2457: ["1-SSR-MoDengZhongXin", "摩登中心"],
     #2466: ["1-SSR-ZhongGuiTieDao", "重轨铁道"],
-    3550: ["1-SSR-ChaoShanDianCi", "超闪电磁"],
+    3550: ["1-SSR-ChaoShanDianCi", "超闪电磁", 100],
     4629: ["1-WeiGuangFeiTan", "微光飞毯"],
     4630: ["1-ShuGuangLuJian", "曙光陆舰"],
 
     #2456: ["2-UR-WeiLaiDuShi", "未来都市"],
     #2468: ["2-UR-YuanYangDuLun", "远洋渡轮"],
-    3646: ["2-UR-ShiKongChuanSuoJi", "时空穿梭机"],
-    3751: ["2-UR-YueQiuShangCheng", "月球上城"],
-    3535: ["2-ZaiFuXiangHuang", "载福祥凰"],
-    2837: ["2-LongYinWanXiang", "龙吟万象"],
+    3646: ["2-UR-ShiKongChuanSuoJi", "时空穿梭机", 500],
+    3751: ["2-UR-YueQiuShangCheng", "月球上城", 500],
+    3535: ["2-ZaiFuXiangHuang", "载福祥凰", 200],
+    2837: ["2-LongYinWanXiang", "龙吟万象", 1000],
     #2616: ["2-HuanShuShi", "幻术师"], 
     #2617: ["2-MoShuShi", "魔术师"],
     4014: ["2-JinQuXiYin", "金躯玺印"],
     4386: ["2-JinLianLingZhan", "金莲灵盏"],
     4384: ["2-YiShouFuTu", "异兽浮图"],
-    4323: ["2-DaMoHuanShi", "大魔幻师"],
-    4607: ["2-JiuChongTianWaiTian", "九重天外天"],
+    4323: ["2-DaMoHuanShi", "大魔幻师", 1000],
+    4607: ["2-JiuChongTianWaiTian", "九重天外天", 1000],
 
     #2589: ["3-JiXingGuangLun", "先驱I-疾行光轮"],
     #3056: ["3-BingHuangGuiZuo", "冰凰瑰座"],
-    3982: ["3-ZhongYiWuSheng", "忠义武圣"],
-    3979: ["3-ChuFengMingTong", "雏凤明瞳"],
+    3982: ["3-ZhongYiWuSheng", "忠义武圣", 1000],
+    3979: ["3-ChuFengMingTong", "雏凤明瞳", 0],
     3980: ["3-YinXuJianDao", "银须箭道"],
     #3990: ["3-YingYongBiaoJiZiGeKa", "英勇骠骑资格卡"],
     #3997: ["3-ShunLeiJiMu", "瞬雷击木"],
@@ -403,15 +403,15 @@ CastingId2MetaInfo = {
     4552: ["5-ZhiGengHuaQi", "知更花期"],
     4559: ["5-YeNengFangYuTa", "液能防御塔"],
     4574: ["5-CaiTangMengLeYuan", "彩糖梦乐园"],
-    4589: ["5-ShengJingZhiMen", "圣境之门"],
+    4589: ["5-ShengJingZhiMen", "圣境之门", 2000],
     4558: ["5-QiFuZhiChui", "祈福之槌"],
     4605: ["5-JingLianZengChanQi", "精炼增产器"],
-    4628: ["5-PingAnQiShiSuiPian", "平安启示碎片"],
+    #4628: ["5-PingAnQiShiSuiPian", "平安启示碎片"],
     4646: ["5-XueYangLingYin", "雪漾铃音"],
     4652: ["5-ChenXiZhiAn", "晨曦之黯"],
     4658: ["5-ZhiKongJiXieHuShou", "智控机械护手"],
     4371: ["5-QianYeZhiYao", "千夜之钥"],
-    4675: ["5-ChiYanHuanXian", "炽焰幻显"],
+    4675: ["5-ChiYanHuanXian", "炽焰幻显", 1000],
     4672: ["5-WuXiangWeiLaiChang", "无限未来厂"],
     4681: ["5-GuangKongKaQian", "光控卡钳"],
     4647: ["5-Xmas-GuangLuXueQiao", "Xmas-光陆雪橇"],
@@ -425,7 +425,7 @@ CastingId2MetaInfo = {
     #4460: ["6-HaiKeWeiGongYi", "骇客微工椅"],
     4468: ["6-WaiZhiKongZhiZhongDuan", "外置控制终端"],
     #4469: ["6-YiSuZengFuXue", "移速增幅靴"],
-    4482: ["6-BuYingHeiKe", "捕影黑客"],
+    4482: ["6-BuYingHeiKe", "捕影黑客", 200],
     #4496: ["6-JunGongHuMuJing", "军工护目镜"],
     #4514: ["6-KongJianTiDai", "空间提袋"],
     #4556: ["6-DuoGongNengWanBiao", "多功能腕表"], #*
@@ -438,10 +438,10 @@ CastingId2MetaInfo = {
     4661: ["6-SaiBoPunK", "赛博PunK"],
     4668: ["6-SaiBoPig", "赛博Pig"],
     4674: ["6-SaiBoCat", "赛博Cat"],
-    4678: ["6-SaiBoFeiXiangPig", "赛博飞翔Pig"],
+    4678: ["6-SaiBoFeiXiangPig", "赛博飞翔Pig", 50],
     4682: ["6-SaiBoDengLuCang", "赛博登陆仓"],
-    4577: ["6-MiCaiZhiHuan", "秘彩之环"],
-    4636: ["6-JuChiDuanBi", "锯齿短匕"],
+    4577: ["6-MiCaiZhiHuan", "秘彩之环", 200],
+    4636: ["6-JuChiDuanBi", "锯齿短匕", 50],
 
     3998: ["7-XiangSuQiJing", "像素奇晶"],
     3544: ["7-TanXianZheIV", "探险者IV"],
@@ -457,19 +457,19 @@ CastingId2MetaInfo = {
     4569: ["8-HuanXiaoQuQi", "欢笑曲奇"],
     #4570: ["8-HuaYangLvBao", "花漾旅包"], #*
     4606: ["8-XiaoXiaoJianPan-DZai", "小小键盘-D仔"],
-    4644: ["8-ShengDanSongGe", "圣诞颂歌"],
+    4644: ["8-ShengDanSongGe", "圣诞颂歌", 50],
     4572: ["8-MoZhongLeYuan", "蘑钟乐园"],
-    4650: ["8-XingYaoLanTan", "星耀篮坛"],
+    4650: ["8-XingYaoLanTan", "星耀篮坛", 50],
 
     #4515: ["9-ShuGuangPuJiZhan", "殊光谱基站"], #*
     4562: ["9-ZhengZhaoJiJia", "征召机甲"],
     #4620: ["9-KuangChaoXunZhuZhe", "狂潮巡逐者"], #*
-    4642: ["9-TanSuoYuanShi", "探索原石"],
+    4642: ["9-TanSuoYuanShi", "探索原石", 30],
     4654: ["9-TaiYanJunZhiZhe", "钛岩均质者"],
     4659: ["9-ZiYouZhiShi", "自由之誓"],
 }
 
-DEFAULT_MIN_PRICE = 0
+DEFAULT_MIN_PRICE = 10
 
 Transaction_Logs_File_Name = "_guangyu_{}_trans_logs.csv"
 
