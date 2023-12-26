@@ -325,8 +325,8 @@ CastingId2MetaInfo = {
     #2616: ["2-HuanShuShi", "幻术师"], 
     #2617: ["2-MoShuShi", "魔术师"],
     4014: ["2-JinQuXiYin", "金躯玺印"],
-    4386: ["2-JinLianLingZhan", "金莲灵盏"],
-    4384: ["2-YiShouFuTu", "异兽浮图"],
+    4386: ["2-JinLianLingZhan", "金莲灵盏", 100],
+    4384: ["2-YiShouFuTu", "异兽浮图", 200],
     4323: ["2-DaMoHuanShi", "大魔幻师", 1000],
     4607: ["2-JiuChongTianWaiTian", "九重天外天", 1000],
 
@@ -416,7 +416,7 @@ CastingId2MetaInfo = {
     4681: ["5-GuangKongKaQian", "光控卡钳"],
     4647: ["5-Xmas-GuangLuXueQiao", "Xmas-光陆雪橇"],
     4688: ["5-XuWuJiTa", "虚舞吉他"],
-    4699: ["5-ShengDanLiWuHe", "圣诞礼物盒", 30],
+    4699: ["5-ShengDanLiWuHe", "圣诞礼物盒"], #------
 
     #4443: ["6-XuShiZhongShu", "虚实中枢"],
     #4448: ["6-XuNiLiRen", "虚拟利刃"],
@@ -425,25 +425,26 @@ CastingId2MetaInfo = {
     #4457: ["6-CODR-MaiChongShouQiang", "CODR-脉冲手枪"],
     #4459: ["6-MianYiYiZhiJi", "免疫抑制剂"],
     #4460: ["6-HaiKeWeiGongYi", "骇客微工椅"],
-    4468: ["6-WaiZhiKongZhiZhongDuan", "外置控制终端"],
+    4468: ["6-WaiZhiKongZhiZhongDuan", "外置控制终端"], #------
     #4469: ["6-YiSuZengFuXue", "移速增幅靴"],
-    4482: ["6-BuYingHeiKe", "捕影黑客", 200],
+    4482: ["6-BuYingHeiKe", "捕影黑客"], #------
     #4496: ["6-JunGongHuMuJing", "军工护目镜"],
     #4514: ["6-KongJianTiDai", "空间提袋"],
     #4556: ["6-DuoGongNengWanBiao", "多功能腕表"], #*
     #4560: ["6-QuanXiZhongDuanYi", "全息终端仪"],
     #4532: ["6-YiDongZhanLueNengYuan", "移动战略能源"], #------
     #4575: ["6-DianCiYuanJian", "电磁元件"], #*
-    4567: ["6-YiDongChaoSuanJi", "移动超算机"],
+    4567: ["6-YiDongChaoSuanJi", "移动超算机"], #------
     #4478: ["6-XianGuangZhiYing", "弦光之鹰"],
     #4645: ["6-JiGuangFangSheQi", "激光放射器"], #-------
     4661: ["6-SaiBoPunK", "赛博PunK"],
     4668: ["6-SaiBoPig", "赛博Pig"],
     4674: ["6-SaiBoCat", "赛博Cat"],
     4678: ["6-SaiBoFeiXiangPig", "赛博飞翔Pig", 50],
-    4682: ["6-SaiBoDengLuCang", "赛博登陆仓", 100],
+    4682: ["6-SaiBoDengLuCang", "赛博登陆仓"], #------
     4577: ["6-MiCaiZhiHuan", "秘彩之环", 200],
     4636: ["6-JuChiDuanBi", "锯齿短匕", 50],
+    4624: ["6-YinBoZhenDangQi", "音波振荡器", 50],
 
     3998: ["7-XiangSuQiJing", "像素奇晶"],
     3544: ["7-TanXianZheIV", "探险者IV"],
@@ -460,8 +461,8 @@ CastingId2MetaInfo = {
     #4570: ["8-HuaYangLvBao", "花漾旅包"], #*
     4606: ["8-XiaoXiaoJianPan-DZai", "小小键盘-D仔"],
     4644: ["8-ShengDanSongGe", "圣诞颂歌", 50],
-    4572: ["8-MoZhongLeYuan", "蘑钟乐园"],
-    4650: ["8-XingYaoLanTan", "星耀篮坛", 50],
+    4572: ["8-MoZhongLeYuan", "蘑钟乐园", 80],
+    4650: ["8-XingYaoLanTan", "星耀篮坛", 40],
 
     #4515: ["9-ShuGuangPuJiZhan", "殊光谱基站"], #*
     4562: ["9-ZhengZhaoJiJia", "征召机甲"],
