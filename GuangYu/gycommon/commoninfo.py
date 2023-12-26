@@ -417,6 +417,7 @@ CastingId2MetaInfo = {
     4647: ["5-Xmas-GuangLuXueQiao", "Xmas-光陆雪橇"],
     4688: ["5-XuWuJiTa", "虚舞吉他"],
     4699: ["5-ShengDanLiWuHe", "圣诞礼物盒"], #------
+    4684: ["5-WeiLaiFeiYueBan", "未来飞跃板"],
 
     #4443: ["6-XuShiZhongShu", "虚实中枢"],
     #4448: ["6-XuNiLiRen", "虚拟利刃"],
@@ -444,7 +445,7 @@ CastingId2MetaInfo = {
     4682: ["6-SaiBoDengLuCang", "赛博登陆仓"], #------
     4577: ["6-MiCaiZhiHuan", "秘彩之环", 200],
     4636: ["6-JuChiDuanBi", "锯齿短匕", 50],
-    4624: ["6-YinBoZhenDangQi", "音波振荡器", 50],
+    4624: ["6-YinBoZhenDangQi", "音波振荡器", 40],
 
     3998: ["7-XiangSuQiJing", "像素奇晶"],
     3544: ["7-TanXianZheIV", "探险者IV"],
