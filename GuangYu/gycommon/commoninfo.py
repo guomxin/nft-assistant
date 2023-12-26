@@ -386,7 +386,7 @@ CastingId2MetaInfo = {
     4479: ["5-HuoFengTouKui", "火风头盔"],
     #4483: ["5-JuanHuaZhiZhan", "镌花之盏"], #-------
     #4470: ["5-JiangCaiYingQuan", "绛彩映泉"], #*
-    4471: ["5-CiGanDianChi", "磁感电池"], #------
+    #4471: ["5-CiGanDianChi", "磁感电池"], #------
     #4420: ["5-ZhiReKuangZaoYinQing", "炙热狂躁引擎"],
     #4494: ["5-LieYanZhuangXia", "烈焰装匣"],
     #4475: ["5-ShiGuangHuaPu", "时光花谱"],
@@ -416,7 +416,7 @@ CastingId2MetaInfo = {
     4681: ["5-GuangKongKaQian", "光控卡钳"],
     4647: ["5-Xmas-GuangLuXueQiao", "Xmas-光陆雪橇"],
     4688: ["5-XuWuJiTa", "虚舞吉他"],
-    4699: ["5-ShengDanLiWuHe", "圣诞礼物盒"],
+    4699: ["5-ShengDanLiWuHe", "圣诞礼物盒", 30],
 
     #4443: ["6-XuShiZhongShu", "虚实中枢"],
     #4448: ["6-XuNiLiRen", "虚拟利刃"],
@@ -441,7 +441,7 @@ CastingId2MetaInfo = {
     4668: ["6-SaiBoPig", "赛博Pig"],
     4674: ["6-SaiBoCat", "赛博Cat"],
     4678: ["6-SaiBoFeiXiangPig", "赛博飞翔Pig", 50],
-    4682: ["6-SaiBoDengLuCang", "赛博登陆仓", 90],
+    4682: ["6-SaiBoDengLuCang", "赛博登陆仓", 100],
     4577: ["6-MiCaiZhiHuan", "秘彩之环", 200],
     4636: ["6-JuChiDuanBi", "锯齿短匕", 50],
 
