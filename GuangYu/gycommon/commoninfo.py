@@ -304,7 +304,7 @@ CastingId2MetaInfo = {
     # 1674: ["21-TingLanShuiXie", "汀兰水榭"],
     # #887: ["21-HuLu", "葫芦"],
 
-    #3457: ["1-N-QingKongYuFengZhou", "晴空御风帚", 60],
+    #3457: ["1-N-QingKongYuFengZhou", "晴空御风帚", 50], ########
     3747: ["1-N-MengYouGeLou", "梦游阁楼"],
     3748: ["1-N-YouLingTianTai", "幽灵天台"],
     3548: ["1-N-ChaoNengMoJing", "超能墨镜"],
@@ -320,7 +320,7 @@ CastingId2MetaInfo = {
     #2468: ["2-UR-YuanYangDuLun", "远洋渡轮"],
     3646: ["2-UR-ShiKongChuanSuoJi", "时空穿梭机", 500],
     3751: ["2-UR-YueQiuShangCheng", "月球上城", 500],
-    3535: ["2-ZaiFuXiangHuang", "载福祥凰", 200],
+    3535: ["2-ZaiFuXiangHuang", "载福祥凰", 500],
     2837: ["2-LongYinWanXiang", "龙吟万象", 1000],
     #2616: ["2-HuanShuShi", "幻术师"], 
     #2617: ["2-MoShuShi", "魔术师"],
@@ -445,8 +445,10 @@ CastingId2MetaInfo = {
     #4682: ["6-SaiBoDengLuCang", "赛博登陆仓"], #------
     4577: ["6-MiCaiZhiHuan", "秘彩之环", 200],
     4636: ["6-JuChiDuanBi", "锯齿短匕", 120],
-    4624: ["6-YinBoZhenDangQi", "音波振荡器", 15],
+    4624: ["6-YinBoZhenDangQi", "音波振荡器", 0], #------
     4697: ["6-SaiBoQiFeiKa", "赛博起飞卡", 0],
+    4706: ["6-SaiBoZhanShenDao", "赛博战神刀", 200],
+    4708: ["6-SaiBoJiaFeiMao", "赛博加菲猫", 100],
 
     3998: ["7-XiangSuQiJing", "像素奇晶"],
     3544: ["7-TanXianZheIV", "探险者IV"],
@@ -462,9 +464,9 @@ CastingId2MetaInfo = {
     4569: ["8-HuanXiaoQuQi", "欢笑曲奇"],
     #4570: ["8-HuaYangLvBao", "花漾旅包"], #*
     4606: ["8-XiaoXiaoJianPan-DZai", "小小键盘-D仔"],
-    4644: ["8-ShengDanSongGe", "圣诞颂歌", 45],
+    4644: ["8-ShengDanSongGe", "圣诞颂歌", 40],
     4572: ["8-MoZhongLeYuan", "蘑钟乐园", 80],
-    4650: ["8-XingYaoLanTan", "星耀篮坛", 40],
+    4650: ["8-XingYaoLanTan", "星耀篮坛", 35],
 
     #4515: ["9-ShuGuangPuJiZhan", "殊光谱基站"], #*
     4562: ["9-ZhengZhaoJiJia", "征召机甲"],
@@ -486,7 +488,7 @@ HighestValue_Products_Info = {
 }
 
 # 173
-Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzAzOTI5OTg4LCJzaWduSWQiOiIyOTJmZjJhYjlhODE0ZTlmYTlkZGYzN2RiOTg5YmI4YiIsImlhdCI6MTcwMzMyNTE4OH0.vsPeFvppDpg3xuW2YXYJs6s6_G5xNbHLuoEo-kGvZJk"
+Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzA0Mjc3MTEyLCJzaWduSWQiOiJmZGVjMmU4ZTYxOWE0YWE5YjAyMmZlZTRhY2RhZTk2OSIsImlhdCI6MTcwMzY3MjMxMn0.9cDJwS667r3fjxhpZOqdjYeMsq_9LY7LVZmucYBMIds"
 
 # 131
 Query_Token= "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxMzE1NjE2MTA5MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzAzOTM1Mzc0LCJzaWduSWQiOiJkMWFlZDNiZmM2YjM0MmQ1YjNlYThlNjVmNThkNjNlZiIsImlhdCI6MTcwMzMzMDU3NH0.mN1nZTt3Nr_8EV-zjHmCbHeY01zc9de-g5w0n2_Vjm0"
