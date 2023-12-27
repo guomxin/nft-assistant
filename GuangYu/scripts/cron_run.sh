@@ -242,27 +242,11 @@ echo "---虚舞吉他---"
 python grab_transaction_price.py 4688 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 4688 ${yesterday} 10
 
-echo "---圣诞礼物盒---"
-python grab_transaction_price.py 4699 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 4699 ${yesterday} 10
-
 echo "---未来飞跃板---"
 python grab_transaction_price.py 4684 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 4684 ${yesterday} 50
 
 #--- 赛博狂潮 ---#
-echo "---外置控制终端---"
-python grab_transaction_price.py 4468 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 4468 ${yesterday} 50
-
-echo "---捕影黑客---"
-python grab_transaction_price.py 4482 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 4482 ${yesterday} 50
-
-echo "---移动超算机---"
-python grab_transaction_price.py 4567 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 4567 ${yesterday} 10
-
 echo "---赛博PunK---"
 python grab_transaction_price.py 4661 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 4661 ${yesterday} 10
@@ -279,10 +263,6 @@ echo "---赛博飞翔Pig---"
 python grab_transaction_price.py 4678 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 4678 ${yesterday} 50
 
-echo "---赛博登陆仓---"
-python grab_transaction_price.py 4682 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 4682 ${yesterday} 50
-
 echo "---秘彩之环---"
 python grab_transaction_price.py 4577 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 4577 ${yesterday} 50
@@ -294,6 +274,9 @@ python analyze_transaction_prices.py 4636 ${yesterday} 50
 echo "---音波振荡器---"
 python grab_transaction_price.py 4624 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 4624 ${yesterday} 10
+
+echo "---赛博起飞卡---"
+python grab_transaction_price.py 4697 ${yesterday} ${yesterday}
 
 #--- 探险区 ---#
 echo "---像素奇晶---"
@@ -380,9 +363,9 @@ for nft in "1-N-MengYouGeLou" "1-N-YouLingTianTai" "1-N-ChaoNengMoJing" \
 "5-BingShuangLengQueXiTong" "5-HeiQiaoJiXieCheng" "5-WeiDuSheXiangJi" "5-ChiYanHuanXian" "5-WuXiangWeiLaiChang" \
 "5-ShuangHuaYanHuo" "5-CaiTangMengLeYuan" "5-GuangKongKaQian" "5-Xmas-GuangLuXueQiao" "5-XuWuJiTa" "5-WeiLaiFeiYueBan" \
 "5-YeDanJuNengGuan" "5-CiNengXuanFuBan" "5-ShenYuJiangCi" "5-LiuGuangYouShi" "5-XueYangLingYin" "5-ZhiKongJiXieHuShou" \
-"5-CangQiongYinDeng" "5-ZhiGengHuaQi" "5-YeNengFangYuTa" "5-ChenXiZhiAn" "5-QianYeZhiYao" "5-ShengDanLiWuHe" \
-"6-WaiZhiKongZhiZhongDuan" "6-BuYingHeiKe" "6-SaiBoCat" "6-SaiBoFeiXiangPig" "6-SaiBoDengLuCang" "6-MiCaiZhiHuan" \
-"6-YiDongChaoSuanJi" "6-SaiBoPunK" "6-SaiBoPig" "6-JuChiDuanBi" "6-YinBoZhenDangQi" \
+"5-CangQiongYinDeng" "5-ZhiGengHuaQi" "5-YeNengFangYuTa" "5-ChenXiZhiAn" "5-QianYeZhiYao" \
+"6-SaiBoCat" "6-SaiBoFeiXiangPig" "6-MiCaiZhiHuan" \
+"6-SaiBoPunK" "6-SaiBoPig" "6-JuChiDuanBi" "6-YinBoZhenDangQi" "6-SaiBoQiFeiKa" \
 "7-XiangSuQiJing" "7-TanXianZheIV" "7-XunBaoZheI" "7-GongYunXiaoShao" "7-FangBiaoZhiShiDeng" "7-YeGuWangCheng" \
 "8-QianJuanHuaJia" "8-XiaoXiaoJianPan-LZai" "8-HuanXiaoQuQi" "8-XiaoXiaoJianPan-DZai" "8-ShengDanSongGe" "8-MoZhongLeYuan" \
 "8-XingYaoLanTan" \
