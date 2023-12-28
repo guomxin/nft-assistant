@@ -307,7 +307,7 @@ CastingId2MetaInfo = {
     #3457: ["1-N-QingKongYuFengZhou", "晴空御风帚", 50], ########
     3747: ["1-N-MengYouGeLou", "梦游阁楼"],
     3748: ["1-N-YouLingTianTai", "幽灵天台"],
-    3548: ["1-N-ChaoNengMoJing", "超能墨镜"],
+    3548: ["1-N-ChaoNengMoJing", "超能墨镜", 60],
     #3458: ["1-SR-YingMuHuanShaPeng", "影幕幻纱篷"],
     3549: ["1-SR-QuanJiShouTao", "拳击手套"],
     #2457: ["1-SSR-MoDengZhongXin", "摩登中心"],
@@ -418,6 +418,7 @@ CastingId2MetaInfo = {
     4688: ["5-XuWuJiTa", "虚舞吉他"],
     #4699: ["5-ShengDanLiWuHe", "圣诞礼物盒"], #------
     4684: ["5-WeiLaiFeiYueBan", "未来飞跃板"],
+    4705: ["5-ShiKongCaoKongShouBing", "时空操控手柄"],
 
     #4443: ["6-XuShiZhongShu", "虚实中枢"],
     #4448: ["6-XuNiLiRen", "虚拟利刃"],
