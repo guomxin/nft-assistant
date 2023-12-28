@@ -413,7 +413,7 @@ CastingId2MetaInfo = {
     4371: ["5-QianYeZhiYao", "千夜之钥"],
     4675: ["5-ChiYanHuanXian", "炽焰幻显", 1000],
     4672: ["5-WuXiangWeiLaiChang", "无限未来厂"],
-    4681: ["5-GuangKongKaQian", "光控卡钳"],
+    4681: ["5-GuangKongKaQian", "光控卡钳", 200],
     4647: ["5-Xmas-GuangLuXueQiao", "Xmas-光陆雪橇"],
     4688: ["5-XuWuJiTa", "虚舞吉他"],
     #4699: ["5-ShengDanLiWuHe", "圣诞礼物盒"], #------
@@ -443,9 +443,9 @@ CastingId2MetaInfo = {
     4674: ["6-SaiBoCat", "赛博Cat"],
     4678: ["6-SaiBoFeiXiangPig", "赛博飞翔Pig", 50],
     #4682: ["6-SaiBoDengLuCang", "赛博登陆仓"], #------
-    4577: ["6-MiCaiZhiHuan", "秘彩之环", 200],
-    4636: ["6-JuChiDuanBi", "锯齿短匕", 120],
-    4624: ["6-YinBoZhenDangQi", "音波振荡器", 0], #------
+    4577: ["6-MiCaiZhiHuan", "秘彩之环", 100],
+    4636: ["6-JuChiDuanBi", "锯齿短匕"],
+    #4624: ["6-YinBoZhenDangQi", "音波振荡器", 0], #------
     4697: ["6-SaiBoQiFeiKa", "赛博起飞卡", 0],
     4706: ["6-SaiBoZhanShenDao", "赛博战神刀", 200],
     4708: ["6-SaiBoJiaFeiMao", "赛博加菲猫", 100],
@@ -472,7 +472,7 @@ CastingId2MetaInfo = {
     #4515: ["9-ShuGuangPuJiZhan", "殊光谱基站"], #*
     4562: ["9-ZhengZhaoJiJia", "征召机甲"],
     #4620: ["9-KuangChaoXunZhuZhe", "狂潮巡逐者"], #*
-    4642: ["9-TanSuoYuanShi", "探索原石", 30],
+    4642: ["9-TanSuoYuanShi", "探索原石", 20],
     4654: ["9-TaiYanJunZhiZhe", "钛岩均质者"],
     4659: ["9-ZiYouZhiShi", "自由之誓"],
 }
