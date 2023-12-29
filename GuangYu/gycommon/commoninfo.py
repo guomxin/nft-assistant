@@ -304,7 +304,7 @@ CastingId2MetaInfo = {
     # 1674: ["21-TingLanShuiXie", "汀兰水榭"],
     # #887: ["21-HuLu", "葫芦"],
 
-    #3457: ["1-N-QingKongYuFengZhou", "晴空御风帚", 50], ########
+    3457: ["1-N-QingKongYuFengZhou", "晴空御风帚", 50], ########
     3747: ["1-N-MengYouGeLou", "梦游阁楼"],
     3748: ["1-N-YouLingTianTai", "幽灵天台"],
     3548: ["1-N-ChaoNengMoJing", "超能墨镜", 60],
@@ -327,7 +327,7 @@ CastingId2MetaInfo = {
     4014: ["2-JinQuXiYin", "金躯玺印"],
     4386: ["2-JinLianLingZhan", "金莲灵盏", 100],
     4384: ["2-YiShouFuTu", "异兽浮图", 200],
-    4323: ["2-DaMoHuanShi", "大魔幻师", 1000],
+    4323: ["2-DaMoHuanShi", "大魔幻师", 800],
     4607: ["2-JiuChongTianWaiTian", "九重天外天", 500],
 
     #2589: ["3-JiXingGuangLun", "先驱I-疾行光轮"],
@@ -415,10 +415,10 @@ CastingId2MetaInfo = {
     4672: ["5-WuXiangWeiLaiChang", "无限未来厂"],
     4681: ["5-GuangKongKaQian", "光控卡钳", 200],
     4647: ["5-Xmas-GuangLuXueQiao", "Xmas-光陆雪橇"],
-    4688: ["5-XuWuJiTa", "虚舞吉他"],
+    4688: ["5-XuWuJiTa", "虚舞吉他", 20],
     #4699: ["5-ShengDanLiWuHe", "圣诞礼物盒"], #------
-    4684: ["5-WeiLaiFeiYueBan", "未来飞跃板"],
-    4705: ["5-ShiKongCaoKongShouBing", "时空操控手柄"],
+    4684: ["5-WeiLaiFeiYueBan", "未来飞跃板", 20],
+    4705: ["5-ShiKongCaoKongShouBing", "时空操控手柄", 20],
 
     #4443: ["6-XuShiZhongShu", "虚实中枢"],
     #4448: ["6-XuNiLiRen", "虚拟利刃"],
@@ -450,7 +450,7 @@ CastingId2MetaInfo = {
     4697: ["6-SaiBoQiFeiKa", "赛博起飞卡", 0],
     4706: ["6-SaiBoZhanShenDao", "赛博战神刀", 200],
     4708: ["6-SaiBoJiaFeiMao", "赛博加菲猫", 100],
-    4707: ["6-SaiBoWuNeng", "赛博悟能", 50],
+    4707: ["6-SaiBoWuNeng", "赛博悟能"], #------
 
     3998: ["7-XiangSuQiJing", "像素奇晶"],
     3544: ["7-TanXianZheIV", "探险者IV"],
@@ -466,9 +466,9 @@ CastingId2MetaInfo = {
     4569: ["8-HuanXiaoQuQi", "欢笑曲奇"],
     #4570: ["8-HuaYangLvBao", "花漾旅包"], #*
     4606: ["8-XiaoXiaoJianPan-DZai", "小小键盘-D仔"],
-    4644: ["8-ShengDanSongGe", "圣诞颂歌", 40],
-    4572: ["8-MoZhongLeYuan", "蘑钟乐园", 80],
-    4650: ["8-XingYaoLanTan", "星耀篮坛", 35],
+    4644: ["8-ShengDanSongGe", "圣诞颂歌", 35],
+    4572: ["8-MoZhongLeYuan", "蘑钟乐园", 60],
+    4650: ["8-XingYaoLanTan", "星耀篮坛", 30],
 
     #4515: ["9-ShuGuangPuJiZhan", "殊光谱基站"], #*
     4562: ["9-ZhengZhaoJiJia", "征召机甲"],
@@ -490,7 +490,7 @@ HighestValue_Products_Info = {
 }
 
 # 173
-Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzA0Mjc3MTEyLCJzaWduSWQiOiJmZGVjMmU4ZTYxOWE0YWE5YjAyMmZlZTRhY2RhZTk2OSIsImlhdCI6MTcwMzY3MjMxMn0.9cDJwS667r3fjxhpZOqdjYeMsq_9LY7LVZmucYBMIds"
+Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzA0NDUzMDgwLCJzaWduSWQiOiJlNTU1MDlmODAzOWE0YmIzYTAxYmViMjZjZDZkZGVhMiIsImlhdCI6MTcwMzg0ODI4MH0.5Sad6NFw6TZNes0Nk68ODmM1CUjcVZLqsnyKsa1ENys"
 
 # 131
 Query_Token= "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxMzE1NjE2MTA5MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzAzOTM1Mzc0LCJzaWduSWQiOiJkMWFlZDNiZmM2YjM0MmQ1YjNlYThlNjVmNThkNjNlZiIsImlhdCI6MTcwMzMzMDU3NH0.mN1nZTt3Nr_8EV-zjHmCbHeY01zc9de-g5w0n2_Vjm0"
