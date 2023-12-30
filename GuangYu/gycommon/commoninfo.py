@@ -393,7 +393,7 @@ CastingId2MetaInfo = {
     4493: ["5-YeDanJuNengGuan", "液氮聚能罐"],
     #4458: ["5-XiangRiKuiJiNengZhuangZhi", "向日葵汲能装置"],#*
     4502: ["5-CiNengXuanFuBan", "磁能悬浮板"],
-    4481: ["5-ShenYuJiangCi", "神谕降赐", 200],
+    4481: ["5-ShenYuJiangCi", "神谕降赐"],
     4500: ["5-LiuGuangYouShi", "流光邮匙"],
     4484: ["5-ShuangHuaYanHuo", "双华烟火"],
     4499: ["5-HeiQiaoJiXieCheng", "黑巧机械城"],
@@ -404,7 +404,7 @@ CastingId2MetaInfo = {
     4559: ["5-YeNengFangYuTa", "液能防御塔"],
     4574: ["5-CaiTangMengLeYuan", "彩糖梦乐园"],
     4589: ["5-ShengJingZhiMen", "圣境之门", 2000],
-    4558: ["5-QiFuZhiChui", "祈福之槌", 100],
+    4558: ["5-QiFuZhiChui", "祈福之槌"],
     4605: ["5-JingLianZengChanQi", "精炼增产器"],
     #4628: ["5-PingAnQiShiSuiPian", "平安启示碎片"],
     4646: ["5-XueYangLingYin", "雪漾铃音"],
@@ -469,6 +469,7 @@ CastingId2MetaInfo = {
     4644: ["8-ShengDanSongGe", "圣诞颂歌", 35],
     4572: ["8-MoZhongLeYuan", "蘑钟乐园", 70],
     4650: ["8-XingYaoLanTan", "星耀篮坛", 25],
+    4649: ["8-HuanZuZhiTa", "幻足之塔"],
 
     #4515: ["9-ShuGuangPuJiZhan", "殊光谱基站"], #*
     4562: ["9-ZhengZhaoJiJia", "征召机甲"],
