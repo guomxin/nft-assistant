@@ -393,7 +393,7 @@ CastingId2MetaInfo = {
     4493: ["5-YeDanJuNengGuan", "液氮聚能罐"],
     #4458: ["5-XiangRiKuiJiNengZhuangZhi", "向日葵汲能装置"],#*
     4502: ["5-CiNengXuanFuBan", "磁能悬浮板"],
-    4481: ["5-ShenYuJiangCi", "神谕降赐"],
+    4481: ["5-ShenYuJiangCi", "神谕降赐", 200],
     4500: ["5-LiuGuangYouShi", "流光邮匙"],
     4484: ["5-ShuangHuaYanHuo", "双华烟火"],
     4499: ["5-HeiQiaoJiXieCheng", "黑巧机械城"],
@@ -404,7 +404,7 @@ CastingId2MetaInfo = {
     4559: ["5-YeNengFangYuTa", "液能防御塔"],
     4574: ["5-CaiTangMengLeYuan", "彩糖梦乐园"],
     4589: ["5-ShengJingZhiMen", "圣境之门", 2000],
-    4558: ["5-QiFuZhiChui", "祈福之槌"],
+    4558: ["5-QiFuZhiChui", "祈福之槌", 100],
     4605: ["5-JingLianZengChanQi", "精炼增产器"],
     #4628: ["5-PingAnQiShiSuiPian", "平安启示碎片"],
     4646: ["5-XueYangLingYin", "雪漾铃音"],
@@ -415,10 +415,10 @@ CastingId2MetaInfo = {
     4672: ["5-WuXiangWeiLaiChang", "无限未来厂"],
     4681: ["5-GuangKongKaQian", "光控卡钳", 200],
     4647: ["5-Xmas-GuangLuXueQiao", "Xmas-光陆雪橇"],
-    4688: ["5-XuWuJiTa", "虚舞吉他", 20],
+    #4688: ["5-XuWuJiTa", "虚舞吉他"], #------
     #4699: ["5-ShengDanLiWuHe", "圣诞礼物盒"], #------
-    4684: ["5-WeiLaiFeiYueBan", "未来飞跃板", 20],
-    4705: ["5-ShiKongCaoKongShouBing", "时空操控手柄", 20],
+    #4684: ["5-WeiLaiFeiYueBan", "未来飞跃板"], #------
+    #4705: ["5-ShiKongCaoKongShouBing", "时空操控手柄"], #------
 
     #4443: ["6-XuShiZhongShu", "虚实中枢"],
     #4448: ["6-XuNiLiRen", "虚拟利刃"],
@@ -445,12 +445,12 @@ CastingId2MetaInfo = {
     4678: ["6-SaiBoFeiXiangPig", "赛博飞翔Pig", 50],
     #4682: ["6-SaiBoDengLuCang", "赛博登陆仓"], #------
     4577: ["6-MiCaiZhiHuan", "秘彩之环", 100],
-    4636: ["6-JuChiDuanBi", "锯齿短匕"],
+    #4636: ["6-JuChiDuanBi", "锯齿短匕"], #------
     #4624: ["6-YinBoZhenDangQi", "音波振荡器", 0], #------
     4697: ["6-SaiBoQiFeiKa", "赛博起飞卡", 0],
-    4706: ["6-SaiBoZhanShenDao", "赛博战神刀", 200],
+    4706: ["6-SaiBoZhanShenDao", "赛博战神刀", 300],
     4708: ["6-SaiBoJiaFeiMao", "赛博加菲猫", 100],
-    4707: ["6-SaiBoWuNeng", "赛博悟能"], #------
+    #4707: ["6-SaiBoWuNeng", "赛博悟能"], #------
 
     3998: ["7-XiangSuQiJing", "像素奇晶"],
     3544: ["7-TanXianZheIV", "探险者IV"],
@@ -467,13 +467,13 @@ CastingId2MetaInfo = {
     #4570: ["8-HuaYangLvBao", "花漾旅包"], #*
     4606: ["8-XiaoXiaoJianPan-DZai", "小小键盘-D仔"],
     4644: ["8-ShengDanSongGe", "圣诞颂歌", 35],
-    4572: ["8-MoZhongLeYuan", "蘑钟乐园", 60],
-    4650: ["8-XingYaoLanTan", "星耀篮坛", 30],
+    4572: ["8-MoZhongLeYuan", "蘑钟乐园", 70],
+    4650: ["8-XingYaoLanTan", "星耀篮坛", 25],
 
     #4515: ["9-ShuGuangPuJiZhan", "殊光谱基站"], #*
     4562: ["9-ZhengZhaoJiJia", "征召机甲"],
     #4620: ["9-KuangChaoXunZhuZhe", "狂潮巡逐者"], #*
-    4642: ["9-TanSuoYuanShi", "探索原石", 20],
+    4642: ["9-TanSuoYuanShi", "探索原石", 25],
     4654: ["9-TaiYanJunZhiZhe", "钛岩均质者"],
     4659: ["9-ZiYouZhiShi", "自由之誓"],
 }
