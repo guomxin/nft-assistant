@@ -325,8 +325,8 @@ CastingId2MetaInfo = {
     #2616: ["2-HuanShuShi", "幻术师"], 
     #2617: ["2-MoShuShi", "魔术师"],
     4014: ["2-JinQuXiYin", "金躯玺印"],
-    4386: ["2-JinLianLingZhan", "金莲灵盏", 100],
-    4384: ["2-YiShouFuTu", "异兽浮图", 200],
+    4386: ["2-JinLianLingZhan", "金莲灵盏", 50],
+    4384: ["2-YiShouFuTu", "异兽浮图", 100],
     4323: ["2-DaMoHuanShi", "大魔幻师", 800],
     4607: ["2-JiuChongTianWaiTian", "九重天外天", 500],
 
@@ -393,7 +393,7 @@ CastingId2MetaInfo = {
     4493: ["5-YeDanJuNengGuan", "液氮聚能罐"],
     #4458: ["5-XiangRiKuiJiNengZhuangZhi", "向日葵汲能装置"],#*
     4502: ["5-CiNengXuanFuBan", "磁能悬浮板"],
-    4481: ["5-ShenYuJiangCi", "神谕降赐"],
+    #4481: ["5-ShenYuJiangCi", "神谕降赐"],
     4500: ["5-LiuGuangYouShi", "流光邮匙"],
     4484: ["5-ShuangHuaYanHuo", "双华烟火"],
     4499: ["5-HeiQiaoJiXieCheng", "黑巧机械城"],
