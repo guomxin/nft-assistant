@@ -469,7 +469,7 @@ CastingId2MetaInfo = {
     4644: ["8-ShengDanSongGe", "圣诞颂歌", 35],
     4572: ["8-MoZhongLeYuan", "蘑钟乐园", 70],
     4650: ["8-XingYaoLanTan", "星耀篮坛", 25],
-    4649: ["8-HuanZuZhiTa", "幻足之塔"],
+    4649: ["8-HuanZuZhiTa", "幻足之塔", 200],
 
     #4515: ["9-ShuGuangPuJiZhan", "殊光谱基站"], #*
     4562: ["9-ZhengZhaoJiJia", "征召机甲"],
