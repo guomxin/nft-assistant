@@ -305,14 +305,14 @@ CastingId2MetaInfo = {
     # #887: ["21-HuLu", "葫芦"],
 
     3457: ["1-N-QingKongYuFengZhou", "晴空御风帚", 50], ########
-    3747: ["1-N-MengYouGeLou", "梦游阁楼"],
-    3748: ["1-N-YouLingTianTai", "幽灵天台"],
+    3747: ["1-N-MengYouGeLou", "梦游阁楼", 30],
+    3748: ["1-N-YouLingTianTai", "幽灵天台", 30],
     3548: ["1-N-ChaoNengMoJing", "超能墨镜", 60],
     #3458: ["1-SR-YingMuHuanShaPeng", "影幕幻纱篷"],
-    3549: ["1-SR-QuanJiShouTao", "拳击手套"],
+    3549: ["1-SR-QuanJiShouTao", "拳击手套", 50],
     #2457: ["1-SSR-MoDengZhongXin", "摩登中心"],
     #2466: ["1-SSR-ZhongGuiTieDao", "重轨铁道"],
-    3550: ["1-SSR-ChaoShanDianCi", "超闪电磁", 100],
+    3550: ["1-SSR-ChaoShanDianCi", "超闪电磁", 150],
     4629: ["1-WeiGuangFeiTan", "微光飞毯"],
     4630: ["1-ShuGuangLuJian", "曙光陆舰"],
 
@@ -447,10 +447,11 @@ CastingId2MetaInfo = {
     4577: ["6-MiCaiZhiHuan", "秘彩之环", 100],
     #4636: ["6-JuChiDuanBi", "锯齿短匕"], #------
     #4624: ["6-YinBoZhenDangQi", "音波振荡器", 0], #------
-    4697: ["6-SaiBoQiFeiKa", "赛博起飞卡", 0],
+    4697: ["6-SaiBoQiFeiKa", "赛博起飞卡", 3],
     4706: ["6-SaiBoZhanShenDao", "赛博战神刀", 300],
     4708: ["6-SaiBoJiaFeiMao", "赛博加菲猫", 100],
     #4707: ["6-SaiBoWuNeng", "赛博悟能"], #------
+    4716: ["6-SaiBoJinGangMouse", "赛博金刚Mouse", 10],
 
     3998: ["7-XiangSuQiJing", "像素奇晶"],
     3544: ["7-TanXianZheIV", "探险者IV"],
