@@ -34,7 +34,7 @@ python analyze_transaction_prices.py 3748 ${yesterday} 50
 
 echo "---超能墨镜---"
 python grab_transaction_price.py 3548 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 3548 ${yesterday} 50
+python analyze_transaction_prices.py 3548 ${yesterday} 10
 
 echo "---拳击手套---"
 python grab_transaction_price.py 3549 ${yesterday} ${yesterday}
@@ -42,11 +42,11 @@ python analyze_transaction_prices.py 3549 ${yesterday} 50
 
 echo "---超闪电磁---"
 python grab_transaction_price.py 3550 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 3550 ${yesterday} 100
+python analyze_transaction_prices.py 3550 ${yesterday} 50
 
 echo "---时空穿梭机---"
 python grab_transaction_price.py 3646 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 3646 ${yesterday} 500
+python analyze_transaction_prices.py 3646 ${yesterday} 100
 
 echo "---月球上城---"
 python grab_transaction_price.py 3751 ${yesterday} ${yesterday}
@@ -54,24 +54,24 @@ python analyze_transaction_prices.py 3751 ${yesterday} 500
 
 echo "---微光飞毯---"
 python grab_transaction_price.py 4629 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 4629 ${yesterday} 50
+python analyze_transaction_prices.py 4629 ${yesterday} 10
 
 echo "---曙光陆舰---"
 python grab_transaction_price.py 4630 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 4630 ${yesterday} 50
+python analyze_transaction_prices.py 4630 ${yesterday} 10
 
 #--- 神话区---#
 echo "---载福祥凰---"
 python grab_transaction_price.py 3535 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 3535 ${yesterday} 500
+python analyze_transaction_prices.py 3535 ${yesterday} 100
 
 echo "---龙吟万象---"
 python grab_transaction_price.py 2837 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 2837 ${yesterday} 500
+python analyze_transaction_prices.py 2837 ${yesterday} 100
 
 echo "---金躯玺印---"
 python grab_transaction_price.py 4014 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 4014 ${yesterday} 500
+python analyze_transaction_prices.py 4014 ${yesterday} 50
 
 echo "---金莲灵盏---"
 python grab_transaction_price.py 4386 ${yesterday} ${yesterday}
@@ -79,7 +79,7 @@ python analyze_transaction_prices.py 4386 ${yesterday} 50
 
 echo "---异兽浮图---"
 python grab_transaction_price.py 4384 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 4384 ${yesterday} 100
+python analyze_transaction_prices.py 4384 ${yesterday} 50
 
 #--- 未归类 ---#
 echo "---大魔幻师---"
