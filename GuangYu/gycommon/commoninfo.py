@@ -420,6 +420,7 @@ CastingId2MetaInfo = {
     #4684: ["5-WeiLaiFeiYueBan", "未来飞跃板"], #------
     #4705: ["5-ShiKongCaoKongShouBing", "时空操控手柄"], #------
     4701: ["5-JiangBingTangShuangLieChe", "姜饼糖霜列车"],
+    4715: ["5-PuTaoJiaYouZhan", "葡萄加油站"],
 
     #4443: ["6-XuShiZhongShu", "虚实中枢"],
     #4448: ["6-XuNiLiRen", "虚拟利刃"],
