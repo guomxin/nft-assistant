@@ -329,6 +329,7 @@ CastingId2MetaInfo = {
     4384: ["2-YiShouFuTu", "异兽浮图", 100],
     4323: ["2-DaMoHuanShi", "大魔幻师", 800],
     4607: ["2-JiuChongTianWaiTian", "九重天外天", 500],
+    4719: ["2-QiongJiangYuLu", "琼浆玉露", 35],
 
     #2589: ["3-JiXingGuangLun", "先驱I-疾行光轮"],
     #3056: ["3-BingHuangGuiZuo", "冰凰瑰座"],
@@ -410,7 +411,7 @@ CastingId2MetaInfo = {
     4646: ["5-XueYangLingYin", "雪漾铃音"],
     4652: ["5-ChenXiZhiAn", "晨曦之黯"],
     4658: ["5-ZhiKongJiXieHuShou", "智控机械护手"],
-    4371: ["5-QianYeZhiYao", "千夜之钥"],
+    4371: ["5-QianYeZhiYao", "千夜之钥", 5],
     4675: ["5-ChiYanHuanXian", "炽焰幻显", 1000],
     4672: ["5-WuXiangWeiLaiChang", "无限未来厂"],
     4681: ["5-GuangKongKaQian", "光控卡钳", 200],
@@ -494,7 +495,7 @@ HighestValue_Products_Info = {
 }
 
 # 173
-Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzA0NDUzMDgwLCJzaWduSWQiOiJlNTU1MDlmODAzOWE0YmIzYTAxYmViMjZjZDZkZGVhMiIsImlhdCI6MTcwMzg0ODI4MH0.5Sad6NFw6TZNes0Nk68ODmM1CUjcVZLqsnyKsa1ENys"
+Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzA0ODAwNjUzLCJzaWduSWQiOiIwYWQ4MjJjMWQ3NmU0N2E2ODY0ZTBkNDAwY2M2MzQ3YiIsImlhdCI6MTcwNDE5NTg1M30.u3nHdGgkIqLIQJvCZLpue_rXQqmWa18-Bai4chC9qE8"
 
 # 131
 Query_Token= "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxMzE1NjE2MTA5MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzA0NTg2Nzg5LCJzaWduSWQiOiI5MjhiOTM3Nzc1MmI0ODNmOTQ2YThiNmY1MTBiZTcwNSIsImlhdCI6MTcwMzk4MTk4OX0.eAFCosuB1T2HmASm3n2jJ7udnQJLfAjLNYWTUN5iD0o"
