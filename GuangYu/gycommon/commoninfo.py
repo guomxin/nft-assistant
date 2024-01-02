@@ -324,7 +324,7 @@ CastingId2MetaInfo = {
     2837: ["2-LongYinWanXiang", "龙吟万象", 1000],
     #2616: ["2-HuanShuShi", "幻术师"], 
     #2617: ["2-MoShuShi", "魔术师"],
-    4014: ["2-JinQuXiYin", "金躯玺印"],
+    4014: ["2-JinQuXiYin", "金躯玺印", 100],
     4386: ["2-JinLianLingZhan", "金莲灵盏", 50],
     4384: ["2-YiShouFuTu", "异兽浮图", 100],
     4323: ["2-DaMoHuanShi", "大魔幻师", 800],
@@ -419,6 +419,7 @@ CastingId2MetaInfo = {
     #4699: ["5-ShengDanLiWuHe", "圣诞礼物盒"], #------
     #4684: ["5-WeiLaiFeiYueBan", "未来飞跃板"], #------
     #4705: ["5-ShiKongCaoKongShouBing", "时空操控手柄"], #------
+    4701: ["5-JiangBingTangShuangLieChe", "姜饼糖霜列车"],
 
     #4443: ["6-XuShiZhongShu", "虚实中枢"],
     #4448: ["6-XuNiLiRen", "虚拟利刃"],
@@ -473,11 +474,11 @@ CastingId2MetaInfo = {
     4649: ["8-HuanZuZhiTa", "幻足之塔", 200],
 
     #4515: ["9-ShuGuangPuJiZhan", "殊光谱基站"], #*
-    4562: ["9-ZhengZhaoJiJia", "征召机甲"],
+    4562: ["9-ZhengZhaoJiJia", "征召机甲", 100],
     #4620: ["9-KuangChaoXunZhuZhe", "狂潮巡逐者"], #*
     4642: ["9-TanSuoYuanShi", "探索原石", 25],
-    4654: ["9-TaiYanJunZhiZhe", "钛岩均质者"],
-    4659: ["9-ZiYouZhiShi", "自由之誓"],
+    4654: ["9-TaiYanJunZhiZhe", "钛岩均质者", 60],
+    4659: ["9-ZiYouZhiShi", "自由之誓", 300],
 }
 
 DEFAULT_MIN_PRICE = 10
