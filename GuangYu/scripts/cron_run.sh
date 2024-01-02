@@ -90,7 +90,7 @@ echo "---九重天外天---"
 python grab_transaction_price.py 4607 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 4607 ${yesterday} 100
 
-echo "---琼浆玉露---"
+echo "---仙露琼浆---"
 python grab_transaction_price.py 4719 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 4719 ${yesterday} 10
 
@@ -363,7 +363,7 @@ cp *$yesterday* upload/$yesterday;cd upload/$yesterday
 
 for nft in "1-N-MengYouGeLou" "1-N-YouLingTianTai" "1-N-ChaoNengMoJing" \
 "1-SR-QuanJiShouTao" "1-SSR-ChaoShanDianCi" "1-WeiGuangFeiTan" "1-ShuGuangLuJian" \
-"2-UR-ShiKongChuanSuoJi" "2-UR-YueQiuShangCheng" "2-DaMoHuanShi" "2-JinLianLingZhan" "2-QiongJiangYuLu" \
+"2-UR-ShiKongChuanSuoJi" "2-UR-YueQiuShangCheng" "2-DaMoHuanShi" "2-JinLianLingZhan" "2-XianLuQiongJiang" \
 "2-ZaiFuXiangHuang" "2-LongYinWanXiang" "2-JinQuXiYin" "2-YiShouFuTu" "2-JiuChongTianWaiTian" \
 "3-ZhongYiWuSheng" "3-ChuFengMingTong" "3-ChongHuoFeiYan" \
 "3-HuBenZhanXue" "3-YinXuJianDao" "3-FengDengBaiGu" "3-YongMengShuBing" "3-KuaiHuRen" "3-RuiFengJianLing" "3-YunYuYangFeng" \
