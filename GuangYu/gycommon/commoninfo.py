@@ -329,7 +329,7 @@ CastingId2MetaInfo = {
     4384: ["2-YiShouFuTu", "异兽浮图", 100],
     4323: ["2-DaMoHuanShi", "大魔幻师", 800],
     4607: ["2-JiuChongTianWaiTian", "九重天外天", 500],
-    4719: ["2-XianLuQiongJiang", "仙露琼浆", 35],
+    4719: ["2-XianLuQiongJiang", "仙露琼浆", 40],
 
     #2589: ["3-JiXingGuangLun", "先驱I-疾行光轮"],
     #3056: ["3-BingHuangGuiZuo", "冰凰瑰座"],
@@ -476,7 +476,7 @@ CastingId2MetaInfo = {
     4649: ["8-HuanZuZhiTa", "幻足之塔", 200],
 
     #4515: ["9-ShuGuangPuJiZhan", "殊光谱基站"], #*
-    4562: ["9-ZhengZhaoJiJia", "征召机甲", 100],
+    #4562: ["9-ZhengZhaoJiJia", "征召机甲", 100], #------
     #4620: ["9-KuangChaoXunZhuZhe", "狂潮巡逐者"], #*
     4642: ["9-TanSuoYuanShi", "探索原石", 25],
     4654: ["9-TaiYanJunZhiZhe", "钛岩均质者", 60],
