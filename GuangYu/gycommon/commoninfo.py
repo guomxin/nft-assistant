@@ -329,7 +329,8 @@ CastingId2MetaInfo = {
     4384: ["2-YiShouFuTu", "异兽浮图", 100],
     4323: ["2-DaMoHuanShi", "大魔幻师", 800],
     4607: ["2-JiuChongTianWaiTian", "九重天外天", 500],
-    4719: ["2-XianLuQiongJiang", "仙露琼浆", 40],
+    4719: ["2-XianLuQiongJiang", "仙露琼浆", 40], #------
+    4737: ["2-JiangShanShengJingBeiZhan", "江山盛景杯盏", 45],
 
     #2589: ["3-JiXingGuangLun", "先驱I-疾行光轮"],
     #3056: ["3-BingHuangGuiZuo", "冰凰瑰座"],
