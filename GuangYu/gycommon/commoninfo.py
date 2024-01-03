@@ -320,7 +320,7 @@ CastingId2MetaInfo = {
     #2468: ["2-UR-YuanYangDuLun", "远洋渡轮"],
     3646: ["2-UR-ShiKongChuanSuoJi", "时空穿梭机", 500],
     3751: ["2-UR-YueQiuShangCheng", "月球上城", 500],
-    3535: ["2-ZaiFuXiangHuang", "载福祥凰", 500],
+    3535: ["2-ZaiFuXiangHuang", "载福祥凰", 800],
     2837: ["2-LongYinWanXiang", "龙吟万象", 1000],
     #2616: ["2-HuanShuShi", "幻术师"], 
     #2617: ["2-MoShuShi", "魔术师"],
@@ -422,6 +422,7 @@ CastingId2MetaInfo = {
     #4705: ["5-ShiKongCaoKongShouBing", "时空操控手柄"], #------
     4701: ["5-JiangBingTangShuangLieChe", "姜饼糖霜列车"],
     4715: ["5-PuTaoJiaYouZhan", "葡萄加油站"],
+    4665: ["5-HuanYingLeiTing", "幻影雷霆"],
 
     #4443: ["6-XuShiZhongShu", "虚实中枢"],
     #4448: ["6-XuNiLiRen", "虚拟利刃"],
