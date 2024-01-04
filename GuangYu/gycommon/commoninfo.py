@@ -329,8 +329,8 @@ CastingId2MetaInfo = {
     4384: ["2-YiShouFuTu", "异兽浮图", 100],
     4323: ["2-DaMoHuanShi", "大魔幻师", 800],
     4607: ["2-JiuChongTianWaiTian", "九重天外天", 500],
-    4719: ["2-XianLuQiongJiang", "仙露琼浆", 40], #------
-    4737: ["2-JiangShanShengJingBeiZhan", "江山盛景杯盏", 45],
+    #4719: ["2-XianLuQiongJiang", "仙露琼浆", 40], #------
+    4737: ["2-JiangShanShengJingBeiZhan", "江山盛景杯盏", 40], #------
 
     #2589: ["3-JiXingGuangLun", "先驱I-疾行光轮"],
     #3056: ["3-BingHuangGuiZuo", "冰凰瑰座"],
@@ -385,7 +385,7 @@ CastingId2MetaInfo = {
     #4453: ["5-LiuHongFengFan", "流虹风帆"],
     #4450: ["5-MengMaQiYuan", "梦马奇缘"], #*
     4455: ["5-JingGuangJiaoNang", "晶光胶囊"],
-    4479: ["5-HuoFengTouKui", "火风头盔"],
+    #4479: ["5-HuoFengTouKui", "火风头盔"], #------
     #4483: ["5-JuanHuaZhiZhan", "镌花之盏"], #-------
     #4470: ["5-JiangCaiYingQuan", "绛彩映泉"], #*
     #4471: ["5-CiGanDianChi", "磁感电池"], #------
@@ -401,7 +401,7 @@ CastingId2MetaInfo = {
     4499: ["5-HeiQiaoJiXieCheng", "黑巧机械城"],
     4473: ["5-WeiDuSheXiangJi", "维度摄像机"],
     #4446: ["5-CanShuGuoZhi", "参数果汁"], #------
-    4576: ["5-CangQiongYinDeng", "苍穹引灯"],
+    #4576: ["5-CangQiongYinDeng", "苍穹引灯"], #------
     4552: ["5-ZhiGengHuaQi", "知更花期"],
     4559: ["5-YeNengFangYuTa", "液能防御塔"],
     4574: ["5-CaiTangMengLeYuan", "彩糖梦乐园"],
@@ -452,7 +452,7 @@ CastingId2MetaInfo = {
     4577: ["6-MiCaiZhiHuan", "秘彩之环", 100],
     #4636: ["6-JuChiDuanBi", "锯齿短匕"], #------
     #4624: ["6-YinBoZhenDangQi", "音波振荡器", 0], #------
-    4697: ["6-SaiBoQiFeiKa", "赛博起飞卡", 2],
+    4697: ["6-SaiBoQiFeiKa", "赛博起飞卡", 2], #------
     4706: ["6-SaiBoZhanShenDao", "赛博战神刀", 300],
     4708: ["6-SaiBoJiaFeiMao", "赛博加菲猫", 100],
     #4707: ["6-SaiBoWuNeng", "赛博悟能"], #------

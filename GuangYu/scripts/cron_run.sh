@@ -90,10 +90,6 @@ echo "---九重天外天---"
 python grab_transaction_price.py 4607 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 4607 ${yesterday} 100
 
-echo "---仙露琼浆---"
-python grab_transaction_price.py 4719 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 4719 ${yesterday} 10
-
 echo "---江山盛景杯盏---"
 python grab_transaction_price.py 4737 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 4737 ${yesterday} 10
@@ -154,10 +150,6 @@ echo "---冰霜冷却系统---"
 python grab_transaction_price.py 4417 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 4417 ${yesterday} 100
 
-echo "---火风头盔---"
-python grab_transaction_price.py 4479 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 4479 ${yesterday} 50
-
 echo "---液氮聚能罐---"
 python grab_transaction_price.py 4493 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 4493 ${yesterday} 50
@@ -181,10 +173,6 @@ python analyze_transaction_prices.py 4499 ${yesterday} 100
 echo "---维度摄像机---"
 python grab_transaction_price.py 4473 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 4473 ${yesterday} 100
-
-echo "---苍穹引灯---"
-python grab_transaction_price.py 4576 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 4576 ${yesterday} 50
 
 echo "---知更花期---"
 python grab_transaction_price.py 4552 ${yesterday} ${yesterday}
@@ -367,16 +355,16 @@ cp *$yesterday* upload/$yesterday;cd upload/$yesterday
 
 for nft in "1-N-MengYouGeLou" "1-N-YouLingTianTai" "1-N-ChaoNengMoJing" \
 "1-SR-QuanJiShouTao" "1-SSR-ChaoShanDianCi" "1-WeiGuangFeiTan" "1-ShuGuangLuJian" \
-"2-UR-ShiKongChuanSuoJi" "2-UR-YueQiuShangCheng" "2-DaMoHuanShi" "2-JinLianLingZhan" "2-XianLuQiongJiang" \
+"2-UR-ShiKongChuanSuoJi" "2-UR-YueQiuShangCheng" "2-DaMoHuanShi" "2-JinLianLingZhan" \
 "2-ZaiFuXiangHuang" "2-LongYinWanXiang" "2-JinQuXiYin" "2-YiShouFuTu" "2-JiuChongTianWaiTian" \
 "2-JiangShanShengJingBeiZhan" \
 "3-ZhongYiWuSheng" "3-ChuFengMingTong" "3-ChongHuoFeiYan" \
 "3-HuBenZhanXue" "3-YinXuJianDao" "3-FengDengBaiGu" "3-YongMengShuBing" "3-KuaiHuRen" "3-RuiFengJianLing" "3-YunYuYangFeng" \
-"5-HuoFengTouKui" "5-FangShengPeiYangJi" "5-JingGuangJiaoNang" "5-ShengJingZhiMen" "5-QiFuZhiChui" "5-JingLianZengChanQi" \
+"5-FangShengPeiYangJi" "5-JingGuangJiaoNang" "5-ShengJingZhiMen" "5-QiFuZhiChui" "5-JingLianZengChanQi" \
 "5-BingShuangLengQueXiTong" "5-HeiQiaoJiXieCheng" "5-WeiDuSheXiangJi" "5-ChiYanHuanXian" "5-WuXiangWeiLaiChang" \
 "5-ShuangHuaYanHuo" "5-CaiTangMengLeYuan" "5-GuangKongKaQian" "5-Xmas-GuangLuXueQiao" "5-JiangBingTangShuangLieChe" \
 "5-YeDanJuNengGuan" "5-CiNengXuanFuBan" "5-LiuGuangYouShi" "5-XueYangLingYin" "5-ZhiKongJiXieHuShou" "5-HuanYingLeiTing" \
-"5-CangQiongYinDeng" "5-ZhiGengHuaQi" "5-YeNengFangYuTa" "5-ChenXiZhiAn" "5-QianYeZhiYao" "5-PuTaoJiaYouZhan" \
+"5-ZhiGengHuaQi" "5-YeNengFangYuTa" "5-ChenXiZhiAn" "5-QianYeZhiYao" "5-PuTaoJiaYouZhan" \
 "6-SaiBoCat" "6-SaiBoFeiXiangPig" "6-MiCaiZhiHuan" "6-SaiBoZhanShenDao" "6-SaiBoJiaFeiMao" \
 "6-SaiBoPunK" "6-SaiBoPig" "6-SaiBoQiFeiKa" "6-SaiBoJinGangMouse" \
 "7-XiangSuQiJing" "7-TanXianZheIV" "7-XunBaoZheI" "7-GongYunXiaoShao" "7-FangBiaoZhiShiDeng" "7-YeGuWangCheng" \
