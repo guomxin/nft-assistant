@@ -26,11 +26,11 @@ echo "------${today}------"
 #--- 幸运盒 ---#
 echo "---梦游阁楼---"
 python grab_transaction_price.py 3747 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 3747 ${yesterday} 50
+python analyze_transaction_prices.py 3747 ${yesterday} 10
 
 echo "---幽灵天台---"
 python grab_transaction_price.py 3748 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 3748 ${yesterday} 50
+python analyze_transaction_prices.py 3748 ${yesterday} 10
 
 echo "---超能墨镜---"
 python grab_transaction_price.py 3548 ${yesterday} ${yesterday}
@@ -38,11 +38,11 @@ python analyze_transaction_prices.py 3548 ${yesterday} 10
 
 echo "---拳击手套---"
 python grab_transaction_price.py 3549 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 3549 ${yesterday} 50
+python analyze_transaction_prices.py 3549 ${yesterday} 10
 
 echo "---超闪电磁---"
 python grab_transaction_price.py 3550 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 3550 ${yesterday} 50
+python analyze_transaction_prices.py 3550 ${yesterday} 10
 
 echo "---时空穿梭机---"
 python grab_transaction_price.py 3646 ${yesterday} ${yesterday}
@@ -242,6 +242,10 @@ echo "---幻影雷霆---"
 python grab_transaction_price.py 4665 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 4665 ${yesterday} 100
 
+echo "---平安启示蛋---"
+python grab_transaction_price.py 4690 ${yesterday} ${yesterday}
+python analyze_transaction_prices.py 4690 ${yesterday} 50
+
 #--- 赛博狂潮 ---#
 echo "---赛博PunK---"
 python grab_transaction_price.py 4661 ${yesterday} ${yesterday}
@@ -368,7 +372,7 @@ for nft in "1-N-MengYouGeLou" "1-N-YouLingTianTai" "1-N-ChaoNengMoJing" \
 "5-BingShuangLengQueXiTong" "5-HeiQiaoJiXieCheng" "5-WeiDuSheXiangJi" "5-ChiYanHuanXian" "5-WuXiangWeiLaiChang" \
 "5-ShuangHuaYanHuo" "5-CaiTangMengLeYuan" "5-GuangKongKaQian" "5-Xmas-GuangLuXueQiao" "5-JiangBingTangShuangLieChe" \
 "5-YeDanJuNengGuan" "5-CiNengXuanFuBan" "5-LiuGuangYouShi" "5-XueYangLingYin" "5-ZhiKongJiXieHuShou" "5-HuanYingLeiTing" \
-"5-ZhiGengHuaQi" "5-YeNengFangYuTa" "5-ChenXiZhiAn" "5-QianYeZhiYao" "5-PuTaoJiaYouZhan" \
+"5-ZhiGengHuaQi" "5-YeNengFangYuTa" "5-ChenXiZhiAn" "5-QianYeZhiYao" "5-PuTaoJiaYouZhan" "5-PingAnQiShiDan" \
 "6-SaiBoCat" "6-SaiBoFeiXiangPig" "6-MiCaiZhiHuan" "6-SaiBoZhanShenDao" "6-SaiBoJiaFeiMao" \
 "6-SaiBoPunK" "6-SaiBoPig" "6-SaiBoQiFeiKa" "6-SaiBoJinGangMouse" "6-SaiBoDog" \
 "7-XiangSuQiJing" "7-TanXianZheIV" "7-XunBaoZheI" "7-GongYunXiaoShao" "7-FangBiaoZhiShiDeng" "7-YeGuWangCheng" \
