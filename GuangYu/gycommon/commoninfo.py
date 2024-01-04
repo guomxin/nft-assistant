@@ -452,11 +452,12 @@ CastingId2MetaInfo = {
     4577: ["6-MiCaiZhiHuan", "秘彩之环", 100],
     #4636: ["6-JuChiDuanBi", "锯齿短匕"], #------
     #4624: ["6-YinBoZhenDangQi", "音波振荡器", 0], #------
-    4697: ["6-SaiBoQiFeiKa", "赛博起飞卡", 2], #------
+    4723: ["6-SaiBoQiFeiKa", "赛博起飞卡", 2], 
     4706: ["6-SaiBoZhanShenDao", "赛博战神刀", 300],
     4708: ["6-SaiBoJiaFeiMao", "赛博加菲猫", 100],
     #4707: ["6-SaiBoWuNeng", "赛博悟能"], #------
     4716: ["6-SaiBoJinGangMouse", "赛博金刚Mouse", 10],
+    4667: ["6-SaiBoDog", "赛博Dog", 50],
 
     3998: ["7-XiangSuQiJing", "像素奇晶"],
     3544: ["7-TanXianZheIV", "探险者IV"],
