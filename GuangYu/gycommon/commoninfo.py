@@ -425,6 +425,7 @@ CastingId2MetaInfo = {
     4715: ["5-PuTaoJiaYouZhan", "葡萄加油站"],
     4665: ["5-HuanYingLeiTing", "幻影雷霆"],
     4690: ["5-PingAnQiShiDan", "平安启示蛋", 100],
+    4712: ["5-CaoMeiNaiXiBei", "草莓奶昔杯"],
 
     #4443: ["6-XuShiZhongShu", "虚实中枢"],
     #4448: ["6-XuNiLiRen", "虚拟利刃"],
