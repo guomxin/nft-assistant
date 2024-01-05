@@ -305,11 +305,11 @@ CastingId2MetaInfo = {
     # #887: ["21-HuLu", "葫芦"],
 
     3457: ["1-N-QingKongYuFengZhou", "晴空御风帚", 50], ########
-    3747: ["1-N-MengYouGeLou", "梦游阁楼", 30],
-    3748: ["1-N-YouLingTianTai", "幽灵天台", 30],
+    3747: ["1-N-MengYouGeLou", "梦游阁楼", 20],
+    3748: ["1-N-YouLingTianTai", "幽灵天台", 20],
     3548: ["1-N-ChaoNengMoJing", "超能墨镜", 60],
     #3458: ["1-SR-YingMuHuanShaPeng", "影幕幻纱篷"],
-    3549: ["1-SR-QuanJiShouTao", "拳击手套", 50],
+    3549: ["1-SR-QuanJiShouTao", "拳击手套", 40],
     #2457: ["1-SSR-MoDengZhongXin", "摩登中心"],
     #2466: ["1-SSR-ZhongGuiTieDao", "重轨铁道"],
     3550: ["1-SSR-ChaoShanDianCi", "超闪电磁", 150],
@@ -330,7 +330,7 @@ CastingId2MetaInfo = {
     4323: ["2-DaMoHuanShi", "大魔幻师", 800],
     4607: ["2-JiuChongTianWaiTian", "九重天外天", 500],
     #4719: ["2-XianLuQiongJiang", "仙露琼浆", 40], #------
-    4737: ["2-JiangShanShengJingBeiZhan", "江山盛景杯盏", 40], #------
+    #4737: ["2-JiangShanShengJingBeiZhan", "江山盛景杯盏", 40], #------
 
     #2589: ["3-JiXingGuangLun", "先驱I-疾行光轮"],
     #3056: ["3-BingHuangGuiZuo", "冰凰瑰座"],
@@ -415,7 +415,7 @@ CastingId2MetaInfo = {
     4371: ["5-QianYeZhiYao", "千夜之钥", 5],
     4675: ["5-ChiYanHuanXian", "炽焰幻显", 1000],
     4672: ["5-WuXiangWeiLaiChang", "无限未来厂"],
-    4681: ["5-GuangKongKaQian", "光控卡钳", 200],
+    #4681: ["5-GuangKongKaQian", "光控卡钳", 200],
     4647: ["5-Xmas-GuangLuXueQiao", "Xmas-光陆雪橇"],
     #4688: ["5-XuWuJiTa", "虚舞吉他"], #------
     #4699: ["5-ShengDanLiWuHe", "圣诞礼物盒"], #------
@@ -458,7 +458,7 @@ CastingId2MetaInfo = {
     4706: ["6-SaiBoZhanShenDao", "赛博战神刀", 300],
     4708: ["6-SaiBoJiaFeiMao", "赛博加菲猫", 100],
     #4707: ["6-SaiBoWuNeng", "赛博悟能"], #------
-    4716: ["6-SaiBoJinGangMouse", "赛博金刚Mouse", 10],
+    4716: ["6-SaiBoJinGangMouse", "赛博金刚Mouse", 8],
     4667: ["6-SaiBoDog", "赛博Dog", 50],
 
     3998: ["7-XiangSuQiJing", "像素奇晶"],

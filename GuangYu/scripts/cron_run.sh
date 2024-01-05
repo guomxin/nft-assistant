@@ -90,10 +90,6 @@ echo "---九重天外天---"
 python grab_transaction_price.py 4607 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 4607 ${yesterday} 100
 
-echo "---江山盛景杯盏---"
-python grab_transaction_price.py 4737 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 4737 ${yesterday} 10
-
 #--- 三国区 ---#
 echo "---忠义武圣---"
 python grab_transaction_price.py 3982 ${yesterday} ${yesterday}
@@ -221,10 +217,6 @@ python analyze_transaction_prices.py 4675 ${yesterday} 100
 echo "---无限未来厂---"
 python grab_transaction_price.py 4672 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 4672 ${yesterday} 10
-
-echo "---光控卡钳---"
-python grab_transaction_price.py 4681 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 4681 ${yesterday} 100
 
 echo "---Xmas-光陆雪橇---"
 python grab_transaction_price.py 4647 ${yesterday} ${yesterday}
@@ -369,12 +361,11 @@ for nft in "1-N-MengYouGeLou" "1-N-YouLingTianTai" "1-N-ChaoNengMoJing" \
 "1-SR-QuanJiShouTao" "1-SSR-ChaoShanDianCi" "1-WeiGuangFeiTan" "1-ShuGuangLuJian" \
 "2-UR-ShiKongChuanSuoJi" "2-UR-YueQiuShangCheng" "2-DaMoHuanShi" "2-JinLianLingZhan" \
 "2-ZaiFuXiangHuang" "2-LongYinWanXiang" "2-JinQuXiYin" "2-YiShouFuTu" "2-JiuChongTianWaiTian" \
-"2-JiangShanShengJingBeiZhan" \
 "3-ZhongYiWuSheng" "3-ChuFengMingTong" "3-ChongHuoFeiYan" \
 "3-HuBenZhanXue" "3-YinXuJianDao" "3-FengDengBaiGu" "3-YongMengShuBing" "3-KuaiHuRen" "3-RuiFengJianLing" "3-YunYuYangFeng" \
 "5-FangShengPeiYangJi" "5-JingGuangJiaoNang" "5-ShengJingZhiMen" "5-QiFuZhiChui" "5-JingLianZengChanQi" \
 "5-BingShuangLengQueXiTong" "5-HeiQiaoJiXieCheng" "5-WeiDuSheXiangJi" "5-ChiYanHuanXian" "5-WuXiangWeiLaiChang" \
-"5-ShuangHuaYanHuo" "5-CaiTangMengLeYuan" "5-GuangKongKaQian" "5-Xmas-GuangLuXueQiao" "5-JiangBingTangShuangLieChe" \
+"5-ShuangHuaYanHuo" "5-CaiTangMengLeYuan" "5-Xmas-GuangLuXueQiao" "5-JiangBingTangShuangLieChe" \
 "5-YeDanJuNengGuan" "5-CiNengXuanFuBan" "5-LiuGuangYouShi" "5-XueYangLingYin" "5-ZhiKongJiXieHuShou" "5-HuanYingLeiTing" \
 "5-ZhiGengHuaQi" "5-YeNengFangYuTa" "5-ChenXiZhiAn" "5-QianYeZhiYao" "5-PuTaoJiaYouZhan" "5-PingAnQiShiDan" \
 "5-CaoMeiNaiXiBei" \
