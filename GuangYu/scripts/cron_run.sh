@@ -174,10 +174,6 @@ echo "---维度摄像机---"
 python grab_transaction_price.py 4473 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 4473 ${yesterday} 100
 
-echo "---知更花期---"
-python grab_transaction_price.py 4552 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 4552 ${yesterday} 50
-
 echo "---液能防御塔---"
 python grab_transaction_price.py 4559 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 4559 ${yesterday} 50
@@ -290,6 +286,10 @@ echo "---赛博Dog---"
 python grab_transaction_price.py 4667 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 4667 ${yesterday} 50
 
+echo "---赛博哮天犬---"
+python grab_transaction_price.py 4754 ${yesterday} ${yesterday}
+python analyze_transaction_prices.py 4754 ${yesterday} 50
+
 #--- 探险区 ---#
 echo "---像素奇晶---"
 python grab_transaction_price.py 3998 ${yesterday} ${yesterday}
@@ -348,6 +348,10 @@ echo "---幻足之塔---"
 python grab_transaction_price.py 4649 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 4649 ${yesterday} 50
 
+echo "---妙趣糖果盒---"
+python grab_transaction_price.py 4622 ${yesterday} ${yesterday}
+python analyze_transaction_prices.py 4622 ${yesterday} 10
+
 #--- 探索未来 ---#
 echo "---探索原石---"
 python grab_transaction_price.py 4642 ${yesterday} ${yesterday}
@@ -376,13 +380,13 @@ for nft in "1-N-MengYouGeLou" "1-N-YouLingTianTai" "1-N-ChaoNengMoJing" \
 "5-BingShuangLengQueXiTong" "5-HeiQiaoJiXieCheng" "5-WeiDuSheXiangJi" "5-ChiYanHuanXian" "5-WuXiangWeiLaiChang" \
 "5-ShuangHuaYanHuo" "5-CaiTangMengLeYuan" "5-Xmas-GuangLuXueQiao" "5-JiangBingTangShuangLieChe" \
 "5-YeDanJuNengGuan" "5-CiNengXuanFuBan" "5-LiuGuangYouShi" "5-XueYangLingYin" "5-ZhiKongJiXieHuShou" "5-HuanYingLeiTing" \
-"5-ZhiGengHuaQi" "5-YeNengFangYuTa" "5-ChenXiZhiAn" "5-QianYeZhiYao" "5-PuTaoJiaYouZhan" "5-PingAnQiShiDan" \
+"5-YeNengFangYuTa" "5-ChenXiZhiAn" "5-QianYeZhiYao" "5-PuTaoJiaYouZhan" "5-PingAnQiShiDan" \
 "5-CaoMeiNaiXiBei" "5-LunHuiHuaZhong" \
 "6-SaiBoCat" "6-SaiBoFeiXiangPig" "6-MiCaiZhiHuan" "6-SaiBoZhanShenDao" "6-SaiBoJiaFeiMao" \
-"6-SaiBoPunK" "6-SaiBoPig" "6-SaiBoQiFeiKa" "6-SaiBoJinGangMouse" "6-SaiBoDog" \
+"6-SaiBoPunK" "6-SaiBoPig" "6-SaiBoQiFeiKa" "6-SaiBoJinGangMouse" "6-SaiBoDog" "6-SaiBoXiaoTianQuan" \
 "7-XiangSuQiJing" "7-TanXianZheIV" "7-XunBaoZheI" "7-GongYunXiaoShao" "7-FangBiaoZhiShiDeng" "7-YeGuWangCheng" \
 "8-QianJuanHuaJia" "8-XiaoXiaoJianPan-LZai" "8-HuanXiaoQuQi" "8-XiaoXiaoJianPan-DZai" "8-ShengDanSongGe" "8-MoZhongLeYuan" \
-"8-XingYaoLanTan" "8-HuanZuZhiTa" \
+"8-XingYaoLanTan" "8-HuanZuZhiTa" "8-MiaoQuTangGuoHe" \
 "9-TanSuoYuanShi" "9-TaiYanJunZhiZhe" "9-ZiYouZhiShi"
 do
     mkdir $nft;mv *$nft*.csv $nft;zip -q $nft-$yesterday $nft/*

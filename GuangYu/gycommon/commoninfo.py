@@ -403,7 +403,7 @@ CastingId2MetaInfo = {
     4473: ["5-WeiDuSheXiangJi", "维度摄像机"],
     #4446: ["5-CanShuGuoZhi", "参数果汁"], #------
     #4576: ["5-CangQiongYinDeng", "苍穹引灯"], #------
-    4552: ["5-ZhiGengHuaQi", "知更花期"],
+    #4552: ["5-ZhiGengHuaQi", "知更花期"],
     4559: ["5-YeNengFangYuTa", "液能防御塔"],
     4574: ["5-CaiTangMengLeYuan", "彩糖梦乐园"],
     4589: ["5-ShengJingZhiMen", "圣境之门", 2000],
@@ -462,6 +462,7 @@ CastingId2MetaInfo = {
     #4707: ["6-SaiBoWuNeng", "赛博悟能"], #------
     4716: ["6-SaiBoJinGangMouse", "赛博金刚Mouse", 8],
     4667: ["6-SaiBoDog", "赛博Dog", 50],
+    4754: ["6-SaiBoXiaoTianQuan", "赛博啸天犬", 100],
 
     3998: ["7-XiangSuQiJing", "像素奇晶"],
     3544: ["7-TanXianZheIV", "探险者IV"],
@@ -481,11 +482,12 @@ CastingId2MetaInfo = {
     4572: ["8-MoZhongLeYuan", "蘑钟乐园", 70],
     4650: ["8-XingYaoLanTan", "星耀篮坛", 25],
     4649: ["8-HuanZuZhiTa", "幻足之塔", 200],
+    4622: ["8-MiaoQuTangGuoHe", "妙趣糖果盒", 8],
 
     #4515: ["9-ShuGuangPuJiZhan", "殊光谱基站"], #*
     #4562: ["9-ZhengZhaoJiJia", "征召机甲", 100], #------
     #4620: ["9-KuangChaoXunZhuZhe", "狂潮巡逐者"], #*
-    4642: ["9-TanSuoYuanShi", "探索原石", 25],
+    4642: ["9-TanSuoYuanShi", "探索原石", 0], #------
     4654: ["9-TaiYanJunZhiZhe", "钛岩均质者", 60],
     4659: ["9-ZiYouZhiShi", "自由之誓", 300],
 }
@@ -502,7 +504,7 @@ HighestValue_Products_Info = {
 }
 
 # 173
-Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzA0ODAwNjUzLCJzaWduSWQiOiIwYWQ4MjJjMWQ3NmU0N2E2ODY0ZTBkNDAwY2M2MzQ3YiIsImlhdCI6MTcwNDE5NTg1M30.u3nHdGgkIqLIQJvCZLpue_rXQqmWa18-Bai4chC9qE8"
+Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzA1MTQ3MDEyLCJzaWduSWQiOiI2NDU1ZDJjMWEzMTg0OGYyODQ5OTAyNjZkZDBjNTU2ZCIsImlhdCI6MTcwNDU0MjIxMn0.TYHFf6sQeTp6X44Fb_b9yh4lG3ZqAy643XAfQ2IekmE"
 
 # 131
 Query_Token= "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxMzE1NjE2MTA5MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzA0NTg2Nzg5LCJzaWduSWQiOiI5MjhiOTM3Nzc1MmI0ODNmOTQ2YThiNmY1MTBiZTcwNSIsImlhdCI6MTcwMzk4MTk4OX0.eAFCosuB1T2HmASm3n2jJ7udnQJLfAjLNYWTUN5iD0o"
