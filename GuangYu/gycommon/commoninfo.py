@@ -487,8 +487,8 @@ CastingId2MetaInfo = {
     #4515: ["9-ShuGuangPuJiZhan", "殊光谱基站"], #*
     #4562: ["9-ZhengZhaoJiJia", "征召机甲", 100], #------
     #4620: ["9-KuangChaoXunZhuZhe", "狂潮巡逐者"], #*
-    4642: ["9-TanSuoYuanShi", "探索原石", 0], #------
-    4654: ["9-TaiYanJunZhiZhe", "钛岩均质者", 60],
+    #4642: ["9-TanSuoYuanShi", "探索原石", 0], #------
+    4654: ["9-TaiYanJunZhiZhe", "钛岩均质者", 108],
     4659: ["9-ZiYouZhiShi", "自由之誓", 300],
 }
 
