@@ -463,6 +463,7 @@ CastingId2MetaInfo = {
     4716: ["6-SaiBoJinGangMouse", "赛博金刚Mouse", 8],
     4667: ["6-SaiBoDog", "赛博Dog", 50],
     4754: ["6-SaiBoXiaoTianQuan", "赛博啸天犬", 100],
+    4709: ["6-SaiBoZhanShenYouXianHeChengZiGeKa", "赛博战神优先合成资格卡", 200],
 
     3998: ["7-XiangSuQiJing", "像素奇晶"],
     3544: ["7-TanXianZheIV", "探险者IV"],
