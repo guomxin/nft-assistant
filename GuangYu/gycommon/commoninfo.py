@@ -456,7 +456,7 @@ CastingId2MetaInfo = {
     4577: ["6-MiCaiZhiHuan", "秘彩之环", 100],
     #4636: ["6-JuChiDuanBi", "锯齿短匕"], #------
     #4624: ["6-YinBoZhenDangQi", "音波振荡器", 0], #------
-    4723: ["6-SaiBoQiFeiKa", "赛博起飞卡", 2], 
+    4723: ["6-SaiBoQiFeiKa", "赛博起飞卡", 1], 
     4706: ["6-SaiBoZhanShenDao", "赛博战神刀", 300],
     4708: ["6-SaiBoJiaFeiMao", "赛博加菲猫", 100],
     #4707: ["6-SaiBoWuNeng", "赛博悟能"], #------
@@ -508,7 +508,7 @@ HighestValue_Products_Info = {
 Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzA1MTQ3MDEyLCJzaWduSWQiOiI2NDU1ZDJjMWEzMTg0OGYyODQ5OTAyNjZkZDBjNTU2ZCIsImlhdCI6MTcwNDU0MjIxMn0.TYHFf6sQeTp6X44Fb_b9yh4lG3ZqAy643XAfQ2IekmE"
 
 # 131
-Query_Token= "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxMzE1NjE2MTA5MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzA0NTg2Nzg5LCJzaWduSWQiOiI5MjhiOTM3Nzc1MmI0ODNmOTQ2YThiNmY1MTBiZTcwNSIsImlhdCI6MTcwMzk4MTk4OX0.eAFCosuB1T2HmASm3n2jJ7udnQJLfAjLNYWTUN5iD0o"
+Query_Token= "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxMzE1NjE2MTA5MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzA1MjczOTU2LCJzaWduSWQiOiJiMjQyYzEyMjE4Y2Q0Yjg2YWRiNTU0NWFiYWUxNjljZCIsImlhdCI6MTcwNDY2OTE1Nn0.Lj6jPkABVhdJArqyWe4474aJo6eCueS2NGasa0LEU0Y"
 
 GanDart_Headers = {
     "Host": "api2.gandart.com",
