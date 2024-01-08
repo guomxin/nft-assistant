@@ -489,9 +489,10 @@ CastingId2MetaInfo = {
     #4562: ["9-ZhengZhaoJiJia", "征召机甲", 100], #------
     #4620: ["9-KuangChaoXunZhuZhe", "狂潮巡逐者"], #*
     #4642: ["9-TanSuoYuanShi", "探索原石", 0], #------
-    4654: ["9-TaiYanJunZhiZhe", "钛岩均质者", 108],
+    4654: ["9-TaiYanJunZhiZhe", "钛岩均质者", 158],
     4659: ["9-ZiYouZhiShi", "自由之誓", 300],
-    4769: ["9-JiXieDoGou", "机械Do狗", 150],
+    4769: ["9-JiXieDoGou", "机械Do狗", 258],
+    4718: ["9-JiJiaZhaoHuanQi", "机甲召唤器", 198],
 }
 
 DEFAULT_MIN_PRICE = 10
