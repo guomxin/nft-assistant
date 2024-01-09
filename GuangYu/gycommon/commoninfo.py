@@ -307,7 +307,7 @@ CastingId2MetaInfo = {
     3457: ["1-N-QingKongYuFengZhou", "晴空御风帚", 50], ########
     3747: ["1-N-MengYouGeLou", "梦游阁楼", 20],
     3748: ["1-N-YouLingTianTai", "幽灵天台", 20],
-    3548: ["1-N-ChaoNengMoJing", "超能墨镜", 60],
+    3548: ["1-N-ChaoNengMoJing", "超能墨镜", 50],
     #3458: ["1-SR-YingMuHuanShaPeng", "影幕幻纱篷"],
     3549: ["1-SR-QuanJiShouTao", "拳击手套", 40],
     #2457: ["1-SSR-MoDengZhongXin", "摩登中心"],
@@ -331,7 +331,8 @@ CastingId2MetaInfo = {
     4607: ["2-JiuChongTianWaiTian", "九重天外天", 500],
     #4719: ["2-XianLuQiongJiang", "仙露琼浆", 40], #------
     #4737: ["2-JiangShanShengJingBeiZhan", "江山盛景杯盏", 40], #------
-    4756: ["2-LingYunJinLouYuYu", "凌云金楼玉宇", 45], 
+    #4756: ["2-LingYunJinLouYuYu", "凌云金楼玉宇", 45], 
+    4791: ["2-RuiXueYingChunDao", "瑞雪迎春到", 50],
 
     #2589: ["3-JiXingGuangLun", "先驱I-疾行光轮"],
     #3056: ["3-BingHuangGuiZuo", "冰凰瑰座"],
@@ -428,8 +429,8 @@ CastingId2MetaInfo = {
     4690: ["5-PingAnQiShiDan", "平安启示蛋", 100],
     4712: ["5-CaoMeiNaiXiBei", "草莓奶昔杯"],
     4738: ["5-LunHuiHuaZhong", "轮回花钟"],
-    4644: ["5-ShengDanSongGe", "圣诞颂歌", 31],
-    4650: ["5-XingYaoLanTan", "星耀篮坛", 25],
+    4644: ["5-ShengDanSongGe", "圣诞颂歌", 25],
+    4650: ["5-XingYaoLanTan", "星耀篮坛", 20],
 
     #4443: ["6-XuShiZhongShu", "虚实中枢"],
     #4448: ["6-XuNiLiRen", "虚拟利刃"],
@@ -466,6 +467,7 @@ CastingId2MetaInfo = {
     4667: ["6-SaiBoDog", "赛博Dog", 50],
     #4754: ["6-SaiBoXiaoTianQuan", "赛博啸天犬", 0], #------
     #4709: ["6-SaiBoZhanShenYouXianHeChengZiGeKa", "赛博战神优先合成资格卡", 0], #------
+    4770: ["6-SaiBoCattle", "赛博Cattle", 20],
 
     3998: ["7-XiangSuQiJing", "像素奇晶"],
     3544: ["7-TanXianZheIV", "探险者IV"],
@@ -483,16 +485,17 @@ CastingId2MetaInfo = {
     4606: ["8-XiaoXiaoJianPan-DZai", "小小键盘-D仔"],
     #4572: ["8-MoZhongLeYuan", "蘑钟乐园", 70], #------
     #4649: ["8-HuanZuZhiTa", "幻足之塔", 200], #------
-    4622: ["8-MiaoQuTangGuoHe", "妙趣糖果盒", 8],
+    4622: ["8-MiaoQuTangGuoHe", "妙趣糖果盒", 10],
+    4777: ["8-ChuanShuoKaPian", "传说卡片", 4],
 
     #4515: ["9-ShuGuangPuJiZhan", "殊光谱基站"], #*
     #4562: ["9-ZhengZhaoJiJia", "征召机甲", 100], #------
     #4620: ["9-KuangChaoXunZhuZhe", "狂潮巡逐者"], #*
     #4642: ["9-TanSuoYuanShi", "探索原石", 0], #------
-    4654: ["9-TaiYanJunZhiZhe", "钛岩均质者", 158],
+    4654: ["9-TaiYanJunZhiZhe", "钛岩均质者", 100],
     4659: ["9-ZiYouZhiShi", "自由之誓", 300],
-    4769: ["9-JiXieDoGou", "机械Do狗", 258],
-    4718: ["9-JiJiaZhaoHuanQi", "机甲召唤器", 198],
+    4769: ["9-JiXieDoGou", "机械Do狗", 200],
+    4718: ["9-JiJiaZhaoHuanQi", "机甲召唤器", 100],
 }
 
 DEFAULT_MIN_PRICE = 10
