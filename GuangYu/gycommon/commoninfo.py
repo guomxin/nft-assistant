@@ -423,12 +423,12 @@ CastingId2MetaInfo = {
     #4684: ["5-WeiLaiFeiYueBan", "未来飞跃板"], #------
     #4705: ["5-ShiKongCaoKongShouBing", "时空操控手柄"], #------
     4701: ["5-JiangBingTangShuangLieChe", "姜饼糖霜列车"],
-    4715: ["5-PuTaoJiaYouZhan", "葡萄加油站"],
+    #4715: ["5-PuTaoJiaYouZhan", "葡萄加油站"],
     4665: ["5-HuanYingLeiTing", "幻影雷霆"],
     4690: ["5-PingAnQiShiDan", "平安启示蛋", 100],
     4712: ["5-CaoMeiNaiXiBei", "草莓奶昔杯"],
     4738: ["5-LunHuiHuaZhong", "轮回花钟"],
-    4644: ["5-ShengDanSongGe", "圣诞颂歌", 35],
+    4644: ["5-ShengDanSongGe", "圣诞颂歌", 31],
     4650: ["5-XingYaoLanTan", "星耀篮坛", 25],
 
     #4443: ["6-XuShiZhongShu", "虚实中枢"],
@@ -458,14 +458,14 @@ CastingId2MetaInfo = {
     4577: ["6-MiCaiZhiHuan", "秘彩之环", 100],
     #4636: ["6-JuChiDuanBi", "锯齿短匕"], #------
     #4624: ["6-YinBoZhenDangQi", "音波振荡器", 0], #------
-    4723: ["6-SaiBoQiFeiKa", "赛博起飞卡", 3], 
-    4706: ["6-SaiBoZhanShenDao", "赛博战神刀", 300],
+    4723: ["6-SaiBoQiFeiKa", "赛博起飞卡", 2], 
+    #4706: ["6-SaiBoZhanShenDao", "赛博战神刀", 0], #------
     4708: ["6-SaiBoJiaFeiMao", "赛博加菲猫", 100],
     #4707: ["6-SaiBoWuNeng", "赛博悟能"], #------
     4716: ["6-SaiBoJinGangMouse", "赛博金刚Mouse", 8],
     4667: ["6-SaiBoDog", "赛博Dog", 50],
-    4754: ["6-SaiBoXiaoTianQuan", "赛博啸天犬", 250],
-    4709: ["6-SaiBoZhanShenYouXianHeChengZiGeKa", "赛博战神优先合成资格卡", 300],
+    #4754: ["6-SaiBoXiaoTianQuan", "赛博啸天犬", 0], #------
+    #4709: ["6-SaiBoZhanShenYouXianHeChengZiGeKa", "赛博战神优先合成资格卡", 0], #------
 
     3998: ["7-XiangSuQiJing", "像素奇晶"],
     3544: ["7-TanXianZheIV", "探险者IV"],
@@ -476,13 +476,13 @@ CastingId2MetaInfo = {
     3977: ["7-YeGuWangCheng", "邺菇王城"],
 
     #4444: ["8-ChaoZaiKuaiChongZhan", "超载快充站"],
-    4454: ["8-QianJuanHuaJia", "缱卷花驾"], #------
+    #4454: ["8-QianJuanHuaJia", "缱卷花驾"], #------
     4149: ["8-XiaoXiaoJianPan-LZai", "小小键盘-L仔"],
     4569: ["8-HuanXiaoQuQi", "欢笑曲奇"],
     #4570: ["8-HuaYangLvBao", "花漾旅包"], #*
     4606: ["8-XiaoXiaoJianPan-DZai", "小小键盘-D仔"],
-    4572: ["8-MoZhongLeYuan", "蘑钟乐园", 70], #------
-    4649: ["8-HuanZuZhiTa", "幻足之塔", 200], #------
+    #4572: ["8-MoZhongLeYuan", "蘑钟乐园", 70], #------
+    #4649: ["8-HuanZuZhiTa", "幻足之塔", 200], #------
     4622: ["8-MiaoQuTangGuoHe", "妙趣糖果盒", 8],
 
     #4515: ["9-ShuGuangPuJiZhan", "殊光谱基站"], #*

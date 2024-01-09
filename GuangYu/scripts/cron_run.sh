@@ -226,10 +226,6 @@ echo "---姜饼糖霜列车---"
 python grab_transaction_price.py 4701 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 4701 ${yesterday} 10
 
-echo "---葡萄加油站---"
-python grab_transaction_price.py 4715 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 4715 ${yesterday} 50
-
 echo "---幻影雷霆---"
 python grab_transaction_price.py 4665 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 4665 ${yesterday} 100
@@ -278,10 +274,6 @@ python analyze_transaction_prices.py 4577 ${yesterday} 50
 echo "---赛博起飞卡---"
 python grab_transaction_price.py 4723 ${yesterday} ${yesterday}
 
-echo "---赛博战神刀---"
-python grab_transaction_price.py 4706 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 4706 ${yesterday} 100
-
 echo "---赛博加菲猫---"
 python grab_transaction_price.py 4708 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 4708 ${yesterday} 50
@@ -293,14 +285,6 @@ python analyze_transaction_prices.py 4716 ${yesterday} 10
 echo "---赛博Dog---"
 python grab_transaction_price.py 4667 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 4667 ${yesterday} 50
-
-echo "---赛博哮天犬---"
-python grab_transaction_price.py 4754 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 4754 ${yesterday} 50
-
-echo "---赛博战神优先合成资格卡---"
-python grab_transaction_price.py 4709 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 4709 ${yesterday} 50
 
 #--- 探险区 ---#
 echo "---像素奇晶---"
@@ -328,10 +312,6 @@ python grab_transaction_price.py 3977 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 3977 ${yesterday} 100
 
 #--- 传说区 ---#
-echo "---缱卷花驾---"
-python grab_transaction_price.py 4454 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 4454 ${yesterday} 50
-
 echo "---小小键盘-L仔---"
 python grab_transaction_price.py 4149 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 4149 ${yesterday} 50
@@ -343,14 +323,6 @@ python analyze_transaction_prices.py 4569 ${yesterday} 50
 echo "---小小键盘-D仔---"
 python grab_transaction_price.py 4606 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 4606 ${yesterday} 50
-
-echo "---蘑钟乐园---"
-python grab_transaction_price.py 4572 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 4572 ${yesterday} 50
-
-echo "---幻足之塔---"
-python grab_transaction_price.py 4649 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 4649 ${yesterday} 50
 
 echo "---妙趣糖果盒---"
 python grab_transaction_price.py 4622 ${yesterday} ${yesterday}
@@ -388,13 +360,13 @@ for nft in "1-N-MengYouGeLou" "1-N-YouLingTianTai" "1-N-ChaoNengMoJing" \
 "5-BingShuangLengQueXiTong" "5-HeiQiaoJiXieCheng" "5-WeiDuSheXiangJi" "5-ChiYanHuanXian" "5-WuXiangWeiLaiChang" \
 "5-ShuangHuaYanHuo" "5-CaiTangMengLeYuan" "5-Xmas-GuangLuXueQiao" "5-JiangBingTangShuangLieChe" \
 "5-YeDanJuNengGuan" "5-CiNengXuanFuBan" "5-LiuGuangYouShi" "5-XueYangLingYin" "5-ZhiKongJiXieHuShou" "5-HuanYingLeiTing" \
-"5-YeNengFangYuTa" "5-ChenXiZhiAn" "5-QianYeZhiYao" "5-PuTaoJiaYouZhan" "5-PingAnQiShiDan" "5-ShengDanSongGe" "5-XingYaoLanTan" \
+"5-YeNengFangYuTa" "5-ChenXiZhiAn" "5-QianYeZhiYao" "5-PingAnQiShiDan" "5-ShengDanSongGe" "5-XingYaoLanTan" \
 "5-CaoMeiNaiXiBei" "5-LunHuiHuaZhong" \
-"6-SaiBoCat" "6-SaiBoFeiXiangPig" "6-MiCaiZhiHuan" "6-SaiBoZhanShenDao" "6-SaiBoJiaFeiMao" "6-SaiBoZhanShenYouXianHeChengZiGeKa" \
-"6-SaiBoPunK" "6-SaiBoPig" "6-SaiBoQiFeiKa" "6-SaiBoJinGangMouse" "6-SaiBoDog" "6-SaiBoXiaoTianQuan" \
+"6-SaiBoCat" "6-SaiBoFeiXiangPig" "6-MiCaiZhiHuan" "6-SaiBoJiaFeiMao" \
+"6-SaiBoPunK" "6-SaiBoPig" "6-SaiBoQiFeiKa" "6-SaiBoJinGangMouse" "6-SaiBoDog" \
 "7-XiangSuQiJing" "7-TanXianZheIV" "7-XunBaoZheI" "7-GongYunXiaoShao" "7-FangBiaoZhiShiDeng" "7-YeGuWangCheng" \
-"8-QianJuanHuaJia" "8-XiaoXiaoJianPan-LZai" "8-HuanXiaoQuQi" "8-XiaoXiaoJianPan-DZai" "8-MoZhongLeYuan" \
-"8-HuanZuZhiTa" "8-MiaoQuTangGuoHe" \
+"8-XiaoXiaoJianPan-LZai" "8-HuanXiaoQuQi" "8-XiaoXiaoJianPan-DZai" \
+"8-MiaoQuTangGuoHe" \
 "9-TaiYanJunZhiZhe" "9-ZiYouZhiShi" "9-JiXieDoGou" "9-JiJiaZhaoHuanQi"
 do
     mkdir $nft;mv *$nft*.csv $nft;zip -q $nft-$yesterday $nft/*
