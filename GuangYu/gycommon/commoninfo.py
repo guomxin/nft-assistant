@@ -467,7 +467,7 @@ CastingId2MetaInfo = {
     4667: ["6-SaiBoDog", "赛博Dog", 50],
     #4754: ["6-SaiBoXiaoTianQuan", "赛博啸天犬", 0], #------
     #4709: ["6-SaiBoZhanShenYouXianHeChengZiGeKa", "赛博战神优先合成资格卡", 0], #------
-    4770: ["6-SaiBoCattle", "赛博Cattle", 20],
+    4770: ["6-SaiBoCattle", "赛博Cattle", 15],
 
     3998: ["7-XiangSuQiJing", "像素奇晶"],
     3544: ["7-TanXianZheIV", "探险者IV"],
@@ -496,6 +496,7 @@ CastingId2MetaInfo = {
     4659: ["9-ZiYouZhiShi", "自由之誓", 300],
     4769: ["9-JiXieDoGou", "机械Do狗", 200],
     4718: ["9-JiJiaZhaoHuanQi", "机甲召唤器", 100],
+    4793: ["9-JiJiaJiaoLian", "机甲铰链"],
 }
 
 DEFAULT_MIN_PRICE = 10
