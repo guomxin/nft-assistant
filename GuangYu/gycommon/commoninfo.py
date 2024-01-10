@@ -332,7 +332,7 @@ CastingId2MetaInfo = {
     #4719: ["2-XianLuQiongJiang", "仙露琼浆", 40], #------
     #4737: ["2-JiangShanShengJingBeiZhan", "江山盛景杯盏", 40], #------
     #4756: ["2-LingYunJinLouYuYu", "凌云金楼玉宇", 45], 
-    4791: ["2-RuiXueYingChunDao", "瑞雪迎春到", 50],
+    #4791: ["2-RuiXueYingChunDao", "瑞雪迎春到", 50],
 
     #2589: ["3-JiXingGuangLun", "先驱I-疾行光轮"],
     #3056: ["3-BingHuangGuiZuo", "冰凰瑰座"],
@@ -468,6 +468,7 @@ CastingId2MetaInfo = {
     #4754: ["6-SaiBoXiaoTianQuan", "赛博啸天犬", 0], #------
     #4709: ["6-SaiBoZhanShenYouXianHeChengZiGeKa", "赛博战神优先合成资格卡", 0], #------
     4770: ["6-SaiBoCattle", "赛博Cattle", 15],
+    4779: ["6-SaiBoZhanShen", "赛博战神", 1000],
 
     3998: ["7-XiangSuQiJing", "像素奇晶"],
     3544: ["7-TanXianZheIV", "探险者IV"],
@@ -486,7 +487,7 @@ CastingId2MetaInfo = {
     #4572: ["8-MoZhongLeYuan", "蘑钟乐园", 70], #------
     #4649: ["8-HuanZuZhiTa", "幻足之塔", 200], #------
     4622: ["8-MiaoQuTangGuoHe", "妙趣糖果盒", 10],
-    4777: ["8-ChuanShuoKaPian", "传说卡片", 4],
+    4777: ["8-ChuanShuoKaPian", "传说卡片", 3],
 
     #4515: ["9-ShuGuangPuJiZhan", "殊光谱基站"], #*
     #4562: ["9-ZhengZhaoJiJia", "征召机甲", 100], #------
@@ -496,7 +497,7 @@ CastingId2MetaInfo = {
     4659: ["9-ZiYouZhiShi", "自由之誓", 300],
     4769: ["9-JiXieDoGou", "机械Do狗", 200],
     4718: ["9-JiJiaZhaoHuanQi", "机甲召唤器", 100],
-    4793: ["9-JiJiaJiaoLian", "机甲铰链"],
+    4793: ["9-JiJiaJiaoLian", "机甲铰链", 28],
 }
 
 DEFAULT_MIN_PRICE = 10
