@@ -489,6 +489,7 @@ CastingId2MetaInfo = {
     #4649: ["8-HuanZuZhiTa", "幻足之塔", 200], #------
     4622: ["8-MiaoQuTangGuoHe", "妙趣糖果盒", 10],
     4777: ["8-ChuanShuoKaPian", "传说卡片", 3],
+    4808: ["8-XianHuaQiYu", "仙花奇域", 100],
 
     #4515: ["9-ShuGuangPuJiZhan", "殊光谱基站"], #*
     #4562: ["9-ZhengZhaoJiJia", "征召机甲", 100], #------
@@ -499,6 +500,7 @@ CastingId2MetaInfo = {
     4769: ["9-JiXieDoGou", "机械Do狗", 258],
     4718: ["9-JiJiaZhaoHuanQi", "机甲召唤器", 100],
     4793: ["9-JiJiaJiaoLian", "机甲铰链", 28],
+    4807: ["9-ZiYouZhiShi-HongWenXingTai", "自由之誓-红温形态", 500],
 }
 
 DEFAULT_MIN_PRICE = 10
