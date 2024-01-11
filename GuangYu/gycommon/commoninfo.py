@@ -304,7 +304,7 @@ CastingId2MetaInfo = {
     # 1674: ["21-TingLanShuiXie", "汀兰水榭"],
     # #887: ["21-HuLu", "葫芦"],
 
-    3457: ["1-N-QingKongYuFengZhou", "晴空御风帚", 50], ########
+    3457: ["1-N-QingKongYuFengZhou", "晴空御风帚", 30], ########
     3747: ["1-N-MengYouGeLou", "梦游阁楼", 20],
     3748: ["1-N-YouLingTianTai", "幽灵天台", 20],
     3548: ["1-N-ChaoNengMoJing", "超能墨镜", 50],
@@ -374,7 +374,7 @@ CastingId2MetaInfo = {
     #4374: ["5-YuZhiGuoShi", "预制果实"],
     #4393: ["5-WenKongGuoZaiBaoJian", "温控过载保件"],
     #4406: ["5-SanShengLianYi", "三生涟漪"],
-    4373: ["5-FangShengPeiYangJi", "仿生培养基"],
+    #4373: ["5-FangShengPeiYangJi", "仿生培养基"],
     #4404: ["5-NongSuoBuJi", "浓缩补剂"],
     #4414: ["5-YeNengDongChe", "液能动车"],
     #4416: ["5-KeLePenQiBeiBao", "可乐喷气背包"],
@@ -431,6 +431,7 @@ CastingId2MetaInfo = {
     4738: ["5-LunHuiHuaZhong", "轮回花钟"],
     4644: ["5-ShengDanSongGe", "圣诞颂歌", 25],
     4650: ["5-XingYaoLanTan", "星耀篮坛", 20],
+    4766: ["5-HuaQiTongJing", "花期瞳镜"],
 
     #4443: ["6-XuShiZhongShu", "虚实中枢"],
     #4448: ["6-XuNiLiRen", "虚拟利刃"],
@@ -493,9 +494,9 @@ CastingId2MetaInfo = {
     #4562: ["9-ZhengZhaoJiJia", "征召机甲", 100], #------
     #4620: ["9-KuangChaoXunZhuZhe", "狂潮巡逐者"], #*
     #4642: ["9-TanSuoYuanShi", "探索原石", 0], #------
-    4654: ["9-TaiYanJunZhiZhe", "钛岩均质者", 100],
-    4659: ["9-ZiYouZhiShi", "自由之誓", 300],
-    4769: ["9-JiXieDoGou", "机械Do狗", 200],
+    4654: ["9-TaiYanJunZhiZhe", "钛岩均质者", 189],
+    #4659: ["9-ZiYouZhiShi", "自由之誓", 300],
+    4769: ["9-JiXieDoGou", "机械Do狗", 258],
     4718: ["9-JiJiaZhaoHuanQi", "机甲召唤器", 100],
     4793: ["9-JiJiaJiaoLian", "机甲铰链", 28],
 }
