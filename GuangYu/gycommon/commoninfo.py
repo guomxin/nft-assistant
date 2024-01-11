@@ -327,8 +327,8 @@ CastingId2MetaInfo = {
     4014: ["2-JinQuXiYin", "金躯玺印", 100],
     4386: ["2-JinLianLingZhan", "金莲灵盏", 50],
     4384: ["2-YiShouFuTu", "异兽浮图", 100],
-    4323: ["2-DaMoHuanShi", "大魔幻师", 800],
-    4607: ["2-JiuChongTianWaiTian", "九重天外天", 500],
+    4323: ["2-DaMoHuanShi", "大魔幻师", 600],
+    4607: ["2-JiuChongTianWaiTian", "九重天外天", 100],
     #4719: ["2-XianLuQiongJiang", "仙露琼浆", 40], #------
     #4737: ["2-JiangShanShengJingBeiZhan", "江山盛景杯盏", 40], #------
     #4756: ["2-LingYunJinLouYuYu", "凌云金楼玉宇", 45], 
@@ -468,8 +468,9 @@ CastingId2MetaInfo = {
     4667: ["6-SaiBoDog", "赛博Dog", 50],
     #4754: ["6-SaiBoXiaoTianQuan", "赛博啸天犬", 0], #------
     #4709: ["6-SaiBoZhanShenYouXianHeChengZiGeKa", "赛博战神优先合成资格卡", 0], #------
-    4770: ["6-SaiBoCattle", "赛博Cattle", 15],
+    4770: ["6-SaiBoCattle", "赛博Cattle", 28],
     4779: ["6-SaiBoZhanShen", "赛博战神", 1000],
+    4805: ["6-SaiBoHeErMoSi", "赛博赫尔墨斯", 500],
 
     3998: ["7-XiangSuQiJing", "像素奇晶"],
     3544: ["7-TanXianZheIV", "探险者IV"],
@@ -481,7 +482,7 @@ CastingId2MetaInfo = {
 
     #4444: ["8-ChaoZaiKuaiChongZhan", "超载快充站"],
     #4454: ["8-QianJuanHuaJia", "缱卷花驾"], #------
-    4149: ["8-XiaoXiaoJianPan-LZai", "小小键盘-L仔"],
+    4149: ["8-XiaoXiaoJianPan-LZai", "小小键盘-L仔", 200],
     4569: ["8-HuanXiaoQuQi", "欢笑曲奇"],
     #4570: ["8-HuaYangLvBao", "花漾旅包"], #*
     4606: ["8-XiaoXiaoJianPan-DZai", "小小键盘-D仔"],
