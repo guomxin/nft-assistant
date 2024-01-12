@@ -460,11 +460,11 @@ CastingId2MetaInfo = {
     4577: ["6-MiCaiZhiHuan", "秘彩之环", 100],
     #4636: ["6-JuChiDuanBi", "锯齿短匕"], #------
     #4624: ["6-YinBoZhenDangQi", "音波振荡器", 0], #------
-    4723: ["6-SaiBoQiFeiKa", "赛博起飞卡", 2], 
+    4723: ["6-SaiBoQiFeiKa", "赛博起飞卡", 3], 
     #4706: ["6-SaiBoZhanShenDao", "赛博战神刀", 0], #------
     4708: ["6-SaiBoJiaFeiMao", "赛博加菲猫", 100],
     #4707: ["6-SaiBoWuNeng", "赛博悟能"], #------
-    4716: ["6-SaiBoJinGangMouse", "赛博金刚Mouse", 8],
+    4716: ["6-SaiBoJinGangMouse", "赛博金刚Mouse", 10],
     4667: ["6-SaiBoDog", "赛博Dog", 50],
     #4754: ["6-SaiBoXiaoTianQuan", "赛博啸天犬", 0], #------
     #4709: ["6-SaiBoZhanShenYouXianHeChengZiGeKa", "赛博战神优先合成资格卡", 0], #------
@@ -491,6 +491,7 @@ CastingId2MetaInfo = {
     4622: ["8-MiaoQuTangGuoHe", "妙趣糖果盒", 10],
     4777: ["8-ChuanShuoKaPian", "传说卡片", 3],
     4808: ["8-XianHuaQiYu", "仙花奇域", 100],
+    4816: ["8-ChunRiCaiLun", "春日彩轮", 10],
 
     #4515: ["9-ShuGuangPuJiZhan", "殊光谱基站"], #*
     #4562: ["9-ZhengZhaoJiJia", "征召机甲", 100], #------
@@ -498,7 +499,7 @@ CastingId2MetaInfo = {
     #4642: ["9-TanSuoYuanShi", "探索原石", 0], #------
     4654: ["9-TaiYanJunZhiZhe", "钛岩均质者", 189],
     #4659: ["9-ZiYouZhiShi", "自由之誓", 300],
-    4769: ["9-JiXieDoGou", "机械Do狗", 258],
+    4769: ["9-JiXieDoGou", "机械Do狗", 200],
     4718: ["9-JiJiaZhaoHuanQi", "机甲召唤器", 100],
     4793: ["9-JiJiaJiaoLian", "机甲铰链", 28],
     4807: ["9-ZiYouZhiShi-HongWenXingTai", "自由之誓-红温形态", 500],
