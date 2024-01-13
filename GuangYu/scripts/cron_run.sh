@@ -385,7 +385,7 @@ for nft in "1-N-MengYouGeLou" "1-N-YouLingTianTai" "1-N-ChaoNengMoJing" \
 "5-YeDanJuNengGuan" "5-CiNengXuanFuBan" "5-LiuGuangYouShi" "5-XueYangLingYin" "5-ZhiKongJiXieHuShou" "5-HuanYingLeiTing" \
 "5-YeNengFangYuTa" "5-ChenXiZhiAn" "5-QianYeZhiYao" "5-PingAnQiShiDan" "5-ShengDanSongGe" "5-XingYaoLanTan" \
 "5-CaoMeiNaiXiBei" "5-LunHuiHuaZhong" "5-HuaQiTongJing" \
-"6-SaiBoCat" "6-SaiBoFeiXiangPig" "6-MiCaiZhiHuan" "6-SaiBoJiaFeiMao" "6-SaiBoCattle" "6-SaiBoHeErMoSi" \
+"6-SaiBoCattle" "6-SaiBoCat" "6-SaiBoFeiXiangPig" "6-MiCaiZhiHuan" "6-SaiBoJiaFeiMao" "6-SaiBoHeErMoSi" \
 "6-SaiBoPunK" "6-SaiBoPig" "6-SaiBoQiFeiKa" "6-SaiBoJinGangMouse" "6-SaiBoDog" "6-SaiBoZhanShen" \
 "7-XiangSuQiJing" "7-TanXianZheIV" "7-XunBaoZheI" "7-GongYunXiaoShao" "7-FangBiaoZhiShiDeng" "7-YeGuWangCheng" \
 "8-XiaoXiaoJianPan-LZai" "8-HuanXiaoQuQi" "8-XiaoXiaoJianPan-DZai" "8-ChuanShuoKaPian" "8-XianHuaQiYu" \
