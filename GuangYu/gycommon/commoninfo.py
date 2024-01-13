@@ -471,6 +471,7 @@ CastingId2MetaInfo = {
     4770: ["6-SaiBoCattle", "赛博Cattle", 28],
     4779: ["6-SaiBoZhanShen", "赛博战神", 1000],
     4805: ["6-SaiBoHeErMoSi", "赛博赫尔墨斯", 500],
+    4811: ["6-SaiBoMonkey", "赛博Monkey", 10],
 
     3998: ["7-XiangSuQiJing", "像素奇晶"],
     3544: ["7-TanXianZheIV", "探险者IV"],
