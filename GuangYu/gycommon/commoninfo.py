@@ -493,6 +493,7 @@ CastingId2MetaInfo = {
     4777: ["8-ChuanShuoKaPian", "传说卡片", 3],
     4808: ["8-XianHuaQiYu", "仙花奇域", 100],
     4816: ["8-ChunRiCaiLun", "春日彩轮", 10],
+    4795: ["8-QiYiJunGe", "奇异菌阁", 200],
 
     #4515: ["9-ShuGuangPuJiZhan", "殊光谱基站"], #*
     #4562: ["9-ZhengZhaoJiJia", "征召机甲", 100], #------
@@ -504,6 +505,7 @@ CastingId2MetaInfo = {
     4718: ["9-JiJiaZhaoHuanQi", "机甲召唤器", 100],
     4793: ["9-JiJiaJiaoLian", "机甲铰链", 28],
     4807: ["9-ZiYouZhiShi-HongWenXingTai", "自由之誓-红温形态", 500],
+    4802: ["9-HuiLanYaoJi", "回蓝药剂", 2],
 }
 
 DEFAULT_MIN_PRICE = 10
@@ -518,7 +520,7 @@ HighestValue_Products_Info = {
 }
 
 # 173
-Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzA1MTQ3MDEyLCJzaWduSWQiOiI2NDU1ZDJjMWEzMTg0OGYyODQ5OTAyNjZkZDBjNTU2ZCIsImlhdCI6MTcwNDU0MjIxMn0.TYHFf6sQeTp6X44Fb_b9yh4lG3ZqAy643XAfQ2IekmE"
+Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzA1NzU0MjY3LCJzaWduSWQiOiI1ZGUwNzNiNDdkNGU0NTI2YTA1YWQ3ODk4OTJiMzJhZCIsImlhdCI6MTcwNTE0OTQ2N30.hbGSIoIVxPy65r5WKG7k7U2wqvOhUsLJSCgMdtf_T5c"
 
 # 131
 Query_Token= "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxMzE1NjE2MTA5MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzA1MjczOTU2LCJzaWduSWQiOiJiMjQyYzEyMjE4Y2Q0Yjg2YWRiNTU0NWFiYWUxNjljZCIsImlhdCI6MTcwNDY2OTE1Nn0.Lj6jPkABVhdJArqyWe4474aJo6eCueS2NGasa0LEU0Y"
