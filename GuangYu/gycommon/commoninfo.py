@@ -472,6 +472,7 @@ CastingId2MetaInfo = {
     4779: ["6-SaiBoZhanShen", "赛博战神", 1000],
     4805: ["6-SaiBoHeErMoSi", "赛博赫尔墨斯", 500],
     4811: ["6-SaiBoMonkey", "赛博Monkey", 10],
+    4819: ["6-SaiBoSnake", "赛博Snake", 10],
 
     3998: ["7-XiangSuQiJing", "像素奇晶"],
     3544: ["7-TanXianZheIV", "探险者IV"],
@@ -523,7 +524,7 @@ HighestValue_Products_Info = {
 }
 
 # 173
-Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzA1NzU0MjY3LCJzaWduSWQiOiI1ZGUwNzNiNDdkNGU0NTI2YTA1YWQ3ODk4OTJiMzJhZCIsImlhdCI6MTcwNTE0OTQ2N30.hbGSIoIVxPy65r5WKG7k7U2wqvOhUsLJSCgMdtf_T5c"
+Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzA1OTExNjY1LCJzaWduSWQiOiI3MWUxZWNkMGNmNTY0NmVmOTk0MDIzNWMxYjEzNDQ4ZCIsImlhdCI6MTcwNTMwNjg2NX0.u3tIWW0vo9tvI--CDxhsNYNJ1ePlyJs0KFtHKQJ3Sng"
 
 # 131
 Query_Token= "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxMzE1NjE2MTA5MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzA1ODgxOTc2LCJzaWduSWQiOiIzMzQ5OTg4ZTY5NWM0ZTYyYTIxMmVmYjdmODkzMDAyNSIsImlhdCI6MTcwNTI3NzE3Nn0.RgWNkm-emMVWlFY8DBKhprp-VMWYexLwmECkO9jT_6M"
