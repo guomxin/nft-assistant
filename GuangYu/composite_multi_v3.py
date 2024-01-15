@@ -9,7 +9,7 @@ from gycommon import commoninfo
 from gycommon import utils
 
 ADD_COL_URL = "https://api.gandart.com/read/api/composite/getDetailByCasting"
-COMPOSITE_URL = "https://api.gandart.com/base/v2/composite/v3/confirmCompositeV2"
+COMPOSITE_URL = "https://api.gandart.com/base/v2/composite/v3/confirmCompositeV3"
 TIME_OUT = 3
 PAGE_SIZE = 1000
 
