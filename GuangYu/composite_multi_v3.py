@@ -8,10 +8,29 @@ import json
 from gycommon import commoninfo
 from gycommon import utils
 
+QUERY_COMPOSITE_URL = "https://api.gandart.com/api/v2/composite/v3/list/v2"
 ADD_COL_URL = "https://api.gandart.com/read/api/composite/getDetailByCasting"
 COMPOSITE_URL = "https://api.gandart.com/base/v2/composite/v3/confirmCompositeV3"
 TIME_OUT = 3
 PAGE_SIZE = 1000
+
+def query_composite_info(token):
+    headers = {
+    }
+    headers["token"] = token
+    data = {
+        "page": 1,
+        "pageSize": 10,
+        "total": 0,
+        "status": 1,
+        "labelName": "",
+    }
+    res = utils.post_requests_json(QUERY_COMPOSITE_URL, headers, data, TIME_OUT)
+    if not res:
+        return (1, None)
+    else:
+        #print(res)
+        return (0, res["rows"])
 
 def add_collections(casting_ids, token):
     comp_data_cols = []
@@ -72,14 +91,31 @@ START_HOUR = 11
 
 if __name__ == "__main__":
     if len(sys.argv) < 6:
-        print("{} <composite_id> <casting_ids> <counts> <batch> <loops>.".format(sys.argv[0]))
+        print("{} <composite_name> <casting_ids> <counts> <batch> <loops>.".format(sys.argv[0]))
         sys.exit(1)
-    composite_id = int(sys.argv[1])
+    composite_name = sys.argv[1].strip()
     casting_ids = [int(i) for i in sys.argv[2].split(":")]
     counts = [int(i) for i in sys.argv[3].split(":")]
     batch_count = int(sys.argv[4])
     loops = int(sys.argv[5])
     
+    appear = False
+    composite_id = None
+    while not appear:
+        res_code, comp_list = query_composite_info(commoninfo.Home_Token)
+        if res_code != 0:
+            print("获取合成信息列表失败")
+            time.sleep(1)
+        else:
+            for comp_info in comp_list:
+                composite_name = comp_info["compositeTaskName"]
+                if composite_name.find(composite_name) != -1:
+                    composite_id = comp_info["id"]
+                    print("{} 开始合成, id={}".format(composite_name, composite_id))
+                    appear = True
+                    break
+            if not appear:
+                time.sleep(1)
     """
     lp_cnt = 0
     while True:
