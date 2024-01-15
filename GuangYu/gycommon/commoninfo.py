@@ -475,6 +475,7 @@ CastingId2MetaInfo = {
     4811: ["6-SaiBoMonkey", "赛博Monkey", 10],
     4819: ["6-SaiBoSnake", "赛博Snake", 10],
     4824: ["6-SaiBoZhuBaJie", "赛博猪八戒", 30],
+    4828: ["6-SaiBoSheep", "赛博Sheep", 30],
 
     3998: ["7-XiangSuQiJing", "像素奇晶"],
     3544: ["7-TanXianZheIV", "探险者IV"],
