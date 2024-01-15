@@ -313,8 +313,8 @@ CastingId2MetaInfo = {
     #2457: ["1-SSR-MoDengZhongXin", "摩登中心"],
     #2466: ["1-SSR-ZhongGuiTieDao", "重轨铁道"],
     3550: ["1-SSR-ChaoShanDianCi", "超闪电磁", 150],
-    4629: ["1-WeiGuangFeiTan", "微光飞毯"],
-    4630: ["1-ShuGuangLuJian", "曙光陆舰"],
+    4629: ["1-WeiGuangFeiTan", "微光飞毯", 40],
+    4630: ["1-ShuGuangLuJian", "曙光陆舰", 50],
 
     #2456: ["2-UR-WeiLaiDuShi", "未来都市"],
     #2468: ["2-UR-YuanYangDuLun", "远洋渡轮"],
@@ -506,6 +506,7 @@ CastingId2MetaInfo = {
     4793: ["9-JiJiaJiaoLian", "机甲铰链", 28],
     4807: ["9-ZiYouZhiShi-HongWenXingTai", "自由之誓-红温形态", 500],
     4802: ["9-HuiLanYaoJi", "回蓝药剂", 2],
+    4821: ["9-YouMingShenPanZhe", "幽冥审判者", 100],
 
     4228: ["88-WangZheZhiZhan", "王者之战", 5],
 }
