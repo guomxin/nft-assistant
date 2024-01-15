@@ -432,6 +432,7 @@ CastingId2MetaInfo = {
     4644: ["5-ShengDanSongGe", "圣诞颂歌", 25],
     4650: ["5-XingYaoLanTan", "星耀篮坛", 20],
     4766: ["5-HuaQiTongJing", "花期瞳镜"],
+    4749: ["5-GuangHuiZhouCheng", "光辉轴承"],
 
     #4443: ["6-XuShiZhongShu", "虚实中枢"],
     #4448: ["6-XuNiLiRen", "虚拟利刃"],
@@ -473,6 +474,7 @@ CastingId2MetaInfo = {
     4805: ["6-SaiBoHeErMoSi", "赛博赫尔墨斯", 500],
     4811: ["6-SaiBoMonkey", "赛博Monkey", 10],
     4819: ["6-SaiBoSnake", "赛博Snake", 10],
+    4824: ["6-SaiBoZhuBaJie", "赛博猪八戒", 30],
 
     3998: ["7-XiangSuQiJing", "像素奇晶"],
     3544: ["7-TanXianZheIV", "探险者IV"],
@@ -510,6 +512,7 @@ CastingId2MetaInfo = {
     4821: ["9-YouMingShenPanZhe", "幽冥审判者", 100],
 
     4228: ["88-WangZheZhiZhan", "王者之战", 5],
+    4412: ["88-FengWuZhiYuan", "风舞纸鸢", 30],
 }
 
 DEFAULT_MIN_PRICE = 10
