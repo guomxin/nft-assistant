@@ -465,7 +465,7 @@ CastingId2MetaInfo = {
     #4706: ["6-SaiBoZhanShenDao", "赛博战神刀", 0], #------
     4708: ["6-SaiBoJiaFeiMao", "赛博加菲猫", 100],
     #4707: ["6-SaiBoWuNeng", "赛博悟能"], #------
-    4716: ["6-SaiBoJinGangMouse", "赛博金刚Mouse", 15],
+    4716: ["6-SaiBoJinGangMouse", "赛博金刚Mouse", 0], #------
     4667: ["6-SaiBoDog", "赛博Dog", 50],
     #4754: ["6-SaiBoXiaoTianQuan", "赛博啸天犬", 0], #------
     #4709: ["6-SaiBoZhanShenYouXianHeChengZiGeKa", "赛博战神优先合成资格卡", 0], #------
@@ -512,10 +512,11 @@ CastingId2MetaInfo = {
     4793: ["9-JiJiaJiaoLian", "机甲铰链", 28],
     4807: ["9-ZiYouZhiShi-HongWenXingTai", "自由之誓-红温形态", 500],
     4802: ["9-HuiLanYaoJi", "回蓝药剂", 2],
-    4821: ["9-YouMingShenPanZhe", "幽冥审判者", 100],
+    4821: ["9-YouMingShenPanZhe", "幽冥审判者", 500],
+    4833: ["9-YuanDongNeng", "源动能", 58],
 
-    4228: ["88-WangZheZhiZhan", "王者之战", 5],
-    4412: ["88-FengWuZhiYuan", "风舞纸鸢", 30],
+    #4228: ["88-WangZheZhiZhan", "王者之战", 5],
+    #4412: ["88-FengWuZhiYuan", "风舞纸鸢", 30],
 }
 
 DEFAULT_MIN_PRICE = 10
