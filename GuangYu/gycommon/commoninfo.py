@@ -474,8 +474,9 @@ CastingId2MetaInfo = {
     4805: ["6-SaiBoHeErMoSi", "赛博赫尔墨斯", 500],
     4811: ["6-SaiBoMonkey", "赛博Monkey", 10],
     4819: ["6-SaiBoSnake", "赛博Snake", 10],
-    4824: ["6-SaiBoZhuBaJie", "赛博猪八戒", 30],
-    4828: ["6-SaiBoSheep", "赛博Sheep", 30],
+    4824: ["6-SaiBoZhuBaJie", "赛博猪八戒", 68],
+    4828: ["6-SaiBoSheep", "赛博Sheep", 68],
+    4655: ["6-ZhanShuBeiXin", "战术背心", 48],
 
     3998: ["7-XiangSuQiJing", "像素奇晶"],
     3544: ["7-TanXianZheIV", "探险者IV"],
@@ -538,6 +539,7 @@ GanDart_Headers = {
     "Origin": "https://www.gandart.com",
     "Referer": "https://www.gandart.com/",
     "token": Query_Token,
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
 }
 
 def gen_docx_file_tag(casting_name, casting_ch_name):
