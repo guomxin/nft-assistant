@@ -453,9 +453,9 @@ CastingId2MetaInfo = {
     #4567: ["6-YiDongChaoSuanJi", "移动超算机"], #------
     #4478: ["6-XianGuangZhiYing", "弦光之鹰"],
     #4645: ["6-JiGuangFangSheQi", "激光放射器"], #-------
-    4661: ["6-SaiBoPunK", "赛博PunK"],
-    4668: ["6-SaiBoPig", "赛博Pig"],
-    4674: ["6-SaiBoCat", "赛博Cat"],
+    4661: ["6-SaiBoPunK", "赛博PunK", 50],
+    4668: ["6-SaiBoPig", "赛博Pig", 30],
+    4674: ["6-SaiBoCat", "赛博Cat", 30],
     4678: ["6-SaiBoFeiXiangPig", "赛博飞翔Pig", 50],
     #4682: ["6-SaiBoDengLuCang", "赛博登陆仓"], #------
     4577: ["6-MiCaiZhiHuan", "秘彩之环", 100],
@@ -465,7 +465,7 @@ CastingId2MetaInfo = {
     #4706: ["6-SaiBoZhanShenDao", "赛博战神刀", 0], #------
     4708: ["6-SaiBoJiaFeiMao", "赛博加菲猫", 100],
     #4707: ["6-SaiBoWuNeng", "赛博悟能"], #------
-    4716: ["6-SaiBoJinGangMouse", "赛博金刚Mouse", 20],
+    4716: ["6-SaiBoJinGangMouse", "赛博金刚Mouse", 15],
     4667: ["6-SaiBoDog", "赛博Dog", 50],
     #4754: ["6-SaiBoXiaoTianQuan", "赛博啸天犬", 0], #------
     #4709: ["6-SaiBoZhanShenYouXianHeChengZiGeKa", "赛博战神优先合成资格卡", 0], #------
@@ -474,7 +474,7 @@ CastingId2MetaInfo = {
     4805: ["6-SaiBoHeErMoSi", "赛博赫尔墨斯", 500],
     4811: ["6-SaiBoMonkey", "赛博Monkey", 10],
     4819: ["6-SaiBoSnake", "赛博Snake", 10],
-    4824: ["6-SaiBoZhuBaJie", "赛博猪八戒", 68],
+    4824: ["6-SaiBoZhuBaJie", "赛博猪八戒", 50],
     4828: ["6-SaiBoSheep", "赛博Sheep", 68],
     4655: ["6-ZhanShuBeiXin", "战术背心", 48],
 
@@ -499,6 +499,7 @@ CastingId2MetaInfo = {
     4808: ["8-XianHuaQiYu", "仙花奇域", 100],
     4816: ["8-ChunRiCaiLun", "春日彩轮", 10],
     4795: ["8-QiYiJunGe", "奇异菌阁", 200],
+    4814: ["8-HuanLianZhiTong", "幻联之瞳", 5],
 
     #4515: ["9-ShuGuangPuJiZhan", "殊光谱基站"], #*
     #4562: ["9-ZhengZhaoJiJia", "征召机甲", 100], #------
