@@ -461,7 +461,7 @@ CastingId2MetaInfo = {
     4577: ["6-MiCaiZhiHuan", "秘彩之环", 100],
     #4636: ["6-JuChiDuanBi", "锯齿短匕"], #------
     #4624: ["6-YinBoZhenDangQi", "音波振荡器", 0], #------
-    4723: ["6-SaiBoQiFeiKa", "赛博起飞卡", 3], 
+    4723: ["6-SaiBoQiFeiKa", "赛博起飞卡", 5], 
     #4706: ["6-SaiBoZhanShenDao", "赛博战神刀", 0], #------
     4708: ["6-SaiBoJiaFeiMao", "赛博加菲猫", 100],
     #4707: ["6-SaiBoWuNeng", "赛博悟能"], #------
@@ -471,11 +471,11 @@ CastingId2MetaInfo = {
     #4709: ["6-SaiBoZhanShenYouXianHeChengZiGeKa", "赛博战神优先合成资格卡", 0], #------
     4770: ["6-SaiBoCattle", "赛博Cattle", 28],
     4779: ["6-SaiBoZhanShen", "赛博战神", 1000],
-    4805: ["6-SaiBoHeErMoSi", "赛博赫尔墨斯", 500],
+    4805: ["6-SaiBoHeErMoSi", "赛博赫尔墨斯", 400],
     4811: ["6-SaiBoMonkey", "赛博Monkey", 10],
     4819: ["6-SaiBoSnake", "赛博Snake", 10],
     4824: ["6-SaiBoZhuBaJie", "赛博猪八戒", 50],
-    4828: ["6-SaiBoSheep", "赛博Sheep", 68],
+    4828: ["6-SaiBoSheep", "赛博Sheep", 50],
     4655: ["6-ZhanShuBeiXin", "战术背心", 48],
 
     3998: ["7-XiangSuQiJing", "像素奇晶"],
@@ -514,6 +514,7 @@ CastingId2MetaInfo = {
     4802: ["9-HuiLanYaoJi", "回蓝药剂", 2],
     4821: ["9-YouMingShenPanZhe", "幽冥审判者", 500],
     4833: ["9-YuanDongNeng", "源动能", 58],
+    4827: ["9-ShuJuDaiMa", "数据代码", 2],
 
     #4228: ["88-WangZheZhiZhan", "王者之战", 5],
     #4412: ["88-FengWuZhiYuan", "风舞纸鸢", 30],
@@ -531,7 +532,7 @@ HighestValue_Products_Info = {
 }
 
 # 173
-Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzA1OTExNjY1LCJzaWduSWQiOiI3MWUxZWNkMGNmNTY0NmVmOTk0MDIzNWMxYjEzNDQ4ZCIsImlhdCI6MTcwNTMwNjg2NX0.u3tIWW0vo9tvI--CDxhsNYNJ1ePlyJs0KFtHKQJ3Sng"
+Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzA2MDkxMjcxLCJzaWduSWQiOiI5YjdlNDFiOTRjZGU0MWZjOWU3NDhjNzE3OGEwOWJhOCIsImlhdCI6MTcwNTQ4NjQ3MX0.zSHOxuvWTU1ufOnR3o7TZiiGYYSZZSf5r_dOVkKvo0A"
 
 # 131
 Query_Token= "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxMzE1NjE2MTA5MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzA1ODgxOTc2LCJzaWduSWQiOiIzMzQ5OTg4ZTY5NWM0ZTYyYTIxMmVmYjdmODkzMDAyNSIsImlhdCI6MTcwNTI3NzE3Nn0.RgWNkm-emMVWlFY8DBKhprp-VMWYexLwmECkO9jT_6M"
