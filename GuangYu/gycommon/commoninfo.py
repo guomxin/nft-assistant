@@ -429,7 +429,7 @@ CastingId2MetaInfo = {
     4690: ["5-PingAnQiShiDan", "平安启示蛋", 100],
     4712: ["5-CaoMeiNaiXiBei", "草莓奶昔杯"],
     4738: ["5-LunHuiHuaZhong", "轮回花钟"],
-    4644: ["5-ShengDanSongGe", "圣诞颂歌", 25],
+    4644: ["5-ShengDanSongGe", "圣诞颂歌", 20],
     4650: ["5-XingYaoLanTan", "星耀篮坛", 20],
     4766: ["5-HuaQiTongJing", "花期瞳镜"],
     4749: ["5-GuangHuiZhouCheng", "光辉轴承"],
@@ -474,7 +474,7 @@ CastingId2MetaInfo = {
     4805: ["6-SaiBoHeErMoSi", "赛博赫尔墨斯", 400],
     4811: ["6-SaiBoMonkey", "赛博Monkey", 10],
     4819: ["6-SaiBoSnake", "赛博Snake", 10],
-    4824: ["6-SaiBoZhuBaJie", "赛博猪八戒", 50],
+    #4824: ["6-SaiBoZhuBaJie", "赛博猪八戒", 0], #------
     4828: ["6-SaiBoSheep", "赛博Sheep", 50],
     4655: ["6-ZhanShuBeiXin", "战术背心", 48],
 
