@@ -454,9 +454,9 @@ CastingId2MetaInfo = {
     #4478: ["6-XianGuangZhiYing", "弦光之鹰"],
     #4645: ["6-JiGuangFangSheQi", "激光放射器"], #-------
     4661: ["6-SaiBoPunK", "赛博PunK", 50],
-    4668: ["6-SaiBoPig", "赛博Pig", 30],
-    4674: ["6-SaiBoCat", "赛博Cat", 30],
-    4678: ["6-SaiBoFeiXiangPig", "赛博飞翔Pig", 50],
+    4668: ["6-SaiBoPig", "赛博Pig", 20],
+    4674: ["6-SaiBoCat", "赛博Cat", 20],
+    #4678: ["6-SaiBoFeiXiangPig", "赛博飞翔Pig", 50], #------
     #4682: ["6-SaiBoDengLuCang", "赛博登陆仓"], #------
     4577: ["6-MiCaiZhiHuan", "秘彩之环", 100],
     #4636: ["6-JuChiDuanBi", "锯齿短匕"], #------
@@ -476,7 +476,7 @@ CastingId2MetaInfo = {
     4819: ["6-SaiBoSnake", "赛博Snake", 10],
     #4824: ["6-SaiBoZhuBaJie", "赛博猪八戒", 0], #------
     4828: ["6-SaiBoSheep", "赛博Sheep", 50],
-    4655: ["6-ZhanShuBeiXin", "战术背心", 48],
+    4655: ["6-ZhanShuBeiXin", "战术背心", 30],
     4686: ["6-SaiBoPunKZhanChe", "赛博PunK战车", 60],
 
     3998: ["7-XiangSuQiJing", "像素奇晶"],
@@ -501,6 +501,7 @@ CastingId2MetaInfo = {
     4816: ["8-ChunRiCaiLun", "春日彩轮", 10],
     4795: ["8-QiYiJunGe", "奇异菌阁", 200],
     4814: ["8-HuanLianZhiTong", "幻联之瞳", 5],
+    4834: ["8-ShanHaiJing-LeiNiao", "山海经-鸓鸟", 100],
 
     #4515: ["9-ShuGuangPuJiZhan", "殊光谱基站"], #*
     #4562: ["9-ZhengZhaoJiJia", "征召机甲", 100], #------
@@ -513,7 +514,7 @@ CastingId2MetaInfo = {
     4793: ["9-JiJiaJiaoLian", "机甲铰链", 28],
     4807: ["9-ZiYouZhiShi-HongWenXingTai", "自由之誓-红温形态", 500],
     4802: ["9-HuiLanYaoJi", "回蓝药剂", 2],
-    4821: ["9-YouMingShenPanZhe", "幽冥审判者", 500],
+    4821: ["9-YouMingShenPanZhe", "幽冥审判者", 400],
     4833: ["9-YuanDongNeng", "源动能", 58],
     4827: ["9-ShuJuDaiMa", "数据代码", 2],
 
