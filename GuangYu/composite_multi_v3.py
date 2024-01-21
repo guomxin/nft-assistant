@@ -93,7 +93,7 @@ if __name__ == "__main__":
     if len(sys.argv) < 6:
         print("{} <composite_name> <casting_ids> <counts> <batch> <loops>.".format(sys.argv[0]))
         sys.exit(1)
-    composite_name = sys.argv[1].strip()
+    target_composite_name = sys.argv[1].strip()
     casting_ids = [int(i) for i in sys.argv[2].split(":")]
     counts = [int(i) for i in sys.argv[3].split(":")]
     batch_count = int(sys.argv[4])
@@ -109,7 +109,7 @@ if __name__ == "__main__":
         else:
             for comp_info in comp_list:
                 composite_name = comp_info["compositeTaskName"]
-                if composite_name.find(composite_name) != -1:
+                if composite_name.find(target_composite_name) != -1:
                     composite_id = comp_info["id"]
                     print("{} 开始合成, id={}".format(composite_name, composite_id))
                     appear = True

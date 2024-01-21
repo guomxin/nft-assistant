@@ -42,11 +42,17 @@ Proxies_List = [
     [{
     "http": "http://7408150:se3cvgbh@123.56.246.33:16817/",
     "https": "http://7408150:se3cvgbh@123.56.246.33:16817/"
-    }, 0.7],
+    }, 0.5],
+
     [{
     "http": "http://7408150:se3cvgbh@114.215.174.49:16817/",
     "https": "http://7408150:se3cvgbh@114.215.174.49:16817/"
-    }, 0.5],
+    }, 0.3],
+
+    [{
+    "http": "http://7408150:se3cvgbh@121.41.8.23:16816/",
+    "https": "http://7408150:se3cvgbh@121.41.8.23:16816/"
+    }, 0.3],
 ]
 
 def post_requests_json(url, headers, data, proxies, timeout, decorate=False):
@@ -116,14 +122,16 @@ def get_casting_detail_id(casting_id, proxies):
             data = utils.decorate_api_data(data) 
             res = requests.post(GET_CASTING_DETAIL_URL, data=data, headers= commoninfo.GanDart_Headers, proxies=proxies, timeout=TIME_OUT).json()
             if res["code"] != 0:
-                return None
+                return (None, None, None)
             else:
                 prod_id = res["obj"]["id"]
+                price = res["obj"]["resalePrice"]
+                walletList = res["obj"]["walletList"]
                 break
         except Exception as e:
             time.sleep(3)
             print(e)
-    return prod_id
+    return (prod_id, price, walletList)
 
 def buy_product(casting_id, prod_id, token, proxies):
     data = {
@@ -201,9 +209,19 @@ if __name__ == "__main__":
                         continue
                 #if (price <= min_price) and ((min_price - price) / min_price <= 0.2):
                 if price <= min_price:
-                    prod_id = get_casting_detail_id(casting_id, proxies)
-                    if not prod_id:
-                        print("获取detail_id失败, prod_id={}".format(prod_id))
+                    (prod_id, price, walletList) = get_casting_detail_id(casting_id, proxies)
+                    if not prod_id or not price:
+                    # 1.获取失败，这时prod_id和price都为None
+                    # 2.有时产品被抢后，进入产品页面正好已退市状态，这时prod_id和price都为空
+                        print("获取prod_id失败, prod_id={}".format(prod_id))
+                        continue
+                    # 产品被抢后，进入产品页面这时价格为原来第二低价格，需要重新判断
+                    price = float(price)
+                    if price > min_price:
+                        continue
+                    # 忽略只能用C钱包购买的商品
+                    if len(walletList) == 1 and walletList[0] == 'C':
+                        print("只能用C钱包付款, prod_id={}".format(prod_id))
                         continue
                     prod_name = commoninfo.CastingId2MetaInfo[casting_id][1]
                     print(prod_name, price, prod_id)

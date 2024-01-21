@@ -42,18 +42,33 @@ Proxies_List = [
     [{
     "http": "http://7408150:se3cvgbh@123.56.246.33:16817/",
     "https": "http://7408150:se3cvgbh@123.56.246.33:16817/"
-    }, 0.7],
+    }, 0.5],
+
     [{
     "http": "http://7408150:se3cvgbh@114.215.174.49:16817/",
     "https": "http://7408150:se3cvgbh@114.215.174.49:16817/"
-    }, 0.5],
+    }, 0.3],
+
+    [{
+    "http": "http://7408150:se3cvgbh@121.41.8.23:16816/",
+    "https": "http://7408150:se3cvgbh@121.41.8.23:16816/"
+    }, 0.3],
 ]
 
 Targets_List = [
     #{4642: 30, 4644: 148},
     #{4575: 38, 4642: 30},
-    {4650: 50, 4644: 68},
-    {4682: 90, 4577: 200},
+    #{4805: 500, 3457: 30},
+    #{4716: 20, 4824: 68},
+    #{4716: 20},
+    #{4654: 238},
+    #{4655:48},
+    {4833:58},
+    {4678: 100, 4833:58},
+    #{4228: 5, 4412:30},
+    #{4708:428},
+    #{4723: 5},
+    #{4667:100},
     #{4642: 30, 4577: 200},
 ]
 
@@ -197,7 +212,7 @@ if __name__ == "__main__":
                         #    print("获取detail_id失败, prod_id={}".format(prod_id))
                         #    continue
                         prod_name = commoninfo.CastingId2MetaInfo[casting_id][1]
-                        print(prod_name, price, prod_id)
+                        #print(prod_name, price, prod_id)
                         if buy_product(casting_id, prod_id, token, proxies):
                             content = """
 光予: 购买{}
