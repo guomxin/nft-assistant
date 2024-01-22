@@ -307,7 +307,7 @@ CastingId2MetaInfo = {
     3457: ["1-N-QingKongYuFengZhou", "晴空御风帚", 30], ########
     3747: ["1-N-MengYouGeLou", "梦游阁楼", 20],
     3748: ["1-N-YouLingTianTai", "幽灵天台", 20],
-    3548: ["1-N-ChaoNengMoJing", "超能墨镜", 40],
+    3548: ["1-N-ChaoNengMoJing", "超能墨镜", 30],
     #3458: ["1-SR-YingMuHuanShaPeng", "影幕幻纱篷"],
     3549: ["1-SR-QuanJiShouTao", "拳击手套", 40],
     #2457: ["1-SSR-MoDengZhongXin", "摩登中心"],
@@ -472,13 +472,16 @@ CastingId2MetaInfo = {
     4770: ["6-SaiBoCattle", "赛博Cattle", 28],
     4779: ["6-SaiBoZhanShen", "赛博战神", 900],
     4805: ["6-SaiBoHeErMoSi", "赛博赫尔墨斯", 400],
-    4811: ["6-SaiBoMonkey", "赛博Monkey", 10],
+    4811: ["6-SaiBoMonkey", "赛博Monkey", 0], #------
     4819: ["6-SaiBoSnake", "赛博Snake", 10],
     #4824: ["6-SaiBoZhuBaJie", "赛博猪八戒", 0], #------
     4828: ["6-SaiBoSheep", "赛博Sheep", 50],
     4655: ["6-ZhanShuBeiXin", "战术背心", 30],
     4686: ["6-SaiBoPunKZhanChe", "赛博PunK战车", 50],
     4832: ["6-SaiBoLiangCang", "赛博粮仓", 9],
+    4841: ["6-SaiBoWuKong", "赛博悟空", 6],
+    4840: ["6-SaiBoGangTieNiTai", "赛博钢铁拟态", 150],
+    4843: ["6-SaiBoFeiXingBaoLei", "赛博飞行堡垒", 100],
 
     3998: ["7-XiangSuQiJing", "像素奇晶"],
     3544: ["7-TanXianZheIV", "探险者IV"],
@@ -535,7 +538,7 @@ HighestValue_Products_Info = {
 }
 
 # 173
-Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzA2MDkxMjcxLCJzaWduSWQiOiI5YjdlNDFiOTRjZGU0MWZjOWU3NDhjNzE3OGEwOWJhOCIsImlhdCI6MTcwNTQ4NjQ3MX0.zSHOxuvWTU1ufOnR3o7TZiiGYYSZZSf5r_dOVkKvo0A"
+Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzA2NTMzMTA4LCJzaWduSWQiOiJlZjA3MTFlY2RmOGY0YTM1YTJjZWQwNzk0M2M4MDc4MSIsImlhdCI6MTcwNTkyODMwOH0.ZguHKGTJbE99oh_4wOfqsNkSpDyc2R0PLsUq49vO-Z8"
 
 # 131
 Query_Token= "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxMzE1NjE2MTA5MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzA2NDkzNDM3LCJzaWduSWQiOiIyMjcyZDYwNmQ2YzI0N2FiYjhhZTU4OTE1NzVmYjQ1YiIsImlhdCI6MTcwNTg4ODYzN30.tIerD9C_w46hZ2V6BPnBdwykRMzuiUZFRgK1WLORZY0"
