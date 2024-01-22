@@ -415,7 +415,7 @@ CastingId2MetaInfo = {
     4652: ["5-ChenXiZhiAn", "晨曦之黯"],
     4658: ["5-ZhiKongJiXieHuShou", "智控机械护手"],
     4371: ["5-QianYeZhiYao", "千夜之钥", 5],
-    4675: ["5-ChiYanHuanXian", "炽焰幻显", 1000],
+    4675: ["5-ChiYanHuanXian", "炽焰幻显", 500],
     4672: ["5-WuXiangWeiLaiChang", "无限未来厂"],
     #4681: ["5-GuangKongKaQian", "光控卡钳", 200],
     4647: ["5-Xmas-GuangLuXueQiao", "Xmas-光陆雪橇"],
@@ -430,7 +430,7 @@ CastingId2MetaInfo = {
     4712: ["5-CaoMeiNaiXiBei", "草莓奶昔杯"],
     4738: ["5-LunHuiHuaZhong", "轮回花钟"],
     4644: ["5-ShengDanSongGe", "圣诞颂歌", 20],
-    4650: ["5-XingYaoLanTan", "星耀篮坛", 20],
+    4650: ["5-XingYaoLanTan", "星耀篮坛", 15],
     4766: ["5-HuaQiTongJing", "花期瞳镜"],
     4749: ["5-GuangHuiZhouCheng", "光辉轴承"],
 
@@ -511,11 +511,11 @@ CastingId2MetaInfo = {
     4654: ["9-TaiYanJunZhiZhe", "钛岩均质者", 238],
     #4659: ["9-ZiYouZhiShi", "自由之誓", 300],
     #4769: ["9-JiXieDoGou", "机械Do狗", 0], #------
-    4718: ["9-JiJiaZhaoHuanQi", "机甲召唤器", 100],
+    4718: ["9-JiJiaZhaoHuanQi", "机甲召唤器", 80],
     4793: ["9-JiJiaJiaoLian", "机甲铰链", 28],
     4807: ["9-ZiYouZhiShi-HongWenXingTai", "自由之誓-红温形态", 500],
     4802: ["9-HuiLanYaoJi", "回蓝药剂", 2],
-    4821: ["9-YouMingShenPanZhe", "幽冥审判者", 400],
+    4821: ["9-YouMingShenPanZhe", "幽冥审判者", 300],
     4833: ["9-YuanDongNeng", "源动能", 58],
     4827: ["9-ShuJuDaiMa", "数据代码", 2],
 
@@ -538,7 +538,7 @@ HighestValue_Products_Info = {
 Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzA2MDkxMjcxLCJzaWduSWQiOiI5YjdlNDFiOTRjZGU0MWZjOWU3NDhjNzE3OGEwOWJhOCIsImlhdCI6MTcwNTQ4NjQ3MX0.zSHOxuvWTU1ufOnR3o7TZiiGYYSZZSf5r_dOVkKvo0A"
 
 # 131
-Query_Token= "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxMzE1NjE2MTA5MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzA1ODgxOTc2LCJzaWduSWQiOiIzMzQ5OTg4ZTY5NWM0ZTYyYTIxMmVmYjdmODkzMDAyNSIsImlhdCI6MTcwNTI3NzE3Nn0.RgWNkm-emMVWlFY8DBKhprp-VMWYexLwmECkO9jT_6M"
+Query_Token= "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxMzE1NjE2MTA5MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzA2NDkzNDM3LCJzaWduSWQiOiIyMjcyZDYwNmQ2YzI0N2FiYjhhZTU4OTE1NzVmYjQ1YiIsImlhdCI6MTcwNTg4ODYzN30.tIerD9C_w46hZ2V6BPnBdwykRMzuiUZFRgK1WLORZY0"
 
 GanDart_Headers = {
     "Host": "api2.gandart.com",
