@@ -471,17 +471,20 @@ CastingId2MetaInfo = {
     #4709: ["6-SaiBoZhanShenYouXianHeChengZiGeKa", "赛博战神优先合成资格卡", 0], #------
     4770: ["6-SaiBoCattle", "赛博Cattle", 28],
     4779: ["6-SaiBoZhanShen", "赛博战神", 900],
-    4805: ["6-SaiBoHeErMoSi", "赛博赫尔墨斯", 400],
-    4811: ["6-SaiBoMonkey", "赛博Monkey", 0], #------
+    4805: ["6-SaiBoHeErMoSi", "赛博赫尔墨斯", 300],
+    #4811: ["6-SaiBoMonkey", "赛博Monkey", 0], #------
     4819: ["6-SaiBoSnake", "赛博Snake", 10],
     #4824: ["6-SaiBoZhuBaJie", "赛博猪八戒", 0], #------
     4828: ["6-SaiBoSheep", "赛博Sheep", 50],
     4655: ["6-ZhanShuBeiXin", "战术背心", 30],
-    4686: ["6-SaiBoPunKZhanChe", "赛博PunK战车", 50],
+    4686: ["6-SaiBoPunKZhanChe", "赛博PunK战车", 30],
     4832: ["6-SaiBoLiangCang", "赛博粮仓", 9],
     4841: ["6-SaiBoWuKong", "赛博悟空", 6],
     4840: ["6-SaiBoGangTieNiTai", "赛博钢铁拟态", 150],
     4843: ["6-SaiBoFeiXingBaoLei", "赛博飞行堡垒", 100],
+    4687: ["6-SaiBoShangJinLieRen", "赛博赏金猎人", 20],
+    4847: ["6-SaiBoJinGang", "赛博金刚", 100],
+    4849: ["6-SaiBoQianLiMa", "赛博千里马", 30],
 
     3998: ["7-XiangSuQiJing", "像素奇晶"],
     3544: ["7-TanXianZheIV", "探险者IV"],
@@ -519,7 +522,7 @@ CastingId2MetaInfo = {
     4807: ["9-ZiYouZhiShi-HongWenXingTai", "自由之誓-红温形态", 500],
     4802: ["9-HuiLanYaoJi", "回蓝药剂", 2],
     4821: ["9-YouMingShenPanZhe", "幽冥审判者", 300],
-    4833: ["9-YuanDongNeng", "源动能", 58],
+    4833: ["9-YuanDongNeng", "源动能", 40],
     4827: ["9-ShuJuDaiMa", "数据代码", 2],
 
     #4228: ["88-WangZheZhiZhan", "王者之战", 5],
@@ -538,7 +541,7 @@ HighestValue_Products_Info = {
 }
 
 # 173
-Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzA2NTMzMTA4LCJzaWduSWQiOiJlZjA3MTFlY2RmOGY0YTM1YTJjZWQwNzk0M2M4MDc4MSIsImlhdCI6MTcwNTkyODMwOH0.ZguHKGTJbE99oh_4wOfqsNkSpDyc2R0PLsUq49vO-Z8"
+Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzA2NjIwMjg4LCJzaWduSWQiOiIwYmJiOTU1MDVlZTc0MGM2ODJmMmM1MDY5M2FhYjFhNSIsImlhdCI6MTcwNjAxNTQ4OH0.HRrWy1XI5DMqxZIQE4FzhPdooVE8uKDZ1BJ2d29wyOg"
 
 # 131
 Query_Token= "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxMzE1NjE2MTA5MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzA2NDkzNDM3LCJzaWduSWQiOiIyMjcyZDYwNmQ2YzI0N2FiYjhhZTU4OTE1NzVmYjQ1YiIsImlhdCI6MTcwNTg4ODYzN30.tIerD9C_w46hZ2V6BPnBdwykRMzuiUZFRgK1WLORZY0"

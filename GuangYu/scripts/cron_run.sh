@@ -290,10 +290,6 @@ echo "---赛博赫尔墨斯---"
 python grab_transaction_price.py 4805 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 4805 ${yesterday} 50
 
-echo "---赛博Monkey---"
-python grab_transaction_price.py 4811 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 4811 ${yesterday} 10
-
 echo "---赛博Snake---"
 python grab_transaction_price.py 4819 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 4819 ${yesterday} 10
@@ -325,6 +321,18 @@ python analyze_transaction_prices.py 4840 ${yesterday} 10
 echo "---赛博飞行堡垒---"
 python grab_transaction_price.py 4843 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 4843 ${yesterday} 10
+
+echo "---赛博赏金猎人---"
+python grab_transaction_price.py 4687 ${yesterday} ${yesterday}
+python analyze_transaction_prices.py 4687 ${yesterday} 10
+
+echo "---赛博金刚---"
+python grab_transaction_price.py 4847 ${yesterday} ${yesterday}
+python analyze_transaction_prices.py 4847 ${yesterday} 10
+
+echo "---赛博千里马---"
+python grab_transaction_price.py 4849 ${yesterday} ${yesterday}
+python analyze_transaction_prices.py 4849 ${yesterday} 10
 
 #--- 探险区 ---#
 echo "---像素奇晶---"
@@ -442,9 +450,10 @@ for nft in "1-N-MengYouGeLou" "1-N-YouLingTianTai" "1-N-ChaoNengMoJing" \
 "5-YeNengFangYuTa" "5-ChenXiZhiAn" "5-QianYeZhiYao" "5-PingAnQiShiDan" "5-ShengDanSongGe" "5-XingYaoLanTan" \
 "5-CaoMeiNaiXiBei" "5-LunHuiHuaZhong" "5-HuaQiTongJing" "5-GuangHuiZhouCheng" \
 "6-SaiBoCattle" "6-SaiBoCat" "6-MiCaiZhiHuan" "6-SaiBoJiaFeiMao" "6-SaiBoHeErMoSi" \
-"6-SaiBoPunK" "6-SaiBoPig" "6-SaiBoQiFeiKa" "6-SaiBoDog" "6-SaiBoZhanShen" "6-SaiBoMonkey" \
+"6-SaiBoPunK" "6-SaiBoPig" "6-SaiBoQiFeiKa" "6-SaiBoDog" "6-SaiBoZhanShen" \
 "6-SaiBoSnake" "6-SaiBoSheep" "6-ZhanShuBeiXin" "6-SaiBoPunKZhanChe" "6-SaiBoLiangCang" \
-"6-SaiBoWuKong" "6-SaiBoGangTieNiTai" "6-SaiBoFeiXingBaoLei" \
+"6-SaiBoWuKong" "6-SaiBoGangTieNiTai" "6-SaiBoFeiXingBaoLei" "6-SaiBoShangJinLieRen" \
+"6-SaiBoJinGang" "6-SaiBoQianLiMa" \
 "7-XiangSuQiJing" "7-TanXianZheIV" "7-XunBaoZheI" "7-GongYunXiaoShao" "7-FangBiaoZhiShiDeng" "7-YeGuWangCheng" \
 "8-XiaoXiaoJianPan-LZai" "8-HuanXiaoQuQi" "8-XiaoXiaoJianPan-DZai" "8-ChuanShuoKaPian" "8-XianHuaQiYu" \
 "8-MiaoQuTangGuoHe" "8-ChunRiCaiLun" "8-QiYiJunGe" "8-HuanLianZhiTong" "8-ShanHaiJing-LeiNiao" \
