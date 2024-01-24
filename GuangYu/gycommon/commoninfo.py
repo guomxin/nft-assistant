@@ -312,7 +312,7 @@ CastingId2MetaInfo = {
     3549: ["1-SR-QuanJiShouTao", "拳击手套", 40],
     #2457: ["1-SSR-MoDengZhongXin", "摩登中心"],
     #2466: ["1-SSR-ZhongGuiTieDao", "重轨铁道"],
-    3550: ["1-SSR-ChaoShanDianCi", "超闪电磁", 120],
+    3550: ["1-SSR-ChaoShanDianCi", "超闪电磁", 80],
     4629: ["1-WeiGuangFeiTan", "微光飞毯", 20],
     4630: ["1-ShuGuangLuJian", "曙光陆舰", 30],
 
@@ -476,15 +476,16 @@ CastingId2MetaInfo = {
     4819: ["6-SaiBoSnake", "赛博Snake", 10],
     #4824: ["6-SaiBoZhuBaJie", "赛博猪八戒", 0], #------
     4828: ["6-SaiBoSheep", "赛博Sheep", 50],
-    4655: ["6-ZhanShuBeiXin", "战术背心", 30],
-    4686: ["6-SaiBoPunKZhanChe", "赛博PunK战车", 30],
+    4655: ["6-ZhanShuBeiXin", "战术背心", 0], #------
+    4686: ["6-SaiBoPunKZhanChe", "赛博PunK战车", 0], #------
     4832: ["6-SaiBoLiangCang", "赛博粮仓", 9],
     4841: ["6-SaiBoWuKong", "赛博悟空", 6],
     4840: ["6-SaiBoGangTieNiTai", "赛博钢铁拟态", 150],
     4843: ["6-SaiBoFeiXingBaoLei", "赛博飞行堡垒", 100],
-    4687: ["6-SaiBoShangJinLieRen", "赛博赏金猎人", 20],
+    4687: ["6-SaiBoShangJinLieRen", "赛博赏金猎人", 0], #------
     4847: ["6-SaiBoJinGang", "赛博金刚", 100],
     4849: ["6-SaiBoQianLiMa", "赛博千里马", 30],
+    4848: ["6-SaiBoBoLe", "赛博伯乐", 100],
 
     3998: ["7-XiangSuQiJing", "像素奇晶"],
     3544: ["7-TanXianZheIV", "探险者IV"],
@@ -514,11 +515,11 @@ CastingId2MetaInfo = {
     #4562: ["9-ZhengZhaoJiJia", "征召机甲", 100], #------
     #4620: ["9-KuangChaoXunZhuZhe", "狂潮巡逐者"], #*
     #4642: ["9-TanSuoYuanShi", "探索原石", 0], #------
-    4654: ["9-TaiYanJunZhiZhe", "钛岩均质者", 238],
+    4654: ["9-TaiYanJunZhiZhe", "钛岩均质者", 160],
     #4659: ["9-ZiYouZhiShi", "自由之誓", 300],
     #4769: ["9-JiXieDoGou", "机械Do狗", 0], #------
     4718: ["9-JiJiaZhaoHuanQi", "机甲召唤器", 80],
-    4793: ["9-JiJiaJiaoLian", "机甲铰链", 28],
+    4831: ["9-JiJiaJiaoLian", "机甲铰链", 20],
     4807: ["9-ZiYouZhiShi-HongWenXingTai", "自由之誓-红温形态", 500],
     4802: ["9-HuiLanYaoJi", "回蓝药剂", 2],
     4821: ["9-YouMingShenPanZhe", "幽冥审判者", 300],
@@ -541,7 +542,7 @@ HighestValue_Products_Info = {
 }
 
 # 173
-Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzA2NjIwMjg4LCJzaWduSWQiOiIwYmJiOTU1MDVlZTc0MGM2ODJmMmM1MDY5M2FhYjFhNSIsImlhdCI6MTcwNjAxNTQ4OH0.HRrWy1XI5DMqxZIQE4FzhPdooVE8uKDZ1BJ2d29wyOg"
+Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzA2NzEyNDY5LCJzaWduSWQiOiIxN2U5OGYwMzM0MDc0OGU1OGZkZWU4ZDJiZWEzMzIzZSIsImlhdCI6MTcwNjEwNzY2OX0.fB1pASiA9Sqn2QbhUrANWi3m5sUgM_1kiyeOZaSiiZ4"
 
 # 131
 Query_Token= "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxMzE1NjE2MTA5MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzA2NDkzNDM3LCJzaWduSWQiOiIyMjcyZDYwNmQ2YzI0N2FiYjhhZTU4OTE1NzVmYjQ1YiIsImlhdCI6MTcwNTg4ODYzN30.tIerD9C_w46hZ2V6BPnBdwykRMzuiUZFRgK1WLORZY0"
