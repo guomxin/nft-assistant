@@ -298,14 +298,6 @@ echo "---赛博Sheep---"
 python grab_transaction_price.py 4828 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 4828 ${yesterday} 10
 
-echo "---战术背心---"
-python grab_transaction_price.py 4655 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 4655 ${yesterday} 10
-
-echo "---赛博PunK战车---"
-python grab_transaction_price.py 4686 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 4686 ${yesterday} 10
-
 echo "---赛博粮仓---"
 python grab_transaction_price.py 4832 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 4832 ${yesterday} 10
@@ -322,10 +314,6 @@ echo "---赛博飞行堡垒---"
 python grab_transaction_price.py 4843 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 4843 ${yesterday} 10
 
-echo "---赛博赏金猎人---"
-python grab_transaction_price.py 4687 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 4687 ${yesterday} 10
-
 echo "---赛博金刚---"
 python grab_transaction_price.py 4847 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 4847 ${yesterday} 10
@@ -337,6 +325,10 @@ python analyze_transaction_prices.py 4849 ${yesterday} 10
 echo "---赛博伯乐---"
 python grab_transaction_price.py 4848 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 4848 ${yesterday} 10
+
+echo "---赛博材料抵扣卡---"
+python grab_transaction_price.py 4852 ${yesterday} ${yesterday}
+python analyze_transaction_prices.py 4852 ${yesterday} 10
 
 #--- 探险区 ---#
 echo "---像素奇晶---"
@@ -455,8 +447,8 @@ for nft in "1-N-MengYouGeLou" "1-N-YouLingTianTai" "1-N-ChaoNengMoJing" \
 "5-CaoMeiNaiXiBei" "5-LunHuiHuaZhong" "5-HuaQiTongJing" "5-GuangHuiZhouCheng" \
 "6-SaiBoCattle" "6-SaiBoCat" "6-MiCaiZhiHuan" "6-SaiBoJiaFeiMao" "6-SaiBoHeErMoSi" \
 "6-SaiBoPunK" "6-SaiBoPig" "6-SaiBoQiFeiKa" "6-SaiBoDog" "6-SaiBoZhanShen" \
-"6-SaiBoSnake" "6-SaiBoSheep" "6-ZhanShuBeiXin" "6-SaiBoPunKZhanChe" "6-SaiBoLiangCang" \
-"6-SaiBoWuKong" "6-SaiBoGangTieNiTai" "6-SaiBoFeiXingBaoLei" "6-SaiBoShangJinLieRen" \
+"6-SaiBoSnake" "6-SaiBoSheep" "6-SaiBoLiangCang" "6-SaiBoCaiLiaoDiKouKa" \
+"6-SaiBoWuKong" "6-SaiBoGangTieNiTai" "6-SaiBoFeiXingBaoLei" \
 "6-SaiBoJinGang" "6-SaiBoQianLiMa" "6-SaiBoBoLe" \
 "7-XiangSuQiJing" "7-TanXianZheIV" "7-XunBaoZheI" "7-GongYunXiaoShao" "7-FangBiaoZhiShiDeng" "7-YeGuWangCheng" \
 "8-XiaoXiaoJianPan-LZai" "8-HuanXiaoQuQi" "8-XiaoXiaoJianPan-DZai" "8-ChuanShuoKaPian" "8-XianHuaQiYu" \

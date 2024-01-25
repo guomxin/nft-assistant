@@ -476,16 +476,17 @@ CastingId2MetaInfo = {
     4819: ["6-SaiBoSnake", "赛博Snake", 10],
     #4824: ["6-SaiBoZhuBaJie", "赛博猪八戒", 0], #------
     4828: ["6-SaiBoSheep", "赛博Sheep", 50],
-    4655: ["6-ZhanShuBeiXin", "战术背心", 0], #------
-    4686: ["6-SaiBoPunKZhanChe", "赛博PunK战车", 0], #------
+    #4655: ["6-ZhanShuBeiXin", "战术背心", 0], #------
+    #4686: ["6-SaiBoPunKZhanChe", "赛博PunK战车", 0], #------
     4832: ["6-SaiBoLiangCang", "赛博粮仓", 9],
     4841: ["6-SaiBoWuKong", "赛博悟空", 6],
     4840: ["6-SaiBoGangTieNiTai", "赛博钢铁拟态", 150],
     4843: ["6-SaiBoFeiXingBaoLei", "赛博飞行堡垒", 100],
-    4687: ["6-SaiBoShangJinLieRen", "赛博赏金猎人", 0], #------
+    #4687: ["6-SaiBoShangJinLieRen", "赛博赏金猎人", 0], #------
     4847: ["6-SaiBoJinGang", "赛博金刚", 100],
     4849: ["6-SaiBoQianLiMa", "赛博千里马", 30],
     4848: ["6-SaiBoBoLe", "赛博伯乐", 100],
+    4852: ["6-SaiBoCaiLiaoDiKouKa", "赛博材料抵扣卡", 30],
 
     3998: ["7-XiangSuQiJing", "像素奇晶"],
     3544: ["7-TanXianZheIV", "探险者IV"],
