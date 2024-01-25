@@ -458,7 +458,7 @@ CastingId2MetaInfo = {
     4674: ["6-SaiBoCat", "赛博Cat", 20],
     #4678: ["6-SaiBoFeiXiangPig", "赛博飞翔Pig", 50], #------
     #4682: ["6-SaiBoDengLuCang", "赛博登陆仓"], #------
-    4577: ["6-MiCaiZhiHuan", "秘彩之环", 100],
+    #4577: ["6-MiCaiZhiHuan", "秘彩之环", 100],
     #4636: ["6-JuChiDuanBi", "锯齿短匕"], #------
     #4624: ["6-YinBoZhenDangQi", "音波振荡器", 0], #------
     4723: ["6-SaiBoQiFeiKa", "赛博起飞卡", 5], 
