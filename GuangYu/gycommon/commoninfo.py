@@ -453,7 +453,7 @@ CastingId2MetaInfo = {
     #4567: ["6-YiDongChaoSuanJi", "移动超算机"], #------
     #4478: ["6-XianGuangZhiYing", "弦光之鹰"],
     #4645: ["6-JiGuangFangSheQi", "激光放射器"], #-------
-    4661: ["6-SaiBoPunK", "赛博PunK", 0], #------
+    #4661: ["6-SaiBoPunK", "赛博PunK", 0], #------
     4668: ["6-SaiBoPig", "赛博Pig", 20],
     4674: ["6-SaiBoCat", "赛博Cat", 20],
     #4678: ["6-SaiBoFeiXiangPig", "赛博飞翔Pig", 50], #------
@@ -518,7 +518,7 @@ CastingId2MetaInfo = {
     #4562: ["9-ZhengZhaoJiJia", "征召机甲", 100], #------
     #4620: ["9-KuangChaoXunZhuZhe", "狂潮巡逐者"], #*
     #4642: ["9-TanSuoYuanShi", "探索原石", 0], #------
-    4654: ["9-TaiYanJunZhiZhe", "钛岩均质者", 160],
+    #4654: ["9-TaiYanJunZhiZhe", "钛岩均质者", 160],
     #4659: ["9-ZiYouZhiShi", "自由之誓", 300],
     #4769: ["9-JiXieDoGou", "机械Do狗", 0], #------
     4718: ["9-JiJiaZhaoHuanQi", "机甲召唤器", 80],
