@@ -489,6 +489,7 @@ CastingId2MetaInfo = {
     4852: ["6-SaiBoCaiLiaoDiKouKa", "赛博材料抵扣卡", 30],
     4857: ["6-SaiBoMoFaYaoShui", "赛博魔法药水", 20],
     4858: ["6-SaiBoHuanNiu", "赛博幻牛", 20],
+    4859: ["6-SaiBoWuShi", "赛博巫师", 100],
 
     3998: ["7-XiangSuQiJing", "像素奇晶"],
     3544: ["7-TanXianZheIV", "探险者IV"],
