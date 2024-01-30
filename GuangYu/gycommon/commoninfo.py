@@ -433,6 +433,8 @@ CastingId2MetaInfo = {
     4650: ["5-XingYaoLanTan", "星耀篮坛", 15],
     4766: ["5-HuaQiTongJing", "花期瞳镜"],
     4749: ["5-GuangHuiZhouCheng", "光辉轴承"],
+    4717: ["5-ShuangYuanZhiHe", "双源之核"],
+    4755: ["5-QianXiZhiZhang", "前夕织章"],
 
     #4443: ["6-XuShiZhongShu", "虚实中枢"],
     #4448: ["6-XuNiLiRen", "虚拟利刃"],
@@ -473,13 +475,13 @@ CastingId2MetaInfo = {
     4779: ["6-SaiBoZhanShen", "赛博战神", 800],
     4805: ["6-SaiBoHeErMoSi", "赛博赫尔墨斯", 300],
     #4811: ["6-SaiBoMonkey", "赛博Monkey", 0], #------
-    4819: ["6-SaiBoSnake", "赛博Snake", 0],
+    4819: ["6-SaiBoSnake", "赛博Snake", 7],
     #4824: ["6-SaiBoZhuBaJie", "赛博猪八戒", 0], #------
     4828: ["6-SaiBoSheep", "赛博Sheep", 20],
     #4655: ["6-ZhanShuBeiXin", "战术背心", 0], #------
     #4686: ["6-SaiBoPunKZhanChe", "赛博PunK战车", 0], #------
-    4832: ["6-SaiBoLiangCang", "赛博粮仓", 0],
-    4841: ["6-SaiBoWuKong", "赛博悟空", 0],
+    4832: ["6-SaiBoLiangCang", "赛博粮仓", 7],
+    4841: ["6-SaiBoWuKong", "赛博悟空", 7],
     4840: ["6-SaiBoGangTieNiTai", "赛博钢铁拟态", 150],
     4843: ["6-SaiBoFeiXingBaoLei", "赛博飞行堡垒", 100],
     #4687: ["6-SaiBoShangJinLieRen", "赛博赏金猎人", 0], #------
@@ -491,7 +493,7 @@ CastingId2MetaInfo = {
     4858: ["6-SaiBoHuanNiu", "赛博幻牛", 20],
     4859: ["6-SaiBoWuShi", "赛博巫师", 100],
     4863: ["6-SaiBoPengZhangJi", "赛博膨胀剂", 20],
-    4864: ["6-SaiBoJinGuo", "赛博禁果", 20],
+    4864: ["6-SaiBoJinGuo", "赛博禁果", 10],
 
     3998: ["7-XiangSuQiJing", "像素奇晶"],
     3544: ["7-TanXianZheIV", "探险者IV"],
@@ -524,13 +526,14 @@ CastingId2MetaInfo = {
     #4654: ["9-TaiYanJunZhiZhe", "钛岩均质者", 160],
     #4659: ["9-ZiYouZhiShi", "自由之誓", 300],
     #4769: ["9-JiXieDoGou", "机械Do狗", 0], #------
-    4718: ["9-JiJiaZhaoHuanQi", "机甲召唤器", 50],
+    4718: ["9-JiJiaZhaoHuanQi", "机甲召唤器", 0],
     4831: ["9-JiJiaJiaoLian", "机甲铰链", 20],
     4807: ["9-ZiYouZhiShi-HongWenXingTai", "自由之誓-红温形态", 500],
     4802: ["9-HuiLanYaoJi", "回蓝药剂", 2],
     4821: ["9-YouMingShenPanZhe", "幽冥审判者", 200],
-    4833: ["9-YuanDongNeng", "源动能", 40],
+    4833: ["9-YuanDongNeng", "源动能", 0],
     4827: ["9-ShuJuDaiMa", "数据代码", 2],
+    4850: ["9-SanZuWangLing", "三足妄灵", 100],
 
     #4228: ["88-WangZheZhiZhan", "王者之战", 5],
     #4412: ["88-FengWuZhiYuan", "风舞纸鸢", 30],
