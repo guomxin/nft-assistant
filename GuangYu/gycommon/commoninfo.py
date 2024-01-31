@@ -475,13 +475,13 @@ CastingId2MetaInfo = {
     4779: ["6-SaiBoZhanShen", "赛博战神", 800],
     4805: ["6-SaiBoHeErMoSi", "赛博赫尔墨斯", 300],
     #4811: ["6-SaiBoMonkey", "赛博Monkey", 0], #------
-    4819: ["6-SaiBoSnake", "赛博Snake", 7],
+    4819: ["6-SaiBoSnake", "赛博Snake", 5],
     #4824: ["6-SaiBoZhuBaJie", "赛博猪八戒", 0], #------
     4828: ["6-SaiBoSheep", "赛博Sheep", 20],
     #4655: ["6-ZhanShuBeiXin", "战术背心", 0], #------
     #4686: ["6-SaiBoPunKZhanChe", "赛博PunK战车", 0], #------
     4832: ["6-SaiBoLiangCang", "赛博粮仓", 7],
-    4841: ["6-SaiBoWuKong", "赛博悟空", 7],
+    4841: ["6-SaiBoWuKong", "赛博悟空", 5],
     4840: ["6-SaiBoGangTieNiTai", "赛博钢铁拟态", 150],
     4843: ["6-SaiBoFeiXingBaoLei", "赛博飞行堡垒", 100],
     #4687: ["6-SaiBoShangJinLieRen", "赛博赏金猎人", 0], #------
@@ -526,12 +526,12 @@ CastingId2MetaInfo = {
     #4654: ["9-TaiYanJunZhiZhe", "钛岩均质者", 160],
     #4659: ["9-ZiYouZhiShi", "自由之誓", 300],
     #4769: ["9-JiXieDoGou", "机械Do狗", 0], #------
-    4718: ["9-JiJiaZhaoHuanQi", "机甲召唤器", 0],
+    #4718: ["9-JiJiaZhaoHuanQi", "机甲召唤器", 0], #------
     4831: ["9-JiJiaJiaoLian", "机甲铰链", 20],
     4807: ["9-ZiYouZhiShi-HongWenXingTai", "自由之誓-红温形态", 500],
     4802: ["9-HuiLanYaoJi", "回蓝药剂", 2],
     4821: ["9-YouMingShenPanZhe", "幽冥审判者", 200],
-    4833: ["9-YuanDongNeng", "源动能", 0],
+    #4833: ["9-YuanDongNeng", "源动能", 0], #------
     4827: ["9-ShuJuDaiMa", "数据代码", 2],
     4850: ["9-SanZuWangLing", "三足妄灵", 100],
 
