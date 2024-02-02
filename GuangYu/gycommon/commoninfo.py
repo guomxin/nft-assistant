@@ -465,27 +465,27 @@ CastingId2MetaInfo = {
     #4624: ["6-YinBoZhenDangQi", "音波振荡器", 0], #------
     4723: ["6-SaiBoQiFeiKa", "赛博起飞卡", 3], 
     #4706: ["6-SaiBoZhanShenDao", "赛博战神刀", 0], #------
-    4708: ["6-SaiBoJiaFeiMao", "赛博加菲猫", 100], #------
+    #4708: ["6-SaiBoJiaFeiMao", "赛博加菲猫", 0], #------
     #4707: ["6-SaiBoWuNeng", "赛博悟能"], #------
     #4716: ["6-SaiBoJinGangMouse", "赛博金刚Mouse", 0], #------
     4667: ["6-SaiBoDog", "赛博Dog", 50],
     #4754: ["6-SaiBoXiaoTianQuan", "赛博啸天犬", 0], #------
     #4709: ["6-SaiBoZhanShenYouXianHeChengZiGeKa", "赛博战神优先合成资格卡", 0], #------
     4770: ["6-SaiBoCattle", "赛博Cattle", 15],
-    4779: ["6-SaiBoZhanShen", "赛博战神", 800],
-    4805: ["6-SaiBoHeErMoSi", "赛博赫尔墨斯", 200],
+    4779: ["6-SaiBoZhanShen", "赛博战神", 600],
+    4805: ["6-SaiBoHeErMoSi", "赛博赫尔墨斯", 100],
     #4811: ["6-SaiBoMonkey", "赛博Monkey", 0], #------
-    4819: ["6-SaiBoSnake", "赛博Snake", 8], #------
+    #4819: ["6-SaiBoSnake", "赛博Snake", 0], #------
     #4824: ["6-SaiBoZhuBaJie", "赛博猪八戒", 0], #------
     4828: ["6-SaiBoSheep", "赛博Sheep", 20],
     #4655: ["6-ZhanShuBeiXin", "战术背心", 0], #------
     #4686: ["6-SaiBoPunKZhanChe", "赛博PunK战车", 0], #------
-    4832: ["6-SaiBoLiangCang", "赛博粮仓", 8], #------
-    4841: ["6-SaiBoWuKong", "赛博悟空", 8], #------
+    #4832: ["6-SaiBoLiangCang", "赛博粮仓", 0], #------
+    #4841: ["6-SaiBoWuKong", "赛博悟空", 0], #------
     4840: ["6-SaiBoGangTieNiTai", "赛博钢铁拟态", 150],
     4843: ["6-SaiBoFeiXingBaoLei", "赛博飞行堡垒", 100],
     #4687: ["6-SaiBoShangJinLieRen", "赛博赏金猎人", 0], #------
-    4847: ["6-SaiBoJinGang", "赛博金刚", 40], #------
+    #4847: ["6-SaiBoJinGang", "赛博金刚", 0], #------
     4849: ["6-SaiBoQianLiMa", "赛博千里马", 30],
     4848: ["6-SaiBoBoLe", "赛博伯乐", 100],
     4852: ["6-SaiBoCaiLiaoDiKouKa", "赛博材料抵扣卡", 30],
@@ -495,6 +495,8 @@ CastingId2MetaInfo = {
     4863: ["6-SaiBoPengZhangJi", "赛博膨胀剂", 20],
     4864: ["6-SaiBoJinGuo", "赛博禁果", 10],
     4866: ["6-SaiBoLangKeJianShi", "赛博浪客剑士", 10],
+    4879: ["6-SaiBoXingYunXinPian", "赛博幸运芯片", 6],
+    4871: ["6-SaiBoJinDouYun", "赛博筋斗云", 10],
 
     3998: ["7-XiangSuQiJing", "像素奇晶"],
     3544: ["7-TanXianZheIV", "探险者IV"],
@@ -540,7 +542,7 @@ CastingId2MetaInfo = {
     #4412: ["88-FengWuZhiYuan", "风舞纸鸢", 30],
 }
 
-DEFAULT_MIN_PRICE = 10
+DEFAULT_MIN_PRICE = 5
 
 Transaction_Logs_File_Name = "_guangyu_{}_trans_logs.csv"
 
