@@ -28,27 +28,27 @@ def gen_output(tag, docx_file_name, all_total_price, trans_infos, send_msg=True)
         return
     time_span_str = "时间段：{} - {}".format(start_time.strftime("%Y/%m/%d %H:%M:%S"), end_time.strftime("%Y/%m/%d %H:%M:%S"))
     doc = Document() # 追加到已有文件
-    doc.add_paragraph("{}, 总成交额: {:.2f}万".format(time_span_str, all_total_price/10000))
+    doc.add_paragraph("{}, 总成交额: {:.2f}元".format(time_span_str, all_total_price))
     table = doc.add_table(1, 4)
     table.style = "TableGrid"
     heading_cells = table.rows[0].cells
     heading_cells[0].text = "名称"
     heading_cells[1].text = "数量"
     heading_cells[2].text = "均价"
-    heading_cells[3].text = "合计(万)"
+    heading_cells[3].text = "合计"
 
     # 输出
-    content = "**{}-总成交额:{:.2f}万**\n".format(tag, all_total_price/10000)
+    content = "**{}-总成交额:{:.2f}元**\n".format(tag, all_total_price)
     for (casting_ch_name, cnt, min_price, max_price, avg_price, total_price) in trans_infos:
         if cnt > 0:
-            content += "{}\n>数量:{}\n>最低价:{}\n>最高价:{}\n>均价:{:.2f}\n>合计:{:.2f}万\n\n".format(
+            content += "{}\n>数量:{}\n>最低价:{}\n>最高价:{}\n>均价:{:.2f}\n>合计:{:.2f}\n\n".format(
                 casting_ch_name, cnt, min_price,
-                max_price, avg_price, total_price/10000)
+                max_price, avg_price, total_price)
             cells = table.add_row().cells
             cells[0].text = casting_ch_name
             cells[1].text = str(cnt)
             cells[2].text = "{:.2f}".format(avg_price)
-            cells[3].text = "{:.2f}".format(total_price/10000)
+            cells[3].text = "{:.2f}".format(total_price)
     doc.save(docx_file_name)
     
     if send_msg:
