@@ -307,9 +307,9 @@ CastingId2MetaInfo = {
     3457: ["1-N-QingKongYuFengZhou", "晴空御风帚", 30], ########
     3747: ["1-N-MengYouGeLou", "梦游阁楼", 15],
     3748: ["1-N-YouLingTianTai", "幽灵天台", 15],
-    3548: ["1-N-ChaoNengMoJing", "超能墨镜", 30],
+    3548: ["1-N-ChaoNengMoJing", "超能墨镜", 25],
     #3458: ["1-SR-YingMuHuanShaPeng", "影幕幻纱篷"],
-    3549: ["1-SR-QuanJiShouTao", "拳击手套", 40],
+    3549: ["1-SR-QuanJiShouTao", "拳击手套", 30],
     #2457: ["1-SSR-MoDengZhongXin", "摩登中心"],
     #2466: ["1-SSR-ZhongGuiTieDao", "重轨铁道"],
     3550: ["1-SSR-ChaoShanDianCi", "超闪电磁", 80],
@@ -324,9 +324,9 @@ CastingId2MetaInfo = {
     2837: ["2-LongYinWanXiang", "龙吟万象", 1000],
     #2616: ["2-HuanShuShi", "幻术师"], 
     #2617: ["2-MoShuShi", "魔术师"],
-    4014: ["2-JinQuXiYin", "金躯玺印", 80],
-    4386: ["2-JinLianLingZhan", "金莲灵盏", 50],
-    4384: ["2-YiShouFuTu", "异兽浮图", 80],
+    4014: ["2-JinQuXiYin", "金躯玺印", 60],
+    4386: ["2-JinLianLingZhan", "金莲灵盏", 30],
+    4384: ["2-YiShouFuTu", "异兽浮图", 60],
     4323: ["2-DaMoHuanShi", "大魔幻师", 300],
     4607: ["2-JiuChongTianWaiTian", "九重天外天", 100],
     #4719: ["2-XianLuQiongJiang", "仙露琼浆", 40], #------
@@ -336,9 +336,9 @@ CastingId2MetaInfo = {
 
     #2589: ["3-JiXingGuangLun", "先驱I-疾行光轮"],
     #3056: ["3-BingHuangGuiZuo", "冰凰瑰座"],
-    3982: ["3-ZhongYiWuSheng", "忠义武圣", 1000],
+    3982: ["3-ZhongYiWuSheng", "忠义武圣", 500],
     3979: ["3-ChuFengMingTong", "雏凤明瞳", 0],
-    3980: ["3-YinXuJianDao", "银须箭道"],
+    3980: ["3-YinXuJianDao", "银须箭道", 50],
     #3990: ["3-YingYongBiaoJiZiGeKa", "英勇骠骑资格卡"],
     #3997: ["3-ShunLeiJiMu", "瞬雷击木"],
     #4027: ["3-FuLeiXiongKai", "附雷胸铠"],
@@ -347,7 +347,7 @@ CastingId2MetaInfo = {
     4127: ["3-YongMengShuBing", "勇猛戍兵"],
     4167: ["3-KuaiHuRen", "刽虎刃"],
     4078: ["3-RuiFengJianLing", "锐锋箭翎"],
-    3981: ["3-YunYuYangFeng", "云羽扬风"],
+    3981: ["3-YunYuYangFeng", "云羽扬风", 100],
     #4243: ["3-ZhanGuLei", "战鼓擂"],
     #4246: ["3-DongFengChui", "东风吹"],
     #3919: ["3-XiaoXiaoJianPan-KZai", "小小键盘-K仔"],
@@ -415,7 +415,7 @@ CastingId2MetaInfo = {
     4652: ["5-ChenXiZhiAn", "晨曦之黯"],
     4658: ["5-ZhiKongJiXieHuShou", "智控机械护手"],
     4371: ["5-QianYeZhiYao", "千夜之钥", 5],
-    4675: ["5-ChiYanHuanXian", "炽焰幻显", 500],
+    4675: ["5-ChiYanHuanXian", "炽焰幻显", 200],
     4672: ["5-WuXiangWeiLaiChang", "无限未来厂", 5],
     #4681: ["5-GuangKongKaQian", "光控卡钳", 200],
     4647: ["5-Xmas-GuangLuXueQiao", "Xmas-光陆雪橇"],
@@ -468,35 +468,36 @@ CastingId2MetaInfo = {
     #4708: ["6-SaiBoJiaFeiMao", "赛博加菲猫", 0], #------
     #4707: ["6-SaiBoWuNeng", "赛博悟能"], #------
     #4716: ["6-SaiBoJinGangMouse", "赛博金刚Mouse", 0], #------
-    4667: ["6-SaiBoDog", "赛博Dog", 50],
+    4667: ["6-SaiBoDog", "赛博Dog", 0],
     #4754: ["6-SaiBoXiaoTianQuan", "赛博啸天犬", 0], #------
     #4709: ["6-SaiBoZhanShenYouXianHeChengZiGeKa", "赛博战神优先合成资格卡", 0], #------
-    4770: ["6-SaiBoCattle", "赛博Cattle", 15],
+    4770: ["6-SaiBoCattle", "赛博Cattle", 0],
     4779: ["6-SaiBoZhanShen", "赛博战神", 600],
     4805: ["6-SaiBoHeErMoSi", "赛博赫尔墨斯", 100],
     #4811: ["6-SaiBoMonkey", "赛博Monkey", 0], #------
     #4819: ["6-SaiBoSnake", "赛博Snake", 0], #------
     #4824: ["6-SaiBoZhuBaJie", "赛博猪八戒", 0], #------
-    4828: ["6-SaiBoSheep", "赛博Sheep", 20],
+    4828: ["6-SaiBoSheep", "赛博Sheep", 0],
     #4655: ["6-ZhanShuBeiXin", "战术背心", 0], #------
     #4686: ["6-SaiBoPunKZhanChe", "赛博PunK战车", 0], #------
     #4832: ["6-SaiBoLiangCang", "赛博粮仓", 0], #------
     #4841: ["6-SaiBoWuKong", "赛博悟空", 0], #------
-    4840: ["6-SaiBoGangTieNiTai", "赛博钢铁拟态", 150],
+    4840: ["6-SaiBoGangTieNiTai", "赛博钢铁拟态", 100],
     4843: ["6-SaiBoFeiXingBaoLei", "赛博飞行堡垒", 100],
     #4687: ["6-SaiBoShangJinLieRen", "赛博赏金猎人", 0], #------
     #4847: ["6-SaiBoJinGang", "赛博金刚", 0], #------
-    4849: ["6-SaiBoQianLiMa", "赛博千里马", 30],
+    4849: ["6-SaiBoQianLiMa", "赛博千里马", 0],
     4848: ["6-SaiBoBoLe", "赛博伯乐", 100],
     4852: ["6-SaiBoCaiLiaoDiKouKa", "赛博材料抵扣卡", 30],
-    4857: ["6-SaiBoMoFaYaoShui", "赛博魔法药水", 20],
+    4857: ["6-SaiBoMoFaYaoShui", "赛博魔法药水", 10],
     4858: ["6-SaiBoHuanNiu", "赛博幻牛", 20],
     4859: ["6-SaiBoWuShi", "赛博巫师", 100],
-    4863: ["6-SaiBoPengZhangJi", "赛博膨胀剂", 20],
+    4863: ["6-SaiBoPengZhangJi", "赛博膨胀剂", 10],
     4864: ["6-SaiBoJinGuo", "赛博禁果", 10],
     4866: ["6-SaiBoLangKeJianShi", "赛博浪客剑士", 10],
     4879: ["6-SaiBoXingYunXinPian", "赛博幸运芯片", 6],
     4871: ["6-SaiBoJinDouYun", "赛博筋斗云", 10],
+    4890: ["6-SaiBoWangZi", "赛博王子", 8],
 
     3998: ["7-XiangSuQiJing", "像素奇晶"],
     3544: ["7-TanXianZheIV", "探险者IV"],
@@ -509,7 +510,7 @@ CastingId2MetaInfo = {
     #4444: ["8-ChaoZaiKuaiChongZhan", "超载快充站"],
     #4454: ["8-QianJuanHuaJia", "缱卷花驾"], #------
     4149: ["8-XiaoXiaoJianPan-LZai", "小小键盘-L仔", 50],
-    4569: ["8-HuanXiaoQuQi", "欢笑曲奇", 100],
+    4569: ["8-HuanXiaoQuQi", "欢笑曲奇", 50],
     #4570: ["8-HuaYangLvBao", "花漾旅包"], #*
     4606: ["8-XiaoXiaoJianPan-DZai", "小小键盘-D仔", 50],
     #4572: ["8-MoZhongLeYuan", "蘑钟乐园", 70], #------
@@ -520,7 +521,7 @@ CastingId2MetaInfo = {
     4816: ["8-ChunRiCaiLun", "春日彩轮", 5],
     4795: ["8-QiYiJunGe", "奇异菌阁", 100],
     4814: ["8-HuanLianZhiTong", "幻联之瞳", 5],
-    4834: ["8-ShanHaiJing-LeiNiao", "山海经-鸓鸟", 100],
+    4834: ["8-ShanHaiJing-LeiNiao", "山海经-鸓鸟", 50],
 
     #4515: ["9-ShuGuangPuJiZhan", "殊光谱基站"], #*
     #4562: ["9-ZhengZhaoJiJia", "征召机甲", 100], #------
@@ -530,13 +531,13 @@ CastingId2MetaInfo = {
     #4659: ["9-ZiYouZhiShi", "自由之誓", 300],
     #4769: ["9-JiXieDoGou", "机械Do狗", 0], #------
     #4718: ["9-JiJiaZhaoHuanQi", "机甲召唤器", 0], #------
-    4831: ["9-JiJiaJiaoLian", "机甲铰链", 20],
-    4807: ["9-ZiYouZhiShi-HongWenXingTai", "自由之誓-红温形态", 500],
+    4831: ["9-JiJiaJiaoLian", "机甲铰链", 10],
+    4807: ["9-ZiYouZhiShi-HongWenXingTai", "自由之誓-红温形态", 300],
     4802: ["9-HuiLanYaoJi", "回蓝药剂", 2],
-    4821: ["9-YouMingShenPanZhe", "幽冥审判者", 200],
+    4821: ["9-YouMingShenPanZhe", "幽冥审判者", 100],
     #4833: ["9-YuanDongNeng", "源动能", 0], #------
     4827: ["9-ShuJuDaiMa", "数据代码", 2],
-    4850: ["9-SanZuWangLing", "三足妄灵", 100],
+    4850: ["9-SanZuWangLing", "三足妄灵", 50],
 
     #4228: ["88-WangZheZhiZhan", "王者之战", 5],
     #4412: ["88-FengWuZhiYuan", "风舞纸鸢", 30],
@@ -554,7 +555,7 @@ HighestValue_Products_Info = {
 }
 
 # 173
-Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzA3NDg0ODQ0LCJzaWduSWQiOiIzMjExMTJjZWZlNDk0M2Y3OWVkOTUwYjFjMWM3YmYxOSIsImlhdCI6MTcwNjg4MDA0NH0.1TaPPdwJe2vmAwHk-duw143QvzNl7Ie0NaWyekzFqj4"
+Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzA3NjMxMjg1LCJzaWduSWQiOiJmNmFmMmYwN2JiZTY0ZjQ4ODVmZWY2OWE5MGJlNzdmYSIsImlhdCI6MTcwNzAyNjQ4NX0.V26fXIsZA3hNRkrjjDz5vPrZHQr4_myezfld8bfYPQg"
 
 # 131
 Query_Token= "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxMzE1NjE2MTA5MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzA3MTE1NTcxLCJzaWduSWQiOiJhZTcxZDU0ZGMwYjE0MzI1OTRhZjMzMzcxNzAwYzlhNyIsImlhdCI6MTcwNjUxMDc3MX0.2Y4dzVX1MAfOwHHTCSuh6An-g9Jbzkmyfate2jZfXm0"
