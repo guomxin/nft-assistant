@@ -468,16 +468,16 @@ CastingId2MetaInfo = {
     #4708: ["6-SaiBoJiaFeiMao", "赛博加菲猫", 0], #------
     #4707: ["6-SaiBoWuNeng", "赛博悟能"], #------
     #4716: ["6-SaiBoJinGangMouse", "赛博金刚Mouse", 0], #------
-    4667: ["6-SaiBoDog", "赛博Dog", 0],
+    #4667: ["6-SaiBoDog", "赛博Dog", 0],
     #4754: ["6-SaiBoXiaoTianQuan", "赛博啸天犬", 0], #------
     #4709: ["6-SaiBoZhanShenYouXianHeChengZiGeKa", "赛博战神优先合成资格卡", 0], #------
-    4770: ["6-SaiBoCattle", "赛博Cattle", 0],
+    #4770: ["6-SaiBoCattle", "赛博Cattle", 0],
     4779: ["6-SaiBoZhanShen", "赛博战神", 600],
     4805: ["6-SaiBoHeErMoSi", "赛博赫尔墨斯", 100],
     #4811: ["6-SaiBoMonkey", "赛博Monkey", 0], #------
     #4819: ["6-SaiBoSnake", "赛博Snake", 0], #------
     #4824: ["6-SaiBoZhuBaJie", "赛博猪八戒", 0], #------
-    4828: ["6-SaiBoSheep", "赛博Sheep", 0],
+    #4828: ["6-SaiBoSheep", "赛博Sheep", 0],
     #4655: ["6-ZhanShuBeiXin", "战术背心", 0], #------
     #4686: ["6-SaiBoPunKZhanChe", "赛博PunK战车", 0], #------
     #4832: ["6-SaiBoLiangCang", "赛博粮仓", 0], #------
@@ -486,7 +486,7 @@ CastingId2MetaInfo = {
     4843: ["6-SaiBoFeiXingBaoLei", "赛博飞行堡垒", 100],
     #4687: ["6-SaiBoShangJinLieRen", "赛博赏金猎人", 0], #------
     #4847: ["6-SaiBoJinGang", "赛博金刚", 0], #------
-    4849: ["6-SaiBoQianLiMa", "赛博千里马", 0],
+    #4849: ["6-SaiBoQianLiMa", "赛博千里马", 0],
     4848: ["6-SaiBoBoLe", "赛博伯乐", 100],
     4852: ["6-SaiBoCaiLiaoDiKouKa", "赛博材料抵扣卡", 30],
     4857: ["6-SaiBoMoFaYaoShui", "赛博魔法药水", 10],

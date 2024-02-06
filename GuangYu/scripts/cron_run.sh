@@ -262,18 +262,6 @@ python analyze_transaction_prices.py 4755 ${yesterday} 10
 echo "---赛博起飞卡---"
 python grab_transaction_price.py 4723 ${yesterday} ${yesterday}
 
-echo "---赛博加菲猫---"
-python grab_transaction_price.py 4708 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 4708 ${yesterday} 50
-
-echo "---赛博Dog---"
-python grab_transaction_price.py 4667 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 4667 ${yesterday} 50
-
-echo "---赛博Cattle---"
-python grab_transaction_price.py 4770 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 4770 ${yesterday} 10
-
 echo "---赛博战神---"
 python grab_transaction_price.py 4779 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 4779 ${yesterday} 100
@@ -282,22 +270,6 @@ echo "---赛博赫尔墨斯---"
 python grab_transaction_price.py 4805 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 4805 ${yesterday} 50
 
-echo "---赛博Snake---"
-python grab_transaction_price.py 4819 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 4819 ${yesterday} 10
-
-echo "---赛博Sheep---"
-python grab_transaction_price.py 4828 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 4828 ${yesterday} 10
-
-echo "---赛博粮仓---"
-python grab_transaction_price.py 4832 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 4832 ${yesterday} 10
-
-echo "---赛博悟空---"
-python grab_transaction_price.py 4841 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 4841 ${yesterday} 10
-
 echo "---赛博钢铁拟态---"
 python grab_transaction_price.py 4840 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 4840 ${yesterday} 10
@@ -305,14 +277,6 @@ python analyze_transaction_prices.py 4840 ${yesterday} 10
 echo "---赛博飞行堡垒---"
 python grab_transaction_price.py 4843 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 4843 ${yesterday} 10
-
-echo "---赛博金刚---"
-python grab_transaction_price.py 4847 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 4847 ${yesterday} 10
-
-echo "---赛博千里马---"
-python grab_transaction_price.py 4849 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 4849 ${yesterday} 10
 
 echo "---赛博伯乐---"
 python grab_transaction_price.py 4848 ${yesterday} ${yesterday}
@@ -466,11 +430,11 @@ for nft in "1-N-MengYouGeLou" "1-N-YouLingTianTai" "1-N-ChaoNengMoJing" \
 "5-YeNengFangYuTa" "5-ChenXiZhiAn" "5-QianYeZhiYao" "5-PingAnQiShiDan" "5-ShengDanSongGe" "5-XingYaoLanTan" \
 "5-CaoMeiNaiXiBei" "5-LunHuiHuaZhong" "5-HuaQiTongJing" "5-GuangHuiZhouCheng" "5-ShuangYuanZhiHe" \
 "5-QianXiZhiZhang" \
-"6-SaiBoCattle" "6-SaiBoHeErMoSi" "6-SaiBoWuShi" "6-SaiBoJinGuo" "6-SaiBoXingYunXinPian" \
-"6-SaiBoQiFeiKa" "6-SaiBoDog" "6-SaiBoZhanShen" "6-SaiBoPengZhangJi" "6-SaiBoLangKeJianShi" \
-"6-SaiBoSheep" "6-SaiBoCaiLiaoDiKouKa" "6-SaiBoJinDouYun" "6-SaiBoWangZi" \
+"6-SaiBoHeErMoSi" "6-SaiBoWuShi" "6-SaiBoJinGuo" "6-SaiBoXingYunXinPian" \
+"6-SaiBoQiFeiKa" "6-SaiBoZhanShen" "6-SaiBoPengZhangJi" "6-SaiBoLangKeJianShi" \
+"6-SaiBoCaiLiaoDiKouKa" "6-SaiBoJinDouYun" "6-SaiBoWangZi" \
 "6-SaiBoGangTieNiTai" "6-SaiBoFeiXingBaoLei" \
-"6-SaiBoQianLiMa" "6-SaiBoBoLe" "6-SaiBoMoFaYaoShui" "6-SaiBoHuanNiu" \
+"6-SaiBoBoLe" "6-SaiBoMoFaYaoShui" "6-SaiBoHuanNiu" \
 "7-XiangSuQiJing" "7-TanXianZheIV" "7-XunBaoZheI" "7-GongYunXiaoShao" "7-FangBiaoZhiShiDeng" "7-YeGuWangCheng" \
 "8-XiaoXiaoJianPan-LZai" "8-HuanXiaoQuQi" "8-XiaoXiaoJianPan-DZai" "8-ChuanShuoKaPian" "8-XianHuaQiYu" \
 "8-MiaoQuTangGuoHe" "8-ChunRiCaiLun" "8-QiYiJunGe" "8-HuanLianZhiTong" "8-ShanHaiJing-LeiNiao" \
