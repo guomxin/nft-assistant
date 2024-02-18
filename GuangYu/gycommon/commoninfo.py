@@ -499,6 +499,7 @@ CastingId2MetaInfo = {
     4871: ["6-SaiBoJinDouYun", "赛博筋斗云", 10],
     4890: ["6-SaiBoWangZi", "赛博王子", 8],
     4892: ["6-SaiBoNiHongJingLing", "赛博霓虹精灵", 100],
+    4894: ["6-SaiBoWuShii", "赛博武士", 10],
 
     3998: ["7-XiangSuQiJing", "像素奇晶"],
     3544: ["7-TanXianZheIV", "探险者IV"],
