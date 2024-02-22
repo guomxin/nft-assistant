@@ -503,6 +503,8 @@ CastingId2MetaInfo = {
     4895: ["6-SaiBoShiSanQu", "赛博十三区", 10],
     4896: ["6-SaiBoYuanZiQiShi", "赛博原子骑士", 8],
     4893: ["6-SaiBoNinja", "赛博Ninja", 50],
+    4900: ["6-SaiBoAiLiSi", "赛博爱丽丝", 5],
+    4906: ["6-SaiBoWangShi", "赛博王室", 5],
 
     3998: ["7-XiangSuQiJing", "像素奇晶"],
     3544: ["7-TanXianZheIV", "探险者IV"],
@@ -544,6 +546,7 @@ CastingId2MetaInfo = {
     4827: ["9-ShuJuDaiMa", "数据代码", 2],
     4850: ["9-SanZuWangLing", "三足妄灵", 50],
     4817: ["9-JuShuoZhiBi", "聚烁之臂", 50],
+    4909: ["9-WeiLaiShuJu", "未来数据", 2],
 
     #4228: ["88-WangZheZhiZhan", "王者之战", 5],
     #4412: ["88-FengWuZhiYuan", "风舞纸鸢", 30],
