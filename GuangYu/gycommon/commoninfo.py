@@ -536,13 +536,14 @@ CastingId2MetaInfo = {
     #4659: ["9-ZiYouZhiShi", "自由之誓", 300],
     #4769: ["9-JiXieDoGou", "机械Do狗", 0], #------
     #4718: ["9-JiJiaZhaoHuanQi", "机甲召唤器", 0], #------
-    4831: ["9-JiJiaJiaoLian", "机甲铰链", 10],
+    #4831: ["9-JiJiaJiaoLian", "机甲铰链", 0],
     4807: ["9-ZiYouZhiShi-HongWenXingTai", "自由之誓-红温形态", 300],
     4802: ["9-HuiLanYaoJi", "回蓝药剂", 2],
-    4821: ["9-YouMingShenPanZhe", "幽冥审判者", 100],
+    #4821: ["9-YouMingShenPanZhe", "幽冥审判者", 0],
     #4833: ["9-YuanDongNeng", "源动能", 0], #------
     4827: ["9-ShuJuDaiMa", "数据代码", 2],
     4850: ["9-SanZuWangLing", "三足妄灵", 50],
+    4817: ["9-JuShuoZhiBi", "聚烁之臂", 50],
 
     #4228: ["88-WangZheZhiZhan", "王者之战", 5],
     #4412: ["88-FengWuZhiYuan", "风舞纸鸢", 30],
