@@ -495,7 +495,7 @@ CastingId2MetaInfo = {
     4863: ["6-SaiBoPengZhangJi", "赛博膨胀剂", 10],
     4864: ["6-SaiBoJinGuo", "赛博禁果", 10],
     4866: ["6-SaiBoLangKeJianShi", "赛博浪客剑士", 10],
-    4879: ["6-SaiBoXingYunXinPian", "赛博幸运芯片", 6],
+    4879: ["6-SaiBoXingYunXinPian", "赛博幸运芯片", 3],
     4871: ["6-SaiBoJinDouYun", "赛博筋斗云", 10],
     4890: ["6-SaiBoWangZi", "赛博王子", 8],
     4892: ["6-SaiBoNiHongJingLing", "赛博霓虹精灵", 100],
@@ -540,14 +540,15 @@ CastingId2MetaInfo = {
     #4718: ["9-JiJiaZhaoHuanQi", "机甲召唤器", 0], #------
     #4831: ["9-JiJiaJiaoLian", "机甲铰链", 0],
     4807: ["9-ZiYouZhiShi-HongWenXingTai", "自由之誓-红温形态", 300],
-    4802: ["9-HuiLanYaoJi", "回蓝药剂", 2],
+    #4802: ["9-HuiLanYaoJi", "回蓝药剂", 2],
     #4821: ["9-YouMingShenPanZhe", "幽冥审判者", 0],
     #4833: ["9-YuanDongNeng", "源动能", 0], #------
     4827: ["9-ShuJuDaiMa", "数据代码", 2],
-    4850: ["9-SanZuWangLing", "三足妄灵", 50],
+    4912: ["9-SanZuWangLing-ZhuangTaiHuiFu", "三足妄灵-状态恢复", 50],
     4817: ["9-JuShuoZhiBi", "聚烁之臂", 50],
     4909: ["9-WeiLaiShuJu", "未来数据", 2],
     4875: ["9-GuangSuSuiDao", "光速隧道", 50],
+    4913: ["9-ChaoJiNengLiang", "超级能量", 20],
 
     #4228: ["88-WangZheZhiZhan", "王者之战", 5],
     #4412: ["88-FengWuZhiYuan", "风舞纸鸢", 30],
@@ -565,10 +566,10 @@ HighestValue_Products_Info = {
 }
 
 # 173
-Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzA5MzQ1MjQzLCJzaWduSWQiOiJkM2RkNmFjODljOGY0NGNkYTA1NTU2ZjczMDVhMjlkOCIsImlhdCI6MTcwODc0MDQ0M30.ja3hsdxbTi0m2QK1mmWvIU9OZEa-xLmGmvwII_Ee438"
+Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzA5NDUxNDg1LCJzaWduSWQiOiIxMTk0NzY1ZDFjNzY0M2I4ODFjZTU3M2UxN2FhNzI3ZCIsImlhdCI6MTcwODg0NjY4NX0.kpr1oFSrnue8NwG9KvIr1PiD_AJofXUBJ9MhEUyFGz8"
 
 # 131
-Query_Token= "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxMzE1NjE2MTA5MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzA5MDc2NjU4LCJzaWduSWQiOiIyNTIwODk5NjcyNjc0MWIxYTFhMGFlYmUxZGU2NzkyNyIsImlhdCI6MTcwODQ3MTg1OH0.qkQHWTv3eB4k1h7WXemnE2L2BTgpD7-gWkYezamefIE"
+Query_Token= "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxMzE1NjE2MTA5MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzA5NDc2NzczLCJzaWduSWQiOiI3NjMyMjBlMWY1ZWU0ODcxOGFkNWYwMjg5ZTg1NjkyZCIsImlhdCI6MTcwODg3MTk3M30.EoD7DM07EZd9du4VnRhdovNZAA8KenwbFPWCYQnhZj0"
 
 GanDart_Headers = {
     "Host": "api2.gandart.com",
