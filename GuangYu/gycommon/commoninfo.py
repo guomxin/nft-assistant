@@ -549,6 +549,7 @@ CastingId2MetaInfo = {
     4909: ["9-WeiLaiShuJu", "未来数据", 2],
     4875: ["9-GuangSuSuiDao", "光速隧道", 50],
     4913: ["9-ChaoJiNengLiang", "超级能量", 20],
+    4923: ["9-WanNengJiXieZuZhi", "万能机械组织", 50],
 
     #4228: ["88-WangZheZhiZhan", "王者之战", 5],
     #4412: ["88-FengWuZhiYuan", "风舞纸鸢", 30],
@@ -566,7 +567,7 @@ HighestValue_Products_Info = {
 }
 
 # 173
-Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzA5NDUxNDg1LCJzaWduSWQiOiIxMTk0NzY1ZDFjNzY0M2I4ODFjZTU3M2UxN2FhNzI3ZCIsImlhdCI6MTcwODg0NjY4NX0.kpr1oFSrnue8NwG9KvIr1PiD_AJofXUBJ9MhEUyFGz8"
+Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzA5NTE2NDU4LCJzaWduSWQiOiI1ZTNiNGE0NmIyYzc0NzZiYTE3NTNkMTdiZmFkMTVmZiIsImlhdCI6MTcwODkxMTY1OH0.5ptVIA1_tx9Y1tHzritvoJwwmiXuk8uFJsBvQe_kE0c"
 
 # 131
 Query_Token= "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxMzE1NjE2MTA5MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzA5NDc2NzczLCJzaWduSWQiOiI3NjMyMjBlMWY1ZWU0ODcxOGFkNWYwMjg5ZTg1NjkyZCIsImlhdCI6MTcwODg3MTk3M30.EoD7DM07EZd9du4VnRhdovNZAA8KenwbFPWCYQnhZj0"
