@@ -508,6 +508,8 @@ CastingId2MetaInfo = {
     4922: ["6-SaiBoSanTaiZi", "赛博三太子", 10],
     4933: ["6-SaiBoQiHang", "赛博启航", 10],
     4935: ["6-SaiBoZhongXinCheng", "赛博中心城", 20],
+    4936: ["6-SaiBoYin", "赛博阴", 20],
+    4937: ["6-SaiBoYang", "赛博阳", 20],
 
     3998: ["7-XiangSuQiJing", "像素奇晶"],
     3544: ["7-TanXianZheIV", "探险者IV"],
@@ -559,6 +561,8 @@ CastingId2MetaInfo = {
     4913: ["9-ChaoJiNengLiang", "超级能量", 20],
     4923: ["9-WanNengJiXieZuZhi", "万能机械组织", 50],
     4940: ["9-WeiLaiTanXianJia", "未来探险家", 50],
+    4939: ["9-OKMao", "OK猫", 50],
+    4908: ["9-ShenYuanZhenSheZhe", "深渊震慑者", 30],
 
     #4228: ["88-WangZheZhiZhan", "王者之战", 5],
     #4412: ["88-FengWuZhiYuan", "风舞纸鸢", 30],
