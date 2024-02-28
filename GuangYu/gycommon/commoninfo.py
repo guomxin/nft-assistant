@@ -430,7 +430,7 @@ CastingId2MetaInfo = {
     4712: ["5-CaoMeiNaiXiBei", "草莓奶昔杯"],
     4738: ["5-LunHuiHuaZhong", "轮回花钟"],
     4644: ["5-ShengDanSongGe", "圣诞颂歌", 15],
-    4650: ["5-XingYaoLanTan", "星耀篮坛", 10],
+    4650: ["5-XingYaoLanTan", "星耀篮坛", 15],
     4766: ["5-HuaQiTongJing", "花期瞳镜"],
     4749: ["5-GuangHuiZhouCheng", "光辉轴承"],
     4717: ["5-ShuangYuanZhiHe", "双源之核"],
@@ -506,6 +506,8 @@ CastingId2MetaInfo = {
     4900: ["6-SaiBoAiLiSi", "赛博爱丽丝", 5],
     4906: ["6-SaiBoWangShi", "赛博王室", 5],
     4922: ["6-SaiBoSanTaiZi", "赛博三太子", 10],
+    4933: ["6-SaiBoQiHang", "赛博启航", 10],
+    4935: ["6-SaiBoZhongXinCheng", "赛博中心城", 20],
 
     3998: ["7-XiangSuQiJing", "像素奇晶"],
     3544: ["7-TanXianZheIV", "探险者IV"],
@@ -573,7 +575,7 @@ HighestValue_Products_Info = {
 }
 
 # 173
-Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzA5NTE2NDU4LCJzaWduSWQiOiI1ZTNiNGE0NmIyYzc0NzZiYTE3NTNkMTdiZmFkMTVmZiIsImlhdCI6MTcwODkxMTY1OH0.5ptVIA1_tx9Y1tHzritvoJwwmiXuk8uFJsBvQe_kE0c"
+Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzA5NjQyNTEwLCJzaWduSWQiOiIyYWE2YjhjNTU2OTA0MzNjODc4NWYzMWQxYmEzOTJhNiIsImlhdCI6MTcwOTAzNzcxMH0.Y_PjBaXIKqE-UWdkr0bF364Z8BM62N-wJFb1eP_7yvU"
 
 # 131
 Query_Token= "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxMzE1NjE2MTA5MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzA5NDc2NzczLCJzaWduSWQiOiI3NjMyMjBlMWY1ZWU0ODcxOGFkNWYwMjg5ZTg1NjkyZCIsImlhdCI6MTcwODg3MTk3M30.EoD7DM07EZd9du4VnRhdovNZAA8KenwbFPWCYQnhZj0"

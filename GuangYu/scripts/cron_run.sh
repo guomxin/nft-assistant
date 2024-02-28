@@ -346,6 +346,14 @@ echo "---赛博三太子---"
 python grab_transaction_price.py 4922 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 4922 ${yesterday} 10
 
+echo "---赛博启航---"
+python grab_transaction_price.py 4933 ${yesterday} ${yesterday}
+python analyze_transaction_prices.py 4933 ${yesterday} 10
+
+echo "---赛博中心城---"
+python grab_transaction_price.py 4935 ${yesterday} ${yesterday}
+python analyze_transaction_prices.py 4935 ${yesterday} 10
+
 #--- 探险区 ---#
 echo "---像素奇晶---"
 python grab_transaction_price.py 3998 ${yesterday} ${yesterday}
@@ -482,11 +490,12 @@ for nft in "1-N-MengYouGeLou" "1-N-YouLingTianTai" "1-N-ChaoNengMoJing" \
 "5-YeNengFangYuTa" "5-ChenXiZhiAn" "5-QianYeZhiYao" "5-PingAnQiShiDan" "5-ShengDanSongGe" "5-XingYaoLanTan" \
 "5-CaoMeiNaiXiBei" "5-LunHuiHuaZhong" "5-HuaQiTongJing" "5-GuangHuiZhouCheng" "5-ShuangYuanZhiHe" \
 "5-QianXiZhiZhang" \
-"6-SaiBoWuShii" "6-SaiBoWuShi" "6-SaiBoJinGuo" "6-SaiBoNinja" \
+"6-SaiBoWuShii" "6-SaiBoWuShi" "6-SaiBoJinGuo" "6-SaiBoNinja" "6-SaiBoQiHang" \
 "6-SaiBoQiFeiKa" "6-SaiBoPengZhangJi" "6-SaiBoLangKeJianShi" "6-SaiBoSanTaiZi" \
 "6-SaiBoCaiLiaoDiKouKa" "6-SaiBoJinDouYun" "6-SaiBoWangZi" "6-SaiBoNiHongJingLing" \
 "6-SaiBoGangTieNiTai" "6-SaiBoFeiXingBaoLei" "6-SaiBoShiSanQu" "6-SaiBoWangShi" \
 "6-SaiBoBoLe" "6-SaiBoMoFaYaoShui" "6-SaiBoHuanNiu" "6-SaiBoYuanZiQiShi" "6-SaiBoAiLiSi" \
+"6-SaiBoZhongXinCheng" \
 "7-XiangSuQiJing" "7-TanXianZheIV" "7-XunBaoZheI" "7-GongYunXiaoShao" "7-FangBiaoZhiShiDeng" "7-YeGuWangCheng" \
 "8-XiaoXiaoJianPan-LZai" "8-HuanXiaoQuQi" "8-XiaoXiaoJianPan-DZai" "8-ChuanShuoKaPian" "8-XianHuaQiYu" \
 "8-MiaoQuTangGuoHe" "8-ChunRiCaiLun" "8-QiYiJunGe" "8-HuanLianZhiTong" "8-ShanHaiJing-LeiNiao" \
