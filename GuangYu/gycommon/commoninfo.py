@@ -557,7 +557,7 @@ CastingId2MetaInfo = {
     #4833: ["9-YuanDongNeng", "源动能", 0], #------
     4827: ["9-ShuJuDaiMa", "数据代码", 2],
     #4912: ["9-SanZuWangLing-ZhuangTaiHuiFu", "三足妄灵-状态恢复", 50],
-    4817: ["9-JuShuoZhiBi", "聚烁之臂", 50],
+    4817: ["9-JuShuoZhiBi", "聚烁之臂", 50], #------
     4909: ["9-WeiLaiShuJu", "未来数据", 2],
     4875: ["9-GuangSuSuiDao", "光速隧道", 50],
     4913: ["9-ChaoJiNengLiang", "超级能量", 50],
@@ -567,6 +567,7 @@ CastingId2MetaInfo = {
     4908: ["9-ShenYuanZhenSheZhe", "深渊震慑者", 30],
     4941: ["9-WeiLaiShiDai", "未来时代", 50],
     4950: ["9-WeiLaiJianPan-ShiftZai20", "未来键盘-Shift仔20", 50],
+    4944: ["9-WeiLaiWuYingJian", "未来无影剑", 50],
 
     #4228: ["88-WangZheZhiZhan", "王者之战", 5],
     #4412: ["88-FengWuZhiYuan", "风舞纸鸢", 30],
