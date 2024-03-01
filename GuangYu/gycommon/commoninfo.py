@@ -541,6 +541,7 @@ CastingId2MetaInfo = {
     4865: ["8-PanGuFu", "盘古斧", 50],
     4860: ["8-ShanHaiJing-LuShu", "山海经-鹿蜀", 50],
     4853: ["8-ShanHaiJing-TaoTie", "山海经-饕餮", 50],
+    4952: ["8-ShanHaiJing-ZhuYan", "山海经-朱厌", 10],
 
     #4515: ["9-ShuGuangPuJiZhan", "殊光谱基站"], #*
     #4562: ["9-ZhengZhaoJiJia", "征召机甲", 100], #------
