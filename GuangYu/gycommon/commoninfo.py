@@ -524,14 +524,14 @@ CastingId2MetaInfo = {
     #4444: ["8-ChaoZaiKuaiChongZhan", "超载快充站"],
     #4454: ["8-QianJuanHuaJia", "缱卷花驾"], #------
     4149: ["8-XiaoXiaoJianPan-LZai", "小小键盘-L仔", 50],
-    4569: ["8-HuanXiaoQuQi", "欢笑曲奇", 50],
+    #4569: ["8-HuanXiaoQuQi", "欢笑曲奇", 50],
     #4570: ["8-HuaYangLvBao", "花漾旅包"], #*
-    4606: ["8-XiaoXiaoJianPan-DZai", "小小键盘-D仔", 50],
+    #4606: ["8-XiaoXiaoJianPan-DZai", "小小键盘-D仔", 50],
     #4572: ["8-MoZhongLeYuan", "蘑钟乐园", 70], #------
     #4649: ["8-HuanZuZhiTa", "幻足之塔", 200], #------
     4622: ["8-MiaoQuTangGuoHe", "妙趣糖果盒", 10],
     4777: ["8-ChuanShuoKaPian", "传说卡片", 3],
-    4808: ["8-XianHuaQiYu", "仙花奇域", 100],
+    #4808: ["8-XianHuaQiYu", "仙花奇域", 100],
     4816: ["8-ChunRiCaiLun", "春日彩轮", 5],
     4795: ["8-QiYiJunGe", "奇异菌阁", 100],
     4814: ["8-HuanLianZhiTong", "幻联之瞳", 5],
@@ -556,7 +556,7 @@ CastingId2MetaInfo = {
     #4821: ["9-YouMingShenPanZhe", "幽冥审判者", 0],
     #4833: ["9-YuanDongNeng", "源动能", 0], #------
     4827: ["9-ShuJuDaiMa", "数据代码", 2],
-    4912: ["9-SanZuWangLing-ZhuangTaiHuiFu", "三足妄灵-状态恢复", 50],
+    #4912: ["9-SanZuWangLing-ZhuangTaiHuiFu", "三足妄灵-状态恢复", 50],
     4817: ["9-JuShuoZhiBi", "聚烁之臂", 50],
     4909: ["9-WeiLaiShuJu", "未来数据", 2],
     4875: ["9-GuangSuSuiDao", "光速隧道", 50],
