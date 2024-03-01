@@ -312,7 +312,7 @@ CastingId2MetaInfo = {
     3549: ["1-SR-QuanJiShouTao", "拳击手套", 30],
     #2457: ["1-SSR-MoDengZhongXin", "摩登中心"],
     #2466: ["1-SSR-ZhongGuiTieDao", "重轨铁道"],
-    3550: ["1-SSR-ChaoShanDianCi", "超闪电磁", 80],
+    3550: ["1-SSR-ChaoShanDianCi", "超闪电磁", 60],
     4629: ["1-WeiGuangFeiTan", "微光飞毯", 10],
     4630: ["1-ShuGuangLuJian", "曙光陆舰", 10],
 
@@ -532,8 +532,8 @@ CastingId2MetaInfo = {
     4622: ["8-MiaoQuTangGuoHe", "妙趣糖果盒", 10],
     4777: ["8-ChuanShuoKaPian", "传说卡片", 3],
     #4808: ["8-XianHuaQiYu", "仙花奇域", 100],
-    4816: ["8-ChunRiCaiLun", "春日彩轮", 5],
-    4795: ["8-QiYiJunGe", "奇异菌阁", 100],
+    4816: ["8-ChunRiCaiLun", "春日彩轮", 5], #------
+    4795: ["8-QiYiJunGe", "奇异菌阁", 100], #------
     4814: ["8-HuanLianZhiTong", "幻联之瞳", 5],
     4834: ["8-ShanHaiJing-LeiNiao", "山海经-鸓鸟", 50],
     4810: ["8-NaiLaoMengChao", "奶酪梦巢", 20],
@@ -566,6 +566,7 @@ CastingId2MetaInfo = {
     4939: ["9-OKMao", "OK猫", 50],
     4908: ["9-ShenYuanZhenSheZhe", "深渊震慑者", 30],
     4941: ["9-WeiLaiShiDai", "未来时代", 50],
+    4950: ["9-WeiLaiJianPan-ShiftZai20", "未来键盘-Shift仔20", 50],
 
     #4228: ["88-WangZheZhiZhan", "王者之战", 5],
     #4412: ["88-FengWuZhiYuan", "风舞纸鸢", 30],
