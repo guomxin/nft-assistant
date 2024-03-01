@@ -510,6 +510,8 @@ CastingId2MetaInfo = {
     4935: ["6-SaiBoZhongXinCheng", "赛博中心城", 20],
     4936: ["6-SaiBoYin", "赛博阴", 20],
     4937: ["6-SaiBoYang", "赛博阳", 20],
+    4838: ["6-SaiBoBug", "赛博Bug", 20],
+    4938: ["6-SaiBoBianFu", "赛博蝙蝠", 20],
 
     3998: ["7-XiangSuQiJing", "像素奇晶"],
     3544: ["7-TanXianZheIV", "探险者IV"],
@@ -549,7 +551,7 @@ CastingId2MetaInfo = {
     #4769: ["9-JiXieDoGou", "机械Do狗", 0], #------
     #4718: ["9-JiJiaZhaoHuanQi", "机甲召唤器", 0], #------
     #4831: ["9-JiJiaJiaoLian", "机甲铰链", 0],
-    4807: ["9-ZiYouZhiShi-HongWenXingTai", "自由之誓-红温形态", 300],
+    #4807: ["9-ZiYouZhiShi-HongWenXingTai", "自由之誓-红温形态", 300],
     #4802: ["9-HuiLanYaoJi", "回蓝药剂", 2],
     #4821: ["9-YouMingShenPanZhe", "幽冥审判者", 0],
     #4833: ["9-YuanDongNeng", "源动能", 0], #------
@@ -558,11 +560,12 @@ CastingId2MetaInfo = {
     4817: ["9-JuShuoZhiBi", "聚烁之臂", 50],
     4909: ["9-WeiLaiShuJu", "未来数据", 2],
     4875: ["9-GuangSuSuiDao", "光速隧道", 50],
-    4913: ["9-ChaoJiNengLiang", "超级能量", 20],
+    4913: ["9-ChaoJiNengLiang", "超级能量", 50],
     4923: ["9-WanNengJiXieZuZhi", "万能机械组织", 50],
     4940: ["9-WeiLaiTanXianJia", "未来探险家", 50],
     4939: ["9-OKMao", "OK猫", 50],
     4908: ["9-ShenYuanZhenSheZhe", "深渊震慑者", 30],
+    4941: ["9-WeiLaiShiDai", "未来时代", 50],
 
     #4228: ["88-WangZheZhiZhan", "王者之战", 5],
     #4412: ["88-FengWuZhiYuan", "风舞纸鸢", 30],
@@ -580,7 +583,7 @@ HighestValue_Products_Info = {
 }
 
 # 173
-Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzA5NjQyNTEwLCJzaWduSWQiOiIyYWE2YjhjNTU2OTA0MzNjODc4NWYzMWQxYmEzOTJhNiIsImlhdCI6MTcwOTAzNzcxMH0.Y_PjBaXIKqE-UWdkr0bF364Z8BM62N-wJFb1eP_7yvU"
+Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzA5ODYwODQ0LCJzaWduSWQiOiI4ZTQ2Yzg3YzM1YWU0NWNlYjcyYWJlYzA5M2E0ZGE0MSIsImlhdCI6MTcwOTI1NjA0NH0.Hqj9IbbDvVAjxfwp6AK2ovrsMQ0Eqfn_AIwyPHyrXLE"
 
 # 131
 Query_Token= "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxMzE1NjE2MTA5MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzA5NDc2NzczLCJzaWduSWQiOiI3NjMyMjBlMWY1ZWU0ODcxOGFkNWYwMjg5ZTg1NjkyZCIsImlhdCI6MTcwODg3MTk3M30.EoD7DM07EZd9du4VnRhdovNZAA8KenwbFPWCYQnhZj0"
