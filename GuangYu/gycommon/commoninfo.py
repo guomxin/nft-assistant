@@ -560,7 +560,7 @@ CastingId2MetaInfo = {
     #4912: ["9-SanZuWangLing-ZhuangTaiHuiFu", "三足妄灵-状态恢复", 50],
     4817: ["9-JuShuoZhiBi", "聚烁之臂", 50], #------
     4909: ["9-WeiLaiShuJu", "未来数据", 2],
-    4875: ["9-GuangSuSuiDao", "光速隧道", 50],
+    4875: ["9-GuangSuSuiDao", "光速隧道", 50], #------
     4913: ["9-ChaoJiNengLiang", "超级能量", 50],
     4923: ["9-WanNengJiXieZuZhi", "万能机械组织", 50],
     4940: ["9-WeiLaiTanXianJia", "未来探险家", 50],
@@ -589,7 +589,7 @@ HighestValue_Products_Info = {
 Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzA5ODYwODQ0LCJzaWduSWQiOiI4ZTQ2Yzg3YzM1YWU0NWNlYjcyYWJlYzA5M2E0ZGE0MSIsImlhdCI6MTcwOTI1NjA0NH0.Hqj9IbbDvVAjxfwp6AK2ovrsMQ0Eqfn_AIwyPHyrXLE"
 
 # 131
-Query_Token= "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxMzE1NjE2MTA5MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzA5NDc2NzczLCJzaWduSWQiOiI3NjMyMjBlMWY1ZWU0ODcxOGFkNWYwMjg5ZTg1NjkyZCIsImlhdCI6MTcwODg3MTk3M30.EoD7DM07EZd9du4VnRhdovNZAA8KenwbFPWCYQnhZj0"
+Query_Token= "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxMzE1NjE2MTA5MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzA5OTQ1MzkxLCJzaWduSWQiOiI0NzhhM2ZlMDg0YzY0MmJmODQ0ZjdlZTY0NTlmMzQ5ZCIsImlhdCI6MTcwOTM0MDU5MX0.OkM06qbkwkr78sIUMGF40M796JxR0gKcxpAOrupRVZQ"
 
 GanDart_Headers = {
     "Host": "api2.gandart.com",
