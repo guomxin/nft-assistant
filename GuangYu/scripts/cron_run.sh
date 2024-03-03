@@ -424,10 +424,6 @@ echo "---幻联之瞳---"
 python grab_transaction_price.py 4814 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 4814 ${yesterday} 10
 
-echo "---山海经-鸓鸟---"
-python grab_transaction_price.py 4834 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 4834 ${yesterday} 10
-
 echo "---奶酪梦巢---"
 python grab_transaction_price.py 4810 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 4810 ${yesterday} 10
@@ -473,14 +469,6 @@ echo "---未来探险家---"
 python grab_transaction_price.py 4940 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 4940 ${yesterday} 10
 
-echo "---OK猫---"
-python grab_transaction_price.py 4939 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 4939 ${yesterday} 10
-
-echo "---深渊震慑者---"
-python grab_transaction_price.py 4908 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 4908 ${yesterday} 10
-
 echo "---未来时代---"
 python grab_transaction_price.py 4941 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 4941 ${yesterday} 10
@@ -523,11 +511,11 @@ for nft in "1-N-MengYouGeLou" "1-N-YouLingTianTai" "1-N-ChaoNengMoJing" \
 "6-SaiBoDunPai" "6-SaiBoGongDian" "6-SaiBoShenTou" \
 "7-XiangSuQiJing" "7-TanXianZheIV" "7-XunBaoZheI" "7-GongYunXiaoShao" "7-FangBiaoZhiShiDeng" "7-YeGuWangCheng" \
 "8-XiaoXiaoJianPan-LZai" "8-ChuanShuoKaPian" "8-ShanHaiJing-ZhuYan" \
-"8-MiaoQuTangGuoHe" "8-HuanLianZhiTong" "8-ShanHaiJing-LeiNiao" \
+"8-MiaoQuTangGuoHe" "8-HuanLianZhiTong" \
 "8-NaiLaoMengChao" "8-YunDingTianGong" "8-PanGuFu" "8-ShanHaiJing-LuShu" "8-ShanHaiJing-TaoTie" \
 "9-WeiLaiShuJu" "9-ChaoJiNengLiang" "9-WanNengJiXieZuZhi" "9-WeiLaiJianPan-ShiftZai20" \
 "9-ShuJuDaiMa" "9-WeiLaiTanXianJia" "9-XuKongZhanShenKaEr" \
-"9-ShenYuanZhenSheZhe" "9-OKMao" "9-WeiLaiShiDai" "9-WeiLaiWuYingJian"
+"9-WeiLaiShiDai" "9-WeiLaiWuYingJian"
 do
     mkdir $nft;mv *$nft*.csv $nft;zip -q $nft-$yesterday $nft/*
 done

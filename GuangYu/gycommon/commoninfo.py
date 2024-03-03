@@ -538,12 +538,12 @@ CastingId2MetaInfo = {
     #4816: ["8-ChunRiCaiLun", "春日彩轮", 5], #------
     #4795: ["8-QiYiJunGe", "奇异菌阁", 100], #------
     4814: ["8-HuanLianZhiTong", "幻联之瞳", 5],
-    4834: ["8-ShanHaiJing-LeiNiao", "山海经-鸓鸟", 50],
+    #4834: ["8-ShanHaiJing-LeiNiao", "山海经-鸓鸟", 50], #------
     4810: ["8-NaiLaoMengChao", "奶酪梦巢", 20],
     4839: ["8-YunDingTianGong", "云顶天宫", 20],
     4865: ["8-PanGuFu", "盘古斧", 50],
     4860: ["8-ShanHaiJing-LuShu", "山海经-鹿蜀", 50],
-    4853: ["8-ShanHaiJing-TaoTie", "山海经-饕餮", 50],
+    4853: ["8-ShanHaiJing-TaoTie", "山海经-饕餮", 50], 
     4952: ["8-ShanHaiJing-ZhuYan", "山海经-朱厌", 10],
 
     #4515: ["9-ShuGuangPuJiZhan", "殊光谱基站"], #*
@@ -567,8 +567,8 @@ CastingId2MetaInfo = {
     4913: ["9-ChaoJiNengLiang", "超级能量", 50],
     4923: ["9-WanNengJiXieZuZhi", "万能机械组织", 50],
     4940: ["9-WeiLaiTanXianJia", "未来探险家", 0],
-    4939: ["9-OKMao", "OK猫", 50],
-    4908: ["9-ShenYuanZhenSheZhe", "深渊震慑者", 30],
+    #4939: ["9-OKMao", "OK猫", 50], #------
+    #4908: ["9-ShenYuanZhenSheZhe", "深渊震慑者", 30], #------
     4941: ["9-WeiLaiShiDai", "未来时代", 50],
     4950: ["9-WeiLaiJianPan-ShiftZai20", "未来键盘-Shift仔20", 50],
     4944: ["9-WeiLaiWuYingJian", "未来无影剑", 50],
