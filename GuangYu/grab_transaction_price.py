@@ -146,6 +146,10 @@ def get_product_detail(prod_id):
                 if target_buy_index >= len(trans): # ProdId:119695, DetailId:97124
                     return None
 
+                if not trans[target_buy_index]["buyPrice"]:
+                    print("productId:{}, detailId:{} 未发现买入价格!".format(prod_id, detail_id))
+                    return None                    
+
                 buy_price = trans[target_buy_index]["buyPrice"]
                 # 有时价格会有微小差别（比如差一分)
                 if abs(float(sell_price) - float(buy_price)) > 0.02:

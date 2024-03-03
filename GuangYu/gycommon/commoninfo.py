@@ -566,7 +566,7 @@ CastingId2MetaInfo = {
     #4875: ["9-GuangSuSuiDao", "光速隧道", 50], #------
     4913: ["9-ChaoJiNengLiang", "超级能量", 50],
     4923: ["9-WanNengJiXieZuZhi", "万能机械组织", 50],
-    4940: ["9-WeiLaiTanXianJia", "未来探险家", 50],
+    4940: ["9-WeiLaiTanXianJia", "未来探险家", 0],
     4939: ["9-OKMao", "OK猫", 50],
     4908: ["9-ShenYuanZhenSheZhe", "深渊震慑者", 30],
     4941: ["9-WeiLaiShiDai", "未来时代", 50],
