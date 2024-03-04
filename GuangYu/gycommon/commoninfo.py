@@ -515,6 +515,12 @@ CastingId2MetaInfo = {
     4943: ["6-SaiBoDunPai", "赛博盾牌", 20],
     4837: ["6-SaiBoGongDian", "赛博宫殿", 20],
     4951: ["6-SaiBoShenTou", "赛博神偷", 10],
+    4583: ["6-HongDieLan", "红蝶兰", 10],
+    4666: ["6-SaiBoTiger", "赛博Tiger", 30],
+    4953: ["6-SaiBoWuShuang", "赛博无双", 10],
+    4868: ["6-SaiBoXiaoLongNv", "赛博小龙女", 5],
+    4947: ["6-SaiBoCaptain", "赛博Captain", 15],
+    4578: ["6-ShuLiYuanZhen", "数离原阵", 15],
 
     3998: ["7-XiangSuQiJing", "像素奇晶"],
     3544: ["7-TanXianZheIV", "探险者IV"],
@@ -565,7 +571,7 @@ CastingId2MetaInfo = {
     #4817: ["9-JuShuoZhiBi", "聚烁之臂", 50], #------
     4909: ["9-WeiLaiShuJu", "未来数据", 2],
     #4875: ["9-GuangSuSuiDao", "光速隧道", 50], #------
-    4913: ["9-ChaoJiNengLiang", "超级能量", 50],
+    4913: ["9-ChaoJiNengLiang", "超级能量", 10],
     4923: ["9-WanNengJiXieZuZhi", "万能机械组织", 50],
     #4940: ["9-WeiLaiTanXianJia", "未来探险家", 0],
     #4939: ["9-OKMao", "OK猫", 50], #------
