@@ -581,6 +581,7 @@ CastingId2MetaInfo = {
     4944: ["9-WeiLaiWuYingJian", "未来无影剑", 50],
     4955: ["9-XuKongZhanShenKaEr", "虚空战神卡尔", 50],
     4960: ["9-JiuJiKongJuZhiMen", "究极恐惧之门", 5],
+    4959: ["9-WeiLaiTanXianJiaEZ", "未来探险家EZ", 10],
 
     #4228: ["88-WangZheZhiZhan", "王者之战", 5],
     #4412: ["88-FengWuZhiYuan", "风舞纸鸢", 30],
