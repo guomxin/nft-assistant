@@ -505,6 +505,10 @@ echo "---虚空战神卡尔---"
 python grab_transaction_price.py 4955 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 4955 ${yesterday} 10
 
+echo "---究极恐惧之门---"
+python grab_transaction_price.py 4960 ${yesterday} ${yesterday}
+python analyze_transaction_prices.py 4960 ${yesterday} 10
+
 #------ 后处理 ------#
 cd data;mkdir -p upload/$yesterday;rm -rf upload/$yesterday/*
 cp *$yesterday* upload/$yesterday;cd upload/$yesterday
@@ -535,7 +539,7 @@ for nft in "1-N-MengYouGeLou" "1-N-YouLingTianTai" "1-N-ChaoNengMoJing" \
 "8-MiaoQuTangGuoHe" "8-HuanLianZhiTong" \
 "8-NaiLaoMengChao" "8-YunDingTianGong" "8-PanGuFu" "8-ShanHaiJing-LuShu" \
 "9-WeiLaiShuJu" "9-ChaoJiNengLiang" "9-WanNengJiXieZuZhi" "9-WeiLaiJianPan-ShiftZai20" \
-"9-ShuJuDaiMa" "9-XuKongZhanShenKaEr" \
+"9-ShuJuDaiMa" "9-XuKongZhanShenKaEr" "9-JiuJiKongJuZhiMen" \
 "9-WeiLaiShiDai" "9-WeiLaiWuYingJian"
 do
     mkdir $nft;mv *$nft*.csv $nft;zip -q $nft-$yesterday $nft/*
