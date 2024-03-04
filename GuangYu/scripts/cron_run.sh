@@ -440,9 +440,9 @@ echo "---山海经-鹿蜀---"
 python grab_transaction_price.py 4860 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 4860 ${yesterday} 10
 
-echo "---山海经-饕餮---"
-python grab_transaction_price.py 4853 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 4853 ${yesterday} 10
+echo "---山海经-青龙---"
+python grab_transaction_price.py 4957 ${yesterday} ${yesterday}
+python analyze_transaction_prices.py 4957 ${yesterday} 10
 
 echo "---山海经-朱厌---"
 python grab_transaction_price.py 4952 ${yesterday} ${yesterday}
@@ -506,9 +506,9 @@ for nft in "1-N-MengYouGeLou" "1-N-YouLingTianTai" "1-N-ChaoNengMoJing" \
 "6-SaiBoZhongXinCheng" "6-SaiBoYin" "6-SaiBoYang" "6-SaiBoBug" "6-SaiBoBianFu" \
 "6-SaiBoDunPai" "6-SaiBoGongDian" "6-SaiBoShenTou" \
 "7-XiangSuQiJing" "7-TanXianZheIV" "7-XunBaoZheI" "7-GongYunXiaoShao" "7-FangBiaoZhiShiDeng" "7-YeGuWangCheng" \
-"8-XiaoXiaoJianPan-LZai" "8-ChuanShuoKaPian" "8-ShanHaiJing-ZhuYan" \
+"8-XiaoXiaoJianPan-LZai" "8-ChuanShuoKaPian" "8-ShanHaiJing-ZhuYan" "8-ShanHaiJing-QingLong" \
 "8-MiaoQuTangGuoHe" "8-HuanLianZhiTong" \
-"8-NaiLaoMengChao" "8-YunDingTianGong" "8-PanGuFu" "8-ShanHaiJing-LuShu" "8-ShanHaiJing-TaoTie" \
+"8-NaiLaoMengChao" "8-YunDingTianGong" "8-PanGuFu" "8-ShanHaiJing-LuShu" \
 "9-WeiLaiShuJu" "9-ChaoJiNengLiang" "9-WanNengJiXieZuZhi" "9-WeiLaiJianPan-ShiftZai20" \
 "9-ShuJuDaiMa" "9-XuKongZhanShenKaEr" \
 "9-WeiLaiShiDai" "9-WeiLaiWuYingJian"

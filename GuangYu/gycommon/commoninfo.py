@@ -430,7 +430,7 @@ CastingId2MetaInfo = {
     4712: ["5-CaoMeiNaiXiBei", "草莓奶昔杯"],
     4738: ["5-LunHuiHuaZhong", "轮回花钟"],
     4644: ["5-ShengDanSongGe", "圣诞颂歌", 15],
-    4650: ["5-XingYaoLanTan", "星耀篮坛", 15],
+    4650: ["5-XingYaoLanTan", "星耀篮坛", 10],
     4766: ["5-HuaQiTongJing", "花期瞳镜"],
     4749: ["5-GuangHuiZhouCheng", "光辉轴承"],
     4717: ["5-ShuangYuanZhiHe", "双源之核"],
@@ -543,8 +543,9 @@ CastingId2MetaInfo = {
     4839: ["8-YunDingTianGong", "云顶天宫", 20],
     4865: ["8-PanGuFu", "盘古斧", 50],
     4860: ["8-ShanHaiJing-LuShu", "山海经-鹿蜀", 50],
-    4853: ["8-ShanHaiJing-TaoTie", "山海经-饕餮", 50], 
+    #4853: ["8-ShanHaiJing-TaoTie", "山海经-饕餮", 50], 
     4952: ["8-ShanHaiJing-ZhuYan", "山海经-朱厌", 10],
+    4957: ["8-ShanHaiJing-QingLong", "山海经-青龙", 30],
 
     #4515: ["9-ShuGuangPuJiZhan", "殊光谱基站"], #*
     #4562: ["9-ZhengZhaoJiJia", "征召机甲", 100], #------
