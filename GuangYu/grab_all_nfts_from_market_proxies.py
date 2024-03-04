@@ -193,6 +193,7 @@ if __name__ == "__main__":
             (res_code, saling_prods) = get_all_saling_products(proxies)
             if res_code != 0:
                 print("获取在售列表信息失败, res_code={}, casting_id={}".format(res_code))
+                time.sleep(1)
                 continue
             for saling_prod in saling_prods:
                 casting_id = int(saling_prod[CASTING_ID_INDEX])

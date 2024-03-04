@@ -566,7 +566,7 @@ CastingId2MetaInfo = {
     #4875: ["9-GuangSuSuiDao", "光速隧道", 50], #------
     4913: ["9-ChaoJiNengLiang", "超级能量", 50],
     4923: ["9-WanNengJiXieZuZhi", "万能机械组织", 50],
-    4940: ["9-WeiLaiTanXianJia", "未来探险家", 0],
+    #4940: ["9-WeiLaiTanXianJia", "未来探险家", 0],
     #4939: ["9-OKMao", "OK猫", 50], #------
     #4908: ["9-ShenYuanZhenSheZhe", "深渊震慑者", 30], #------
     4941: ["9-WeiLaiShiDai", "未来时代", 50],
@@ -594,6 +594,9 @@ Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsI
 
 # 131
 Query_Token= "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxMzE1NjE2MTA5MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzA5OTQ1MzkxLCJzaWduSWQiOiI0NzhhM2ZlMDg0YzY0MmJmODQ0ZjdlZTY0NTlmMzQ5ZCIsImlhdCI6MTcwOTM0MDU5MX0.OkM06qbkwkr78sIUMGF40M796JxR0gKcxpAOrupRVZQ"
+
+# 173, A
+Mem = "TlWGj132+S/nHlBuNfxWDkm9Mn08vJWbYVnUMu8vegmRvSNCNs7c/YVacR3F+UE9y5xn0MPiPKDzzUpOsfsDv7LC7TiuPZnHR5rnHzcUljTtNqHWEoF7897uAy0PI5QeJx5Opi6PIltgt+9pnVUdprvGInz6T79gGadwJh2SSnGQ="
 
 GanDart_Headers = {
     "Host": "api2.gandart.com",

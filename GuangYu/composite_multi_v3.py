@@ -87,7 +87,7 @@ def composite(data, token):
             time.sleep(3)
             print(e)
 
-START_HOUR = 11
+START_MIN = 41
 
 if __name__ == "__main__":
     if len(sys.argv) < 6:
@@ -116,20 +116,21 @@ if __name__ == "__main__":
                     break
             if not appear:
                 time.sleep(1)
-    """
+    
+    '''
     lp_cnt = 0
     while True:
         lp_cnt += 1
         cur_time = datetime.now()
-        if cur_time.hour != START_HOUR:
+        if cur_time.minute != START_MIN:
             if lp_cnt % 120 == 0:
                 print(cur_time)
                 lp_cnt = 0
-            time.sleep(0.5) 
+            time.sleep(0.05) 
         else:
             break
     time.sleep(1)
-    """
+    '''
 
     # 获取已有材料
     comp_data_cols = add_collections(casting_ids, commoninfo.Home_Token)

@@ -14,12 +14,16 @@ TIME_OUT = 3
 GET_PRODUCT_DETAIL_URL = "https://api2.gandart.com/market/api/v2/resaleManage/resale/collectionDetails"
 BUY_URL = "https://api.gandart.com/base/v2/resaleManage/resale/buy/v2"
 
+GET_PUBLICKEY_URL = "https://api.gandart.com/base/reg/getPublicKey"
+CONFIRM_PASSWORD_URL = "https://api.gandart.com/base/user/confirmPassword"
+PAY_URL = "https://api.gandart.com/api/v2/wallet/sand/pay"
+
 TRAN_STATUS_SALING = 2
 
 PROD_ID_INDEX = 0
 PRICE_INDEX = 2
 TRANS_STATUS_INDEX = 3
-#WALLET_LIST_INDEX = 4
+WALLET_LIST_INDEX = 4
 
 """
     [{
@@ -63,8 +67,7 @@ Targets_List = [
     #{4716: 20},
     #{4654: 238},
     #{4655:48},
-    {4833:58},
-    {4678: 100, 4833:58},
+    {4085:2, 4909:2},
     #{4228: 5, 4412:30},
     #{4708:428},
     #{4723: 5},
@@ -151,6 +154,28 @@ def buy_product(casting_id, prod_id, token, proxies):
             if not res["success"]:
                 print("下单失败: {} casting_id={},prod_id={},msg={}".format(
                     datetime.now(), casting_id, prod_id, res["msg"]))
+                return (-1, None)
+            else:
+                return (0, res["obj"]["orderNum"])
+        except Exception as e:
+            time.sleep(3)
+            print(e)
+
+def getPublicKey(token, proxies):
+    data = {
+    }
+
+    headers = {
+    }
+    headers["token"] = token
+
+    while True:
+        try: 
+            data = utils.decorate_api_data(data)
+            res = requests.post(GET_PUBLICKEY_URL, data=data, headers=headers, proxies=proxies, timeout=TIME_OUT).json()
+            if not res["success"]:
+                print("获取公钥失败: {} msg={}".format(
+                    datetime.now(), res["msg"]))
                 return False
             else:
                 return True
@@ -158,15 +183,68 @@ def buy_product(casting_id, prod_id, token, proxies):
             time.sleep(3)
             print(e)
 
+def confirmPassword(password, token, proxies):
+    data = {
+        "accountPassword": password,
+    }
+
+    headers = {
+    }
+    headers["token"] = token
+
+    while True:
+        try: 
+            data = utils.decorate_api_data(data)
+            res = requests.post(CONFIRM_PASSWORD_URL, data=data, headers=headers, proxies=proxies, timeout=TIME_OUT).json()
+            if not res["success"]:
+                print("验证密码失败: {} msg={}".format(
+                    datetime.now(), res["msg"]))
+                return False
+            else:
+                return True
+        except Exception as e:
+            time.sleep(3)
+            print(e)
+
+def pay(casting_id, prod_id, order_num, token, proxies):
+    data = {
+        "orderNum": order_num,
+        "castingId": casting_id,
+        "transactionRecordId": prod_id,
+        #"userId": user_id,
+    }
+
+    headers = {
+    }
+    headers["token"] = token
+
+    while True:
+        try: 
+            data = utils.decorate_api_data(data)
+            res = requests.post(PAY_URL, data=data, headers=headers, proxies=proxies, timeout=TIME_OUT).json()
+            if not res["success"]:
+                print("支付失败: {} casting_id={},prod_id={},msg={}".format(
+                    datetime.now(), casting_id, prod_id, res["msg"]))
+                return (-1, None)
+            else:
+                print(res)
+                return (0, res["obj"]["passwordURL"])
+        except Exception as e:
+            time.sleep(3)
+            print(e)
+
 if __name__ == "__main__":
     if len(sys.argv) < 3:
-        print("{} <proxies_id> <target_id> <crazy_mode>(缺省为1).".format(sys.argv[0]))
+        print("{} <proxies_id> <target_id> <crazy_mode>(缺省为0) <pay_mode>(缺省为0).".format(sys.argv[0]))
         sys.exit(1)
     proxy_id = int(sys.argv[1])
     target_id = int(sys.argv[2])
-    crazy_mode = True
+    crazy_mode = False
     if len(sys.argv) >= 4:
         crazy_mode = (int(sys.argv[3]) > 0)
+    pay_mode = False
+    if len(sys.argv) >= 5:
+        pay_mode = (int(sys.argv[4]) > 0)
     token = commoninfo.Home_Token
     proxies = Proxies_List[proxy_id][0]
     proxy_sleep_time = Proxies_List[proxy_id][1]
@@ -189,6 +267,7 @@ if __name__ == "__main__":
     for casting_id in castingid2price:
         print("{}:{}".format(commoninfo.CastingId2MetaInfo[casting_id][1], castingid2price[casting_id]))
     print("疯狂模式:{}".format(crazy_mode))
+    print("支付模式:{}".format(pay_mode))
 
     loop_cnt = 0
     wx_msg_count = 0
@@ -198,11 +277,13 @@ if __name__ == "__main__":
                 (res_code, saling_prods) = get_top_saling_products(casting_id, proxies)
                 if res_code != 0:
                     print("获取在售列表信息失败, res_code={}, casting_id={}".format(res_code, casting_id))
+                    time.sleep(1)
                     continue
                 for saling_prod in saling_prods:
                     prod_id = saling_prod[PROD_ID_INDEX]
                     price = saling_prod[PRICE_INDEX]
                     trans_status = saling_prod[TRANS_STATUS_INDEX]
+                    wallet_list = saling_prod[WALLET_LIST_INDEX]
                     if not crazy_mode:
                         if trans_status != TRAN_STATUS_SALING:
                             continue
@@ -213,7 +294,8 @@ if __name__ == "__main__":
                         #    continue
                         prod_name = commoninfo.CastingId2MetaInfo[casting_id][1]
                         #print(prod_name, price, prod_id)
-                        if buy_product(casting_id, prod_id, token, proxies):
+                        (res_code, order_num) = buy_product(casting_id, prod_id, token, proxies)
+                        if res_code == 0:
                             content = """
 光予: 购买{}
 >时间: {}
@@ -225,6 +307,21 @@ if __name__ == "__main__":
                             print(msg)
                             utils.send_msg(from_addr, password, to_addr, msg)
                             """
+                            if pay_mode:
+                                (res_code, password_url) = pay(casting_id, prod_id, order_num, token, proxies)
+                                if res_code == 0:
+                                    utils.send_workwx_msg_agg(utils.GrabNFTs_MSG, "text", "{}:{}:{}".format(
+                                        prod_name, price, password_url))
+                                # if "A" not in wallet_list:
+                                #     print("商品不支持A钱包付款, prod_id={}".format(prod_id))
+                                # else:
+                                #     if not getPublicKey(token, proxies):
+                                #         continue
+                                #     if not confirmPassword(, token, proxies):
+                                #         continue
+                                #     if pay(casting_id, prod_id, order_num, token, proxies):
+                                #         print("支付成功: {} casting_id={},prod_id={}".format(
+                                #             datetime.now(), casting_id, prod_id))
                         else:
                             wx_msg_count += 1
                             if wx_msg_count == 50:

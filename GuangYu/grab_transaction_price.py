@@ -146,7 +146,7 @@ def get_product_detail(prod_id):
                 if target_buy_index >= len(trans): # ProdId:119695, DetailId:97124
                     return None
 
-                if not trans[target_buy_index]["buyPrice"]:
+                if not trans[target_buy_index]["buyPrice"]: # productId:3810067, detailId:78935499
                     print("productId:{}, detailId:{} 未发现买入价格!".format(prod_id, detail_id))
                     return None                    
 

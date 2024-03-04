@@ -465,10 +465,6 @@ echo "---万能机械组织---"
 python grab_transaction_price.py 4923 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 4923 ${yesterday} 10
 
-echo "---未来探险家---"
-python grab_transaction_price.py 4940 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 4940 ${yesterday} 10
-
 echo "---未来时代---"
 python grab_transaction_price.py 4941 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 4941 ${yesterday} 10
@@ -514,7 +510,7 @@ for nft in "1-N-MengYouGeLou" "1-N-YouLingTianTai" "1-N-ChaoNengMoJing" \
 "8-MiaoQuTangGuoHe" "8-HuanLianZhiTong" \
 "8-NaiLaoMengChao" "8-YunDingTianGong" "8-PanGuFu" "8-ShanHaiJing-LuShu" "8-ShanHaiJing-TaoTie" \
 "9-WeiLaiShuJu" "9-ChaoJiNengLiang" "9-WanNengJiXieZuZhi" "9-WeiLaiJianPan-ShiftZai20" \
-"9-ShuJuDaiMa" "9-WeiLaiTanXianJia" "9-XuKongZhanShenKaEr" \
+"9-ShuJuDaiMa" "9-XuKongZhanShenKaEr" \
 "9-WeiLaiShiDai" "9-WeiLaiWuYingJian"
 do
     mkdir $nft;mv *$nft*.csv $nft;zip -q $nft-$yesterday $nft/*
