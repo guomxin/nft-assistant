@@ -521,6 +521,7 @@ CastingId2MetaInfo = {
     4868: ["6-SaiBoXiaoLongNv", "赛博小龙女", 5],
     4947: ["6-SaiBoCaptain", "赛博Captain", 15],
     4578: ["6-ShuLiYuanZhen", "数离原阵", 15],
+    4954: ["6-SaiBoZhiHuanQuan", "赛博置换券", 2],
 
     3998: ["7-XiangSuQiJing", "像素奇晶"],
     3544: ["7-TanXianZheIV", "探险者IV"],
@@ -552,6 +553,7 @@ CastingId2MetaInfo = {
     #4853: ["8-ShanHaiJing-TaoTie", "山海经-饕餮", 50], 
     4952: ["8-ShanHaiJing-ZhuYan", "山海经-朱厌", 10],
     4957: ["8-ShanHaiJing-QingLong", "山海经-青龙", 30],
+    4948: ["8-ShanHaiJing-HuJiao", "山海经-虎蛟", 30],
 
     #4515: ["9-ShuGuangPuJiZhan", "殊光谱基站"], #*
     #4562: ["9-ZhengZhaoJiJia", "征召机甲", 100], #------
