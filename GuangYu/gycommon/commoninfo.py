@@ -463,7 +463,7 @@ CastingId2MetaInfo = {
     #4577: ["6-MiCaiZhiHuan", "秘彩之环", 100],
     #4636: ["6-JuChiDuanBi", "锯齿短匕"], #------
     #4624: ["6-YinBoZhenDangQi", "音波振荡器", 0], #------
-    4723: ["6-SaiBoQiFeiKa", "赛博起飞卡", 3], 
+    4723: ["6-SaiBoQiFeiKa", "赛博起飞卡", 2], 
     #4706: ["6-SaiBoZhanShenDao", "赛博战神刀", 0], #------
     #4708: ["6-SaiBoJiaFeiMao", "赛博加菲猫", 0], #------
     #4707: ["6-SaiBoWuNeng", "赛博悟能"], #------
@@ -545,7 +545,7 @@ CastingId2MetaInfo = {
     #4816: ["8-ChunRiCaiLun", "春日彩轮", 5], #------
     #4795: ["8-QiYiJunGe", "奇异菌阁", 100], #------
     4814: ["8-HuanLianZhiTong", "幻联之瞳", 5],
-    #4834: ["8-ShanHaiJing-LeiNiao", "山海经-鸓鸟", 50], #------
+    4834: ["8-ShanHaiJing-LeiNiao", "山海经-鸓鸟", 50], 
     4810: ["8-NaiLaoMengChao", "奶酪梦巢", 20],
     4839: ["8-YunDingTianGong", "云顶天宫", 20],
     4865: ["8-PanGuFu", "盘古斧", 50],
@@ -554,6 +554,7 @@ CastingId2MetaInfo = {
     4952: ["8-ShanHaiJing-ZhuYan", "山海经-朱厌", 10],
     4957: ["8-ShanHaiJing-QingLong", "山海经-青龙", 30],
     4948: ["8-ShanHaiJing-HuJiao", "山海经-虎蛟", 30],
+    4962: ["8-ShanHaiJing-FuZhu", "山海经-夫诸", 30],
 
     #4515: ["9-ShuGuangPuJiZhan", "殊光谱基站"], #*
     #4562: ["9-ZhengZhaoJiJia", "征召机甲", 100], #------
