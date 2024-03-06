@@ -539,12 +539,12 @@ CastingId2MetaInfo = {
     #4606: ["8-XiaoXiaoJianPan-DZai", "小小键盘-D仔", 50],
     #4572: ["8-MoZhongLeYuan", "蘑钟乐园", 70], #------
     #4649: ["8-HuanZuZhiTa", "幻足之塔", 200], #------
-    4622: ["8-MiaoQuTangGuoHe", "妙趣糖果盒", 10],
-    4777: ["8-ChuanShuoKaPian", "传说卡片", 3],
+    4622: ["8-MiaoQuTangGuoHe", "妙趣糖果盒", 5],
+    4777: ["8-ChuanShuoKaPian", "传说卡片", 2],
     #4808: ["8-XianHuaQiYu", "仙花奇域", 100],
     #4816: ["8-ChunRiCaiLun", "春日彩轮", 5], #------
     #4795: ["8-QiYiJunGe", "奇异菌阁", 100], #------
-    4814: ["8-HuanLianZhiTong", "幻联之瞳", 5],
+    4814: ["8-HuanLianZhiTong", "幻联之瞳", 2],
     4834: ["8-ShanHaiJing-LeiNiao", "山海经-鸓鸟", 50], 
     4810: ["8-NaiLaoMengChao", "奶酪梦巢", 20],
     4839: ["8-YunDingTianGong", "云顶天宫", 20],
@@ -580,12 +580,13 @@ CastingId2MetaInfo = {
     #4939: ["9-OKMao", "OK猫", 50], #------
     #4908: ["9-ShenYuanZhenSheZhe", "深渊震慑者", 30], #------
     4941: ["9-WeiLaiShiDai", "未来时代", 50],
-    4950: ["9-WeiLaiJianPan-ShiftZai20", "未来键盘-Shift仔20", 50],
+    4950: ["9-WeiLaiJianPan-ShiftZai20", "未来键盘-Shift仔20", 0],
     4944: ["9-WeiLaiWuYingJian", "未来无影剑", 50],
     4955: ["9-XuKongZhanShenKaEr", "虚空战神卡尔", 50],
     4960: ["9-JiuJiKongJuZhiMen", "究极恐惧之门", 5],
     4959: ["9-WeiLaiTanXianJiaEZ", "未来探险家EZ", 10],
     4956: ["9-ShenYuanZhenSheZhe20", "深渊震慑者20", 30],
+    4968: ["9-WeiLaiJianPan-CtrlZai20", "未来键盘-Ctrl仔20", 10],
 
     #4228: ["88-WangZheZhiZhan", "王者之战", 5],
     #4412: ["88-FengWuZhiYuan", "风舞纸鸢", 30],
