@@ -445,8 +445,8 @@ python grab_transaction_price.py 4622 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 4622 ${yesterday} 10
 
 echo "---传说卡片---"
-python grab_transaction_price.py 4777 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 4777 ${yesterday} 10
+python grab_transaction_price.py 4958 ${yesterday} ${yesterday}
+python analyze_transaction_prices.py 4958 ${yesterday} 10
 
 echo "---幻联之瞳---"
 python grab_transaction_price.py 4814 ${yesterday} ${yesterday}
@@ -488,6 +488,10 @@ echo "---山海经-夫诸---"
 python grab_transaction_price.py 4962 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 4962 ${yesterday} 10
 
+echo "---山海经-蛊雕---"
+python grab_transaction_price.py 4984 ${yesterday} ${yesterday}
+python analyze_transaction_prices.py 4984 ${yesterday} 10
+
 #--- 探索未来 ---#
 echo "---数据代码---"
 python grab_transaction_price.py 4827 ${yesterday} ${yesterday}
@@ -504,10 +508,6 @@ python analyze_transaction_prices.py 4913 ${yesterday} 10
 echo "---未来时代---"
 python grab_transaction_price.py 4941 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 4941 ${yesterday} 10
-
-echo "---未来键盘-Shift仔20---"
-python grab_transaction_price.py 4950 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 4950 ${yesterday} 10
 
 echo "---未来无影剑---"
 python grab_transaction_price.py 4944 ${yesterday} ${yesterday}
@@ -545,6 +545,10 @@ echo "---小伦伦---"
 python grab_transaction_price.py 4961 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 4961 ${yesterday} 10
 
+echo "---未来探索者-合成资格卡---"
+python grab_transaction_price.py 4983 ${yesterday} ${yesterday}
+python analyze_transaction_prices.py 4983 ${yesterday} 10
+
 #------ 后处理 ------#
 cd data;mkdir -p upload/$yesterday;rm -rf upload/$yesterday/*
 cp *$yesterday* upload/$yesterday;cd upload/$yesterday
@@ -574,7 +578,8 @@ for nft in "1-N-MengYouGeLou" "1-N-YouLingTianTai" "1-N-ChaoNengMoJing" \
 "8-XiaoXiaoJianPan-LZai" "8-ChuanShuoKaPian" "8-ShanHaiJing-ZhuYan" "8-ShanHaiJing-QingLong" \
 "8-MiaoQuTangGuoHe" "8-HuanLianZhiTong" "8-ShanHaiJing-HuJiao" "8-ShanHaiJing-LeiNiao" \
 "8-NaiLaoMengChao" "8-YunDingTianGong" "8-PanGuFu" "8-ShanHaiJing-LuShu" "8-ShanHaiJing-FuZhu" \
-"9-WeiLaiShuJu" "9-ChaoJiNengLiang" "9-WeiLaiJianPan-ShiftZai20" \
+"8-ShanHaiJing-GuDiao" \
+"9-WeiLaiShuJu" "9-ChaoJiNengLiang" "9-WeiLaiTanSuoZhe-HeChengZiGeKa" \
 "9-ShuJuDaiMa" "9-XuKongZhanShenKaEr" "9-JiuJiKongJuZhiMen" "9-WeiLaiTanXianJiaEZ" \
 "9-WeiLaiShiDai" "9-WeiLaiWuYingJian" "9-ShenYuanZhenSheZhe20" "9-WeiLaiJianPan-CtrlZai20" \
 "9-EMoZhiWangATuo" "9-WeiLaiJianPan-CZai20" "9-XiaoLunLun"

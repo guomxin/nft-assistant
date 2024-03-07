@@ -318,8 +318,8 @@ CastingId2MetaInfo = {
 
     #2456: ["2-UR-WeiLaiDuShi", "未来都市"],
     #2468: ["2-UR-YuanYangDuLun", "远洋渡轮"],
-    3646: ["2-UR-ShiKongChuanSuoJi", "时空穿梭机", 500],
-    3751: ["2-UR-YueQiuShangCheng", "月球上城", 500],
+    3646: ["2-UR-ShiKongChuanSuoJi", "时空穿梭机", 300],
+    3751: ["2-UR-YueQiuShangCheng", "月球上城", 300],
     3535: ["2-ZaiFuXiangHuang", "载福祥凰", 300],
     2837: ["2-LongYinWanXiang", "龙吟万象", 1000],
     #2616: ["2-HuanShuShi", "幻术师"], 
@@ -327,7 +327,7 @@ CastingId2MetaInfo = {
     4014: ["2-JinQuXiYin", "金躯玺印", 60],
     4386: ["2-JinLianLingZhan", "金莲灵盏", 30],
     4384: ["2-YiShouFuTu", "异兽浮图", 60],
-    4323: ["2-DaMoHuanShi", "大魔幻师", 300],
+    4323: ["2-DaMoHuanShi", "大魔幻师", 100],
     4607: ["2-JiuChongTianWaiTian", "九重天外天", 100],
     #4719: ["2-XianLuQiongJiang", "仙露琼浆", 40], #------
     #4737: ["2-JiangShanShengJingBeiZhan", "江山盛景杯盏", 40], #------
@@ -496,15 +496,15 @@ CastingId2MetaInfo = {
     4864: ["6-SaiBoJinGuo", "赛博禁果", 10],
     4866: ["6-SaiBoLangKeJianShi", "赛博浪客剑士", 10],
     #4879: ["6-SaiBoXingYunXinPian", "赛博幸运芯片", 3],
-    4871: ["6-SaiBoJinDouYun", "赛博筋斗云", 10],
-    4890: ["6-SaiBoWangZi", "赛博王子", 8],
-    4892: ["6-SaiBoNiHongJingLing", "赛博霓虹精灵", 100],
+    4871: ["6-SaiBoJinDouYun", "赛博筋斗云", 0], #------
+    4890: ["6-SaiBoWangZi", "赛博王子", 8], 
+    4892: ["6-SaiBoNiHongJingLing", "赛博霓虹精灵", 0], #------
     4894: ["6-SaiBoWuShii", "赛博武士", 10],
     4895: ["6-SaiBoShiSanQu", "赛博十三区", 10],
     4896: ["6-SaiBoYuanZiQiShi", "赛博原子骑士", 8],
     4893: ["6-SaiBoNinja", "赛博Ninja", 50],
-    4900: ["6-SaiBoAiLiSi", "赛博爱丽丝", 5],
-    4906: ["6-SaiBoWangShi", "赛博王室", 5],
+    4900: ["6-SaiBoAiLiSi", "赛博爱丽丝", 0], #------
+    4906: ["6-SaiBoWangShi", "赛博王室", 0], #------
     4922: ["6-SaiBoSanTaiZi", "赛博三太子", 10],
     4933: ["6-SaiBoQiHang", "赛博启航", 10],
     4935: ["6-SaiBoZhongXinCheng", "赛博中心城", 20],
@@ -514,11 +514,11 @@ CastingId2MetaInfo = {
     4938: ["6-SaiBoBianFu", "赛博蝙蝠", 20],
     4943: ["6-SaiBoDunPai", "赛博盾牌", 20],
     4837: ["6-SaiBoGongDian", "赛博宫殿", 20],
-    4951: ["6-SaiBoShenTou", "赛博神偷", 10],
+    4951: ["6-SaiBoShenTou", "赛博神偷", 0], #------
     4583: ["6-HongDieLan", "红蝶兰", 10],
     4666: ["6-SaiBoTiger", "赛博Tiger", 30],
     4953: ["6-SaiBoWuShuang", "赛博无双", 10],
-    4868: ["6-SaiBoXiaoLongNv", "赛博小龙女", 5],
+    4868: ["6-SaiBoXiaoLongNv", "赛博小龙女", 0], #------
     4947: ["6-SaiBoCaptain", "赛博Captain", 15],
     4578: ["6-ShuLiYuanZhen", "数离原阵", 15],
     4954: ["6-SaiBoZhiHuanQuan", "赛博置换券", 2],
@@ -540,7 +540,7 @@ CastingId2MetaInfo = {
     #4572: ["8-MoZhongLeYuan", "蘑钟乐园", 70], #------
     #4649: ["8-HuanZuZhiTa", "幻足之塔", 200], #------
     4622: ["8-MiaoQuTangGuoHe", "妙趣糖果盒", 5],
-    4777: ["8-ChuanShuoKaPian", "传说卡片", 2],
+    4958: ["8-ChuanShuoKaPian", "传说卡片", 2],
     #4808: ["8-XianHuaQiYu", "仙花奇域", 100],
     #4816: ["8-ChunRiCaiLun", "春日彩轮", 5], #------
     #4795: ["8-QiYiJunGe", "奇异菌阁", 100], #------
@@ -555,6 +555,7 @@ CastingId2MetaInfo = {
     4957: ["8-ShanHaiJing-QingLong", "山海经-青龙", 30],
     4948: ["8-ShanHaiJing-HuJiao", "山海经-虎蛟", 30],
     4962: ["8-ShanHaiJing-FuZhu", "山海经-夫诸", 30],
+    4984: ["8-ShanHaiJing-GuDiao", "山海经-蛊雕", 30],
 
     #4515: ["9-ShuGuangPuJiZhan", "殊光谱基站"], #*
     #4562: ["9-ZhengZhaoJiJia", "征召机甲", 100], #------
@@ -580,16 +581,17 @@ CastingId2MetaInfo = {
     #4939: ["9-OKMao", "OK猫", 50], #------
     #4908: ["9-ShenYuanZhenSheZhe", "深渊震慑者", 30], #------
     4941: ["9-WeiLaiShiDai", "未来时代", 50],
-    4950: ["9-WeiLaiJianPan-ShiftZai20", "未来键盘-Shift仔20", 0], #------
-    4944: ["9-WeiLaiWuYingJian", "未来无影剑", 50],
+    #4950: ["9-WeiLaiJianPan-ShiftZai20", "未来键盘-Shift仔20", 0], #------
+    4944: ["9-WeiLaiWuYingJian", "未来无影剑", 2], #------
     4955: ["9-XuKongZhanShenKaEr", "虚空战神卡尔", 50],
     4960: ["9-JiuJiKongJuZhiMen", "究极恐惧之门", 5],
     4959: ["9-WeiLaiTanXianJiaEZ", "未来探险家EZ", 10],
     4956: ["9-ShenYuanZhenSheZhe20", "深渊震慑者20", 30],
     4968: ["9-WeiLaiJianPan-CtrlZai20", "未来键盘-Ctrl仔20", 10],
     4974: ["9-EMoZhiWangATuo", "恶魔之王阿托", 50],
-    4979: ["9-WeiLaiJianPan-CZai20", "未来键盘-C仔20", 30],
+    4979: ["9-WeiLaiJianPan-CZai20", "未来键盘-C仔20", 10],
     4961: ["9-XiaoLunLun", "小伦伦", 50],
+    4983: ["9-WeiLaiTanSuoZhe-HeChengZiGeKa", "未来探索者-合成资格卡", 30],
 
     #4228: ["88-WangZheZhiZhan", "王者之战", 5],
     #4412: ["88-FengWuZhiYuan", "风舞纸鸢", 30],
