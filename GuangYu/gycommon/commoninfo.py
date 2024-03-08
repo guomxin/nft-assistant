@@ -304,15 +304,15 @@ CastingId2MetaInfo = {
     # 1674: ["21-TingLanShuiXie", "汀兰水榭"],
     # #887: ["21-HuLu", "葫芦"],
 
-    3457: ["1-N-QingKongYuFengZhou", "晴空御风帚", 30], ########
+    #3457: ["1-N-QingKongYuFengZhou", "晴空御风帚", 30], ########
     3747: ["1-N-MengYouGeLou", "梦游阁楼", 15],
     3748: ["1-N-YouLingTianTai", "幽灵天台", 15],
-    3548: ["1-N-ChaoNengMoJing", "超能墨镜", 25],
+    3548: ["1-N-ChaoNengMoJing", "超能墨镜", 20],
     #3458: ["1-SR-YingMuHuanShaPeng", "影幕幻纱篷"],
     3549: ["1-SR-QuanJiShouTao", "拳击手套", 30],
     #2457: ["1-SSR-MoDengZhongXin", "摩登中心"],
     #2466: ["1-SSR-ZhongGuiTieDao", "重轨铁道"],
-    3550: ["1-SSR-ChaoShanDianCi", "超闪电磁", 60],
+    3550: ["1-SSR-ChaoShanDianCi", "超闪电磁", 50],
     4629: ["1-WeiGuangFeiTan", "微光飞毯", 10],
     4630: ["1-ShuGuangLuJian", "曙光陆舰", 10],
 
@@ -488,7 +488,7 @@ CastingId2MetaInfo = {
     #4847: ["6-SaiBoJinGang", "赛博金刚", 0], #------
     #4849: ["6-SaiBoQianLiMa", "赛博千里马", 0],
     4848: ["6-SaiBoBoLe", "赛博伯乐", 100],
-    4852: ["6-SaiBoCaiLiaoDiKouKa", "赛博材料抵扣卡", 30],
+    4852: ["6-SaiBoCaiLiaoDiKouKa", "赛博材料抵扣卡", 10],
     4857: ["6-SaiBoMoFaYaoShui", "赛博魔法药水", 10],
     4858: ["6-SaiBoHuanNiu", "赛博幻牛", 20],
     4859: ["6-SaiBoWuShi", "赛博巫师", 100],
@@ -512,7 +512,7 @@ CastingId2MetaInfo = {
     4937: ["6-SaiBoYang", "赛博阳", 20],
     4838: ["6-SaiBoBug", "赛博Bug", 20],
     4938: ["6-SaiBoBianFu", "赛博蝙蝠", 20],
-    4943: ["6-SaiBoDunPai", "赛博盾牌", 20],
+    4943: ["6-SaiBoDunPai", "赛博盾牌", 100],
     4837: ["6-SaiBoGongDian", "赛博宫殿", 20],
     4951: ["6-SaiBoShenTou", "赛博神偷", 0], #------
     4583: ["6-HongDieLan", "红蝶兰", 10],
@@ -582,12 +582,12 @@ CastingId2MetaInfo = {
     #4908: ["9-ShenYuanZhenSheZhe", "深渊震慑者", 30], #------
     4941: ["9-WeiLaiShiDai", "未来时代", 50],
     #4950: ["9-WeiLaiJianPan-ShiftZai20", "未来键盘-Shift仔20", 0], #------
-    4944: ["9-WeiLaiWuYingJian", "未来无影剑", 2], #------
+    #4944: ["9-WeiLaiWuYingJian", "未来无影剑", 2], #------
     4955: ["9-XuKongZhanShenKaEr", "虚空战神卡尔", 50],
     4960: ["9-JiuJiKongJuZhiMen", "究极恐惧之门", 5],
     4959: ["9-WeiLaiTanXianJiaEZ", "未来探险家EZ", 10],
     4956: ["9-ShenYuanZhenSheZhe20", "深渊震慑者20", 30],
-    4968: ["9-WeiLaiJianPan-CtrlZai20", "未来键盘-Ctrl仔20", 10],
+    4968: ["9-WeiLaiJianPan-CtrlZai20", "未来键盘-Ctrl仔20", 30],
     4974: ["9-EMoZhiWangATuo", "恶魔之王阿托", 50],
     4979: ["9-WeiLaiJianPan-CZai20", "未来键盘-C仔20", 10],
     4961: ["9-XiaoLunLun", "小伦伦", 50],
@@ -609,7 +609,7 @@ HighestValue_Products_Info = {
 }
 
 # 173
-Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzA5ODYwODQ0LCJzaWduSWQiOiI4ZTQ2Yzg3YzM1YWU0NWNlYjcyYWJlYzA5M2E0ZGE0MSIsImlhdCI6MTcwOTI1NjA0NH0.Hqj9IbbDvVAjxfwp6AK2ovrsMQ0Eqfn_AIwyPHyrXLE"
+Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzEwNDcwMzYzLCJzaWduSWQiOiI5OTMwZDYwMWUyZDc0YWRiODljMWM5ZDViZmVhZjI4MiIsImlhdCI6MTcwOTg2NTU2M30.XdqrA7u_G3LU9OA9Wo5346XQ7Z_fKM2CjjmjSrq-5Xc"
 
 # 131
 Query_Token= "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxMzE1NjE2MTA5MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzA5OTQ1MzkxLCJzaWduSWQiOiI0NzhhM2ZlMDg0YzY0MmJmODQ0ZjdlZTY0NTlmMzQ5ZCIsImlhdCI6MTcwOTM0MDU5MX0.OkM06qbkwkr78sIUMGF40M796JxR0gKcxpAOrupRVZQ"
