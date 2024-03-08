@@ -589,9 +589,11 @@ CastingId2MetaInfo = {
     4956: ["9-ShenYuanZhenSheZhe20", "深渊震慑者20", 30],
     4968: ["9-WeiLaiJianPan-CtrlZai20", "未来键盘-Ctrl仔20", 30],
     4974: ["9-EMoZhiWangATuo", "恶魔之王阿托", 50],
-    4979: ["9-WeiLaiJianPan-CZai20", "未来键盘-C仔20", 10],
+    4979: ["9-WeiLaiJianPan-CZai20", "未来键盘-C仔20", 0], #------
     4961: ["9-XiaoLunLun", "小伦伦", 50],
     4983: ["9-WeiLaiTanSuoZhe-HeChengZiGeKa", "未来探索者-合成资格卡", 30],
+    4990: ["9-WeiLaiJianPan-VZai20", "未来键盘-V仔20", 10],
+    4991: ["9-WeiLaiTanSuoZhe20", "未来探索者20", 30],
 
     #4228: ["88-WangZheZhiZhan", "王者之战", 5],
     #4412: ["88-FengWuZhiYuan", "风舞纸鸢", 30],
@@ -609,7 +611,7 @@ HighestValue_Products_Info = {
 }
 
 # 173
-Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzEwNDcwMzYzLCJzaWduSWQiOiI5OTMwZDYwMWUyZDc0YWRiODljMWM5ZDViZmVhZjI4MiIsImlhdCI6MTcwOTg2NTU2M30.XdqrA7u_G3LU9OA9Wo5346XQ7Z_fKM2CjjmjSrq-5Xc"
+Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzEwNTE4NDM0LCJzaWduSWQiOiIzMWNhZGMyMDlkYWU0OWZkODQ2ZGE2ODVkODUyNzEwMSIsImlhdCI6MTcwOTkxMzYzNH0.UYD9LcP_TAMIwnogejfBTaMxmpK0LOvV4rSKJk-rtYk"
 
 # 131
 Query_Token= "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxMzE1NjE2MTA5MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzA5OTQ1MzkxLCJzaWduSWQiOiI0NzhhM2ZlMDg0YzY0MmJmODQ0ZjdlZTY0NTlmMzQ5ZCIsImlhdCI6MTcwOTM0MDU5MX0.OkM06qbkwkr78sIUMGF40M796JxR0gKcxpAOrupRVZQ"
