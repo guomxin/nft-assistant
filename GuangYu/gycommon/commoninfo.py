@@ -595,6 +595,8 @@ CastingId2MetaInfo = {
     #4983: ["9-WeiLaiTanSuoZhe-HeChengZiGeKa", "未来探索者-合成资格卡", 30], #------
     4990: ["9-WeiLaiJianPan-VZai20", "未来键盘-V仔20", 10],
     4991: ["9-WeiLaiTanSuoZhe20", "未来探索者20", 30],
+    4994: ["9-WeiLaiShiJianMoPanSuiPian", "未来时间磨盘碎片", 30],
+    4995: ["9-KongJianJinGuo-HeChengZiGeKa", "空间禁果-合成资格卡", 30],
 
     #4228: ["88-WangZheZhiZhan", "王者之战", 5],
     #4412: ["88-FengWuZhiYuan", "风舞纸鸢", 30],

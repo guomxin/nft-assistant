@@ -397,6 +397,14 @@ echo "---未来探索者20---"
 python grab_transaction_price.py 4991 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 4991 ${yesterday} 10
 
+echo "---未来时间磨盘碎片---"
+python grab_transaction_price.py 4994 ${yesterday} ${yesterday}
+python analyze_transaction_prices.py 4994 ${yesterday} 10
+
+echo "---空间禁果-合成资格卡---"
+python grab_transaction_price.py 4995 ${yesterday} ${yesterday}
+python analyze_transaction_prices.py 4995 ${yesterday} 10
+
 #------ 后处理 ------#
 cd data;mkdir -p upload/$yesterday;rm -rf upload/$yesterday/*
 cp *$yesterday* upload/$yesterday;cd upload/$yesterday
@@ -423,8 +431,8 @@ for nft in "1-N-MengYouGeLou" "1-N-YouLingTianTai" "1-N-ChaoNengMoJing" \
 "9-WeiLaiShuJu" "9-ChaoJiNengLiang" \
 "9-ShuJuDaiMa" "9-XuKongZhanShenKaEr" "9-JiuJiKongJuZhiMen" "9-WeiLaiTanXianJiaEZ" \
 "9-WeiLaiShiDai" "9-ShenYuanZhenSheZhe20" "9-WeiLaiJianPan-CtrlZai20" \
-"9-EMoZhiWangATuo" "9-XiaoLunLun" "9-WeiLaiJianPan-VZai20" \
-"9-WeiLaiTanSuoZhe20"
+"9-EMoZhiWangATuo" "9-XiaoLunLun" "9-WeiLaiJianPan-VZai20" "9-WeiLaiShiJianMoPanSuiPian" \
+"9-WeiLaiTanSuoZhe20" "9-KongJianJinGuo-HeChengZiGeKa"
 do
     mkdir $nft;mv *$nft*.csv $nft;zip -q $nft-$yesterday $nft/*
 done
