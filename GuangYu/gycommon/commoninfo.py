@@ -309,7 +309,7 @@ CastingId2MetaInfo = {
     3748: ["1-N-YouLingTianTai", "幽灵天台", 15],
     3548: ["1-N-ChaoNengMoJing", "超能墨镜", 20],
     #3458: ["1-SR-YingMuHuanShaPeng", "影幕幻纱篷"],
-    3549: ["1-SR-QuanJiShouTao", "拳击手套", 30],
+    3549: ["1-SR-QuanJiShouTao", "拳击手套", 20],
     #2457: ["1-SSR-MoDengZhongXin", "摩登中心"],
     #2466: ["1-SSR-ZhongGuiTieDao", "重轨铁道"],
     3550: ["1-SSR-ChaoShanDianCi", "超闪电磁", 50],
@@ -429,7 +429,7 @@ CastingId2MetaInfo = {
     4690: ["5-PingAnQiShiDan", "平安启示蛋"],
     4712: ["5-CaoMeiNaiXiBei", "草莓奶昔杯"],
     4738: ["5-LunHuiHuaZhong", "轮回花钟"],
-    4644: ["5-ShengDanSongGe", "圣诞颂歌", 15],
+    4644: ["5-ShengDanSongGe", "圣诞颂歌", 10],
     4650: ["5-XingYaoLanTan", "星耀篮坛", 10],
     4766: ["5-HuaQiTongJing", "花期瞳镜"],
     4749: ["5-GuangHuiZhouCheng", "光辉轴承"],
@@ -521,7 +521,7 @@ CastingId2MetaInfo = {
     4868: ["6-SaiBoXiaoLongNv", "赛博小龙女", 0], #------
     4947: ["6-SaiBoCaptain", "赛博Captain", 15],
     4578: ["6-ShuLiYuanZhen", "数离原阵", 15],
-    4954: ["6-SaiBoZhiHuanQuan", "赛博置换券", 2],
+    4954: ["6-SaiBoZhiHuanQuan", "赛博置换券", 5],
 
     3998: ["7-XiangSuQiJing", "像素奇晶"],
     3544: ["7-TanXianZheIV", "探险者IV"],
@@ -552,9 +552,9 @@ CastingId2MetaInfo = {
     4860: ["8-ShanHaiJing-LuShu", "山海经-鹿蜀", 50],
     #4853: ["8-ShanHaiJing-TaoTie", "山海经-饕餮", 50], 
     4952: ["8-ShanHaiJing-ZhuYan", "山海经-朱厌", 10],
-    4957: ["8-ShanHaiJing-QingLong", "山海经-青龙", 30],
+    #4957: ["8-ShanHaiJing-QingLong", "山海经-青龙", 30], #------
     4948: ["8-ShanHaiJing-HuJiao", "山海经-虎蛟", 30],
-    4962: ["8-ShanHaiJing-FuZhu", "山海经-夫诸", 30],
+    #4962: ["8-ShanHaiJing-FuZhu", "山海经-夫诸", 30], #------
     4984: ["8-ShanHaiJing-GuDiao", "山海经-蛊雕", 30],
 
     #4515: ["9-ShuGuangPuJiZhan", "殊光谱基站"], #*
@@ -589,9 +589,9 @@ CastingId2MetaInfo = {
     4956: ["9-ShenYuanZhenSheZhe20", "深渊震慑者20", 30],
     4968: ["9-WeiLaiJianPan-CtrlZai20", "未来键盘-Ctrl仔20", 30],
     4974: ["9-EMoZhiWangATuo", "恶魔之王阿托", 50],
-    4979: ["9-WeiLaiJianPan-CZai20", "未来键盘-C仔20", 0], #------
+    #4979: ["9-WeiLaiJianPan-CZai20", "未来键盘-C仔20", 0], #------
     4961: ["9-XiaoLunLun", "小伦伦", 50],
-    4983: ["9-WeiLaiTanSuoZhe-HeChengZiGeKa", "未来探索者-合成资格卡", 30],
+    #4983: ["9-WeiLaiTanSuoZhe-HeChengZiGeKa", "未来探索者-合成资格卡", 30], #------
     4990: ["9-WeiLaiJianPan-VZai20", "未来键盘-V仔20", 10],
     4991: ["9-WeiLaiTanSuoZhe20", "未来探索者20", 30],
 
