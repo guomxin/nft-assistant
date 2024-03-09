@@ -262,153 +262,13 @@ python analyze_transaction_prices.py 4755 ${yesterday} 10
 echo "---赛博起飞卡---"
 python grab_transaction_price.py 4723 ${yesterday} ${yesterday}
 
-echo "---赛博钢铁拟态---"
-python grab_transaction_price.py 4840 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 4840 ${yesterday} 10
-
-echo "---赛博飞行堡垒---"
-python grab_transaction_price.py 4843 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 4843 ${yesterday} 10
-
-echo "---赛博伯乐---"
-python grab_transaction_price.py 4848 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 4848 ${yesterday} 10
-
-echo "---赛博材料抵扣卡---"
-python grab_transaction_price.py 4852 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 4852 ${yesterday} 10
-
-echo "---赛博魔法药水---"
-python grab_transaction_price.py 4857 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 4857 ${yesterday} 10
-
-echo "---赛博幻牛---"
-python grab_transaction_price.py 4858 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 4858 ${yesterday} 10
-
-echo "---赛博巫师---"
-python grab_transaction_price.py 4859 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 4859 ${yesterday} 10
-
-echo "---赛博膨胀剂---"
-python grab_transaction_price.py 4863 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 4863 ${yesterday} 10
-
-echo "---赛博禁果---"
-python grab_transaction_price.py 4864 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 4864 ${yesterday} 10
-
-echo "---赛博浪客剑士---"
-python grab_transaction_price.py 4866 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 4866 ${yesterday} 10
-
-echo "---赛博幸运芯片---"
-python grab_transaction_price.py 4879 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 4879 ${yesterday} 10
-
-echo "---赛博筋斗云---"
-python grab_transaction_price.py 4871 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 4871 ${yesterday} 10
-
-echo "---赛博王子---"
-python grab_transaction_price.py 4890 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 4890 ${yesterday} 10
-
-echo "---赛博霓虹精灵---"
-python grab_transaction_price.py 4892 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 4892 ${yesterday} 10
-
-echo "---赛博武士---"
-python grab_transaction_price.py 4894 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 4894 ${yesterday} 10
-
-echo "---赛博十三区---"
-python grab_transaction_price.py 4895 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 4895 ${yesterday} 10
-
-echo "---赛博原子骑士---"
-python grab_transaction_price.py 4896 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 4896 ${yesterday} 10
-
-echo "---赛博Ninja---"
-python grab_transaction_price.py 4893 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 4893 ${yesterday} 10
-
-echo "---赛博爱丽丝---"
-python grab_transaction_price.py 4900 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 4900 ${yesterday} 10
-
-echo "---赛博王室---"
-python grab_transaction_price.py 4906 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 4906 ${yesterday} 10
-
-echo "---赛博三太子---"
-python grab_transaction_price.py 4922 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 4922 ${yesterday} 10
-
-echo "---赛博启航---"
-python grab_transaction_price.py 4933 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 4933 ${yesterday} 10
-
-echo "---赛博中心城---"
-python grab_transaction_price.py 4935 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 4935 ${yesterday} 10
-
-echo "---赛博阴---"
-python grab_transaction_price.py 4936 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 4936 ${yesterday} 10
-
-echo "---赛博阳---"
-python grab_transaction_price.py 4937 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 4937 ${yesterday} 10
-
-echo "---赛博Bug---"
-python grab_transaction_price.py 4838 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 4838 ${yesterday} 10
-
-echo "---赛博蝙蝠---"
-python grab_transaction_price.py 4938 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 4938 ${yesterday} 10
-
-echo "---赛博盾牌---"
-python grab_transaction_price.py 4943 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 4943 ${yesterday} 10
-
-echo "---赛博宫殿---"
-python grab_transaction_price.py 4837 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 4837 ${yesterday} 10
-
-echo "---赛博神偷---"
-python grab_transaction_price.py 4951 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 4951 ${yesterday} 10
-
-echo "---红蝶兰---"
-python grab_transaction_price.py 4583 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 4583 ${yesterday} 10
-
-echo "---赛博Tiger---"
-python grab_transaction_price.py 4666 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 4666 ${yesterday} 10
-
-echo "---赛博无双---"
-python grab_transaction_price.py 4953 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 4953 ${yesterday} 10
-
-echo "---赛博小龙女---"
-python grab_transaction_price.py 4868 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 4868 ${yesterday} 10
-
-echo "---赛博Captain---"
-python grab_transaction_price.py 4947 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 4947 ${yesterday} 10
-
-echo "---数离原阵---"
-python grab_transaction_price.py 4578 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 4578 ${yesterday} 10
-
 echo "---赛博置换券---"
 python grab_transaction_price.py 4954 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 4954 ${yesterday} 10
+
+echo "---恶魔勋章---"
+python grab_transaction_price.py 4924 ${yesterday} ${yesterday}
+python analyze_transaction_prices.py 4924 ${yesterday} 10
 
 #--- 探险区 ---#
 echo "---像素奇晶---"
@@ -554,14 +414,7 @@ for nft in "1-N-MengYouGeLou" "1-N-YouLingTianTai" "1-N-ChaoNengMoJing" \
 "5-YeNengFangYuTa" "5-ChenXiZhiAn" "5-QianYeZhiYao" "5-PingAnQiShiDan" "5-ShengDanSongGe" "5-XingYaoLanTan" \
 "5-CaoMeiNaiXiBei" "5-LunHuiHuaZhong" "5-HuaQiTongJing" "5-GuangHuiZhouCheng" "5-ShuangYuanZhiHe" \
 "5-QianXiZhiZhang" \
-"6-SaiBoWuShii" "6-SaiBoWuShi" "6-SaiBoJinGuo" "6-SaiBoNinja" "6-SaiBoQiHang" \
-"6-SaiBoQiFeiKa" "6-SaiBoPengZhangJi" "6-SaiBoLangKeJianShi" "6-SaiBoSanTaiZi" \
-"6-SaiBoCaiLiaoDiKouKa" "6-SaiBoJinDouYun" "6-SaiBoWangZi" "6-SaiBoNiHongJingLing" \
-"6-SaiBoGangTieNiTai" "6-SaiBoFeiXingBaoLei" "6-SaiBoShiSanQu" "6-SaiBoWangShi" \
-"6-SaiBoBoLe" "6-SaiBoMoFaYaoShui" "6-SaiBoHuanNiu" "6-SaiBoYuanZiQiShi" "6-SaiBoAiLiSi" \
-"6-SaiBoZhongXinCheng" "6-SaiBoYin" "6-SaiBoYang" "6-SaiBoBug" "6-SaiBoBianFu" \
-"6-SaiBoDunPai" "6-SaiBoGongDian" "6-SaiBoShenTou" "6-HongDieLan" "6-SaiBoTiger" \
-"6-SaiBoWuShuang" "6-SaiBoXiaoLongNv" "6-SaiBoCaptain" "6-ShuLiYuanZhen" "6-SaiBoZhiHuanQuan" \
+"6-SaiBoQiFeiKa" "6-SaiBoZhiHuanQuan" "6-EMoXunZhang" \
 "7-XiangSuQiJing" "7-TanXianZheIV" "7-XunBaoZheI" "7-GongYunXiaoShao" "7-FangBiaoZhiShiDeng" "7-YeGuWangCheng" \
 "8-XiaoXiaoJianPan-LZai" "8-ChuanShuoKaPian" "8-ShanHaiJing-ZhuYan" \
 "8-MiaoQuTangGuoHe" "8-HuanLianZhiTong" "8-ShanHaiJing-HuJiao" "8-ShanHaiJing-LeiNiao" \

@@ -463,7 +463,6 @@ CastingId2MetaInfo = {
     #4577: ["6-MiCaiZhiHuan", "秘彩之环", 100],
     #4636: ["6-JuChiDuanBi", "锯齿短匕"], #------
     #4624: ["6-YinBoZhenDangQi", "音波振荡器", 0], #------
-    4723: ["6-SaiBoQiFeiKa", "赛博起飞卡", 2], 
     #4706: ["6-SaiBoZhanShenDao", "赛博战神刀", 0], #------
     #4708: ["6-SaiBoJiaFeiMao", "赛博加菲猫", 0], #------
     #4707: ["6-SaiBoWuNeng", "赛博悟能"], #------
@@ -482,46 +481,48 @@ CastingId2MetaInfo = {
     #4686: ["6-SaiBoPunKZhanChe", "赛博PunK战车", 0], #------
     #4832: ["6-SaiBoLiangCang", "赛博粮仓", 0], #------
     #4841: ["6-SaiBoWuKong", "赛博悟空", 0], #------
-    4840: ["6-SaiBoGangTieNiTai", "赛博钢铁拟态", 100],
-    4843: ["6-SaiBoFeiXingBaoLei", "赛博飞行堡垒", 100],
+    #4840: ["6-SaiBoGangTieNiTai", "赛博钢铁拟态", 100],
+    #4843: ["6-SaiBoFeiXingBaoLei", "赛博飞行堡垒", 100],
     #4687: ["6-SaiBoShangJinLieRen", "赛博赏金猎人", 0], #------
     #4847: ["6-SaiBoJinGang", "赛博金刚", 0], #------
     #4849: ["6-SaiBoQianLiMa", "赛博千里马", 0],
-    4848: ["6-SaiBoBoLe", "赛博伯乐", 100],
-    4852: ["6-SaiBoCaiLiaoDiKouKa", "赛博材料抵扣卡", 10],
-    4857: ["6-SaiBoMoFaYaoShui", "赛博魔法药水", 10],
-    4858: ["6-SaiBoHuanNiu", "赛博幻牛", 20],
-    4859: ["6-SaiBoWuShi", "赛博巫师", 100],
-    4863: ["6-SaiBoPengZhangJi", "赛博膨胀剂", 10],
-    4864: ["6-SaiBoJinGuo", "赛博禁果", 10],
-    4866: ["6-SaiBoLangKeJianShi", "赛博浪客剑士", 10],
+    #4848: ["6-SaiBoBoLe", "赛博伯乐", 100],
+    #4852: ["6-SaiBoCaiLiaoDiKouKa", "赛博材料抵扣卡", 10],
+    #4857: ["6-SaiBoMoFaYaoShui", "赛博魔法药水", 10],
+    #4858: ["6-SaiBoHuanNiu", "赛博幻牛", 20],
+    #4859: ["6-SaiBoWuShi", "赛博巫师", 100],
+    #4863: ["6-SaiBoPengZhangJi", "赛博膨胀剂", 10],
+    #4864: ["6-SaiBoJinGuo", "赛博禁果", 10],
+    #4866: ["6-SaiBoLangKeJianShi", "赛博浪客剑士", 10],
     #4879: ["6-SaiBoXingYunXinPian", "赛博幸运芯片", 3],
-    4871: ["6-SaiBoJinDouYun", "赛博筋斗云", 0], #------
-    4890: ["6-SaiBoWangZi", "赛博王子", 8], 
-    4892: ["6-SaiBoNiHongJingLing", "赛博霓虹精灵", 0], #------
-    4894: ["6-SaiBoWuShii", "赛博武士", 10],
-    4895: ["6-SaiBoShiSanQu", "赛博十三区", 10],
-    4896: ["6-SaiBoYuanZiQiShi", "赛博原子骑士", 8],
-    4893: ["6-SaiBoNinja", "赛博Ninja", 50],
-    4900: ["6-SaiBoAiLiSi", "赛博爱丽丝", 0], #------
-    4906: ["6-SaiBoWangShi", "赛博王室", 0], #------
-    4922: ["6-SaiBoSanTaiZi", "赛博三太子", 10],
-    4933: ["6-SaiBoQiHang", "赛博启航", 10],
-    4935: ["6-SaiBoZhongXinCheng", "赛博中心城", 20],
-    4936: ["6-SaiBoYin", "赛博阴", 20],
-    4937: ["6-SaiBoYang", "赛博阳", 20],
-    4838: ["6-SaiBoBug", "赛博Bug", 20],
-    4938: ["6-SaiBoBianFu", "赛博蝙蝠", 20],
-    4943: ["6-SaiBoDunPai", "赛博盾牌", 100],
-    4837: ["6-SaiBoGongDian", "赛博宫殿", 20],
-    4951: ["6-SaiBoShenTou", "赛博神偷", 0], #------
-    4583: ["6-HongDieLan", "红蝶兰", 10],
-    4666: ["6-SaiBoTiger", "赛博Tiger", 30],
-    4953: ["6-SaiBoWuShuang", "赛博无双", 10],
-    4868: ["6-SaiBoXiaoLongNv", "赛博小龙女", 0], #------
-    4947: ["6-SaiBoCaptain", "赛博Captain", 15],
-    4578: ["6-ShuLiYuanZhen", "数离原阵", 15],
+    # 4871: ["6-SaiBoJinDouYun", "赛博筋斗云", 0], #------
+    # 4890: ["6-SaiBoWangZi", "赛博王子", 8], 
+    # 4892: ["6-SaiBoNiHongJingLing", "赛博霓虹精灵", 0], #------
+    # 4894: ["6-SaiBoWuShii", "赛博武士", 10],
+    # 4895: ["6-SaiBoShiSanQu", "赛博十三区", 10],
+    # 4896: ["6-SaiBoYuanZiQiShi", "赛博原子骑士", 8],
+    # 4893: ["6-SaiBoNinja", "赛博Ninja", 50],
+    # 4900: ["6-SaiBoAiLiSi", "赛博爱丽丝", 0], #------
+    # 4906: ["6-SaiBoWangShi", "赛博王室", 0], #------
+    # 4922: ["6-SaiBoSanTaiZi", "赛博三太子", 10],
+    # 4933: ["6-SaiBoQiHang", "赛博启航", 10],
+    # 4935: ["6-SaiBoZhongXinCheng", "赛博中心城", 20],
+    # 4936: ["6-SaiBoYin", "赛博阴", 20],
+    # 4937: ["6-SaiBoYang", "赛博阳", 20],
+    # 4838: ["6-SaiBoBug", "赛博Bug", 20],
+    # 4938: ["6-SaiBoBianFu", "赛博蝙蝠", 20],
+    # 4943: ["6-SaiBoDunPai", "赛博盾牌", 100],
+    # 4837: ["6-SaiBoGongDian", "赛博宫殿", 20],
+    # 4951: ["6-SaiBoShenTou", "赛博神偷", 0], #------
+    # 4583: ["6-HongDieLan", "红蝶兰", 10],
+    # 4666: ["6-SaiBoTiger", "赛博Tiger", 30],
+    # 4953: ["6-SaiBoWuShuang", "赛博无双", 10],
+    # 4868: ["6-SaiBoXiaoLongNv", "赛博小龙女", 0], #------
+    # 4947: ["6-SaiBoCaptain", "赛博Captain", 15],
+    # 4578: ["6-ShuLiYuanZhen", "数离原阵", 15],
+    4723: ["6-SaiBoQiFeiKa", "赛博起飞卡", 2], 
     4954: ["6-SaiBoZhiHuanQuan", "赛博置换券", 5],
+    4924: ["6-EMoXunZhang", "恶魔勋章", 50],
 
     3998: ["7-XiangSuQiJing", "像素奇晶"],
     3544: ["7-TanXianZheIV", "探险者IV"],
