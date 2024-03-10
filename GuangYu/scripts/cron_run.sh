@@ -260,7 +260,7 @@ python analyze_transaction_prices.py 4755 ${yesterday} 10
 
 #--- 赛博狂潮 ---#
 echo "---赛博起飞卡---"
-python grab_transaction_price.py 4723 ${yesterday} ${yesterday}
+python grab_transaction_price.py 4985 ${yesterday} ${yesterday}
 
 echo "---赛博置换券---"
 python grab_transaction_price.py 4954 ${yesterday} ${yesterday}

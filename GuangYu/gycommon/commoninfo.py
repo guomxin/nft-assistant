@@ -520,7 +520,7 @@ CastingId2MetaInfo = {
     # 4868: ["6-SaiBoXiaoLongNv", "赛博小龙女", 0], #------
     # 4947: ["6-SaiBoCaptain", "赛博Captain", 15],
     # 4578: ["6-ShuLiYuanZhen", "数离原阵", 15],
-    4723: ["6-SaiBoQiFeiKa", "赛博起飞卡", 2], 
+    4985: ["6-SaiBoQiFeiKa", "赛博起飞卡", 2], 
     4954: ["6-SaiBoZhiHuanQuan", "赛博置换券", 5],
     4924: ["6-EMoXunZhang", "恶魔勋章", 50],
 
