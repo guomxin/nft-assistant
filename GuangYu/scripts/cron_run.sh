@@ -385,9 +385,13 @@ echo "---深渊震慑者20---"
 python grab_transaction_price.py 4956 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 4956 ${yesterday} 10
 
-echo "---未来键盘-Ctrl仔20---"
+echo "---未来键盘-Ctrl仔20-老---"
 python grab_transaction_price.py 4968 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 4968 ${yesterday} 10
+
+echo "---未来键盘-Ctrl仔20---"
+python grab_transaction_price.py 4998 ${yesterday} ${yesterday}
+python analyze_transaction_prices.py 4998 ${yesterday} 10
 
 echo "---恶魔之王阿托---"
 python grab_transaction_price.py 4974 ${yesterday} ${yesterday}
@@ -442,7 +446,7 @@ for nft in "1-N-MengYouGeLou" "1-N-YouLingTianTai" "1-N-ChaoNengMoJing" \
 "8-ShanHaiJing-GuDiao" \
 "9-WeiLaiShuJu" "9-ChaoJiNengLiang" \
 "9-ShuJuDaiMa" "9-XuKongZhanShenKaEr" "9-JiuJiKongJuZhiMen" "9-WeiLaiTanXianJiaEZ" \
-"9-WeiLaiShiDai" "9-ShenYuanZhenSheZhe20" "9-WeiLaiJianPan-CtrlZai20" \
+"9-WeiLaiShiDai" "9-ShenYuanZhenSheZhe20" "9-WeiLaiJianPan-CtrlZai20-Old" "9-WeiLaiJianPan-CtrlZai20" \
 "9-EMoZhiWangATuo" "9-XiaoLunLun" "9-WeiLaiJianPan-VZai20" "9-WeiLaiShiJianMoPanSuiPian" \
 "9-WeiLaiTanSuoZhe20" "9-KongJianJinGuo" "9-WeiLaiJianPanLingXiu-ChaoJiJianPan"
 do

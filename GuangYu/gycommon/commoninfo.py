@@ -414,25 +414,25 @@ CastingId2MetaInfo = {
     4646: ["5-XueYangLingYin", "雪漾铃音"],
     4652: ["5-ChenXiZhiAn", "晨曦之黯"],
     4658: ["5-ZhiKongJiXieHuShou", "智控机械护手"],
-    4371: ["5-QianYeZhiYao", "千夜之钥", 5],
+    4371: ["5-QianYeZhiYao", "千夜之钥", 0], #------
     4675: ["5-ChiYanHuanXian", "炽焰幻显", 200],
-    4672: ["5-WuXiangWeiLaiChang", "无限未来厂", 5],
+    4672: ["5-WuXiangWeiLaiChang", "无限未来厂", 0], #------
     #4681: ["5-GuangKongKaQian", "光控卡钳", 200],
     4647: ["5-Xmas-GuangLuXueQiao", "Xmas-光陆雪橇"],
     #4688: ["5-XuWuJiTa", "虚舞吉他"], #------
     #4699: ["5-ShengDanLiWuHe", "圣诞礼物盒"], #------
     #4684: ["5-WeiLaiFeiYueBan", "未来飞跃板"], #------
     #4705: ["5-ShiKongCaoKongShouBing", "时空操控手柄"], #------
-    4701: ["5-JiangBingTangShuangLieChe", "姜饼糖霜列车"],
+    4701: ["5-JiangBingTangShuangLieChe", "姜饼糖霜列车"], #------
     #4715: ["5-PuTaoJiaYouZhan", "葡萄加油站"],
     4665: ["5-HuanYingLeiTing", "幻影雷霆"],
     4690: ["5-PingAnQiShiDan", "平安启示蛋"],
     4712: ["5-CaoMeiNaiXiBei", "草莓奶昔杯"],
     4738: ["5-LunHuiHuaZhong", "轮回花钟"],
-    4644: ["5-ShengDanSongGe", "圣诞颂歌", 10],
-    4650: ["5-XingYaoLanTan", "星耀篮坛", 10],
+    4644: ["5-ShengDanSongGe", "圣诞颂歌", 0], #------
+    4650: ["5-XingYaoLanTan", "星耀篮坛", 0], #------
     4766: ["5-HuaQiTongJing", "花期瞳镜"],
-    4749: ["5-GuangHuiZhouCheng", "光辉轴承"],
+    4749: ["5-GuangHuiZhouCheng", "光辉轴承"], #------
     4717: ["5-ShuangYuanZhiHe", "双源之核"],
     4755: ["5-QianXiZhiZhang", "前夕织章"],
     4566: ["5-FangShengJiXieFeng", "仿生机械蜂", 10],
@@ -590,7 +590,7 @@ CastingId2MetaInfo = {
     4960: ["9-JiuJiKongJuZhiMen", "究极恐惧之门", 5],
     4959: ["9-WeiLaiTanXianJiaEZ", "未来探险家EZ", 10],
     4956: ["9-ShenYuanZhenSheZhe20", "深渊震慑者20", 30],
-    4968: ["9-WeiLaiJianPan-CtrlZai20", "未来键盘-Ctrl仔20", 30],
+    4968: ["9-WeiLaiJianPan-CtrlZai20-Old", "未来键盘-Ctrl仔20-老", 30], #------
     4974: ["9-EMoZhiWangATuo", "恶魔之王阿托", 50],
     #4979: ["9-WeiLaiJianPan-CZai20", "未来键盘-C仔20", 0], #------
     4961: ["9-XiaoLunLun", "小伦伦", 50],
@@ -601,6 +601,7 @@ CastingId2MetaInfo = {
     #4995: ["9-KongJianJinGuo-HeChengZiGeKa", "空间禁果-合成资格卡", 0], #------
     4996: ["9-KongJianJinGuo", "空间禁果", 100],
     4997: ["9-WeiLaiJianPanLingXiu-ChaoJiJianPan", "未来键盘领袖-超级键盘", 100],
+    4998: ["9-WeiLaiJianPan-CtrlZai20", "未来键盘-Ctrl仔20", 20],
 
     #4228: ["88-WangZheZhiZhan", "王者之战", 5],
     #4412: ["88-FengWuZhiYuan", "风舞纸鸢", 30],
