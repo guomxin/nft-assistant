@@ -435,6 +435,8 @@ CastingId2MetaInfo = {
     4749: ["5-GuangHuiZhouCheng", "光辉轴承"],
     4717: ["5-ShuangYuanZhiHe", "双源之核"],
     4755: ["5-QianXiZhiZhang", "前夕织章"],
+    4566: ["5-FangShengJiXieFeng", "仿生机械蜂", 10],
+    4663: ["5-ShenGuangZhiFei", "神光之扉", 10],
 
     #4443: ["6-XuShiZhongShu", "虚实中枢"],
     #4448: ["6-XuNiLiRen", "虚拟利刃"],
@@ -593,11 +595,12 @@ CastingId2MetaInfo = {
     #4979: ["9-WeiLaiJianPan-CZai20", "未来键盘-C仔20", 0], #------
     4961: ["9-XiaoLunLun", "小伦伦", 50],
     #4983: ["9-WeiLaiTanSuoZhe-HeChengZiGeKa", "未来探索者-合成资格卡", 30], #------
-    4990: ["9-WeiLaiJianPan-VZai20", "未来键盘-V仔20", 10],
-    4991: ["9-WeiLaiTanSuoZhe20", "未来探索者20", 15],
+    4990: ["9-WeiLaiJianPan-VZai20", "未来键盘-V仔20", 0], #------
+    4991: ["9-WeiLaiTanSuoZhe20", "未来探索者20", 0], #------
     4994: ["9-WeiLaiShiJianMoPanSuiPian", "未来时间磨盘碎片", 30],
-    4995: ["9-KongJianJinGuo-HeChengZiGeKa", "空间禁果-合成资格卡", 0],
+    #4995: ["9-KongJianJinGuo-HeChengZiGeKa", "空间禁果-合成资格卡", 0], #------
     4996: ["9-KongJianJinGuo", "空间禁果", 100],
+    4997: ["9-WeiLaiJianPanLingXiu-ChaoJiJianPan", "未来键盘领袖-超级键盘", 100],
 
     #4228: ["88-WangZheZhiZhan", "王者之战", 5],
     #4412: ["88-FengWuZhiYuan", "风舞纸鸢", 30],
@@ -615,7 +618,7 @@ HighestValue_Products_Info = {
 }
 
 # 173
-Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzEwNTE4NDM0LCJzaWduSWQiOiIzMWNhZGMyMDlkYWU0OWZkODQ2ZGE2ODVkODUyNzEwMSIsImlhdCI6MTcwOTkxMzYzNH0.UYD9LcP_TAMIwnogejfBTaMxmpK0LOvV4rSKJk-rtYk"
+Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzEwNzU0NDI2LCJzaWduSWQiOiJmZDEwZTFmOGFjNDE0OTcyYjdiZjEyZTdmNDY0NTdhOCIsImlhdCI6MTcxMDE0OTYyNn0.9idcxhF4HHTUTqIUKCZJNYUbDhXwTi-kRSM34ooxlv4"
 
 # 131
 Query_Token= "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxMzE1NjE2MTA5MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzEwNjMwNzMxLCJzaWduSWQiOiI1MTU0YTI0Nzc4YmI0ZjA4OGUyZTg0NDZhNGM1MTRjNiIsImlhdCI6MTcxMDAyNTkzMX0.19okro5Tl6MwpVXUWT9UEiZLzyVVsPCRC769lpNWXo8"
