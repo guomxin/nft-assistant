@@ -305,9 +305,9 @@ CastingId2MetaInfo = {
     # #887: ["21-HuLu", "葫芦"],
 
     #3457: ["1-N-QingKongYuFengZhou", "晴空御风帚", 30], ########
-    3747: ["1-N-MengYouGeLou", "梦游阁楼", 15],
-    3748: ["1-N-YouLingTianTai", "幽灵天台", 15],
-    3548: ["1-N-ChaoNengMoJing", "超能墨镜", 20],
+    3747: ["1-N-MengYouGeLou", "梦游阁楼", 10],
+    3748: ["1-N-YouLingTianTai", "幽灵天台", 10],
+    3548: ["1-N-ChaoNengMoJing", "超能墨镜", 15],
     #3458: ["1-SR-YingMuHuanShaPeng", "影幕幻纱篷"],
     3549: ["1-SR-QuanJiShouTao", "拳击手套", 20],
     #2457: ["1-SSR-MoDengZhongXin", "摩登中心"],
@@ -590,18 +590,20 @@ CastingId2MetaInfo = {
     4960: ["9-JiuJiKongJuZhiMen", "究极恐惧之门", 5],
     4959: ["9-WeiLaiTanXianJiaEZ", "未来探险家EZ", 10],
     4956: ["9-ShenYuanZhenSheZhe20", "深渊震慑者20", 30],
-    4968: ["9-WeiLaiJianPan-CtrlZai20-Old", "未来键盘-Ctrl仔20-老", 30], #------
+    #4968: ["9-WeiLaiJianPan-CtrlZai20-Old", "未来键盘-Ctrl仔20-老", 0], #------
     4974: ["9-EMoZhiWangATuo", "恶魔之王阿托", 50],
     #4979: ["9-WeiLaiJianPan-CZai20", "未来键盘-C仔20", 0], #------
     4961: ["9-XiaoLunLun", "小伦伦", 50],
     #4983: ["9-WeiLaiTanSuoZhe-HeChengZiGeKa", "未来探索者-合成资格卡", 30], #------
-    4990: ["9-WeiLaiJianPan-VZai20", "未来键盘-V仔20", 0], #------
-    4991: ["9-WeiLaiTanSuoZhe20", "未来探索者20", 0], #------
-    4994: ["9-WeiLaiShiJianMoPanSuiPian", "未来时间磨盘碎片", 30],
+    #4990: ["9-WeiLaiJianPan-VZai20", "未来键盘-V仔20", 0], #------
+    #4991: ["9-WeiLaiTanSuoZhe20", "未来探索者20", 0], #------
+    4994: ["9-WeiLaiShiJianMoPanSuiPian", "未来时间磨盘碎片", 30], #------
     #4995: ["9-KongJianJinGuo-HeChengZiGeKa", "空间禁果-合成资格卡", 0], #------
     4996: ["9-KongJianJinGuo", "空间禁果", 100],
     4997: ["9-WeiLaiJianPanLingXiu-ChaoJiJianPan", "未来键盘领袖-超级键盘", 100],
     4998: ["9-WeiLaiJianPan-CtrlZai20", "未来键盘-Ctrl仔20", 20],
+    5002: ["9-WeiLaiShiJianMoPan", "未来时间磨盘", 50],
+    5012: ["9-WeiLaiJianPan-QZai20", "未来键盘-Q仔20", 20],
 
     #4228: ["88-WangZheZhiZhan", "王者之战", 5],
     #4412: ["88-FengWuZhiYuan", "风舞纸鸢", 30],
@@ -619,7 +621,7 @@ HighestValue_Products_Info = {
 }
 
 # 173
-Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzEwNzU0NDI2LCJzaWduSWQiOiJmZDEwZTFmOGFjNDE0OTcyYjdiZjEyZTdmNDY0NTdhOCIsImlhdCI6MTcxMDE0OTYyNn0.9idcxhF4HHTUTqIUKCZJNYUbDhXwTi-kRSM34ooxlv4"
+Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzEwODU3MTYwLCJzaWduSWQiOiIzNTc0Zjk5ZTNkNTQ0YjdjYjI3OTExMzBlZjA4NTYzYiIsImlhdCI6MTcxMDI1MjM2MH0.O-VwidbH48sga6mwvCev4afVdf0exLOO_Rfzrn6rjfY"
 
 # 131
 Query_Token= "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxMzE1NjE2MTA5MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzEwNjMwNzMxLCJzaWduSWQiOiI1MTU0YTI0Nzc4YmI0ZjA4OGUyZTg0NDZhNGM1MTRjNiIsImlhdCI6MTcxMDAyNTkzMX0.19okro5Tl6MwpVXUWT9UEiZLzyVVsPCRC769lpNWXo8"
