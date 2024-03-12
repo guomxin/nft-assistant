@@ -408,35 +408,38 @@ CastingId2MetaInfo = {
     4559: ["5-YeNengFangYuTa", "液能防御塔"],
     4574: ["5-CaiTangMengLeYuan", "彩糖梦乐园"],
     4589: ["5-ShengJingZhiMen", "圣境之门", 2000],
-    4558: ["5-QiFuZhiChui", "祈福之槌"],
+    4558: ["5-QiFuZhiChui", "祈福之槌"], #------
     4605: ["5-JingLianZengChanQi", "精炼增产器"],
     #4628: ["5-PingAnQiShiSuiPian", "平安启示碎片"],
-    4646: ["5-XueYangLingYin", "雪漾铃音"],
+    4646: ["5-XueYangLingYin", "雪漾铃音"], #------
     4652: ["5-ChenXiZhiAn", "晨曦之黯"],
     4658: ["5-ZhiKongJiXieHuShou", "智控机械护手"],
-    4371: ["5-QianYeZhiYao", "千夜之钥", 0], #------
+    #4371: ["5-QianYeZhiYao", "千夜之钥", 0], #------
     4675: ["5-ChiYanHuanXian", "炽焰幻显", 200],
-    4672: ["5-WuXiangWeiLaiChang", "无限未来厂", 0], #------
+    #4672: ["5-WuXiangWeiLaiChang", "无限未来厂", 0], #------
     #4681: ["5-GuangKongKaQian", "光控卡钳", 200],
     4647: ["5-Xmas-GuangLuXueQiao", "Xmas-光陆雪橇"],
     #4688: ["5-XuWuJiTa", "虚舞吉他"], #------
     #4699: ["5-ShengDanLiWuHe", "圣诞礼物盒"], #------
     #4684: ["5-WeiLaiFeiYueBan", "未来飞跃板"], #------
     #4705: ["5-ShiKongCaoKongShouBing", "时空操控手柄"], #------
-    4701: ["5-JiangBingTangShuangLieChe", "姜饼糖霜列车"], #------
+    #4701: ["5-JiangBingTangShuangLieChe", "姜饼糖霜列车"], #------
     #4715: ["5-PuTaoJiaYouZhan", "葡萄加油站"],
     4665: ["5-HuanYingLeiTing", "幻影雷霆"],
     4690: ["5-PingAnQiShiDan", "平安启示蛋"],
     4712: ["5-CaoMeiNaiXiBei", "草莓奶昔杯"],
     4738: ["5-LunHuiHuaZhong", "轮回花钟"],
-    4644: ["5-ShengDanSongGe", "圣诞颂歌", 0], #------
-    4650: ["5-XingYaoLanTan", "星耀篮坛", 0], #------
+    #4644: ["5-ShengDanSongGe", "圣诞颂歌", 0], #------
+    #4650: ["5-XingYaoLanTan", "星耀篮坛", 0], #------
     4766: ["5-HuaQiTongJing", "花期瞳镜"],
-    4749: ["5-GuangHuiZhouCheng", "光辉轴承"], #------
+    #4749: ["5-GuangHuiZhouCheng", "光辉轴承"], #------
     4717: ["5-ShuangYuanZhiHe", "双源之核"],
     4755: ["5-QianXiZhiZhang", "前夕织章"],
-    4566: ["5-FangShengJiXieFeng", "仿生机械蜂", 10],
+    4566: ["5-FangShengJiXieFeng", "仿生机械蜂", 10], #------
     4663: ["5-ShenGuangZhiFei", "神光之扉", 10],
+    5000: ["5-JiangHuLing", "江湖令", 2],
+    5003: ["5-ShuiHu-ZhangQing", "水浒-张青", 5],
+    5004: ["5-ShuiHu-WuSong", "水浒-武松", 50],
 
     #4443: ["6-XuShiZhongShu", "虚实中枢"],
     #4448: ["6-XuNiLiRen", "虚拟利刃"],
@@ -559,6 +562,8 @@ CastingId2MetaInfo = {
     4948: ["8-ShanHaiJing-HuJiao", "山海经-虎蛟", 30],
     #4962: ["8-ShanHaiJing-FuZhu", "山海经-夫诸", 30], #------
     4984: ["8-ShanHaiJing-GuDiao", "山海经-蛊雕", 30],
+    4969: ["8-ShanHaiJing-BiFang", "山海经-毕方", 30],
+    4993: ["8-LongTengHuaXia", "龙腾华夏", 2],
 
     #4515: ["9-ShuGuangPuJiZhan", "殊光谱基站"], #*
     #4562: ["9-ZhengZhaoJiJia", "征召机甲", 100], #------
@@ -599,7 +604,7 @@ CastingId2MetaInfo = {
     #4991: ["9-WeiLaiTanSuoZhe20", "未来探索者20", 0], #------
     4994: ["9-WeiLaiShiJianMoPanSuiPian", "未来时间磨盘碎片", 30], #------
     #4995: ["9-KongJianJinGuo-HeChengZiGeKa", "空间禁果-合成资格卡", 0], #------
-    4996: ["9-KongJianJinGuo", "空间禁果", 100],
+    4996: ["9-KongJianJinGuo", "空间禁果", 100], #------
     4997: ["9-WeiLaiJianPanLingXiu-ChaoJiJianPan", "未来键盘领袖-超级键盘", 100],
     4998: ["9-WeiLaiJianPan-CtrlZai20", "未来键盘-Ctrl仔20", 20],
     5002: ["9-WeiLaiShiJianMoPan", "未来时间磨盘", 50],
