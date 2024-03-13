@@ -408,10 +408,10 @@ CastingId2MetaInfo = {
     4559: ["5-YeNengFangYuTa", "液能防御塔"],
     4574: ["5-CaiTangMengLeYuan", "彩糖梦乐园"],
     4589: ["5-ShengJingZhiMen", "圣境之门", 2000],
-    4558: ["5-QiFuZhiChui", "祈福之槌"], #------
+    #4558: ["5-QiFuZhiChui", "祈福之槌"], #------
     4605: ["5-JingLianZengChanQi", "精炼增产器"],
     #4628: ["5-PingAnQiShiSuiPian", "平安启示碎片"],
-    4646: ["5-XueYangLingYin", "雪漾铃音"], #------
+    #4646: ["5-XueYangLingYin", "雪漾铃音"], #------
     4652: ["5-ChenXiZhiAn", "晨曦之黯"],
     4658: ["5-ZhiKongJiXieHuShou", "智控机械护手"],
     #4371: ["5-QianYeZhiYao", "千夜之钥", 0], #------
@@ -435,7 +435,7 @@ CastingId2MetaInfo = {
     #4749: ["5-GuangHuiZhouCheng", "光辉轴承"], #------
     4717: ["5-ShuangYuanZhiHe", "双源之核"],
     4755: ["5-QianXiZhiZhang", "前夕织章"],
-    4566: ["5-FangShengJiXieFeng", "仿生机械蜂", 10], #------
+    #4566: ["5-FangShengJiXieFeng", "仿生机械蜂", 10], #------
     4663: ["5-ShenGuangZhiFei", "神光之扉", 10],
     5000: ["5-JiangHuLing", "江湖令", 2],
     5003: ["5-ShuiHu-ZhangQing", "水浒-张青", 5],
@@ -526,7 +526,7 @@ CastingId2MetaInfo = {
     # 4947: ["6-SaiBoCaptain", "赛博Captain", 15],
     # 4578: ["6-ShuLiYuanZhen", "数离原阵", 15],
     4985: ["6-SaiBoQiFeiKa", "赛博起飞卡", 2], 
-    4954: ["6-SaiBoZhiHuanQuan", "赛博置换券", 5],
+    #4954: ["6-SaiBoZhiHuanQuan", "赛博置换券", 5],
     4924: ["6-EMoXunZhang", "恶魔勋章", 50],
 
     3998: ["7-XiangSuQiJing", "像素奇晶"],
@@ -578,7 +578,7 @@ CastingId2MetaInfo = {
     #4802: ["9-HuiLanYaoJi", "回蓝药剂", 2],
     #4821: ["9-YouMingShenPanZhe", "幽冥审判者", 0],
     #4833: ["9-YuanDongNeng", "源动能", 0], #------
-    4827: ["9-ShuJuDaiMa", "数据代码", 2],
+    4827: ["9-ShuJuDaiMa", "数据代码", 1],
     #4912: ["9-SanZuWangLing-ZhuangTaiHuiFu", "三足妄灵-状态恢复", 50],
     #4817: ["9-JuShuoZhiBi", "聚烁之臂", 50], #------
     4909: ["9-WeiLaiShuJu", "未来数据", 2],
@@ -602,9 +602,9 @@ CastingId2MetaInfo = {
     #4983: ["9-WeiLaiTanSuoZhe-HeChengZiGeKa", "未来探索者-合成资格卡", 30], #------
     #4990: ["9-WeiLaiJianPan-VZai20", "未来键盘-V仔20", 0], #------
     #4991: ["9-WeiLaiTanSuoZhe20", "未来探索者20", 0], #------
-    4994: ["9-WeiLaiShiJianMoPanSuiPian", "未来时间磨盘碎片", 30], #------
+    #4994: ["9-WeiLaiShiJianMoPanSuiPian", "未来时间磨盘碎片", 30], #------
     #4995: ["9-KongJianJinGuo-HeChengZiGeKa", "空间禁果-合成资格卡", 0], #------
-    4996: ["9-KongJianJinGuo", "空间禁果", 100], #------
+    #4996: ["9-KongJianJinGuo", "空间禁果", 100], #------
     4997: ["9-WeiLaiJianPanLingXiu-ChaoJiJianPan", "未来键盘领袖-超级键盘", 100],
     4998: ["9-WeiLaiJianPan-CtrlZai20", "未来键盘-Ctrl仔20", 20],
     5002: ["9-WeiLaiShiJianMoPan", "未来时间磨盘", 50],
@@ -626,7 +626,7 @@ HighestValue_Products_Info = {
 }
 
 # 173
-Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzEwODU3MTYwLCJzaWduSWQiOiIzNTc0Zjk5ZTNkNTQ0YjdjYjI3OTExMzBlZjA4NTYzYiIsImlhdCI6MTcxMDI1MjM2MH0.O-VwidbH48sga6mwvCev4afVdf0exLOO_Rfzrn6rjfY"
+Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzEwOTA3OTIxLCJzaWduSWQiOiIyYjhjYzkyOTFkNmQ0NjNmYjFjNzNiOTAwYjU3Njc0YyIsImlhdCI6MTcxMDMwMzEyMX0.zfzsIn6fe3bzzxYjsaMXsLSlMbW0VSui7iH-OETf5lA"
 
 # 131
 Query_Token= "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxMzE1NjE2MTA5MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzEwNjMwNzMxLCJzaWduSWQiOiI1MTU0YTI0Nzc4YmI0ZjA4OGUyZTg0NDZhNGM1MTRjNiIsImlhdCI6MTcxMDAyNTkzMX0.19okro5Tl6MwpVXUWT9UEiZLzyVVsPCRC769lpNWXo8"
