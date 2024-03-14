@@ -531,7 +531,7 @@ CastingId2MetaInfo = {
     4985: ["6-SaiBoQiFeiKa", "赛博起飞卡", 1], 
     #4954: ["6-SaiBoZhiHuanQuan", "赛博置换券", 5],
     4924: ["6-EMoXunZhang", "恶魔勋章", 50],
-    5008: ["6-SaiBoYunLiangShu", "赛博运粮鼠", 200],
+    5008: ["6-SaiBoYunLiangShu", "赛博运粮鼠", 500],
     5019: ["6-SaiBoNiYu", "赛博拟羽", 5],
     5039: ["6-SaiBoBaoXiaoJi", "赛博报晓鸡", 50],
 
@@ -618,6 +618,7 @@ CastingId2MetaInfo = {
     5002: ["9-WeiLaiShiJianMoPan", "未来时间磨盘", 50],
     5012: ["9-WeiLaiJianPan-QZai20", "未来键盘-Q仔20", 20],
     5029: ["9-BabyDragon", "BabyDragon", 10],
+    5040: ["9-SmallDragon", "SmallDragon", 30],
 
     #4228: ["88-WangZheZhiZhan", "王者之战", 5],
     #4412: ["88-FengWuZhiYuan", "风舞纸鸢", 30],
