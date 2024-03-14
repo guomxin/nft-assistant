@@ -441,7 +441,8 @@ CastingId2MetaInfo = {
     5003: ["5-ShuiHu-ZhangQing", "水浒-张青", 5],
     5004: ["5-ShuiHu-WuSong", "水浒-武松", 50],
     #5016: ["5-ShuiHu-RuanXiaoEr", "水浒-阮小二", 10], #------
-
+    5028: ["5-ShuiHu-RuanXiaoQi", "水浒-阮小七", 30],
+    
     #4443: ["6-XuShiZhongShu", "虚实中枢"],
     #4448: ["6-XuNiLiRen", "虚拟利刃"],
     #4451: ["6-GaoNengMaiChongBuQiang", "高能脉冲步枪"],
@@ -566,6 +567,7 @@ CastingId2MetaInfo = {
     4984: ["8-ShanHaiJing-GuDiao", "山海经-蛊雕", 30],
     4969: ["8-ShanHaiJing-BiFang", "山海经-毕方", 30],
     4993: ["8-LongTengHuaXia", "龙腾华夏", 2],
+    5027: ["8-ShanHaiJing-BiBi", "山海经-獙獙", 50],
 
     #4515: ["9-ShuGuangPuJiZhan", "殊光谱基站"], #*
     #4562: ["9-ZhengZhaoJiJia", "征召机甲", 100], #------
@@ -611,6 +613,7 @@ CastingId2MetaInfo = {
     4998: ["9-WeiLaiJianPan-CtrlZai20", "未来键盘-Ctrl仔20", 20],
     5002: ["9-WeiLaiShiJianMoPan", "未来时间磨盘", 50],
     5012: ["9-WeiLaiJianPan-QZai20", "未来键盘-Q仔20", 20],
+    5029: ["9-BabyDragon", "BabyDragon", 10],
 
     #4228: ["88-WangZheZhiZhan", "王者之战", 5],
     #4412: ["88-FengWuZhiYuan", "风舞纸鸢", 30],
