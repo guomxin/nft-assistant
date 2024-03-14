@@ -250,6 +250,10 @@ echo "---聚义厅---"
 python grab_transaction_price.py 5036 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 5036 ${yesterday} 10
 
+echo "---水浒---"
+python grab_transaction_price.py 5041 ${yesterday} ${yesterday}
+python analyze_transaction_prices.py 5041 ${yesterday} 10
+
 #--- 赛博狂潮 ---#
 echo "---赛博起飞卡---"
 python grab_transaction_price.py 4985 ${yesterday} ${yesterday}
@@ -360,6 +364,10 @@ echo "---桥明月夜---"
 python grab_transaction_price.py 5021 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 5021 ${yesterday} 10
 
+echo "---山海经-孟极---"
+python grab_transaction_price.py 4989 ${yesterday} ${yesterday}
+python analyze_transaction_prices.py 4989 ${yesterday} 10
+
 #--- 探索未来 ---#
 echo "---数据代码---"
 python grab_transaction_price.py 4827 ${yesterday} ${yesterday}
@@ -441,12 +449,12 @@ for nft in "1-N-MengYouGeLou" "1-N-YouLingTianTai" "1-N-ChaoNengMoJing" \
 "5-YeDanJuNengGuan" "5-CiNengXuanFuBan" "5-LiuGuangYouShi" "5-ZhiKongJiXieHuShou" "5-HuanYingLeiTing" \
 "5-YeNengFangYuTa" "5-ChenXiZhiAn" "5-PingAnQiShiDan" "5-ShuiHu-ZhangQing" "5-ShuiHu-WuSong" \
 "5-CaoMeiNaiXiBei" "5-LunHuiHuaZhong" "5-HuaQiTongJing" "5-ShuangYuanZhiHe" \
-"5-QianXiZhiZhang" "5-ShenGuangZhiFei" "5-JuYiTing" \
+"5-QianXiZhiZhang" "5-ShenGuangZhiFei" "5-JuYiTing" "5-ShuiHu" \
 "6-SaiBoQiFeiKa" "6-EMoXunZhang" "6-SaiBoYunLiangShu" "6-SaiBoNiYu" "6-SaiBoBaoXiaoJi" \
 "7-XiangSuQiJing" "7-TanXianZheIV" "7-XunBaoZheI" "7-GongYunXiaoShao" "7-FangBiaoZhiShiDeng" "7-YeGuWangCheng" \
 "8-XiaoXiaoJianPan-LZai" "8-ChuanShuoKaPian" "8-ShanHaiJing-ZhuYan" "8-QiaoMingYueYe" \
 "8-MiaoQuTangGuoHe" "8-HuanLianZhiTong" "8-ShanHaiJing-HuJiao" "8-ShanHaiJing-LeiNiao" \
-"8-NaiLaoMengChao" "8-YunDingTianGong" "8-PanGuFu" "8-ShanHaiJing-LuShu" \
+"8-NaiLaoMengChao" "8-YunDingTianGong" "8-PanGuFu" "8-ShanHaiJing-LuShu" "8-ShanHaiJing-MengJi" \
 "8-ShanHaiJing-GuDiao" "8-ShanHaiJing-BiFang" "8-LongTengHuaXia" "8-ShanHaiJing-BiBi" \
 "9-WeiLaiShuJu" "9-ChaoJiNengLiang" "9-BabyDragon" "9-SmallDragon" \
 "9-ShuJuDaiMa" "9-XuKongZhanShenKaEr" "9-JiuJiKongJuZhiMen" "9-WeiLaiTanXianJiaEZ" \
