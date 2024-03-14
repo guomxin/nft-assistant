@@ -568,6 +568,7 @@ CastingId2MetaInfo = {
     4969: ["8-ShanHaiJing-BiFang", "山海经-毕方", 30],
     4993: ["8-LongTengHuaXia", "龙腾华夏", 2],
     5027: ["8-ShanHaiJing-BiBi", "山海经-獙獙", 50],
+    5021: ["8-QiaoMingYueYe", "桥明月夜", 10],
 
     #4515: ["9-ShuGuangPuJiZhan", "殊光谱基站"], #*
     #4562: ["9-ZhengZhaoJiJia", "征召机甲", 100], #------
