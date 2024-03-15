@@ -444,6 +444,7 @@ CastingId2MetaInfo = {
     5028: ["5-ShuiHu-RuanXiaoQi", "水浒-阮小七", 30],
     5036: ["5-JuYiTing", "聚义厅", 5],
     5041: ["5-ShuiHu", "水浒", 50],
+    5022: ["5-ShuiHu-SunErNiang", "水浒-孙二娘", 10],
     
     #4443: ["6-XuShiZhongShu", "虚实中枢"],
     #4448: ["6-XuNiLiRen", "虚拟利刃"],
