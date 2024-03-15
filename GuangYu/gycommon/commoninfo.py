@@ -409,10 +409,10 @@ CastingId2MetaInfo = {
     4574: ["5-CaiTangMengLeYuan", "彩糖梦乐园"],
     4589: ["5-ShengJingZhiMen", "圣境之门", 2000],
     #4558: ["5-QiFuZhiChui", "祈福之槌"], #------
-    4605: ["5-JingLianZengChanQi", "精炼增产器"], #------
+    #4605: ["5-JingLianZengChanQi", "精炼增产器"], #------
     #4628: ["5-PingAnQiShiSuiPian", "平安启示碎片"],
     #4646: ["5-XueYangLingYin", "雪漾铃音"], #------
-    4652: ["5-ChenXiZhiAn", "晨曦之黯"], #------
+    #4652: ["5-ChenXiZhiAn", "晨曦之黯"], #------
     4658: ["5-ZhiKongJiXieHuShou", "智控机械护手"],
     #4371: ["5-QianYeZhiYao", "千夜之钥", 0], #------
     4675: ["5-ChiYanHuanXian", "炽焰幻显", 200],
@@ -428,7 +428,7 @@ CastingId2MetaInfo = {
     4665: ["5-HuanYingLeiTing", "幻影雷霆"],
     4690: ["5-PingAnQiShiDan", "平安启示蛋"],
     4712: ["5-CaoMeiNaiXiBei", "草莓奶昔杯"],
-    4738: ["5-LunHuiHuaZhong", "轮回花钟"], #------
+    #4738: ["5-LunHuiHuaZhong", "轮回花钟"], #------
     #4644: ["5-ShengDanSongGe", "圣诞颂歌", 0], #------
     #4650: ["5-XingYaoLanTan", "星耀篮坛", 0], #------
     4766: ["5-HuaQiTongJing", "花期瞳镜"],
@@ -535,7 +535,7 @@ CastingId2MetaInfo = {
     4924: ["6-EMoXunZhang", "恶魔勋章", 50],
     5008: ["6-SaiBoYunLiangShu", "赛博运粮鼠", 500],
     5019: ["6-SaiBoNiYu", "赛博拟羽", 5],
-    5039: ["6-SaiBoBaoXiaoJi", "赛博报晓鸡", 30],
+    5039: ["6-SaiBoBaoXiaoJi", "赛博报晓鸡", 50],
 
     3998: ["7-XiangSuQiJing", "像素奇晶"],
     3544: ["7-TanXianZheIV", "探险者IV"],
