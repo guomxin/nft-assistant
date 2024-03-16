@@ -535,9 +535,9 @@ CastingId2MetaInfo = {
     4985: ["6-SaiBoQiFeiKa", "赛博起飞卡", 1], 
     #4954: ["6-SaiBoZhiHuanQuan", "赛博置换券", 5],
     4924: ["6-EMoXunZhang", "恶魔勋章", 50],
-    5008: ["6-SaiBoYunLiangShu", "赛博运粮鼠", 400],
+    5008: ["6-SaiBoYunLiangShu", "赛博运粮鼠", 200], #------
     5019: ["6-SaiBoNiYu", "赛博拟羽", 5],
-    5039: ["6-SaiBoBaoXiaoJi", "赛博报晓鸡", 40],
+    5039: ["6-SaiBoBaoXiaoJi", "赛博报晓鸡", 30], #------
     4982: ["6-SaiBoTop", "赛博Top", 10],
 
     3998: ["7-XiangSuQiJing", "像素奇晶"],
@@ -556,14 +556,14 @@ CastingId2MetaInfo = {
     #4606: ["8-XiaoXiaoJianPan-DZai", "小小键盘-D仔", 50],
     #4572: ["8-MoZhongLeYuan", "蘑钟乐园", 70], #------
     #4649: ["8-HuanZuZhiTa", "幻足之塔", 200], #------
-    4622: ["8-MiaoQuTangGuoHe", "妙趣糖果盒", 5],
+    4622: ["8-MiaoQuTangGuoHe", "妙趣糖果盒", 4], #------
     4958: ["8-ChuanShuoKaPian", "传说卡片", 2],
     #4808: ["8-XianHuaQiYu", "仙花奇域", 100],
     #4816: ["8-ChunRiCaiLun", "春日彩轮", 5], #------
     #4795: ["8-QiYiJunGe", "奇异菌阁", 100], #------
-    4814: ["8-HuanLianZhiTong", "幻联之瞳", 2],
+    4814: ["8-HuanLianZhiTong", "幻联之瞳", 1], #------
     4834: ["8-ShanHaiJing-LeiNiao", "山海经-鸓鸟", 50], 
-    4810: ["8-NaiLaoMengChao", "奶酪梦巢", 20],
+    4810: ["8-NaiLaoMengChao", "奶酪梦巢", 20], #------
     #4839: ["8-YunDingTianGong", "云顶天宫", 20], #------
     4865: ["8-PanGuFu", "盘古斧", 50],
     #4860: ["8-ShanHaiJing-LuShu", "山海经-鹿蜀", 50], #------
@@ -624,8 +624,9 @@ CastingId2MetaInfo = {
     #5002: ["9-WeiLaiShiJianMoPan", "未来时间磨盘", 50], #------
     #5012: ["9-WeiLaiJianPan-QZai20", "未来键盘-Q仔20", 20], #------
     5029: ["9-BabyDragon", "BabyDragon", 10],
-    5040: ["9-SmallDragon", "SmallDragon", 30],
+    5040: ["9-SmallDragon", "SmallDragon", 0], #------
     5046: ["9-WeiLaiJianPan-FZai", "未来键盘-F仔", 20],
+    5061: ["9-DragonKing", "DragonKing", 100], #------
 
     #4228: ["88-WangZheZhiZhan", "王者之战", 5],
     #4412: ["88-FengWuZhiYuan", "风舞纸鸢", 30],
