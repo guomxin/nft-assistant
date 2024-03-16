@@ -182,10 +182,6 @@ echo "---智控机械护手---"
 python grab_transaction_price.py 4658 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 4658 ${yesterday} 100
 
-echo "---炽焰幻显---"
-python grab_transaction_price.py 4675 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 4675 ${yesterday} 100
-
 echo "---Xmas-光陆雪橇---"
 python grab_transaction_price.py 4647 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 4647 ${yesterday} 100
@@ -241,10 +237,6 @@ python analyze_transaction_prices.py 5036 ${yesterday} 10
 echo "---水浒---"
 python grab_transaction_price.py 5041 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 5041 ${yesterday} 10
-
-echo "---水浒-孙二娘---"
-python grab_transaction_price.py 5022 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 5022 ${yesterday} 10
 
 #--- 赛博狂潮 ---#
 echo "---赛博起飞卡---"
@@ -312,25 +304,9 @@ echo "---奶酪梦巢---"
 python grab_transaction_price.py 4810 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 4810 ${yesterday} 10
 
-echo "---云顶天宫---"
-python grab_transaction_price.py 4839 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 4839 ${yesterday} 10
-
 echo "---盘古斧---"
 python grab_transaction_price.py 4865 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 4865 ${yesterday} 10
-
-echo "---山海经-鹿蜀---"
-python grab_transaction_price.py 4860 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 4860 ${yesterday} 10
-
-echo "---山海经-朱厌---"
-python grab_transaction_price.py 4952 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 4952 ${yesterday} 10
-
-echo "---山海经-虎蛟---"
-python grab_transaction_price.py 4948 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 4948 ${yesterday} 10
 
 echo "---山海经-鸓鸟---"
 python grab_transaction_price.py 4834 ${yesterday} ${yesterday}
@@ -339,10 +315,6 @@ python analyze_transaction_prices.py 4834 ${yesterday} 10
 echo "---山海经-蛊雕---"
 python grab_transaction_price.py 4984 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 4984 ${yesterday} 10
-
-echo "---山海经-毕方---"
-python grab_transaction_price.py 4969 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 4969 ${yesterday} 10
 
 echo "---龙腾华夏---"
 python grab_transaction_price.py 4993 ${yesterday} ${yesterday}
@@ -355,10 +327,6 @@ python analyze_transaction_prices.py 5027 ${yesterday} 10
 echo "---桥明月夜---"
 python grab_transaction_price.py 5021 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 5021 ${yesterday} 10
-
-echo "---山海经-孟极---"
-python grab_transaction_price.py 4989 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 4989 ${yesterday} 10
 
 #--- 探索未来 ---#
 echo "---数据代码---"
@@ -393,10 +361,6 @@ echo "---深渊震慑者20---"
 python grab_transaction_price.py 4956 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 4956 ${yesterday} 10
 
-echo "---未来键盘-Ctrl仔20---"
-python grab_transaction_price.py 4998 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 4998 ${yesterday} 10
-
 echo "---恶魔之王阿托---"
 python grab_transaction_price.py 4974 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 4974 ${yesterday} 10
@@ -404,18 +368,6 @@ python analyze_transaction_prices.py 4974 ${yesterday} 10
 echo "---小伦伦---"
 python grab_transaction_price.py 4961 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 4961 ${yesterday} 10
-
-echo "---未来键盘领袖-超级键盘---"
-python grab_transaction_price.py 4997 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 4997 ${yesterday} 10
-
-echo "---未来时间磨盘---"
-python grab_transaction_price.py 5002 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 5002 ${yesterday} 10
-
-echo "---未来键盘-Q仔20---"
-python grab_transaction_price.py 5012 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 5012 ${yesterday} 10
 
 echo "---BabyDragon---"
 python grab_transaction_price.py 5029 ${yesterday} ${yesterday}
@@ -440,23 +392,21 @@ for nft in "1-N-MengYouGeLou" "1-N-YouLingTianTai" "1-N-ChaoNengMoJing" \
 "3-ZhongYiWuSheng" "3-ChuFengMingTong" "3-ChongHuoFeiYan" \
 "3-HuBenZhanXue" "3-YinXuJianDao" "3-FengDengBaiGu" "3-YongMengShuBing" "3-KuaiHuRen" "3-RuiFengJianLing" "3-YunYuYangFeng" \
 "5-JingGuangJiaoNang" "5-ShengJingZhiMen" "5-ShuiHu-RuanXiaoQi" \
-"5-BingShuangLengQueXiTong" "5-HeiQiaoJiXieCheng" "5-WeiDuSheXiangJi" "5-ChiYanHuanXian" \
+"5-BingShuangLengQueXiTong" "5-HeiQiaoJiXieCheng" "5-WeiDuSheXiangJi" \
 "5-ShuangHuaYanHuo" "5-CaiTangMengLeYuan" "5-Xmas-GuangLuXueQiao" "5-JiangHuLing" \
 "5-YeDanJuNengGuan" "5-CiNengXuanFuBan" "5-LiuGuangYouShi" "5-ZhiKongJiXieHuShou" "5-HuanYingLeiTing" \
 "5-YeNengFangYuTa" "5-PingAnQiShiDan" "5-ShuiHu-ZhangQing" "5-ShuiHu-WuSong" \
 "5-CaoMeiNaiXiBei" "5-HuaQiTongJing" "5-ShuangYuanZhiHe" \
-"5-QianXiZhiZhang" "5-ShenGuangZhiFei" "5-JuYiTing" "5-ShuiHu" "5-ShuiHu-SunErNiang" \
+"5-QianXiZhiZhang" "5-ShenGuangZhiFei" "5-JuYiTing" "5-ShuiHu" \
 "6-SaiBoQiFeiKa" "6-EMoXunZhang" "6-SaiBoYunLiangShu" "6-SaiBoNiYu" "6-SaiBoBaoXiaoJi" \
 "7-XiangSuQiJing" "7-TanXianZheIV" "7-XunBaoZheI" "7-GongYunXiaoShao" "7-FangBiaoZhiShiDeng" "7-YeGuWangCheng" \
-"8-XiaoXiaoJianPan-LZai" "8-ChuanShuoKaPian" "8-ShanHaiJing-ZhuYan" "8-QiaoMingYueYe" \
-"8-MiaoQuTangGuoHe" "8-HuanLianZhiTong" "8-ShanHaiJing-HuJiao" "8-ShanHaiJing-LeiNiao" \
-"8-NaiLaoMengChao" "8-YunDingTianGong" "8-PanGuFu" "8-ShanHaiJing-LuShu" "8-ShanHaiJing-MengJi" \
-"8-ShanHaiJing-GuDiao" "8-ShanHaiJing-BiFang" "8-LongTengHuaXia" "8-ShanHaiJing-BiBi" \
+"8-XiaoXiaoJianPan-LZai" "8-ChuanShuoKaPian" "8-QiaoMingYueYe" \
+"8-MiaoQuTangGuoHe" "8-HuanLianZhiTong" "8-ShanHaiJing-LeiNiao" "8-NaiLaoMengChao" "8-PanGuFu" \
+"8-ShanHaiJing-GuDiao" "8-LongTengHuaXia" "8-ShanHaiJing-BiBi" \
 "9-WeiLaiShuJu" "9-ChaoJiNengLiang" "9-BabyDragon" "9-SmallDragon" \
 "9-ShuJuDaiMa" "9-XuKongZhanShenKaEr" "9-JiuJiKongJuZhiMen" "9-WeiLaiTanXianJiaEZ" \
-"9-WeiLaiShiDai" "9-ShenYuanZhenSheZhe20" "9-WeiLaiJianPan-CtrlZai20" "9-WeiLaiShiJianMoPan" \
-"9-EMoZhiWangATuo" "9-XiaoLunLun" "9-WeiLaiJianPan-FZai" \
-"9-WeiLaiJianPanLingXiu-ChaoJiJianPan" "9-WeiLaiJianPan-QZai20"
+"9-WeiLaiShiDai" "9-ShenYuanZhenSheZhe20" \
+"9-EMoZhiWangATuo" "9-XiaoLunLun" "9-WeiLaiJianPan-FZai"
 do
     mkdir $nft;mv *$nft*.csv $nft;zip -q $nft-$yesterday $nft/*
 done

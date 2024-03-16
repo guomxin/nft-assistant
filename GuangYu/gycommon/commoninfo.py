@@ -415,7 +415,7 @@ CastingId2MetaInfo = {
     #4652: ["5-ChenXiZhiAn", "晨曦之黯"], #------
     4658: ["5-ZhiKongJiXieHuShou", "智控机械护手"],
     #4371: ["5-QianYeZhiYao", "千夜之钥", 0], #------
-    4675: ["5-ChiYanHuanXian", "炽焰幻显", 200], #------
+    #4675: ["5-ChiYanHuanXian", "炽焰幻显", 200], #------
     #4672: ["5-WuXiangWeiLaiChang", "无限未来厂", 0], #------
     #4681: ["5-GuangKongKaQian", "光控卡钳", 200],
     4647: ["5-Xmas-GuangLuXueQiao", "Xmas-光陆雪橇"],
@@ -444,7 +444,7 @@ CastingId2MetaInfo = {
     5028: ["5-ShuiHu-RuanXiaoQi", "水浒-阮小七", 30],
     5036: ["5-JuYiTing", "聚义厅", 5],
     5041: ["5-ShuiHu", "水浒", 50],
-    5022: ["5-ShuiHu-SunErNiang", "水浒-孙二娘", 10],
+    #5022: ["5-ShuiHu-SunErNiang", "水浒-孙二娘", 10],
     
     #4443: ["6-XuShiZhongShu", "虚实中枢"],
     #4448: ["6-XuNiLiRen", "虚拟利刃"],
@@ -561,20 +561,20 @@ CastingId2MetaInfo = {
     4814: ["8-HuanLianZhiTong", "幻联之瞳", 2],
     4834: ["8-ShanHaiJing-LeiNiao", "山海经-鸓鸟", 50], 
     4810: ["8-NaiLaoMengChao", "奶酪梦巢", 20],
-    4839: ["8-YunDingTianGong", "云顶天宫", 20],
+    #4839: ["8-YunDingTianGong", "云顶天宫", 20], #------
     4865: ["8-PanGuFu", "盘古斧", 50],
-    4860: ["8-ShanHaiJing-LuShu", "山海经-鹿蜀", 50],
+    #4860: ["8-ShanHaiJing-LuShu", "山海经-鹿蜀", 50], #------
     #4853: ["8-ShanHaiJing-TaoTie", "山海经-饕餮", 50], 
-    4952: ["8-ShanHaiJing-ZhuYan", "山海经-朱厌", 10],
+    #4952: ["8-ShanHaiJing-ZhuYan", "山海经-朱厌", 10], #------
     #4957: ["8-ShanHaiJing-QingLong", "山海经-青龙", 30], #------
-    4948: ["8-ShanHaiJing-HuJiao", "山海经-虎蛟", 30], #------
+    #4948: ["8-ShanHaiJing-HuJiao", "山海经-虎蛟", 30], #------
     #4962: ["8-ShanHaiJing-FuZhu", "山海经-夫诸", 30], #------
     4984: ["8-ShanHaiJing-GuDiao", "山海经-蛊雕", 30],
-    4969: ["8-ShanHaiJing-BiFang", "山海经-毕方", 30],
+    #4969: ["8-ShanHaiJing-BiFang", "山海经-毕方", 30],#------
     4993: ["8-LongTengHuaXia", "龙腾华夏", 2],
     5027: ["8-ShanHaiJing-BiBi", "山海经-獙獙", 50],
     5021: ["8-QiaoMingYueYe", "桥明月夜", 10],
-    4989: ["8-ShanHaiJing-MengJi", "山海经-孟极", 50],
+    #4989: ["8-ShanHaiJing-MengJi", "山海经-孟极", 50], #------
 
     #4515: ["9-ShuGuangPuJiZhan", "殊光谱基站"], #*
     #4562: ["9-ZhengZhaoJiJia", "征召机甲", 100], #------
@@ -616,10 +616,10 @@ CastingId2MetaInfo = {
     #4994: ["9-WeiLaiShiJianMoPanSuiPian", "未来时间磨盘碎片", 30], #------
     #4995: ["9-KongJianJinGuo-HeChengZiGeKa", "空间禁果-合成资格卡", 0], #------
     #4996: ["9-KongJianJinGuo", "空间禁果", 100], #------
-    4997: ["9-WeiLaiJianPanLingXiu-ChaoJiJianPan", "未来键盘领袖-超级键盘", 100], #------
-    4998: ["9-WeiLaiJianPan-CtrlZai20", "未来键盘-Ctrl仔20", 20], #------
-    5002: ["9-WeiLaiShiJianMoPan", "未来时间磨盘", 50], #------
-    5012: ["9-WeiLaiJianPan-QZai20", "未来键盘-Q仔20", 20], #------
+    #4997: ["9-WeiLaiJianPanLingXiu-ChaoJiJianPan", "未来键盘领袖-超级键盘", 100], #------
+    #4998: ["9-WeiLaiJianPan-CtrlZai20", "未来键盘-Ctrl仔20", 20], #------
+    #5002: ["9-WeiLaiShiJianMoPan", "未来时间磨盘", 50], #------
+    #5012: ["9-WeiLaiJianPan-QZai20", "未来键盘-Q仔20", 20], #------
     5029: ["9-BabyDragon", "BabyDragon", 10],
     5040: ["9-SmallDragon", "SmallDragon", 30],
     5046: ["9-WeiLaiJianPan-FZai", "未来键盘-F仔", 20],
