@@ -254,17 +254,9 @@ echo "---恶魔勋章---"
 python grab_transaction_price.py 4924 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 4924 ${yesterday} 10
 
-echo "---赛博运粮鼠---"
-python grab_transaction_price.py 5008 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 5008 ${yesterday} 10
-
 echo "---赛博拟羽---"
 python grab_transaction_price.py 5019 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 5019 ${yesterday} 10
-
-echo "---赛博报晓鸡---"
-python grab_transaction_price.py 5039 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 5039 ${yesterday} 10
 
 echo "---赛博Top---"
 python grab_transaction_price.py 4982 ${yesterday} ${yesterday}
@@ -300,21 +292,9 @@ echo "---小小键盘-L仔---"
 python grab_transaction_price.py 4149 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 4149 ${yesterday} 50
 
-echo "---妙趣糖果盒---"
-python grab_transaction_price.py 4622 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 4622 ${yesterday} 10
-
 echo "---传说卡片---"
 python grab_transaction_price.py 4958 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 4958 ${yesterday} 10
-
-echo "---幻联之瞳---"
-python grab_transaction_price.py 4814 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 4814 ${yesterday} 10
-
-echo "---奶酪梦巢---"
-python grab_transaction_price.py 4810 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 4810 ${yesterday} 10
 
 echo "---盘古斧---"
 python grab_transaction_price.py 4865 ${yesterday} ${yesterday}
@@ -339,6 +319,10 @@ python analyze_transaction_prices.py 5027 ${yesterday} 10
 echo "---桥明月夜---"
 python grab_transaction_price.py 5021 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 5021 ${yesterday} 10
+
+echo "---纤芸扇---"
+python grab_transaction_price.py 5060 ${yesterday} ${yesterday}
+python analyze_transaction_prices.py 5060 ${yesterday} 10
 
 #--- 探索未来 ---#
 echo "---数据代码---"
@@ -385,10 +369,6 @@ echo "---BabyDragon---"
 python grab_transaction_price.py 5029 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 5029 ${yesterday} 10
 
-echo "---SmallDragon---"
-python grab_transaction_price.py 5040 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 5040 ${yesterday} 10
-
 echo "---未来键盘-F仔---"
 python grab_transaction_price.py 5046 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 5046 ${yesterday} 10
@@ -414,13 +394,11 @@ for nft in "1-N-MengYouGeLou" "1-N-YouLingTianTai" "1-N-ChaoNengMoJing" \
 "5-YeNengFangYuTa" "5-PingAnQiShiDan" "5-ShuiHu-ZhangQing" "5-ShuiHu-WuSong" \
 "5-CaoMeiNaiXiBei" "5-HuaQiTongJing" "5-ShuangYuanZhiHe" "5-ShiZiPoRouBaoZiPu" \
 "5-QianXiZhiZhang" "5-ShenGuangZhiFei" "5-JuYiTing" "5-ShuiHu" \
-"6-SaiBoQiFeiKa" "6-EMoXunZhang" "6-SaiBoYunLiangShu" "6-SaiBoNiYu" "6-SaiBoBaoXiaoJi" \
-"6-SaiBoTop" \
+"6-SaiBoQiFeiKa" "6-EMoXunZhang"  "6-SaiBoNiYu" "6-SaiBoTop" \
 "7-XiangSuQiJing" "7-TanXianZheIV" "7-XunBaoZheI" "7-GongYunXiaoShao" "7-FangBiaoZhiShiDeng" "7-YeGuWangCheng" \
-"8-XiaoXiaoJianPan-LZai" "8-ChuanShuoKaPian" "8-QiaoMingYueYe" \
-"8-MiaoQuTangGuoHe" "8-HuanLianZhiTong" "8-ShanHaiJing-LeiNiao" "8-NaiLaoMengChao" "8-PanGuFu" \
-"8-ShanHaiJing-GuDiao" "8-LongTengHuaXia" "8-ShanHaiJing-BiBi" \
-"9-WeiLaiShuJu" "9-ChaoJiNengLiang" "9-BabyDragon" "9-SmallDragon" \
+"8-XiaoXiaoJianPan-LZai" "8-ChuanShuoKaPian" "8-QiaoMingYueYe" "8-QianYunShan" \
+"8-ShanHaiJing-LeiNiao" "8-PanGuFu" "8-ShanHaiJing-GuDiao" "8-LongTengHuaXia" "8-ShanHaiJing-BiBi" \
+"9-WeiLaiShuJu" "9-ChaoJiNengLiang" "9-BabyDragon" \
 "9-ShuJuDaiMa" "9-XuKongZhanShenKaEr" "9-JiuJiKongJuZhiMen" "9-WeiLaiTanXianJiaEZ" \
 "9-WeiLaiShiDai" "9-ShenYuanZhenSheZhe20" "9-DragonKing" \
 "9-EMoZhiWangATuo" "9-XiaoLunLun" "9-WeiLaiJianPan-FZai"
