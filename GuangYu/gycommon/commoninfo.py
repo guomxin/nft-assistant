@@ -399,9 +399,9 @@ CastingId2MetaInfo = {
     4502: ["5-CiNengXuanFuBan", "磁能悬浮板"],
     #4481: ["5-ShenYuJiangCi", "神谕降赐"],
     4500: ["5-LiuGuangYouShi", "流光邮匙"],
-    4484: ["5-ShuangHuaYanHuo", "双华烟火"],
+    4484: ["5-ShuangHuaYanHuo", "双华烟火"], #------
     4499: ["5-HeiQiaoJiXieCheng", "黑巧机械城"],
-    4473: ["5-WeiDuSheXiangJi", "维度摄像机"],
+    4473: ["5-WeiDuSheXiangJi", "维度摄像机"], #------
     #4446: ["5-CanShuGuoZhi", "参数果汁"], #------
     #4576: ["5-CangQiongYinDeng", "苍穹引灯"], #------
     #4552: ["5-ZhiGengHuaQi", "知更花期"],
@@ -431,22 +431,23 @@ CastingId2MetaInfo = {
     #4738: ["5-LunHuiHuaZhong", "轮回花钟"], #------
     #4644: ["5-ShengDanSongGe", "圣诞颂歌", 0], #------
     #4650: ["5-XingYaoLanTan", "星耀篮坛", 0], #------
-    4766: ["5-HuaQiTongJing", "花期瞳镜"],
+    4766: ["5-HuaQiTongJing", "花期瞳镜"], #------
     #4749: ["5-GuangHuiZhouCheng", "光辉轴承"], #------
     4717: ["5-ShuangYuanZhiHe", "双源之核"],
     4755: ["5-QianXiZhiZhang", "前夕织章"],
     #4566: ["5-FangShengJiXieFeng", "仿生机械蜂", 10], #------
     4663: ["5-ShenGuangZhiFei", "神光之扉", 10],
     5000: ["5-JiangHuLing", "江湖令", 2],
-    5003: ["5-ShuiHu-ZhangQing", "水浒-张青", 3],
+    5003: ["5-ShuiHu-ZhangQing", "水浒-张青", 5],
     5004: ["5-ShuiHu-WuSong", "水浒-武松", 50],
     #5016: ["5-ShuiHu-RuanXiaoEr", "水浒-阮小二", 10], #------
     5028: ["5-ShuiHu-RuanXiaoQi", "水浒-阮小七", 30],
-    5036: ["5-JuYiTing", "聚义厅", 5],
+    5075: ["5-JuYiTing", "聚义厅", 5],
     5041: ["5-ShuiHu", "水浒", 50],
     #5022: ["5-ShuiHu-SunErNiang", "水浒-孙二娘", 10],
     5044: ["5-ShiZiPoRouBaoZiPu", "十字坡肉包子铺", 30],
     4437: ["5-PeiYuGuanGaiHuoJian", "培育灌溉火箭", 30],
+    4676: ["5-NengLiangXuJiDanYuan", "能量蓄积单元", 30],
     
     #4443: ["6-XuShiZhongShu", "虚实中枢"],
     #4448: ["6-XuNiLiRen", "虚拟利刃"],
@@ -539,6 +540,7 @@ CastingId2MetaInfo = {
     5019: ["6-SaiBoNiYu", "赛博拟羽", 5],
     #5039: ["6-SaiBoBaoXiaoJi", "赛博报晓鸡", 0], #------
     4982: ["6-SaiBoTop", "赛博Top", 10],
+    5018: ["6-SaiBoPoYiHeXin", "赛博破译核心", 15],
 
     3998: ["7-XiangSuQiJing", "像素奇晶"],
     3544: ["7-TanXianZheIV", "探险者IV"],
