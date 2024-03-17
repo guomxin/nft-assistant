@@ -318,9 +318,9 @@ CastingId2MetaInfo = {
 
     #2456: ["2-UR-WeiLaiDuShi", "未来都市"],
     #2468: ["2-UR-YuanYangDuLun", "远洋渡轮"],
-    3646: ["2-UR-ShiKongChuanSuoJi", "时空穿梭机", 300],
-    3751: ["2-UR-YueQiuShangCheng", "月球上城", 300],
-    3535: ["2-ZaiFuXiangHuang", "载福祥凰", 300],
+    3646: ["2-UR-ShiKongChuanSuoJi", "时空穿梭机", 200],
+    3751: ["2-UR-YueQiuShangCheng", "月球上城", 200],
+    3535: ["2-ZaiFuXiangHuang", "载福祥凰", 200],
     2837: ["2-LongYinWanXiang", "龙吟万象", 1000],
     #2616: ["2-HuanShuShi", "幻术师"], 
     #2617: ["2-MoShuShi", "魔术师"],
@@ -437,7 +437,7 @@ CastingId2MetaInfo = {
     4755: ["5-QianXiZhiZhang", "前夕织章"],
     #4566: ["5-FangShengJiXieFeng", "仿生机械蜂", 10], #------
     4663: ["5-ShenGuangZhiFei", "神光之扉", 10],
-    5000: ["5-JiangHuLing", "江湖令", 2],
+    5000: ["5-JiangHuLing", "江湖令", 1],
     5003: ["5-ShuiHu-ZhangQing", "水浒-张青", 5],
     5004: ["5-ShuiHu-WuSong", "水浒-武松", 50],
     #5016: ["5-ShuiHu-RuanXiaoEr", "水浒-阮小二", 10], #------
@@ -448,6 +448,7 @@ CastingId2MetaInfo = {
     5044: ["5-ShiZiPoRouBaoZiPu", "十字坡肉包子铺", 30],
     4437: ["5-PeiYuGuanGaiHuoJian", "培育灌溉火箭", 30],
     4676: ["5-NengLiangXuJiDanYuan", "能量蓄积单元", 30],
+    5054: ["5-ShuiHu-LuZhiShen", "水浒-鲁智深", 50],
     
     #4443: ["6-XuShiZhongShu", "虚实中枢"],
     #4448: ["6-XuNiLiRen", "虚拟利刃"],
@@ -540,7 +541,7 @@ CastingId2MetaInfo = {
     5019: ["6-SaiBoNiYu", "赛博拟羽", 5],
     #5039: ["6-SaiBoBaoXiaoJi", "赛博报晓鸡", 0], #------
     4982: ["6-SaiBoTop", "赛博Top", 10],
-    5018: ["6-SaiBoPoYiHeXin", "赛博破译核心", 15],
+    5018: ["6-SaiBoPoYiHeXin", "赛博破译核心", 11],
 
     3998: ["7-XiangSuQiJing", "像素奇晶"],
     3544: ["7-TanXianZheIV", "探险者IV"],
@@ -559,7 +560,7 @@ CastingId2MetaInfo = {
     #4572: ["8-MoZhongLeYuan", "蘑钟乐园", 70], #------
     #4649: ["8-HuanZuZhiTa", "幻足之塔", 200], #------
     #4622: ["8-MiaoQuTangGuoHe", "妙趣糖果盒", 4], #------
-    4958: ["8-ChuanShuoKaPian", "传说卡片", 2],
+    4958: ["8-ChuanShuoKaPian", "传说卡片", 1],
     #4808: ["8-XianHuaQiYu", "仙花奇域", 100],
     #4816: ["8-ChunRiCaiLun", "春日彩轮", 5], #------
     #4795: ["8-QiYiJunGe", "奇异菌阁", 100], #------
@@ -630,6 +631,7 @@ CastingId2MetaInfo = {
     #5040: ["9-SmallDragon", "SmallDragon", 0], #------
     5046: ["9-WeiLaiJianPan-FZai", "未来键盘-F仔", 20],
     5061: ["9-DragonKing", "DragonKing", 100], 
+    5073: ["9-YuLongShi", "驭龙师", 5],
 
     #4228: ["88-WangZheZhiZhan", "王者之战", 5],
     #4412: ["88-FengWuZhiYuan", "风舞纸鸢", 30],
