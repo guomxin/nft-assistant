@@ -449,6 +449,8 @@ CastingId2MetaInfo = {
     #4437: ["5-PeiYuGuanGaiHuoJian", "培育灌溉火箭", 0], #------
     4676: ["5-NengLiangXuJiDanYuan", "能量蓄积单元", 30],
     5054: ["5-ShuiHu-LuZhiShen", "水浒-鲁智深", 50],
+    5048: ["5-ShuiHu-WuYong", "水浒-吴用", 200],
+    5063: ["5-WuSongDaHu", "武松打虎", 10],
     
     #4443: ["6-XuShiZhongShu", "虚实中枢"],
     #4448: ["6-XuNiLiRen", "虚拟利刃"],
@@ -541,7 +543,8 @@ CastingId2MetaInfo = {
     5019: ["6-SaiBoNiYu", "赛博拟羽", 5],
     #5039: ["6-SaiBoBaoXiaoJi", "赛博报晓鸡", 0], #------
     4982: ["6-SaiBoTop", "赛博Top", 10],
-    5018: ["6-SaiBoPoYiHeXin", "赛博破译核心", 9],
+    5018: ["6-SaiBoPoYiHeXin", "赛博破译核心", 8],
+    5064: ["6-SaiBoTopOne", "赛博TopOne", 12],
 
     3998: ["7-XiangSuQiJing", "像素奇晶"],
     3544: ["7-TanXianZheIV", "探险者IV"],
@@ -582,6 +585,7 @@ CastingId2MetaInfo = {
     5021: ["8-QiaoMingYueYe", "桥明月夜", 10],
     #4989: ["8-ShanHaiJing-MengJi", "山海经-孟极", 50], #------
     5060: ["8-QianYunShan", "纤芸扇", 20],
+    5076: ["8-ChuanQiZhiYe", "传奇之夜", 30],
 
     #4515: ["9-ShuGuangPuJiZhan", "殊光谱基站"], #*
     #4562: ["9-ZhengZhaoJiJia", "征召机甲", 100], #------
@@ -612,7 +616,7 @@ CastingId2MetaInfo = {
     4955: ["9-XuKongZhanShenKaEr", "虚空战神卡尔", 50],
     4960: ["9-JiuJiKongJuZhiMen", "究极恐惧之门", 5],
     4959: ["9-WeiLaiTanXianJiaEZ", "未来探险家EZ", 10],
-    4956: ["9-ShenYuanZhenSheZhe20", "深渊震慑者20", 30],
+    4956: ["9-ShenYuanZhenSheZhe20", "深渊震慑者20", 20],
     #4968: ["9-WeiLaiJianPan-CtrlZai20-Old", "未来键盘-Ctrl仔20-老", 0], #------
     4974: ["9-EMoZhiWangATuo", "恶魔之王阿托", 50],
     #4979: ["9-WeiLaiJianPan-CZai20", "未来键盘-C仔20", 0], #------
@@ -627,11 +631,13 @@ CastingId2MetaInfo = {
     #4998: ["9-WeiLaiJianPan-CtrlZai20", "未来键盘-Ctrl仔20", 20], #------
     #5002: ["9-WeiLaiShiJianMoPan", "未来时间磨盘", 50], #------
     #5012: ["9-WeiLaiJianPan-QZai20", "未来键盘-Q仔20", 20], #------
-    5029: ["9-BabyDragon", "BabyDragon", 10],
+
+    5029: ["10-BabyDragon", "BabyDragon", 10],
     #5040: ["9-SmallDragon", "SmallDragon", 0], #------
-    5046: ["9-WeiLaiJianPan-FZai", "未来键盘-F仔", 20],
-    5061: ["9-DragonKing", "DragonKing", 100], 
-    5073: ["9-YuLongShi", "驭龙师", 5],
+    5046: ["10-XiaoXiaoJianPan-FZai", "小小键盘-F仔", 20],
+    5061: ["10-DragonKing", "DragonKing", 100], 
+    5073: ["10-YuLongShi", "驭龙师", 5], #------
+    4227: ["10-ZuiQiangWangZhe", "最强王者", 10],
 
     #4228: ["88-WangZheZhiZhan", "王者之战", 5],
     #4412: ["88-FengWuZhiYuan", "风舞纸鸢", 30],
