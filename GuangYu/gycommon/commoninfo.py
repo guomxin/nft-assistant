@@ -451,6 +451,7 @@ CastingId2MetaInfo = {
     5054: ["5-ShuiHu-LuZhiShen", "水浒-鲁智深", 50],
     5048: ["5-ShuiHu-WuYong", "水浒-吴用", 200],
     5063: ["5-WuSongDaHu", "武松打虎", 10],
+    5077: ["5-ShuiHu-HuSanNiang", "水浒-扈三娘", 10],
     
     #4443: ["6-XuShiZhongShu", "虚实中枢"],
     #4448: ["6-XuNiLiRen", "虚拟利刃"],
@@ -543,8 +544,10 @@ CastingId2MetaInfo = {
     5019: ["6-SaiBoNiYu", "赛博拟羽", 5],
     #5039: ["6-SaiBoBaoXiaoJi", "赛博报晓鸡", 0], #------
     4982: ["6-SaiBoTop", "赛博Top", 10],
-    5018: ["6-SaiBoPoYiHeXin", "赛博破译核心", 8],
+    5018: ["6-SaiBoPoYiHeXin", "赛博破译核心", 6],
     5064: ["6-SaiBoTopOne", "赛博TopOne", 12],
+    5049: ["6-SaiBoJiangZiYa", "赛博姜子牙", 30],
+    5050: ["6-SaiBoKawasaki", "赛博Kawasaki", 20],
 
     3998: ["7-XiangSuQiJing", "像素奇晶"],
     3544: ["7-TanXianZheIV", "探险者IV"],
@@ -578,7 +581,7 @@ CastingId2MetaInfo = {
     #4957: ["8-ShanHaiJing-QingLong", "山海经-青龙", 30], #------
     #4948: ["8-ShanHaiJing-HuJiao", "山海经-虎蛟", 30], #------
     #4962: ["8-ShanHaiJing-FuZhu", "山海经-夫诸", 30], #------
-    4984: ["8-ShanHaiJing-GuDiao", "山海经-蛊雕", 30],
+    4984: ["8-ShanHaiJing-GuDiao", "山海经-蛊雕", 30], #------
     #4969: ["8-ShanHaiJing-BiFang", "山海经-毕方", 30],#------
     4993: ["8-LongTengHuaXia", "龙腾华夏", 2],
     5027: ["8-ShanHaiJing-BiBi", "山海经-獙獙", 50],
@@ -586,6 +589,7 @@ CastingId2MetaInfo = {
     #4989: ["8-ShanHaiJing-MengJi", "山海经-孟极", 50], #------
     5060: ["8-QianYunShan", "纤芸扇", 20],
     5076: ["8-ChuanQiZhiYe", "传奇之夜", 30],
+    5051: ["8-FanHuaShengShi", "繁华盛世", 2],
 
     #4515: ["9-ShuGuangPuJiZhan", "殊光谱基站"], #*
     #4562: ["9-ZhengZhaoJiJia", "征召机甲", 100], #------
@@ -638,6 +642,7 @@ CastingId2MetaInfo = {
     5061: ["10-DragonKing", "DragonKing", 100], 
     5073: ["10-YuLongShi", "驭龙师", 5], #------
     4227: ["10-ZuiQiangWangZhe", "最强王者", 10],
+    5083: ["10-TuLongYongShi", "屠龙勇士", 2],
 
     #4228: ["88-WangZheZhiZhan", "王者之战", 5],
     #4412: ["88-FengWuZhiYuan", "风舞纸鸢", 30],
