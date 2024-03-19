@@ -452,6 +452,9 @@ CastingId2MetaInfo = {
     5048: ["5-ShuiHu-WuYong", "水浒-吴用", 200],
     5063: ["5-WuSongDaHu", "武松打虎", 10],
     5077: ["5-ShuiHu-HuSanNiang", "水浒-扈三娘", 10],
+    5055: ["5-ShuiHu-LiKui", "水浒-李逵", 50],
+    5086: ["5-XiMenQing", "西门庆", 8],
+    5085: ["5-ShenSuanZi", "神算子", 5],
     
     #4443: ["6-XuShiZhongShu", "虚实中枢"],
     #4448: ["6-XuNiLiRen", "虚拟利刃"],
@@ -545,7 +548,7 @@ CastingId2MetaInfo = {
     #5039: ["6-SaiBoBaoXiaoJi", "赛博报晓鸡", 0], #------
     4982: ["6-SaiBoTop", "赛博Top", 10],
     5018: ["6-SaiBoPoYiHeXin", "赛博破译核心", 6],
-    5064: ["6-SaiBoTopOne", "赛博TopOne", 12],
+    5064: ["6-SaiBoTopOne", "赛博TopOne", 10],
     5049: ["6-SaiBoJiangZiYa", "赛博姜子牙", 30],
     5050: ["6-SaiBoKawasaki", "赛博Kawasaki", 20],
 

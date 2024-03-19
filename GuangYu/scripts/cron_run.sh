@@ -246,6 +246,18 @@ echo "---水浒-扈三娘---"
 python grab_transaction_price.py 5077 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 5077 ${yesterday} 10
 
+echo "---水浒-李逵---"
+python grab_transaction_price.py 5055 ${yesterday} ${yesterday}
+python analyze_transaction_prices.py 5055 ${yesterday} 10
+
+echo "---西门庆---"
+python grab_transaction_price.py 5086 ${yesterday} ${yesterday}
+python analyze_transaction_prices.py 5086 ${yesterday} 10
+
+echo "---神算子---"
+python grab_transaction_price.py 5085 ${yesterday} ${yesterday}
+python analyze_transaction_prices.py 5085 ${yesterday} 10
+
 #--- 赛博狂潮 ---#
 echo "---赛博起飞卡---"
 python grab_transaction_price.py 4985 ${yesterday} ${yesterday}
@@ -420,8 +432,8 @@ for nft in "1-N-MengYouGeLou" "1-N-YouLingTianTai" "1-N-ChaoNengMoJing" \
 "2-ZaiFuXiangHuang" "2-LongYinWanXiang" "2-JinQuXiYin" "2-YiShouFuTu" "2-JiuChongTianWaiTian" \
 "3-ZhongYiWuSheng" "3-ChuFengMingTong" "3-ChongHuoFeiYan" \
 "3-HuBenZhanXue" "3-YinXuJianDao" "3-FengDengBaiGu" "3-YongMengShuBing" "3-KuaiHuRen" "3-RuiFengJianLing" "3-YunYuYangFeng" \
-"5-JingGuangJiaoNang" "5-ShengJingZhiMen" "5-ShuiHu-WuYong" \
-"5-BingShuangLengQueXiTong" "5-HeiQiaoJiXieCheng" "5-ShuiHu-LuZhiShen" \
+"5-JingGuangJiaoNang" "5-ShengJingZhiMen" "5-ShuiHu-WuYong" "5-ShuiHu-LiKui" "5-XiMenQing" \
+"5-BingShuangLengQueXiTong" "5-HeiQiaoJiXieCheng" "5-ShuiHu-LuZhiShen" "5-ShenSuanZi" \
 "5-CaiTangMengLeYuan" "5-Xmas-GuangLuXueQiao" "5-JiangHuLing" "5-WuSongDaHu" \
 "5-YeDanJuNengGuan" "5-CiNengXuanFuBan" "5-LiuGuangYouShi" "5-ZhiKongJiXieHuShou" "5-HuanYingLeiTing" \
 "5-YeNengFangYuTa" "5-PingAnQiShiDan" "5-ShuiHu-ZhangQing" "5-ShuiHu-WuSong" \
