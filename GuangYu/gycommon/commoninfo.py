@@ -448,13 +448,13 @@ CastingId2MetaInfo = {
     5044: ["5-ShiZiPoRouBaoZiPu", "十字坡肉包子铺", 30],
     #4437: ["5-PeiYuGuanGaiHuoJian", "培育灌溉火箭", 0], #------
     4676: ["5-NengLiangXuJiDanYuan", "能量蓄积单元", 30],
-    5054: ["5-ShuiHu-LuZhiShen", "水浒-鲁智深", 50],
+    5054: ["5-ShuiHu-LuZhiShen", "水浒-鲁智深", 120],
     5048: ["5-ShuiHu-WuYong", "水浒-吴用", 200],
     5063: ["5-WuSongDaHu", "武松打虎", 10],
     5077: ["5-ShuiHu-HuSanNiang", "水浒-扈三娘", 10],
     5055: ["5-ShuiHu-LiKui", "水浒-李逵", 50],
     5086: ["5-XiMenQing", "西门庆", 8],
-    5085: ["5-ShenSuanZi", "神算子", 5],
+    5085: ["5-ShenSuanZi", "神算子", 3],
     
     #4443: ["6-XuShiZhongShu", "虚实中枢"],
     #4448: ["6-XuNiLiRen", "虚拟利刃"],
@@ -593,6 +593,7 @@ CastingId2MetaInfo = {
     5060: ["8-QianYunShan", "纤芸扇", 20],
     5076: ["8-ChuanQiZhiYe", "传奇之夜", 30],
     5051: ["8-FanHuaShengShi", "繁华盛世", 2],
+    5088: ["8-BiShanQiongYu", "璧山琼宇", 2],
 
     #4515: ["9-ShuGuangPuJiZhan", "殊光谱基站"], #*
     #4562: ["9-ZhengZhaoJiJia", "征召机甲", 100], #------
@@ -646,6 +647,7 @@ CastingId2MetaInfo = {
     5073: ["10-YuLongShi", "驭龙师", 0], #------
     4227: ["10-ZuiQiangWangZhe", "最强王者", 10],
     5083: ["10-TuLongYongShi", "屠龙勇士", 2],
+    5095: ["10-FengLong", "风龙", 2],
 
     #4228: ["88-WangZheZhiZhan", "王者之战", 5],
     #4412: ["88-FengWuZhiYuan", "风舞纸鸢", 30],
