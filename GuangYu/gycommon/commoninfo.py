@@ -441,7 +441,7 @@ CastingId2MetaInfo = {
     5003: ["5-ShuiHu-ZhangQing", "水浒-张青", 5],
     5004: ["5-ShuiHu-WuSong", "水浒-武松", 50],
     #5016: ["5-ShuiHu-RuanXiaoEr", "水浒-阮小二", 10], #------
-    5028: ["5-ShuiHu-RuanXiaoQi", "水浒-阮小七", 30],
+    #5028: ["5-ShuiHu-RuanXiaoQi", "水浒-阮小七", 0], #------
     5075: ["5-JuYiTing", "聚义厅", 5],
     5041: ["5-ShuiHu", "水浒", 50],
     #5022: ["5-ShuiHu-SunErNiang", "水浒-孙二娘", 10],
@@ -559,7 +559,7 @@ CastingId2MetaInfo = {
 
     #4444: ["8-ChaoZaiKuaiChongZhan", "超载快充站"],
     #4454: ["8-QianJuanHuaJia", "缱卷花驾"], #------
-    4149: ["8-XiaoXiaoJianPan-LZai", "小小键盘-L仔", 50],
+    4149: ["8-XiaoXiaoJianPan-LZai", "小小键盘-L仔", 30],
     #4569: ["8-HuanXiaoQuQi", "欢笑曲奇", 50],
     #4570: ["8-HuaYangLvBao", "花漾旅包"], #*
     #4606: ["8-XiaoXiaoJianPan-DZai", "小小键盘-D仔", 50],
@@ -571,17 +571,17 @@ CastingId2MetaInfo = {
     #4816: ["8-ChunRiCaiLun", "春日彩轮", 5], #------
     #4795: ["8-QiYiJunGe", "奇异菌阁", 100], #------
     #4814: ["8-HuanLianZhiTong", "幻联之瞳", 1], #------
-    4834: ["8-ShanHaiJing-LeiNiao", "山海经-鸓鸟", 50], 
+    4834: ["8-ShanHaiJing-LeiNiao", "山海经-鸓鸟", 30], 
     #4810: ["8-NaiLaoMengChao", "奶酪梦巢", 20], #------
     #4839: ["8-YunDingTianGong", "云顶天宫", 20], #------
-    4865: ["8-PanGuFu", "盘古斧", 50],
+    4865: ["8-PanGuFu", "盘古斧", 30],
     #4860: ["8-ShanHaiJing-LuShu", "山海经-鹿蜀", 50], #------
     #4853: ["8-ShanHaiJing-TaoTie", "山海经-饕餮", 50], 
     #4952: ["8-ShanHaiJing-ZhuYan", "山海经-朱厌", 10], #------
     #4957: ["8-ShanHaiJing-QingLong", "山海经-青龙", 30], #------
     #4948: ["8-ShanHaiJing-HuJiao", "山海经-虎蛟", 30], #------
     #4962: ["8-ShanHaiJing-FuZhu", "山海经-夫诸", 30], #------
-    4984: ["8-ShanHaiJing-GuDiao", "山海经-蛊雕", 30], #------
+    #4984: ["8-ShanHaiJing-GuDiao", "山海经-蛊雕", 0], #------
     #4969: ["8-ShanHaiJing-BiFang", "山海经-毕方", 30],#------
     4993: ["8-LongTengHuaXia", "龙腾华夏", 2],
     5027: ["8-ShanHaiJing-BiBi", "山海经-獙獙", 50],
@@ -640,7 +640,7 @@ CastingId2MetaInfo = {
     #5040: ["9-SmallDragon", "SmallDragon", 0], #------
     5046: ["10-XiaoXiaoJianPan-FZai", "小小键盘-F仔", 20],
     5061: ["10-DragonKing", "DragonKing", 100], 
-    5073: ["10-YuLongShi", "驭龙师", 5], #------
+    5073: ["10-YuLongShi", "驭龙师", 0], #------
     4227: ["10-ZuiQiangWangZhe", "最强王者", 10],
     5083: ["10-TuLongYongShi", "屠龙勇士", 2],
 

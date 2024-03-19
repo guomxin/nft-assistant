@@ -214,10 +214,6 @@ echo "---水浒-武松---"
 python grab_transaction_price.py 5004 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 5004 ${yesterday} 10
 
-echo "---水浒-阮小七---"
-python grab_transaction_price.py 5028 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 5028 ${yesterday} 10
-
 echo "---聚义厅---"
 python grab_transaction_price.py 5075 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 5075 ${yesterday} 10
@@ -324,10 +320,6 @@ echo "---山海经-鸓鸟---"
 python grab_transaction_price.py 4834 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 4834 ${yesterday} 10
 
-echo "---山海经-蛊雕---"
-python grab_transaction_price.py 4984 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 4984 ${yesterday} 10
-
 echo "---龙腾华夏---"
 python grab_transaction_price.py 4993 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 4993 ${yesterday} 10
@@ -428,7 +420,7 @@ for nft in "1-N-MengYouGeLou" "1-N-YouLingTianTai" "1-N-ChaoNengMoJing" \
 "2-ZaiFuXiangHuang" "2-LongYinWanXiang" "2-JinQuXiYin" "2-YiShouFuTu" "2-JiuChongTianWaiTian" \
 "3-ZhongYiWuSheng" "3-ChuFengMingTong" "3-ChongHuoFeiYan" \
 "3-HuBenZhanXue" "3-YinXuJianDao" "3-FengDengBaiGu" "3-YongMengShuBing" "3-KuaiHuRen" "3-RuiFengJianLing" "3-YunYuYangFeng" \
-"5-JingGuangJiaoNang" "5-ShengJingZhiMen" "5-ShuiHu-RuanXiaoQi" "5-ShuiHu-WuYong" \
+"5-JingGuangJiaoNang" "5-ShengJingZhiMen" "5-ShuiHu-WuYong" \
 "5-BingShuangLengQueXiTong" "5-HeiQiaoJiXieCheng" "5-ShuiHu-LuZhiShen" \
 "5-CaiTangMengLeYuan" "5-Xmas-GuangLuXueQiao" "5-JiangHuLing" "5-WuSongDaHu" \
 "5-YeDanJuNengGuan" "5-CiNengXuanFuBan" "5-LiuGuangYouShi" "5-ZhiKongJiXieHuShou" "5-HuanYingLeiTing" \
@@ -439,7 +431,7 @@ for nft in "1-N-MengYouGeLou" "1-N-YouLingTianTai" "1-N-ChaoNengMoJing" \
 "6-SaiBoJiangZiYa" "6-SaiBoKawasaki" \
 "7-XiangSuQiJing" "7-TanXianZheIV" "7-XunBaoZheI" "7-GongYunXiaoShao" "7-FangBiaoZhiShiDeng" "7-YeGuWangCheng" \
 "8-XiaoXiaoJianPan-LZai" "8-ChuanShuoKaPian" "8-QiaoMingYueYe" "8-QianYunShan" "8-ChuanQiZhiYe" \
-"8-ShanHaiJing-LeiNiao" "8-PanGuFu" "8-ShanHaiJing-GuDiao" "8-LongTengHuaXia" "8-ShanHaiJing-BiBi" \
+"8-ShanHaiJing-LeiNiao" "8-PanGuFu" "8-LongTengHuaXia" "8-ShanHaiJing-BiBi" \
 "8-FanHuaShengShi" \
 "9-WeiLaiShuJu" "9-ChaoJiNengLiang" "9-WeiLaiShiDai" "9-ShenYuanZhenSheZhe20" \
 "9-ShuJuDaiMa" "9-XuKongZhanShenKaEr" "9-JiuJiKongJuZhiMen" "9-WeiLaiTanXianJiaEZ" \
