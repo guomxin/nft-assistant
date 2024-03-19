@@ -448,12 +448,12 @@ CastingId2MetaInfo = {
     5044: ["5-ShiZiPoRouBaoZiPu", "十字坡肉包子铺", 30],
     #4437: ["5-PeiYuGuanGaiHuoJian", "培育灌溉火箭", 0], #------
     4676: ["5-NengLiangXuJiDanYuan", "能量蓄积单元", 30],
-    5054: ["5-ShuiHu-LuZhiShen", "水浒-鲁智深", 120],
+    #5054: ["5-ShuiHu-LuZhiShen", "水浒-鲁智深", 120], #------
     5048: ["5-ShuiHu-WuYong", "水浒-吴用", 200],
     5063: ["5-WuSongDaHu", "武松打虎", 10],
     5077: ["5-ShuiHu-HuSanNiang", "水浒-扈三娘", 10],
     5055: ["5-ShuiHu-LiKui", "水浒-李逵", 50],
-    5086: ["5-XiMenQing", "西门庆", 8],
+    5086: ["5-XiMenQing", "西门庆", 5],
     5085: ["5-ShenSuanZi", "神算子", 3],
     
     #4443: ["6-XuShiZhongShu", "虚实中枢"],
@@ -590,8 +590,8 @@ CastingId2MetaInfo = {
     5027: ["8-ShanHaiJing-BiBi", "山海经-獙獙", 50],
     5021: ["8-QiaoMingYueYe", "桥明月夜", 10],
     #4989: ["8-ShanHaiJing-MengJi", "山海经-孟极", 50], #------
-    5060: ["8-QianYunShan", "纤芸扇", 20],
-    5076: ["8-ChuanQiZhiYe", "传奇之夜", 30],
+    #5060: ["8-QianYunShan", "纤芸扇", 20],
+    #5076: ["8-ChuanQiZhiYe", "传奇之夜", 30],
     5051: ["8-FanHuaShengShi", "繁华盛世", 2],
     5088: ["8-BiShanQiongYu", "璧山琼宇", 2],
 
@@ -611,7 +611,7 @@ CastingId2MetaInfo = {
     4827: ["9-ShuJuDaiMa", "数据代码", 1],
     #4912: ["9-SanZuWangLing-ZhuangTaiHuiFu", "三足妄灵-状态恢复", 50],
     #4817: ["9-JuShuoZhiBi", "聚烁之臂", 50], #------
-    4909: ["9-WeiLaiShuJu", "未来数据", 2],
+    4909: ["9-WeiLaiShuJu", "未来数据", 1],
     #4875: ["9-GuangSuSuiDao", "光速隧道", 50], #------
     4913: ["9-ChaoJiNengLiang", "超级能量", 10],
     #4923: ["9-WanNengJiXieZuZhi", "万能机械组织", 50],
@@ -644,7 +644,7 @@ CastingId2MetaInfo = {
     #5040: ["9-SmallDragon", "SmallDragon", 0], #------
     5046: ["10-XiaoXiaoJianPan-FZai", "小小键盘-F仔", 20],
     5061: ["10-DragonKing", "DragonKing", 100], 
-    5073: ["10-YuLongShi", "驭龙师", 0], #------
+    #5073: ["10-YuLongShi", "驭龙师", 0], #------
     4227: ["10-ZuiQiangWangZhe", "最强王者", 10],
     5083: ["10-TuLongYongShi", "屠龙勇士", 2],
     5095: ["10-FengLong", "风龙", 2],
