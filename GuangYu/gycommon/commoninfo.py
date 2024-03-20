@@ -457,6 +457,7 @@ CastingId2MetaInfo = {
     5085: ["5-ShenSuanZi", "神算子", 3],
     5097: ["5-ShuiHu-LinChong", "水浒-林冲", 100],
     5070: ["5-ShuiHu-YanQing", "水浒-燕青", 50],
+    4149: ["5-XiaoXiaoJianPan-LZai", "小小键盘-L仔", 30],
     
     #4443: ["6-XuShiZhongShu", "虚实中枢"],
     #4448: ["6-XuNiLiRen", "虚拟利刃"],
@@ -564,7 +565,6 @@ CastingId2MetaInfo = {
 
     #4444: ["8-ChaoZaiKuaiChongZhan", "超载快充站"],
     #4454: ["8-QianJuanHuaJia", "缱卷花驾"], #------
-    4149: ["8-XiaoXiaoJianPan-LZai", "小小键盘-L仔", 30],
     #4569: ["8-HuanXiaoQuQi", "欢笑曲奇", 50],
     #4570: ["8-HuaYangLvBao", "花漾旅包"], #*
     #4606: ["8-XiaoXiaoJianPan-DZai", "小小键盘-D仔", 50],
@@ -576,10 +576,10 @@ CastingId2MetaInfo = {
     #4816: ["8-ChunRiCaiLun", "春日彩轮", 5], #------
     #4795: ["8-QiYiJunGe", "奇异菌阁", 100], #------
     #4814: ["8-HuanLianZhiTong", "幻联之瞳", 1], #------
-    4834: ["8-ShanHaiJing-LeiNiao", "山海经-鸓鸟", 30], #------
+    #4834: ["8-ShanHaiJing-LeiNiao", "山海经-鸓鸟", 30], #------
     #4810: ["8-NaiLaoMengChao", "奶酪梦巢", 20], #------
     #4839: ["8-YunDingTianGong", "云顶天宫", 20], #------
-    4865: ["8-PanGuFu", "盘古斧", 30], #------
+    #4865: ["8-PanGuFu", "盘古斧", 30], #------
     #4860: ["8-ShanHaiJing-LuShu", "山海经-鹿蜀", 50], #------
     #4853: ["8-ShanHaiJing-TaoTie", "山海经-饕餮", 50], 
     #4952: ["8-ShanHaiJing-ZhuYan", "山海经-朱厌", 10], #------
@@ -650,7 +650,7 @@ CastingId2MetaInfo = {
     5046: ["10-XiaoXiaoJianPan-FZai", "小小键盘-F仔", 20],
     5061: ["10-DragonKing", "DragonKing", 100], 
     #5073: ["10-YuLongShi", "驭龙师", 0], #------
-    4227: ["10-ZuiQiangWangZhe", "最强王者", 10],
+    #4227: ["10-ZuiQiangWangZhe", "最强王者", 10],
     5083: ["10-TuLongYongShi", "屠龙勇士", 2],
     5095: ["10-FengLong", "风龙", 2],
     5101: ["10-HuoLong", "火龙", 2],
