@@ -574,10 +574,10 @@ CastingId2MetaInfo = {
     #4816: ["8-ChunRiCaiLun", "春日彩轮", 5], #------
     #4795: ["8-QiYiJunGe", "奇异菌阁", 100], #------
     #4814: ["8-HuanLianZhiTong", "幻联之瞳", 1], #------
-    4834: ["8-ShanHaiJing-LeiNiao", "山海经-鸓鸟", 30], 
+    4834: ["8-ShanHaiJing-LeiNiao", "山海经-鸓鸟", 30], #------
     #4810: ["8-NaiLaoMengChao", "奶酪梦巢", 20], #------
     #4839: ["8-YunDingTianGong", "云顶天宫", 20], #------
-    4865: ["8-PanGuFu", "盘古斧", 30],
+    4865: ["8-PanGuFu", "盘古斧", 30], #------
     #4860: ["8-ShanHaiJing-LuShu", "山海经-鹿蜀", 50], #------
     #4853: ["8-ShanHaiJing-TaoTie", "山海经-饕餮", 50], 
     #4952: ["8-ShanHaiJing-ZhuYan", "山海经-朱厌", 10], #------
@@ -594,6 +594,9 @@ CastingId2MetaInfo = {
     #5076: ["8-ChuanQiZhiYe", "传奇之夜", 30],
     5051: ["8-FanHuaShengShi", "繁华盛世", 2],
     5088: ["8-BiShanQiongYu", "璧山琼宇", 2],
+    5098: ["8-XingChenQiYu", "星辰奇遇", 50],
+    5047: ["8-YaoYeDengXia", "曜夜灯匣", 2],
+    5079: ["8-LouHuaSanLun", "镂花伞轮", 30],
 
     #4515: ["9-ShuGuangPuJiZhan", "殊光谱基站"], #*
     #4562: ["9-ZhengZhaoJiJia", "征召机甲", 100], #------
@@ -665,7 +668,7 @@ HighestValue_Products_Info = {
 }
 
 # 173
-Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzEwOTA3OTIxLCJzaWduSWQiOiIyYjhjYzkyOTFkNmQ0NjNmYjFjNzNiOTAwYjU3Njc0YyIsImlhdCI6MTcxMDMwMzEyMX0.zfzsIn6fe3bzzxYjsaMXsLSlMbW0VSui7iH-OETf5lA"
+Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzExNTE4Nzc1LCJzaWduSWQiOiI0ZGE1NDAyNzJmYzQ0YWI2YjBhZTA1YzgzMzFiMGM4OCIsImlhdCI6MTcxMDkxMzk3NX0.HW6MLDkIyziSpjhKQ7yvFBe47-vdH70Aey-OwfGwevY"
 
 # 131
 Query_Token= "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxMzE1NjE2MTA5MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzExMzIxNzc4LCJzaWduSWQiOiI3MTE5NDRhZWJkYzc0YjA4OGJkMjc3Y2U4ODRiYmFlMCIsImlhdCI6MTcxMDcxNjk3OH0.u-qSEx3WVw--Lcylx_1gHrXfUvIUHVhWuFPZEApRads"
