@@ -439,7 +439,7 @@ CastingId2MetaInfo = {
     4663: ["5-ShenGuangZhiFei", "神光之扉", 10],
     5000: ["5-JiangHuLing", "江湖令", 1],
     5003: ["5-ShuiHu-ZhangQing", "水浒-张青", 5],
-    5004: ["5-ShuiHu-WuSong", "水浒-武松", 50],
+    5004: ["5-ShuiHu-WuSong", "水浒-武松", 50], #------
     #5016: ["5-ShuiHu-RuanXiaoEr", "水浒-阮小二", 10], #------
     #5028: ["5-ShuiHu-RuanXiaoQi", "水浒-阮小七", 0], #------
     5075: ["5-JuYiTing", "聚义厅", 5],
@@ -458,6 +458,8 @@ CastingId2MetaInfo = {
     5097: ["5-ShuiHu-LinChong", "水浒-林冲", 100],
     5070: ["5-ShuiHu-YanQing", "水浒-燕青", 50],
     4149: ["5-XiaoXiaoJianPan-LZai", "小小键盘-L仔", 30],
+    5107: ["5-BaoZi", "包子", 2],
+    5111: ["5-XingZheWuSong", "行者武松", 100],
     
     #4443: ["6-XuShiZhongShu", "虚实中枢"],
     #4448: ["6-XuNiLiRen", "虚拟利刃"],
