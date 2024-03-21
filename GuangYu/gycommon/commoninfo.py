@@ -386,7 +386,7 @@ CastingId2MetaInfo = {
     #4442: ["5-DuoWeiCuoZhiHongQiao", "多维错致虹桥"],
     #4453: ["5-LiuHongFengFan", "流虹风帆"],
     #4450: ["5-MengMaQiYuan", "梦马奇缘"], #*
-    4455: ["5-JingGuangJiaoNang", "晶光胶囊"],
+    4455: ["5-JingGuangJiaoNang", "晶光胶囊"], #------
     #4479: ["5-HuoFengTouKui", "火风头盔"], #------
     #4483: ["5-JuanHuaZhiZhan", "镌花之盏"], #-------
     #4470: ["5-JiangCaiYingQuan", "绛彩映泉"], #*
@@ -436,7 +436,7 @@ CastingId2MetaInfo = {
     4717: ["5-ShuangYuanZhiHe", "双源之核"],
     4755: ["5-QianXiZhiZhang", "前夕织章"],
     #4566: ["5-FangShengJiXieFeng", "仿生机械蜂", 10], #------
-    4663: ["5-ShenGuangZhiFei", "神光之扉", 10],
+    4663: ["5-ShenGuangZhiFei", "神光之扉", 10], #------
     5000: ["5-JiangHuLing", "江湖令", 1],
     5003: ["5-ShuiHu-ZhangQing", "水浒-张青", 5],
     5004: ["5-ShuiHu-WuSong", "水浒-武松", 50], #------
@@ -451,12 +451,12 @@ CastingId2MetaInfo = {
     #5054: ["5-ShuiHu-LuZhiShen", "水浒-鲁智深", 120], #------
     5048: ["5-ShuiHu-WuYong", "水浒-吴用", 200],
     5063: ["5-WuSongDaHu", "武松打虎", 10],
-    5077: ["5-ShuiHu-HuSanNiang", "水浒-扈三娘", 10],
-    5055: ["5-ShuiHu-LiKui", "水浒-李逵", 50],
+    5077: ["5-ShuiHu-HuSanNiang", "水浒-扈三娘", 10], #------
+    5055: ["5-ShuiHu-LiKui", "水浒-李逵", 50], #------
     5086: ["5-XiMenQing", "西门庆", 5],
     5085: ["5-ShenSuanZi", "神算子", 3],
     5097: ["5-ShuiHu-LinChong", "水浒-林冲", 100],
-    5070: ["5-ShuiHu-YanQing", "水浒-燕青", 50],
+    5070: ["5-ShuiHu-YanQing", "水浒-燕青", 50], #------
     4149: ["5-XiaoXiaoJianPan-LZai", "小小键盘-L仔", 30],
     5107: ["5-BaoZi", "包子", 2],
     5111: ["5-XingZheWuSong", "行者武松", 100],
@@ -649,14 +649,14 @@ CastingId2MetaInfo = {
 
     5029: ["10-BabyDragon", "BabyDragon", 10],
     #5040: ["9-SmallDragon", "SmallDragon", 0], #------
-    5046: ["10-XiaoXiaoJianPan-FZai", "小小键盘-F仔", 20],
+    5046: ["10-WeiLaiJianPan-FZai", "未来键盘-F仔", 25],
     5061: ["10-DragonKing", "DragonKing", 100], 
     #5073: ["10-YuLongShi", "驭龙师", 0], #------
     #4227: ["10-ZuiQiangWangZhe", "最强王者", 10],
     5083: ["10-TuLongYongShi", "屠龙勇士", 2],
-    5095: ["10-FengLong", "风龙", 2],
-    5101: ["10-HuoLong", "火龙", 2],
-    5106: ["10-DiLong", "地龙", 2],
+    5095: ["10-FengLong", "风龙", 1],
+    5101: ["10-HuoLong", "火龙", 1],
+    5106: ["10-DiLong", "地龙", 1],
 
     #4228: ["88-WangZheZhiZhan", "王者之战", 5],
     #4412: ["88-FengWuZhiYuan", "风舞纸鸢", 30],
