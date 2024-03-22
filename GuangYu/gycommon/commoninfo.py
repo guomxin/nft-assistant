@@ -453,7 +453,7 @@ CastingId2MetaInfo = {
     5063: ["5-WuSongDaHu", "武松打虎", 10],
     #5077: ["5-ShuiHu-HuSanNiang", "水浒-扈三娘", 10], #------
     #5055: ["5-ShuiHu-LiKui", "水浒-李逵", 50], #------
-    5086: ["5-XiMenQing", "西门庆", 5],
+    5086: ["5-XiMenQing", "西门庆", 5], #------
     5115: ["5-ShenSuanZi", "神算子", 3],
     5097: ["5-ShuiHu-LinChong", "水浒-林冲", 100],
     #5070: ["5-ShuiHu-YanQing", "水浒-燕青", 50], #------
@@ -461,6 +461,7 @@ CastingId2MetaInfo = {
     5107: ["5-BaoZi", "包子", 2],
     5111: ["5-XingZheWuSong", "行者武松", 100],
     5082: ["5-QuanDaZhenGuanXi", "拳打镇关西", 30],
+    5116: ["5-ShuiHu-GuDaSao", "水浒-顾大嫂", 5],
     
     #4443: ["6-XuShiZhongShu", "虚实中枢"],
     #4448: ["6-XuNiLiRen", "虚拟利刃"],
@@ -593,7 +594,7 @@ CastingId2MetaInfo = {
     #4969: ["8-ShanHaiJing-BiFang", "山海经-毕方", 30],#------
     4993: ["8-LongTengHuaXia", "龙腾华夏", 2],
     5027: ["8-ShanHaiJing-BiBi", "山海经-獙獙", 50],
-    5021: ["8-QiaoMingYueYe", "桥明月夜", 10],
+    5021: ["8-QiaoMingYueYe", "桥明月夜", 5],
     #4989: ["8-ShanHaiJing-MengJi", "山海经-孟极", 50], #------
     #5060: ["8-QianYunShan", "纤芸扇", 20],
     #5076: ["8-ChuanQiZhiYe", "传奇之夜", 30],
@@ -632,11 +633,11 @@ CastingId2MetaInfo = {
     4955: ["9-XuKongZhanShenKaEr", "虚空战神卡尔", 50],
     4960: ["9-JiuJiKongJuZhiMen", "究极恐惧之门", 5],
     4959: ["9-WeiLaiTanXianJiaEZ", "未来探险家EZ", 10],
-    4956: ["9-ShenYuanZhenSheZhe20", "深渊震慑者20", 20],
+    4956: ["9-ShenYuanZhenSheZhe20", "深渊震慑者20", 10],
     #4968: ["9-WeiLaiJianPan-CtrlZai20-Old", "未来键盘-Ctrl仔20-老", 0], #------
-    4974: ["9-EMoZhiWangATuo", "恶魔之王阿托", 50],
+    4974: ["9-EMoZhiWangATuo", "恶魔之王阿托", 30],
     #4979: ["9-WeiLaiJianPan-CZai20", "未来键盘-C仔20", 0], #------
-    4961: ["9-XiaoLunLun", "小伦伦", 50],
+    4961: ["9-XiaoLunLun", "小伦伦", 30],
     #4983: ["9-WeiLaiTanSuoZhe-HeChengZiGeKa", "未来探索者-合成资格卡", 30], #------
     #4990: ["9-WeiLaiJianPan-VZai20", "未来键盘-V仔20", 0], #------
     #4991: ["9-WeiLaiTanSuoZhe20", "未来探索者20", 0], #------
@@ -648,17 +649,19 @@ CastingId2MetaInfo = {
     #5002: ["9-WeiLaiShiJianMoPan", "未来时间磨盘", 50], #------
     #5012: ["9-WeiLaiJianPan-QZai20", "未来键盘-Q仔20", 20], #------
 
-    5029: ["10-BabyDragon", "BabyDragon", 10],
+    5029: ["10-BabyDragon", "BabyDragon", 10], #------
     #5040: ["9-SmallDragon", "SmallDragon", 0], #------
-    5046: ["10-WeiLaiJianPan-FZai", "未来键盘-F仔", 25],
-    5061: ["10-DragonKing", "DragonKing", 100], 
+    5046: ["10-WeiLaiJianPan-FZai", "未来键盘-F仔", 25], #------
+    5061: ["10-DragonKing", "DragonKing", 100], #------
     #5073: ["10-YuLongShi", "驭龙师", 0], #------
     #4227: ["10-ZuiQiangWangZhe", "最强王者", 10],
-    5083: ["10-TuLongYongShi", "屠龙勇士", 2],
-    5095: ["10-FengLong", "风龙", 1],
-    5101: ["10-HuoLong", "火龙", 1],
-    5106: ["10-DiLong", "地龙", 1],
+    5083: ["10-TuLongYongShi", "屠龙勇士", 2], #------
+    5095: ["10-FengLong", "风龙", 1], #------
+    5101: ["10-HuoLong", "火龙", 1], #------
+    5106: ["10-DiLong", "地龙", 1], #------
     5113: ["10-LingLongWang", "灵龙王", 100],
+    5117: ["10-XiaoXiaoJianPan-FZai", "小小键盘-F仔", 2],
+    5126: ["10-HeiAnLongWang", "黑暗龙王", 30],
 
     #4228: ["88-WangZheZhiZhan", "王者之战", 5],
     #4412: ["88-FengWuZhiYuan", "风舞纸鸢", 30],
@@ -676,7 +679,7 @@ HighestValue_Products_Info = {
 }
 
 # 173
-Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzExNTE4Nzc1LCJzaWduSWQiOiI0ZGE1NDAyNzJmYzQ0YWI2YjBhZTA1YzgzMzFiMGM4OCIsImlhdCI6MTcxMDkxMzk3NX0.HW6MLDkIyziSpjhKQ7yvFBe47-vdH70Aey-OwfGwevY"
+Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzExNzE3NTQ2LCJzaWduSWQiOiJiYWI1ZjVkNDY4Nzc0YjJiYmM1N2I1Yzg0Yjc5MzM3MCIsImlhdCI6MTcxMTExMjc0Nn0.4YrKVqDiEpufeP7N20hOBUFKrTX-QhotSiUtEl30zs8"
 
 # 131
 Query_Token= "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxMzE1NjE2MTA5MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzExMzIxNzc4LCJzaWduSWQiOiI3MTE5NDRhZWJkYzc0YjA4OGJkMjc3Y2U4ODRiYmFlMCIsImlhdCI6MTcxMDcxNjk3OH0.u-qSEx3WVw--Lcylx_1gHrXfUvIUHVhWuFPZEApRads"
