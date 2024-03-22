@@ -386,7 +386,7 @@ CastingId2MetaInfo = {
     #4442: ["5-DuoWeiCuoZhiHongQiao", "多维错致虹桥"],
     #4453: ["5-LiuHongFengFan", "流虹风帆"],
     #4450: ["5-MengMaQiYuan", "梦马奇缘"], #*
-    4455: ["5-JingGuangJiaoNang", "晶光胶囊"], #------
+    #4455: ["5-JingGuangJiaoNang", "晶光胶囊"], #------
     #4479: ["5-HuoFengTouKui", "火风头盔"], #------
     #4483: ["5-JuanHuaZhiZhan", "镌花之盏"], #-------
     #4470: ["5-JiangCaiYingQuan", "绛彩映泉"], #*
@@ -436,13 +436,13 @@ CastingId2MetaInfo = {
     4717: ["5-ShuangYuanZhiHe", "双源之核"],
     4755: ["5-QianXiZhiZhang", "前夕织章"],
     #4566: ["5-FangShengJiXieFeng", "仿生机械蜂", 10], #------
-    4663: ["5-ShenGuangZhiFei", "神光之扉", 10], #------
+    #4663: ["5-ShenGuangZhiFei", "神光之扉", 10], #------
     5000: ["5-JiangHuLing", "江湖令", 1],
     5003: ["5-ShuiHu-ZhangQing", "水浒-张青", 5],
-    5004: ["5-ShuiHu-WuSong", "水浒-武松", 50], #------
+    #5004: ["5-ShuiHu-WuSong", "水浒-武松", 50], #------
     #5016: ["5-ShuiHu-RuanXiaoEr", "水浒-阮小二", 10], #------
     #5028: ["5-ShuiHu-RuanXiaoQi", "水浒-阮小七", 0], #------
-    5075: ["5-JuYiTing", "聚义厅", 5],
+    5109: ["5-JuYiTing", "聚义厅", 5],
     5041: ["5-ShuiHu", "水浒", 50],
     #5022: ["5-ShuiHu-SunErNiang", "水浒-孙二娘", 10],
     5044: ["5-ShiZiPoRouBaoZiPu", "十字坡肉包子铺", 30],
@@ -451,12 +451,12 @@ CastingId2MetaInfo = {
     #5054: ["5-ShuiHu-LuZhiShen", "水浒-鲁智深", 120], #------
     5048: ["5-ShuiHu-WuYong", "水浒-吴用", 200],
     5063: ["5-WuSongDaHu", "武松打虎", 10],
-    5077: ["5-ShuiHu-HuSanNiang", "水浒-扈三娘", 10], #------
-    5055: ["5-ShuiHu-LiKui", "水浒-李逵", 50], #------
+    #5077: ["5-ShuiHu-HuSanNiang", "水浒-扈三娘", 10], #------
+    #5055: ["5-ShuiHu-LiKui", "水浒-李逵", 50], #------
     5086: ["5-XiMenQing", "西门庆", 5],
-    5085: ["5-ShenSuanZi", "神算子", 3],
+    5115: ["5-ShenSuanZi", "神算子", 3],
     5097: ["5-ShuiHu-LinChong", "水浒-林冲", 100],
-    5070: ["5-ShuiHu-YanQing", "水浒-燕青", 50], #------
+    #5070: ["5-ShuiHu-YanQing", "水浒-燕青", 50], #------
     4149: ["5-XiaoXiaoJianPan-LZai", "小小键盘-L仔", 30],
     5107: ["5-BaoZi", "包子", 2],
     5111: ["5-XingZheWuSong", "行者武松", 100],
