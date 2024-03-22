@@ -461,6 +461,7 @@ CastingId2MetaInfo = {
     5107: ["5-BaoZi", "包子", 2],
     5111: ["5-XingZheWuSong", "行者武松", 100],
     5082: ["5-QuanDaZhenGuanXi", "拳打镇关西", 30],
+    5113: ["5-LingLongWang", "灵龙王", 100],
     
     #4443: ["6-XuShiZhongShu", "虚实中枢"],
     #4448: ["6-XuNiLiRen", "虚拟利刃"],
