@@ -438,7 +438,7 @@ CastingId2MetaInfo = {
     #4566: ["5-FangShengJiXieFeng", "仿生机械蜂", 10], #------
     #4663: ["5-ShenGuangZhiFei", "神光之扉", 10], #------
     5000: ["5-JiangHuLing", "江湖令", 1],
-    5003: ["5-ShuiHu-ZhangQing", "水浒-张青", 5],
+    5003: ["5-ShuiHu-ZhangQing", "水浒-张青", 2],
     #5004: ["5-ShuiHu-WuSong", "水浒-武松", 50], #------
     #5016: ["5-ShuiHu-RuanXiaoEr", "水浒-阮小二", 10], #------
     #5028: ["5-ShuiHu-RuanXiaoQi", "水浒-阮小七", 0], #------
@@ -453,7 +453,7 @@ CastingId2MetaInfo = {
     5063: ["5-WuSongDaHu", "武松打虎", 10],
     #5077: ["5-ShuiHu-HuSanNiang", "水浒-扈三娘", 10], #------
     #5055: ["5-ShuiHu-LiKui", "水浒-李逵", 50], #------
-    5086: ["5-XiMenQing", "西门庆", 5], #------
+    #5086: ["5-XiMenQing", "西门庆", 5], #------
     5115: ["5-ShenSuanZi", "神算子", 3],
     5097: ["5-ShuiHu-LinChong", "水浒-林冲", 100],
     #5070: ["5-ShuiHu-YanQing", "水浒-燕青", 50], #------
@@ -649,18 +649,18 @@ CastingId2MetaInfo = {
     #5002: ["9-WeiLaiShiJianMoPan", "未来时间磨盘", 50], #------
     #5012: ["9-WeiLaiJianPan-QZai20", "未来键盘-Q仔20", 20], #------
 
-    5029: ["10-BabyDragon", "BabyDragon", 10], #------
+    #5029: ["10-BabyDragon", "BabyDragon", 10], #------
     #5040: ["9-SmallDragon", "SmallDragon", 0], #------
-    5046: ["10-WeiLaiJianPan-FZai", "未来键盘-F仔", 25], #------
-    5061: ["10-DragonKing", "DragonKing", 100], #------
+    #5046: ["10-WeiLaiJianPan-FZai", "未来键盘-F仔", 25], #------
+    #5061: ["10-DragonKing", "DragonKing", 100], #------
     #5073: ["10-YuLongShi", "驭龙师", 0], #------
     #4227: ["10-ZuiQiangWangZhe", "最强王者", 10],
-    5083: ["10-TuLongYongShi", "屠龙勇士", 2], #------
-    5095: ["10-FengLong", "风龙", 1], #------
-    5101: ["10-HuoLong", "火龙", 1], #------
-    5106: ["10-DiLong", "地龙", 1], #------
+    #5083: ["10-TuLongYongShi", "屠龙勇士", 2], #------
+    #5095: ["10-FengLong", "风龙", 1], #------
+    #5101: ["10-HuoLong", "火龙", 1], #------
+    #5106: ["10-DiLong", "地龙", 1], #------
     5113: ["10-LingLongWang", "灵龙王", 100],
-    5117: ["10-XiaoXiaoJianPan-FZai", "小小键盘-F仔", 2],
+    5127: ["10-XiaoXiaoJianPan-FZai", "小小键盘-F仔", 2],
     5126: ["10-HeiAnLongWang", "黑暗龙王", 30],
 
     #4228: ["88-WangZheZhiZhan", "王者之战", 5],

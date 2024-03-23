@@ -226,10 +226,6 @@ echo "---武松打虎---"
 python grab_transaction_price.py 5063 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 5063 ${yesterday} 10
 
-echo "---西门庆---"
-python grab_transaction_price.py 5086 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 5086 ${yesterday} 10
-
 echo "---神算子---"
 python grab_transaction_price.py 5115 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 5115 ${yesterday} 10
@@ -394,41 +390,13 @@ python grab_transaction_price.py 4961 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 4961 ${yesterday} 10
 
 #--- 趣梦区 ---#
-echo "---BabyDragon---"
-python grab_transaction_price.py 5029 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 5029 ${yesterday} 10
-
-echo "---未来键盘-F仔---"
-python grab_transaction_price.py 5046 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 5046 ${yesterday} 10
-
-echo "---DragonKing---"
-python grab_transaction_price.py 5061 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 5061 ${yesterday} 10
-
-echo "---屠龙勇士---"
-python grab_transaction_price.py 5083 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 5083 ${yesterday} 10
-
-echo "---风龙---"
-python grab_transaction_price.py 5095 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 5095 ${yesterday} 10
-
-echo "---火龙---"
-python grab_transaction_price.py 5101 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 5101 ${yesterday} 10
-
-echo "---地龙---"
-python grab_transaction_price.py 5106 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 5106 ${yesterday} 10
-
 echo "---灵龙王---"
 python grab_transaction_price.py 5113 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 5113 ${yesterday} 100
 
 echo "---小小键盘-F仔---"
-python grab_transaction_price.py 5117 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 5117 ${yesterday} 10
+python grab_transaction_price.py 5127 ${yesterday} ${yesterday}
+python analyze_transaction_prices.py 5127 ${yesterday} 10
 
 echo "---黑暗龙王---"
 python grab_transaction_price.py 5126 ${yesterday} ${yesterday}
@@ -444,7 +412,7 @@ for nft in "1-N-MengYouGeLou" "1-N-YouLingTianTai" "1-N-ChaoNengMoJing" \
 "2-ZaiFuXiangHuang" "2-LongYinWanXiang" "2-JinQuXiYin" "2-YiShouFuTu" "2-JiuChongTianWaiTian" \
 "3-ZhongYiWuSheng" "3-ChuFengMingTong" "3-ChongHuoFeiYan" \
 "3-HuBenZhanXue" "3-YinXuJianDao" "3-FengDengBaiGu" "3-YongMengShuBing" "3-KuaiHuRen" "3-RuiFengJianLing" "3-YunYuYangFeng" \
-"5-ShengJingZhiMen" "5-ShuiHu-WuYong" "5-XiMenQing" \
+"5-ShengJingZhiMen" "5-ShuiHu-WuYong" \
 "5-BingShuangLengQueXiTong" "5-HeiQiaoJiXieCheng" "5-ShenSuanZi" "5-ShuiHu-LinChong" \
 "5-CaiTangMengLeYuan" "5-Xmas-GuangLuXueQiao" "5-JiangHuLing" "5-WuSongDaHu" \
 "5-YeDanJuNengGuan" "5-CiNengXuanFuBan" "5-LiuGuangYouShi" "5-ZhiKongJiXieHuShou" "5-HuanYingLeiTing" \
@@ -461,8 +429,7 @@ for nft in "1-N-MengYouGeLou" "1-N-YouLingTianTai" "1-N-ChaoNengMoJing" \
 "9-WeiLaiShuJu" "9-ChaoJiNengLiang" "9-WeiLaiShiDai" "9-ShenYuanZhenSheZhe20" \
 "9-ShuJuDaiMa" "9-XuKongZhanShenKaEr" "9-JiuJiKongJuZhiMen" "9-WeiLaiTanXianJiaEZ" \
 "9-EMoZhiWangATuo" "9-XiaoLunLun"  \
-"10-BabyDragon" "10-DragonKing" "10-WeiLaiJianPan-FZai" "10-LingLongWang" "10-HeiAnLongWang" \
-"10-TuLongYongShi" "10-FengLong" "10-HuoLong" "10-DiLong" "10-XiaoXiaoJianPan-FZai"
+"10-LingLongWang" "10-HeiAnLongWang" "10-XiaoXiaoJianPan-FZai"
 do
     mkdir $nft;mv *$nft*.csv $nft;zip -q $nft-$yesterday $nft/*
 done
