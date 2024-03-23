@@ -442,7 +442,7 @@ CastingId2MetaInfo = {
     #5004: ["5-ShuiHu-WuSong", "水浒-武松", 50], #------
     #5016: ["5-ShuiHu-RuanXiaoEr", "水浒-阮小二", 10], #------
     #5028: ["5-ShuiHu-RuanXiaoQi", "水浒-阮小七", 0], #------
-    5109: ["5-JuYiTing", "聚义厅", 5],
+    5109: ["5-JuYiTing", "聚义厅", 3],
     5041: ["5-ShuiHu", "水浒", 50],
     #5022: ["5-ShuiHu-SunErNiang", "水浒-孙二娘", 10],
     5044: ["5-ShiZiPoRouBaoZiPu", "十字坡肉包子铺", 30],
@@ -666,6 +666,7 @@ CastingId2MetaInfo = {
     5127: ["10-XiaoXiaoJianPan-FZai", "小小键盘-F仔", 2],
     5126: ["10-HeiAnLongWang", "黑暗龙王", 30],
     5130: ["10-ShanLongWang", "山龙王", 50],
+    5132: ["10-YingLongWang", "影龙王", 50],
 
     #4228: ["88-WangZheZhiZhan", "王者之战", 5],
     #4412: ["88-FengWuZhiYuan", "风舞纸鸢", 30],
