@@ -465,8 +465,9 @@ CastingId2MetaInfo = {
     #5108: ["5-LiShiShi", "李诗诗", 10],
     #5103: ["5-PanJinLian", "潘金莲", 30],
     5112: ["5-DaDaoGuanSheng", "大刀关胜", 100],
-    5110: ["5-YeRuBaiHuTang", "夜入白虎堂", 0],
+    5110: ["5-YeRuBaiHuTang", "夜入白虎堂", 0], #------
     5128: ["5-ShuiHu-ShiJin", "水浒-史进", 10],
+    5139: ["5-JunJiChu", "军机处", 8],
     
     #4443: ["6-XuShiZhongShu", "虚实中枢"],
     #4448: ["6-XuNiLiRen", "虚拟利刃"],
