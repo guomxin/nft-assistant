@@ -465,7 +465,7 @@ CastingId2MetaInfo = {
     #5108: ["5-LiShiShi", "李诗诗", 10],
     #5103: ["5-PanJinLian", "潘金莲", 30],
     5112: ["5-DaDaoGuanSheng", "大刀关胜", 100],
-    5110: ["5-YeRuBaiHuTang", "夜入白虎堂", 0], #------
+    #5110: ["5-YeRuBaiHuTang", "夜入白虎堂", 0], #------
     5128: ["5-ShuiHu-ShiJin", "水浒-史进", 10],
     5139: ["5-JunJiChu", "军机处", 8],
     
@@ -609,6 +609,8 @@ CastingId2MetaInfo = {
     5098: ["8-XingChenQiYu", "星辰奇遇", 50],
     5047: ["8-YaoYeDengXia", "曜夜灯匣", 2],
     5079: ["8-LouHuaSanLun", "镂花伞轮", 30],
+    5123: ["8-FanXingDianDian", "繁星点点", 10],
+    5122: ["8-YunXiaHuaBao", "云霞华宝", 10],
 
     #4515: ["9-ShuGuangPuJiZhan", "殊光谱基站"], #*
     #4562: ["9-ZhengZhaoJiJia", "征召机甲", 100], #------
@@ -670,6 +672,7 @@ CastingId2MetaInfo = {
     5126: ["10-HeiAnLongWang", "黑暗龙王", 30],
     5130: ["10-ShanLongWang", "山龙王", 50],
     5132: ["10-YingLongWang", "影龙王", 50],
+    5137: ["10-CangLongWang", "苍龙王", 50],
 
     #4228: ["88-WangZheZhiZhan", "王者之战", 5],
     #4412: ["88-FengWuZhiYuan", "风舞纸鸢", 30],
@@ -687,7 +690,7 @@ HighestValue_Products_Info = {
 }
 
 # 173
-Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzExNzE3NTQ2LCJzaWduSWQiOiJiYWI1ZjVkNDY4Nzc0YjJiYmM1N2I1Yzg0Yjc5MzM3MCIsImlhdCI6MTcxMTExMjc0Nn0.4YrKVqDiEpufeP7N20hOBUFKrTX-QhotSiUtEl30zs8"
+Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzExOTY2MDE4LCJzaWduSWQiOiIzNjkzZDBlOWY1ZjI0NWY1YjQ4OTFiNWY4MzQ1YzQ2OCIsImlhdCI6MTcxMTM2MTIxOH0.YAx4MucNcPZdYjJTJxi1rClZmuEjkXh9iWnW9z7uq2I"
 
 # 131
 Query_Token= "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxMzE1NjE2MTA5MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzExMzIxNzc4LCJzaWduSWQiOiI3MTE5NDRhZWJkYzc0YjA4OGJkMjc3Y2U4ODRiYmFlMCIsImlhdCI6MTcxMDcxNjk3OH0.u-qSEx3WVw--Lcylx_1gHrXfUvIUHVhWuFPZEApRads"
