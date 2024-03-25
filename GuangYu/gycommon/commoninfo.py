@@ -468,6 +468,9 @@ CastingId2MetaInfo = {
     #5110: ["5-YeRuBaiHuTang", "夜入白虎堂", 0], #------
     5128: ["5-ShuiHu-ShiJin", "水浒-史进", 10],
     5139: ["5-JunJiChu", "军机处", 8],
+    5133: ["5-ShuiHu-HuYanZhuo", "水浒-呼延灼", 30],
+    5141: ["5-ShuiHu-DongPing", "水浒-董平", 30],
+    5142: ["5-JiuSi", "酒肆", 30],
     
     #4443: ["6-XuShiZhongShu", "虚实中枢"],
     #4448: ["6-XuNiLiRen", "虚拟利刃"],
@@ -667,12 +670,13 @@ CastingId2MetaInfo = {
     #5095: ["10-FengLong", "风龙", 1], #------
     #5101: ["10-HuoLong", "火龙", 1], #------
     #5106: ["10-DiLong", "地龙", 1], #------
-    5113: ["10-LingLongWang", "灵龙王", 100],
+    5113: ["10-LingLongWang", "灵龙王", 100], #------
     5127: ["10-XiaoXiaoJianPan-FZai", "小小键盘-F仔", 2],
     5126: ["10-HeiAnLongWang", "黑暗龙王", 30],
-    5130: ["10-ShanLongWang", "山龙王", 50],
+    5130: ["10-ShanLongWang", "山龙王", 50], #------
     5132: ["10-YingLongWang", "影龙王", 50],
     5137: ["10-CangLongWang", "苍龙王", 50],
+    5143: ["10-LongHun", "龙魂", 20],
 
     #4228: ["88-WangZheZhiZhan", "王者之战", 5],
     #4412: ["88-FengWuZhiYuan", "风舞纸鸢", 30],
