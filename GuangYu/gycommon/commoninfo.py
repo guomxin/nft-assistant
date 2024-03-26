@@ -601,13 +601,13 @@ CastingId2MetaInfo = {
     #4962: ["8-ShanHaiJing-FuZhu", "山海经-夫诸", 30], #------
     #4984: ["8-ShanHaiJing-GuDiao", "山海经-蛊雕", 0], #------
     #4969: ["8-ShanHaiJing-BiFang", "山海经-毕方", 30],#------
-    4993: ["8-LongTengHuaXia", "龙腾华夏", 2],
+    4993: ["8-LongTengHuaXia", "龙腾华夏", 1],
     5027: ["8-ShanHaiJing-BiBi", "山海经-獙獙", 50],
     5021: ["8-QiaoMingYueYe", "桥明月夜", 5],
     #4989: ["8-ShanHaiJing-MengJi", "山海经-孟极", 50], #------
     #5060: ["8-QianYunShan", "纤芸扇", 20],
     #5076: ["8-ChuanQiZhiYe", "传奇之夜", 30],
-    5051: ["8-FanHuaShengShi", "繁华盛世", 2],
+    5051: ["8-FanHuaShengShi", "繁华盛世", 1],
     5088: ["8-BiShanQiongYu", "璧山琼宇", 2],
     5098: ["8-XingChenQiYu", "星辰奇遇", 50],
     5047: ["8-YaoYeDengXia", "曜夜灯匣", 2],
@@ -670,11 +670,11 @@ CastingId2MetaInfo = {
     #5095: ["10-FengLong", "风龙", 1], #------
     #5101: ["10-HuoLong", "火龙", 1], #------
     #5106: ["10-DiLong", "地龙", 1], #------
-    5113: ["10-LingLongWang", "灵龙王", 100], #------
+    #5113: ["10-LingLongWang", "灵龙王", 100], #------
     5127: ["10-XiaoXiaoJianPan-FZai", "小小键盘-F仔", 2],
     5126: ["10-HeiAnLongWang", "黑暗龙王", 30],
-    5130: ["10-ShanLongWang", "山龙王", 50], #------
-    5132: ["10-YingLongWang", "影龙王", 50],
+    #5130: ["10-ShanLongWang", "山龙王", 50], #------
+    #5132: ["10-YingLongWang", "影龙王", 50], #------
     5137: ["10-CangLongWang", "苍龙王", 50],
     5143: ["10-LongHun", "龙魂", 20],
 
