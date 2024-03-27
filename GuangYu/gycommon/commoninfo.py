@@ -328,7 +328,7 @@ CastingId2MetaInfo = {
     4386: ["2-JinLianLingZhan", "金莲灵盏", 30],
     4384: ["2-YiShouFuTu", "异兽浮图", 60],
     4323: ["2-DaMoHuanShi", "大魔幻师", 100],
-    4607: ["2-JiuChongTianWaiTian", "九重天外天", 100],
+    4607: ["2-JiuChongTianWaiTian", "九重天外天", 200],
     #4719: ["2-XianLuQiongJiang", "仙露琼浆", 40], #------
     #4737: ["2-JiangShanShengJingBeiZhan", "江山盛景杯盏", 40], #------
     #4756: ["2-LingYunJinLouYuYu", "凌云金楼玉宇", 45], 
@@ -473,6 +473,7 @@ CastingId2MetaInfo = {
     5142: ["5-JiuSi", "酒肆", 30],
     5150: ["5-Jiu", "酒", 8],
     5151: ["5-LiangCao", "粮草", 8],
+    5129: ["5-ShuiHu-QinMing", "水浒-秦明", 10],
     
     #4443: ["6-XuShiZhongShu", "虚实中枢"],
     #4448: ["6-XuNiLiRen", "虚拟利刃"],
