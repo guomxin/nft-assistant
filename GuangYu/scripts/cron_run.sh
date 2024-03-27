@@ -474,10 +474,11 @@ for nft in "1-N-MengYouGeLou" "1-N-YouLingTianTai" "1-N-ChaoNengMoJing" \
 "5-YeDanJuNengGuan" "5-CiNengXuanFuBan" "5-LiuGuangYouShi" "5-ZhiKongJiXieHuShou" "5-HuanYingLeiTing" \
 "5-YeNengFangYuTa" "5-PingAnQiShiDan" "5-ShuiHu-ZhangQing" "5-XiaoXiaoJianPan-LZai" \
 "5-CaoMeiNaiXiBei" "5-ShuangYuanZhiHe" "5-ShiZiPoRouBaoZiPu" "5-QuanDaZhenGuanXi" \
-"5-QianXiZhiZhang" "5-JuYiTing" "5-ShuiHu" "5-NengLiangXuJiDanYuan" "5-ShuiHu-HuYanZhuo" \
+"5-QianXiZhiZhang" "5-JuYiTing" "5-NengLiangXuJiDanYuan" "5-ShuiHu-HuYanZhuo" \
 "5-BaoZi" "5-XingZheWuSong" "5-ShuiHu-GuDaSao" "5-DaDaoGuanSheng"  "5-ShuiHu-ShiJin" \
 "5-Jiu" "5-LiangCao" "5-ShuiHu-QinMing" \
-"6-SaiBoQiFeiKa" "6-EMoXunZhang"  "6-SaiBoNiYu" "6-SaiBoTop" "6-SaiBoPoYiHeXin" "6-SaiBoTopOne" \
+"5-ShuiHu" \
+"6-SaiBoQiFeiKa" "6-EMoXunZhang"  "6-SaiBoNiYu" "6-SaiBoTopOne" "6-SaiBoTop" "6-SaiBoPoYiHeXin" \
 "6-SaiBoJiangZiYa" "6-SaiBoKawasaki" \
 "7-XiangSuQiJing" "7-TanXianZheIV" "7-XunBaoZheI" "7-GongYunXiaoShao" "7-FangBiaoZhiShiDeng" "7-YeGuWangCheng" \
 "8-ChuanShuoKaPian" "8-QiaoMingYueYe" "8-XingChenQiYu" "8-YunXiaHuaBao" \
