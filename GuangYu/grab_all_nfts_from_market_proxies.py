@@ -9,10 +9,11 @@ from gycommon import commoninfo
 from gycommon import utils
 
 GET_ALL_SALE_LIST_URL = "https://api.gandart.com/corecenter/userSaleRecords/es/querySaleToElasticSearch"
-PAGE_SIZE = 200
+PAGE_SIZE = 300
 TIME_OUT = 3
 GET_CASTING_DETAIL_URL = "https://api2.gandart.com/market/api/v2/resaleManage/resale/collectionDetailsByCastingId"
 BUY_URL = "https://api.gandart.com/base/v2/resaleManage/resale/buy/v2"
+PAY_URL = "https://api.gandart.com/api/v2/wallet/sand/pay"
 
 TRAN_STATUS_SALING = 2
 
@@ -152,9 +153,36 @@ def buy_product(casting_id, prod_id, token, proxies):
             if not res["success"]:
                 print("下单失败: {} casting_id={},prod_id={},msg={}".format(
                     datetime.now(), casting_id, prod_id, res["msg"]))
-                return False
+                return (-1, None)
             else:
-                return True
+                return (0, res["obj"]["orderNum"])
+        except Exception as e:
+            time.sleep(3)
+            print(e)
+
+def pay(casting_id, prod_id, order_num, token, proxies):
+    data = {
+        "orderNum": order_num,
+        "castingId": casting_id,
+        "transactionRecordId": prod_id,
+        #"userId": user_id,
+    }
+
+    headers = {
+    }
+    headers["token"] = token
+
+    while True:
+        try: 
+            data = utils.decorate_api_data(data)
+            res = requests.post(PAY_URL, data=data, headers=headers, proxies=proxies, timeout=TIME_OUT).json()
+            if not res["success"]:
+                print("支付失败: {} casting_id={},prod_id={},msg={}".format(
+                    datetime.now(), casting_id, prod_id, res["msg"]))
+                return (-1, None)
+            else:
+                print(res)
+                return (0, res["obj"]["passwordURL"])
         except Exception as e:
             time.sleep(3)
             print(e)
@@ -226,13 +254,18 @@ if __name__ == "__main__":
                         continue
                     prod_name = commoninfo.CastingId2MetaInfo[casting_id][1]
                     print(prod_name, price, prod_id)
-                    if buy_product(casting_id, prod_id, token, proxies):
+                    (res_code, order_num) = buy_product(casting_id, prod_id, token, proxies)
+                    if res_code == 0:
                         content = """
 光予: 购买{}
 >时间: {}
 >价格: {}""".format(prod_name, datetime.now(), price)
                         print(content)
                         utils.send_workwx_msg_agg(utils.GrabNFTs_MSG, "markdown", content)
+                        (res_code, password_url) = pay(casting_id, prod_id, order_num, token, proxies)
+                        if res_code == 0:
+                            utils.send_workwx_msg_agg(utils.GrabNFTs_MSG, "text", "{}:{}:{}".format(
+                                prod_name, price, password_url))
                         """
                         msg = "购买 {}:{}:{}".format(datetime.now(), prod_name, price)
                         print(msg)

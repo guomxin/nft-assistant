@@ -566,7 +566,7 @@ CastingId2MetaInfo = {
     #5008: ["6-SaiBoYunLiangShu", "赛博运粮鼠", 0], #------
     5019: ["6-SaiBoNiYu", "赛博拟羽", 5],
     #5039: ["6-SaiBoBaoXiaoJi", "赛博报晓鸡", 0], #------
-    4982: ["6-SaiBoTop", "赛博Top", 8],
+    4982: ["6-SaiBoTop", "赛博Top", 6],
     5018: ["6-SaiBoPoYiHeXin", "赛博破译核心", 5],
     5064: ["6-SaiBoTopOne", "赛博TopOne", 6],
     5049: ["6-SaiBoJiangZiYa", "赛博姜子牙", 30],
