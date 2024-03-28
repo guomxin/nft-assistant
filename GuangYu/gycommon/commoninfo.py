@@ -474,6 +474,7 @@ CastingId2MetaInfo = {
     5150: ["5-Jiu", "酒", 8],
     5151: ["5-LiangCao", "粮草", 8],
     5129: ["5-ShuiHu-QinMing", "水浒-秦明", 10],
+    5119: ["5-ShuiHu-CaiQing", "水浒-蔡庆", 10],
     
     #4443: ["6-XuShiZhongShu", "虚实中枢"],
     #4448: ["6-XuNiLiRen", "虚拟利刃"],
@@ -682,6 +683,7 @@ CastingId2MetaInfo = {
     5143: ["10-LongHun", "龙魂", 20],
     5148: ["10-YingLongZhu", "影龙珠", 20],
     5149: ["10-YingLongWei", "影龙卫", 30],
+    5152: ["10-YingLong", "应龙", 20],
 
     #4228: ["88-WangZheZhiZhan", "王者之战", 5],
     #4412: ["88-FengWuZhiYuan", "风舞纸鸢", 30],
