@@ -328,7 +328,7 @@ CastingId2MetaInfo = {
     4386: ["2-JinLianLingZhan", "金莲灵盏", 30],
     4384: ["2-YiShouFuTu", "异兽浮图", 60],
     4323: ["2-DaMoHuanShi", "大魔幻师", 100],
-    4607: ["2-JiuChongTianWaiTian", "九重天外天", 200],
+    4607: ["2-JiuChongTianWaiTian", "九重天外天", 100],
     #4719: ["2-XianLuQiongJiang", "仙露琼浆", 40], #------
     #4737: ["2-JiangShanShengJingBeiZhan", "江山盛景杯盏", 40], #------
     #4756: ["2-LingYunJinLouYuYu", "凌云金楼玉宇", 45], 
@@ -475,6 +475,7 @@ CastingId2MetaInfo = {
     5151: ["5-LiangCao", "粮草", 8],
     5129: ["5-ShuiHu-QinMing", "水浒-秦明", 10],
     5119: ["5-ShuiHu-CaiQing", "水浒-蔡庆", 10],
+    5134: ["5-ShuiHu-QiongYing", "水浒-琼英", 10],
     
     #4443: ["6-XuShiZhongShu", "虚实中枢"],
     #4448: ["6-XuNiLiRen", "虚拟利刃"],
@@ -675,13 +676,13 @@ CastingId2MetaInfo = {
     #5101: ["10-HuoLong", "火龙", 1], #------
     #5106: ["10-DiLong", "地龙", 1], #------
     #5113: ["10-LingLongWang", "灵龙王", 100], #------
-    5127: ["10-XiaoXiaoJianPan-FZai", "小小键盘-F仔", 2],
-    5126: ["10-HeiAnLongWang", "黑暗龙王", 30],
+    5127: ["10-XiaoXiaoJianPan-FZai", "小小键盘-F仔", 1],
+    #5126: ["10-HeiAnLongWang", "黑暗龙王", 30],
     #5130: ["10-ShanLongWang", "山龙王", 50], #------
     #5132: ["10-YingLongWang", "影龙王", 50], #------
     5137: ["10-CangLongWang", "苍龙王", 50],
     5143: ["10-LongHun", "龙魂", 20],
-    5148: ["10-YingLongZhu", "影龙珠", 20],
+    #5148: ["10-YingLongZhu", "影龙珠", 20],
     5149: ["10-YingLongWei", "影龙卫", 30],
     5152: ["10-YingLong", "应龙", 20],
 
