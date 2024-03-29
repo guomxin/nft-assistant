@@ -476,6 +476,7 @@ CastingId2MetaInfo = {
     5129: ["5-ShuiHu-QinMing", "水浒-秦明", 10],
     5119: ["5-ShuiHu-CaiQing", "水浒-蔡庆", 10],
     5134: ["5-ShuiHu-QiongYing", "水浒-琼英", 10],
+    5181: ["5-ShuiHu-SongJiang", "水浒-宋江", 100],
     
     #4443: ["6-XuShiZhongShu", "虚实中枢"],
     #4448: ["6-XuNiLiRen", "虚拟利刃"],
@@ -619,6 +620,9 @@ CastingId2MetaInfo = {
     5079: ["8-LouHuaSanLun", "镂花伞轮", 30],
     5123: ["8-FanXingDianDian", "繁星点点", 10],
     5122: ["8-YunXiaHuaBao", "云霞华宝", 10],
+    5102: ["8-JingShuiShenTan", "静水深潭", 1],
+    5144: ["8-BiShuiQingTian", "碧水青天", 2],
+    5160: ["8-LongYouSiHai", "龙游四海", 10],
 
     #4515: ["9-ShuGuangPuJiZhan", "殊光谱基站"], #*
     #4562: ["9-ZhengZhaoJiJia", "征召机甲", 100], #------
@@ -685,12 +689,13 @@ CastingId2MetaInfo = {
     #5148: ["10-YingLongZhu", "影龙珠", 20],
     5149: ["10-YingLongWei", "影龙卫", 30],
     5152: ["10-YingLong", "应龙", 20],
+    5184: ["10-LongXue", "龙血", 5],
 
     #4228: ["88-WangZheZhiZhan", "王者之战", 5],
     #4412: ["88-FengWuZhiYuan", "风舞纸鸢", 30],
-    4022: ["88-ShaoYouSuiShenTing", "烧友随身听", 4],
-    4214: ["88-BuMengYueWang", "捕梦月网", 10],
-    4407: ["88-QingXuanMoGui", "清玄墨圭", 10],
+    #4022: ["88-ShaoYouSuiShenTing", "烧友随身听", 4],
+    #4214: ["88-BuMengYueWang", "捕梦月网", 10],
+    #4407: ["88-QingXuanMoGui", "清玄墨圭", 10],
 }
 
 DEFAULT_MIN_PRICE = 5
