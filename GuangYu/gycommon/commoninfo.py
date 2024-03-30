@@ -475,7 +475,7 @@ CastingId2MetaInfo = {
     5151: ["5-LiangCao", "粮草", 8],
     5129: ["5-ShuiHu-QinMing", "水浒-秦明", 10],
     5119: ["5-ShuiHu-CaiQing", "水浒-蔡庆", 10],
-    5134: ["5-ShuiHu-QiongYing", "水浒-琼英", 10],
+    5134: ["5-ShuiHu-QiongYing", "水浒-琼英", 10], #------
     5181: ["5-ShuiHu-SongJiang", "水浒-宋江", 100],
     5162: ["5-JieDao", "戒刀", 8],
     5194: ["5-ShuiHu-XuNing", "水浒-徐宁", 10],
@@ -692,7 +692,11 @@ CastingId2MetaInfo = {
     5149: ["10-YingLongWei", "影龙卫", 30],
     #5152: ["10-YingLong", "应龙", 20],
     5184: ["10-LongXue", "龙血", 5],
-    5186: ["10-FeiLongZaiTian", "飞龙在天", 8],
+    5186: ["10-FeiLongZaiTian", "飞龙在天", 8], #------
+    5191: ["10-LongZhiYiHai", "龙之遗骸", 10], 
+    5192: ["10-LongGu", "龙骨", 10],
+    5193: ["10-YingLong-XuShui", "应龙-蓄水", 10],
+
 
     #4228: ["88-WangZheZhiZhan", "王者之战", 5],
     #4412: ["88-FengWuZhiYuan", "风舞纸鸢", 30],
