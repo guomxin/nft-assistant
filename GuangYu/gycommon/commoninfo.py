@@ -478,6 +478,7 @@ CastingId2MetaInfo = {
     5134: ["5-ShuiHu-QiongYing", "水浒-琼英", 10],
     5181: ["5-ShuiHu-SongJiang", "水浒-宋江", 100],
     5162: ["5-JieDao", "戒刀", 8],
+    5194: ["5-ShuiHu-XuNing", "水浒-徐宁", 10],
     
     #4443: ["6-XuShiZhongShu", "虚实中枢"],
     #4448: ["6-XuNiLiRen", "虚拟利刃"],
@@ -569,9 +570,9 @@ CastingId2MetaInfo = {
     #5008: ["6-SaiBoYunLiangShu", "赛博运粮鼠", 0], #------
     5019: ["6-SaiBoNiYu", "赛博拟羽", 5],
     #5039: ["6-SaiBoBaoXiaoJi", "赛博报晓鸡", 0], #------
-    4982: ["6-SaiBoTop", "赛博Top", 6],
+    4982: ["6-SaiBoTop", "赛博Top", 5],
     5018: ["6-SaiBoPoYiHeXin", "赛博破译核心", 5],
-    5064: ["6-SaiBoTopOne", "赛博TopOne", 6],
+    5064: ["6-SaiBoTopOne", "赛博TopOne", 5],
     5049: ["6-SaiBoJiangZiYa", "赛博姜子牙", 30],
     5050: ["6-SaiBoKawasaki", "赛博Kawasaki", 10],
 
@@ -686,7 +687,7 @@ CastingId2MetaInfo = {
     #5130: ["10-ShanLongWang", "山龙王", 50], #------
     #5132: ["10-YingLongWang", "影龙王", 50], #------
     #5137: ["10-CangLongWang", "苍龙王", 50],
-    5143: ["10-LongHun", "龙魂", 20],
+    5143: ["10-LongHun", "龙魂", 10],
     #5148: ["10-YingLongZhu", "影龙珠", 20],
     5149: ["10-YingLongWei", "影龙卫", 30],
     #5152: ["10-YingLong", "应龙", 20],
