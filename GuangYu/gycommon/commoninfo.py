@@ -459,9 +459,9 @@ CastingId2MetaInfo = {
     #5070: ["5-ShuiHu-YanQing", "水浒-燕青", 50], #------
     4149: ["5-XiaoXiaoJianPan-LZai", "小小键盘-L仔", 30],
     5107: ["5-BaoZi", "包子", 8],
-    5111: ["5-XingZheWuSong", "行者武松", 100],
+    #5111: ["5-XingZheWuSong", "行者武松", 100], #------
     5082: ["5-QuanDaZhenGuanXi", "拳打镇关西", 30],
-    5116: ["5-ShuiHu-GuDaSao", "水浒-顾大嫂", 5],
+    5116: ["5-ShuiHu-GuDaSao", "水浒-顾大嫂", 5], #------
     #5108: ["5-LiShiShi", "李诗诗", 10],
     #5103: ["5-PanJinLian", "潘金莲", 30],
     5112: ["5-DaDaoGuanSheng", "大刀关胜", 100],
@@ -475,10 +475,11 @@ CastingId2MetaInfo = {
     5151: ["5-LiangCao", "粮草", 8],
     5129: ["5-ShuiHu-QinMing", "水浒-秦明", 10],
     5119: ["5-ShuiHu-CaiQing", "水浒-蔡庆", 10],
-    5134: ["5-ShuiHu-QiongYing", "水浒-琼英", 10], #------
+    #5134: ["5-ShuiHu-QiongYing", "水浒-琼英", 10], #------
     5181: ["5-ShuiHu-SongJiang", "水浒-宋江", 100],
     5162: ["5-JieDao", "戒刀", 8],
-    5194: ["5-ShuiHu-XuNing", "水浒-徐宁", 10],
+    #5194: ["5-ShuiHu-XuNing", "水浒-徐宁", 10], #------
+    5208: ["5-ShuiHu-GaoQiu", "水浒-高俅", 50], 
     
     #4443: ["6-XuShiZhongShu", "虚实中枢"],
     #4448: ["6-XuNiLiRen", "虚拟利刃"],
@@ -621,10 +622,11 @@ CastingId2MetaInfo = {
     5047: ["8-YaoYeDengXia", "曜夜灯匣", 2],
     #5079: ["8-LouHuaSanLun", "镂花伞轮", 30],
     5123: ["8-FanXingDianDian", "繁星点点", 10],
-    5122: ["8-YunXiaHuaBao", "云霞华宝", 10],
+    5122: ["8-YunXiaHuaBao", "云霞华宝", 0],
     5102: ["8-JingShuiShenTan", "静水深潭", 1],
     5144: ["8-BiShuiQingTian", "碧水青天", 2],
     5160: ["8-LongYouSiHai", "龙游四海", 10],
+    5187: ["8-ChenXiChuXian", "晨曦初现", 30],
 
     #4515: ["9-ShuGuangPuJiZhan", "殊光谱基站"], #*
     #4562: ["9-ZhengZhaoJiJia", "征召机甲", 100], #------
@@ -692,11 +694,11 @@ CastingId2MetaInfo = {
     5149: ["10-YingLongWei", "影龙卫", 30],
     #5152: ["10-YingLong", "应龙", 20],
     5184: ["10-LongXue", "龙血", 5],
-    5186: ["10-FeiLongZaiTian", "飞龙在天", 8], #------
+    #5186: ["10-FeiLongZaiTian", "飞龙在天", 8], #------
     5191: ["10-LongZhiYiHai", "龙之遗骸", 10], 
     5192: ["10-LongGu", "龙骨", 10],
     5193: ["10-YingLong-XuShui", "应龙-蓄水", 10],
-
+    5209: ["10-YiDianYuan", "伊甸园", 2],
 
     #4228: ["88-WangZheZhiZhan", "王者之战", 5],
     #4412: ["88-FengWuZhiYuan", "风舞纸鸢", 30],
