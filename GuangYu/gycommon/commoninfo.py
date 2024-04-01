@@ -690,11 +690,11 @@ CastingId2MetaInfo = {
     #5130: ["10-ShanLongWang", "山龙王", 50], #------
     #5132: ["10-YingLongWang", "影龙王", 50], #------
     #5137: ["10-CangLongWang", "苍龙王", 50],
-    5143: ["10-LongHun", "龙魂", 10],
+    5143: ["10-LongHun", "龙魂", 2],
     #5148: ["10-YingLongZhu", "影龙珠", 20],
     5149: ["10-YingLongWei", "影龙卫", 30],
     #5152: ["10-YingLong", "应龙", 20],
-    5184: ["10-LongXue", "龙血", 5],
+    5184: ["10-LongXue", "龙血", 1],
     #5186: ["10-FeiLongZaiTian", "飞龙在天", 8], #------
     5191: ["10-LongZhiYiHai", "龙之遗骸", 10], 
     5192: ["10-LongGu", "龙骨", 10],
