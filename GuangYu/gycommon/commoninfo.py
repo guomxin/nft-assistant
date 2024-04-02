@@ -480,9 +480,10 @@ CastingId2MetaInfo = {
     5162: ["5-JieDao", "戒刀", 8],
     #5194: ["5-ShuiHu-XuNing", "水浒-徐宁", 10], #------
     5208: ["5-ShuiHu-GaoQiu", "水浒-高俅", 50], 
-    5179: ["5-ShuiHu-YangZhi", "水浒-杨志", 10],
+    5179: ["5-ShuiHu-YangZhi", "水浒-杨志", 10], #------
     #5100: ["5-HuaQiang", "花枪", 10], #------
-    
+    5195: ["5-ShuiHu-ZhangSanShuiQing", "水浒-张清", 5],
+
     #4443: ["6-XuShiZhongShu", "虚实中枢"],
     #4448: ["6-XuNiLiRen", "虚拟利刃"],
     #4451: ["6-GaoNengMaiChongBuQiang", "高能脉冲步枪"],
@@ -704,6 +705,8 @@ CastingId2MetaInfo = {
     5209: ["10-YiDianYuan", "伊甸园", 2],
     5210: ["10-YaDang-HeChengZiGeKa", "亚当-合成资格卡", 20],
     5218: ["10-YeHuoShaoBuJing", "野火烧不尽", 3],
+    5222: ["10-XiaWa", "夏娃", 2],
+    5221: ["10-YaDang", "亚当", 50],
 
     #4228: ["88-WangZheZhiZhan", "王者之战", 5],
     #4412: ["88-FengWuZhiYuan", "风舞纸鸢", 30],
