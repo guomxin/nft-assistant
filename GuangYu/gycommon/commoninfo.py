@@ -307,28 +307,28 @@ CastingId2MetaInfo = {
     #3457: ["1-N-QingKongYuFengZhou", "晴空御风帚", 30], ########
     3747: ["1-N-MengYouGeLou", "梦游阁楼", 10],
     3748: ["1-N-YouLingTianTai", "幽灵天台", 10],
-    3548: ["1-N-ChaoNengMoJing", "超能墨镜", 15],
+    3548: ["1-N-ChaoNengMoJing", "超能墨镜", 10],
     #3458: ["1-SR-YingMuHuanShaPeng", "影幕幻纱篷"],
-    3549: ["1-SR-QuanJiShouTao", "拳击手套", 20],
+    3549: ["1-SR-QuanJiShouTao", "拳击手套", 15],
     #2457: ["1-SSR-MoDengZhongXin", "摩登中心"],
     #2466: ["1-SSR-ZhongGuiTieDao", "重轨铁道"],
-    3550: ["1-SSR-ChaoShanDianCi", "超闪电磁", 50],
-    4629: ["1-WeiGuangFeiTan", "微光飞毯", 10],
-    4630: ["1-ShuGuangLuJian", "曙光陆舰", 10],
+    3550: ["1-SSR-ChaoShanDianCi", "超闪电磁", 30],
+    4629: ["1-WeiGuangFeiTan", "微光飞毯", 5],
+    4630: ["1-ShuGuangLuJian", "曙光陆舰", 5],
 
     #2456: ["2-UR-WeiLaiDuShi", "未来都市"],
     #2468: ["2-UR-YuanYangDuLun", "远洋渡轮"],
-    3646: ["2-UR-ShiKongChuanSuoJi", "时空穿梭机", 200],
-    3751: ["2-UR-YueQiuShangCheng", "月球上城", 200],
-    3535: ["2-ZaiFuXiangHuang", "载福祥凰", 200],
-    2837: ["2-LongYinWanXiang", "龙吟万象", 1000],
+    3646: ["2-UR-ShiKongChuanSuoJi", "时空穿梭机", 100],
+    3751: ["2-UR-YueQiuShangCheng", "月球上城", 100],
+    3535: ["2-ZaiFuXiangHuang", "载福祥凰", 100],
+    2837: ["2-LongYinWanXiang", "龙吟万象", 500],
     #2616: ["2-HuanShuShi", "幻术师"], 
     #2617: ["2-MoShuShi", "魔术师"],
-    4014: ["2-JinQuXiYin", "金躯玺印", 60],
-    4386: ["2-JinLianLingZhan", "金莲灵盏", 30],
-    4384: ["2-YiShouFuTu", "异兽浮图", 60],
-    4323: ["2-DaMoHuanShi", "大魔幻师", 100],
-    4607: ["2-JiuChongTianWaiTian", "九重天外天", 100],
+    4014: ["2-JinQuXiYin", "金躯玺印", 40],
+    4386: ["2-JinLianLingZhan", "金莲灵盏", 20],
+    4384: ["2-YiShouFuTu", "异兽浮图", 40],
+    4323: ["2-DaMoHuanShi", "大魔幻师", 50],
+    4607: ["2-JiuChongTianWaiTian", "九重天外天", 50],
     #4719: ["2-XianLuQiongJiang", "仙露琼浆", 40], #------
     #4737: ["2-JiangShanShengJingBeiZhan", "江山盛景杯盏", 40], #------
     #4756: ["2-LingYunJinLouYuYu", "凌云金楼玉宇", 45], 
@@ -480,9 +480,12 @@ CastingId2MetaInfo = {
     5162: ["5-JieDao", "戒刀", 8],
     #5194: ["5-ShuiHu-XuNing", "水浒-徐宁", 10], #------
     5208: ["5-ShuiHu-GaoQiu", "水浒-高俅", 50], 
-    5179: ["5-ShuiHu-YangZhi", "水浒-杨志", 10], #------
+    #5179: ["5-ShuiHu-YangZhi", "水浒-杨志", 10], #------
     #5100: ["5-HuaQiang", "花枪", 10], #------
     5195: ["5-ShuiHu-ZhangSanShuiQing", "水浒-张清", 5],
+    5220: ["5-ShuiHuZhuan", "水浒传", 10],
+    5206: ["5-ChaiFenKa", "拆分卡", 1], #------
+    5228: ["5-TouMingZhuang", "投名状", 10],
 
     #4443: ["6-XuShiZhongShu", "虚实中枢"],
     #4448: ["6-XuNiLiRen", "虚拟利刃"],
@@ -700,13 +703,14 @@ CastingId2MetaInfo = {
     #5184: ["10-LongXue", "龙血", 1], #------
     #5186: ["10-FeiLongZaiTian", "飞龙在天", 8], #------
     5191: ["10-LongZhiYiHai", "龙之遗骸", 10], 
-    5192: ["10-LongGu", "龙骨", 10],
+    5192: ["10-LongGu", "龙骨", 4], #------
     5193: ["10-YingLong-XuShui", "应龙-蓄水", 10],
     5209: ["10-YiDianYuan", "伊甸园", 2],
-    5210: ["10-YaDang-HeChengZiGeKa", "亚当-合成资格卡", 20],
-    5218: ["10-YeHuoShaoBuJing", "野火烧不尽", 3],
+    #5210: ["10-YaDang-HeChengZiGeKa", "亚当-合成资格卡", 20],
+    5218: ["10-YeHuoShaoBuJing", "野火烧不尽", 1], #------
     5222: ["10-XiaWa", "夏娃", 2],
     5221: ["10-YaDang", "亚当", 50],
+    5225: ["10-ShangDi-HeChengZiGeKa", "上帝-合成资格卡", 2],
 
     #4228: ["88-WangZheZhiZhan", "王者之战", 5],
     #4412: ["88-FengWuZhiYuan", "风舞纸鸢", 30],
