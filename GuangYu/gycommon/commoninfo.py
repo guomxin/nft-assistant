@@ -486,6 +486,8 @@ CastingId2MetaInfo = {
     5220: ["5-ShuiHuZhuan", "水浒传", 10],
     #5206: ["5-ChaiFenKa", "拆分卡", 1], #------
     5228: ["5-TouMingZhuang", "投名状", 10],
+    5158: ["5-ShuiHu-ZhangHeng", "水浒-张横", 10],
+    5212: ["5-ShuiHu-BaiSheng", "水浒-白胜", 10],
 
     #4443: ["6-XuShiZhongShu", "虚实中枢"],
     #4448: ["6-XuNiLiRen", "虚拟利刃"],
