@@ -467,7 +467,7 @@ CastingId2MetaInfo = {
     5112: ["5-DaDaoGuanSheng", "大刀关胜", 100],
     #5110: ["5-YeRuBaiHuTang", "夜入白虎堂", 0], #------
     5128: ["5-ShuiHu-ShiJin", "水浒-史进", 10],
-    5139: ["5-JunJiChu", "军机处", 8],
+    5139: ["5-JunJiChu", "军机处", 3],
     5133: ["5-ShuiHu-HuYanZhuo", "水浒-呼延灼", 30],
     5141: ["5-ShuiHu-DongPing", "水浒-董平", 30],
     5142: ["5-JiuSi", "酒肆", 30],
@@ -484,7 +484,7 @@ CastingId2MetaInfo = {
     #5100: ["5-HuaQiang", "花枪", 10], #------
     5195: ["5-ShuiHu-ZhangSanShuiQing", "水浒-张清", 5],
     5220: ["5-ShuiHuZhuan", "水浒传", 10],
-    5206: ["5-ChaiFenKa", "拆分卡", 1], #------
+    #5206: ["5-ChaiFenKa", "拆分卡", 1], #------
     5228: ["5-TouMingZhuang", "投名状", 10],
 
     #4443: ["6-XuShiZhongShu", "虚实中枢"],
@@ -577,10 +577,10 @@ CastingId2MetaInfo = {
     #5008: ["6-SaiBoYunLiangShu", "赛博运粮鼠", 0], #------
     5019: ["6-SaiBoNiYu", "赛博拟羽", 5],
     #5039: ["6-SaiBoBaoXiaoJi", "赛博报晓鸡", 0], #------
-    4982: ["6-SaiBoTop", "赛博Top", 5],
-    5018: ["6-SaiBoPoYiHeXin", "赛博破译核心", 5],
-    5064: ["6-SaiBoTopOne", "赛博TopOne", 5],
-    5049: ["6-SaiBoJiangZiYa", "赛博姜子牙", 30],
+    4982: ["6-SaiBoTop", "赛博Top", 4],
+    5018: ["6-SaiBoPoYiHeXin", "赛博破译核心", 4],
+    5064: ["6-SaiBoTopOne", "赛博TopOne", 4],
+    5049: ["6-SaiBoJiangZiYa", "赛博姜子牙", 20],
     5050: ["6-SaiBoKawasaki", "赛博Kawasaki", 10],
 
     3998: ["7-XiangSuQiJing", "像素奇晶"],
@@ -703,8 +703,8 @@ CastingId2MetaInfo = {
     #5184: ["10-LongXue", "龙血", 1], #------
     #5186: ["10-FeiLongZaiTian", "飞龙在天", 8], #------
     5191: ["10-LongZhiYiHai", "龙之遗骸", 10], 
-    5192: ["10-LongGu", "龙骨", 4], #------
-    5193: ["10-YingLong-XuShui", "应龙-蓄水", 10],
+    5192: ["10-LongGu", "龙骨", 1], #------
+    5193: ["10-YingLong-XuShui", "应龙-蓄水", 10], #------
     5209: ["10-YiDianYuan", "伊甸园", 2],
     #5210: ["10-YaDang-HeChengZiGeKa", "亚当-合成资格卡", 20],
     5218: ["10-YeHuoShaoBuJing", "野火烧不尽", 1], #------
