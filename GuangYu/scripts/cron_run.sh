@@ -290,10 +290,6 @@ echo "---水浒-高俅---"
 python grab_transaction_price.py 5208 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 5208 ${yesterday} 10
 
-echo "---水浒-张清---"
-python grab_transaction_price.py 5195 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 5195 ${yesterday} 10
-
 echo "---水浒传---"
 python grab_transaction_price.py 5220 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 5220 ${yesterday} 10
@@ -309,6 +305,10 @@ python analyze_transaction_prices.py 5158 ${yesterday} 10
 echo "---水浒-白胜---"
 python grab_transaction_price.py 5212 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 5212 ${yesterday} 10
+
+echo "---水浒-解珍---"
+python grab_transaction_price.py 5227 ${yesterday} ${yesterday}
+python analyze_transaction_prices.py 5227 ${yesterday} 10
 
 #--- 赛博狂潮 ---#
 echo "---赛博起飞卡---"
@@ -478,21 +478,9 @@ echo "---龙之遗骸---"
 python grab_transaction_price.py 5191 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 5191 ${yesterday} 10
 
-echo "---龙骨---"
-python grab_transaction_price.py 5192 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 5192 ${yesterday} 10
-
-echo "---应龙-蓄水---"
-python grab_transaction_price.py 5193 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 5193 ${yesterday} 10
-
 echo "---伊甸园---"
 python grab_transaction_price.py 5209 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 5209 ${yesterday} 10
-
-echo "---野火烧不尽---"
-python grab_transaction_price.py 5218 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 5218 ${yesterday} 10
 
 echo "---夏娃---"
 python grab_transaction_price.py 5222 ${yesterday} ${yesterday}
@@ -521,7 +509,7 @@ for nft in "1-N-MengYouGeLou" "1-N-YouLingTianTai" "1-N-ChaoNengMoJing" \
 "5-CaiTangMengLeYuan" "5-Xmas-GuangLuXueQiao" "5-JiangHuLing" "5-WuSongDaHu" \
 "5-YeDanJuNengGuan" "5-CiNengXuanFuBan" "5-LiuGuangYouShi" "5-ZhiKongJiXieHuShou" "5-HuanYingLeiTing" \
 "5-YeNengFangYuTa" "5-PingAnQiShiDan" "5-ShuiHu-ZhangQing" "5-XiaoXiaoJianPan-LZai" \
-"5-CaoMeiNaiXiBei" "5-ShuangYuanZhiHe" "5-ShiZiPoRouBaoZiPu" "5-ShuiHu-ZhangSanShuiQing" \
+"5-CaoMeiNaiXiBei" "5-ShuangYuanZhiHe" "5-ShiZiPoRouBaoZiPu" "5-ShuiHu-XieZhen" \
 "5-QianXiZhiZhang" "5-JuYiTing" "5-NengLiangXuJiDanYuan" "5-ShuiHu-HuYanZhuo" \
 "5-BaoZi" "5-DaDaoGuanSheng"  "5-ShuiHu-ShiJin" "5-ShuiHuZhuan" "5-ShuiHu-ZhangHeng" \
 "5-Jiu" "5-LiangCao" "5-ShuiHu-QinMing" "5-ShuiHu-CaiQing" "5-TouMingZhuang" \
@@ -535,8 +523,8 @@ for nft in "1-N-MengYouGeLou" "1-N-YouLingTianTai" "1-N-ChaoNengMoJing" \
 "9-WeiLaiShuJu" "9-ChaoJiNengLiang" "9-WeiLaiShiDai" "9-ShenYuanZhenSheZhe20" \
 "9-ShuJuDaiMa" "9-XuKongZhanShenKaEr" "9-JiuJiKongJuZhiMen" "9-WeiLaiTanXianJiaEZ" \
 "9-EMoZhiWangATuo" "9-XiaoLunLun"  \
-"10-YingLongWei" "10-YeHuoShaoBuJing" "10-XiaWa" "10-YaDang" "10-ShangDi-HeChengZiGeKa" \
-"10-LongZhiYiHai" "10-LongGu" "10-YingLong-XuShui" "10-YiDianYuan"
+"10-YingLongWei" "10-XiaWa" "10-YaDang" "10-ShangDi-HeChengZiGeKa" \
+"10-LongZhiYiHai" "10-YiDianYuan"
 do
     mkdir $nft;mv *$nft*.csv $nft;zip -q $nft-$yesterday $nft/*
 done

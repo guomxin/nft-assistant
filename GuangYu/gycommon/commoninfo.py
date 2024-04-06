@@ -482,12 +482,13 @@ CastingId2MetaInfo = {
     5208: ["5-ShuiHu-GaoQiu", "水浒-高俅", 50], 
     #5179: ["5-ShuiHu-YangZhi", "水浒-杨志", 10], #------
     #5100: ["5-HuaQiang", "花枪", 10], #------
-    5195: ["5-ShuiHu-ZhangSanShuiQing", "水浒-张清", 5],
+    #5195: ["5-ShuiHu-ZhangSanShuiQing", "水浒-张清", 5],
     5220: ["5-ShuiHuZhuan", "水浒传", 10],
     #5206: ["5-ChaiFenKa", "拆分卡", 1], #------
     5228: ["5-TouMingZhuang", "投名状", 10],
     5158: ["5-ShuiHu-ZhangHeng", "水浒-张横", 10],
     5212: ["5-ShuiHu-BaiSheng", "水浒-白胜", 10],
+    5227: ["5-ShuiHu-XieZhen", "水浒-解珍", 5],
 
     #4443: ["6-XuShiZhongShu", "虚实中枢"],
     #4448: ["6-XuNiLiRen", "虚拟利刃"],
@@ -705,11 +706,11 @@ CastingId2MetaInfo = {
     #5184: ["10-LongXue", "龙血", 1], #------
     #5186: ["10-FeiLongZaiTian", "飞龙在天", 8], #------
     5191: ["10-LongZhiYiHai", "龙之遗骸", 10], 
-    5192: ["10-LongGu", "龙骨", 1], #------
-    5193: ["10-YingLong-XuShui", "应龙-蓄水", 10], #------
+    #5192: ["10-LongGu", "龙骨", 1], #------
+    #5193: ["10-YingLong-XuShui", "应龙-蓄水", 10], #------
     5209: ["10-YiDianYuan", "伊甸园", 2],
     #5210: ["10-YaDang-HeChengZiGeKa", "亚当-合成资格卡", 20],
-    5218: ["10-YeHuoShaoBuJing", "野火烧不尽", 1], #------
+    #5218: ["10-YeHuoShaoBuJing", "野火烧不尽", 1], #------
     5222: ["10-XiaWa", "夏娃", 2],
     5221: ["10-YaDang", "亚当", 50],
     5225: ["10-ShangDi-HeChengZiGeKa", "上帝-合成资格卡", 2],
