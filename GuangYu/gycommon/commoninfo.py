@@ -479,18 +479,19 @@ CastingId2MetaInfo = {
     5181: ["5-ShuiHu-SongJiang", "水浒-宋江", 100],
     5162: ["5-JieDao", "戒刀", 8],
     #5194: ["5-ShuiHu-XuNing", "水浒-徐宁", 10], #------
-    5208: ["5-ShuiHu-GaoQiu", "水浒-高俅", 50], 
+    5208: ["5-ShuiHu-GaoQiu", "水浒-高俅", 50], #------
     #5179: ["5-ShuiHu-YangZhi", "水浒-杨志", 10], #------
     #5100: ["5-HuaQiang", "花枪", 10], #------
     #5195: ["5-ShuiHu-ZhangSanShuiQing", "水浒-张清", 5],
     5220: ["5-ShuiHuZhuan", "水浒传", 10],
     #5206: ["5-ChaiFenKa", "拆分卡", 1], #------
     5228: ["5-TouMingZhuang", "投名状", 10],
-    5158: ["5-ShuiHu-ZhangHeng", "水浒-张横", 10], #------
-    5212: ["5-ShuiHu-BaiSheng", "水浒-白胜", 10], #------
+    #5158: ["5-ShuiHu-ZhangHeng", "水浒-张横", 10], #------
+    #5212: ["5-ShuiHu-BaiSheng", "水浒-白胜", 10], #------
     5227: ["5-ShuiHu-XieZhen", "水浒-解珍", 5],
     5244: ["5-LiangShanJun", "梁山军", 2],
     5253: ["5-SongBing", "宋兵", 2],
+    5257: ["5-CuJu", "蹴鞠", 3],
 
     #4443: ["6-XuShiZhongShu", "虚实中枢"],
     #4448: ["6-XuNiLiRen", "虚拟利刃"],
@@ -604,7 +605,7 @@ CastingId2MetaInfo = {
     #4572: ["8-MoZhongLeYuan", "蘑钟乐园", 70], #------
     #4649: ["8-HuanZuZhiTa", "幻足之塔", 200], #------
     #4622: ["8-MiaoQuTangGuoHe", "妙趣糖果盒", 4], #------
-    4958: ["8-ChuanShuoKaPian", "传说卡片", 1], #------
+    #4958: ["8-ChuanShuoKaPian", "传说卡片", 1], #------
     #4808: ["8-XianHuaQiYu", "仙花奇域", 100],
     #4816: ["8-ChunRiCaiLun", "春日彩轮", 5], #------
     #4795: ["8-QiYiJunGe", "奇异菌阁", 100], #------
@@ -627,15 +628,15 @@ CastingId2MetaInfo = {
     #4989: ["8-ShanHaiJing-MengJi", "山海经-孟极", 50], #------
     #5060: ["8-QianYunShan", "纤芸扇", 20],
     #5076: ["8-ChuanQiZhiYe", "传奇之夜", 30],
-    5051: ["8-FanHuaShengShi", "繁华盛世", 1], #------
+    #5051: ["8-FanHuaShengShi", "繁华盛世", 1], #------
     5088: ["8-BiShanQiongYu", "璧山琼宇", 2],
     5098: ["8-XingChenQiYu", "星辰奇遇", 50],
-    5047: ["8-YaoYeDengXia", "曜夜灯匣", 2], #------
+    #5047: ["8-YaoYeDengXia", "曜夜灯匣", 2], #------
     #5079: ["8-LouHuaSanLun", "镂花伞轮", 30],
-    5123: ["8-FanXingDianDian", "繁星点点", 10], #------
-    5122: ["8-YunXiaHuaBao", "云霞华宝", 0],
-    5102: ["8-JingShuiShenTan", "静水深潭", 1], #------
-    5144: ["8-BiShuiQingTian", "碧水青天", 2], #------
+    #5123: ["8-FanXingDianDian", "繁星点点", 10], #------
+    #5122: ["8-YunXiaHuaBao", "云霞华宝", 0],
+    #5102: ["8-JingShuiShenTan", "静水深潭", 1], #------
+    #5144: ["8-BiShuiQingTian", "碧水青天", 2], #------
     5160: ["8-LongYouSiHai", "龙游四海", 10],
     5187: ["8-ChenXiChuXian", "晨曦初现", 30],
     5188: ["8-QingQingCuiZhu", "青青翠竹", 5],
