@@ -412,6 +412,10 @@ echo "---青山多妩媚-合成资格卡---"
 python grab_transaction_price.py 5266 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 5266 ${yesterday} 10
 
+echo "---风饶卡片---"
+python grab_transaction_price.py 5267 ${yesterday} ${yesterday}
+python analyze_transaction_prices.py 5267 ${yesterday} 10
+
 #--- 探索未来 ---#
 echo "---数据代码---"
 python grab_transaction_price.py 4827 ${yesterday} ${yesterday}
@@ -503,7 +507,7 @@ for nft in "1-N-MengYouGeLou" "1-N-YouLingTianTai" "1-N-ChaoNengMoJing" \
 "6-SaiBoJiangZiYa" "6-SaiBoKawasaki" \
 "7-XiangSuQiJing" "7-TanXianZheIV" "7-XunBaoZheI" "7-GongYunXiaoShao" "7-FangBiaoZhiShiDeng" "7-YeGuWangCheng" \
 "8-QiaoMingYueYe" "8-XingChenQiYu"  "8-LongTengHuaXia" "8-ShanHaiJing-BiBi" "8-QingQingCuiZhu" \
-"8-BiShanQiongYu" "8-LongYouSiHai" "8-ChenXiChuXian" "8-QingShanDuoWuMei-HeChengZiGeKa" \
+"8-BiShanQiongYu" "8-LongYouSiHai" "8-ChenXiChuXian" "8-QingShanDuoWuMei-HeChengZiGeKa" "8-FengRaoKaPian" \
 "9-WeiLaiShuJu" "9-ChaoJiNengLiang" "9-WeiLaiShiDai" "9-ShenYuanZhenSheZhe20" \
 "9-ShuJuDaiMa" "9-XuKongZhanShenKaEr" "9-JiuJiKongJuZhiMen" "9-WeiLaiTanXianJiaEZ" \
 "9-EMoZhiWangATuo" "9-XiaoLunLun"  \

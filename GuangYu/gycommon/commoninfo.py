@@ -491,7 +491,7 @@ CastingId2MetaInfo = {
     5227: ["5-ShuiHu-XieZhen", "水浒-解珍", 5],
     5244: ["5-LiangShanJun", "梁山军", 2],
     5253: ["5-SongBing", "宋兵", 2],
-    5257: ["5-CuJu", "蹴鞠", 3],
+    5257: ["5-CuJu", "蹴鞠", 5],
     5241: ["5-ChaoTing-TongGuan", "朝廷-童贯", 5],
 
     #4443: ["6-XuShiZhongShu", "虚实中枢"],
@@ -642,6 +642,7 @@ CastingId2MetaInfo = {
     5187: ["8-ChenXiChuXian", "晨曦初现", 30],
     5188: ["8-QingQingCuiZhu", "青青翠竹", 5],
     5266: ["8-QingShanDuoWuMei-HeChengZiGeKa", "青山多妩媚-合成资格卡", 10],
+    5267: ["8-FengRaoKaPian", "风饶卡片", 2],
 
     #4515: ["9-ShuGuangPuJiZhan", "殊光谱基站"], #*
     #4562: ["9-ZhengZhaoJiJia", "征召机甲", 100], #------
