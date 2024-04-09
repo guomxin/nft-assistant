@@ -493,6 +493,7 @@ CastingId2MetaInfo = {
     5253: ["5-SongBing", "宋兵", 2],
     5257: ["5-CuJu", "蹴鞠", 5],
     5241: ["5-ChaoTing-TongGuan", "朝廷-童贯", 5],
+    5234: ["5-ChaoTing-WangWenDe", "朝廷-王文德", 10],
 
     #4443: ["6-XuShiZhongShu", "虚实中枢"],
     #4448: ["6-XuNiLiRen", "虚拟利刃"],
@@ -740,7 +741,7 @@ HighestValue_Products_Info = {
 }
 
 # 173
-Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzEyNTg0Mjg2LCJzaWduSWQiOiIzYmE4YjE4NzlmM2U0ZGUzOTJjNzQ3OTVkZjIxMDNkOCIsImlhdCI6MTcxMTk3OTQ4Nn0.YRTY4H4kBmZEEKQE9dwywJMgT8lj-zVEpxB3lbOYjKs"
+Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzEzMTkyNTUxLCJzaWduSWQiOiI3NTZiNDljMjQ3OWM0ZTc4YTUzZTc3YjY3YmQyYTQ1MyIsImlhdCI6MTcxMjU4Nzc1MX0.4dkURQI0POQfvX5I1m8NYfFAV9X75F1mqVvKaZQPfvQ"
 
 # 131
 Query_Token= "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxMzE1NjE2MTA5MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzEyNzA1NDcyLCJzaWduSWQiOiI0OTExNDJkNjY5NWQ0YmJhODVjYzQ3YjZmNjdkNTZlZiIsImlhdCI6MTcxMjEwMDY3Mn0.tTTIb3AtxgVQg3c0vOdu1W_aJVmiTNNGAP38dC7UP_g"
