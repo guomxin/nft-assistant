@@ -474,7 +474,7 @@ CastingId2MetaInfo = {
     5150: ["5-Jiu", "酒", 8],
     5151: ["5-LiangCao", "粮草", 8],
     5129: ["5-ShuiHu-QinMing", "水浒-秦明", 10],
-    5119: ["5-ShuiHu-CaiQing", "水浒-蔡庆", 10],
+    5119: ["5-ShuiHu-CaiQing", "水浒-蔡庆", 10], #------
     #5134: ["5-ShuiHu-QiongYing", "水浒-琼英", 10], #------
     5181: ["5-ShuiHu-SongJiang", "水浒-宋江", 100],
     5162: ["5-JieDao", "戒刀", 8],
@@ -494,6 +494,8 @@ CastingId2MetaInfo = {
     5257: ["5-CuJu", "蹴鞠", 5],
     5241: ["5-ChaoTing-TongGuan", "朝廷-童贯", 5],
     5234: ["5-ChaoTing-WangWenDe", "朝廷-王文德", 10],
+    5226: ["5-FengXueShanShenMiao", "风雪山神庙", 5],
+    5254: ["5-ChaoTing-ZhouXin", "朝廷-周信", 5],
 
     #4443: ["6-XuShiZhongShu", "虚实中枢"],
     #4448: ["6-XuNiLiRen", "虚拟利刃"],
