@@ -407,7 +407,7 @@ CastingId2MetaInfo = {
     #4552: ["5-ZhiGengHuaQi", "知更花期"],
     4559: ["5-YeNengFangYuTa", "液能防御塔"],
     4574: ["5-CaiTangMengLeYuan", "彩糖梦乐园"],
-    4589: ["5-ShengJingZhiMen", "圣境之门", 2000],
+    4589: ["5-ShengJingZhiMen", "圣境之门", 1000],
     #4558: ["5-QiFuZhiChui", "祈福之槌"], #------
     #4605: ["5-JingLianZengChanQi", "精炼增产器"], #------
     #4628: ["5-PingAnQiShiSuiPian", "平安启示碎片"],
@@ -496,6 +496,7 @@ CastingId2MetaInfo = {
     5234: ["5-ChaoTing-WangWenDe", "朝廷-王文德", 10],
     5226: ["5-FengXueShanShenMiao", "风雪山神庙", 5],
     5254: ["5-ChaoTing-ZhouXin", "朝廷-周信", 5],
+    5258: ["5-ChaoTing-MeiZhan", "朝廷-梅展", 5],
 
     #4443: ["6-XuShiZhongShu", "虚实中枢"],
     #4448: ["6-XuNiLiRen", "虚拟利刃"],
@@ -588,8 +589,8 @@ CastingId2MetaInfo = {
     5019: ["6-SaiBoNiYu", "赛博拟羽", 5],
     #5039: ["6-SaiBoBaoXiaoJi", "赛博报晓鸡", 0], #------
     4982: ["6-SaiBoTop", "赛博Top", 4],
-    5018: ["6-SaiBoPoYiHeXin", "赛博破译核心", 4],
-    5064: ["6-SaiBoTopOne", "赛博TopOne", 4],
+    5018: ["6-SaiBoPoYiHeXin", "赛博破译核心", 3],
+    5064: ["6-SaiBoTopOne", "赛博TopOne", 3],
     5049: ["6-SaiBoJiangZiYa", "赛博姜子牙", 20],
     5050: ["6-SaiBoKawasaki", "赛博Kawasaki", 10],
 
@@ -644,7 +645,7 @@ CastingId2MetaInfo = {
     5160: ["8-LongYouSiHai", "龙游四海", 10],
     5187: ["8-ChenXiChuXian", "晨曦初现", 30],
     5188: ["8-QingQingCuiZhu", "青青翠竹", 5],
-    5266: ["8-QingShanDuoWuMei-HeChengZiGeKa", "青山多妩媚-合成资格卡", 10],
+    5266: ["8-QingShanDuoWuMei-HeChengZiGeKa", "青山多妩媚-合成资格卡", 5],
     5267: ["8-FengRaoKaPian", "风饶卡片", 1],
 
     #4515: ["9-ShuGuangPuJiZhan", "殊光谱基站"], #*
