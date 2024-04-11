@@ -450,7 +450,7 @@ CastingId2MetaInfo = {
     4676: ["5-NengLiangXuJiDanYuan", "能量蓄积单元", 30],
     #5054: ["5-ShuiHu-LuZhiShen", "水浒-鲁智深", 120], #------
     5048: ["5-ShuiHu-WuYong", "水浒-吴用", 200],
-    5063: ["5-WuSongDaHu", "武松打虎", 10],
+    #5063: ["5-WuSongDaHu", "武松打虎", 10],
     #5077: ["5-ShuiHu-HuSanNiang", "水浒-扈三娘", 10], #------
     #5055: ["5-ShuiHu-LiKui", "水浒-李逵", 50], #------
     #5086: ["5-XiMenQing", "西门庆", 5], #------
@@ -474,7 +474,7 @@ CastingId2MetaInfo = {
     5150: ["5-Jiu", "酒", 8],
     5151: ["5-LiangCao", "粮草", 8],
     5129: ["5-ShuiHu-QinMing", "水浒-秦明", 10],
-    5119: ["5-ShuiHu-CaiQing", "水浒-蔡庆", 10], #------
+    #5119: ["5-ShuiHu-CaiQing", "水浒-蔡庆", 10], #------
     #5134: ["5-ShuiHu-QiongYing", "水浒-琼英", 10], #------
     5181: ["5-ShuiHu-SongJiang", "水浒-宋江", 100],
     5162: ["5-JieDao", "戒刀", 8],
@@ -488,7 +488,7 @@ CastingId2MetaInfo = {
     5228: ["5-TouMingZhuang", "投名状", 10],
     #5158: ["5-ShuiHu-ZhangHeng", "水浒-张横", 10], #------
     #5212: ["5-ShuiHu-BaiSheng", "水浒-白胜", 10], #------
-    5227: ["5-ShuiHu-XieZhen", "水浒-解珍", 5],
+    #5227: ["5-ShuiHu-XieZhen", "水浒-解珍", 5],
     5244: ["5-LiangShanJun", "梁山军", 2],
     5253: ["5-SongBing", "宋兵", 2],
     5257: ["5-CuJu", "蹴鞠", 5],
@@ -498,7 +498,6 @@ CastingId2MetaInfo = {
     5254: ["5-ChaoTing-ZhouXin", "朝廷-周信", 5],
     5258: ["5-ChaoTing-MeiZhan", "朝廷-梅展", 5],
     5243: ["5-ShuiHu-ShiXiu", "水浒-石秀", 5],
-    5276: ["5-QingShanDuoWuMei", "青山多妩媚", 30],
 
     #4443: ["6-XuShiZhongShu", "虚实中枢"],
     #4448: ["6-XuNiLiRen", "虚拟利刃"],
@@ -647,8 +646,9 @@ CastingId2MetaInfo = {
     5160: ["8-LongYouSiHai", "龙游四海", 10],
     5187: ["8-ChenXiChuXian", "晨曦初现", 30],
     5188: ["8-QingQingCuiZhu", "青青翠竹", 5],
-    5266: ["8-QingShanDuoWuMei-HeChengZiGeKa", "青山多妩媚-合成资格卡", 1], #------
+    #5266: ["8-QingShanDuoWuMei-HeChengZiGeKa", "青山多妩媚-合成资格卡", 1], #------
     5267: ["8-FengRaoKaPian", "风饶卡片", 1],
+    5276: ["8-QingShanDuoWuMei", "青山多妩媚", 30],
 
     #4515: ["9-ShuGuangPuJiZhan", "殊光谱基站"], #*
     #4562: ["9-ZhengZhaoJiJia", "征召机甲", 100], #------

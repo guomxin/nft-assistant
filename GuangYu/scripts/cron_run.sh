@@ -218,10 +218,6 @@ echo "---水浒-吴用---"
 python grab_transaction_price.py 5048 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 5048 ${yesterday} 10
 
-echo "---武松打虎---"
-python grab_transaction_price.py 5063 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 5063 ${yesterday} 10
-
 echo "---神算子---"
 python grab_transaction_price.py 5115 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 5115 ${yesterday} 10
@@ -274,10 +270,6 @@ echo "---水浒-秦明---"
 python grab_transaction_price.py 5129 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 5129 ${yesterday} 10
 
-echo "---水浒-蔡庆---"
-python grab_transaction_price.py 5119 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 5119 ${yesterday} 10
-
 echo "---水浒-宋江---"
 python grab_transaction_price.py 5181 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 5181 ${yesterday} 10
@@ -293,10 +285,6 @@ python analyze_transaction_prices.py 5220 ${yesterday} 10
 echo "---投名状---"
 python grab_transaction_price.py 5228 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 5228 ${yesterday} 10
-
-echo "---水浒-解珍---"
-python grab_transaction_price.py 5227 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 5227 ${yesterday} 10
 
 echo "---梁山军---"
 python grab_transaction_price.py 5244 ${yesterday} ${yesterday}
@@ -424,10 +412,6 @@ echo "---青青翠竹---"
 python grab_transaction_price.py 5188 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 5188 ${yesterday} 10
 
-echo "---青山多妩媚-合成资格卡---"
-python grab_transaction_price.py 5266 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 5266 ${yesterday} 10
-
 echo "---风饶卡片---"
 python grab_transaction_price.py 5267 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 5267 ${yesterday} 10
@@ -514,20 +498,20 @@ for nft in "1-N-MengYouGeLou" "1-N-YouLingTianTai" "1-N-ChaoNengMoJing" \
 "3-HuBenZhanXue" "3-YinXuJianDao" "3-FengDengBaiGu" "3-YongMengShuBing" "3-KuaiHuRen" "3-RuiFengJianLing" "3-YunYuYangFeng" \
 "5-ShengJingZhiMen" "5-ShuiHu-WuYong" "5-JunJiChu" "5-ShuiHu-DongPing" "5-JiuSi" \
 "5-BingShuangLengQueXiTong" "5-HeiQiaoJiXieCheng" "5-ShenSuanZi" "5-ShuiHu-LinChong" \
-"5-CaiTangMengLeYuan" "5-Xmas-GuangLuXueQiao" "5-JiangHuLing" "5-WuSongDaHu" \
+"5-CaiTangMengLeYuan" "5-Xmas-GuangLuXueQiao" "5-JiangHuLing" \
 "5-YeDanJuNengGuan" "5-CiNengXuanFuBan" "5-LiuGuangYouShi" "5-ZhiKongJiXieHuShou" "5-HuanYingLeiTing" \
 "5-YeNengFangYuTa" "5-PingAnQiShiDan" "5-ShuiHu-ZhangQing" "5-XiaoXiaoJianPan-LZai" \
-"5-CaoMeiNaiXiBei" "5-ShuangYuanZhiHe" "5-ShiZiPoRouBaoZiPu" "5-ShuiHu-XieZhen" "5-ChaoTing-WangWenDe" \
+"5-CaoMeiNaiXiBei" "5-ShuangYuanZhiHe" "5-ShiZiPoRouBaoZiPu" "5-ChaoTing-WangWenDe" \
 "5-QianXiZhiZhang" "5-JuYiTing" "5-NengLiangXuJiDanYuan" "5-ShuiHu-HuYanZhuo" \
 "5-BaoZi" "5-DaDaoGuanSheng"  "5-ShuiHu-ShiJin" "5-ShuiHuZhuan" "5-FengXueShanShenMiao" \
-"5-Jiu" "5-LiangCao" "5-ShuiHu-QinMing" "5-ShuiHu-CaiQing" "5-TouMingZhuang" \
+"5-Jiu" "5-LiangCao" "5-ShuiHu-QinMing" "5-TouMingZhuang" \
 "5-ShuiHu-SongJiang" "5-JieDao" "5-LiangShanJun" "5-ChaoTing-ZhouXin" "5-ChaoTing-MeiZhan" \
-"5-SongBing" "5-CuJu" "5-ChaoTing-TongGuan" "5-ShuiHu-ShiXiu" "5-QingShanDuoWuMei" \
+"5-SongBing" "5-CuJu" "5-ChaoTing-TongGuan" "5-ShuiHu-ShiXiu" \
 "6-SaiBoQiFeiKa" "6-EMoXunZhang"  "6-SaiBoNiYu" "6-SaiBoTopOne" "6-SaiBoTop" "6-SaiBoPoYiHeXin" \
 "6-SaiBoJiangZiYa" "6-SaiBoKawasaki" \
 "7-XiangSuQiJing" "7-TanXianZheIV" "7-XunBaoZheI" "7-GongYunXiaoShao" "7-FangBiaoZhiShiDeng" "7-YeGuWangCheng" \
-"8-QiaoMingYueYe" "8-XingChenQiYu"  "8-LongTengHuaXia" "8-ShanHaiJing-BiBi" "8-QingQingCuiZhu" \
-"8-BiShanQiongYu" "8-LongYouSiHai" "8-ChenXiChuXian" "8-QingShanDuoWuMei-HeChengZiGeKa" "8-FengRaoKaPian" \
+"8-QiaoMingYueYe" "8-XingChenQiYu"  "8-LongTengHuaXia" "8-ShanHaiJing-BiBi" "8-QingQingCuiZhu" "8-QingShanDuoWuMei" \
+"8-BiShanQiongYu" "8-LongYouSiHai" "8-ChenXiChuXian" "8-FengRaoKaPian" \
 "9-WeiLaiShuJu" "9-ChaoJiNengLiang" "9-WeiLaiShiDai" "9-ShenYuanZhenSheZhe20" \
 "9-ShuJuDaiMa" "9-XuKongZhanShenKaEr" "9-JiuJiKongJuZhiMen" "9-WeiLaiTanXianJiaEZ" \
 "9-EMoZhiWangATuo" "9-XiaoLunLun"  \
