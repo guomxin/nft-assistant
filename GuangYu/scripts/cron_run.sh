@@ -310,10 +310,6 @@ echo "---风雪山神庙---"
 python grab_transaction_price.py 5226 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 5226 ${yesterday} 10
 
-echo "---朝廷-周信---"
-python grab_transaction_price.py 5254 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 5254 ${yesterday} 10
-
 echo "---朝廷-梅展---"
 python grab_transaction_price.py 5258 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 5258 ${yesterday} 10
@@ -321,10 +317,6 @@ python analyze_transaction_prices.py 5258 ${yesterday} 10
 echo "---水浒-石秀---"
 python grab_transaction_price.py 5243 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 5243 ${yesterday} 10
-
-echo "---朝廷-王黼---"
-python grab_transaction_price.py 5278 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 5278 ${yesterday} 10
 
 echo "---水浒-刘唐---"
 python grab_transaction_price.py 5262 ${yesterday} ${yesterday}
@@ -506,14 +498,14 @@ for nft in "1-N-MengYouGeLou" "1-N-YouLingTianTai" "1-N-ChaoNengMoJing" \
 "3-HuBenZhanXue" "3-YinXuJianDao" "3-FengDengBaiGu" "3-YongMengShuBing" "3-KuaiHuRen" "3-RuiFengJianLing" "3-YunYuYangFeng" \
 "5-ShengJingZhiMen" "5-ShuiHu-WuYong" "5-JunJiChu" "5-ShuiHu-DongPing" "5-JiuSi" \
 "5-BingShuangLengQueXiTong" "5-HeiQiaoJiXieCheng" "5-ShenSuanZi" "5-ShuiHu-LinChong" \
-"5-CaiTangMengLeYuan" "5-Xmas-GuangLuXueQiao" "5-JiangHuLing" "5-ChaoTing-WangFu" \
+"5-CaiTangMengLeYuan" "5-Xmas-GuangLuXueQiao" "5-JiangHuLing" \
 "5-YeDanJuNengGuan" "5-CiNengXuanFuBan" "5-LiuGuangYouShi" "5-ZhiKongJiXieHuShou" "5-HuanYingLeiTing" \
 "5-YeNengFangYuTa" "5-PingAnQiShiDan" "5-ShuiHu-ZhangQing" "5-XiaoXiaoJianPan-LZai" \
 "5-CaoMeiNaiXiBei" "5-ShuangYuanZhiHe" "5-ShiZiPoRouBaoZiPu" "5-ChaoTing-WangWenDe" \
 "5-QianXiZhiZhang" "5-JuYiTing" "5-NengLiangXuJiDanYuan" "5-ShuiHu-HuYanZhuo" \
 "5-BaoZi" "5-DaDaoGuanSheng"  "5-ShuiHu-ShiJin" "5-ShuiHuZhuan" "5-FengXueShanShenMiao" \
 "5-Jiu" "5-LiangCao" "5-ShuiHu-QinMing" "5-TouMingZhuang" "5-ShuiHu-LiuTang" \
-"5-ShuiHu-SongJiang" "5-JieDao" "5-LiangShanJun" "5-ChaoTing-ZhouXin" "5-ChaoTing-MeiZhan" \
+"5-ShuiHu-SongJiang" "5-JieDao" "5-LiangShanJun" "5-ChaoTing-MeiZhan" \
 "5-SongBing" "5-CuJu" "5-ChaoTing-TongGuan" "5-ShuiHu-ShiXiu" \
 "6-SaiBoQiFeiKa" "6-EMoXunZhang"  "6-SaiBoNiYu" "6-SaiBoTopOne" "6-SaiBoTop" "6-SaiBoPoYiHeXin" \
 "6-SaiBoJiangZiYa" "6-SaiBoKawasaki" \
