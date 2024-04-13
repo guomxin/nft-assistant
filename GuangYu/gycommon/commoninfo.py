@@ -492,7 +492,7 @@ CastingId2MetaInfo = {
     5244: ["5-LiangShanJun", "梁山军", 2],
     5253: ["5-SongBing", "宋兵", 2],
     5257: ["5-CuJu", "蹴鞠", 5],
-    5241: ["5-ChaoTing-TongGuan", "朝廷-童贯", 5],
+    5241: ["5-ChaoTing-TongGuan", "朝廷-童贯", 5], #------
     5234: ["5-ChaoTing-WangWenDe", "朝廷-王文德", 10],
     5226: ["5-FengXueShanShenMiao", "风雪山神庙", 5],
     #5254: ["5-ChaoTing-ZhouXin", "朝廷-周信", 5], #------
@@ -637,7 +637,7 @@ CastingId2MetaInfo = {
     #5060: ["8-QianYunShan", "纤芸扇", 20],
     #5076: ["8-ChuanQiZhiYe", "传奇之夜", 30],
     #5051: ["8-FanHuaShengShi", "繁华盛世", 1], #------
-    5088: ["8-BiShanQiongYu", "璧山琼宇", 2],
+    #5088: ["8-BiShanQiongYu", "璧山琼宇", 2],
     5098: ["8-XingChenQiYu", "星辰奇遇", 50],
     #5047: ["8-YaoYeDengXia", "曜夜灯匣", 2], #------
     #5079: ["8-LouHuaSanLun", "镂花伞轮", 30],
@@ -650,7 +650,7 @@ CastingId2MetaInfo = {
     5188: ["8-QingQingCuiZhu", "青青翠竹", 5],
     #5266: ["8-QingShanDuoWuMei-HeChengZiGeKa", "青山多妩媚-合成资格卡", 1], #------
     5267: ["8-FengRaoKaPian", "风饶卡片", 1],
-    5276: ["8-QingShanDuoWuMei", "青山多妩媚", 30],
+    #5276: ["8-QingShanDuoWuMei", "青山多妩媚", 30],
 
     #4515: ["9-ShuGuangPuJiZhan", "殊光谱基站"], #*
     #4562: ["9-ZhengZhaoJiJia", "征召机甲", 100], #------
