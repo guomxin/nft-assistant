@@ -653,6 +653,7 @@ CastingId2MetaInfo = {
     #5266: ["8-QingShanDuoWuMei-HeChengZiGeKa", "青山多妩媚-合成资格卡", 1], #------
     5267: ["8-FengRaoKaPian", "风饶卡片", 1],
     #5276: ["8-QingShanDuoWuMei", "青山多妩媚", 30],
+    5281: ["8-LvYeDuoJiao", "绿野多娇", 10],
 
     #4515: ["9-ShuGuangPuJiZhan", "殊光谱基站"], #*
     #4562: ["9-ZhengZhaoJiJia", "征召机甲", 100], #------
