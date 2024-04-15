@@ -492,7 +492,7 @@ CastingId2MetaInfo = {
     5244: ["5-LiangShanJun", "梁山军", 2],
     5253: ["5-SongBing", "宋兵", 2],
     5257: ["5-CuJu", "蹴鞠", 5],
-    5241: ["5-ChaoTing-TongGuan", "朝廷-童贯", 5], #------
+    #5241: ["5-ChaoTing-TongGuan", "朝廷-童贯", 5], #------
     5234: ["5-ChaoTing-WangWenDe", "朝廷-王文德", 10],
     5226: ["5-FengXueShanShenMiao", "风雪山神庙", 5],
     #5254: ["5-ChaoTing-ZhouXin", "朝廷-周信", 5], #------
