@@ -504,6 +504,7 @@ CastingId2MetaInfo = {
     5279: ["5-ChaoTing-QiuYue", "朝廷-丘岳", 5],
     5245: ["5-ShuiHu-YanPoXi", "水浒-阎婆惜", 5],
     5260: ["5-ShuiHu-LeiHeng", "水浒-雷横", 5],
+    5295: ["5-LongPai", "龙牌", 5],
 
     #4443: ["6-XuShiZhongShu", "虚实中枢"],
     #4448: ["6-XuNiLiRen", "虚拟利刃"],
@@ -649,13 +650,14 @@ CastingId2MetaInfo = {
     #5122: ["8-YunXiaHuaBao", "云霞华宝", 0],
     #5102: ["8-JingShuiShenTan", "静水深潭", 1], #------
     #5144: ["8-BiShuiQingTian", "碧水青天", 2], #------
-    5160: ["8-LongYouSiHai", "龙游四海", 10],
+    5160: ["8-LongYouSiHai", "龙游四海", 10], #------
     5187: ["8-ChenXiChuXian", "晨曦初现", 30],
-    5188: ["8-QingQingCuiZhu", "青青翠竹", 5], #------
+    #5188: ["8-QingQingCuiZhu", "青青翠竹", 5], #------
     #5266: ["8-QingShanDuoWuMei-HeChengZiGeKa", "青山多妩媚-合成资格卡", 1], #------
     5267: ["8-FengRaoKaPian", "风饶卡片", 1],
     #5276: ["8-QingShanDuoWuMei", "青山多妩媚", 30],
     5281: ["8-LvYeDuoJiao", "绿野多娇", 10],
+    5293: ["8-ShanHeLing", "山河令", 2],
 
     #4515: ["9-ShuGuangPuJiZhan", "殊光谱基站"], #*
     #4562: ["9-ZhengZhaoJiJia", "征召机甲", 100], #------
