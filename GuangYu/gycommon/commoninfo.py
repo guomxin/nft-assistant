@@ -507,6 +507,8 @@ CastingId2MetaInfo = {
     5295: ["5-LongPai", "龙牌", 5],
     5261: ["5-ChaoGai", "晁盖", 5],
     5296: ["5-SongHuiZong", "宋徽宗", 5],
+    5280: ["5-ShuiHu-ChaiJin", "水浒-柴进", 2],
+    5263: ["5-ShuiHu-DengFei", "水浒-邓飞", 2],
 
     #4443: ["6-XuShiZhongShu", "虚实中枢"],
     #4448: ["6-XuNiLiRen", "虚拟利刃"],
