@@ -660,6 +660,8 @@ CastingId2MetaInfo = {
     #5276: ["8-QingShanDuoWuMei", "青山多妩媚", 30],
     5281: ["8-LvYeDuoJiao", "绿野多娇", 10],
     5293: ["8-ShanHeLing", "山河令", 2],
+    5297: ["8-XiaKeXing", "侠客行", 2],
+    5298: ["8-LongXiaoQianKun", "龙啸乾坤", 2],
 
     #4515: ["9-ShuGuangPuJiZhan", "殊光谱基站"], #*
     #4562: ["9-ZhengZhaoJiJia", "征召机甲", 100], #------
