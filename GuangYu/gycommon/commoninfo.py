@@ -305,30 +305,30 @@ CastingId2MetaInfo = {
     # #887: ["21-HuLu", "葫芦"],
 
     #3457: ["1-N-QingKongYuFengZhou", "晴空御风帚", 30], ########
-    3747: ["1-N-MengYouGeLou", "梦游阁楼", 10],
-    3748: ["1-N-YouLingTianTai", "幽灵天台", 10],
-    3548: ["1-N-ChaoNengMoJing", "超能墨镜", 10],
+    3747: ["1-N-MengYouGeLou", "梦游阁楼", 2],
+    3748: ["1-N-YouLingTianTai", "幽灵天台", 2],
+    3548: ["1-N-ChaoNengMoJing", "超能墨镜", 2],
     #3458: ["1-SR-YingMuHuanShaPeng", "影幕幻纱篷"],
-    3549: ["1-SR-QuanJiShouTao", "拳击手套", 15],
+    3549: ["1-SR-QuanJiShouTao", "拳击手套", 2],
     #2457: ["1-SSR-MoDengZhongXin", "摩登中心"],
     #2466: ["1-SSR-ZhongGuiTieDao", "重轨铁道"],
-    3550: ["1-SSR-ChaoShanDianCi", "超闪电磁", 30],
-    4629: ["1-WeiGuangFeiTan", "微光飞毯", 5],
-    4630: ["1-ShuGuangLuJian", "曙光陆舰", 5],
+    3550: ["1-SSR-ChaoShanDianCi", "超闪电磁", 10],
+    4629: ["1-WeiGuangFeiTan", "微光飞毯", 2],
+    4630: ["1-ShuGuangLuJian", "曙光陆舰", 2],
 
     #2456: ["2-UR-WeiLaiDuShi", "未来都市"],
     #2468: ["2-UR-YuanYangDuLun", "远洋渡轮"],
-    3646: ["2-UR-ShiKongChuanSuoJi", "时空穿梭机", 100],
-    3751: ["2-UR-YueQiuShangCheng", "月球上城", 100],
-    3535: ["2-ZaiFuXiangHuang", "载福祥凰", 100],
-    2837: ["2-LongYinWanXiang", "龙吟万象", 500],
+    3646: ["2-UR-ShiKongChuanSuoJi", "时空穿梭机", 50],
+    3751: ["2-UR-YueQiuShangCheng", "月球上城", 50],
+    3535: ["2-ZaiFuXiangHuang", "载福祥凰", 50],
+    2837: ["2-LongYinWanXiang", "龙吟万象", 100],
     #2616: ["2-HuanShuShi", "幻术师"], 
     #2617: ["2-MoShuShi", "魔术师"],
-    4014: ["2-JinQuXiYin", "金躯玺印", 40],
-    4386: ["2-JinLianLingZhan", "金莲灵盏", 20],
-    4384: ["2-YiShouFuTu", "异兽浮图", 40],
-    4323: ["2-DaMoHuanShi", "大魔幻师", 50],
-    4607: ["2-JiuChongTianWaiTian", "九重天外天", 50],
+    4014: ["2-JinQuXiYin", "金躯玺印", 2],
+    4386: ["2-JinLianLingZhan", "金莲灵盏", 2],
+    4384: ["2-YiShouFuTu", "异兽浮图", 2],
+    4323: ["2-DaMoHuanShi", "大魔幻师", 10],
+    4607: ["2-JiuChongTianWaiTian", "九重天外天", 10],
     #4719: ["2-XianLuQiongJiang", "仙露琼浆", 40], #------
     #4737: ["2-JiangShanShengJingBeiZhan", "江山盛景杯盏", 40], #------
     #4756: ["2-LingYunJinLouYuYu", "凌云金楼玉宇", 45], 
@@ -336,9 +336,9 @@ CastingId2MetaInfo = {
 
     #2589: ["3-JiXingGuangLun", "先驱I-疾行光轮"],
     #3056: ["3-BingHuangGuiZuo", "冰凰瑰座"],
-    3982: ["3-ZhongYiWuSheng", "忠义武圣", 500],
-    3979: ["3-ChuFengMingTong", "雏凤明瞳", 0],
-    3980: ["3-YinXuJianDao", "银须箭道", 50],
+    3982: ["3-ZhongYiWuSheng", "忠义武圣", 20],
+    3979: ["3-ChuFengMingTong", "雏凤明瞳"],
+    3980: ["3-YinXuJianDao", "银须箭道", 5],
     #3990: ["3-YingYongBiaoJiZiGeKa", "英勇骠骑资格卡"],
     #3997: ["3-ShunLeiJiMu", "瞬雷击木"],
     #4027: ["3-FuLeiXiongKai", "附雷胸铠"],
@@ -347,7 +347,7 @@ CastingId2MetaInfo = {
     4127: ["3-YongMengShuBing", "勇猛戍兵"],
     4167: ["3-KuaiHuRen", "刽虎刃"],
     4078: ["3-RuiFengJianLing", "锐锋箭翎"],
-    3981: ["3-YunYuYangFeng", "云羽扬风", 100],
+    3981: ["3-YunYuYangFeng", "云羽扬风", 10],
     #4243: ["3-ZhanGuLei", "战鼓擂"],
     #4246: ["3-DongFengChui", "东风吹"],
     #3919: ["3-XiaoXiaoJianPan-KZai", "小小键盘-K仔"],
@@ -438,18 +438,18 @@ CastingId2MetaInfo = {
     #4566: ["5-FangShengJiXieFeng", "仿生机械蜂", 10], #------
     #4663: ["5-ShenGuangZhiFei", "神光之扉", 10], #------
     5000: ["5-JiangHuLing", "江湖令", 1], #------
-    5003: ["5-ShuiHu-ZhangQing", "水浒-张青", 2],
+    5003: ["5-ShuiHu-ZhangQing", "水浒-张青", 1],
     #5004: ["5-ShuiHu-WuSong", "水浒-武松", 50], #------
     #5016: ["5-ShuiHu-RuanXiaoEr", "水浒-阮小二", 10], #------
     #5028: ["5-ShuiHu-RuanXiaoQi", "水浒-阮小七", 0], #------
-    5109: ["5-JuYiTing", "聚义厅", 3],
+    5109: ["5-JuYiTing", "聚义厅", 1],
     #5041: ["5-ShuiHu", "水浒", 50], #------
     #5022: ["5-ShuiHu-SunErNiang", "水浒-孙二娘", 10],
     5044: ["5-ShiZiPoRouBaoZiPu", "十字坡肉包子铺", 30],
     #4437: ["5-PeiYuGuanGaiHuoJian", "培育灌溉火箭", 0], #------
     #4676: ["5-NengLiangXuJiDanYuan", "能量蓄积单元", 30],
     #5054: ["5-ShuiHu-LuZhiShen", "水浒-鲁智深", 120], #------
-    5048: ["5-ShuiHu-WuYong", "水浒-吴用", 200],
+    5048: ["5-ShuiHu-WuYong", "水浒-吴用", 100],
     #5063: ["5-WuSongDaHu", "武松打虎", 10],
     #5077: ["5-ShuiHu-HuSanNiang", "水浒-扈三娘", 10], #------
     #5055: ["5-ShuiHu-LiKui", "水浒-李逵", 50], #------
@@ -458,21 +458,21 @@ CastingId2MetaInfo = {
     5097: ["5-ShuiHu-LinChong", "水浒-林冲", 100],
     #5070: ["5-ShuiHu-YanQing", "水浒-燕青", 50], #------
     #4149: ["5-XiaoXiaoJianPan-LZai", "小小键盘-L仔", 30],
-    5107: ["5-BaoZi", "包子", 8],
+    5107: ["5-BaoZi", "包子", 1],
     #5111: ["5-XingZheWuSong", "行者武松", 100], #------
     #5082: ["5-QuanDaZhenGuanXi", "拳打镇关西", 30], #------
     #5116: ["5-ShuiHu-GuDaSao", "水浒-顾大嫂", 5], #------
     #5108: ["5-LiShiShi", "李诗诗", 10],
     #5103: ["5-PanJinLian", "潘金莲", 30],
-    5112: ["5-DaDaoGuanSheng", "大刀关胜", 100],
+    5112: ["5-DaDaoGuanSheng", "大刀关胜", 50],
     #5110: ["5-YeRuBaiHuTang", "夜入白虎堂", 0], #------
     #5128: ["5-ShuiHu-ShiJin", "水浒-史进", 10], #------
-    5139: ["5-JunJiChu", "军机处", 3],
-    5133: ["5-ShuiHu-HuYanZhuo", "水浒-呼延灼", 30],
-    5141: ["5-ShuiHu-DongPing", "水浒-董平", 30],
-    5142: ["5-JiuSi", "酒肆", 30],
-    5150: ["5-Jiu", "酒", 8],
-    5151: ["5-LiangCao", "粮草", 8],
+    5139: ["5-JunJiChu", "军机处", 1],
+    5133: ["5-ShuiHu-HuYanZhuo", "水浒-呼延灼", 20],
+    5141: ["5-ShuiHu-DongPing", "水浒-董平", 20],
+    5142: ["5-JiuSi", "酒肆", 10],
+    5150: ["5-Jiu", "酒", 1],
+    5151: ["5-LiangCao", "粮草", 1],
     5129: ["5-ShuiHu-QinMing", "水浒-秦明", 10],
     #5119: ["5-ShuiHu-CaiQing", "水浒-蔡庆", 10], #------
     #5134: ["5-ShuiHu-QiongYing", "水浒-琼英", 10], #------
@@ -489,8 +489,8 @@ CastingId2MetaInfo = {
     #5158: ["5-ShuiHu-ZhangHeng", "水浒-张横", 10], #------
     #5212: ["5-ShuiHu-BaiSheng", "水浒-白胜", 10], #------
     #5227: ["5-ShuiHu-XieZhen", "水浒-解珍", 5],
-    5244: ["5-LiangShanJun", "梁山军", 2],
-    5253: ["5-SongBing", "宋兵", 2],
+    5244: ["5-LiangShanJun", "梁山军", 1],
+    5253: ["5-SongBing", "宋兵", 1],
     5257: ["5-CuJu", "蹴鞠", 5],
     #5241: ["5-ChaoTing-TongGuan", "朝廷-童贯", 5], #------
     5234: ["5-ChaoTing-WangWenDe", "朝廷-王文德", 10],
@@ -499,20 +499,23 @@ CastingId2MetaInfo = {
     #5258: ["5-ChaoTing-MeiZhan", "朝廷-梅展", 5], ##------
     #5243: ["5-ShuiHu-ShiXiu", "水浒-石秀", 5], #------
     #5278: ["5-ChaoTing-WangFu", "朝廷-王黼", 5], #------
-    5262: ["5-ShuiHu-LiuTang", "水浒-刘唐", 5],
+    5262: ["5-ShuiHu-LiuTang", "水浒-刘唐", 10],
     #5242: ["5-ShuiHu-XieBao", "水浒-解宝", 5], #------
     5279: ["5-ChaoTing-QiuYue", "朝廷-丘岳", 5],
     5245: ["5-ShuiHu-YanPoXi", "水浒-阎婆惜", 5],
     5260: ["5-ShuiHu-LeiHeng", "水浒-雷横", 5],
-    5295: ["5-LongPai", "龙牌", 5],
+    5295: ["5-LongPai", "龙牌", 10],
     5261: ["5-ChaoGai", "晁盖", 5], #------
-    5296: ["5-SongHuiZong", "宋徽宗", 5],
-    5280: ["5-ShuiHu-ChaiJin", "水浒-柴进", 2],
-    5263: ["5-ShuiHu-DengFei", "水浒-邓飞", 2],
-    5288: ["5-ChaoTing-LiangShiCheng", "朝廷-梁师成", 2],
-    5277: ["5-ShuiHu-SuoChao", "水浒-索超", 2],
-    5294: ["5-ChaoTing-LiBangYan", "朝廷-李邦彦", 2],
-    5307: ["5-FanHuangDeDiTu", "泛黄的地图", 2],
+    5296: ["5-SongHuiZong", "宋徽宗", 100],
+    5280: ["5-ShuiHu-ChaiJin", "水浒-柴进", 10],
+    5263: ["5-ShuiHu-DengFei", "水浒-邓飞", 10],
+    5288: ["5-ChaoTing-LiangShiCheng", "朝廷-梁师成", 10],
+    5277: ["5-ShuiHu-SuoChao", "水浒-索超", 10],
+    5294: ["5-ChaoTing-LiBangYan", "朝廷-李邦彦", 10],
+    5307: ["5-FanHuangDeDiTu", "泛黄的地图", 5],
+    5305: ["5-WangLun", "王伦", 10],
+    5310: ["5-QiHua", "奇花", 10],
+    5311: ["5-YiShi", "异石", 10],
 
     #4443: ["6-XuShiZhongShu", "虚实中枢"],
     #4448: ["6-XuNiLiRen", "虚拟利刃"],
@@ -598,17 +601,17 @@ CastingId2MetaInfo = {
     # 4868: ["6-SaiBoXiaoLongNv", "赛博小龙女", 0], #------
     # 4947: ["6-SaiBoCaptain", "赛博Captain", 15],
     # 4578: ["6-ShuLiYuanZhen", "数离原阵", 15],
-    4985: ["6-SaiBoQiFeiKa", "赛博起飞卡", 1], 
+    4985: ["6-SaiBoQiFeiKa", "赛博起飞卡"], 
     #4954: ["6-SaiBoZhiHuanQuan", "赛博置换券", 5],
-    4924: ["6-EMoXunZhang", "恶魔勋章", 50],
+    4924: ["6-EMoXunZhang", "恶魔勋章", 2],
     #5008: ["6-SaiBoYunLiangShu", "赛博运粮鼠", 0], #------
-    5019: ["6-SaiBoNiYu", "赛博拟羽", 5],
+    5019: ["6-SaiBoNiYu", "赛博拟羽"],
     #5039: ["6-SaiBoBaoXiaoJi", "赛博报晓鸡", 0], #------
-    4982: ["6-SaiBoTop", "赛博Top", 4],
-    5018: ["6-SaiBoPoYiHeXin", "赛博破译核心", 3],
-    5064: ["6-SaiBoTopOne", "赛博TopOne", 3],
-    5049: ["6-SaiBoJiangZiYa", "赛博姜子牙", 20],
-    5050: ["6-SaiBoKawasaki", "赛博Kawasaki", 10],
+    4982: ["6-SaiBoTop", "赛博Top", 2],
+    5018: ["6-SaiBoPoYiHeXin", "赛博破译核心"],
+    5064: ["6-SaiBoTopOne", "赛博TopOne", 2],
+    5049: ["6-SaiBoJiangZiYa", "赛博姜子牙", 2],
+    5050: ["6-SaiBoKawasaki", "赛博Kawasaki", 2],
 
     3998: ["7-XiangSuQiJing", "像素奇晶"],
     3544: ["7-TanXianZheIV", "探险者IV"],
@@ -644,14 +647,14 @@ CastingId2MetaInfo = {
     #4984: ["8-ShanHaiJing-GuDiao", "山海经-蛊雕", 0], #------
     #4969: ["8-ShanHaiJing-BiFang", "山海经-毕方", 30],#------
     4993: ["8-LongTengHuaXia", "龙腾华夏", 1],
-    5027: ["8-ShanHaiJing-BiBi", "山海经-獙獙", 50],
+    5027: ["8-ShanHaiJing-BiBi", "山海经-獙獙", 10],
     5021: ["8-QiaoMingYueYe", "桥明月夜", 5],
     #4989: ["8-ShanHaiJing-MengJi", "山海经-孟极", 50], #------
     #5060: ["8-QianYunShan", "纤芸扇", 20],
     #5076: ["8-ChuanQiZhiYe", "传奇之夜", 30],
     #5051: ["8-FanHuaShengShi", "繁华盛世", 1], #------
     #5088: ["8-BiShanQiongYu", "璧山琼宇", 2],
-    5098: ["8-XingChenQiYu", "星辰奇遇", 50],
+    5098: ["8-XingChenQiYu", "星辰奇遇", 20],
     #5047: ["8-YaoYeDengXia", "曜夜灯匣", 2], #------
     #5079: ["8-LouHuaSanLun", "镂花伞轮", 30],
     #5123: ["8-FanXingDianDian", "繁星点点", 10], #------
@@ -659,15 +662,15 @@ CastingId2MetaInfo = {
     #5102: ["8-JingShuiShenTan", "静水深潭", 1], #------
     #5144: ["8-BiShuiQingTian", "碧水青天", 2], #------
     #5160: ["8-LongYouSiHai", "龙游四海", 10], #------
-    5187: ["8-ChenXiChuXian", "晨曦初现", 30],
+    5187: ["8-ChenXiChuXian", "晨曦初现", 20],
     #5188: ["8-QingQingCuiZhu", "青青翠竹", 5], #------
     #5266: ["8-QingShanDuoWuMei-HeChengZiGeKa", "青山多妩媚-合成资格卡", 1], #------
     5267: ["8-FengRaoKaPian", "风饶卡片", 1],
     #5276: ["8-QingShanDuoWuMei", "青山多妩媚", 30],
-    5281: ["8-LvYeDuoJiao", "绿野多娇", 10],
+    5281: ["8-LvYeDuoJiao", "绿野多娇", 30],
     5293: ["8-ShanHeLing", "山河令", 2],
     5297: ["8-XiaKeXing", "侠客行", 2],
-    5298: ["8-LongXiaoQianKun", "龙啸乾坤", 2],
+    5298: ["8-LongXiaoQianKun", "龙啸乾坤", 20],
 
     #4515: ["9-ShuGuangPuJiZhan", "殊光谱基站"], #*
     #4562: ["9-ZhengZhaoJiJia", "征召机甲", 100], #------
@@ -682,27 +685,27 @@ CastingId2MetaInfo = {
     #4802: ["9-HuiLanYaoJi", "回蓝药剂", 2],
     #4821: ["9-YouMingShenPanZhe", "幽冥审判者", 0],
     #4833: ["9-YuanDongNeng", "源动能", 0], #------
-    4827: ["9-ShuJuDaiMa", "数据代码", 1],
+    4827: ["9-ShuJuDaiMa", "数据代码"],
     #4912: ["9-SanZuWangLing-ZhuangTaiHuiFu", "三足妄灵-状态恢复", 50],
     #4817: ["9-JuShuoZhiBi", "聚烁之臂", 50], #------
-    4909: ["9-WeiLaiShuJu", "未来数据", 1],
+    4909: ["9-WeiLaiShuJu", "未来数据"],
     #4875: ["9-GuangSuSuiDao", "光速隧道", 50], #------
-    4913: ["9-ChaoJiNengLiang", "超级能量", 10],
+    4913: ["9-ChaoJiNengLiang", "超级能量"],
     #4923: ["9-WanNengJiXieZuZhi", "万能机械组织", 50],
     #4940: ["9-WeiLaiTanXianJia", "未来探险家", 0],
     #4939: ["9-OKMao", "OK猫", 50], #------
     #4908: ["9-ShenYuanZhenSheZhe", "深渊震慑者", 30], #------
-    4941: ["9-WeiLaiShiDai", "未来时代", 50],
+    4941: ["9-WeiLaiShiDai", "未来时代", 2],
     #4950: ["9-WeiLaiJianPan-ShiftZai20", "未来键盘-Shift仔20", 0], #------
     #4944: ["9-WeiLaiWuYingJian", "未来无影剑", 2], #------
-    4955: ["9-XuKongZhanShenKaEr", "虚空战神卡尔", 50],
-    4960: ["9-JiuJiKongJuZhiMen", "究极恐惧之门", 5],
-    4959: ["9-WeiLaiTanXianJiaEZ", "未来探险家EZ", 10],
-    4956: ["9-ShenYuanZhenSheZhe20", "深渊震慑者20", 10],
+    4955: ["9-XuKongZhanShenKaEr", "虚空战神卡尔", 2],
+    4960: ["9-JiuJiKongJuZhiMen", "究极恐惧之门"],
+    4959: ["9-WeiLaiTanXianJiaEZ", "未来探险家EZ"],
+    4956: ["9-ShenYuanZhenSheZhe20", "深渊震慑者20"],
     #4968: ["9-WeiLaiJianPan-CtrlZai20-Old", "未来键盘-Ctrl仔20-老", 0], #------
-    4974: ["9-EMoZhiWangATuo", "恶魔之王阿托", 30],
+    4974: ["9-EMoZhiWangATuo", "恶魔之王阿托"],
     #4979: ["9-WeiLaiJianPan-CZai20", "未来键盘-C仔20", 0], #------
-    4961: ["9-XiaoLunLun", "小伦伦", 30],
+    4961: ["9-XiaoLunLun", "小伦伦", 2],
     #4983: ["9-WeiLaiTanSuoZhe-HeChengZiGeKa", "未来探索者-合成资格卡", 30], #------
     #4990: ["9-WeiLaiJianPan-VZai20", "未来键盘-V仔20", 0], #------
     #4991: ["9-WeiLaiTanSuoZhe20", "未来探索者20", 0], #------
@@ -732,18 +735,18 @@ CastingId2MetaInfo = {
     #5137: ["10-CangLongWang", "苍龙王", 50],
     #5143: ["10-LongHun", "龙魂", 2], #------
     #5148: ["10-YingLongZhu", "影龙珠", 20],
-    5149: ["10-YingLongWei", "影龙卫", 30],
+    5149: ["10-YingLongWei", "影龙卫", 2],
     #5152: ["10-YingLong", "应龙", 20],
     #5184: ["10-LongXue", "龙血", 1], #------
     #5186: ["10-FeiLongZaiTian", "飞龙在天", 8], #------
-    5191: ["10-LongZhiYiHai", "龙之遗骸", 10], 
+    5191: ["10-LongZhiYiHai", "龙之遗骸", 2], 
     #5192: ["10-LongGu", "龙骨", 1], #------
     #5193: ["10-YingLong-XuShui", "应龙-蓄水", 10], #------
-    5209: ["10-YiDianYuan", "伊甸园", 2],
+    5209: ["10-YiDianYuan", "伊甸园"],
     #5210: ["10-YaDang-HeChengZiGeKa", "亚当-合成资格卡", 20],
     #5218: ["10-YeHuoShaoBuJing", "野火烧不尽", 1], #------
-    5222: ["10-XiaWa", "夏娃", 2],
-    5221: ["10-YaDang", "亚当", 50],
+    5222: ["10-XiaWa", "夏娃"],
+    5221: ["10-YaDang", "亚当", 10],
     5225: ["10-ShangDi-HeChengZiGeKa", "上帝-合成资格卡", 2],
 
     #4228: ["88-WangZheZhiZhan", "王者之战", 5],
@@ -753,7 +756,7 @@ CastingId2MetaInfo = {
     #4407: ["88-QingXuanMoGui", "清玄墨圭", 10],
 }
 
-DEFAULT_MIN_PRICE = 5
+DEFAULT_MIN_PRICE = 1
 
 Transaction_Logs_File_Name = "_guangyu_{}_trans_logs.csv"
 
@@ -764,11 +767,11 @@ HighestValue_Products_Info = {
     1124: [296, 60000.0],
 }
 
-# 173
-Home_Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxNzM2MjE4Njk2MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzEzMTkyNTUxLCJzaWduSWQiOiI3NTZiNDljMjQ3OWM0ZTc4YTUzZTc3YjY3YmQyYTQ1MyIsImlhdCI6MTcxMjU4Nzc1MX0.4dkURQI0POQfvX5I1m8NYfFAV9X75F1mqVvKaZQPfvQ"
-
 # 131
 Query_Token= "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxMzE1NjE2MTA5MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzE0MTgwNzY0LCJzaWduSWQiOiI3Yzc1MjhiNTczOTA0NzFlOWRhNWRmOWYwYTI1ZWI1YiIsImlhdCI6MTcxMzU3NTk2NH0.wPw-NE03OiAgBB1fItrtaLezJ0w_97ffkJdj7YNqbLc"
+
+# Pay
+Home_Token = Query_Token
 
 # 173, A
 Mem = "TlWGj132+S/nHlBuNfxWDkm9Mn08vJWbYVnUMu8vegmRvSNCNs7c/YVacR3F+UE9y5xn0MPiPKDzzUpOsfsDv7LC7TiuPZnHR5rnHzcUljTtNqHWEoF7897uAy0PI5QeJx5Opi6PIltgt+9pnVUdprvGInz6T79gGadwJh2SSnGQ="

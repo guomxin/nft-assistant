@@ -274,6 +274,18 @@ echo "---泛黄的地图---"
 python grab_transaction_price.py 5307 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 5307 ${yesterday} 10
 
+echo "---王伦---"
+python grab_transaction_price.py 5305 ${yesterday} ${yesterday}
+python analyze_transaction_prices.py 5305 ${yesterday} 10
+
+echo "---奇花---"
+python grab_transaction_price.py 5310 ${yesterday} ${yesterday}
+python analyze_transaction_prices.py 5310 ${yesterday} 10
+
+echo "---异石---"
+python grab_transaction_price.py 5311 ${yesterday} ${yesterday}
+python analyze_transaction_prices.py 5311 ${yesterday} 10
+
 #--- 赛博狂潮 ---#
 echo "---赛博起飞卡---"
 python grab_transaction_price.py 4985 ${yesterday} ${yesterday}
@@ -455,6 +467,7 @@ for nft in "1-N-MengYouGeLou" "1-N-YouLingTianTai" "1-N-ChaoNengMoJing" \
 "5-ShuiHu-SongJiang" "5-LiangShanJun" "5-ChaoTing-QiuYue" "5-ShuiHu-ChaiJin" "5-ShuiHu-DengFei" \
 "5-SongBing" "5-CuJu" "5-ShuiHu-YanPoXi" "5-ShuiHu-LeiHeng" "5-LongPai" "5-ChaoGai" \
 "5-ChaoTing-LiangShiCheng" "5-ShuiHu-SuoChao" "5-ChaoTing-LiBangYan" "5-FanHuangDeDiTu" \
+"5-WangLun" "5-QiHua" "5-YiShi" \
 "6-SaiBoQiFeiKa" "6-EMoXunZhang"  "6-SaiBoNiYu" "6-SaiBoTopOne" "6-SaiBoTop" "6-SaiBoPoYiHeXin" \
 "6-SaiBoJiangZiYa" "6-SaiBoKawasaki" \
 "7-XiangSuQiJing" "7-TanXianZheIV" "7-XunBaoZheI" "7-GongYunXiaoShao" "7-FangBiaoZhiShiDeng" "7-YeGuWangCheng" \
