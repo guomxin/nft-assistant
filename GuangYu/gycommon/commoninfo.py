@@ -437,7 +437,7 @@ CastingId2MetaInfo = {
     #4755: ["5-QianXiZhiZhang", "前夕织章"],
     #4566: ["5-FangShengJiXieFeng", "仿生机械蜂", 10], #------
     #4663: ["5-ShenGuangZhiFei", "神光之扉", 10], #------
-    5000: ["5-JiangHuLing", "江湖令", 1],
+    5000: ["5-JiangHuLing", "江湖令", 1], #------
     5003: ["5-ShuiHu-ZhangQing", "水浒-张青", 2],
     #5004: ["5-ShuiHu-WuSong", "水浒-武松", 50], #------
     #5016: ["5-ShuiHu-RuanXiaoEr", "水浒-阮小二", 10], #------
@@ -505,10 +505,14 @@ CastingId2MetaInfo = {
     5245: ["5-ShuiHu-YanPoXi", "水浒-阎婆惜", 5],
     5260: ["5-ShuiHu-LeiHeng", "水浒-雷横", 5],
     5295: ["5-LongPai", "龙牌", 5],
-    5261: ["5-ChaoGai", "晁盖", 5],
+    5261: ["5-ChaoGai", "晁盖", 5], #------
     5296: ["5-SongHuiZong", "宋徽宗", 5],
     5280: ["5-ShuiHu-ChaiJin", "水浒-柴进", 2],
     5263: ["5-ShuiHu-DengFei", "水浒-邓飞", 2],
+    5288: ["5-ChaoTing-LiangShiCheng", "朝廷-梁师成", 2],
+    5277: ["5-ShuiHu-SuoChao", "水浒-索超", 2],
+    5294: ["5-ChaoTing-LiBangYan", "朝廷-李邦彦", 2],
+    5307: ["5-FanHuangDeDiTu", "泛黄的地图", 2],
 
     #4443: ["6-XuShiZhongShu", "虚实中枢"],
     #4448: ["6-XuNiLiRen", "虚拟利刃"],
@@ -654,7 +658,7 @@ CastingId2MetaInfo = {
     #5122: ["8-YunXiaHuaBao", "云霞华宝", 0],
     #5102: ["8-JingShuiShenTan", "静水深潭", 1], #------
     #5144: ["8-BiShuiQingTian", "碧水青天", 2], #------
-    5160: ["8-LongYouSiHai", "龙游四海", 10], #------
+    #5160: ["8-LongYouSiHai", "龙游四海", 10], #------
     5187: ["8-ChenXiChuXian", "晨曦初现", 30],
     #5188: ["8-QingQingCuiZhu", "青青翠竹", 5], #------
     #5266: ["8-QingShanDuoWuMei-HeChengZiGeKa", "青山多妩媚-合成资格卡", 1], #------
