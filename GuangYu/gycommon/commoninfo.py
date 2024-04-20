@@ -437,12 +437,12 @@ CastingId2MetaInfo = {
     #4755: ["5-QianXiZhiZhang", "前夕织章"],
     #4566: ["5-FangShengJiXieFeng", "仿生机械蜂", 10], #------
     #4663: ["5-ShenGuangZhiFei", "神光之扉", 10], #------
-    5000: ["5-JiangHuLing", "江湖令", 1], #------
-    5003: ["5-ShuiHu-ZhangQing", "水浒-张青", 1],
+    #5000: ["5-JiangHuLing", "江湖令", 1], #------
+    #5003: ["5-ShuiHu-ZhangQing", "水浒-张青", 1], #------
     #5004: ["5-ShuiHu-WuSong", "水浒-武松", 50], #------
     #5016: ["5-ShuiHu-RuanXiaoEr", "水浒-阮小二", 10], #------
     #5028: ["5-ShuiHu-RuanXiaoQi", "水浒-阮小七", 0], #------
-    5109: ["5-JuYiTing", "聚义厅", 1],
+    #5109: ["5-JuYiTing", "聚义厅", 1], #------
     #5041: ["5-ShuiHu", "水浒", 50], #------
     #5022: ["5-ShuiHu-SunErNiang", "水浒-孙二娘", 10],
     5044: ["5-ShiZiPoRouBaoZiPu", "十字坡肉包子铺", 30],
@@ -455,7 +455,7 @@ CastingId2MetaInfo = {
     #5055: ["5-ShuiHu-LiKui", "水浒-李逵", 50], #------
     #5086: ["5-XiMenQing", "西门庆", 5], #------
     #5115: ["5-ShenSuanZi", "神算子", 3],
-    5097: ["5-ShuiHu-LinChong", "水浒-林冲", 100],
+    5097: ["5-ShuiHu-LinChong", "水浒-林冲", 10], #------
     #5070: ["5-ShuiHu-YanQing", "水浒-燕青", 50], #------
     #4149: ["5-XiaoXiaoJianPan-LZai", "小小键盘-L仔", 30],
     5107: ["5-BaoZi", "包子", 1],
@@ -464,7 +464,7 @@ CastingId2MetaInfo = {
     #5116: ["5-ShuiHu-GuDaSao", "水浒-顾大嫂", 5], #------
     #5108: ["5-LiShiShi", "李诗诗", 10],
     #5103: ["5-PanJinLian", "潘金莲", 30],
-    5112: ["5-DaDaoGuanSheng", "大刀关胜", 50],
+    5112: ["5-DaDaoGuanSheng", "大刀关胜", 10], #------
     #5110: ["5-YeRuBaiHuTang", "夜入白虎堂", 0], #------
     #5128: ["5-ShuiHu-ShiJin", "水浒-史进", 10], #------
     5139: ["5-JunJiChu", "军机处", 1],
@@ -505,7 +505,7 @@ CastingId2MetaInfo = {
     5245: ["5-ShuiHu-YanPoXi", "水浒-阎婆惜", 5],
     5260: ["5-ShuiHu-LeiHeng", "水浒-雷横", 5],
     5295: ["5-LongPai", "龙牌", 10],
-    5261: ["5-ChaoGai", "晁盖", 5], #------
+    #5261: ["5-ChaoGai", "晁盖", 5], #------
     5296: ["5-SongHuiZong", "宋徽宗", 100],
     5280: ["5-ShuiHu-ChaiJin", "水浒-柴进", 10],
     5263: ["5-ShuiHu-DengFei", "水浒-邓飞", 10],
