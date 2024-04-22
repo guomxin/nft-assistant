@@ -501,7 +501,7 @@ CastingId2MetaInfo = {
     #5278: ["5-ChaoTing-WangFu", "朝廷-王黼", 5], #------
     5262: ["5-ShuiHu-LiuTang", "水浒-刘唐", 10],
     #5242: ["5-ShuiHu-XieBao", "水浒-解宝", 5], #------
-    5279: ["5-ChaoTing-QiuYue", "朝廷-丘岳", 5],
+    5279: ["5-ChaoTing-QiuYue", "朝廷-丘岳", 5], #------
     5245: ["5-ShuiHu-YanPoXi", "水浒-阎婆惜", 5],
     5260: ["5-ShuiHu-LeiHeng", "水浒-雷横", 5],
     5295: ["5-LongPai", "龙牌", 10],
@@ -516,6 +516,7 @@ CastingId2MetaInfo = {
     5305: ["5-WangLun", "王伦", 10],
     5310: ["5-QiHua", "奇花", 10],
     5311: ["5-YiShi", "异石", 10],
+    5313: ["5-ShuiHu-LuJunYi", "水浒-卢俊义", 50],
 
     #4443: ["6-XuShiZhongShu", "虚实中枢"],
     #4448: ["6-XuNiLiRen", "虚拟利刃"],
@@ -768,7 +769,7 @@ HighestValue_Products_Info = {
 }
 
 # 131
-Query_Token= "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxMzE1NjE2MTA5MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzE0MTgwNzY0LCJzaWduSWQiOiI3Yzc1MjhiNTczOTA0NzFlOWRhNWRmOWYwYTI1ZWI1YiIsImlhdCI6MTcxMzU3NTk2NH0.wPw-NE03OiAgBB1fItrtaLezJ0w_97ffkJdj7YNqbLc"
+Query_Token= "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxMzE1NjE2MTA5MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzE0MzU2Nzc3LCJzaWduSWQiOiI1MWQyNDFkYzk1ZTU0YjY1ODQyNjBmNGNmODg3ODJjMCIsImlhdCI6MTcxMzc1MTk3N30.EocFXRUJvq5RwCyRVWumOKx5pxtYpbBK1New4_nYp-U"
 
 # Pay
 Home_Token = Query_Token
