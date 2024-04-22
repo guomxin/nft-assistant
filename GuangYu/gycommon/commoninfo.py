@@ -455,7 +455,7 @@ CastingId2MetaInfo = {
     #5055: ["5-ShuiHu-LiKui", "水浒-李逵", 50], #------
     #5086: ["5-XiMenQing", "西门庆", 5], #------
     #5115: ["5-ShenSuanZi", "神算子", 3],
-    5097: ["5-ShuiHu-LinChong", "水浒-林冲", 10], #------
+    #5097: ["5-ShuiHu-LinChong", "水浒-林冲", 10], #------
     #5070: ["5-ShuiHu-YanQing", "水浒-燕青", 50], #------
     #4149: ["5-XiaoXiaoJianPan-LZai", "小小键盘-L仔", 30],
     5107: ["5-BaoZi", "包子", 1],
@@ -464,7 +464,7 @@ CastingId2MetaInfo = {
     #5116: ["5-ShuiHu-GuDaSao", "水浒-顾大嫂", 5], #------
     #5108: ["5-LiShiShi", "李诗诗", 10],
     #5103: ["5-PanJinLian", "潘金莲", 30],
-    5112: ["5-DaDaoGuanSheng", "大刀关胜", 10], #------
+    #5112: ["5-DaDaoGuanSheng", "大刀关胜", 10], #------
     #5110: ["5-YeRuBaiHuTang", "夜入白虎堂", 0], #------
     #5128: ["5-ShuiHu-ShiJin", "水浒-史进", 10], #------
     5139: ["5-JunJiChu", "军机处", 1],
@@ -501,7 +501,7 @@ CastingId2MetaInfo = {
     #5278: ["5-ChaoTing-WangFu", "朝廷-王黼", 5], #------
     5262: ["5-ShuiHu-LiuTang", "水浒-刘唐", 10],
     #5242: ["5-ShuiHu-XieBao", "水浒-解宝", 5], #------
-    5279: ["5-ChaoTing-QiuYue", "朝廷-丘岳", 5], #------
+    #5279: ["5-ChaoTing-QiuYue", "朝廷-丘岳", 5], #------
     5245: ["5-ShuiHu-YanPoXi", "水浒-阎婆惜", 5],
     5260: ["5-ShuiHu-LeiHeng", "水浒-雷横", 5],
     5295: ["5-LongPai", "龙牌", 10],

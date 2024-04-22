@@ -142,17 +142,9 @@ echo "---水浒-吴用---"
 python grab_transaction_price.py 5048 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 5048 ${yesterday} 10
 
-echo "---水浒-林冲---"
-python grab_transaction_price.py 5097 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 5097 ${yesterday} 10
-
 echo "---包子---"
 python grab_transaction_price.py 5107 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 5107 ${yesterday} 10
-
-echo "---大刀关胜---"
-python grab_transaction_price.py 5112 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 5112 ${yesterday} 10
 
 echo "---军机处---"
 python grab_transaction_price.py 5139 ${yesterday} ${yesterday}
@@ -213,10 +205,6 @@ python analyze_transaction_prices.py 5234 ${yesterday} 10
 echo "---水浒-刘唐---"
 python grab_transaction_price.py 5262 ${yesterday} ${yesterday}
 python analyze_transaction_prices.py 5262 ${yesterday} 10
-
-echo "---朝廷-丘岳---"
-python grab_transaction_price.py 5279 ${yesterday} ${yesterday}
-python analyze_transaction_prices.py 5279 ${yesterday} 10
 
 echo "---水浒-阎婆惜---"
 python grab_transaction_price.py 5245 ${yesterday} ${yesterday}
@@ -448,11 +436,11 @@ for nft in "1-N-MengYouGeLou" "1-N-YouLingTianTai" "1-N-ChaoNengMoJing" \
 "2-ZaiFuXiangHuang" "2-LongYinWanXiang" "2-JinQuXiYin" "2-YiShouFuTu" "2-JiuChongTianWaiTian" \
 "3-ZhongYiWuSheng" "3-ChuFengMingTong" "3-ChongHuoFeiYan" \
 "3-HuBenZhanXue" "3-YinXuJianDao" "3-FengDengBaiGu" "3-YongMengShuBing" "3-KuaiHuRen" "3-RuiFengJianLing" "3-YunYuYangFeng" \
-"5-ShuiHu-WuYong" "5-JunJiChu" "5-ShuiHu-DongPing" "5-JiuSi" "5-ShuiHu-LinChong" \
+"5-ShuiHu-WuYong" "5-JunJiChu" "5-ShuiHu-DongPing" "5-JiuSi" \
 "5-ShiZiPoRouBaoZiPu" "5-ChaoTing-WangWenDe" \
-"5-ShuiHu-HuYanZhuo" "5-BaoZi" "5-DaDaoGuanSheng" "5-ShuiHuZhuan" \
+"5-ShuiHu-HuYanZhuo" "5-BaoZi" "5-ShuiHuZhuan" \
 "5-Jiu" "5-LiangCao" "5-ShuiHu-QinMing" "5-TouMingZhuang" "5-ShuiHu-LiuTang" "5-SongHuiZong" \
-"5-ShuiHu-SongJiang" "5-LiangShanJun" "5-ChaoTing-QiuYue" "5-ShuiHu-ChaiJin" "5-ShuiHu-DengFei" \
+"5-ShuiHu-SongJiang" "5-LiangShanJun" "5-ShuiHu-ChaiJin" "5-ShuiHu-DengFei" \
 "5-SongBing" "5-CuJu" "5-ShuiHu-YanPoXi" "5-ShuiHu-LeiHeng" "5-LongPai" \
 "5-ChaoTing-LiangShiCheng" "5-ShuiHu-SuoChao" "5-ChaoTing-LiBangYan" "5-FanHuangDeDiTu" \
 "5-WangLun" "5-QiHua" "5-YiShi" "5-ShuiHu-LuJunYi" \
