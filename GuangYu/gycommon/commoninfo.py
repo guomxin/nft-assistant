@@ -469,11 +469,11 @@ CastingId2MetaInfo = {
     #5128: ["5-ShuiHu-ShiJin", "水浒-史进", 10], #------
     5139: ["5-JunJiChu", "军机处", 1],
     5133: ["5-ShuiHu-HuYanZhuo", "水浒-呼延灼", 20],
-    5141: ["5-ShuiHu-DongPing", "水浒-董平", 20],
+    #5141: ["5-ShuiHu-DongPing", "水浒-董平", 20], #------
     5142: ["5-JiuSi", "酒肆", 10],
     5150: ["5-Jiu", "酒", 1],
     5151: ["5-LiangCao", "粮草", 1],
-    5129: ["5-ShuiHu-QinMing", "水浒-秦明", 10],
+    #5129: ["5-ShuiHu-QinMing", "水浒-秦明", 10], #------
     #5119: ["5-ShuiHu-CaiQing", "水浒-蔡庆", 10], #------
     #5134: ["5-ShuiHu-QiongYing", "水浒-琼英", 10], #------
     5181: ["5-ShuiHu-SongJiang", "水浒-宋江", 100],
@@ -512,11 +512,13 @@ CastingId2MetaInfo = {
     5288: ["5-ChaoTing-LiangShiCheng", "朝廷-梁师成", 10],
     5277: ["5-ShuiHu-SuoChao", "水浒-索超", 10],
     5294: ["5-ChaoTing-LiBangYan", "朝廷-李邦彦", 10],
-    5307: ["5-FanHuangDeDiTu", "泛黄的地图", 5],
+    #5307: ["5-FanHuangDeDiTu", "泛黄的地图", 5], #------
     5305: ["5-WangLun", "王伦", 10],
     5310: ["5-QiHua", "奇花", 10],
     5311: ["5-YiShi", "异石", 10],
     5313: ["5-ShuiHu-LuJunYi", "水浒-卢俊义", 50],
+    5300: ["5-ShiWenGong", "史文恭", 10],
+    5259: ["5-ShenYiAnDaoQuan", "神医安道全", 5],
 
     #4443: ["6-XuShiZhongShu", "虚实中枢"],
     #4448: ["6-XuNiLiRen", "虚拟利刃"],
