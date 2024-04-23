@@ -468,7 +468,7 @@ CastingId2MetaInfo = {
     #5110: ["5-YeRuBaiHuTang", "夜入白虎堂", 0], #------
     #5128: ["5-ShuiHu-ShiJin", "水浒-史进", 10], #------
     5139: ["5-JunJiChu", "军机处", 1],
-    5133: ["5-ShuiHu-HuYanZhuo", "水浒-呼延灼", 20],
+    5133: ["5-ShuiHu-HuYanZhuo", "水浒-呼延灼", 20], #------
     #5141: ["5-ShuiHu-DongPing", "水浒-董平", 20], #------
     5142: ["5-JiuSi", "酒肆", 10],
     5150: ["5-Jiu", "酒", 1],
@@ -519,6 +519,7 @@ CastingId2MetaInfo = {
     5313: ["5-ShuiHu-LuJunYi", "水浒-卢俊义", 50],
     5300: ["5-ShiWenGong", "史文恭", 10],
     5259: ["5-ShenYiAnDaoQuan", "神医安道全", 5],
+    5306: ["5-ShuiHu-DuanJingZhu", "水浒-段景住", 5],
 
     #4443: ["6-XuShiZhongShu", "虚实中枢"],
     #4448: ["6-XuNiLiRen", "虚拟利刃"],
