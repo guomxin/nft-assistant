@@ -493,7 +493,7 @@ CastingId2MetaInfo = {
     5253: ["5-SongBing", "宋兵", 1],
     5257: ["5-CuJu", "蹴鞠", 5],
     #5241: ["5-ChaoTing-TongGuan", "朝廷-童贯", 5], #------
-    5234: ["5-ChaoTing-WangWenDe", "朝廷-王文德", 10],
+    5234: ["5-ChaoTing-WangWenDe", "朝廷-王文德", 10], #------
     #5226: ["5-FengXueShanShenMiao", "风雪山神庙", 5], #------
     #5254: ["5-ChaoTing-ZhouXin", "朝廷-周信", 5], #------
     #5258: ["5-ChaoTing-MeiZhan", "朝廷-梅展", 5], ##------
@@ -520,6 +520,7 @@ CastingId2MetaInfo = {
     5300: ["5-ShiWenGong", "史文恭", 10],
     5259: ["5-ShenYiAnDaoQuan", "神医安道全", 5],
     5306: ["5-ShuiHu-DuanJingZhu", "水浒-段景住", 5],
+    5285: ["5-ShuiHu-ZhuTong", "水浒-朱仝", 5],
 
     #4443: ["6-XuShiZhongShu", "虚实中枢"],
     #4448: ["6-XuNiLiRen", "虚拟利刃"],
