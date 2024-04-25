@@ -503,7 +503,7 @@ CastingId2MetaInfo = {
     #5242: ["5-ShuiHu-XieBao", "水浒-解宝", 5], #------
     #5279: ["5-ChaoTing-QiuYue", "朝廷-丘岳", 5], #------
     5245: ["5-ShuiHu-YanPoXi", "水浒-阎婆惜", 5],
-    5260: ["5-ShuiHu-LeiHeng", "水浒-雷横", 5],
+    5260: ["5-ShuiHu-LeiHeng", "水浒-雷横", 5], #------
     5295: ["5-LongPai", "龙牌", 10],
     #5261: ["5-ChaoGai", "晁盖", 5], #------
     5296: ["5-SongHuiZong", "宋徽宗", 100],
@@ -522,6 +522,7 @@ CastingId2MetaInfo = {
     5306: ["5-ShuiHu-DuanJingZhu", "水浒-段景住", 5],
     5285: ["5-ShuiHu-ZhuTong", "水浒-朱仝", 5],
     5317: ["5-ShenMiSuiDaoTongXingPingZheng", "神秘隧道通行凭证", 5],
+    5318: ["5-TanSuoFeiChuan", "探索飞船", 5],
 
     #4443: ["6-XuShiZhongShu", "虚实中枢"],
     #4448: ["6-XuNiLiRen", "虚拟利刃"],
@@ -615,7 +616,7 @@ CastingId2MetaInfo = {
     #5039: ["6-SaiBoBaoXiaoJi", "赛博报晓鸡", 0], #------
     4982: ["6-SaiBoTop", "赛博Top", 2],
     5018: ["6-SaiBoPoYiHeXin", "赛博破译核心"],
-    5064: ["6-SaiBoTopOne", "赛博TopOne", 2],
+    5064: ["6-SaiBoTopOne", "赛博TopOne", 1],
     5049: ["6-SaiBoJiangZiYa", "赛博姜子牙", 2],
     5050: ["6-SaiBoKawasaki", "赛博Kawasaki", 2],
 
