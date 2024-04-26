@@ -493,7 +493,7 @@ CastingId2MetaInfo = {
     5253: ["5-SongBing", "宋兵", 1],
     5257: ["5-CuJu", "蹴鞠", 5],
     #5241: ["5-ChaoTing-TongGuan", "朝廷-童贯", 5], #------
-    5234: ["5-ChaoTing-WangWenDe", "朝廷-王文德", 10], #------
+    #5234: ["5-ChaoTing-WangWenDe", "朝廷-王文德", 10], #------
     #5226: ["5-FengXueShanShenMiao", "风雪山神庙", 5], #------
     #5254: ["5-ChaoTing-ZhouXin", "朝廷-周信", 5], #------
     #5258: ["5-ChaoTing-MeiZhan", "朝廷-梅展", 5], ##------
@@ -503,7 +503,7 @@ CastingId2MetaInfo = {
     #5242: ["5-ShuiHu-XieBao", "水浒-解宝", 5], #------
     #5279: ["5-ChaoTing-QiuYue", "朝廷-丘岳", 5], #------
     5245: ["5-ShuiHu-YanPoXi", "水浒-阎婆惜", 5],
-    5260: ["5-ShuiHu-LeiHeng", "水浒-雷横", 5], #------
+    #5260: ["5-ShuiHu-LeiHeng", "水浒-雷横", 5], #------
     5295: ["5-LongPai", "龙牌", 10],
     #5261: ["5-ChaoGai", "晁盖", 5], #------
     5296: ["5-SongHuiZong", "宋徽宗", 100],
@@ -521,8 +521,10 @@ CastingId2MetaInfo = {
     5259: ["5-ShenYiAnDaoQuan", "神医安道全", 5],
     5306: ["5-ShuiHu-DuanJingZhu", "水浒-段景住", 5],
     5285: ["5-ShuiHu-ZhuTong", "水浒-朱仝", 5],
-    5317: ["5-ShenMiSuiDaoTongXingPingZheng", "神秘隧道通行凭证", 5],
+    5317: ["5-ShenMiSuiDaoTongXingPingZheng", "神秘隧道通行凭证", 20],
     5318: ["5-TanSuoFeiChuan", "探索飞船", 5],
+    5321: ["5-RanLiao", "燃料", 2],
+    5312: ["5-ChaoTing-HanCunBao", "朝廷-韩存保", 5],
 
     #4443: ["6-XuShiZhongShu", "虚实中枢"],
     #4448: ["6-XuNiLiRen", "虚拟利刃"],
