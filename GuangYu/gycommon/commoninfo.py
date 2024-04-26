@@ -483,7 +483,7 @@ CastingId2MetaInfo = {
     #5179: ["5-ShuiHu-YangZhi", "水浒-杨志", 10], #------
     #5100: ["5-HuaQiang", "花枪", 10], #------
     #5195: ["5-ShuiHu-ZhangSanShuiQing", "水浒-张清", 5],
-    5220: ["5-ShuiHuZhuan", "水浒传", 10],
+    5220: ["5-ShuiHuZhuan", "水浒传", 10], #------
     #5206: ["5-ChaiFenKa", "拆分卡", 1], #------
     5228: ["5-TouMingZhuang", "投名状", 10],
     #5158: ["5-ShuiHu-ZhangHeng", "水浒-张横", 10], #------
@@ -525,6 +525,7 @@ CastingId2MetaInfo = {
     5318: ["5-TanSuoFeiChuan", "探索飞船", 5],
     5321: ["5-RanLiao", "燃料", 2],
     5312: ["5-ChaoTing-HanCunBao", "朝廷-韩存保", 5],
+    5290: ["5-ShuiHu-LiJun", "水浒-李俊", 5],
 
     #4443: ["6-XuShiZhongShu", "虚实中枢"],
     #4448: ["6-XuNiLiRen", "虚拟利刃"],
