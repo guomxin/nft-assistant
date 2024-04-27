@@ -527,6 +527,7 @@ CastingId2MetaInfo = {
     5312: ["5-ChaoTing-HanCunBao", "朝廷-韩存保", 5],
     5290: ["5-ShuiHu-LiJun", "水浒-李俊", 5],
     5314: ["5-ChaoTing-LiGang", "朝廷-李纲", 5],
+    5326: ["5-JinXing", "金星", 10],
 
     #4443: ["6-XuShiZhongShu", "虚实中枢"],
     #4448: ["6-XuNiLiRen", "虚拟利刃"],
