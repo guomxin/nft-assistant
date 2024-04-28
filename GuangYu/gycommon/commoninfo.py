@@ -508,7 +508,7 @@ CastingId2MetaInfo = {
     #5261: ["5-ChaoGai", "晁盖", 5], #------
     5296: ["5-SongHuiZong", "宋徽宗", 100],
     5280: ["5-ShuiHu-ChaiJin", "水浒-柴进", 10],
-    5263: ["5-ShuiHu-DengFei", "水浒-邓飞", 10],
+    #5263: ["5-ShuiHu-DengFei", "水浒-邓飞", 10], #------
     #5288: ["5-ChaoTing-LiangShiCheng", "朝廷-梁师成", 10], #------
     5277: ["5-ShuiHu-SuoChao", "水浒-索超", 10],
     #5294: ["5-ChaoTing-LiBangYan", "朝廷-李邦彦", 10], #------
