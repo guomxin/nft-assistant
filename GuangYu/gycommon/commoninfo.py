@@ -531,6 +531,7 @@ CastingId2MetaInfo = {
     5319: ["5-ZhaoYeYuShiZi", "照夜玉狮子", 5],
     5330: ["5-YunShi", "陨石", 5],
     5289: ["5-ShuiHu-XiaoRang", "水浒-萧让", 5],
+    5291: ["5-ShuiHu-YangLin", "水浒-杨林", 5],
 
     #4443: ["6-XuShiZhongShu", "虚实中枢"],
     #4448: ["6-XuNiLiRen", "虚拟利刃"],
