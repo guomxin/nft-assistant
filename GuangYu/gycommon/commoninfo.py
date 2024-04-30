@@ -533,6 +533,8 @@ CastingId2MetaInfo = {
     5289: ["5-ShuiHu-XiaoRang", "水浒-萧让", 5],
     5291: ["5-ShuiHu-YangLin", "水浒-杨林", 5],
     5336: ["5-ZengNong", "曾弄", 5],
+    5302: ["5-ShuiHu-DaiZong", "水浒-戴宗", 5],
+    5325: ["5-SiKuQuanShu-SongShi", "四库全书-宋史", 5],
 
     #4443: ["6-XuShiZhongShu", "虚实中枢"],
     #4448: ["6-XuNiLiRen", "虚拟利刃"],
@@ -785,7 +787,7 @@ HighestValue_Products_Info = {
 }
 
 # 131
-Query_Token= "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxMzE1NjE2MTA5MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzE0OTc1MzkwLCJzaWduSWQiOiJjYWUyZTBjNDdjMjQ0ZWMzYWE5YjUxOTIzMmJlNWRlOSIsImlhdCI6MTcxNDM3MDU5MH0.a08YJiOSBjXD91P4IDL_nn2cCk1hyaOwCEzjcyeaBh4"
+Query_Token= "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxMzE1NjE2MTA5MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzE1MDY0NDU2LCJzaWduSWQiOiIyZWZmNTAyZDYwYmY0NjQxYWU4MjRmZGY1ZGZiNGY4MiIsImlhdCI6MTcxNDQ1OTY1Nn0.jP99PzPET3rIfPEckkSIgzwcr6zh2g2qu4YIutTGsxo"
 
 # Pay
 Home_Token = Query_Token
