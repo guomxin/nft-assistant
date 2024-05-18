@@ -517,12 +517,12 @@ CastingId2MetaInfo = {
     #5310: ["5-QiHua", "奇花", 10], #------
     #5311: ["5-YiShi", "异石", 10], #------
     5313: ["5-ShuiHu-LuJunYi", "水浒-卢俊义", 50],
-    5300: ["5-ShiWenGong", "史文恭", 10],
+    #5300: ["5-ShiWenGong", "史文恭", 10], #------
     5259: ["5-ShenYiAnDaoQuan", "神医安道全", 5],
     5306: ["5-ShuiHu-DuanJingZhu", "水浒-段景住", 5],
     5285: ["5-ShuiHu-ZhuTong", "水浒-朱仝", 5],
     5317: ["5-ShenMiSuiDaoTongXingPingZheng", "神秘隧道通行凭证", 20],
-    5318: ["5-TanSuoFeiChuan", "探索飞船", 5], #------
+    #5318: ["5-TanSuoFeiChuan", "探索飞船", 5], #------
     5321: ["5-RanLiao", "燃料", 2],
     5312: ["5-ChaoTing-HanCunBao", "朝廷-韩存保", 5],
     5290: ["5-ShuiHu-LiJun", "水浒-李俊", 5],
@@ -535,10 +535,10 @@ CastingId2MetaInfo = {
     5336: ["5-ZengNong", "曾弄", 5],
     5302: ["5-ShuiHu-DaiZong", "水浒-戴宗", 5],
     5325: ["5-SiKuQuanShu-SongShi", "四库全书-宋史", 5],
-    5338: ["5-HuoXing", "火星", 5],
+    5338: ["5-HuoXing", "火星", 5], #------
     5337: ["5-JinChao-WanYanAGuDa", "金朝-完颜阿骨打", 5],
     #5341: ["5-ShuiXing", "水星", 5], #------
-    5320: ["5-ChaoTing-WuJie", "朝廷-吴玠", 5],
+    #5320: ["5-ChaoTing-WuJie", "朝廷-吴玠", 5], #------
     5350: ["5-HuiXing", "慧星", 5],
     5354: ["5-YuanHangFeiChuan", "远航飞船", 5],
     5355: ["5-YueQiu", "月球", 5],
