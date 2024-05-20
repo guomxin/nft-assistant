@@ -543,6 +543,7 @@ CastingId2MetaInfo = {
     5354: ["5-YuanHangFeiChuan", "远航飞船", 5],
     5355: ["5-YueQiu", "月球", 5],
     5358: ["5-TuXing", "土星", 5],
+    5362: ["5-DiQiu", "地球", 5],
 
     #4443: ["6-XuShiZhongShu", "虚实中枢"],
     #4448: ["6-XuNiLiRen", "虚拟利刃"],
