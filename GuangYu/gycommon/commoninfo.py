@@ -510,7 +510,7 @@ CastingId2MetaInfo = {
     5280: ["5-ShuiHu-ChaiJin", "水浒-柴进", 10],
     #5263: ["5-ShuiHu-DengFei", "水浒-邓飞", 10], #------
     #5288: ["5-ChaoTing-LiangShiCheng", "朝廷-梁师成", 10], #------
-    5277: ["5-ShuiHu-SuoChao", "水浒-索超", 10],
+    5277: ["5-ShuiHu-SuoChao", "水浒-索超", 10], #------
     #5294: ["5-ChaoTing-LiBangYan", "朝廷-李邦彦", 10], #------
     #5307: ["5-FanHuangDeDiTu", "泛黄的地图", 5], #------
     5305: ["5-WangLun", "王伦", 10],
@@ -544,6 +544,7 @@ CastingId2MetaInfo = {
     5355: ["5-YueQiu", "月球", 5],
     5358: ["5-TuXing", "土星", 5],
     5362: ["5-DiQiu", "地球", 5],
+    5348: ["5-ShuiHu-ZhangShun", "水浒-张顺", 5],
 
     #4443: ["6-XuShiZhongShu", "虚实中枢"],
     #4448: ["6-XuNiLiRen", "虚拟利刃"],
