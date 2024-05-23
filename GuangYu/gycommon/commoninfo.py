@@ -545,6 +545,7 @@ CastingId2MetaInfo = {
     5358: ["5-TuXing", "土星", 5],
     5362: ["5-DiQiu", "地球", 5],
     5348: ["5-ShuiHu-ZhangShun", "水浒-张顺", 5],
+    5365: ["5-AiZhiXing", "爱之星", 5],
 
     #4443: ["6-XuShiZhongShu", "虚实中枢"],
     #4448: ["6-XuNiLiRen", "虚拟利刃"],
