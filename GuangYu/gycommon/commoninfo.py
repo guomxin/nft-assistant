@@ -510,7 +510,7 @@ CastingId2MetaInfo = {
     5280: ["5-ShuiHu-ChaiJin", "水浒-柴进", 10],
     #5263: ["5-ShuiHu-DengFei", "水浒-邓飞", 10], #------
     #5288: ["5-ChaoTing-LiangShiCheng", "朝廷-梁师成", 10], #------
-    5277: ["5-ShuiHu-SuoChao", "水浒-索超", 10], #------
+    #5277: ["5-ShuiHu-SuoChao", "水浒-索超", 10], #------
     #5294: ["5-ChaoTing-LiBangYan", "朝廷-李邦彦", 10], #------
     #5307: ["5-FanHuangDeDiTu", "泛黄的地图", 5], #------
     5305: ["5-WangLun", "王伦", 10],
@@ -533,15 +533,15 @@ CastingId2MetaInfo = {
     #5289: ["5-ShuiHu-XiaoRang", "水浒-萧让", 5], #------
     #5291: ["5-ShuiHu-YangLin", "水浒-杨林", 5], #------
     5336: ["5-ZengNong", "曾弄", 5],
-    5302: ["5-ShuiHu-DaiZong", "水浒-戴宗", 5],
+    5302: ["5-ShuiHu-DaiZong", "水浒-戴宗", 5], #------
     5325: ["5-SiKuQuanShu-SongShi", "四库全书-宋史", 5],
-    5338: ["5-HuoXing", "火星", 5], #------
+    #5338: ["5-HuoXing", "火星", 5], #------
     5337: ["5-JinChao-WanYanAGuDa", "金朝-完颜阿骨打", 5],
     #5341: ["5-ShuiXing", "水星", 5], #------
     #5320: ["5-ChaoTing-WuJie", "朝廷-吴玠", 5], #------
     5350: ["5-HuiXing", "慧星", 5],
     5354: ["5-YuanHangFeiChuan", "远航飞船", 5],
-    5355: ["5-YueQiu", "月球", 5],
+    #5355: ["5-YueQiu", "月球", 5], #------
     5358: ["5-TuXing", "土星", 5],
     5362: ["5-DiQiu", "地球", 5],
     5348: ["5-ShuiHu-ZhangShun", "水浒-张顺", 5],
