@@ -533,7 +533,7 @@ CastingId2MetaInfo = {
     #5289: ["5-ShuiHu-XiaoRang", "水浒-萧让", 5], #------
     #5291: ["5-ShuiHu-YangLin", "水浒-杨林", 5], #------
     5336: ["5-ZengNong", "曾弄", 5],
-    5302: ["5-ShuiHu-DaiZong", "水浒-戴宗", 5], #------
+    #5302: ["5-ShuiHu-DaiZong", "水浒-戴宗", 5], #------
     5325: ["5-SiKuQuanShu-SongShi", "四库全书-宋史", 5],
     #5338: ["5-HuoXing", "火星", 5], #------
     5337: ["5-JinChao-WanYanAGuDa", "金朝-完颜阿骨打", 5],
@@ -546,6 +546,7 @@ CastingId2MetaInfo = {
     5362: ["5-DiQiu", "地球", 5],
     5348: ["5-ShuiHu-ZhangShun", "水浒-张顺", 5],
     5365: ["5-AiZhiXing", "爱之星", 5],
+    5367: ["5-TanSuoFeiChuan-QiHangHao", "探索飞船-启航号", 5],
 
     #4443: ["6-XuShiZhongShu", "虚实中枢"],
     #4448: ["6-XuNiLiRen", "虚拟利刃"],
