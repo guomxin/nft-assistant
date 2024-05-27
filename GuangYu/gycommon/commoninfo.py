@@ -547,6 +547,7 @@ CastingId2MetaInfo = {
     5348: ["5-ShuiHu-ZhangShun", "水浒-张顺", 5],
     5365: ["5-AiZhiXing", "爱之星", 5],
     5367: ["5-TanSuoFeiChuan-QiHangHao", "探索飞船-启航号", 5],
+    5368: ["5-WenFangSiBao-Bi", "文房四宝-笔", 5],
 
     #4443: ["6-XuShiZhongShu", "虚实中枢"],
     #4448: ["6-XuNiLiRen", "虚拟利刃"],
@@ -799,7 +800,7 @@ HighestValue_Products_Info = {
 }
 
 # 131
-Query_Token= "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxMzE1NjE2MTA5MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzE2NzY0NzYyLCJzaWduSWQiOiIyYzdlMTBiMGM1Mzg0OWRhYTg4YzFiZTNhOTM1NDVjYSIsImlhdCI6MTcxNjE1OTk2Mn0.mzRL8DwmVoykoyHwYi-yxFE75kgMOA4vL_D3Nfug8BU"
+Query_Token= "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxMzE1NjE2MTA5MSIsInNvdXJjZSI6InBjIiwidHlwZSI6ImN1c3RvbWVyIiwiZXhwIjoxNzE3MzkxOTc3LCJzaWduSWQiOiI2MDE3NTFiMzMyMGY0YmNkYTlhMGViZDQ5YmFkYTMzYiIsImlhdCI6MTcxNjc4NzE3N30.Amndbk9tIqJg6z4i8rQa55paiqg7WJ9FG_sxREZeg8s"
 
 # Pay
 Home_Token = Query_Token
